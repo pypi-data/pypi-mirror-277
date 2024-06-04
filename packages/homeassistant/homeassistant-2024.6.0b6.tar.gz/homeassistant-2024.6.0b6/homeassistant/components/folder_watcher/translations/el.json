@@ -1,0 +1,31 @@
+{
+    "entity": {
+        "sensor": {
+            "folder_watcher": {
+                "state_attributes": {
+                    "dest_file": {
+                        "name": "\u0391\u03c1\u03c7\u03b5\u03af\u03bf \u03c0\u03c1\u03bf\u03bf\u03c1\u03b9\u03c3\u03bc\u03bf\u03cd"
+                    },
+                    "dest_folder": {
+                        "name": "\u03a6\u03ac\u03ba\u03b5\u03bb\u03bf\u03c2 \u03c0\u03c1\u03bf\u03bf\u03c1\u03b9\u03c3\u03bc\u03bf\u03cd"
+                    },
+                    "dest_path": {
+                        "name": "\u0394\u03b9\u03b1\u03b4\u03c1\u03bf\u03bc\u03ae \u03c0\u03c1\u03bf\u03bf\u03c1\u03b9\u03c3\u03bc\u03bf\u03cd"
+                    },
+                    "event_type": {
+                        "name": "\u03a4\u03cd\u03c0\u03bf\u03c2 \u03c3\u03c5\u03bc\u03b2\u03ac\u03bd\u03c4\u03bf\u03c2"
+                    },
+                    "file": {
+                        "name": "\u0391\u03c1\u03c7\u03b5\u03af\u03bf"
+                    },
+                    "folder": {
+                        "name": "\u03a6\u03ac\u03ba\u03b5\u03bb\u03bf\u03c2"
+                    },
+                    "path": {
+                        "name": "\u0394\u03b9\u03b1\u03b4\u03c1\u03bf\u03bc\u03ae"
+                    }
+                }
+            }
+        }
+    }
+}
