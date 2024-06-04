@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/khmerocr/__init__.py
+src/khmerocr/preprocessing.py
+src/khmerocr.egg-info/PKG-INFO
+src/khmerocr.egg-info/SOURCES.txt
+src/khmerocr.egg-info/dependency_links.txt
+src/khmerocr.egg-info/requires.txt
+src/khmerocr.egg-info/top_level.txt
