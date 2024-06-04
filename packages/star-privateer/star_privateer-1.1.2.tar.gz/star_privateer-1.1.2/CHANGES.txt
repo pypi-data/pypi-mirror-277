@@ -1,0 +1,70 @@
+Version 1.1.2
+- Uncertainties computed for Gaussian profile now correspond to 
+  half width at half maximum (HWHM) instead of ``sqrt (2) * sigma``
+  as previously.
+- Allow performing an additional fit on the smoothed Lomb-Scargle
+  (after the procedural peak analysis) in order to obtain a more
+  realistic uncertainty.
+- Add possibility (set to True by default) to show measured period
+  values on the summary plot.
+- The default mask defining an interval around the peak of larger
+  amplitude when fitting peaks in WPS, CS and LS has been removed.
+- Allow using a false alarm probability threshold to perform the 
+  fit in the Lomb-Scargle periodogram.
+- Change background estimation in Lomb-Scargle periodogram considering
+  background estimation in a logarithmically-spaced box. 
+  Old behaviour is accessible through "snr_flat" option.
+- Change pmin and pmax arguments behaviour for profile-fitting functions.
+- Change bound configuration for Gaussian profile fitting in Lomb-Scargle 
+  in order to remove some pathologic behaviours witnessed with the code 
+  (especially Gaussian profile too large with respect to the underlying 
+  spectrum)
+- Add zero-padding before computing wavelet transform.
+- Add sph uncertainties are default parameters returned by compute_sph.
+- Include sph uncertainties in features extracted by rotation_pipeline
+- Allow passing keyword arguments to ROOSTER RotClass and PeriodSel with
+  distinct dictionaries.
+- Allow accessing more easily ROOSTER classification information (training and test results plus
+  informations on the last run) and selecting set of parameters related to 
+  the rotation period.
+- Modify the outputs of analysis_pipeline as periods for WPS were missing.
+
+Version 1.1.1
+2024-02-19
+- Change default normalisation used for the Lomb-Scargle periodogram.
+- Update fitting strategy for the periodogram peaks. Modify output for the 
+  fit function. Allow constraining minimum and maximum period to fit.
+- Add additional cleaning step in the ACF post-processing to avoid 
+  negative H_ACF and G_ACF.
+- Allow having multiple targets with same label for ROOSTER training (allowing 
+  to train with independent segments of a given stellar light curve). 
+- Add some missing docstrings
+
+Version 1.1
+2024-01-24
+- Change license to LGPL3.0.
+
+Version 1.0
+2023-11-29
+- Moving to star_privateer, up and ready to sail uncharted waters.
+- Change license to GPL3.0.
+
+Version 0.2.2
+2023-11-29
+- Correctly set H_ACF and G_ACF which where interverted in previous version of
+  the code. ROOSTER instances trained from output of older versions of the code
+  should not be used from now on.  
+
+Version 0.2.1
+2023-11-07
+- Add additional features for wavelet analysis and ROOSTER manipulations.
+- Add new plotting options
+- Correct some bugs found when running the code
+
+Version 0.2
+2023-03-21
+- March 2022 demonstrator delivery
+
+Version 0.1
+2022-11-11
+- Preliminary demonstrator delivery 
