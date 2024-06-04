@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+automatic_contract_creation.egg-info/PKG-INFO
+automatic_contract_creation.egg-info/SOURCES.txt
+automatic_contract_creation.egg-info/dependency_links.txt
+automatic_contract_creation.egg-info/requires.txt
+automatic_contract_creation.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+polars
+pandas
+datetime
+os
+clickhouse_connect
+connect
+BasicAuthentication
+re
