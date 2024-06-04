@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: jl-serverless
+Version: 0.1.0
+Summary: A simple CLI tool to run scripts remotely in JarvisLabs.
+Home-page: https://github.com/Arunkumar-Dhanraj/JL-Serverless.git
+Author: Arunkumar
+Author-email: arun19ict@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: requests
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+
+# Your Package Name
+
+Description of what your package does and any other important details.
+
+## Installation
+
+```bash
+pip install jl-serverless
+```
