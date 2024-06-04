@@ -1,0 +1,6 @@
+[console_scripts]
+bits = linux_tools.bits:main
+irqstat = linux_tools.irqstat:main
+netgraph = linux_tools.netgraph:main
+procstat = linux_tools.procstat:main
+systar = linux_tools.systar:main
