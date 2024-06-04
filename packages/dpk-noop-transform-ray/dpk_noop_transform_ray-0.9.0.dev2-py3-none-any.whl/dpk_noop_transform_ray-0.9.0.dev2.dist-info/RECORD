@@ -1,0 +1,7 @@
+noop_local_ray.py,sha256=6agLEmEuUEd5uQodl2NMEb5kCNu99dALY92DgLIw6GE,2070
+noop_s3_ray.py,sha256=tTfT0Ytu-Y4q_Qk702wRJ_oMNv4wIDwyazN-JCnevbA,2003
+noop_transform_ray.py,sha256=1K8HM1IO9NPb40leDjcgOoOaUrUUDi2j1xw_ihqVhhE,2163
+dpk_noop_transform_ray-0.9.0.dev2.dist-info/METADATA,sha256=9z69dvjrcOKxPzMUr4dJ0LhkiPhqhvNKzg-mX9L3_FM,2169
+dpk_noop_transform_ray-0.9.0.dev2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dpk_noop_transform_ray-0.9.0.dev2.dist-info/top_level.txt,sha256=CHnYCph9nk-HX-WaMfVDKE-vBtwjuvnbRu_TxlqPMj0,46
+dpk_noop_transform_ray-0.9.0.dev2.dist-info/RECORD,,
