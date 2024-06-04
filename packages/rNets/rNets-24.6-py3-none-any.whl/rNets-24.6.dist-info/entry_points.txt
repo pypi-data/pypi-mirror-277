@@ -1,0 +1,2 @@
+[console_scripts]
+rnets = rnets.__main__:run
