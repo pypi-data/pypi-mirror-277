@@ -1,0 +1,42 @@
+html {
+    /* Disable smooth scrolling set by Bootstrap */
+    scroll-behavior: auto !important;
+}
+
+.breadcrumb {
+    --bs-breadcrumb-divider: '>';
+}
+
+.page-package-file .metadata {
+    width: auto;
+}
+
+.page-package-file-archive-path .codeview {
+    border: solid 1px #ddd;
+    font-size: 14px !important;
+}
+
+.page-package-file-archive-path .codeview pre {
+    font-size: 14px;
+}
+
+.anchor-row {
+    position: relative;
+}
+
+.anchor-row a {
+    display: none;
+    padding-right: 5px;
+    text-decoration: none;
+    color: #bbb;
+}
+
+.anchor-row a:hover {
+    color: #999;
+}
+
+.anchor-row:hover a {
+    position: absolute;
+    right: 100%;
+    display: inline;
+}
