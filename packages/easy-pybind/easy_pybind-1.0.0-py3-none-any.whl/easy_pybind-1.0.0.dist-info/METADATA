@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: easy-pybind
+Version: 1.0.0
+Summary: A simple command line tool to generate PyBind examples.
+Author-email: Hieu Pham <hyhieu@gmail.com>
+License-File: LICENSE
+
