@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: testcore
+Version: 0.0.3
+Summary: Python Boilerplate contains all the boilerplate you need to create a Python package.
+Author-email: Alex Evangelou <admin@example.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/alexevag/testcore
+Keywords: testcore
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: <3.10,>=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: appdirs ==1.4.4
+Requires-Dist: appnope ==0.1.4
+Requires-Dist: argon2-cffi ==23.1.0
+Requires-Dist: argon2-cffi-bindings ==21.2.0
+Requires-Dist: asttokens ==2.4.1
+Requires-Dist: backcall ==0.2.0
+Requires-Dist: blinker ==1.8.2
+Requires-Dist: certifi ==2024.2.2
+Requires-Dist: cffi ==1.16.0
+Requires-Dist: click ==8.1.7
+Requires-Dist: contourpy ==1.1.1
+Requires-Dist: cryptography ==42.0.7
+Requires-Dist: cycler ==0.12.1
+Requires-Dist: datajoint ==0.14.1
+Requires-Dist: decorator ==5.1.1
+Requires-Dist: executing ==2.0.1
+Requires-Dist: Flask ==3.0.3
+Requires-Dist: fonttools ==4.52.1
+Requires-Dist: h5py ==3.11.0
+Requires-Dist: imageio ==2.34.1
+Requires-Dist: importlib-metadata ==7.1.0
+Requires-Dist: importlib-resources ==6.4.0
+Requires-Dist: ipython ==8.12.3
+Requires-Dist: itsdangerous ==2.2.0
+Requires-Dist: jedi ==0.19.1
+Requires-Dist: Jinja2 ==3.1.4
+Requires-Dist: joblib ==1.4.2
+Requires-Dist: kiwisolver ==1.4.5
+Requires-Dist: MarkupSafe ==2.1.5
+Requires-Dist: matplotlib ==3.7.5
+Requires-Dist: matplotlib-inline ==0.1.7
+Requires-Dist: minio ==7.2.7
+Requires-Dist: networkx ==2.6.3
+Requires-Dist: numpy ==1.24.4
+Requires-Dist: otumat ==0.3.1
+Requires-Dist: packaging ==24.0
+Requires-Dist: Panda3D ==1.10.14
+Requires-Dist: pandas ==2.0.3
+Requires-Dist: parso ==0.8.4
+Requires-Dist: pexpect ==4.9.0
+Requires-Dist: pickleshare ==0.7.5
+Requires-Dist: pillow ==10.3.0
+Requires-Dist: prompt-toolkit ==3.0.43
+Requires-Dist: ptyprocess ==0.7.0
+Requires-Dist: pure-eval ==0.2.2
+Requires-Dist: pycparser ==2.22
+Requires-Dist: pycryptodome ==3.20.0
+Requires-Dist: pydot ==2.0.0
+Requires-Dist: pygame ==2.5.2
+Requires-Dist: pygame-menu ==4.4.3
+Requires-Dist: Pygments ==2.18.0
+Requires-Dist: PyMySQL ==1.1.1
+Requires-Dist: PyOpenGL ==3.1.7
+Requires-Dist: pyparsing ==3.1.2
+Requires-Dist: pyperclip ==1.8.2
+Requires-Dist: python-dateutil ==2.9.0.post0
+Requires-Dist: pytz ==2024.1
+Requires-Dist: scikit-learn ==1.3.2
+Requires-Dist: scipy ==1.10.1
+Requires-Dist: six ==1.16.0
+Requires-Dist: stack-data ==0.6.3
+Requires-Dist: threadpoolctl ==3.5.0
+Requires-Dist: tqdm ==4.66.4
+Requires-Dist: traitlets ==5.14.3
+Requires-Dist: typing-extensions ==4.12.0
+Requires-Dist: tzdata ==2024.1
+Requires-Dist: urllib3 ==2.2.1
+Requires-Dist: watchdog ==4.0.1
+Requires-Dist: wcwidth ==0.2.13
+Requires-Dist: Werkzeug ==3.0.3
+Requires-Dist: zipp ==3.19.0
+Provides-Extra: all
+Requires-Dist: testcore[extra] ; extra == 'all'
+Provides-Extra: extra
+Requires-Dist: pandas ; extra == 'extra'
+
+# testcore
+State control system for automated, high-throughput behavioral training based on Python. 
+It is tightly integrated with Database storage & control using the [Datajoint] framework. 
+It can run on Linux, MacOS, Windows and it is optimized for use with Raspberry pi boards. 
+
+
+[![image](https://img.shields.io/pypi/v/testcore.svg)](https://pypi.python.org/pypi/testcore)
+[![image](https://img.shields.io/conda/vn/conda-forge/testcore.svg)](https://anaconda.org/conda-forge/testcore)
+
+
+**Python Boilerplate contains all the boilerplate you need to create a Python package.**
+
+
+-   Free software: MIT License
+-   Documentation: https://alexevag.github.io/testcore
+    
+
+## Features
+
+-   TODO
