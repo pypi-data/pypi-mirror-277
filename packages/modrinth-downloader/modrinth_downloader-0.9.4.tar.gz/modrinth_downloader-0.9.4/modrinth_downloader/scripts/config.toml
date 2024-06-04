@@ -1,0 +1,5 @@
+[paths]
+lists = "~/.modrinth-downloader/lists"
+logs = "~/.modrinth-downloader/logs"
+downloads = "~/.modrinth-downloader/downloads"
+backups = "~/.modrinth-downloader/backups"
