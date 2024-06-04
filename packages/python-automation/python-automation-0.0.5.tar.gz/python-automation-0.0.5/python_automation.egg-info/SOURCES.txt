@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+python_automation.egg-info/PKG-INFO
+python_automation.egg-info/SOURCES.txt
+python_automation.egg-info/dependency_links.txt
+python_automation.egg-info/not-zip-safe
+python_automation.egg-info/requires.txt
+python_automation.egg-info/top_level.txt
+tests/__init__.py
+tests/test_executor.py
