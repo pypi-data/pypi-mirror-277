@@ -1,0 +1,7 @@
+[console_scripts]
+qosst-bob-excess-noise=qosst_bob.excess_noise:main
+qosst-bob-gui=qosst_bob.gui.bobgui:main
+qosst-bob-optimize=qosst_bob.optimization.commands:main
+qosst-bob-tools=qosst_bob.tools.commands:main
+qosst-bob-transmittance=qosst_bob.transmittance:main
+
