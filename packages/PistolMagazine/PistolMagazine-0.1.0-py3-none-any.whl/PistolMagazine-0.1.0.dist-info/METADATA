@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: PistolMagazine
+Version: 0.1.0
+Summary: A data mocking tool designed to help you generate realistic data for testing and development purposes.
+Home-page: UNKNOWN
+Author: Ealyn
+Author-email: miyuk1@126.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Faker (==25.1.0)
+
+UNKNOWN
+
