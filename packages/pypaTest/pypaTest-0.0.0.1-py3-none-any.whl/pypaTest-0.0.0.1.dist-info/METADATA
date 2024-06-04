@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pypaTest
+Version: 0.0.0.1
+Summary: First Test Package
+Home-page: https://github.com/Secludor/
+Author: secludor
+Author-email: caelumator@gmail.com
+License: MIT
+Requires-Python: >=3
+
