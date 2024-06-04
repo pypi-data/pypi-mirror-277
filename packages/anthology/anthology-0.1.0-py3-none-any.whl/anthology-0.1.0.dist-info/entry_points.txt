@@ -1,0 +1,4 @@
+[console_scripts]
+antho=anthology.main:anthology
+anthology=anthology.main:anthology
+
