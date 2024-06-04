@@ -1,0 +1,5 @@
+candle_bert-0.1.0.dist-info/METADATA,sha256=Wn6TAn98lXqF2QA3T-SSwLyCu0rs31cazAJjXs8pBX8,55
+candle_bert-0.1.0.dist-info/WHEEL,sha256=gL0MqPEm7mfIMDxfo6rW8ZOWD49YSQEaHkylunKPHN8,106
+candle_bert/__init__.py,sha256=ZbCFwBVy3rlpz58I8e9GO2Ej9sL_C7owuzIuIPHBv4I,127
+candle_bert/candle_bert.cpython-39-x86_64-linux-gnu.so,sha256=tdse4mFCVjSCgw9j2dH0tdtVXlzXAAOamkZH7och6O0,13237624
+candle_bert-0.1.0.dist-info/RECORD,,
