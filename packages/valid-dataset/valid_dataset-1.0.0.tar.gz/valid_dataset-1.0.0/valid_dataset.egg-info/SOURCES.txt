@@ -1,0 +1,7 @@
+setup.py
+valid_dataset.egg-info/PKG-INFO
+valid_dataset.egg-info/SOURCES.txt
+valid_dataset.egg-info/dependency_links.txt
+valid_dataset.egg-info/entry_points.txt
+valid_dataset.egg-info/requires.txt
+valid_dataset.egg-info/top_level.txt
