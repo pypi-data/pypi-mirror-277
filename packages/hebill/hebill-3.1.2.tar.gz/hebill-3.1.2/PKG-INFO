@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: hebill
+Version: 3.1.2
+Summary: Hebill Python Library
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: colorama==0.4.6
+Requires-Dist: numpy==1.26.4
+Requires-Dist: wxPython==4.2.1
+Requires-Dist: pillow==10.3.0
+
+## 说明
+所有组件为便捷库
+
+## 安装
+```bash
+pip install hebill
+```
+
+## 版本
+
+### v3.1.2  
+微改
+
+### v3.1.1  
+修改：
+- pypi 可以指定软件包
+
+### v3.1.0
+增加子模块：
+- math
+
+### v3.0.0
+增加子模块：
+- digital # 数字函数
+- html # Html代码生产
+- pypi # 上传pypi
+- string # 字符串函数
+- terminal # 终端函数
+- 
+### < v3.0.0  
+前期版本不作发布
