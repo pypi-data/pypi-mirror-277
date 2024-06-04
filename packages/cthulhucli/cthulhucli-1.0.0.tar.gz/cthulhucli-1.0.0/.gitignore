@@ -1,0 +1,10 @@
+*.pyc
+*.json
+*.egg-info
+build
+dist
+sources
+.venv
+venv
+README.md.test
+testdata

@@ -1,0 +1,51 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cthulhucli"
+dynamic = ["version"]
+description = "A command line interface for browsing cards from the Call of Cthulhu CCG and LCG."
+readme = "README.md"
+license = ""
+authors = [
+    { name = "Petter Nyström", email = "jimorie@gmail.com" },
+]
+keywords = [
+    "call of cthulhu",
+    "cthulhu",
+    "ccg",
+    "lcg",
+]
+classifiers = []
+dependencies = [
+    "click",
+    "clicksearch",
+]
+requires-python = ">= 3.6"
+
+[project.optional-dependencies]
+dev = ["black", "ruff", "twine", "build", "hatchling"]
+
+[project.scripts]
+cthulhucli = "cthulhucli:main"
+
+[project.urls]
+Homepage = "https://github.com/jimorie/cthulhucli"
+
+[tool.hatch.version]
+path = "cthulhucli.py"
+
+[tool.hatch.build]
+include = [
+    "/cthulhucli.py",
+    "/coc-ccg.db",
+    "/coc-lcg.db",
+]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/cthulhucli.py",
+    "/coc-ccg.db",
+    "/coc-lcg.db",
+]
