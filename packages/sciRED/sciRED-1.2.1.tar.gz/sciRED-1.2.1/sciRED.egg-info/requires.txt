@@ -1,0 +1,16 @@
+numpy
+pandas
+scanpy
+statsmodels
+seaborn
+umap-learn
+matplotlib
+scikit-learn
+scipy
+xgboost
+scikit-image
+diptest==0.2.0
+
+[dev]
+pytest
+twine

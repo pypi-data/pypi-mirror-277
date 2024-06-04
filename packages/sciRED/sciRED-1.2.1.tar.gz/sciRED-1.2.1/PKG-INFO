@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: sciRED
+Version: 1.2.1
+Summary: single cell interpretable Residual Decomposition
+Home-page: https://github.com/delipouya/sciRED.git
+Author: Delaram Pouyabahar
+Author-email: d.pouyabahar@mail.utoronto.ca
+License: MIT
+Keywords: sciRED,single cell RNA-seq,interpretability,factor decomposition
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/plain
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scanpy
+Requires-Dist: statsmodels
+Requires-Dist: seaborn
+Requires-Dist: umap-learn
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: xgboost
+Requires-Dist: scikit-image
+Requires-Dist: diptest==0.2.0
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
+sciRED is a Python package designed to improve the interpretation of single-cell RNA sequencing data, specifically focusing on signal extraction via factor decomposition. It simplifies the process by removing confounding effects, mapping factors to covariates, identifying unexplained factors, and annotating genes and biological processes. Applying sciRED to various scRNA-seq datasets can unveil diverse biological signals, such as health/disease variation, cell-type identity, sex/age differences, stimulation signals, and rare cell type signatures.
