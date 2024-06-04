@@ -1,0 +1,40 @@
+Metadata-Version: 2.3
+Name: fastapi-apscheduler4
+Version: 0.0.3
+Summary: FastAPI-APScheduler4 is a simple scheduled task manager for FastAPI based on APScheduler.
+Author-email: Loïc Gremaud <grelinfo@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: FastAPI
+Classifier: Framework :: Pydantic
+Classifier: Framework :: Pydantic :: 2
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Requires-Dist: apscheduler>=4.0.0a5
+Requires-Dist: fastapi>=0.100.0
+Requires-Dist: pydantic-settings>=2.0.0
+Description-Content-Type: text/markdown
+
+# fastapi-apscheduler4
+ FastAPI-APScheduler4 is a simple scheduled task manager for FastAPI based on APScheduler version 4.
