@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+banxicoapi.egg-info/PKG-INFO
+banxicoapi.egg-info/SOURCES.txt
+banxicoapi.egg-info/dependency_links.txt
+banxicoapi.egg-info/requires.txt
+banxicoapi.egg-info/top_level.txt
+tests/__init__.py
+tests/banxico_test.py
+tests/conftest.py
