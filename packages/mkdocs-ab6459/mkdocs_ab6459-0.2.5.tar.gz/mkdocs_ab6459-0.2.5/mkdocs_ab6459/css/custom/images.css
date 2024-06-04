@@ -1,0 +1,11 @@
+figure {
+    align-items: center;
+    display: Flex;
+    flex-direction: column;
+    margin: 0 0 0 0 !important;
+}
+
+figure img {
+    border-radius: var(--bs-border-radius-xl);
+    margin-bottom: 0.5rem;
+}
