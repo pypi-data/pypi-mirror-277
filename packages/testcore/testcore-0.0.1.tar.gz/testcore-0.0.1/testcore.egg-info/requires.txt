@@ -1,0 +1,7 @@
+numpy
+
+[all]
+testcore[extra]
+
+[extra]
+pandas
