@@ -1,0 +1,2 @@
+[console_scripts]
+fibonacci = fibonacci.fibonacci:main

@@ -1,0 +1,9 @@
+fibonacci/__init__.py,sha256=XOnNmDDcASoqlthJyNaKSow5A4e2nZShsN0qa5yLASM,6
+fibonacci/fibonacci.py,sha256=9UDydUsYZxn7m-MsjesDjA9fpGM5tOhB4k3AV_8GVI4,516
+tests/__init__.py,sha256=XOnNmDDcASoqlthJyNaKSow5A4e2nZShsN0qa5yLASM,6
+tests/test_fibonacci.py,sha256=173VfzNBUdVeWYzIUyZAAJd0qKdzZz8IW_9qF_b15IA,808
+fibonacci_project-0.1.dist-info/METADATA,sha256=AKDbkAM0Uk5_HEMIJ9qGl9oi_Ir6Zjqv450f532w4TE,60
+fibonacci_project-0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+fibonacci_project-0.1.dist-info/entry_points.txt,sha256=9olCSLlxlGlZdhy9OX8vaxXedBZJVcuiXx1D8beNsrk,55
+fibonacci_project-0.1.dist-info/top_level.txt,sha256=5Qa_ZvGmY1kXHbRPm5zcTQl0P2KFTeoYhgbjb8cnLN4,16
+fibonacci_project-0.1.dist-info/RECORD,,
