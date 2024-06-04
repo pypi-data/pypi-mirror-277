@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+streamstats_access/streamstats_access.egg-info/PKG-INFO
+streamstats_access/streamstats_access.egg-info/SOURCES.txt
+streamstats_access/streamstats_access.egg-info/dependency_links.txt
+streamstats_access/streamstats_access.egg-info/top_level.txt
