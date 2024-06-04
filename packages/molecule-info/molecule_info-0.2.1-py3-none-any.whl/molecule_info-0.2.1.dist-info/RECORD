@@ -1,0 +1,6 @@
+molecule_info/__init__.py,sha256=9lIU1915nPmSbpyTNPunhYF8OtO1d_3G4_73IHzaUyo,79
+molecule_info/molecule_info.py,sha256=fAFqOzcxI2pTY_EutMZ5U9oEL0AYSWQPOpVHrm33zPc,9184
+molecule_info/utils.py,sha256=RhzU6cJpirHHJugV6ESdOOIqZWVCfE8mO_XbRIbNg28,109
+molecule_info-0.2.1.dist-info/METADATA,sha256=PXg3rruJrK8qP5llwanYg7clU7E8UR2ufZYiwcU34ts,1403
+molecule_info-0.2.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+molecule_info-0.2.1.dist-info/RECORD,,
