@@ -1,0 +1,11 @@
+README.md
+setup.py
+MALHasher.egg-info/PKG-INFO
+MALHasher.egg-info/SOURCES.txt
+MALHasher.egg-info/dependency_links.txt
+MALHasher.egg-info/top_level.txt
+malhasher/CheakHash.py
+malhasher/__init__.py
+malhasher/sha1.py
+malhasher/sha256.py
+malhasher/data/MRHASHER_dataset.csv
