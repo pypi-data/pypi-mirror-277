@@ -1,0 +1,50 @@
+[project]
+name = "qtext"
+dynamic = ["version"]
+description = "Query the text with keywords, vector similarity and other attributes."
+authors = [{ name = "Keming", email = "kemingy94@gmail.com" }]
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+classifiers = [
+    "Intended Audience :: Developers",
+]
+dependencies = [
+    "msgspec~=0.18.6",
+    "falcon~=3.1.1",
+    "waitress~=3.0.0",
+    "psycopg[binary]~=3.1",
+    "openai~=1.12.0",
+    "defspec~=0.1.1",
+    "httpx~=0.27",
+    "cohere~=4.45",
+    "prometheus-client~=0.20",
+    "numpy~=1.26",
+]
+[project.optional-dependencies]
+dev = [
+    "ruff~=0.2.2",
+    "pytest~=7.4",
+]
+[project.urls]
+"Homepage" = "https://github.com/kemingy/qtext"
+[project.scripts]
+"qtext" = "qtext.main:run"
+
+[build-system]
+requires = ["setuptools", "setuptools_scm>=7.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["qtext"]
+
+[tool.setuptools_scm]
+fallback_version = "0.0.0"
+
+[tool.ruff]
+target-version = "py38"
+[tool.ruff.lint]
+select = ["E", "F", "G", "B", "I", "SIM", "TID", "PL", "RUF"]
+ignore = ["E501"]
+[tool.ruff.lint.isort]
+known-first-party = ["qtext"]
