@@ -1,0 +1,2 @@
+[console_scripts]
+sqlog = sqlog:main
