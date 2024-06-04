@@ -1,0 +1,1 @@
+Update `sphinx-auotapi` pin to only exclude the breaking version. The bug was fixed in subsequent versions.
