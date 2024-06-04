@@ -1,0 +1,11 @@
+megaparse/Converter.py,sha256=lpktxt3L57H4Wf4_TSodFqNU2LWoNOEhPYIt1BueScM,10735
+megaparse/__init__.py,sha256=Tb8raTSB6LyVhT2JsroUIF7WLRpUSmUDP0hpd8gS3SU,41
+megaparse/markdown_processor.py,sha256=ZXKPwVgwOAhHNZ_t5uilxN4SX7h6wE4Ltk5UgY8mhok,5192
+megaparse/test.py,sha256=jyz_RlduI2nVJA9nGrS7_K7fSLx_FavqwllCdsfVOlA,153
+megaparse/unstructured.py,sha256=Oeekpb_ls3C7kWMPEU0qc7ZlzGow8S5OMAFENZpY6qM,3970
+megaparse/utils.py,sha256=U4uE0TaHjmt76k6461s2Krg1vXWE5vMu_xWnWWaSSbc,1639
+megaparse-0.0.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+megaparse-0.0.8.dist-info/METADATA,sha256=dkskfFkxJjygckWGscedmx255EBfG5FNfEqxHyxUhxM,2907
+megaparse-0.0.8.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+megaparse-0.0.8.dist-info/top_level.txt,sha256=d2NviP6Syk7iUwx5MihiYPcxb8TMPsbMYtCpUkC-EHE,10
+megaparse-0.0.8.dist-info/RECORD,,
