@@ -1,0 +1,9 @@
+tap_dbf/__init__.py,sha256=dmd3FyVE4aIua2zDPmoMCUmZ6ShFIt0lHhj0pQgYLt4,33
+tap_dbf/__main__.py,sha256=d5RERxaSzkm9z-wOO9xKuh5bVQ27io1gSjbMh-7i4V0,144
+tap_dbf/client.py,sha256=OAjBkSKj6MHHJe--2cjbsW53hkVl1AHWqgYqDR1ZvFY,5112
+tap_dbf/tap.py,sha256=GOFloIEmm_YW-m-6Eia72uMRFMK4aq8HGl4tvih7-0s,7862
+tap_dbf-0.1.6.dist-info/METADATA,sha256=1N_qvZXJt7MDAfMUcO9oFnOaJumdsdD6pi7_REqTfEs,5578
+tap_dbf-0.1.6.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+tap_dbf-0.1.6.dist-info/entry_points.txt,sha256=J3Bx4j-BsuSiYc02JZ8pq2vzB5Bj8AqENDQWi7Z4IWY,51
+tap_dbf-0.1.6.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tap_dbf-0.1.6.dist-info/RECORD,,
