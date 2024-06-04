@@ -1,0 +1,4 @@
+[console_scripts]
+pylmmGWAS=pylmm.scripts.pylmmGWAS:main
+pylmmKinship=pylmm.scripts.pylmmKinship:main
+

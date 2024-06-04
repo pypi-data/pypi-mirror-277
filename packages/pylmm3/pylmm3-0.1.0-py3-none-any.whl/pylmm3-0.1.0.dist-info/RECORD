@@ -1,0 +1,12 @@
+pylmm3/__init__.py,sha256=y9GRpvVA4sUVS2yCsmThs_PcKPjkeCELsJhH-XaLz0Y,832
+pylmm3/input.py,sha256=wNccgjIe2dltbO_6UpNc6_ypSHzqp3beUz-1IwTwmzU,12625
+pylmm3/lmm.py,sha256=HXsU8qZBCLQEHRiphSkfsPgn1TzxkBxFPUaf6r3J2dE,15755
+pylmm3/misc.py,sha256=ESfc_PvQhO8_EMUCnErr60-M9YCIiKuThmtzeCh-fOc,1989
+pylmm3/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylmm3/scripts/example.py,sha256=MxneMZDR7tKXylfJG_G8MSPvTVRlkdZu9jc5bncbSoY,1530
+pylmm3/scripts/pylmmGWAS.py,sha256=PS7k1c4fNm9NgK_t8pyttE5k_DxuJbqlzJ8KUcK1q2U,16015
+pylmm3/scripts/pylmmKinship.py,sha256=iM9LnBqfI0FhmjTavvyMVHxgvL_0tE1tdKgWmP4WFmM,6043
+pylmm3-0.1.0.dist-info/entry_points.txt,sha256=vP26Dt4npH-youhiBdPo8E2s95rBenVrKyTpT7mWvTg,103
+pylmm3-0.1.0.dist-info/METADATA,sha256=IIkgeIFxFLQdE7b0nut8T-6tDi_gkl_Sk4igAenXxUI,3181
+pylmm3-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pylmm3-0.1.0.dist-info/RECORD,,
