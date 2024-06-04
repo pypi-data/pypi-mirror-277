@@ -1,0 +1,9 @@
+HDDM
+bzip2
+cpr
+hddm_r
+hdf5
+pthread-win32
+xerces-c
+xrootd
+zlib
