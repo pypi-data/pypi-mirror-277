@@ -1,0 +1,8 @@
+pycnv
+pandas
+xarray
+numpy
+scipy
+pylablib
+matplotlib
+netcdf4

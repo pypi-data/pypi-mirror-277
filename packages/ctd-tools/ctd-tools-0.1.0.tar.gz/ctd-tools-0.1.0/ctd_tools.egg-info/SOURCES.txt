@@ -1,0 +1,19 @@
+LICENSE
+README.md
+setup.py
+ctd_tools/__init__.py
+ctd_tools/__main__.py
+ctd_tools/ctd_parameters.py
+ctd_tools.egg-info/PKG-INFO
+ctd_tools.egg-info/SOURCES.txt
+ctd_tools.egg-info/dependency_links.txt
+ctd_tools.egg-info/entry_points.txt
+ctd_tools.egg-info/requires.txt
+ctd_tools.egg-info/top_level.txt
+ctd_tools/modules/__init__.py
+ctd_tools/modules/calculator.py
+ctd_tools/modules/plotter.py
+ctd_tools/modules/reader copy.py
+ctd_tools/modules/reader.py
+ctd_tools/modules/subsetter.py
+ctd_tools/modules/writer.py
