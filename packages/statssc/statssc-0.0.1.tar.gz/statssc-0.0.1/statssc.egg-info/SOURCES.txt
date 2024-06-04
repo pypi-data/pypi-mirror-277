@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+statssc.egg-info/PKG-INFO
+statssc.egg-info/SOURCES.txt
+statssc.egg-info/dependency_links.txt
+statssc.egg-info/requires.txt
+statssc.egg-info/top_level.txt
