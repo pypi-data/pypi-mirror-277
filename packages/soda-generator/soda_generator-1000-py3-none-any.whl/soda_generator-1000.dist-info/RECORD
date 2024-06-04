@@ -1,0 +1,16 @@
+soda_generator/__init__.py,sha256=aAH5GBPy5T37e_YaZ9rqG1rQa5AMOAjwanH7-ZJe5Eg,132
+soda_generator/connectors/__init__.py,sha256=3yWopOF0eEAmSlAwF0yVJmL-xjpvhZhi_V_o6q3eQt8,51
+soda_generator/connectors/click_connect.py,sha256=EP0D9MmUtYNx45PAsi8kZgCIBHvn5oQb_4veL705T0Y,1389
+soda_generator/connectors/connection_manager.py,sha256=no4Mc63CjXbL9j5oGpJ00G4Ek2CjwHh0uL6ZhclX6-0,1135
+soda_generator/connectors/connectors.py,sha256=xkfdeCaO6cE7CmkHGr5meMj1635PUggV-b1Cog0RSqg,887
+soda_generator/connectors/trino_connector.py,sha256=kFnJqLqfW8cHnfpKmnoImDhf8OtIaQs7COzWGOZcnTI,2454
+soda_generator/generators/__init__.py,sha256=6uuAKy2hzwvyHoi8L5FOuFnzp8OUavROFA6FIhfeQdk,43
+soda_generator/generators/check.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+soda_generator/generators/contract_variable.py,sha256=lNzN2hzFtibEhfMfLDl5f9gG4nHofc7K0gY70-krbxE,5033
+soda_generator/generators/soda_generator.py,sha256=rgyHL8N-z5v-4-d4pBV1yp2J7xdMygREeQo5xUOeLuE,2489
+soda_generator/profilers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+soda_generator/profilers/profiler.py,sha256=Lkv6PAvDaWE_bpS0BBFPlZpW3G_mRWSxzGZJNCo_rAI,6167
+soda_generator-1000.dist-info/METADATA,sha256=YMUcbEfy88HqY-P5bJchVzeD7qkERSL6aXqgj3t1sPI,382
+soda_generator-1000.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+soda_generator-1000.dist-info/top_level.txt,sha256=9vjtS9cRtJZlNuS3oMO40ko0MIKi8coNeiScufyM-X0,15
+soda_generator-1000.dist-info/RECORD,,
