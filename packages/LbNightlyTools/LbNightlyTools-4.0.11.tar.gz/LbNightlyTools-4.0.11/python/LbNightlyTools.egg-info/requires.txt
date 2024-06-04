@@ -1,0 +1,14 @@
+LbEnv
+LbCommon>=0.0.7
+LbDevTools
+lbinstall
+python-gitlab
+CouchDB
+tabulate
+joblib
+GitPython
+networkx
+gitdb2
+pyyaml
+decorator
+future
