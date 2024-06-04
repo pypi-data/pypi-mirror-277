@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: wuwaconvene
+Version: 0.0.1
+Summary: WuWaConvene - A module for Python that allows you to get the gacha history from the game Wuthering Waves, also calculate the guarantors and generate an information card
+Home-page: https://github.com/Wuthery/WuWaConvene.py
+Author: DeviantUa
+Author-email: deviantapi@gmail.com
+Keywords: Wuthering,Waves,generation,WuWa,gacha,convene,card,api
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: pydantic
+Requires-Dist: aiohttp
+Requires-Dist: cachetools
+Requires-Dist: Pillow
+Requires-Dist: aiofiles
+Requires-Dist: more-itertools
+Requires-Dist: numpy
+Requires-Dist: beautifulsoup4
+Requires-Dist: anyio
