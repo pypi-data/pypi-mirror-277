@@ -1,0 +1,11 @@
+pmentropy/Node.py,sha256=qzoXDeuaa2vboXzxfSwuaNTSHmto-FxVAhn_ow4NetA,666
+pmentropy/__init__.py,sha256=ZUARxgBq0Z02sTme3lWa_5zDibgQCn44Q6AMBCwShag,627
+pmentropy/entropy.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pmentropy/file.py,sha256=LW-EvzfVfqR_PGtGUBdVGw5NgQDmApGoCpsT1_pW3n0,1803
+pmentropy/kNearestLevenshtein.py,sha256=yaVk0WRKhjeBE8z3O_Np-SG_CaGImIwHrNdhfol2RlY,2276
+pmentropy/tools.py,sha256=gVCHq3s8Z8qcU33bvNU0uI5MCy9tuhjA7OM-i0S2K_c,1839
+pmentropy-0.0.1.dist-info/LICENSE,sha256=-BeIbua7Ze0wmKeYex6XgWU9FccfhVic4NKvZjxm03M,34888
+pmentropy-0.0.1.dist-info/METADATA,sha256=DWg_cqBf4WIYMSKaCOeZzSTWN253yeXiXfmVnZEVb1I,1846
+pmentropy-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pmentropy-0.0.1.dist-info/top_level.txt,sha256=gipK4JG1euSwzvPyYYaM7ztsAiXoFw9NIBXSFQANq7U,10
+pmentropy-0.0.1.dist-info/RECORD,,
