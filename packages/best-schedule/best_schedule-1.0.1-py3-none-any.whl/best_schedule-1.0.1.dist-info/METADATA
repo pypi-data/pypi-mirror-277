@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: best-schedule
+Version: 1.0.1
+Summary: version
+Home-page: https://pypi.org/project/best_schedule
+Author: huyi
+Author-email: cracks@yeah.net
+Requires-Python: >=3.0.0
+
