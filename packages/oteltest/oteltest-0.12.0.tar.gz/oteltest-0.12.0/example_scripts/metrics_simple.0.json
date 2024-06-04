@@ -1,0 +1,334 @@
+{
+  "log_requests": [],
+  "metric_requests": [
+    {
+      "request": {
+        "resourceMetrics": [
+          {
+            "resource": {
+              "attributes": [
+                {
+                  "key": "telemetry.sdk.language",
+                  "value": {
+                    "stringValue": "python"
+                  }
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "value": {
+                    "stringValue": "opentelemetry"
+                  }
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "value": {
+                    "stringValue": "1.24.0"
+                  }
+                },
+                {
+                  "key": "telemetry.auto.version",
+                  "value": {
+                    "stringValue": "0.45b0"
+                  }
+                },
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "unknown_service"
+                  }
+                }
+              ]
+            },
+            "scopeMetrics": [
+              {
+                "scope": {
+                  "name": "time-printer",
+                  "version": "1.0"
+                },
+                "metrics": [
+                  {
+                    "name": "loop-counter",
+                    "description": "my desc",
+                    "unit": "1",
+                    "sum": {
+                      "dataPoints": [
+                        {
+                          "startTimeUnixNano": "1715705692028952000",
+                          "timeUnixNano": "1715705701070870000",
+                          "asInt": "10"
+                        }
+                      ],
+                      "aggregationTemporality": "AGGREGATION_TEMPORALITY_CUMULATIVE",
+                      "isMonotonic": true
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "headers": {
+        "user-agent": "grpc-python/1.63.0 grpc-c/40.0.0 (osx; chttp2)"
+      },
+      "test_elapsed_ms": 26335
+    }
+  ],
+  "trace_requests": [
+    {
+      "request": {
+        "resourceSpans": [
+          {
+            "resource": {
+              "attributes": [
+                {
+                  "key": "telemetry.sdk.language",
+                  "value": {
+                    "stringValue": "python"
+                  }
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "value": {
+                    "stringValue": "opentelemetry"
+                  }
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "value": {
+                    "stringValue": "1.24.0"
+                  }
+                },
+                {
+                  "key": "telemetry.auto.version",
+                  "value": {
+                    "stringValue": "0.45b0"
+                  }
+                },
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "unknown_service"
+                  }
+                }
+              ]
+            },
+            "scopeSpans": [
+              {
+                "scope": {
+                  "name": "my.tracer.name"
+                },
+                "spans": [
+                  {
+                    "traceId": "7RFatjppnl52WMJQn9ACGQ==",
+                    "spanId": "zDuksY0EBg0=",
+                    "name": "my-span",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1715705692035860000",
+                    "endTimeUnixNano": "1715705692035900000",
+                    "status": {}
+                  },
+                  {
+                    "traceId": "6FYjNNdCHkgP786VhzFwIQ==",
+                    "spanId": "7gi7fYhbmPU=",
+                    "name": "my-span",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1715705693039996000",
+                    "endTimeUnixNano": "1715705693040036000",
+                    "status": {}
+                  },
+                  {
+                    "traceId": "BpnIwj1CeTwJg3Y2KlzjaQ==",
+                    "spanId": "DTHaIFaOQxE=",
+                    "name": "my-span",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1715705694041240000",
+                    "endTimeUnixNano": "1715705694041331000",
+                    "status": {}
+                  },
+                  {
+                    "traceId": "gcrbdcA8FYbjHbjVKSeY6w==",
+                    "spanId": "R+wYQiqzzd4=",
+                    "name": "my-span",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1715705695044198000",
+                    "endTimeUnixNano": "1715705695044241000",
+                    "status": {}
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "headers": {
+        "user-agent": "grpc-python/1.63.0 grpc-c/40.0.0 (osx; chttp2)"
+      },
+      "test_elapsed_ms": 21301
+    },
+    {
+      "request": {
+        "resourceSpans": [
+          {
+            "resource": {
+              "attributes": [
+                {
+                  "key": "telemetry.sdk.language",
+                  "value": {
+                    "stringValue": "python"
+                  }
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "value": {
+                    "stringValue": "opentelemetry"
+                  }
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "value": {
+                    "stringValue": "1.24.0"
+                  }
+                },
+                {
+                  "key": "telemetry.auto.version",
+                  "value": {
+                    "stringValue": "0.45b0"
+                  }
+                },
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "unknown_service"
+                  }
+                }
+              ]
+            },
+            "scopeSpans": [
+              {
+                "scope": {
+                  "name": "my.tracer.name"
+                },
+                "spans": [
+                  {
+                    "traceId": "XIjsh0BnSA4aVKC8gd6A8A==",
+                    "spanId": "QuVp820Wvfs=",
+                    "name": "my-span",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1715705696049486000",
+                    "endTimeUnixNano": "1715705696049524000",
+                    "status": {}
+                  },
+                  {
+                    "traceId": "eiQPehSzkUfeGr6aQG1qKw==",
+                    "spanId": "ca8ILKu5RMU=",
+                    "name": "my-span",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1715705697056277000",
+                    "endTimeUnixNano": "1715705697056318000",
+                    "status": {}
+                  },
+                  {
+                    "traceId": "EmbxXfAZi9KQBnFyih4now==",
+                    "spanId": "jP43Ok2kbRk=",
+                    "name": "my-span",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1715705698062955000",
+                    "endTimeUnixNano": "1715705698062988000",
+                    "status": {}
+                  },
+                  {
+                    "traceId": "EGoe4aAxQLRzhmTe/cfQUA==",
+                    "spanId": "VacpfJd/UEg=",
+                    "name": "my-span",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1715705699065705000",
+                    "endTimeUnixNano": "1715705699065740000",
+                    "status": {}
+                  },
+                  {
+                    "traceId": "QcSTBz+BbFFxR8dlIQMZMQ==",
+                    "spanId": "5WcHmPGwnlI=",
+                    "name": "my-span",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1715705700067745000",
+                    "endTimeUnixNano": "1715705700067788000",
+                    "status": {}
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "headers": {
+        "user-agent": "grpc-python/1.63.0 grpc-c/40.0.0 (osx; chttp2)"
+      },
+      "test_elapsed_ms": 26302
+    },
+    {
+      "request": {
+        "resourceSpans": [
+          {
+            "resource": {
+              "attributes": [
+                {
+                  "key": "telemetry.sdk.language",
+                  "value": {
+                    "stringValue": "python"
+                  }
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "value": {
+                    "stringValue": "opentelemetry"
+                  }
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "value": {
+                    "stringValue": "1.24.0"
+                  }
+                },
+                {
+                  "key": "telemetry.auto.version",
+                  "value": {
+                    "stringValue": "0.45b0"
+                  }
+                },
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "unknown_service"
+                  }
+                }
+              ]
+            },
+            "scopeSpans": [
+              {
+                "scope": {
+                  "name": "my.tracer.name"
+                },
+                "spans": [
+                  {
+                    "traceId": "tYOyA7YtW5lpfMxAeNabvA==",
+                    "spanId": "QfJgSB+Xa50=",
+                    "name": "my-span",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1715705701070598000",
+                    "endTimeUnixNano": "1715705701070648000",
+                    "status": {}
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "headers": {
+        "user-agent": "grpc-python/1.63.0 grpc-c/40.0.0 (osx; chttp2)"
+      },
+      "test_elapsed_ms": 26336
+    }
+  ]
+}

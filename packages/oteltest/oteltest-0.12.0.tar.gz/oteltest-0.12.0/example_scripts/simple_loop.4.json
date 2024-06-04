@@ -1,0 +1,236 @@
+{
+  "metric_requests": [],
+  "trace_requests": [
+    {
+      "request": {
+        "resourceSpans": [
+          {
+            "resource": {
+              "attributes": [
+                {
+                  "key": "telemetry.sdk.language",
+                  "value": {
+                    "stringValue": "python"
+                  }
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "value": {
+                    "stringValue": "opentelemetry"
+                  }
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "value": {
+                    "stringValue": "1.25.0"
+                  }
+                },
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "my-otel-test"
+                  }
+                },
+                {
+                  "key": "telemetry.auto.version",
+                  "value": {
+                    "stringValue": "0.46b0"
+                  }
+                }
+              ]
+            },
+            "scopeSpans": [
+              {
+                "scope": {
+                  "name": "my-tracer"
+                },
+                "spans": [
+                  {
+                    "traceId": "qIza4Eeio63sEtPWUWSNJw==",
+                    "spanId": "q9YDOKxk21U=",
+                    "name": "my-span",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1717438951314968000",
+                    "endTimeUnixNano": "1717438951816949000",
+                    "status": {},
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "s9eT/dMzMF/gsVefDXnYMQ==",
+                    "spanId": "Yv0HmHtXnBk=",
+                    "name": "my-span",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1717438951817246000",
+                    "endTimeUnixNano": "1717438952319998000",
+                    "status": {},
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "NoVP6MmcP5p/LkH7KGc9bw==",
+                    "spanId": "3kYwmp4P22c=",
+                    "name": "my-span",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1717438952320266000",
+                    "endTimeUnixNano": "1717438952823344000",
+                    "status": {},
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "mbqprSXcnmwY3jkgNp61hQ==",
+                    "spanId": "alz45iZq/Ns=",
+                    "name": "my-span",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1717438952823740000",
+                    "endTimeUnixNano": "1717438953324424000",
+                    "status": {},
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "kLnjp1SUh5EMAV8QOiaTng==",
+                    "spanId": "XuFitnkoyGg=",
+                    "name": "my-span",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1717438953324616000",
+                    "endTimeUnixNano": "1717438953827587000",
+                    "status": {},
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "4xg3LcsUU6GzceRBmbAxdA==",
+                    "spanId": "7VoYPDFAp/0=",
+                    "name": "my-span",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1717438953827738000",
+                    "endTimeUnixNano": "1717438954332077000",
+                    "status": {},
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "cJzrN1C6Zkg7/g1lQEqVvA==",
+                    "spanId": "I5CouWOYJjs=",
+                    "name": "my-span",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1717438954332332000",
+                    "endTimeUnixNano": "1717438954837476000",
+                    "status": {},
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "lhvNhiMWSGC2XpqRsX6J8A==",
+                    "spanId": "ecGOO2R2GdY=",
+                    "name": "my-span",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1717438954837665000",
+                    "endTimeUnixNano": "1717438955337825000",
+                    "status": {},
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "Fa4fSSnQl0WDGBrqv6if7g==",
+                    "spanId": "8DEt8C2nHHU=",
+                    "name": "my-span",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1717438955337973000",
+                    "endTimeUnixNano": "1717438955843111000",
+                    "status": {},
+                    "flags": 256
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "headers": {
+        "user-agent": "grpc-python/1.64.0 grpc-c/41.0.0 (osx; chttp2)"
+      },
+      "test_elapsed_ms": 18870
+    },
+    {
+      "request": {
+        "resourceSpans": [
+          {
+            "resource": {
+              "attributes": [
+                {
+                  "key": "telemetry.sdk.language",
+                  "value": {
+                    "stringValue": "python"
+                  }
+                },
+                {
+                  "key": "telemetry.sdk.name",
+                  "value": {
+                    "stringValue": "opentelemetry"
+                  }
+                },
+                {
+                  "key": "telemetry.sdk.version",
+                  "value": {
+                    "stringValue": "1.25.0"
+                  }
+                },
+                {
+                  "key": "service.name",
+                  "value": {
+                    "stringValue": "my-otel-test"
+                  }
+                },
+                {
+                  "key": "telemetry.auto.version",
+                  "value": {
+                    "stringValue": "0.46b0"
+                  }
+                }
+              ]
+            },
+            "scopeSpans": [
+              {
+                "scope": {
+                  "name": "my-tracer"
+                },
+                "spans": [
+                  {
+                    "traceId": "xb9QmaNpahwKc+H2LVWVIA==",
+                    "spanId": "czysLEESLYU=",
+                    "name": "my-span",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1717438955843371000",
+                    "endTimeUnixNano": "1717438956346974000",
+                    "status": {},
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "r/WKKUK8SWy7kbEPaQCM6w==",
+                    "spanId": "9mOB/EgagsU=",
+                    "name": "my-span",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1717438956347257000",
+                    "endTimeUnixNano": "1717438956849850000",
+                    "status": {},
+                    "flags": 256
+                  },
+                  {
+                    "traceId": "lQBu69jf6u7vDK/2c4ZMCA==",
+                    "spanId": "0fMOyAkVgek=",
+                    "name": "my-span",
+                    "kind": "SPAN_KIND_INTERNAL",
+                    "startTimeUnixNano": "1717438956850112000",
+                    "endTimeUnixNano": "1717438957350553000",
+                    "status": {},
+                    "flags": 256
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "headers": {
+        "user-agent": "grpc-python/1.64.0 grpc-c/41.0.0 (osx; chttp2)"
+      },
+      "test_elapsed_ms": 19905
+    }
+  ],
+  "log_requests": []
+}
