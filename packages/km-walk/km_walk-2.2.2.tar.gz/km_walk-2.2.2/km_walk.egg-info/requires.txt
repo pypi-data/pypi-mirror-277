@@ -1,0 +1,7 @@
+numpy>=1.18.1
+matplotlib>=3.3.4
+pyjellyfish>=1.3.0
+pytest>=6.2.0
+
+[test]
+pytest
