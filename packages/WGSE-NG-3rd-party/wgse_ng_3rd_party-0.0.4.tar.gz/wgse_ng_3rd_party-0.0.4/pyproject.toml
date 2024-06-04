@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=42", "setuptools_scm[toml]>=6.0.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "WGSE-NG-3rd-party"
+description = "Whole Genome Sequencing data manipulation tool"
+readme = { file = "README.md", content-type = "text/markdown" }
+authors = [{ name = "chaplin89", email = "unavailable@wgse-ng.com" }]
+keywords = ["bioinformatics"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dynamic = ["version"]
+
+[project.urls]
+homepage = "https://github.com/WGSE-NG/External"
+Repository = "https://github.com/WGSE-NG/External"
+Documentation = "https://wgse-ng.readthedocs.io/en/latest/"
+Issues = "https://github.com/WGSE-NG/External/issues"
+Changelog = "https://github.com/WGSE-NG/External/releases"
+
+[tool.setuptools.packages.find]
+include = ["wgse.third_party"]
+
+[tool.setuptools]
+include-package-data = true
+
+
+[tool.setuptools_scm]
+version_file = "wgse/third_party/VERSION.py"
