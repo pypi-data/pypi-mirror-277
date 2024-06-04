@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+# SPDX-FileCopyrightText: 2024 Syslinbit <contact@syslinbit.com>
+
+[Unit]
+Description=NoSaasTrust service
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+
+# If python venv is used to build binary :
+ExecStart=/path/to/venv/bin/nost sync /path/to/config.yml
+
+[Install]
+WantedBy=nost.timer

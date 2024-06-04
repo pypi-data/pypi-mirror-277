@@ -1,0 +1,52 @@
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+# SPDX-FileCopyrightText: 2023 Syslinbit <contact@syslinbit.com>
+
+# Default local configuration
+# This default configuration uses Borg as backend
+
+[general]
+# Possible path to ssh key
+# ssh_key_dir = "/var/lib/nosaastrust/.ssh"
+
+[backend]
+type = "Borg"
+options = "None"
+# Backups are stored locally in "/usr/backup" by default
+repo_path = "/usr/backup"
+
+# Possible path to borg key
+# borg_key_path = "/var/lib/nosaastrust/.borg"
+
+[backend.rotate]
+year = 1
+month = 4
+
+[cache]
+# Stores local path to temporary keep files between sync and backend process
+# Default path is "/var/cache/nosaastrust" folder in current directory
+path = "/var/cache/nosaastrust"
+
+[target]
+# Stores destination information
+
+[[target.local]]
+dest = "/usr/backup"
+
+#[[target.remote]]
+#access = ?
+
+[vaults]
+order = ["localA", "localB"]
+
+[vaults.localA]
+# Stores local path to vault files
+mode = "local"
+path = "tests/testenv/vault"
+encryption = "b64"
+
+[vaults.localB]
+# Stores local path to vault files
+mode = "local"
+path = "tests/testenv/vaultB"
+encryption = "b64"
+
