@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: Hoyong0604Test
+Version: 0.0.0.1
+Summary: My First Test Package
+Home-page: https://blog.naver.com/nahoyong1
+Author: Hoyong Na
+Author-email: nahoyong1@gmail.com
+License: MIT
+Requires-Python: >=3.7
+
