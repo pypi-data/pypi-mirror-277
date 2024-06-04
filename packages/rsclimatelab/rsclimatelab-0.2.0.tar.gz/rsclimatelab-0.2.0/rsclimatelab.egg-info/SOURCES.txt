@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+rsclimatelab/__init__.py
+rsclimatelab/cli.py
+rsclimatelab/dask_util.py
+rsclimatelab/ecmwf.py
+rsclimatelab.egg-info/PKG-INFO
+rsclimatelab.egg-info/SOURCES.txt
+rsclimatelab.egg-info/dependency_links.txt
+rsclimatelab.egg-info/entry_points.txt
+rsclimatelab.egg-info/requires.txt
+rsclimatelab.egg-info/top_level.txt
+rsclimatelab/assets/rs_state.shp
+rsclimatelab/assets/rs_state.shx
+tests/__init__.py
