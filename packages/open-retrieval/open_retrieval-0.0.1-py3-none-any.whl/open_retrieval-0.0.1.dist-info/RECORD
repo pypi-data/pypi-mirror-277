@@ -1,0 +1,15 @@
+open_retrieval/__init__.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+open_retrieval/document_loaders.py,sha256=_UmYYJEf26zjRrbMj2ecc8fF0ELCkb1Ib39e3rs8Rs0,2983
+open_retrieval/embedding_providers.py,sha256=SZwPvmh6NwMapqtr-cO7sr9zFWRb0L2b52gWmlLqEFA,2022
+open_retrieval/retrievers.py,sha256=P3-24q1vpm1VdrZkSurYWwYt9evkVYVoFv5Tu23IW3c,1199
+open_retrieval/text_splitters.py,sha256=w0IH1m_NY0kkYwU52qbsL7jqOHyGwFwFdiPs8I82CaM,4892
+open_retrieval/vector_databases.py,sha256=Q4TCbeiUiyzplDeNpqZ-_3biNNL1u0pO6cjwIt5Ub7Q,4567
+open_retrieval/utils/classifier.py,sha256=F3Isv0MHeOTi8kZ__cS6mPuyONq-ozXsRXvy_KunsoM,1222
+open_retrieval/utils/config.py,sha256=0GvsIkOzxp0fMlJ5I1U6faoeWmpxrutVeGpoImFKY8E,725
+open_retrieval/utils/llms.py,sha256=qbYEc-afABPDx82HYBUALk127GtkYCw9VNJjFwaPCSc,482
+open_retrieval/utils/rephrasor.py,sha256=A113SFdPrI1GEB9I0p22ywy_ETnf7ZeaULCTaLgNne4,1151
+open_retrieval-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+open_retrieval-0.0.1.dist-info/METADATA,sha256=O1Ma59qLigq2wcqfvvFoFvylbSeF1ao0eetN8yxr02A,22644
+open_retrieval-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+open_retrieval-0.0.1.dist-info/top_level.txt,sha256=7O_ZWkVaqmsRzYJmd7EMOInmg4znCdVdgCik1NQgIWI,15
+open_retrieval-0.0.1.dist-info/RECORD,,
