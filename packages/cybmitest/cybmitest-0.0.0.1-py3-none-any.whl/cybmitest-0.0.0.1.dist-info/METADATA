@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: cybmitest
+Version: 0.0.0.1
+Summary: my sec test pack
+Home-page: https://google.com
+Author: uni
+Author-email: tob@gmail.com
+License: MIT
+Requires-Python: >=3.7
+
