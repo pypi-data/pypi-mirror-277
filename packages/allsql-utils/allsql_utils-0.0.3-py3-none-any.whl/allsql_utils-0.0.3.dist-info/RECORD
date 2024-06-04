@@ -1,0 +1,16 @@
+sql_utils/README.md,sha256=1-WvMCWw1gnx_-E8byfH9CP8aY95um1vlHl4DamZ1k8,1305
+sql_utils/__init__.py,sha256=lfeMZ0ay-ahhoAzOi-KmFHa7uq0ifJ48IKojM3KHkWE,184
+sql_utils/dbpools_util.py,sha256=tXqsdTQawtdZy2HEE5ibX1rEDn7dSb7L-o1vR44qT9Q,5461
+sql_utils/mdb_util.py,sha256=uBXvUXR8Vgr6ObcYbXt14Bzww5I9ULhKDZfoY39B9hY,1308
+sql_utils/mysql_operation.py,sha256=1sBVkAiSzmQMgSMBnx_08tfjRkn05HFbsZm7B3vs5TY,14077
+sql_utils/postgressql_util.py,sha256=wpm4p3pvQz9cW365lwNUr8gkeJtf_RDtjVxRZaP0dRA,2528
+sql_utils/pymssql_util.py,sha256=jLMBJKjtrvcbSj4cx1ZCV-eu0YPG-aRvEwmecyCFWXA,5450
+sql_utils/pyodbc_util.py,sha256=DIhaSJwJ59qYh5pDNdW1ClL4mUkGo8mG79PbNIHBTVk,4098
+sql_utils/sqlalchemy_util.py,sha256=h5KT-SELzUU8ruUJjR6w10Sbdq8pNv82NEz1eROUEwI,17297
+sql_utils/sqlite_operation.py,sha256=EM0UjUyKkB44bn_hSOH1hnYrEP4TiflXwfFb5Rk8BeY,6496
+sql_utils/tinydb_util.py,sha256=E-4LyJ4Bh9bTagNDZhKd28C0UHBxe7WTLsQ4fsmsHx0,405
+allsql_utils-0.0.3.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+allsql_utils-0.0.3.dist-info/METADATA,sha256=hRqkeuv9b8rH2c9mv_UPhu0oI5XxXxHUlbcKSERXLFU,2329
+allsql_utils-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+allsql_utils-0.0.3.dist-info/top_level.txt,sha256=dhk4f23GmfJAxZkDBa_R7iMp-JONLrWROyhVdiXg5VM,10
+allsql_utils-0.0.3.dist-info/RECORD,,
