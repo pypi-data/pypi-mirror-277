@@ -1,0 +1,10 @@
+LICENSE
+README.md
+script.py
+setup.py
+securejsonvault.egg-info/PKG-INFO
+securejsonvault.egg-info/SOURCES.txt
+securejsonvault.egg-info/dependency_links.txt
+securejsonvault.egg-info/entry_points.txt
+securejsonvault.egg-info/requires.txt
+securejsonvault.egg-info/top_level.txt
