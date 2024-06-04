@@ -1,0 +1,3 @@
+[console_scripts]
+command = module.submodule:function
+register = register:register

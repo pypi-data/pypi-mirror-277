@@ -1,0 +1,6 @@
+setup.py
+JaysAppManager.egg-info/PKG-INFO
+JaysAppManager.egg-info/SOURCES.txt
+JaysAppManager.egg-info/dependency_links.txt
+JaysAppManager.egg-info/entry_points.txt
+JaysAppManager.egg-info/top_level.txt
