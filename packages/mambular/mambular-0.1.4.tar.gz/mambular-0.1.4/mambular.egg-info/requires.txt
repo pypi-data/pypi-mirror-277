@@ -1,0 +1,8 @@
+numpy
+pandas
+lightning
+scikit_learn
+torch
+torchmetrics
+setuptools
+properscoring
