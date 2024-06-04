@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pansg
+Version: 0.1.0
+Summary: 
+Author: Cao Xujie
+Author-email: caocao@cau.edu.cn
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: biopython (>=1.83,<2.0)
+Requires-Dist: fire (>=0.6.0,<0.7.0)
+Requires-Dist: gffutils (>=0.13,<0.14)
+Requires-Dist: matplotlib (==3.7.2)
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: pathlib (>=1.0.1,<2.0.0)
+Requires-Dist: seaborn (>=0.13.2,<0.14.0)
+Description-Content-Type: text/markdown
+
+
