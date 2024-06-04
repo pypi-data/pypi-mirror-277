@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: rt-utils-raystation
+Version: 1.0.0
+Summary: A small library for handling masks and RT-Structs, with fixed for using with RayStation
+Home-page: https://github.com/code-lukas/rt-utils
+Author: Lukas Heine, Fabian Hörst
+Author-email: fabian.hoerst@uk-essen.de
+Keywords: RTStruct,Dicom,Pydicom
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Typing :: Typed
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydicom
+Requires-Dist: numpy
+Requires-Dist: opencv-python (>=4.0.0)
+Requires-Dist: dataclasses
+
+# Installation
+```
+pip install rt_utils
+```
+
+# Credits
+
+This work is a clone of the following repo: https://github.com/qurit/rt-utils
+For a full documentation, please check it out. 
+We just adpot this repo and introduces fixes regarding the SeriesInstanceUID to match resulting rt-struct.dcm files with corresponding MRI series. 
