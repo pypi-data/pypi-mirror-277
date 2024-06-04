@@ -1,0 +1,9 @@
+parameterized
+matplotlib
+seaborn
+pandas
+scikit-learn
+rdkit
+numpy
+tqdm
+pulp
