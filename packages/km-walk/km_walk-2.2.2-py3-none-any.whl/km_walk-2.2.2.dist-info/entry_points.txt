@@ -1,0 +1,2 @@
+[console_scripts]
+km = km.km:main
