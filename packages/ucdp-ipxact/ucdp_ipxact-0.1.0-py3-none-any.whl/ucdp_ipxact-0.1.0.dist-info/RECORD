@@ -1,0 +1,9 @@
+ucdp_ipxact-0.1.0.dist-info/METADATA,sha256=KZ0bzM_i62GNkMp0cJc-3C9CQs9tWrRZgWRq6bnczrk,1595
+ucdp_ipxact-0.1.0.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+ucdp_ipxact-0.1.0.dist-info/entry_points.txt,sha256=OSiThz7RSM152UWPC6PWSxU3Khp4n053V_AOw9p_Jz8,44
+ucdp_ipxact-0.1.0.dist-info/licenses/LICENSE,sha256=C5dC7xMg5vdkSj6eKxdnX0qszqjdI49MsHgvMhGCIq4,1067
+ucdp_ipxact/__init__.py,sha256=_U5lQgps9B_3Qmt5thDzHXEEoxHi3KHnusFpzxDBsjk,1155
+ucdp_ipxact/cli.py,sha256=JnDMCDr4IG0CyNYg_H44mECOQ8Jd_H71RS9oKzgYAZM,1659
+ucdp_ipxact/parser.py,sha256=ILpHqvcon4hN0MNwythqmyZ8KVyjKdLoF6iNFKw_ib0,1460
+ucdp_ipxact/ucdp_ipxact.py,sha256=S93aDIVRSI5p7ONONa4jqrkmKbE_Po8OvVMGgnHg7Mo,1750
+ucdp_ipxact-0.1.0.dist-info/RECORD,,
