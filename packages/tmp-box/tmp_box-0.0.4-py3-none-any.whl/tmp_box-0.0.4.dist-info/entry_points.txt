@@ -1,0 +1,2 @@
+[console_scripts]
+tmp-box = app.main:app
