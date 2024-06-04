@@ -1,0 +1,11 @@
+perfwatch/__init__.py,sha256=DygKl7yA18193suAywjkKCEwbL1v53nYkoh-NehhpvU,120
+perfwatch/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+perfwatch/src/__init__.py,sha256=sXnn1rz5dfIFKjh1PkMYwUEYfVjSH4Aq6KdqiWh8fPc,47
+perfwatch/src/network/__init__.py,sha256=t59lWja9hSjKWJu4LXqjwobWkRh2bCdEbsYA4qgHJ04,46
+perfwatch/src/network/profiler.py,sha256=2Ebk1jRn3i0dFeB7LjiGxOBPb7LrsxiOOPxYVnt7gqI,2016
+perfwatch/src/watcher.py,sha256=CsyoRN_WArcqI3sQ7-omEyONK5P80Z-aiURJAz4cmDU,5919
+perfwatch/utils/__init__.py,sha256=KUgTj2YTXtbI5nD83PuRdshFyORNlXHn-omwMr6ML8g,35
+perfwatch/utils/logger.py,sha256=A34hVjSuMDVxUrrJOYShK89gBHi84q92KnY5_z-VPg0,189
+perfwatch-1.2.0.dist-info/METADATA,sha256=slFU0lwPwsumbyOt8l2157XLnseEGKooFnNvevPTScg,1683
+perfwatch-1.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+perfwatch-1.2.0.dist-info/RECORD,,
