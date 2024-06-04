@@ -1,0 +1,10 @@
+docutils<0.18
+sphinx==2.3.1
+breathe==4.14.1
+sphinx-copybutton==0.3.0
+sphinx-notfound-page
+sphinxcontrib-wavedrom==2.0.0
+sphinxcontrib-svg2pdfconverter[CairoSVG]==1.1.0
+recommonmark
+sphinx_selective_exclude==1.0.3
+sphinx_idf_theme==0.4.1
