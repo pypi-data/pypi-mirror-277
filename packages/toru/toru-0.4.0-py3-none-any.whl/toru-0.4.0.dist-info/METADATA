@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: toru
+Version: 0.4.0
+Summary: The process of constantly commenting on print during debugging drives me crazy! So I invented this: Y=toru (x) When x equals 0, all your prints are normal When x equals 1, all your prints become invalid ----------example------------- from toru  import toru y=toru.model(0) y.print("hello") ----------example------------- Author ysw
+Home-page: UNKNOWN
+Author: S.-W. yan
+Author-email: wq543477641@gamil.com
+License: MIT
+Keywords: Print Debug easy
+Platform: UNKNOWN
+
+UNKNOWN
+
