@@ -1,0 +1,355 @@
+Metadata-Version: 2.3
+Name: nbcelltests
+Version: 0.3.0
+Summary: Cell-by-cell tests for JupyterLab
+Project-URL: Repository, https://github.com/jpmorganchase/nbcelltests
+Project-URL: Homepage, https://github.com/jpmorganchase/nbcelltests
+Author-email: The nbcelltests authors <t.paine154@gmail.com>
+License:                                  Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright 2019 nbcelltests contributors
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+License-File: AUTHORS
+License-File: LICENSE
+Keywords: Celltests,Jupyter,JupyterLab,Notebook,Notebooks,Testing,Tests
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Jupyter
+Classifier: Framework :: Jupyter :: JupyterLab
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Requires-Dist: flake8
+Requires-Dist: jupyter-server
+Requires-Dist: jupyterlab
+Requires-Dist: nbconvert
+Requires-Dist: nbformat>=4.0.0
+Requires-Dist: nbval>=0.9.1
+Requires-Dist: notebook
+Requires-Dist: parameterized
+Requires-Dist: pytest-cov
+Requires-Dist: pytest-html>=4
+Requires-Dist: pytest>=4.4.0
+Provides-Extra: develop
+Requires-Dist: check-manifest; extra == 'develop'
+Requires-Dist: isort<6,>=5; extra == 'develop'
+Requires-Dist: jupyterlab<5,>=4; extra == 'develop'
+Requires-Dist: pytest; extra == 'develop'
+Requires-Dist: pytest-cov; extra == 'develop'
+Requires-Dist: ruff<0.5,>=0.3; extra == 'develop'
+Provides-Extra: test
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Description-Content-Type: text/markdown
+
+<img src="https://raw.githubusercontent.com/jpmorganchase/nbcelltests/main/docs/logo.png" width=400></img>
+
+
+Cell-by-cell testing for production Jupyter notebooks in JupyterLab
+
+[![Build Status](https://github.com/jpmorganchase/nbcelltests/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/jpmorganchase/nbcelltests/actions?query=workflow%3A%22Build+Status%22)
+[![codecov](https://codecov.io/gh/jpmorganchase/nbcelltests/branch/main/graph/badge.svg)](https://codecov.io/gh/jpmorganchase/nbcelltests)
+[![PyPI](https://img.shields.io/pypi/l/nbcelltests.svg)](https://pypi.python.org/pypi/nbcelltests)
+[![PyPI](https://img.shields.io/pypi/v/nbcelltests.svg)](https://pypi.python.org/pypi/nbcelltests)
+[![npm](https://img.shields.io/npm/v/nbcelltests.svg)](https://www.npmjs.com/package/nbcelltests)
+
+
+# Overview
+`nbcelltests` is designed for writing tests for linearly executed notebooks. Its primary use is for unit testing reports.
+
+## Installation
+Python package installation: `pip install nbcelltests`
+
+To use in JupyterLab, you will also need the lab and server extensions. Typically, these are
+automatically installed alongside nbcelltests, so you should not need to do anything special
+to use them. The lab extension will require a rebuild of JupyterLab, which you'll be prompted
+to do on starting JupyterLab the first time after installing celltests (or you can do manually
+with `jupyter lab build`). Note that you must have node.js installed (as for any lab extension).
+
+To see what extensions you have, check the output of `jupyter labextension list` (look for
+`nbcelltests`), and `jupyter serverextension list` (look for `nbcelltests`).
+If for some reason you need to manually install the extensions, you can do so as follows:
+
+```bash
+jupyter labextension install nbcelltests
+jupyter serverextension enable --py nbcelltests
+```
+
+(Note: if using in an environment, you might wish to add `--sys-prefix` to the `serverextension` command.)
+
+## "Linearly executed notebooks?"
+When converting notebooks into html/pdf/email reports, they are executed top-to-bottom one time, and are expected to contain as little code as reasonably possible, focusing primarily on the plotting and markdown bits. Libraries for this type of thing include [Papermill](https://github.com/nteract/papermill), [JupyterLab Emails](https://github.com/timkpaine/jupyterlab_email), etc.
+
+## Doesn't this already exist?
+[Nbval](https://github.com/computationalmodelling/nbval) is a great product (we leverage it in this project) and I recommend using it for notebook regression tests. But it only allows for testing for unexpected failures or simple output equality tests.
+
+## So why do I want this again?
+This doesn't necessarily help you if your data sources go down, but its likely you'll notice this anyway. Where this comes in handy is:
+
+- when the environment (e.g. package versions) are changing in your system
+- when you play around in the notebook (e.g. nonlinear execution) but aren't sure if your reports will still generate
+- when your software lifecycle systems have a hard time dealing with notebooks (can't lint/audit them as code unless integrated nbdime/nbconvert to script, tough to test, tough to ensure what works today works tomorrow)
+
+## So what does this do?
+Given a notebook, you can write mocks and assertions for individual cells. You can then generate a testing script for this notebook, allowing you to hook it into your testing system and thereby provide unittests of your report.
+
+## Writing tests
+When you write tests for a cell, we create a new method on a `unittest` class corresponding to the index of your cell, and including the cumulative tests for all previous cells (to mimic what has happened so far in the notebook's linear execution). You can write whatever mocking and asserts you like, and can call `%cell` to inject the contents of the cell into your test.
+![](https://raw.githubusercontent.com/timkpaine/nbcelltests/main/docs/demo.gif)
+The tests themselves are stored in the cell metadata, similar to celltags, slide information, etc.
+
+## Running tests
+You can run the tests offline from an `.ipynb` file, or you can execute them from the browser and view the results of `pytest-html`'s html plugin.
+![](https://raw.githubusercontent.com/timkpaine/nbcelltests/main/docs/demo2.gif)
+
+## Extra Tests
+- Max number of lines per cell
+- Max number of cells per notebook
+- Max number of function definitions per notebook
+- Max number of class definitions per notebook
+- Percentage of cells tested
+
+## Example
+In the committed `examples/Example.ipynb` notebook, but modified so that cell 0 has its import statement copied 10 times (to trigger test and lint failures):
+
+
+### Tests
+The following output is generated by running `nbcelltests test examples/Example.ipynb`
+```bash
+examples/_Example_test.py::TestNotebook::test_cell_coverage PASSED                                                                               [ 20%]
+examples/_Example_test.py::TestNotebook::test_code_cell_1 PASSED                                                                                 [ 40%]
+examples/_Example_test.py::TestNotebook::test_code_cell_2 PASSED                                                                                 [ 60%]
+examples/_Example_test.py::TestNotebook::test_code_cell_3 PASSED                                                                                 [ 80%]
+examples/_Example_test.py::TestNotebook::test_code_cell_4 PASSED                                                                                 [100%]
+```
+### Lint
+The following output is generated by running `nbcelltests lint examples/Example.ipynb`
+
+```bash
+PASSED: Checking lines in cell (max=10; actual=2) (Cell 1)
+PASSED: Checking lines in cell (max=10; actual=1) (Cell 2)
+PASSED: Checking lines in cell (max=10; actual=1) (Cell 3)
+PASSED: Checking lines in cell (max=10; actual=1) (Cell 4)
+PASSED: Checking cells per notebook (max=10; actual=4)
+PASSED: Checking functions per notebook (max=10; actual=0)
+PASSED: Checking classes per notebook (max=10; actual=0)
+FAILED: Checking lint:
+	examples/Example.ipynb (in /var/folders/s3/1mjw0y192zg3450tkkn1yfnm0000gn/T/tmpp91li59p.py):32:1: F821 undefined name 'test3'
+	examples/Example.ipynb (in /var/folders/s3/1mjw0y192zg3450tkkn1yfnm0000gn/T/tmpp91li59p.py):32:6: W291 trailing whitespace
+```
+
+NB: In jupyterlab, notebooks will be lint checked in-process using the version of
+python that is running jupyter lab itself. A notebook intended to be
+run with a Python 2 kernel could therefore generate syntax errors
+during lint checking.
+
+## Development
+
+See [CONTRIBUTING.md](https://github.com/jpmorganchase/nbcelltests/blob/main/CONTRIBUTING.md) for guidelines.
+
+
+## License
+
+This software is licensed under the Apache 2.0 license. See the
+[LICENSE](https://github.com/jpmorganchase/nbcelltests/blob/main/LICENSE) and [AUTHORS](https://github.com/jpmorganchase/nbcelltests/blob/main/AUTHORS) files for details.
