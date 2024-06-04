@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: xapianpy
+Version: 1.4.22.post2406040406
+Summary: Meta-package to build and install xapian-bindings extension.
+Home-page: https://github.com/papermerge/xapian-bindings
+Author: Eugen Ciur
+Author-email: eugen@papermerge.com
+License: BSD
+Project-URL: Documentation, https://github.com/papermerge/xapian-bindings
+Project-URL: Source, https://github.com/papermerge/xapian-bindings
+Project-URL: Tracker, https://github.com/papermerge/xapian-bindings/issues
+Keywords: xapian,bindings
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
