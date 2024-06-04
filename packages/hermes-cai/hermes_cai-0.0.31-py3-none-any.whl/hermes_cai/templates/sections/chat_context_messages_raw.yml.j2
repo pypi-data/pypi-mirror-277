@@ -1,0 +1,9 @@
+{# Limit the number of messages for an important optimization on p99 latency for _load_yaml operation. #}
+{% set message_limit = settings.token_limit // settings.per_message_tokens_lower_bound %}
+{% for cc_msg in chat_context_messages[-message_limit:] %}
+    {% set qual_author_msg =  canonicalize_user_name(cc_msg.author) + ": " + cc_msg.text %}
+- name: "message_{{ loop.index }}"
+  raw_string: |
+    {{ settings.start_token }}{{ escape_sequences(qual_author_msg) }}{{ settings.eom }}
+    {%- set settings.start_token = settings.bom -%}
+{% endfor %}
