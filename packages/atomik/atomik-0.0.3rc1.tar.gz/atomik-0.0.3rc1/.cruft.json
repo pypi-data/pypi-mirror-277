@@ -1,0 +1,16 @@
+{
+  "template": "https://github.com/halbow/templates",
+  "commit": "2d510b8eb4b1949b1951a2486a00ebc62eafd22f",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "atomik",
+      "author": "halbow",
+      "description": "The atomik library, ...",
+      "project_directory": "atomik",
+      "python_3_version": "8",
+      "_template": "https://github.com/halbow/templates"
+    }
+  },
+  "directory": "lib_template"
+}
