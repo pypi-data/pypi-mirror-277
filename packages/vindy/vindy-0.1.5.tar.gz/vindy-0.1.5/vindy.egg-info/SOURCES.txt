@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+vindy/__init__.py
+vindy.egg-info/PKG-INFO
+vindy.egg-info/SOURCES.txt
+vindy.egg-info/dependency_links.txt
+vindy.egg-info/requires.txt
+vindy.egg-info/top_level.txt
