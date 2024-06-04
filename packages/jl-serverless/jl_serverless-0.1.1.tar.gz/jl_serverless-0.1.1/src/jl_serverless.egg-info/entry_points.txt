@@ -1,0 +1,2 @@
+[console_scripts]
+jl-serverless = jl_serverless.cli:send_script

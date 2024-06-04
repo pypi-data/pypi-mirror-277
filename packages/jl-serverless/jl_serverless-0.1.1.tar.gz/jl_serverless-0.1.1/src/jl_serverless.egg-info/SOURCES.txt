@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/jl_serverless/__init__.py
+src/jl_serverless/cli.py
+src/jl_serverless.egg-info/PKG-INFO
+src/jl_serverless.egg-info/SOURCES.txt
+src/jl_serverless.egg-info/dependency_links.txt
+src/jl_serverless.egg-info/entry_points.txt
+src/jl_serverless.egg-info/requires.txt
+src/jl_serverless.egg-info/top_level.txt
