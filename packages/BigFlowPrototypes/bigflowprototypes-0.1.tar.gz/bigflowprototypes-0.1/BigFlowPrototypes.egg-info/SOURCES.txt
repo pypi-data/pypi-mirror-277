@@ -1,0 +1,11 @@
+setup.py
+BigFlowPrototypes/DataAnalytics.py
+BigFlowPrototypes/Image.py
+BigFlowPrototypes/Linear.py
+BigFlowPrototypes/Linear_Embeded.py
+BigFlowPrototypes/__init__.py
+BigFlowPrototypes.egg-info/PKG-INFO
+BigFlowPrototypes.egg-info/SOURCES.txt
+BigFlowPrototypes.egg-info/dependency_links.txt
+BigFlowPrototypes.egg-info/requires.txt
+BigFlowPrototypes.egg-info/top_level.txt
