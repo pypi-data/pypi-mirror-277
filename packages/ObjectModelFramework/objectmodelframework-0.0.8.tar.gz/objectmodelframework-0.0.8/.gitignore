@@ -1,0 +1,7 @@
+__pycache__/
+*.pem
+*.svg
+*.xml
+*.prof
+*/desktop.ini
+render/*
