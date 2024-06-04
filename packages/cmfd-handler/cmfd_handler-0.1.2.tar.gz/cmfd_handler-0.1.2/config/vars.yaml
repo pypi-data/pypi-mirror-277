@@ -1,0 +1,40 @@
+vars:
+  lrad:
+    long_name: "Surface downward longwave radiation"
+    units: "W m-2"
+  srad:
+    long_name: "Surface downward shortwave radiation"
+    units: "W m-2"
+  wind:
+    long_name: "Near surface wind speed"
+    units: "m s-1"
+  temp:
+    long_name: "Near surface air temperature"
+    units: "K"
+  prec:
+    long_name: "Precipitation rate"
+    units: "mm hr-1"
+  shum:
+    long_name: "Near surface air specific humidity"
+    units: "kg kg-1"
+  pres:
+    long_name: "Near surface air pressure"
+    units: "Pa"
+
+out:
+  pet:
+    long_name: "Potential evapotranspiration"
+    units: "mm"
+  prec_mm:
+    long_name: "Precipitation (mm)"
+    units: "mm"
+  max_temp:
+    long_name: "Maximum temperature"
+    units: "degree_Celsius"
+  min_temp:
+    long_name: "Minimum temperature"
+    units: "degree_Celsius"
+
+
+pattern:
+  D: "{var}_CMFD_V0106_B-01_01dy_010deg_%Y01-%Y12.nc.gz"

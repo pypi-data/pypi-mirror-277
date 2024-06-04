@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "cmfd-handler"
+version = "0.1.2"
+description = ""
+authors = ["SongshGeo <songshgeo@gmail.com>"]
+readme = "README.md"
+packages = [{include = "cmfd_handler"}]
+license = "CC-BY-4.0"
+include = [
+    'config/vars.yaml',
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<4.0"
+hydra-core = "1.3.x"
+pandas = ">=1.5"
+seaborn = ">=0.12.2"
+geopandas = "~0"
+pint-xarray = ">=0.3"
+metpy = ">=1.4.0"
+cf-xarray = ">=0.8.0"
+pyet = ">=1.2.2"
+rioxarray = ">=0.13.4"
+typing-extensions = ">=4.11.0"
+loguru = ">=0.7.2"
+tqdm = ">=4.66.4"
+netcdf4 = ">=1.6.5"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.2"
+allure-pytest = "^2.13.0"
+ipykernel = "^6.21.2"
+jupyterlab = "^3.6.1"
+jupyterlab-execute-time = "^2.3.1"
+jupyterlab-lsp = "^3.10.2"
+python-lsp-server = "^1.7.1"
+flake8 = "^6.0.0"
+isort = "^5.12.0"
+nbstripout = "^0.6.1"
+pydocstyle = "^6.3.0"
+pre-commit-hooks = "^4.4.0"
+sourcery = "^1.0.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+ignore_missing_imports = true
+disable_error_code = ["misc", "override", "import-untyped"]
