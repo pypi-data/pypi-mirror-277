@@ -1,0 +1,3 @@
+[console_scripts]
+nost = nost.__main__:entrypoint
+nost-vault = nost.utils.localvaults:nostvault
