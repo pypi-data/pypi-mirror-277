@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/nexfort.egg-info/PKG-INFO
+src/nexfort.egg-info/SOURCES.txt
+src/nexfort.egg-info/dependency_links.txt
+src/nexfort.egg-info/entry_points.txt
+src/nexfort.egg-info/requires.txt
+src/nexfort.egg-info/top_level.txt
+src/sample/__init__.py
+src/sample/package_data.dat
+src/sample/simple.py
+tests/test_simple.py
