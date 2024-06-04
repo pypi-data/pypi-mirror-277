@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: py-judged
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: jacob.h.barrow
+Author-email: jacob.h.barrow@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: polars
+Requires-Dist: sympy
+
+# Py Judged
+
+## Purpose
+- Provide a way for K-12 tech students to rapidly learn
+
+## Target Fields
+- Pythonic design, competitive programming, scientific computing, data analysis, mathematics
+
+## Future
+1. Integrate with u_fancy
+2. Link numpy, pandas, and polars -> silverdog required
+3. Maintain until death
+
+## Purpose
+- Help my sons learn how to be better programmers and how to incorporate LLM communications throughout all they do!
+
+
