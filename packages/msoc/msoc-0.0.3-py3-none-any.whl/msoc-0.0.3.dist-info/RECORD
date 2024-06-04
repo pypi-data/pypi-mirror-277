@@ -1,0 +1,11 @@
+test.py,sha256=FtwQmR1rZFsXDa0RETtMG61y6oP7GQOzO4eECiXA7T0,232
+msoc/__init__.py,sha256=Q-JNA056U_FaWVs7xoVLq3EcBND5H6aRrkQDeAZYNBs,19
+msoc/exceptions.py,sha256=5nPvMUkLN8axYmpprQudAe1XnEbR12DlfUC6js-fRis,352
+msoc/msoc.py,sha256=7fyLFsb4cThVm9W1OxvYmwZ8ScxYBI9jsBI1VhI0THY,2745
+msoc/sound.py,sha256=w30eJIx9UqQYGnjfGzUf7GthlAG-3djTroHL1M56DdA,177
+msoc/engines/mp3uk.py,sha256=LJMdeIPuWGG4ywFxQf98Z8EJe6Sw8uWekP6nLWAn3Vw,1694
+msoc/engines/zaycev_net.py,sha256=uw72Nyac5YEMES52DFLCErMHmMPrS203aISKbq6EJjU,2186
+msoc-0.0.3.dist-info/METADATA,sha256=uEGriAmsxK6qXRNqWV-wF5nk_WjymOeipSAG-7dgCUY,6155
+msoc-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+msoc-0.0.3.dist-info/top_level.txt,sha256=nuqDVJTVOtrGc63_g34jAqEK8jPTZC2JVzlGAjbqBe4,10
+msoc-0.0.3.dist-info/RECORD,,
