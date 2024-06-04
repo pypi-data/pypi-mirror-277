@@ -1,0 +1,11 @@
+rwkv_simple/__init__.py,sha256=QGeV8r_wtq0rqvGwQCOSZmTBOAbnwekB63L3KOMeZvk,114
+rwkv_simple/rwkv.py,sha256=F3lHKJpTAMJAGsg0jRCPo_HsOZWF2pplOKtR9pUaoUs,19525
+rwkv_simple/tokenizer.py,sha256=MYGRwclaZ7JXwWMW9IXzvZP5ATNmscPnZ5sI-c_d9Fk,2201
+rwkv_simple/cuda/wkv6_cuda.cu,sha256=N0jLdaDtNyYxExLOm42nmI6KV9oYZ--fNL58mnlu_ec,6826
+rwkv_simple/cuda/wkv6_op.cpp,sha256=EVxxwnALte5wVWgaL0syrUnRkgZTfLEvSTp4Ygj09T8,1417
+rwkv_simple/vocab/rwkv_vocab_v20230424.txt,sha256=5t7j1OMbTVxArJlQisbHAc7vS-1oG_IWfOmpCFUryok,1093733
+rwkv_simple-0.1.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+rwkv_simple-0.1.0.dist-info/METADATA,sha256=obPKMD3QG_Q9P3y9ICpR4pE3SJ7LiUUaW4NozleYtpw,1270
+rwkv_simple-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+rwkv_simple-0.1.0.dist-info/top_level.txt,sha256=irgpjEbvBoKAkjSHVWKXRQDWH5BnmbOEZr1seJAaiZ4,12
+rwkv_simple-0.1.0.dist-info/RECORD,,
