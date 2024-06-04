@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/labthings_sangaboard/__init__.py
+src/labthings_sangaboard/server.py
+src/labthings_sangaboard.egg-info/PKG-INFO
+src/labthings_sangaboard.egg-info/SOURCES.txt
+src/labthings_sangaboard.egg-info/dependency_links.txt
+src/labthings_sangaboard.egg-info/requires.txt
+src/labthings_sangaboard.egg-info/top_level.txt

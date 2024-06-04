@@ -1,0 +1,6 @@
+labthings-fastapi
+sangaboard
+numpy
+
+[dev]
+labthings-fastapi[dev]
