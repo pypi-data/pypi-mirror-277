@@ -1,0 +1,12 @@
+site_name: Acquiring
+repo_url: https://github.com/acquiringlabs/acquiring
+repo_name: Acquiring
+
+theme:
+  name: material
+  custom_dir: material/overrides
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    scheme: default
+    primary: amber
