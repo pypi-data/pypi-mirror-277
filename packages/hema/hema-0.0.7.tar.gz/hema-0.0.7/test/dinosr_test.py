@@ -1,0 +1,1 @@
+from hema.models.DinoSR.model import DinoSR, config
