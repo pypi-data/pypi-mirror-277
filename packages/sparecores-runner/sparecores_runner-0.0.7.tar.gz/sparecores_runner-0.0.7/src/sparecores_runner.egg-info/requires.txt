@@ -1,0 +1,6 @@
+click
+pulumi
+pulumi-aws
+sparecores-crawler>=0.2.0
+sparecores-data
+sqlmodel
