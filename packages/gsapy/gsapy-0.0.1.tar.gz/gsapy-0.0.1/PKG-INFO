@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: gsapy
+Version: 0.0.1
+Summary: gsapy is a lightweight COM wrapper to allow any python programmers to interact with Oasys GSA without needing to think about the details of COM programming.
+Author: Oasys Ltd.
+Project-URL: Homepage, https://www.oasys-software.com/products/structural-suite/
+Project-URL: Documentation, https://docs.oasys-software.com/structural/gsapy/version/latest/
+Project-URL: Issues, https://www.oasys-software.com/contact-us/

@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gsapy"
+authors = [
+    {name = "Oasys Ltd."},
+]
+description = "gsapy is a lightweight COM wrapper to allow any python programmers to interact with Oasys GSA without needing to think about the details of COM programming."
+version = "0.0.1"
+
+
+[project.urls]
+Homepage = "https://www.oasys-software.com/products/structural-suite/"
+Documentation = "https://docs.oasys-software.com/structural/gsapy/version/latest/"
+Issues = "https://www.oasys-software.com/contact-us/"

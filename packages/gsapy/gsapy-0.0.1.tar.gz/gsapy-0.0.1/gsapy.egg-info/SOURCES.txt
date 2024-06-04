@@ -1,0 +1,6 @@
+pyproject.toml
+gsapy/__init__.py
+gsapy.egg-info/PKG-INFO
+gsapy.egg-info/SOURCES.txt
+gsapy.egg-info/dependency_links.txt
+gsapy.egg-info/top_level.txt
