@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+src/img_resizer_journal/__init__.py
+src/img_resizer_journal/main.py
+src/img_resizer_journal.egg-info/PKG-INFO
+src/img_resizer_journal.egg-info/SOURCES.txt
+src/img_resizer_journal.egg-info/dependency_links.txt
+src/img_resizer_journal.egg-info/top_level.txt
