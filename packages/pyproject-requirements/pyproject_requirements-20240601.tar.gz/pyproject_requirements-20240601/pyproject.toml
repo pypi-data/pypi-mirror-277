@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+dynamic = ["version"]
+name = "pyproject-requirements"
+authors = [
+    {name = "MetaCompany"},
+    {name = "Nate Skulic"},
+]
+description = "Install dependencies from a pyproject using pip."
+readme = { file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.6"
+license = { file = "LICENSE.md" , content-type = "text/markdown"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "pip",
+    "toml",
+]
+
+[tool.setuptools.dynamic]
+version = { attr = "pip_requirements.version.VERSION" }
+
+
+[tool.setuptools.packages.find]
+where = ["python"]
+#include = ["*", "themes"]
+namespaces = true
+
+
+[project.scripts]
+pip-requirements = "pip_requirements.__main__:main"

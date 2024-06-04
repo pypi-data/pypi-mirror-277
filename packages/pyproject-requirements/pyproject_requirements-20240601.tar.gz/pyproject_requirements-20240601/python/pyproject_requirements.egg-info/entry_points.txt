@@ -1,0 +1,2 @@
+[console_scripts]
+pip-requirements = pip_requirements.__main__:main

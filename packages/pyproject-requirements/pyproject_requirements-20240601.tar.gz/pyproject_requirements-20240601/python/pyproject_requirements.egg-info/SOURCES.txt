@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+python/pip_requirements/__main__.py
+python/pip_requirements/version.py
+python/pyproject_requirements.egg-info/PKG-INFO
+python/pyproject_requirements.egg-info/SOURCES.txt
+python/pyproject_requirements.egg-info/dependency_links.txt
+python/pyproject_requirements.egg-info/entry_points.txt
+python/pyproject_requirements.egg-info/requires.txt
+python/pyproject_requirements.egg-info/top_level.txt
