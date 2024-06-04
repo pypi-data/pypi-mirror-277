@@ -1,0 +1,11 @@
+auro_sensors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auro_sensors/cameras/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auro_sensors/cameras/basic_camera.py,sha256=9Phna6XL9afzakbpNpvKp4soZ2gQxiTQk8ac57PyjsM,7085
+auro_sensors/cameras/realsense_camera.py,sha256=JPdpiInrOUvComJR4-2lVxM5U9GoPpZ1sudIr7XFFBQ,19104
+auro_sensors/cameras/realsense_camera_ros1.py,sha256=qjH2FLKHeuV8qHQl_q8lkRNRvFzLo2465EsbVP5AFMo,6931
+auro_sensors/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auro_sensors/utils/aruco.py,sha256=YU1M0wAaSGzEz48ViDslJi2ebJUY4aH1mUTH5psuVTQ,6596
+auro_sensors-0.0.2.dist-info/METADATA,sha256=8sVxkvrD5qxuARP8fwjaTqLdPUoLXx84ab6rUl2Ru_M,1168
+auro_sensors-0.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+auro_sensors-0.0.2.dist-info/top_level.txt,sha256=KIovof65FKAvM2skLmnKymBPZMaq5y-v2xvd9zPV0cs,13
+auro_sensors-0.0.2.dist-info/RECORD,,
