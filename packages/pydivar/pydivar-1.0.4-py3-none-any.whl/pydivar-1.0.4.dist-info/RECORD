@@ -1,0 +1,11 @@
+pydivar/__init__.py,sha256=Go_E5_IMfH-dKNf_YVZ6ZKptI4LRJV8jqB2kyPsqCDg,65
+pydivar/detail.py,sha256=Hyge8fplsepj1pu5RmFcb9tMNbDsZNqs5N8a9yU3W_w,4496
+pydivar/list.py,sha256=0QNH7FMvdTwl3fGTgzw8NU_u2I1oa-Xb6c7ShrHFTIM,6652
+pydivar/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydivar/core/base.py,sha256=y-Y45k_AKqvdIYtxIu6cPTOPKtDwo9LM_vSlK7sfTVo,2109
+pydivar/core/info.py,sha256=KNkSnFDp06cVDXWVYJeBzhqkQ8a4JlvLIKlsPmAuFik,118603
+pydivar-1.0.4.dist-info/LICENSE,sha256=WNhrYnNz1HO6H2cGjBu5cqOm6z-WIOGhtXKsNaSy65o,1060
+pydivar-1.0.4.dist-info/METADATA,sha256=Pl4xmWYh3VRazI00eO8sbYSGBL9iDC7vykxakkdzPFY,717453
+pydivar-1.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pydivar-1.0.4.dist-info/top_level.txt,sha256=Ak2vaxzxIWP5cLKaY27jTupsB8uhkSAC9GmVmvr83ko,8
+pydivar-1.0.4.dist-info/RECORD,,
