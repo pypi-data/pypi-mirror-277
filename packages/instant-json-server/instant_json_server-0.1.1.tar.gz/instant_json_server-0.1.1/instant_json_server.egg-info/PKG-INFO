@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: instant_json_server
+Version: 0.1.1
+Summary: Package to create backend API server with all basic CRUD operations for any JSON File.
+Home-page: https://github.com/auzuha/instant_json_server
+Author: Augustine Stephens
+Author-email: auzuha@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi
+
+Package to create backend API server with all basic CRUD operations.
