@@ -1,0 +1,3 @@
+include README.md
+
+recursive-include pyiArduinoI2Cexpander *.p[xy][dx] *.h *.cpp *.py
