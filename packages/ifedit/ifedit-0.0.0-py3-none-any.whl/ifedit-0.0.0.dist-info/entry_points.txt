@@ -1,0 +1,3 @@
+[console_scripts]
+ifedit=ifedit:main
+
