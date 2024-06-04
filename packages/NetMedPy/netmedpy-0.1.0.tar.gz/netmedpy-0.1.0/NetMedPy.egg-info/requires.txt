@@ -1,0 +1,9 @@
+networkx==3.3
+ray==2.20.0
+numpy==1.26.4
+pandas==2.2.2
+
+[interactive]
+seaborn==0.13.2
+matplotlib==3.9.0
+jupyter
