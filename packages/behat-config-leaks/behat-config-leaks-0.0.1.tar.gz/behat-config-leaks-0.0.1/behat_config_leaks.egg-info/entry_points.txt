@@ -1,0 +1,2 @@
+[console_scripts]
+behat-config-leaks = behatconfigleaks.main:main
