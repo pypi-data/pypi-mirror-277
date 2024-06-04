@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pyxo
+Version: 1.0.2
+Summary: 
+Home-page: https://github.com/ouhammmourachid/pyxo
+License: MIT
+Author: ouhammmourachid
+Author-email: rachidouhammou21@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/ouhammmourachid/pyxo
+Description-Content-Type: text/markdown
+
+## Pyxo package :
+
+an easy way to create **XO game** with python.
+
+#### get staretd:
+
+* you need to install the package from the pypi by `pip install pyxo`.
+* you are ready to play you just need create a game with the building Engin and the run easy .
+
+```python
+from pyxo import Engin
+
+game:Engin = Engin()
+
+game.run()
+
+```
+
+have fun playing with your friend.
+
