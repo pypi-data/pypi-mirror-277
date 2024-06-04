@@ -1,0 +1,10 @@
+toomanycells/__init__.py,sha256=Z8ex7_7y6owDfLU53JMZfpKp49QyuUjwb_SLzFfsFy4,228
+toomanycells/common.py,sha256=iIfTMQmrHRSd1brCSCieOMLknagk0XiIylX1iLkP6YU,1649
+toomanycells/toomanycells.py,sha256=aVS1br-bfP9sLKf_lsp7HSdGXoPo7QymiIipH-ZXTfo,46652
+toomanycells/data/metadata.csv,sha256=CutIXFLm79eRrgAQWX_7vCrVwxCYsF3EHtXjdSXLhtc,51306
+toomanycells-1.0.25.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+toomanycells-1.0.25.dist-info/METADATA,sha256=0I66LHq4KmGw-TkOWjtspbZN00hZwAndGVpdCPTVJgE,13861
+toomanycells-1.0.25.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+toomanycells-1.0.25.dist-info/entry_points.txt,sha256=vmhf_NLYNodys59eHEkK9LozV7O3NRASEXg-k53MKfo,55
+toomanycells-1.0.25.dist-info/top_level.txt,sha256=LOYM2_6OAx_PdFXzeIcpzzGmN93wYQmRohfsr-9JDdM,13
+toomanycells-1.0.25.dist-info/RECORD,,
