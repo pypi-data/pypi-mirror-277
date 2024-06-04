@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "apple_metal"
+version = "0.0.1"
+authors = [
+  { name="Alois Denoiseux", email="aloisdenoiseux@gmail.com" },
+]
+description = "A python package to interact with apple's Metal API"
+readme = "README.md"
+requires-python = ">=3.1"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS :: MacOS X",
+]
