@@ -1,0 +1,14 @@
+modrinth_downloader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modrinth_downloader/api.py,sha256=3VfxJ1a8XLo-7JFIaRuASYmnv2EnyqQNiEAkXrC7djk,1528
+modrinth_downloader/downloader.py,sha256=xffmk1de5RsUKd5AkQlB1tZwcb0dqD9Z6Zf_E7NDIKY,579
+modrinth_downloader/utils.py,sha256=hRbgI5o6XboMYRxzW9K3UVWgnDhZEGg2FyLb9shbrYM,1308
+modrinth_downloader/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modrinth_downloader/scripts/config.toml,sha256=0WK2GyEUv_lsTXXtEiiiWkcR9MoTS7YEcNrYTMReZjU,174
+modrinth_downloader/scripts/run_downloader.py,sha256=BrmlwNdL7WvAXm7L-gp1ttOUadwurYySwAOGC0kV6_I,3167
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_downloader.py,sha256=wnmcut-5ZkCvYg0qcJ6p5t6gsHubwDcGwBgWg58XdZU,341
+modrinth_downloader-0.9.5.dist-info/METADATA,sha256=ERTpRhqnK5RTK7r0KCan5Si-PS-5bzBwk_AvPwiilwo,1337
+modrinth_downloader-0.9.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+modrinth_downloader-0.9.5.dist-info/entry_points.txt,sha256=XPntgp62KfcIdmPnco6oER3ypUQl33LCRuDICRJZEak,88
+modrinth_downloader-0.9.5.dist-info/top_level.txt,sha256=syq9xq5oUoPpoG8IuNV3g6fcCOHi47nId6G-A-Jrt5I,26
+modrinth_downloader-0.9.5.dist-info/RECORD,,
