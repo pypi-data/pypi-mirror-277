@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: approxy
+Version: 0.0.1a1
+Summary: Approximate vector search.
+Author-email: Keming <kemingy94@gmail.com>
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/kemingy/approxy
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy ~=1.26
+Requires-Dist: scikit-learn ~=1.4
+Provides-Extra: dev
+Requires-Dist: ruff ~=0.2.2 ; extra == 'dev'
+Requires-Dist: pytest ~=7.4 ; extra == 'dev'
+
+# Approxy
+
+Approximate vector search
