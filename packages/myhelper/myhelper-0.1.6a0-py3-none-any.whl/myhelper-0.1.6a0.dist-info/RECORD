@@ -1,0 +1,11 @@
+myhelper/__init__.py,sha256=Qmc2NfrpuDMZVCyVn-2wz9HZyjw63OY8WR9Zfq4hsS0,349
+myhelper/cli.py,sha256=l6c0TpDGb3u06L9R82GlWfjkfV4xQsZuF5agDpMi4ps,29
+myhelper/pdftk.py,sha256=aI7XDrqN4_cgbOjkPpSSHPex_IRbrb8RX9h7vI_mFpU,6185
+myhelper/utils.py,sha256=c3MCRo8ThpxZgCwyrXUVgzwWBdwenNjqdceliNtozds,1475
+myhelper/yt_dlp_helper.py,sha256=uLLdRuqtL4aJqGo2qcHLPJSu0z6i454-EunXRJRdIZs,15483
+myhelper-0.1.6a0.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+myhelper-0.1.6a0.dist-info/METADATA,sha256=EJ-imHwXTKFrzm-AH4E-lwcmNU7V7qm1UG_KBUJjJRA,4099
+myhelper-0.1.6a0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+myhelper-0.1.6a0.dist-info/entry_points.txt,sha256=bMtN-xmUE-oowus2nJh6Uq1J_TFT-wv8Q0cywridOZw,47
+myhelper-0.1.6a0.dist-info/top_level.txt,sha256=SYmvAY0GR9Exj5nry9xf__nyFd-YPpENFYrnaLKiyYA,9
+myhelper-0.1.6a0.dist-info/RECORD,,
