@@ -1,0 +1,13 @@
+vedro_jira_failed_reporter/__init__.py,sha256=7mA5c8oTo64wgprb8xQPeQf-8yQFEFVopyus144EzyM,461
+vedro_jira_failed_reporter/_failed_reporter_plugin.py,sha256=DqFofSja_Iic5AVQS64si5CwG-B3tK-y-h0Ghq5DJ7U,8945
+vedro_jira_failed_reporter/_jira_stdout.py,sha256=96IM2Hil4SbVUNUgmjeWOqyR6palvUOfXC7buYz2ON0,4314
+vedro_jira_failed_reporter/_messages.py,sha256=6_rH90rFgAMTDd6rk0kEHStXs9wBZNlWwOW0MVyZHWU,5199
+vedro_jira_failed_reporter/_traceback.py,sha256=Z270bE6doLvekwneaMLKHB_M8wH7WvsuIPuvaHJcyd8,1348
+vedro_jira_failed_reporter/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vedro_jira_failed_reporter/version,sha256=xKI4OgO9tnOdFqDiQFjkucfaTmPSA-C-L0SIaMwDxTA,6
+vedro_jira_failed_reporter/version.py,sha256=FTmTGvLAywO6yN33jb59bvfI64BSMC9VP_z2NkhzDKU,168
+vedro_jira_failed_reporter-2.2.0.dist-info/LICENSE,sha256=Xn7M3FcVKelHKiyHay1AOK6o0Epj1M44kQJasg4ATic,11347
+vedro_jira_failed_reporter-2.2.0.dist-info/METADATA,sha256=4l_DeBl1bgR847mJVpclmL7AVnvKReWcSlJE2tAR81c,1575
+vedro_jira_failed_reporter-2.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+vedro_jira_failed_reporter-2.2.0.dist-info/top_level.txt,sha256=uI9HWJfGZXdhKYP8twBMYfLvB4-YWaTc0u-zvrlaXAs,27
+vedro_jira_failed_reporter-2.2.0.dist-info/RECORD,,
