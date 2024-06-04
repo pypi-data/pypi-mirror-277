@@ -1,0 +1,42 @@
+workflow:
+  rules:
+    # Trigger to be removed after pipeline tests are done
+    - if: '$CI_PIPELINE_SOURCE == "web"'
+      when: always
+    # Trigger on MR creation
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: always
+    # Otherwise, pipeline isn't triggered
+    - when: never
+
+
+test-lint:
+  image: python:3.11
+  tags:
+    - ntb
+  script:
+    - pip install tox
+    - tox -e lint
+  allow_failure: true
+
+test-py3.11:
+  image: python:3.11
+  tags:
+    - ntb
+  before_script:
+    - apt-get update && apt-get install -y git rsync borgbackup
+  script:
+    - pip install tox
+    - tox -e py311
+  allow_failure: true
+
+test-py3.12:
+  image: python:3.12
+  tags:
+    - ntb
+  before_script:
+    - apt-get update && apt-get install -y git rsync borgbackup
+  script:
+    - pip install tox
+    - tox -e py312
+  allow_failure: true

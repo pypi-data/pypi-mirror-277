@@ -1,0 +1,47 @@
+# Maintainer: Louis Rannou
+
+python=python
+name=noSaasTrust
+
+pkgname=$python-$name
+pkgver=0.2.r20.g8eead63
+pkgrel=3
+pkgdesc="Backup fetcher"
+url=" https://gitlab.com/syslinbit/drafts/noSaasTrust"
+license=('BSD-2-Clause-Patent')
+arch=('any')
+makedepends=(python-build python-installer python-hatchling)
+depends=(python python-requests python-yaml python-cryptography)
+source=("$pkgname"::"git+https://gitlab.com/syslinbit/public/$name.git")
+md5sums=('SKIP')
+
+pkgver() {
+  cd "$srcdir/$pkgname"
+  # cutting off 'v' prefix that presents in the git tag
+  git describe --long | sed -r 's/^v//;s/([^-]*-g)/r\1/;s/-/./g'
+}
+
+build() {
+    cd "$srcdir/$pkgname"
+    python -m build --wheel --no-isolation
+}
+
+package() {
+    cd "$srcdir/$pkgname"
+    python -m installer --destdir="$pkgdir" dist/*.whl
+
+    # Install systemd filed
+    install -d -m0755 "$pkgdir"/usr/lib/systemd/system/
+    sed "s:@BINPATH@:/usr/bin:" resources/nost-system.service.in \
+        | sed "s:@CONFIGPATH@:/etc/nost.d/default.yml:" \
+        > "$pkgdir"/usr/lib/systemd/system/nost.service
+    install -D -m0644 resources/nost.timer  "$pkgdir"/usr/lib/systemd/system/nost.timer
+
+    # Install sysusers and tmpfiles
+    install -D -m0644 resources/nost.sysusers "$pkgdir"/usr/lib/sysusers.d/nosaastrust.conf
+    install -D -m0644 resources/nost.tmpfiles "$pkgdir"/usr/lib/tmpfiles.d/nosaastrust.conf
+
+    # Install system configuration and user configuration example
+    install -D -m0644 resources/nost-system.toml "$pkgdir"/etc/nost.toml
+    install -D -m0644 resources/nost-user.toml "$pkgdir"/usr/share/nosaastrust/examples/nost.toml
+}

@@ -1,0 +1,8 @@
+backuplist: [testcase1]
+
+services:
+  testcase1:
+    type: rsync
+    host: local
+    path: @TESTDIR@/data
+    files: filename
