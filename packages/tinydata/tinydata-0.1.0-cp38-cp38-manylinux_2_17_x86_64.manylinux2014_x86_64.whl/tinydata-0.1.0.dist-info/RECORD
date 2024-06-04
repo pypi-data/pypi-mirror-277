@@ -1,0 +1,8 @@
+tinydata-0.1.0.dist-info/METADATA,sha256=CPHMCtMFqAjBw5xK5dXZqOZoad-cYPVZwNkdlVu0zAo,2767
+tinydata-0.1.0.dist-info/WHEEL,sha256=AEzK96G3xlBcsQD-Ws0twRlFNgY4RQGp0Lp8uAh_1Jo,127
+tinydata-0.1.0.dist-info/entry_points.txt,sha256=zp8uKjDoo7celgDCzOaYAOnm4DmjkIDGVs3PPP2ysHM,40
+tinydata/__init__.py,sha256=QXzW3aVbiEqgw207VQEY_0uPknbiS3bW8f6jOz-j3vQ,22
+tinydata/clip.py,sha256=e3AlnACcYqZCYV-Gef7L8l5dscyxxmbrhXpm6XDjGXw,1849
+tinydata/main.py,sha256=i9sqXHYkZ6bOY7uOAhcGbSZKEfGPlTJ17N1bvpYlaJg,1522
+tinydata/tinydata.cpython-38-x86_64-linux-gnu.so,sha256=CixzZawaDW0tH-EznMNHcmU-d6z75tFfeARfBOw_1nY,6693496
+tinydata-0.1.0.dist-info/RECORD,,
