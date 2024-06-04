@@ -1,0 +1,7 @@
+setup.py
+JixianVerificationCodeEmail/__init__.py
+JixianVerificationCodeEmail/main.py
+JixianVerificationCodeEmail.egg-info/PKG-INFO
+JixianVerificationCodeEmail.egg-info/SOURCES.txt
+JixianVerificationCodeEmail.egg-info/dependency_links.txt
+JixianVerificationCodeEmail.egg-info/top_level.txt
