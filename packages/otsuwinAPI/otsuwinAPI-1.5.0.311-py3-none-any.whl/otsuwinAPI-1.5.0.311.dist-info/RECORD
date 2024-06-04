@@ -1,0 +1,11 @@
+otsuwinAPI/__init__.py,sha256=n2n9YVfXjKZ4Sf_3rxdo-jTimMjB_CILc74vspHRJIA,85
+otsuwinAPI/kernel32.py,sha256=WqMdwVtiPDx0XGZnafmXr2C4yjA9Uj4lYURB3J01Txk,763
+otsuwinAPI/user32.py,sha256=8nlJFPfkSyCj10soiGAXIz6trqwOGsqNJSgMq0bKq60,14970
+otsuwinAPI/constants/__init__.py,sha256=kCwLWsFn8mMeg17JE7l2-GxeDS9EH9G253kUMHsgdec,49
+otsuwinAPI/constants/hWndInsertAfter.py,sha256=xjPpYiUjDiA5cZhEkDn2tZID7Uh7mm03GrRBKkpNRVs,147
+otsuwinAPI/constants/nCmdShow.py,sha256=AUGYznhB0_kyPDWz7CVWW39cpb6N6jjVHQnFVp8Pots,260
+otsuwinAPI/constants/uFlags.py,sha256=Cbuw4X667sQwlsLjzEm1yiY0CxXmcOKLhzgTzkcHUEE,585
+otsuwinAPI-1.5.0.311.dist-info/METADATA,sha256=8jr_Sy4K7EHaHMrA4BDwPRPS94o72PNp0jHUcq-oCtE,269
+otsuwinAPI-1.5.0.311.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+otsuwinAPI-1.5.0.311.dist-info/top_level.txt,sha256=sYufV7NljoubV1Jpknx-yyuNp8gAQV_ptOGBlcuZNsg,11
+otsuwinAPI-1.5.0.311.dist-info/RECORD,,
