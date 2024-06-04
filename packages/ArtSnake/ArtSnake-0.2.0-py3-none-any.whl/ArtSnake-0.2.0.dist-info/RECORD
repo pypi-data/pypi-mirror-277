@@ -1,0 +1,11 @@
+ArtSnake/__init__.py,sha256=U5XMQr-J6NSZ1FFFvTi8WS6vmu1zRNeBRgUgWn3kdS8,494
+ArtSnake/adaptive_watermark_creation.py,sha256=8Rs_weA5b5ZCnkdTEWUlBB1x6wr59lfFLsRVprGyf-Y,10302
+ArtSnake/detect_watermark.py,sha256=Zcwc69_wXbePPSIMcFca-FkT6MDrAdMQ9NAFkDQG6tw,4214
+ArtSnake/insert_watermark.py,sha256=EOASL12VrXJHmzi6rPJaIltReX56UoOEXh005DCs1eE,7002
+ArtSnake/measure_diff.py,sha256=687Ld3EKq6CYGyBQJ06cqf-R8z6QNIvUDNRuLXxE4_k,2474
+ArtSnake/poison_image.py,sha256=ttrio9VJ_eH1Cl5C6Fgl-Vr5swTbJX3zmY6gQARsYGk,487
+ArtSnake/remove_watermarks.py,sha256=RBv6gF9kZCS2PDJ4DNBE34_AmqMTSiwcwC3KVjPpum4,3960
+ArtSnake-0.2.0.dist-info/METADATA,sha256=iEl7f7nBhjuQe03lTBFhxGTTxaBCBOk2_h2x9WHO968,4091
+ArtSnake-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ArtSnake-0.2.0.dist-info/top_level.txt,sha256=r6o0cDlYK0YyCD86y7t4XrzO3nINqw7EaHMriV76LH0,9
+ArtSnake-0.2.0.dist-info/RECORD,,
