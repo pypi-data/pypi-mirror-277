@@ -1,0 +1,21 @@
+0.0.5 (2025-06-03)
+------------------
+ - fixed missing template default.txt
+
+0.0.4 (2025-06-03)
+------------------
+ - moved sitemap configuration to the template - keep it simple
+
+0.0.3 (2024-05-31)
+------------------
+ - response in PLAIN TEXT.
+
+0.0.2 (2024-05-23)
+------------------
+ - use Django template rather than custom root.
+
+
+0.0.1 (2024-05-23)
+------------------
+
+ - initial release

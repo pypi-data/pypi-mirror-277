@@ -1,0 +1,3 @@
+# Robots template: "{{ template }}" could not be found. Using default
+User-agent: *
+Disallow: /
