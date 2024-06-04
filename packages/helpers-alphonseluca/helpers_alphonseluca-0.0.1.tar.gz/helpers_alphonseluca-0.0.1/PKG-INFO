@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: helpers_alphonseluca
+Version: 0.0.1
+Summary: a lot of helpers
+Author-email: alphonse luca <alphonseluca@163.com>
+Project-URL: Homepage, https://github.com/Zoneee/py_helpers
+Project-URL: Issues, https://github.com/Zoneee/py_helpers/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# description
+a lot of helpers.
+
+# helpers
+
+## csv_helper
+__all__ = ["save", "create", "appendRow", "appendRows"]
+
+## logger_helper
+__all__ = ["loggerHelper"]
+including a `createLogger` function
+
+## path_helper
+__all__ = ["ensurePathExist", "ensureDirExist"]
+
+## time_helper
+__all__ = ["toTimestamp", "parseDate"]
