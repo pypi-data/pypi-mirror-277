@@ -1,0 +1,9 @@
+zipnn/__init__.py,sha256=q7pnY9giYRsJW7wzc43uCEXmISTFbWh-RxshnELjwVg,25
+zipnn/util_header.py,sha256=dN7HfanDxiCJY8zMbvKXdf8LXnj79UwgZ7wWZrPYCMA,2190
+zipnn/util_torch.py,sha256=u41DnM5UvwTM8hhuQ64Uiy2cCwBJKob2xf8Vq4yxDJU,9504
+zipnn/zipnn.py,sha256=9N2QsJxSSTJUCSI0VSGlFWqamoD8K-nYkXwAujVXZ3c,32086
+zipnn-0.1.1.dist-info/LICENSE.txt,sha256=W7SO6tO8xWE_rk2KWakkjpo4KPLC2M93LFQ_LS0a7ow,1130
+zipnn-0.1.1.dist-info/METADATA,sha256=-ilb-Bf5Swfh555FQ_P4cIhIcXBSY6tFLFy6qr3JZLI,6062
+zipnn-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+zipnn-0.1.1.dist-info/top_level.txt,sha256=JNOY9XDCtMnkIiYM43HFaeWo6GTGGqFIeINd28I0U_o,6
+zipnn-0.1.1.dist-info/RECORD,,
