@@ -1,0 +1,3 @@
+[console_scripts]
+jour=jour.__main__:main
+
