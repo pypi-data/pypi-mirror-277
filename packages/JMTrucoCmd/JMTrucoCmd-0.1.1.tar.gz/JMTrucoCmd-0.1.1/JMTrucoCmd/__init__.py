@@ -1,0 +1,1 @@
+from JMTrucoCmd.truco import Truco

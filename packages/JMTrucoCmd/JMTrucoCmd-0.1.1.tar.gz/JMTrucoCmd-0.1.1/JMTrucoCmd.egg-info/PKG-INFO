@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: JMTrucoCmd
+Version: 0.1.1
+Summary: Esta es la descripcion del truco
+Home-page: https://github.com/JoaquinMorais/JMTrucoCmd
+Download-URL: https://github.com/JoaquinMorais/JMTrucoCmd/tarball/v0.1
+Author: Joaquin Morais
+Author-email: joaquinmoraislussary@gmail.com
+License: MIT
+Keywords: testing,logging,example
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# JMTruco-cmd
+## Prueba

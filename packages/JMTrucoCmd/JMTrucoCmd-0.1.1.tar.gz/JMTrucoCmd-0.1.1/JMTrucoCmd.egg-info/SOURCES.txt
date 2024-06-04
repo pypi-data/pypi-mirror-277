@@ -1,0 +1,8 @@
+README.md
+setup.py
+JMTrucoCmd/__init__.py
+JMTrucoCmd/truco.py
+JMTrucoCmd.egg-info/PKG-INFO
+JMTrucoCmd.egg-info/SOURCES.txt
+JMTrucoCmd.egg-info/dependency_links.txt
+JMTrucoCmd.egg-info/top_level.txt
