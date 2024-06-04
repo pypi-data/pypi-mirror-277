@@ -1,0 +1,3 @@
+[console_scripts]
+fis-tool=fis_tool.main:main
+
