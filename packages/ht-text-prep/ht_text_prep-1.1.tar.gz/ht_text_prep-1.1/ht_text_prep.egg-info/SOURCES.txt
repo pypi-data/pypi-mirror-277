@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+ht_text_prep/__init__.py
+ht_text_prep.egg-info/PKG-INFO
+ht_text_prep.egg-info/SOURCES.txt
+ht_text_prep.egg-info/dependency_links.txt
+ht_text_prep.egg-info/top_level.txt
