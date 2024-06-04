@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: testcore
+Version: 0.0.2
+Summary: Python Boilerplate contains all the boilerplate you need to create a Python package.
+Author-email: Alex Evangelou <admin@example.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/alexevag/testcore
+Keywords: testcore
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Provides-Extra: all
+Requires-Dist: testcore[extra]; extra == "all"
+Provides-Extra: extra
+Requires-Dist: pandas; extra == "extra"
+
+# testcore
+State control system for automated, high-throughput behavioral training based on Python. 
+It is tightly integrated with Database storage & control using the [Datajoint] framework. 
+It can run on Linux, MacOS, Windows and it is optimized for use with Raspberry pi boards. 
+
+
+[![image](https://img.shields.io/pypi/v/testcore.svg)](https://pypi.python.org/pypi/testcore)
+[![image](https://img.shields.io/conda/vn/conda-forge/testcore.svg)](https://anaconda.org/conda-forge/testcore)
+
+
+**Python Boilerplate contains all the boilerplate you need to create a Python package.**
+
+
+-   Free software: MIT License
+-   Documentation: https://alexevag.github.io/testcore
+    
+
+## Features
+
+-   TODO
