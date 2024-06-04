@@ -1,0 +1,15 @@
+{# This file contains global settings used across all production templates. #}
+
+{%- macro init_settings(ns) -%}
+    {%- set ns.bod = "<|beginningofdialog|>" -%}
+    {%- set ns.bom = "<|beginningofmessage|>" -%}
+    {%- set ns.eom = "<|endofmessage|>" -%}
+    {# Use this to represent explicit whitespace at the beginning or end of `raw_string`.#}
+    {%- set ns.space = "<|space|>" -%}
+    {# `start_token` ensures we don't add a BOM to the first message after timestamp.#}
+    {%- set ns.start_token = ns.space -%}
+    {# 3840 is the default token limit for production model. #}
+    {%- set ns.token_limit = token_limit | default(3840) -%}
+    {# 20 is the practical lower bound for length of a message. #}
+    {%- set ns.per_message_tokens_lower_bound = 20 -%}
+{%- endmacro -%}
