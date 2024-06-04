@@ -1,0 +1,23 @@
+backuplist: ["website"]
+services:
+  endi:
+    type: ssh
+  tracim:
+    type: webdav
+    auth:
+      user: username
+      password: password
+    host: URL
+    path: /
+  website:
+    type: rsync
+    auth: None
+    host: local
+    path: path/to/files
+  gitlab:
+    type: gitlab_api
+    auth:
+      PAT: PAT
+      user: user
+    group_id: number
+    host: https://gitlab.com

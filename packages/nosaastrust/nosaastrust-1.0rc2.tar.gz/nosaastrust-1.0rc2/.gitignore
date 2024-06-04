@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+env/
+build/
+dist/
+
+# Unit test / coverage reports
+.tox/
+**/.pytest_cache/
+**/.cache
+**/.config
+
+# Sphinx documentation
+docs/_build/
+
+# emacs
+*~
+\#*\#

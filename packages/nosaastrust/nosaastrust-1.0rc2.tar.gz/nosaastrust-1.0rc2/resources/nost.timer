@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+# SPDX-FileCopyrightText: 2023 Syslinbit <contact@syslinbit.com>
+
+[Unit]
+Description=Execute NoSaasTrust every week
+
+[Timer]
+OnCalendar=weekly
+# If timer needs to be run on specific date
+# Comment line above and uncomment line below
+#OnCalendar=Mon 01:00:00
+Persistent=true
+AccuracySec=1h
+
+[Install]
+WantedBy=timers.target
