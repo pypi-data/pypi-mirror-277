@@ -1,0 +1,11 @@
+ipympl
+ipywidgets
+jupyter_contrib_nbextensions
+traitlets<5.10
+geopandas
+geopy
+openpyxl
+pandas
+PyYAML
+scipy
+shapely
