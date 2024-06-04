@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "sqlalchemy_uow"
+version = "1.0.1"
+description = "Unit of Work for SQLAlchemy project"
+authors = [
+    "Barbara Jesacher <barbarajesacher@icloud.com>",
+]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+hydra-core = "^1.1.1"
+
+[tool.poetry.group.dev.dependencies]
+SQLAlchemy = "^2.0.30"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = [
+    '--verbose',
+    '--durations=10',
+    '--color=yes',
+    '-s',
+    '-vv',
+    '--doctest-modules',
+    '--cov=src/sqlalchemy_uow',
+    '-n 2',
+]
+xfail_strict = true
+filterwarnings = ["ignore"]
+log_cli_level = "info"
+testpaths = ["tests", "src/sqlalchemy_uow"]
+
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+exclude = '''
+/(
+	\.git
+| \.hg
+| \.mypy_cache
+| \.tox
+| \.venv
+| _build
+| buck-out
+| build
+)/
+'''
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
