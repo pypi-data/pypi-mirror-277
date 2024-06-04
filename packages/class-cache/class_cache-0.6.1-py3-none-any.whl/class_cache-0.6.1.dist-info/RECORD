@@ -1,0 +1,10 @@
+class_cache/__init__.py,sha256=kAMSsE8EiPqPMpHSI7snRq2SwIvV0_b1TTdsctbKYFA,175
+class_cache/backends.py,sha256=7uUe2EVdVfnvFiaJDWLfMiDqItqydctCauLF5s81Bys,8886
+class_cache/core.py,sha256=rs9jb8sZwP4B9eW7SgSPqV49LkIuEcdzyyjlo7i6z7c,3626
+class_cache/types.py,sha256=lumeRIUyqGBCFyLOMpkDiWQEP1NWgiHhcUb3SmX-feU,2069
+class_cache/utils.py,sha256=gwGlwkXmGGJdQF1voBIBK9U0y9WhL1lKix4MwC-RLSs,310
+class_cache/wrappers.py,sha256=C6FG-KMmb5DKXSA0lQUgHhaxta3LJqsoRy4OZaDniNA,2789
+class_cache-0.6.1.dist-info/LICENSE,sha256=XUpLiSC7Kf3bTu873_NPuvQuZjpUvcjWsJV-0wpCHPI,1070
+class_cache-0.6.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+class_cache-0.6.1.dist-info/METADATA,sha256=TfZ-QYSAjbqd8TAosVcCEnCi4qO489r6A0AgCnkHGaY,4567
+class_cache-0.6.1.dist-info/RECORD,,
