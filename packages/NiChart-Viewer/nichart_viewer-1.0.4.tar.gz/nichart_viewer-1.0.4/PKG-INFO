@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: NiChart_Viewer
+Version: 1.0.4
+Summary: Viewer to visualize neuroimaging chart (NiChart) image descriptors and biomarkers
+Home-page: https://github.com/CBICA/NiChart_Viewer
+Author: Guray Erus, Ashish Singh, George Aidinis
+Author-email: guray.erus@pennmedicine.upenn.edu, Ashish.Singh@pennmedicine.upenn.edu, George.Aidinis@pennmedicine.upenn.edu
+License: MIT
+Project-URL: Documentation, https://github.com/CBICA/NiChart_Viewer
+Project-URL: Source, https://github.com/CBICA/NiChart_Viewer
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.8,<3.11
+License-File: LICENSE
+Requires-Dist: briefcase<0.4.0,>=0.3.5
+Requires-Dist: cycler
+Requires-Dist: joblib
+Requires-Dist: MarkupSafe
+Requires-Dist: matplotlib<4.0.0,>=3.4.2
+Requires-Dist: nibabel<4.0.0,>=3.2.1
+Requires-Dist: numpy<2.0.0,>=1.21
+Requires-Dist: pandas==2.0.1
+Requires-Dist: Pillow<10.0.0,>=9.0.0
+Requires-Dist: pyparsing<3.0.0,>=2.4.7
+Requires-Dist: PyQt5<6.0.0,>=5.15.4
+Requires-Dist: PyQt5_Qt5<6.0.0,>=5.15.2
+Requires-Dist: PyQt5_sip<13.0.0,>=12.9.0
+Requires-Dist: dill<0.4.0,>=0.3.4
+Requires-Dist: python_dateutil<3.0.0,>=2.8.1
+Requires-Dist: pytz<2022.0,>=2021.1
+Requires-Dist: scikit_learn<2.0.0,>=1.0.2
+Requires-Dist: scipy<2.0.0,>=1.6.3
+Requires-Dist: seaborn==0.12.2
+Requires-Dist: six<2.0.0,>=1.16.0
+Requires-Dist: statsmodels<0.14.0,>=0.13.0
+Requires-Dist: Yapsy<2.0.0,>=1.12.2
+Requires-Dist: Jinja2<3.0.0,>=2.11.3
+Requires-Dist: pytest==7.0.1
+Requires-Dist: pytest-qt==4.0.2
