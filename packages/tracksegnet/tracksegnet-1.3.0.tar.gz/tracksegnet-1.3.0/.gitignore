@@ -1,0 +1,18 @@
+# Python cache files:
+__pycache__
+
+# pycharm:
+.idea/
+
+# python env:
+tracksegnet-env/
+
+# Generated files:
+results/
+
+# readthedocs:
+docs/build/
+
+# create python package:
+TrackSegNet.egg-info
+dist/
