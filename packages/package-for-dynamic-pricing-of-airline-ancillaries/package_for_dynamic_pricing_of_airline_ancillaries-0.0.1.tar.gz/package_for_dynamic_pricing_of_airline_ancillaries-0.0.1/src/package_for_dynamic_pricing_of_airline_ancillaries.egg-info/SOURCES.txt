@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/package_for_dynamic_pricing_of_airline_ancillaries/MultipleAncillaryProductsNonlinearDemand.py
+src/package_for_dynamic_pricing_of_airline_ancillaries/__init__.py
+src/package_for_dynamic_pricing_of_airline_ancillaries.egg-info/PKG-INFO
+src/package_for_dynamic_pricing_of_airline_ancillaries.egg-info/SOURCES.txt
+src/package_for_dynamic_pricing_of_airline_ancillaries.egg-info/dependency_links.txt
+src/package_for_dynamic_pricing_of_airline_ancillaries.egg-info/top_level.txt
