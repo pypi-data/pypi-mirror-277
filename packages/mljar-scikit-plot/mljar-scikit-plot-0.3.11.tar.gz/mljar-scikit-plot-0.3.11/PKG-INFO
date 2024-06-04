@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: mljar-scikit-plot
+Version: 0.3.11
+Summary: An intuitive library to add plotting functionality to scikit-learn objects.
+Home-page: https://github.com/mljar/mljar-scikit-plot
+Author: MLJAR Sp. z o.o.
+Author-email: contact@mljar.com
+License: MIT License
+Platform: any
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.9
+Provides-Extra: testing
+License-File: LICENSE
+
+# Welcome to mljar-scikit-plot
+
+Fork of https://github.com/reiinakano/scikit-plot
+
