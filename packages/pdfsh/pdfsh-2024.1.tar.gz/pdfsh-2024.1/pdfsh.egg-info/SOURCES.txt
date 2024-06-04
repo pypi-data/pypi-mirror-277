@@ -1,0 +1,9 @@
+LICENSE
+LICENSE.pdfminer.six
+README.md
+setup.py
+pdfsh.egg-info/PKG-INFO
+pdfsh.egg-info/SOURCES.txt
+pdfsh.egg-info/dependency_links.txt
+pdfsh.egg-info/entry_points.txt
+pdfsh.egg-info/top_level.txt
