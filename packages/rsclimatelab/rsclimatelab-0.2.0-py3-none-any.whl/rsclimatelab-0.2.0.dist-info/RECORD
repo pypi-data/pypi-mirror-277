@@ -1,0 +1,13 @@
+rsclimatelab/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rsclimatelab/cli.py,sha256=xhoK8-o7GlXO06YjsmYB9a-oSeERDYsXXlkCCoMlQWU,5088
+rsclimatelab/dask_util.py,sha256=O5pkRL2eotomEc4k2XR0RDJVFarafcb1P7eNASDmcRE,474
+rsclimatelab/ecmwf.py,sha256=x4Bzl1QuTBuK6T-1IuwPhIp_LJPiCdS5UtPf04Exu7w,1596
+rsclimatelab/assets/rs_state.shp,sha256=qxTnuQrtYSCLnnmroP9snbCRgRGq_tTh3Bs0UmHZk0A,35068
+rsclimatelab/assets/rs_state.shx,sha256=ZFscbkhCMS5Ndk5owLAOzC4bVRif86J1oq3JM-zQ_m4,108
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rsclimatelab-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+rsclimatelab-0.2.0.dist-info/METADATA,sha256=dTfTV2nUnQtQHOuJpiqmOcYmB-MJtYbhIhHMUgWt6KA,1315
+rsclimatelab-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+rsclimatelab-0.2.0.dist-info/entry_points.txt,sha256=kcKuGYJD3Xy0NoX2c8VQpIYh5ROc-hqsZELuPlkDLXs,46
+rsclimatelab-0.2.0.dist-info/top_level.txt,sha256=Bq7GwhaL1ioLiJPzB_Rj3K_f0U9xL1Vt6idDTmLJj3g,19
+rsclimatelab-0.2.0.dist-info/RECORD,,
