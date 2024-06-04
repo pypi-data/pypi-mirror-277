@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "nbpretty"
+version = "0.3.3"
+description = "A tool to convert sets of Jupyter notebook files into a single, cohesive set of linked pages"
+authors = ["Matt Williams <matt@milliams.com>"]
+license = "MIT"
+readme = "README.rst"
+repository = "https://gitlab.com/milliams/nbpretty"
+documentation = "https://nbpretty.readthedocs.io"
+
+[tool.poetry.scripts]
+nbpretty = "nbpretty:main"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+PyYAML = "^6.0"
+nbconvert = "^7.0"
+click = "^8.0"
+rich = "^13.0"
+livereload = "^2.0"
+ipython = "^8.0"
+jinja2 = "^3.1"
+markupsafe = "^2.1.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.0.0"
+beautifulsoup4 = "^4.0.0"
+mypy = "^1.0"
+types-PyYAML = "^6.0"
+sphinx = "^4.0.0"
+sphinx-autobuild = "^2021.3.0"
+coverage = "^7.0"
+sphinx-book-theme = "^1.0"
+nbclient = "^0.6"
+ipykernel = "^6.15"
+interactive-system-magic = "^0.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
