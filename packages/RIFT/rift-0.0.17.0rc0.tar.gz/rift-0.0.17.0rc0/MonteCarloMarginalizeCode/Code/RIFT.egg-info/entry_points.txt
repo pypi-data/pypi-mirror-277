@@ -1,0 +1,2 @@
+[asimov.pipelines]
+rift = RIFT.asimov.rift:Rift
