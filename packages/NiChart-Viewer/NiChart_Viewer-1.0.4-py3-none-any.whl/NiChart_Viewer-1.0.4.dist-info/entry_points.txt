@@ -1,0 +1,2 @@
+[console_scripts]
+NiChart_Viewer = NiChart_Viewer:main
