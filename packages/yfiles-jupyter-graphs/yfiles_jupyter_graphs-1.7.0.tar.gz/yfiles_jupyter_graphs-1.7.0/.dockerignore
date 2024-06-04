@@ -1,0 +1,14 @@
+.git*
+.venv
+.env
+coverage
+dist
+docs
+examples
+*_extension_tutorial
+lib
+node_modules
+*.egg-info
+**/__pycache__/
+*.pyc
+*.pyo

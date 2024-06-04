@@ -1,0 +1,7 @@
+name: yfiles_jupyter_graphs_use_39
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - jupyterlab
+  - jupyter_server

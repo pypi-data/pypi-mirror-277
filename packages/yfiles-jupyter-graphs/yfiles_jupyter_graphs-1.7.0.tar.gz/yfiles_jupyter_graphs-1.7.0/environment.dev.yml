@@ -1,0 +1,8 @@
+name: yjg-dev
+channels:
+  - conda-forge
+dependencies:
+  - nodejs
+  - python
+  - jupyterlab=4.0.11
+  - build

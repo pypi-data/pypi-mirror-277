@@ -1,0 +1,29 @@
+swagger: "2.0"
+info:
+  title: "License Generator"
+  description: "License Generator"
+  version: "1.0.0"
+host: "localhost:8080"
+schemes:
+  - https
+  - http
+paths:
+  /generate-digest:
+    post:
+      summary: "Generates a message digest (digital signature)"
+      description: "Takes as input a JSON object keys and values and returns a message digest as output."
+      parameters:
+        - name: "jsonInput"
+          in: "body"
+          description: "JSON object whose keys and values are to be used in generating the message digest"
+          required: true
+          schema:
+            type: "object"
+            additionalProperties: true
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "string"
+        "400":
+          description: "Invalid input"

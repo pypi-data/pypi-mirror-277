@@ -1,0 +1,7 @@
+name: yfiles_jupyter_graphs_build
+channels:
+  - conda-forge
+dependencies:
+  - nodejs
+  - python
+  - build

@@ -1,0 +1,19 @@
+###
+
+# curl -X 'POST'
+#  'https://localhost:8080/generate-digest'
+#  -H 'accept: application/json'
+#  -H 'Content-Type: application/json'
+#  -d '{
+#  "name": "peter"
+#}'
+POST http://localhost:8080/generate-digest
+accept: application/json
+Content-Type: application/json
+
+{
+  "name": "peter"
+}
+
+###
+
