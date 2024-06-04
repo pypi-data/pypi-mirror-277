@@ -1,0 +1,9 @@
+COPYING
+README.md
+setup.py
+cscript/__init__.py
+cscript.egg-info/PKG-INFO
+cscript.egg-info/SOURCES.txt
+cscript.egg-info/dependency_links.txt
+cscript.egg-info/requires.txt
+cscript.egg-info/top_level.txt
