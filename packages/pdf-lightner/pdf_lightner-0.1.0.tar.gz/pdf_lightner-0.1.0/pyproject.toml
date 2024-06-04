@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "pdf-lightner"
+version = "0.1.0"
+description = "To make annotations in pdf clearer"
+authors = ["ldevillez <louis.devillez@gmail.com>"]
+license = "GNUGPL"
+readme = "README.md"
+homepage = "https://github.com/ldevillez/pdf_lightner"
+repository = "https://github.com/ldevillez/pdf_lightner"
+
+packages = [
+  {include = "pdf_lightner"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+PyMuPDF = "^1.24.5"
+click = "^8.1.7"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+pylint = "^2.16.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pdf_lightner = "pdf_lightner.main:cli"

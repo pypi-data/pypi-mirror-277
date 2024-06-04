@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pdf-lightner
+Version: 0.1.0
+Summary: To make annotations in pdf clearer
+Home-page: https://github.com/ldevillez/pdf_lightner
+License: GNUGPL
+Author: ldevillez
+Author-email: louis.devillez@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: PyMuPDF (>=1.24.5,<2.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Project-URL: Repository, https://github.com/ldevillez/pdf_lightner
+Description-Content-Type: text/markdown
+
+# pdf_lightner
+
+Lighten the annotations inside a pdf
+
+## Why do I need to lighten my annotations ?
+
+[Okular](https://okular.kde.org/fr/) will use
+
+
+### Before
+![Note before](img/Note_before.png)
+![Caret before](img/Caret_before.png)
+
+### After
+![Note before](img/Note_after.png)
+![Caret before](img/Caret_after.png)
+
