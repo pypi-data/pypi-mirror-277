@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "arcade-ai"
+version = "0.0.1"
+description = "Arcade AI package"
+authors = ["Sam Partee <Partees21@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "arcade", from = "." },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
