@@ -1,0 +1,15 @@
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/dataapi_test.py,sha256=Gat8ef3G3BwqD_58tcSM71Lcgjik2Cy0iI5qsg-0vAk,1146
+test/token_test.py,sha256=TuQYKbKOUyvC2tueEIAxJQ8Yasi9TA0awbcS2FJXFK0,171
+xcsc_dataapi/VERSION.txt,sha256=nXE_EpedYoeSULwKIDXj71cxWsQlHoUBnSHHXtcmlyA,5
+xcsc_dataapi/__init__.py,sha256=90OH1n-4jg3gX97HmQYg3AvrulQMMGsohRpKoR0D6rg,222
+xcsc_dataapi/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xcsc_dataapi/data/client.py,sha256=t3Vofx8_CFcw3jMPj1a81j23S9jL6UPKrI92Vq7vWig,3208
+xcsc_dataapi/data/token.py,sha256=VGX_7JEDZFX7quAmhBtW4HzUgEVgwvh0KituuMnqAIY,3223
+xcsc_dataapi/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xcsc_dataapi/util/sm4_cbc_util.py,sha256=D-3e09scJMuHCFCbE16lm7fmou0QS1n1KTvyYaqpL0w,1229
+xcsc_dataapi/util/unsafe_renegotiation_adapter.py,sha256=DR2XD3kuk8vpnTD5W8CEyptITaEOzoww0j-ftSgMFcg,768
+xcsc_dataapi-1.0.5.dist-info/METADATA,sha256=RUJH5A9tmtr1FdPL_glZRWkUok92IlfF3i6gq5iSzbI,885
+xcsc_dataapi-1.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+xcsc_dataapi-1.0.5.dist-info/top_level.txt,sha256=1sZaz-N86Xj74gvTQtvzX4gOgMfe_AU8ex7kHq5p96g,18
+xcsc_dataapi-1.0.5.dist-info/RECORD,,
