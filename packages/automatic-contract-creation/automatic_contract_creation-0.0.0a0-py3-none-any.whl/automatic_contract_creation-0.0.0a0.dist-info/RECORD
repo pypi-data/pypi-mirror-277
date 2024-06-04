@@ -1,0 +1,16 @@
+automatic_contract_creation/__init__.py,sha256=i9YKbRVNE1p3OGk-G5uNeJU3lqkqQZ8BlMLk-ArNeE8,166
+automatic_contract_creation/scr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+automatic_contract_creation/scr/connectors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+automatic_contract_creation/scr/connectors/click_connect.py,sha256=EP0D9MmUtYNx45PAsi8kZgCIBHvn5oQb_4veL705T0Y,1389
+automatic_contract_creation/scr/connectors/connection_manager.py,sha256=no4Mc63CjXbL9j5oGpJ00G4Ek2CjwHh0uL6ZhclX6-0,1135
+automatic_contract_creation/scr/connectors/connectors.py,sha256=xkfdeCaO6cE7CmkHGr5meMj1635PUggV-b1Cog0RSqg,887
+automatic_contract_creation/scr/connectors/trino_connector.py,sha256=kFnJqLqfW8cHnfpKmnoImDhf8OtIaQs7COzWGOZcnTI,2454
+automatic_contract_creation/scr/generators/__init__.py,sha256=6uuAKy2hzwvyHoi8L5FOuFnzp8OUavROFA6FIhfeQdk,43
+automatic_contract_creation/scr/generators/contract_variable.py,sha256=lNzN2hzFtibEhfMfLDl5f9gG4nHofc7K0gY70-krbxE,5033
+automatic_contract_creation/scr/generators/soda_generator.py,sha256=rgyHL8N-z5v-4-d4pBV1yp2J7xdMygREeQo5xUOeLuE,2489
+automatic_contract_creation/scr/profilers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+automatic_contract_creation/scr/profilers/profiler.py,sha256=Lkv6PAvDaWE_bpS0BBFPlZpW3G_mRWSxzGZJNCo_rAI,6167
+automatic_contract_creation-0.0.0a0.dist-info/METADATA,sha256=gh97eaMRt1ZdbQFPM2uAksqpa1934bWgwDtQd73IZG8,398
+automatic_contract_creation-0.0.0a0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+automatic_contract_creation-0.0.0a0.dist-info/top_level.txt,sha256=XNshztro3g4dtCfvDI0SKYQCqcc7z6FORwdJ-02Q73I,28
+automatic_contract_creation-0.0.0a0.dist-info/RECORD,,
