@@ -1,0 +1,2 @@
+[console_scripts]
+admetool = admetool.app:main
