@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "locomotivecms"
+authors = [{ name = "Akretion", email = "contact@akretion.com" }]
+licence = "GNU Affero General Public License v3.0 or later"
+description = "Client for locomotivecms"
+dependencies = ["requests"]
+readme = "README.rst" 
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/shopinvader/locomotivecms-python-client/"
+
+[tool.hatch.version]
+source = "vcs"
