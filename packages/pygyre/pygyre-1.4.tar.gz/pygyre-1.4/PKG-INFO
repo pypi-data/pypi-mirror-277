@@ -1,0 +1,47 @@
+Metadata-Version: 2.3
+Name: pygyre
+Version: 1.4
+Summary: Python support for the GYRE stellar oscillation code
+Project-URL: Documentation, https://pygyre.readthedocs.org
+Project-URL: Repository, https://github.com/rhdtownsend/pygyre/
+Project-URL: Issues, https://github.com/rhdtownsend/pygyre/issues
+Author-email: Rich Townsend <rhtownsend@wisc.edu>
+License-File: COPYING
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: astropy>=5.3.2
+Requires-Dist: h5py>=3.9.0
+Requires-Dist: numpy>=1.15.0
+Description-Content-Type: text/x-rst
+
+#########################
+The PyGYRE Python Package
+#########################
+
+.. image:: https://img.shields.io/github/license/rhdtownsend/pygyre
+   :alt: GitHub
+   :target: https://github.com/rhdtownsend/pygyre/blob/main/COPYING
+.. image:: https://img.shields.io/github/v/release/rhdtownsend/pygyre
+   :alt: GitHub release (latest by date)
+   :target: https://github.com/rhdtownsend/pygyre/releases/latest
+.. image:: https://img.shields.io/github/issues/rhdtownsend/pygyre
+   :alt: GitHub issues
+   :target: https://github.com/rhdtownsend/pygyre/issues
+.. image:: https://img.shields.io/readthedocs/pygyre
+   :alt: Read the Docs
+   :target: https://pygyre.readthedocs.io/en/stable
+
+Overview
+========
+	    
+PyGYRE is a Python package that provides support for the `GYRE stellar
+oscillation code <https://github.com/rhdtownsend/gyre>`__.
+
+Documentation
+=============
+
+Full documentation for PyGYRE, including installation instructions,
+can be found at https://pygyre.readthedocs.io/en/stable.
