@@ -1,0 +1,107 @@
+Metadata-Version: 2.3
+Name: frame-averaging-pytorch
+Version: 0.0.15
+Summary: Frame Averaging
+Project-URL: Homepage, https://pypi.org/project/frame-averaging-pytorch/
+Project-URL: Repository, https://github.com/lucidrains/frame-averaging-pytorch
+Author-email: Phil Wang <lucidrains@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Phil Wang
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: artificial intelligence,deep learning,geometric learning
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9
+Requires-Dist: einops>=0.8.0
+Requires-Dist: optree
+Requires-Dist: torch>=2.0
+Provides-Extra: examples
+Description-Content-Type: text/markdown
+
+<img src="./frame-averaging.png" width="350px"></img>
+
+## Frame Averaging - Pytorch (wip)
+
+Pytorch implementation of a simple way to enable <a href="https://arxiv.org/abs/2305.05577">(Stochastic)</a> <a href="https://arxiv.org/abs/2110.03336">Frame Averaging</a> for any network. This technique was recently adopted by Prescient Design in <a href="https://arxiv.org/abs/2308.05027">AbDiffuser</a>
+
+## Install
+
+```bash
+$ pip install frame-averaging-pytorch
+```
+
+## Usage
+
+```python
+import torch
+from frame_averaging_pytorch import FrameAverage
+
+# contrived neural network
+
+net = torch.nn.Linear(3, 3)
+
+# wrap the network with FrameAverage
+
+net = FrameAverage(
+    net,
+    dim = 3,           # defaults to 3 for spatial, but can be any value
+    stochastic = True  # whether to use stochastic variant from FAENet (one frame sampled at random)
+)
+
+# pass your input to the network as usual
+
+points = torch.randn(4, 1024, 3)
+mask = torch.ones(4, 1024).bool()
+
+out = net(points, frame_average_mask = mask)
+
+out.shape # (4, 1024, 3)
+
+# frame averaging is automatically taken care of, as though the network were unwrapped
+```
+
+## Citations
+
+```bibtex
+@article{Puny2021FrameAF,
+    title   = {Frame Averaging for Invariant and Equivariant Network Design},
+    author  = {Omri Puny and Matan Atzmon and Heli Ben-Hamu and Edward James Smith and Ishan Misra and Aditya Grover and Yaron Lipman},
+    journal = {ArXiv},
+    year    = {2021},
+    volume  = {abs/2110.03336},
+    url     = {https://api.semanticscholar.org/CorpusID:238419638}
+}
+```
+
+```bibtex
+@article{Duval2023FAENetFA,
+    title   = {FAENet: Frame Averaging Equivariant GNN for Materials Modeling},
+    author  = {Alexandre Duval and Victor Schmidt and Alex Hernandez Garcia and Santiago Miret and Fragkiskos D. Malliaros and Yoshua Bengio and David Rolnick},
+    journal = {ArXiv},
+    year    = {2023},
+    volume  = {abs/2305.05577},
+    url     = {https://api.semanticscholar.org/CorpusID:258564608}
+}
+```
