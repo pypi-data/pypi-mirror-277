@@ -1,0 +1,3 @@
+[console_scripts]
+cryptlab=cryptlab.entrypoint:main
+
