@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+py_judged/__init__.py
+py_judged/judger_utils.py
+py_judged/resources.py
+py_judged/runner.py
+py_judged/sympy_utils.py
+py_judged/utils.py
+py_judged.egg-info/PKG-INFO
+py_judged.egg-info/SOURCES.txt
+py_judged.egg-info/dependency_links.txt
+py_judged.egg-info/requires.txt
+py_judged.egg-info/top_level.txt
