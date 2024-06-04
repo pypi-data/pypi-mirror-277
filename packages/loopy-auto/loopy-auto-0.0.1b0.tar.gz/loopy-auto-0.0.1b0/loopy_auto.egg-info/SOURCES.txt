@@ -1,0 +1,9 @@
+setup.py
+loopy/__init__.py
+loopy/config.py
+loopy_auto.egg-info/PKG-INFO
+loopy_auto.egg-info/SOURCES.txt
+loopy_auto.egg-info/dependency_links.txt
+loopy_auto.egg-info/not-zip-safe
+loopy_auto.egg-info/requires.txt
+loopy_auto.egg-info/top_level.txt

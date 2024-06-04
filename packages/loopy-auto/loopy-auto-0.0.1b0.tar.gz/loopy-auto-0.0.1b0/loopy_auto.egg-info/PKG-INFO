@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: loopy-auto
+Version: 0.0.1b0
+Summary: Loopy-auto is an automation framework in which anybody can create a test script simply with your favorite language.
+Home-page: https://github.com/jooho/loopy
+Author: Jooho Lee
+Author-email: ljhiyh@gmail.com
+Keywords: jooho,loopy automation,openshift,opendatahub aipypi
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10
