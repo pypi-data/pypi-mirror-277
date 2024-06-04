@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: tmp_box
+Version: 0.0.8
+Requires-Dist: typer>=0.12.3
+Requires-Dist: pydantic>=2.7.2
+
+# TMP Box File Manager
+
+TMP Box is a file management tool that simplifies working with files and templates. With an easy-to-use command-line interface, it allows users to visualize, manage, and control file structures efficiently.
+
+## Features
+
+- Visualize files and directories with ease.
+- Manage templates through a simple interface.
+- Support for various file types including `.txt`, `.json`, `.py`, `.md`, and `.pyc`.
+- Easily add, update, and delete template aliases.
+
+## Installation
+
+To install TMP Box, run the following command:
+
+```bash
+pip install tmp_box
+```
+
+## Usage
+
+Below are some of the commands you can use with TMP Box:
+
+To add a new template:
+
+```
+tmp-box add --path <path-to-directory> --name <alias>
+```
+
+To delete a template by alias:
+
+```
+tmp-box del --name <alias>
+```
+
+To view the latest template:
+
+```
+tmp-box last
+```
+
+For more detailed usage, please refer to the command help within the application.
+
+
+
+## Contributing
+
+Contributions to TMP Box are welcome! Please read our contributing guidelines before submitting pull requests.
+
+## License
+
+This project is licensed under the MIT License.
