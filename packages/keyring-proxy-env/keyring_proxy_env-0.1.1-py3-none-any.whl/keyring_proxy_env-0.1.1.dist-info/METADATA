@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: keyring-proxy-env
+Version: 0.1.1
+Summary: Default template for PDM package
+Author-Email: "Kalle M. Aagaard" <git@k-moeller.dk>
+License: MIT
+Project-URL: Repository, https://github.com/KalleDK/py-keyring-proxy-env
+Requires-Python: >=3.12
+Requires-Dist: keyring>=25.2.1
+Requires-Dist: keyring-proxy>=0.1.14
+Description-Content-Type: text/markdown
+
+# keyring-proxy-env
