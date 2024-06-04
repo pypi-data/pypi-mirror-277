@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: labthings-sangaboard
+Version: 0.0.1
+Summary: Sangaboard motor controller support for LabThings-FastAPI
+Author-email: Richard Bowman <richard.bowman@cantab.net>
+Project-URL: Homepage, https://github.com/rwb27/labthings-sangaboard
+Project-URL: Bug Tracker, https://github.com/rwb27/labthings-sangaboard/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: labthings-fastapi
+Requires-Dist: sangaboard
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: labthings-fastapi[dev] ; extra == 'dev'
+
+# labthings-sangaboard
+A LabThings-FastAPI Thing for working with the Sangaboard motor controller
