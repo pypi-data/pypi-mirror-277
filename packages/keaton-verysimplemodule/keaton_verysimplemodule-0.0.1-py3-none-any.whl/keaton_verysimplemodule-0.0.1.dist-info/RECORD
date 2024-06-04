@@ -1,0 +1,16 @@
+keaton_verysimplemodule/__init__.py,sha256=Rz0Y8foHtJD2BDRqx93y7EU0iK0hJIThk1FlPcqfiuw,54
+keaton_verysimplemodule/add.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+keaton_verysimplemodule/subtract.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+keaton_verysimplemodule/extras/__init__.py,sha256=LibMsDDG9aaI1uNePRmyFXt-sSCAizrir-yaNRTsj4g,60
+keaton_verysimplemodule/extras/divide.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+keaton_verysimplemodule/extras/multiply.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verysimplemodule/__init__.py,sha256=Rz0Y8foHtJD2BDRqx93y7EU0iK0hJIThk1FlPcqfiuw,54
+verysimplemodule/add.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verysimplemodule/subtract.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verysimplemodule/extras/__init__.py,sha256=LibMsDDG9aaI1uNePRmyFXt-sSCAizrir-yaNRTsj4g,60
+verysimplemodule/extras/divide.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verysimplemodule/extras/multiply.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+keaton_verysimplemodule-0.0.1.dist-info/METADATA,sha256=Ik3TXMVAWjmwHGH1eDVykyRm-UlHo26XbW2J8L9D014,593
+keaton_verysimplemodule-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+keaton_verysimplemodule-0.0.1.dist-info/top_level.txt,sha256=3BulEqg_dpvKcAiSrVHs8GYq-VWBTyDS-OqU0oZWMv8,24
+keaton_verysimplemodule-0.0.1.dist-info/RECORD,,
