@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+hamiltoncurrentweather/__init__.py
+hamiltoncurrentweather_Rx168059.egg-info/PKG-INFO
+hamiltoncurrentweather_Rx168059.egg-info/SOURCES.txt
+hamiltoncurrentweather_Rx168059.egg-info/dependency_links.txt
+hamiltoncurrentweather_Rx168059.egg-info/top_level.txt
