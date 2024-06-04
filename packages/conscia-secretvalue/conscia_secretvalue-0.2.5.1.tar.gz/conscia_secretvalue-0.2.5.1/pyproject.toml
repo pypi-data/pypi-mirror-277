@@ -1,0 +1,91 @@
+[project]
+name = "conscia-secretvalue"
+version = "0.2.5.1"
+description = "Conscia Secretvalue"
+authors = [
+    { name = "Kalle M. Aagaard", email = "km@conscia.com" },
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+click = [
+    "click>=8.1.7",
+]
+
+[[tool.pdm.source]]
+url = "https://pkgs.dev.azure.com/ConsciaDevelopers/py-conscia/_packaging/py-conscia/pypi/simple/"
+verify_ssl = true
+name = "pypi"
+
+[tool.pdm.build]
+includes = [
+    "conscia",
+]
+
+[tool.pdm.dev-dependencies]
+test = [
+    "tomli>=2.0.1; python_version < '3.11'",
+    "pytest>=8.2.0",
+    "pytest-cov>=5.0.0",
+    "pytest-asyncio>=0.23.6",
+    "coverage>=7.5.1",
+    "click>=8.1.7",
+    "typing-extensions>=4.11.0; python_version < '3.10'",
+]
+tools = [
+    "black>=24.4.2",
+    "ruff>=0.4.4",
+    "mypy>=1.10.0",
+    "bump2version>=1.0.1",
+]
+azure = [
+    "pytest-azurepipelines>=1.0.5",
+    "setuptools>=69.5.1",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+
+[tool.black]
+line-length = 120
+
+[tool.pyright]
+include = [
+    "conscia/secretvalue",
+    "tests",
+    "examples",
+]
+
+[tool.pytest.ini_options]
+addopts = "-v --cov=conscia.secretvalue --cov-report=term-missing --cov-report=xml"
+testpaths = [
+    "tests",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning:pytest_nunit",
+]
+
+[tool.mypy]
+python_version = "3.9"
+packages = "conscia.secretvalue"
+
+[tool.coverage.report]
+exclude_also = [
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
