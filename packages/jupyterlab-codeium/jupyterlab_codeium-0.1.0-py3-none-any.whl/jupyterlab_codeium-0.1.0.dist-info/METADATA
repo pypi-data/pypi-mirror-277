@@ -1,0 +1,148 @@
+Metadata-Version: 2.3
+Name: jupyterlab_codeium
+Version: 0.1.0
+Dynamic: Keywords
+Summary: A JupyterLab extension to get AI code completions with Codeium
+Project-URL: Homepage, https://github.com/jtpio/jupyterlab-codeium
+Project-URL: Bug Tracker, https://github.com/jtpio/jupyterlab-codeium/issues
+Project-URL: Repository, https://github.com/jtpio/jupyterlab-codeium.git
+Author: Jeremy Tuloup
+License: BSD 3-Clause License
+        
+        Copyright (c) 2024, Jeremy Tuloup
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+        Copyright (c) 2024, Val Town
+        
+        Permission to use, copy, modify, and/or distribute this software for any
+        purpose with or without fee is hereby granted, provided that the above
+        copyright notice and this permission notice appear in all copies.
+        
+        THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+        WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+        MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+        ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+        WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+        ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+        OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+        
+        Contains parts of modeling-app, licensed under the MIT License,
+        Copyright (c) 2023 The Zoo Authors
+        
+        Contains parts of Cursor, licensed under the MIT License,
+        Copyright (c) 2023 Cursor AI, Inc.
+License-File: LICENSE
+Classifier: Framework :: Jupyter
+Classifier: Framework :: Jupyter :: JupyterLab
+Classifier: Framework :: Jupyter :: JupyterLab :: 4
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# jupyterlab-codeium
+
+[![Github Actions Status](https://github.com/jtpio/jupyterlab-codeium/workflows/Build/badge.svg)](https://github.com/jtpio/jupyterlab-codeium/actions/workflows/build.yml)
+[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jtpio.github.io/jupyterlab-codeium/lab/index.html)
+
+JupyterLab extension to get AI code completions with [Codeium](https://codeium.com/).
+
+https://github.com/jtpio/jupyterlab-codeium/assets/591645/7ec0a6fa-9c51-49a8-89b4-77b431f4bda9
+
+> [!WARNING]
+> This extension is still very much experimental. It is not an official Codeium extension.
+
+## ✨ Try it in your browser ✨
+
+1. Follow the instructions in the [Usage](#usage) section to get your API key.
+2. Open https://jtpio.github.io/jupyterlab-codeium in your browser
+
+## Requirements
+
+- JupyterLab >= 4.1.0
+
+> [!NOTE]
+> This extension is also compatible with [JupyterLite](https://github.com/jupyterlite/jupyterlite) >= 0.3.0
+
+## Install
+
+To install the extension, execute:
+
+```bash
+pip install jupyterlab-codeium
+```
+
+## Usage
+
+> [!WARNING]
+> Setting up the extension requires a Codeium API key. This part might still be challenging as retrieving the key requires a few manual steps at the moment.
+> This might later be improved by providing a better auth flow.
+
+1. Go to the Codeium website and sign up for an account: https://codeium.com/
+2. Install the browser extension: https://codeium.com/chrome_tutorial
+3. Open the settings for the chrome extension and click on "Get Token"
+
+![Get Token](./img/1-extension-token.png)
+
+4. Right click on the extension window and select "Inspect" to open the dev tools for the extension. Then click on "Network"
+5. Copy the token and paste it the input area, and then press "Enter Token"
+6. This should log a new API request in the network tab. Click on "Preview" to get the API key.
+
+![Enter Token](./img/2-api-key.png)
+
+7. Start JupyterLab. At first launch you should see the following dialog:
+
+![Enter API Key](./img/3-jupyterlab-dialog.png)
+
+8. Go to the settings to paste the API key:
+
+![Settings](./img/4-jupyterlab-settings.png)
+
+9. You should now be able to use the extension. Open a Python file and start typing to see the completions.
+
+![Completions](./img/5-example.png)
+
+## Contributing
+
+### Packaging and releasing the extension
+
+See [RELEASE](RELEASE.md)
+
+### Credits
+
+Many thanks to the `codemirror-codeium` project for the inspiration and the initial implementation of the Codeium integration with CodeMirror 6: https://github.com/val-town/codemirror-codeium
+
+The protobuf files were copied from that repo and reused as is in this project.
