@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+chromiumspider/__init__.py
+chromiumspider/core.py
+chromiumspider.egg-info/PKG-INFO
+chromiumspider.egg-info/SOURCES.txt
+chromiumspider.egg-info/dependency_links.txt
+chromiumspider.egg-info/requires.txt
+chromiumspider.egg-info/top_level.txt
