@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: gh-copilot-history-export
+Version: 2.0.0
+Summary: Long Description
+Author: mustafakilic
+Author-email: ben@mustafakilic.com
+License: LICENCE
+License-File: LICENCE
+Requires-Dist: mitmproxy
+Requires-Dist: click
+Requires-Dist: setuptools
