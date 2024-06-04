@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: locomotivecms
+Version: 0.0.3
+Summary: Client for locomotivecms
+Project-URL: Homepage, https://github.com/shopinvader/locomotivecms-python-client/
+Author-email: Akretion <contact@akretion.com>
+Requires-Dist: requests
+Description-Content-Type: text/x-rst
+
+Python client for locomotivecms
+==================================
+
+Python client for locomotivecms : https://www.locomotivecms.com/
+
+Roadmap
+=======
+
+- add test
+- add documentation
