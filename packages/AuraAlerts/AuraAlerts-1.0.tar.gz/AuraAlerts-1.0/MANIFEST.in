@@ -1,0 +1,3 @@
+graft AuraAlerts/imgs
+graft AuraAlerts/ScreenShots
+global-include *.png *.jpg *.jpeg *.gif

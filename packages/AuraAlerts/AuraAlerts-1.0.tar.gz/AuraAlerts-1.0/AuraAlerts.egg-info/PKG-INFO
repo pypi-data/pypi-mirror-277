@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: AuraAlerts
+Version: 1.0
+Summary: Simple Alerts For Desktop App Developers!!
+Home-page: https://github.com/abdrzakk/AuraAlerts/
+Author: abdrzakk
+Keywords: AuraAlerts,Alerts,messagebox,alerts,aura
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires: customtkinter
+Requires: Pillow
+Requires: os
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+==========================================================================================
+=It is a library that provides developers with GUI interfaces for the Python language     =
+==========================================================================================
+=The library is a good alternative to the default operating systems' messagebox or alerts =
+==========================================================================================
+Usage Examples:
+    Success Alerts:
+        AuraAlerts().Aa().success(title='hello',content='content') 
+
+    Error Alerts:
+        AuraAlerts().Aa().error(title='hello',content='content') 
+
+    Warn Alerts:
+        AuraAlerts().Aa().warn(title='hello',content='content') 
+
+    Info Alerts:
+        AuraAlerts().Aa().info(title='hello',content='content') 
+Aa
+    Custom Alerts:
+        ``AuraAlerts().Aa().custom(title='title', content='content', buttonText, buttonColor='#e08aff', buttonHoverColor='#d561ff', imagePath='default image' , imgSize=(33,33), theme='light')`` 
+        |__ Custom Alerts Is Customizable

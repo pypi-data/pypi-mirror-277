@@ -1,0 +1,6 @@
+###############################
+Name:Beauty Alerts
+Version:1.0
+###############################
+Author:Abdrzak
+Github:https://github.com/abdrzakk
