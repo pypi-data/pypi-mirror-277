@@ -1,0 +1,14 @@
+twine
+setuptools
+wheel
+flake8
+black
+pytest
+pip-upgrader
+fastapi
+uvicorn
+pandas
+pydantic
+exa_py
+pydantic-settings
+litellm

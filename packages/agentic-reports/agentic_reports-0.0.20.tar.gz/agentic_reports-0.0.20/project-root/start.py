@@ -1,0 +1,66 @@
+import os
+import subprocess
+import sys
+
+def check_and_install_requirements():
+    required_packages = ['fastapi', 'pydantic', 'pandas', 'exa_py', 'pytest', 'uvicorn', 'pydantic_settings', 'litellm']
+    subprocess.run([sys.executable, '-m', 'pip', 'install'] + required_packages, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+def prompt_for_api_key(env_var_name):
+    api_key = input(f"Enter your {env_var_name}: ")
+    os.environ[env_var_name] = api_key
+    subprocess.run(['export', f'{env_var_name}={api_key}'], shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+def main():
+    print(r"""
+ _____             _   _         _____                 _       
+|  _  |___ ___ ___| |_|_|___ ___| __  |___ ___ ___ ___| |_ ___ 
+|     | . | -_|   |  _| |  _|___|    -| -_| . | . |  _|  _|_ -|
+|__|__|_  |___|_|_|_| |_|___|   |__|__|___|  _|___|_| |_| |___|
+      |___|                               |_|                  
+
+A Comprehensive Python Library for Generating Research Reports
+    """)
+
+    print("Starting the Agentic Reports application setup and server...")
+
+    # Check for OPENAI_API_KEY
+    if not os.getenv('OPENAI_API_KEY'):
+        prompt_for_api_key('OPENAI_API_KEY')
+
+    # Check for EXA_API_KEY
+    if not os.getenv('EXA_API_KEY'):
+        prompt_for_api_key('EXA_API_KEY')
+
+    # Check and install required packages
+    check_and_install_requirements()
+
+    # Get the directory of the current script
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+
+    # Set PYTHONPATH to include the project root directory
+    os.environ['PYTHONPATH'] = os.environ.get('PYTHONPATH', '') + f':{script_dir}'
+
+    # Ensure the correct working directory
+    os.chdir(script_dir)
+
+    # Create a virtual environment if it doesn't exist
+    if not os.path.exists('venv'):
+        subprocess.run([sys.executable, '-m', 'venv', 'venv'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+    # Activate the virtual environment
+    activate_script = os.path.join('venv', 'bin', 'activate')
+    if sys.platform == 'win32':
+        activate_script = os.path.join('venv', 'Scripts', 'activate')
+
+    # Install required dependencies quietly
+    subprocess.run([sys.executable, '-m', 'pip', 'install', '-r', os.path.join(script_dir, 'requirements.txt'), '-q'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+    # Modify the PATH to include the virtual environment's bin directory
+    os.environ['PATH'] = os.path.abspath(os.path.join('venv', 'bin')) + os.pathsep + os.environ.get('PATH', '')
+
+    # Run Uvicorn with the necessary parameters and show its output
+    subprocess.run(['uvicorn', 'app.main:app', '--reload', '--host', '0.0.0.0', '--port', '8000', '--reload-dir', script_dir])
+
+if __name__ == "__main__":
+    main()
