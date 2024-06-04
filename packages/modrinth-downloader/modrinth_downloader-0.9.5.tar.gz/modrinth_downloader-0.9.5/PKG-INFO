@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: modrinth_downloader
+Version: 0.9.5
+Summary: Download projects from Modrinth
+Author: Alexander Brightwater
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# Modrinth Downloader
+
+This project is a downloader and info tool for the Modrinth API.
+
+## How to use
+
+Config is stored in `~/.config/modrinth-downloader/config.toml`
+Default location for content is in `~/.minecraft-downloader/`
+To download a project (mod, texturepack, plugin, etc.) just add its slug or ID to a list in the lists folder.
+Then trigger the downlaod by using `minecraft-downloader -m 1.20 -l paper --lists mylist`.
+
+## Usage
+
+```bash
+usage: modrinth_downloader [-h] [-v] --list LIST -m GAME_VERSION -l LOADER
+
+Parse Arguments for Modrinth Downloader. List Path is at/opt/test/lists
+
+options:
+  -h, --help            show this help message and exit
+  -v, --verbose         Increase output verbosity
+  --list LIST           The list name
+  -m GAME_VERSION, --game_version GAME_VERSION
+                        The game version
+  -l LOADER, --loader LOADER
+                        The loader you want to use
+```
