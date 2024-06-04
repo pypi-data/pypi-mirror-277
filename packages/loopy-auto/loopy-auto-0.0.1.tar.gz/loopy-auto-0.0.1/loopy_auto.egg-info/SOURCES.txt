@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+loopy_auto.egg-info/PKG-INFO
+loopy_auto.egg-info/SOURCES.txt
+loopy_auto.egg-info/dependency_links.txt
+loopy_auto.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: loopy-auto
+Version: 0.0.1
+Summary: Loopy-auto is an automation framework in which anybody can create a test script simply with your favorite language.
+Author: Jooho Lee
+Author-email: ljhiyh@gmail.com
+License-File: LICENSE
