@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: perfwatch
+Version: 1.2.0
+Summary: Python code performace metrics calculation tool
+License: MIT
+Author: Khushiyant
+Author-email: khushiyant2002@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: line-profiler (>=4.1.3,<5.0.0)
+Requires-Dist: memory-profiler (>=0.61.0,<0.62.0)
+Requires-Dist: psutil (>=5.9.8,<6.0.0)
+Requires-Dist: scapy (>=2.5.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Perfwatch
+
+Perfwatch is a python package that allows you to monitor the performance of your code. It is designed to be used in a Jupyter notebook, but can also be used in a Python script.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+
+## Installation
+
+To install perfwatch, run the following command:
+
+```bash
+pip install perfwatch
+```
+
+## Development
+
+To install perfwatch for development, clone the repository and run the following command:
+
+```bash
+poetry install
+```
+To setup pre-commit hooks, run the following command:
+
+```bash
+poetry run pre-commit install
+```
+
+To run the tests, run the following command:
+
+```bash
+poetry run pytest
+```
+
+## Usage
+
+```python
+from perfwatch import profile_decorator
+
+@profile_decorator(["line", "cpu", "time"])
+def test():
+    for _ in range(1000000):
+        pass
+
+if __name__ == "__main__":
+    test()
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
