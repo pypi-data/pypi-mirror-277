@@ -1,0 +1,7 @@
+pymysql==1.1.0
+psycopg2==2.9.7
+pymssql==2.2.8
+pyodbc==4.0.39
+SQLAlchemy==2.0.19
+tinydb==4.8.0
+DBUtils==3.1.0
