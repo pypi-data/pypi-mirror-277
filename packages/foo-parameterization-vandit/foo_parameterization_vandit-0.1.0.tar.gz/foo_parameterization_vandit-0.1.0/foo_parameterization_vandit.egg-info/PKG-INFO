@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: foo_parameterization_vandit
+Version: 0.1.0
+Summary: Package to calculate the Foo et al. parameterization for a sphere.
+Home-page: https://github.com/vandit1920/foo_parametrization
+Author: Vandit Jain
+Author-email: Vandit Jain <vanditjain19@gmail.com>
+Project-URL: Homepage, https://github.com/vandit1920/foo_parameterization
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Foo Parameterization Package
+
+This package provides functionality to calculate the Foo et al. parameterization for a sphere. The parameterization takes the radius of a sphere and returns its volume. This package is designed to be a community project and supports easy extension and integration with other projects.
+
+## Installation
+
+To install the package, run this command:
+pip install foo_parameterization

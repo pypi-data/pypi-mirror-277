@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+foo_parameterization/__init__.py
+foo_parameterization/foo_parameterization.py
+foo_parameterization_vandit.egg-info/PKG-INFO
+foo_parameterization_vandit.egg-info/SOURCES.txt
+foo_parameterization_vandit.egg-info/dependency_links.txt
+foo_parameterization_vandit.egg-info/top_level.txt
+tests/__init__.py
+tests/test_foo_parameterization.py

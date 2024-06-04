@@ -1,0 +1,21 @@
+[project]
+name = "foo_parameterization_vandit"
+version = "0.1.0"
+authors = [
+    { name="Vandit Jain", email="vanditjain19@gmail.com" },
+]
+description = "Package to calculate the Foo et al. parameterization for a sphere."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/vandit1920/foo_parameterization"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
