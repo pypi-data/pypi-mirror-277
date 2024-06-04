@@ -1,0 +1,5 @@
+include README.md requirements.txt LICENSE
+
+recursive-include odmetrics/gt_info *
+
+exclude main.py
