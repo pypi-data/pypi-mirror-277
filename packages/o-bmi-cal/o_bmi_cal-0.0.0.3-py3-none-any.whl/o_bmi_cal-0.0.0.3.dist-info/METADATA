@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: o_bmi_cal
+Version: 0.0.0.3
+Summary: calculate bmi
+Home-page: https://github.com/Secludor/
+Author: secludor
+Author-email: caelumator@gmail.com
+License: MIT
+Requires-Python: >=3
+
