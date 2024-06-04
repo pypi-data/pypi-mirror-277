@@ -1,0 +1,5 @@
+pytest_publish.py,sha256=e_iw9TtKXtIDuJqA_hTtyGgmWGjNhKFWnNCkYp8K_2w,7307
+pytest_publish-1.2.0.dist-info/METADATA,sha256=FIVd9QgbzS-_eo4iFJ0Am-HZli6hUxdYGIUD-bonQi0,2706
+pytest_publish-1.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pytest_publish-1.2.0.dist-info/entry_points.txt,sha256=pz7poek6GQ5-WU0EXGYdFpUJF8Pcwcp-QoJNzY4MpT4,42
+pytest_publish-1.2.0.dist-info/RECORD,,
