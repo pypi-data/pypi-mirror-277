@@ -1,0 +1,9 @@
+mcap_bag_parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcap_bag_parser/mcap_bag_parser.py,sha256=SAvmOLE2uelI7Ez7CJ6dCvyqEML2_9p2k9UzrAdC71c,14816
+mcap_bag_parser/test/test_mcap_bag_parser.py,sha256=NeDVMensmy9mUPMjN7WksoQfazrbqJ-tiNxFXNly7i8,3819
+mcap_bag_parser/test/bagfile/bagfile_0.mcap,sha256=SStGnmBaBdBrcFHl2TiuJ9eC4F-cTQp1xo3UeyHpzvo,7927006
+mcap_bag_parser/test/bagfile/metadata.yaml,sha256=QCto6gyWrE8PCkVAOWaiUC8dkg3ABFcL21EGWQsNsDY,23074
+mcap_bag_parser-0.1.0.dist-info/METADATA,sha256=FN2pEosJ6joEsOBf2CRIMqXA4ICipd9oJs5N7Va1zUY,583
+mcap_bag_parser-0.1.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+mcap_bag_parser-0.1.0.dist-info/licenses/LICENSE,sha256=-94yEgOfT6PI4nsN7-0wMgPWitXIaszv9JGwPL5gK5c,1068
+mcap_bag_parser-0.1.0.dist-info/RECORD,,

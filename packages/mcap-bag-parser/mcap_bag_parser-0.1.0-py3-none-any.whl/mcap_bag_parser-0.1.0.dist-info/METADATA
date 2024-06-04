@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: mcap_bag_parser
+Version: 0.1.0
+Summary: Parse mcap bagfiles into pandas dataframes
+Project-URL: Homepage, https://gitlab.com/nealtanner/mcap-bag-parser
+Project-URL: Issues, https://gitlab.com/nealtanner/mcap-bag-parser/-/issues
+Author: Neal Tanner, Teresa Gadda
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# MCAP Bag Parser
+
+Parse MCAP rosbags into pandas dataframes
