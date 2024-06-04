@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: classy_sz
+Version: 0.0.2
+Summary: The class_sz code from https://github.com/CLASS-SZ
+Home-page: https://github.com/CLASS-SZ/class_sz
+Download-URL: https://github.com/CLASS-SZ/classy_szfast
+Author: Boris Bolliet et al
+Author-email: boris.bolliet@gmail.com
+Maintainer-email: Boris Bolliet <bb667@cam.ac.uk>
+Project-URL: Homepage, https://github.com/CLASS-SZ
+Project-URL: GitHub, https://github.com/CLASS-SZ
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: cython
+Requires-Dist: classy_szfast
