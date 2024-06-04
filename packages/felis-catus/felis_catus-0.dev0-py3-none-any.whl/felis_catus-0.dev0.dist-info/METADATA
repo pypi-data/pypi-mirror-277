@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: felis-catus
+Version: 0.dev0
+Summary: 🐈 Felis Catus – functional bits for Python
+Author-email: LeeeeT <me@LeeeeT.dev>
+License: Permission to use, copy, modify, and/or distribute this software for any
+        purpose with or without fee is hereby granted.
+        
+        THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+        WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+        MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+        ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+        WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+        ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+        OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/LeeeeT/felis
+Project-URL: Documentation, https://felis.rtfd.io
+Project-URL: Repository, https://github.com/LeeeeT/felis
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Zero-Clause BSD (0BSD)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## 🐈 Felis Catus
+
+**Felis Catus** is your taxonomic nomenclature, an endothermic quadruped, carnivorous by nature; your visual, olfactory, and auditory senses contribute to your hunting skills and natural defenses. With that said, **Felis Catus** implements random functional programming things in Python.
+
+## Installation
+
+Build the latest version from [source]:
+
+```console
+pip install git+https://github.com/LeeeeT/felis
+```
+
+## Examples
+
+Curry and uncurry functions:
+
+```python
+from felis.currying import curry, uncurry
+
+
+@curry
+@curry
+def curried(a: int, b: str, c: bool) -> None:
+    pass
+
+
+uncurried = uncurry(uncurry(curried))
+
+
+reveal_type(curried)  # (bool) -> ((str) -> ((int) -> None))
+reveal_type(uncurried)  # (int, str, bool) -> None
+```
+
+Safe error handling with `felis.either`:
+
+```python
+from felis import either
+
+
+safe_int = either.catch(ValueError)(int)
+
+
+@either.catch(ZeroDivisionError)
+def safe_reciprocal(number: float) -> float:
+    return 1 / number
+
+
+safe_reciprocal_of_str = either.compose(safe_reciprocal)(safe_int)
+
+
+match safe_reciprocal_of_str(input("Enter a number: ")):
+    case either.Left(error):
+        print(f"Error: {error}")
+    case either.Right(reciprocal):
+        print(f"Reciprocal: {reciprocal}")
+```
+
+Managing IO with `felis.io`:
+
+```python
+from felis import io
+from felis.currying import uncurry
+
+
+main = \
+    uncurry(io.then)(io.print("What's your name?"),
+    uncurry(io.bind)(io.input, lambda name:
+    io.print(f"Hi, {name}!")
+))
+
+
+io.run(main)
+```
+
+That's all monads, btw 🐈.
+
+[docs]: https://felis.rtfd.io
+[source]: https://github.com/LeeeeT/felis
