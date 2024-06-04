@@ -1,0 +1,13 @@
+atomik/__init__.py,sha256=yUo_0NpuEfGMOg-3yGItUow7iKBDhmA4h7GOKuVA9ho,78
+atomik/_atomik.py,sha256=9Ch5RRJb2eT1p2yNnUkN6IQUxv_9avRCG9xaoekDhV8,1359
+atomik/_rename_linux.py,sha256=KlxZuWqgpIXtjSwkJsq4wqVx0YaP2n6YK4IXA_Xt5Sc,1430
+atomik/_rename_osx.py,sha256=_GkDiOAuQ6YftAbGitWt62jOX2yWigoFrR1HmZyoMDg,1077
+atomik/_version.py,sha256=iGDo0Im6y3iloJP5Uh2X3ZoZEtFm7JDToD9YZ2KuiRM,21
+atomik/errors.py,sha256=9YIAZHhmvsNSpn6djnkI9DO46buqLX9ZZTWLlf5xb54,148
+atomik/flags.py,sha256=QnfFFd44W1GVQ81k31xLqqfP06XNk9RYLcKKEdgQv54,139
+atomik/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atomik/rename.py,sha256=xu1gSVvlEWdrbdh1z3X8SaMNGCVWRaLWwNnoOMv1T0Y,380
+atomik-0.0.3rc1.dist-info/METADATA,sha256=8dgyegWXaJBt8VJegg2rFOlTaiVTxTaW8nGS7MnPiQs,2720
+atomik-0.0.3rc1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+atomik-0.0.3rc1.dist-info/licenses/LICENSE,sha256=eg0VV9q5ceGv3K9UCndrciMmAu5g4YU45mXtWkBM7XM,1081
+atomik-0.0.3rc1.dist-info/RECORD,,
