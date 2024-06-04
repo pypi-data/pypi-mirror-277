@@ -1,0 +1,10 @@
+baby_snake/constants/index.py,sha256=iKn2ZkPA1o-9ypMdQdsO1g_-xEB3cECFWyBXWlq-MMA,153
+baby_snake/main.py,sha256=UsgYjMHq_Xl022q8Cgs5zhZIB_VUlAiL-Ykcf3MNsjY,1922
+baby_snake/models/Goal.py,sha256=KpuGxtjJ23ebppb9ZRGU_n2SeOOSG6Bj7IGt8EsfMbA,1418
+baby_snake/models/Player.py,sha256=LlLar4dy29dAE9B9CaNgxkctE_mrkARa3ZFkBRfW568,2824
+baby_snake/models/SnakeBody.py,sha256=GrCsidoG9WXU2GCYSr6GkcTOxLcqd1m-Nl5D4R07LbI,471
+baby_snake/utils/index.py,sha256=-ESpg3grhA6FiKESaq6IVz4xvsuZzowPJEdB7VtMt8A,286
+baby_snake-0.1.0.dist-info/METADATA,sha256=BRHMYQaemVjEW-zogiD3uzUwXFH5Dz1OIlVqBF9HvB8,388
+baby_snake-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+baby_snake-0.1.0.dist-info/entry_points.txt,sha256=GZEm3w45GdkEd_W24-KR2CcI_YC01VKP0k2Cvh0DJ2Y,46
+baby_snake-0.1.0.dist-info/RECORD,,

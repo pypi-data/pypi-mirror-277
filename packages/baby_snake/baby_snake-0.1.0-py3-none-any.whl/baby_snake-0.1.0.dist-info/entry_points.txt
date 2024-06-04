@@ -1,0 +1,3 @@
+[console_scripts]
+start=baby_snake.main:main
+
