@@ -1,0 +1,14 @@
+[tool.ruff]
+lint.ignore = ["F841", "E731", "E501"]
+lint.extend-select = ["I"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qnnpy"
+version = "0.1.0"
