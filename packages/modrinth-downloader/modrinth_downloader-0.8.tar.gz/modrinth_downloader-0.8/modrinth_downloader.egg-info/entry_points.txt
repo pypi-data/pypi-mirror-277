@@ -1,0 +1,2 @@
+[console_scripts]
+modrinth_downloader = modrinth_downloader.scripts.run_downloader:main
