@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: rsclimatelab
+Version: 0.1.0
+Summary: A project focused on climate data and tooling for Rio Grande do Sul in Brazil.
+Home-page: https://github.com/perone/rs-climate-lab
+Author: Christian S. Perone
+Author-email: christian.perone@gmail.com
+Project-URL: Bug Tracker, https://github.com/perone/rs-climate-lab/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: rich>=13.7.0
+Requires-Dist: dask[complete]>=2024.5.2
+Requires-Dist: xarray>=2024.5.0
+Requires-Dist: rioxarray>=0.15.5
+Requires-Dist: click>=8.1.7
+Requires-Dist: cdsapi>=0.7.0
+Requires-Dist: pyyaml>=6.0.1
+Requires-Dist: pydantic>=2.7.2
+Provides-Extra: dev
+Requires-Dist: pytest>=8.2.1; extra == "dev"
+Requires-Dist: mypy>=1.10.0; extra == "dev"
+Requires-Dist: flake8>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=5.0.0; extra == "dev"
+Requires-Dist: Sphinx>=7.3.7; extra == "dev"
+Requires-Dist: furo>=2024.5.6; extra == "dev"
+Requires-Dist: isort>=5.13.2; extra == "dev"
+Requires-Dist: twine>=5.1.0; extra == "dev"
+Requires-Dist: sphinx-autobuild>=2024.4.16; extra == "dev"
