@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: odoo-addon-shopinvader-api-payment-provider-stripe
+Version: 16.0.1.0.0.5
+Summary: Specific routes for Stripe payments from Shopinvader
+Home-page: https://github.com/shopinvader/odoo-shopinvader
+Author: ACSONE SA/NV
+License: AGPL-3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 16.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.10
+Requires-Dist: odoo-addon-fastapi <16.1dev,>=16.0dev
+Requires-Dist: odoo-addon-shopinvader-api-payment <16.1dev,>=16.0dev
+Requires-Dist: odoo <16.1dev,>=16.0a
+
+UNKNOWN
+
