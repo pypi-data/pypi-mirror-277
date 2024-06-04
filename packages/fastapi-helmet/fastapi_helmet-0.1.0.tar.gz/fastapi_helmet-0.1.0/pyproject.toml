@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "fastapi-helmet"
+version = "0.1.0"
+description = ""
+authors = ["Akhileshthykkat <akhileshthykkat843@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.111.0"
+pydantic = "^2.7.2"
+wheel = "^0.43.0"
+setuptools = "^70.0.0"
+twine = "^5.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
