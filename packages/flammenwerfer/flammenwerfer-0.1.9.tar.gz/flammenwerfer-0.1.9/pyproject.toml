@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "flammenwerfer"
+version = "v0.1.9"
+description = "Python utility for processing Frostbite engine game files and interacting with the Frosty Editor."
+authors = ["MaxMixAlex <MaxMixAlex@protonmail.com>"]
+readme = "README.md"
+repository = "https://github.com/BF1CHS/flammenwerfer"
+keywords = ["Frostbite", "entertainment", "reverse engineering", "game development"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Other Audience",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Topic :: Games/Entertainment",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
