@@ -1,0 +1,8 @@
+LICENSE
+README.md
+autokitteh.py
+pyproject.toml
+autokitteh.egg-info/PKG-INFO
+autokitteh.egg-info/SOURCES.txt
+autokitteh.egg-info/dependency_links.txt
+autokitteh.egg-info/top_level.txt
