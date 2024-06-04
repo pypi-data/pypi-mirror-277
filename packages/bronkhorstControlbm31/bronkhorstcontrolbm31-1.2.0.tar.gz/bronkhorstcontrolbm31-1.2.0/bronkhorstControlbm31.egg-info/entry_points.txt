@@ -1,0 +1,5 @@
+[console_scripts]
+barPlot = bronkhorstControlbm31.bronkhorstClient:barPlot
+bronkhorstMultiServer = bronkhorstControlbm31.bronkhorstServer:multiServer
+bronkhorstServer = bronkhorstControlbm31.bronkhorstServer:run
+timePlot = bronkhorstControlbm31.bronkhorstClient:timePlot
