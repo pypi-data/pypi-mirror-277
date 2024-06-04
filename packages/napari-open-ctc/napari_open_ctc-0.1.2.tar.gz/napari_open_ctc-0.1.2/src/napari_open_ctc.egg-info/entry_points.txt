@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-open-ctc = napari_open_ctc:napari.yaml
