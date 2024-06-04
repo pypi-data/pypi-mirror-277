@@ -1,0 +1,2 @@
+[console_scripts]
+myhelper = myhelper.cli:main
