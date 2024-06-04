@@ -1,0 +1,5 @@
+pyvmomi_tools/__init__.py,sha256=lVkmHLKBJp6RmrTY3EdRRgZ_HbCu1uEg89JDI0_5ZxM,9681
+pyvmomi_tools/pchelper.py,sha256=WMFX3cvFUt7iS5uYR7dBECOzP8aqwH2WA-Rsnn-Iue4,4672
+pyvmomi_tools-0.1.1.dist-info/METADATA,sha256=zhGIMxuSSrHr9J0st_YhVw7N_RTQplSA_5Bv7faLUzs,880
+pyvmomi_tools-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pyvmomi_tools-0.1.1.dist-info/RECORD,,
