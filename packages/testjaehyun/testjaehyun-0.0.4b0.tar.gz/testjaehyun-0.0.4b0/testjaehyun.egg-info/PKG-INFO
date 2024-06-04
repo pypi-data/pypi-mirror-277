@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: testjaehyun
+Version: 0.0.4b0
+Summary: test package distribution
+Home-page:  
+Author: Jaehyun Yim
+Author-email: jhyim@cerestechs.com
+License:  
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+hello
+
