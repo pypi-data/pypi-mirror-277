@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: firerpa
+Version: 0.5
+Summary: Android automation control platform
+Home-page: https://device-farm.com
+Author: firerpa
+Requires-Python: >=3.6,<=3.12
