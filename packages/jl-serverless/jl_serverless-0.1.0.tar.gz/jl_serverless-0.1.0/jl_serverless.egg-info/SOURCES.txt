@@ -1,0 +1,8 @@
+README.md
+setup.py
+jl_serverless.egg-info/PKG-INFO
+jl_serverless.egg-info/SOURCES.txt
+jl_serverless.egg-info/dependency_links.txt
+jl_serverless.egg-info/entry_points.txt
+jl_serverless.egg-info/requires.txt
+jl_serverless.egg-info/top_level.txt
