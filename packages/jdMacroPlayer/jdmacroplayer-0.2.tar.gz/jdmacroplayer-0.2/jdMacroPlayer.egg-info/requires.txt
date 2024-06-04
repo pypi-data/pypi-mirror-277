@@ -1,0 +1,5 @@
+PyQt6
+jeepney
+
+[set-process-name]
+setproctitle

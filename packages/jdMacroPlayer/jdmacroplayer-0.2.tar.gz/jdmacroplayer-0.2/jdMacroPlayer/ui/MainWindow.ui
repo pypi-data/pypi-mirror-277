@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">jdMacroPlayer</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QListWidget" name="macro_list"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="add_macro_button">
+        <property name="text">
+         <string>Add</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="edit_macro_button">
+        <property name="text">
+         <string>Edit</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="delete_macro_button">
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="execute_macro_button">
+        <property name="text">
+         <string>Execute</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="exit_action"/>
+   </widget>
+   <widget class="QMenu" name="menuDaemon">
+    <property name="title">
+     <string>Daemon</string>
+    </property>
+    <addaction name="start_daemon_action"/>
+    <addaction name="stop_daemon_action"/>
+    <addaction name="separator"/>
+    <addaction name="udev_rule_action"/>
+    <addaction name="autostart_daemon_action"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string notr="true">?</string>
+    </property>
+    <addaction name="welcome_dialog_action"/>
+    <addaction name="separator"/>
+    <addaction name="view_source_action"/>
+    <addaction name="report_bug_action"/>
+    <addaction name="view_documentation_action"/>
+    <addaction name="translate_action"/>
+    <addaction name="donate_action"/>
+    <addaction name="separator"/>
+    <addaction name="about_action"/>
+    <addaction name="about_qt_action"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="settings_action"/>
+   </widget>
+   <widget class="QMenu" name="debug_menu">
+    <property name="title">
+     <string notr="true">Debug</string>
+    </property>
+    <widget class="QMenu" name="menuAction_Tests">
+     <property name="title">
+      <string notr="true">Action Tests</string>
+     </property>
+     <widget class="QMenu" name="debug_action_tests_widget_menu">
+      <property name="title">
+       <string notr="true">Widget</string>
+      </property>
+      <addaction name="actionPlaceholder"/>
+     </widget>
+     <widget class="QMenu" name="debug_action_tests_execute_menu">
+      <property name="title">
+       <string notr="true">Execute</string>
+      </property>
+      <addaction name="actionPlaceholder_3"/>
+     </widget>
+     <widget class="QMenu" name="debug_action_tests_list_text_menu">
+      <property name="title">
+       <string notr="true">List text</string>
+      </property>
+      <addaction name="actionPlaceholder_2"/>
+     </widget>
+     <widget class="QMenu" name="debug_action_tests_upgrade_menu">
+      <property name="title">
+       <string notr="true">Upgrade</string>
+      </property>
+      <addaction name="actionPlaceholder_4"/>
+     </widget>
+     <widget class="QMenu" name="debug_action_tests_all_menu">
+      <property name="title">
+       <string notr="true">All</string>
+      </property>
+      <addaction name="actionPlaceholder_5"/>
+     </widget>
+     <addaction name="debug_action_tests_widget_menu"/>
+     <addaction name="debug_action_tests_list_text_menu"/>
+     <addaction name="debug_action_tests_execute_menu"/>
+     <addaction name="debug_action_tests_upgrade_menu"/>
+     <addaction name="debug_action_tests_all_menu"/>
+    </widget>
+    <addaction name="menuAction_Tests"/>
+    <addaction name="open_data_directory_action"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuDaemon"/>
+   <addaction name="menuSettings"/>
+   <addaction name="debug_menu"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="start_daemon_action">
+   <property name="text">
+    <string>Start</string>
+   </property>
+  </action>
+  <action name="stop_daemon_action">
+   <property name="text">
+    <string>Stop</string>
+   </property>
+  </action>
+  <action name="exit_action">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="autostart_daemon_action">
+   <property name="text">
+    <string>Add to Autostart</string>
+   </property>
+  </action>
+  <action name="view_source_action">
+   <property name="text">
+    <string>View Source</string>
+   </property>
+  </action>
+  <action name="report_bug_action">
+   <property name="text">
+    <string>Report Bug</string>
+   </property>
+  </action>
+  <action name="translate_action">
+   <property name="text">
+    <string>Translate</string>
+   </property>
+  </action>
+  <action name="donate_action">
+   <property name="text">
+    <string>Donate</string>
+   </property>
+  </action>
+  <action name="about_action">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="about_qt_action">
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+  </action>
+  <action name="settings_action">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="welcome_dialog_action">
+   <property name="text">
+    <string>Show welcome dialog</string>
+   </property>
+  </action>
+  <action name="udev_rule_action">
+   <property name="text">
+    <string notr="true">{{udev_rule}}</string>
+   </property>
+  </action>
+  <action name="actionPlaceholder">
+   <property name="text">
+    <string notr="true">Placeholder</string>
+   </property>
+  </action>
+  <action name="actionPlaceholder_3">
+   <property name="text">
+    <string notr="true">Placeholder</string>
+   </property>
+  </action>
+  <action name="actionPlaceholder_2">
+   <property name="text">
+    <string notr="true">Placeholder</string>
+   </property>
+  </action>
+  <action name="actionPlaceholder_4">
+   <property name="text">
+    <string notr="true">Placeholder</string>
+   </property>
+  </action>
+  <action name="actionPlaceholder_5">
+   <property name="text">
+    <string notr="true">Placeholder</string>
+   </property>
+  </action>
+  <action name="view_documentation_action">
+   <property name="text">
+    <string>View Documentation</string>
+   </property>
+  </action>
+  <action name="open_data_directory_action">
+   <property name="text">
+    <string>Open data directory</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
