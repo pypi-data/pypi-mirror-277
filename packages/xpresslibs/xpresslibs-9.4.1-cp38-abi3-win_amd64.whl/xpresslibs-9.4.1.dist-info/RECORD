@@ -1,0 +1,17 @@
+xpresslibs/__init__.py,sha256=Jgc4ob9xEMM9VxezIcvI4ij-rh9VbfXbfIQduEl6fTI,196
+xpresslibs/lib/xknitro.dll,sha256=daIhgd9MUOGLKXeUoUBhrnyV38riNlfU0S5Qku5rITI,105649152
+xpresslibs/lib/xprl.dll,sha256=1wfOeeUi2swvOXjMSoob9OrbBR_IAmQBrxi5766Fkms,1187328
+xpresslibs/lib/xprs.dll,sha256=UsRcwTSvpblZ8xeHLFdP8cTFy-uyELY85HO_8z86MlA,55637504
+xpresslibs/lib/xprsws.dll,sha256=ptw3aNx_AkZ5AIRDPRWxaDukr6BIJ2Io-95dOkc5rro,496128
+xpresslibs/lib/xpressdeps/jansson.dll,sha256=tBQipHDDYhvgaytPBECUAhGy624D_3aJphBYQ13EzWk,200192
+xpresslibs/lib/xpressdeps/libcrypto-3-x64.dll,sha256=C_kE_VX5yq54pCLjGWgnOwoc8geRlOX7OJOlGT7sFIQ,5044736
+xpresslibs/lib/xpressdeps/libcurl.dll,sha256=90t-FJa25OEyJ8ELlbGAw6W7GvNLVTSd4ojVaoRaU5Y,506368
+xpresslibs/lib/xpressdeps/libiomp5md.dll,sha256=xB-2LyCwRBcGu4vDsx31zZSp5MSNQ659mDAIcX9oYEs,2019368
+xpresslibs/lib/xpressdeps/libssl-3-x64.dll,sha256=AQC6WEcjM4hdXS8DLmF-awt4nGof0XMpQrtN2l-mOMA,743936
+xpresslibs/lib/xpressdeps/libzip.dll,sha256=tUWSWTH_aH-VJiyZpOJVITLjrpm3cu0NsrAHqQkpl5o,152576
+xpresslibs/lib/xpressdeps/websockets.dll,sha256=kd-EgjUd7W9AwNeCUqbKe6i51ce7twaVFfY0y227GVA,291840
+xpresslibs-9.4.1.dist-info/LICENSE.txt,sha256=a6j3nG6GCccjX2vvuNNbWI6c1NTX_9oSpo-SFiDMcUA,47817
+xpresslibs-9.4.1.dist-info/METADATA,sha256=0bPBt09t491CeM0HstCzhseWa1Bu-TNNYJteZoaTQzA,1532
+xpresslibs-9.4.1.dist-info/WHEEL,sha256=Aavq5XXl58tL6bL-VsXq6M2KHwSF4I7YrvRYfeAzm5A,100
+xpresslibs-9.4.1.dist-info/top_level.txt,sha256=j8DwRzeWdIR4NdfHdCqxPbALvOANSP-hZ_--pOPO51Y,11
+xpresslibs-9.4.1.dist-info/RECORD,,
