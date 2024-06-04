@@ -1,0 +1,12 @@
+README.md
+setup.py
+JMTrucoCmd/__init__.py
+JMTrucoCmd.egg-info/PKG-INFO
+JMTrucoCmd.egg-info/SOURCES.txt
+JMTrucoCmd.egg-info/dependency_links.txt
+JMTrucoCmd.egg-info/top_level.txt
+JMTrucoCmd/models/bot.py
+JMTrucoCmd/models/card.py
+JMTrucoCmd/models/game.py
+JMTrucoCmd/models/stats.py
+JMTrucoCmd/models/type_card.py
