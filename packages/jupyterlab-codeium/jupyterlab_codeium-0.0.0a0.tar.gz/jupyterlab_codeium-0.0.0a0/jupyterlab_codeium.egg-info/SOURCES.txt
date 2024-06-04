@@ -1,0 +1,5 @@
+setup.py
+jupyterlab_codeium.egg-info/PKG-INFO
+jupyterlab_codeium.egg-info/SOURCES.txt
+jupyterlab_codeium.egg-info/dependency_links.txt
+jupyterlab_codeium.egg-info/top_level.txt
