@@ -1,0 +1,12 @@
+dt_extension_migrator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dt_extension_migrator/extension_apps/generic_commands.py,sha256=fOdJFsZxYV3CXtAhW0uGsjA6IB3iIeLnQ2kEAJXG-68,13452
+dt_extension_migrator/extension_apps/remote_logs.py,sha256=ZzvjIjI0uAW07rFt-El2lXa9zUgZrFF5qEEobv_1M1U,12879
+dt_extension_migrator/extension_apps/remote_unix.py,sha256=y2Tvv1gEyXxFqUbaH-l5z97FjoPqKe-wJ8aCVm_Akp8,11799
+dt_extension_migrator/logging.py,sha256=oIrh_x9Tt71anU92Kk5iOe7ymwll28vdXpiUbePZp_g,318
+dt_extension_migrator/main.py,sha256=dOxQh127VfepUayJvLObt7rmShXpSvTyXcDvmOa8bXQ,2499
+dt_extension_migrator/remote_unix_utils.py,sha256=uMbg3VZmzMEfZPjFJs8j31yuo75g8IK5emv0yvm9jTY,2496
+dt_extension_migrator/utility_apps/tags.py,sha256=OTRfOAurovBxmxRnNsUEXUOiavqUHM_MdweZVgqpiOw,4748
+dt_extension_migrator-0.1.14.dist-info/entry_points.txt,sha256=MH_sBU81_6JtHyUW6s9Zu_sEMLhaFag7X0JCb_qLtEA,66
+dt_extension_migrator-0.1.14.dist-info/METADATA,sha256=SDIhBqhSBC7YaTIzAIh1eEOyYIgELMx8aVTZOhyHwdw,3183
+dt_extension_migrator-0.1.14.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+dt_extension_migrator-0.1.14.dist-info/RECORD,,
