@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: mdpertool
+Version: 0.0.1.dev3
+Summary: A Software Tool for Investigation of Allosteric Communication within Protein Structures via Energy Dissipation in Molecular Dynamics Simulations 
+Home-page: https://github.com/bio-otto/MDPerTool_GUI
+Author: Halil I. Ozdemir
+Author-email: halil.ibrahim.oozdemir@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: Academic Free License (AFL)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+License-File: LICENSE.md
+Provides-Extra: conda
+Requires-Dist: mdtraj ; extra == 'conda'
+Requires-Dist: openmm ; extra == 'conda'
+Requires-Dist: pymol-open-source ; extra == 'conda'
+Requires-Dist: pyside2 ; extra == 'conda'
+Requires-Dist: mdanalysis ; extra == 'conda'
+Requires-Dist: pyqtgraph ; extra == 'conda'
+Requires-Dist: parmed ; extra == 'conda'
+
+The Program applying Energy Dissipation Concept using powerfull OpenMM Molecular Dynamic 
+Toolkit, which also supports the Cuda platform. Each residual energy calculation required for the concept can be 
+calculated using OpenMMs flexible and useful infrastructure.In addition, you can use the package only for energy 
+decomposition. For this, it will be sufficient to specify a XTC or a DCD file in the script. 
