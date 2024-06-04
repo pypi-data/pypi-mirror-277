@@ -1,0 +1,15 @@
+chemicalspace/__init__.py,sha256=Mz0PVnR8JqVW78WPJQWxAYWzHTrlGnNE95nitXg6wTU,75
+chemicalspace/space.py,sha256=MfGD5yBqMBxdZxz5a7PcTCsq9Yo5lvwBBJsa5XblHzE,634
+chemicalspace/utils.py,sha256=kB5PI9hgwo98jqP1XeIWKEFckCCkgYh7B7PxvESrj1I,8435
+chemicalspace/layers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chemicalspace/layers/acquisition.py,sha256=V6Jxwor6F7schlWJPfVO9Y52bKcytTVzcB3WDbfyXE4,7623
+chemicalspace/layers/base.py,sha256=X1fjGF_CIgIWDzZbu1LG_zgoeNRXfNgKdMW_4IbIoTc,21081
+chemicalspace/layers/clustering.py,sha256=Ls6aitIafkRU-7qpYItkM-a6yYbiU3ENVTvgbWLvXw8,13398
+chemicalspace/layers/diversity.py,sha256=U0ScpmYW_3t53eV8qcnU9TWzuOdI3J9yLrvdE_PYaro,4058
+chemicalspace/layers/neighbors.py,sha256=ceWGvoLl9_MNclVpFvqALMAMC_UuDLVxRFd3KJ_Xrak,4333
+chemicalspace/layers/projection.py,sha256=PVg-KrJfb68b6cgns0V75KVREapb8o704yJ4LW7k5e0,3483
+chemicalspace-0.1.1.dist-info/LICENSE.md,sha256=Jcfu_9RYYx56d9DWR2jh1Zkm9K2dNCTqbRJWfsncu8E,1071
+chemicalspace-0.1.1.dist-info/METADATA,sha256=hjrousCyHKVkw1vLETVBRxnf9Bs4xdGlYQAmU3pMGUs,18831
+chemicalspace-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+chemicalspace-0.1.1.dist-info/top_level.txt,sha256=1SR11-DKRjly8_27DOakVWN8SEoU4ljjLkVMb8eH_r0,14
+chemicalspace-0.1.1.dist-info/RECORD,,
