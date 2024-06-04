@@ -1,0 +1,17 @@
+ocrd_kraken/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ocrd_kraken/binarize.py,sha256=pQmbgh25QTRZ59lO9SE7NzpvYtsiESefSrzeT2rSIes,5215
+ocrd_kraken/cli.py,sha256=1olCzj58A9XRvS7eP5XmzCiZxwvc-nFHsqf-NxJc-Ho,280
+ocrd_kraken/config.py,sha256=IVSddFwPngzHLGj_UyuQ19BeVY0zaM1-ezPzpFstbtk,174
+ocrd_kraken/ocrd-tool.json,sha256=CdfAtrMQ1gIY6buBLtIPlaOifPShgSF7Ambz5FG9VMA,9117
+ocrd_kraken/recognize.py,sha256=nEvck6GfXMJ38oxYvBq7Hf3-ICVoNWUlPUptd5mvwzU,23443
+ocrd_kraken/segment.py,sha256=smqlMln4VygyKMqEA8C7j0kXKKGXhYusTG7O6jGGHDI,16323
+ocrd_kraken/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ocrd_kraken/cli/binarize.py,sha256=Ve-6RJAAoRnFgmE665fmEt_6gZRqQaKbVQ7fEtnTrqo,262
+ocrd_kraken/cli/recognize.py,sha256=FYL-R7QMM09TcZWEqNSw3ETE3VRuj-8bftMNkRCa-bM,267
+ocrd_kraken/cli/segment.py,sha256=wza4xHUGh8DbQQXtLIX0owxCJT4usdpZUhrbMTKEexI,258
+ocrd_kraken-0.4.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ocrd_kraken-0.4.1.dist-info/METADATA,sha256=En3ZIJP8pttz2JSBosivSyb7Ohg8JKrKVR0QOthWC4w,4846
+ocrd_kraken-0.4.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ocrd_kraken-0.4.1.dist-info/entry_points.txt,sha256=1g89vuYFJS_QFR7Par2EsW78LzStv-mJ2n4uGcE3FR4,174
+ocrd_kraken-0.4.1.dist-info/top_level.txt,sha256=4Ng_e7aMeeT49Ptkl2nr7mgkn41j5dKIbBdlX6ioMp0,12
+ocrd_kraken-0.4.1.dist-info/RECORD,,
