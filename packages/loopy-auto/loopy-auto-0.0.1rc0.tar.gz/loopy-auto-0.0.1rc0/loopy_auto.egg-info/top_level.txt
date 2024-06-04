@@ -1,0 +1,2 @@
+loopy
+loopy_auto
