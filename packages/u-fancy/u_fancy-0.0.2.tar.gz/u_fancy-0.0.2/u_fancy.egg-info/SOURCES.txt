@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+u_fancy/__init__.py
+u_fancy/accordion_frame.py
+u_fancy/bullet_points.py
+u_fancy/editor_frame.py
+u_fancy/profile_generator.py
+u_fancy/rich_text.py
+u_fancy/slideshow.py
+u_fancy.egg-info/PKG-INFO
+u_fancy.egg-info/SOURCES.txt
+u_fancy.egg-info/dependency_links.txt
+u_fancy.egg-info/requires.txt
+u_fancy.egg-info/top_level.txt
