@@ -1,0 +1,11 @@
+loader/__init__.py,sha256=IPLamu_RbN3rUIeo5WdpTYtDOeHzwM9jN5_k7gqxvZg,865
+loader/config.py,sha256=xk83JZz9E95JpwXyW9bh6ahrXANnHUA3P0LlHegvkX8,3775
+loader/loader.py,sha256=Hi3rvapq8YOAIb5XfaV-rD729k12eVY_yxU4hEh1H88,15047
+django_loader-0.0.14.dist-info/LICENSE,sha256=YwnWMlxbW1vj6fsYQtjhKFtcHvlwxRQGYMlGekwI89g,1100
+django_loader-0.0.14.dist-info/LICENSE.rst,sha256=WmvE_Xk6b79mN0a6RWea26Z5dRiI4mHxUYsuP_B6Qoc,1143
+django_loader-0.0.14.dist-info/LICENSE.rst~,sha256=2yEcsyR719hrUm_mFqsW3rICkDC5Ci5g6-5lG4EJVHk,1070
+django_loader-0.0.14.dist-info/LICENSE~,sha256=2yEcsyR719hrUm_mFqsW3rICkDC5Ci5g6-5lG4EJVHk,1070
+django_loader-0.0.14.dist-info/METADATA,sha256=Igi2y2ffK3Oom4Vd3ss8eA2XI5zAHWbumzSUSUXCKbM,4216
+django_loader-0.0.14.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_loader-0.0.14.dist-info/entry_points.txt,sha256=TNk94278RGyYslveZWxsr8JoUPUfyerNVxgogXN_2gM,45
+django_loader-0.0.14.dist-info/RECORD,,
