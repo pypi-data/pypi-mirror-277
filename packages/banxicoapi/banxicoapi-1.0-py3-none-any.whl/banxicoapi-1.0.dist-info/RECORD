@@ -1,0 +1,8 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/banxico_test.py,sha256=V_iUAhTAKRIKql03cUc47oePtLfAp8YzUxJv3WAAkFY,4068
+tests/conftest.py,sha256=xJNA4L9g4dutiV6RoywYMFrPyl_EOGJ12pkHNUj_y-s,167
+banxicoapi-1.0.dist-info/LICENSE,sha256=8dteb1oG_OrdPIfTDGJF-nQEVXWAHAlFOQ-fDAEoOZk,1066
+banxicoapi-1.0.dist-info/METADATA,sha256=iEQDFb7-zOgM0NUt4lHpv0Z9_qXas2lox9ptJQGWYEU,2677
+banxicoapi-1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+banxicoapi-1.0.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+banxicoapi-1.0.dist-info/RECORD,,
