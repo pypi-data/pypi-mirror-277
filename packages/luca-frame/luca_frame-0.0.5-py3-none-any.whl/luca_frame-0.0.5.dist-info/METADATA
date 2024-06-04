@@ -1,0 +1,31 @@
+Metadata-Version: 2.3
+Name: luca-frame
+Version: 0.0.5
+Summary: a lot of helpers
+Project-URL: Homepage, https://github.com/Zoneee/py_helpers
+Project-URL: Issues, https://github.com/Zoneee/py_helpers/issues
+Author-email: alphonse luca <alphonseluca@163.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# description
+a lot of helpers.
+
+# helpers
+
+## csv_helper
+__all__ = ["save", "create", "appendRow", "appendRows"]
+
+## logger_helper
+__all__ = ["loggerHelper"]
+including a `createLogger` function
+
+## path_helper
+__all__ = ["ensurePathExist", "ensureDirExist"]
+
+## time_helper
+__all__ = ["toTimestamp", "parseDate"]
