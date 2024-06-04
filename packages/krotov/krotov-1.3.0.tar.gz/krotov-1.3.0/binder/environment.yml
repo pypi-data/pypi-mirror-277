@@ -1,0 +1,10 @@
+name: krotov
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - qutip=4.7.6
+  - matplotlib
+  - pip:
+    - watermark
+    - krotov==1.3.0
