@@ -1,0 +1,3 @@
+modrinth_downloader
+scripts
+tests
