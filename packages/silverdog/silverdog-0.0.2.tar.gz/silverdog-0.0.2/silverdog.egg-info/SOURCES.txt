@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+silverdog/__init__.py
+silverdog/front_end.py
+silverdog/front_end_types.py
+silverdog.egg-info/PKG-INFO
+silverdog.egg-info/SOURCES.txt
+silverdog.egg-info/dependency_links.txt
+silverdog.egg-info/top_level.txt
