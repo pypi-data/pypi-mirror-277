@@ -1,0 +1,8 @@
+opentelemetry/instrumentation/watsonx/__init__.py,sha256=tFlez6kECJmzrzj_v9Ah5qFScQJMAk_rM8LNi-DQh6E,18200
+opentelemetry/instrumentation/watsonx/config.py,sha256=CtypZov_ytI9nSrfN9lWnjcufbAR9sfkXRA0OstDEUw,42
+opentelemetry/instrumentation/watsonx/utils.py,sha256=AR2hD2Uu0oQphG9ngshsNajiyZJ_sHuqXuULq0OlmqQ,742
+opentelemetry/instrumentation/watsonx/version.py,sha256=GyaC3hhx285KqPcqukJ07gRSFkuES5T27aUtAwvYYRw,23
+opentelemetry_instrumentation_watsonx-0.21.4.dist-info/METADATA,sha256=QmqgIOgx--MO61p057NF_tTR7ySl0mslUF39rKxe3iU,2581
+opentelemetry_instrumentation_watsonx-0.21.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+opentelemetry_instrumentation_watsonx-0.21.4.dist-info/entry_points.txt,sha256=xFxJtxKOPB2nW6xruWK61iFGt-UjMq_XI3otbkmahrE,116
+opentelemetry_instrumentation_watsonx-0.21.4.dist-info/RECORD,,
