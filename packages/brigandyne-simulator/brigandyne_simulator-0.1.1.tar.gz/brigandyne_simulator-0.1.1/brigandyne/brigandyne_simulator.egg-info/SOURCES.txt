@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+brigandyne/brigandyne_simulator.egg-info/PKG-INFO
+brigandyne/brigandyne_simulator.egg-info/SOURCES.txt
+brigandyne/brigandyne_simulator.egg-info/dependency_links.txt
+brigandyne/brigandyne_simulator.egg-info/top_level.txt
