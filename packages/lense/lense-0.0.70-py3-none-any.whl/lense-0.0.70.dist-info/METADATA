@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: lense
+Version: 0.0.70
+Summary: For QandA
+Home-page: https://github.com/tandan-kumar-covalenseglobal/Lense
+Author: Covalense
+Author-email: Admin@covalenseglobal.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: required
+Requires-Dist: pandas ==2.2.2
+Requires-Dist: PyPDF2 ==3.0.1
+Requires-Dist: python-docx ==1.1.0
+Requires-Dist: python-pptx ==0.6.23
+Requires-Dist: llama-index ==0.10.29
+Requires-Dist: llama-index.llms.azure-openai ==0.1.5
+Requires-Dist: llama-index.embeddings.azure-openai ==0.1.6
+Requires-Dist: langchain ==0.1.16
+Requires-Dist: huggingface-hub ==0.22.2
+Requires-Dist: PyMuPDF ==1.24.1
+Requires-Dist: sentence-transformers ==2.6.1
+Requires-Dist: llama-index-embeddings-langchain ==0.1.2
+Requires-Dist: llama-index-llms-langchain ==0.1.3
+Requires-Dist: llama-index.experimental ==0.1.3
+Requires-Dist: langchain-google-genai ==1.0.2
+Requires-Dist: langchain-experimental ==0.0.57
+Requires-Dist: langchain-openai ==0.1.3
+Requires-Dist: psycopg2 ==2.9.9
+Requires-Dist: fastapi ==0.110.2
+Requires-Dist: python-multipart ==0.0.9
+Requires-Dist: uvicorn ==0.29.0
+Requires-Dist: langchain-community ==0.0.34
+Requires-Dist: nest-asyncio
+
+lensegt
+
+LenseGt is a toolkit for QandA using RAG approach. It offers the users to extract answers to users from the doc. 
+
+# Table of Contents
+
+# Motivation
+# Features
+# Installation
+# usage
+
+
+# Motivation:
+In market, we have many models and it's a challenge for developer or end user to connect to model and every time they need to write the code. SO, we come up with lensegt which helps the user to connect to any model with least amount of time on code.
+
+# Features
+
+This module can be used based on gui as well as cli 
+
+#  Installation 
+ pip install lense
+
+# Usage
+   # Cli-mode
+        from lensegt import lense
+        filename = "abc.pdf"
+        lense.load_file(filename) 
+
+            for openai connections 
+            lense.engine(engine_type="OpenAI",api_key="sk-I4***J1TbO1")
+
+            for azureopen ai
+            lense.engine(engine_type="Azure OpenAI",api_key= "17b15**6f",api_version="2017-*-preview" ,azure_endpoint="https://covalenseopenaieastus2.openai.azure.com/")
+
+        lense.chat_query("summary of the file")
+
+   # for GUI
+       from lensegt import lense
+       lense.start()
+
+
+          
+ 
+
+
+
