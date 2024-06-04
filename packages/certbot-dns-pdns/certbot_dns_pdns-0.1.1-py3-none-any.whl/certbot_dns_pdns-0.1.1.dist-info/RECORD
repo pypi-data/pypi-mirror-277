@@ -1,0 +1,8 @@
+certbot_dns_pdns/__init__.py,sha256=bG7Ffen4LvQtgnYPFEpFccsWs81t4zqqeqn9ZeirH6E,38
+certbot_dns_pdns/dns_pdns.py,sha256=kfzryxxDNJKB-W-8lTVWFqyF1GrQYQmZhcEbzqdxaJo,2337
+certbot_dns_pdns/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+certbot_dns_pdns-0.1.1.dist-info/LICENSE.txt,sha256=LMXecVrlqXbwhvukkwiAyeQhkUFz_IURG_9RTUdXEj8,10786
+certbot_dns_pdns-0.1.1.dist-info/METADATA,sha256=yC3gp8wy-hMDv3oV7aq-IsnxF8YS7Qt9mQwxjaM_GIU,3400
+certbot_dns_pdns-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+certbot_dns_pdns-0.1.1.dist-info/entry_points.txt,sha256=9XJ_Tlstk44ifgAzRRgvh4nY6Rtdt8S6DsilurVGbo8,68
+certbot_dns_pdns-0.1.1.dist-info/RECORD,,
