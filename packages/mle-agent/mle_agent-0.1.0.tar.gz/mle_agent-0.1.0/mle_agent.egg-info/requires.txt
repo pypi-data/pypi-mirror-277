@@ -1,0 +1,14 @@
+rich
+click
+openai
+tinydb
+pyyaml
+uvicorn
+fastapi
+questionary
+prompt_toolkit
+pandas~=2.2.2
+psutil~=5.9.8
+instructor~=0.6.8
+pydantic~=2.6.4
+setuptools~=68.2.2
