@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+hddm_r/rest.xml
+hddm_r.egg-info/PKG-INFO
+hddm_r.egg-info/SOURCES.txt
+hddm_r.egg-info/dependency_links.txt
+hddm_r.egg-info/top_level.txt
+scripts/install_cmake.bat
