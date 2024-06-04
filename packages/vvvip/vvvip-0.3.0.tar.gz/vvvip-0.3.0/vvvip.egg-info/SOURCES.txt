@@ -1,0 +1,6 @@
+setup.py
+vvvip/__init__.py
+vvvip.egg-info/PKG-INFO
+vvvip.egg-info/SOURCES.txt
+vvvip.egg-info/dependency_links.txt
+vvvip.egg-info/top_level.txt
