@@ -1,0 +1,9 @@
+repos:
+-   repo: https://github.com/pycqa/flake8.git
+    rev: 7.0.0
+    hooks:
+      - id: flake8
+        name: Run flake8
+        entry: flake8
+        language: python
+        files: ^(src|tests)/.*\.py$

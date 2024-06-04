@@ -1,0 +1,59 @@
+[build-system]
+requires  = [
+    "hatchling>=1.21.0", "hatch-vcs>=0.4.0"
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "nosaastrust"
+dynamic = ["version"]
+description = "Backup manager to fetch suppliers backups and store"
+readme = "README.md"
+authors = [
+    {name = "Syslinbit", email = "contact@syslinbit.com"},
+]
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Information Technology",
+]
+dependencies = ["pyyaml", "cryptography", "requests"]
+
+[project.urls]
+Homepage = "https://gitlab.com/syslinbit/drafts/noSaasTrust"
+
+[project.optional-dependencies]
+extra = [
+    "pre-commit>=3.6.0"
+]
+lint = [
+    "flake8>=3.5.0",
+    "flake8-simplify",
+]
+test = [
+    "pytest>=4.6"
+]
+docs = [
+    "Sphinx>=7.2.6",
+    "myst-parser>=2.0.0"
+]
+
+[project.scripts]
+nost = "nost.__main__:entrypoint"
+nost-vault = "nost.utils.localvaults:nostvault"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.version.raw-options]
+# version_scheme = "python-simplified-semver"
+local_scheme = "no-local-version"
+git_describe_command = ["git", "describe", "--dirty", "--long", "--tags"]
+
+[tool.hatch.build.targets.wheel]
+packages=["src/nost", "src/nostplugins"]
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/nost/_version.py"
