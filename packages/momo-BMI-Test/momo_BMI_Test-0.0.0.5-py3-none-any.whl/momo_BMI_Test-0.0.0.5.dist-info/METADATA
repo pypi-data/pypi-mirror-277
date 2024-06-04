@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: momo-BMI-Test
+Version: 0.0.0.5
+Summary: My First Test Package
+Home-page: https://blog.naver.com/lovemhy26
+Author: Hayoung Mo
+Author-email: lovemhy26@gmail.com
+License: MIT
+Requires-Python: >=3
+
