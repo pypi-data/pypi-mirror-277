@@ -1,0 +1,14 @@
+anthology/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anthology/commands/__init__.py,sha256=YwjfxiJNck5Ts785DS7_bXGLeqgs0SS9B9yeuIjTcI0,133
+anthology/commands/install.py,sha256=PRtQERP16_KDfwSQODhd6G0YUPBofP941_p12mK9npY,2979
+anthology/commands/run.py,sha256=Tx8nsf63Jsrdnqz8iFLe7AJc7RS-3mHWYxNNw3lrA6A,2047
+anthology/commands/version.py,sha256=3TsRFLrjdCNlBdJTQqPKdz3Kjbsb2yQBcAfa8qKcN4E,2880
+anthology/definitions/config.py,sha256=_y0PiVXw65Hfrx1W3IBD4ZT6H9OORxCW1UauKeENACQ,1295
+anthology/definitions/version_constraint_collection.py,sha256=OU2zWBOKKuQSQMr5_KO2rib42pMlLxaCp0TOGEUOAbA,3037
+anthology/main.py,sha256=cPJmvduCXihsXF-BZ1l_TqM1ITInLk-K5axunGDg8J4,245
+anthology/plugin.py,sha256=Vc1ckY4lpV0RYU3zAKnVJ091GdWxoLyY8iTyBvMlSKI,511
+anthology/utils.py,sha256=blA25DiMePfxEpgd6ZpE0Z_FGesU3V49cVWlMEgsOOM,9617
+anthology-0.1.1.dist-info/METADATA,sha256=gihwTNIr4D9R64UhkYyH-5w4qC_6KxV-LsI1tJEeTU4,2374
+anthology-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+anthology-0.1.1.dist-info/entry_points.txt,sha256=KuyctV6lHoZ_vBmv9wg3ByuTePMMxUJazulEs04OzYE,72
+anthology-0.1.1.dist-info/RECORD,,
