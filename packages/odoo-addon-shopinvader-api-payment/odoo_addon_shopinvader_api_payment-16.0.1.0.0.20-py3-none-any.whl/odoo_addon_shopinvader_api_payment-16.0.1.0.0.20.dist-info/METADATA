@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: odoo-addon-shopinvader-api-payment
+Version: 16.0.1.0.0.20
+Summary: Shopinvader services to be able to pay (invoices, carts,...)
+Home-page: https://github.com/shopinvader/odoo-shopinvader
+Author: ACSONE SA/NV
+License: AGPL-3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 16.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.10
+Requires-Dist: extendable-pydantic >=1.2.0
+Requires-Dist: fastapi
+Requires-Dist: odoo-addon-extendable <16.1dev,>=16.0dev
+Requires-Dist: odoo-addon-extendable-fastapi <16.1dev,>=16.0dev
+Requires-Dist: odoo-addon-fastapi <16.1dev,>=16.0dev
+Requires-Dist: odoo-addon-pydantic <16.1dev,>=16.0dev
+Requires-Dist: odoo <16.1dev,>=16.0a
+Requires-Dist: pydantic >=2.0.0
+Requires-Dist: pyjwt
+
+UNKNOWN
+
