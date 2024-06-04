@@ -1,0 +1,6 @@
+metal_gpu/__init__.py,sha256=F4QGtLIWDT48bL2x0F4qO7iTybNWY6DXmYMYGVScuTo,20
+metal_gpu/add.py,sha256=uhpTH1gdLmCU6Xjtb3rKeo2S7rYsbnrXPuaS9_GLx3I,32
+metal_gpu-0.0.1.dist-info/METADATA,sha256=C8KsWiglAV28UHw3Ukn8jViRnSUVRJ6Ss9hvjmyXquI,417
+metal_gpu-0.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+metal_gpu-0.0.1.dist-info/licenses/LICENSE,sha256=UFUfPFJfHydiNw9ilLjxl9t9mmp2lW3vFEq1LRmae7o,1072
+metal_gpu-0.0.1.dist-info/RECORD,,
