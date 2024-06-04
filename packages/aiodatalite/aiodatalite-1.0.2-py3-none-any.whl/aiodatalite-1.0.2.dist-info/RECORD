@@ -1,0 +1,12 @@
+aiodatalite/__init__.py,sha256=ynmTG-AJpNLrq4VHfhrzw6mnQv-5UEAQsSYLodVnmsU,182
+aiodatalite/commons.py,sha256=9NA6uiNvvQ9H55IR6Cu8ygAl3GsVHG1VJSMWlkIbXyU,6134
+aiodatalite/constraints.py,sha256=EPdFBdFKNdGrRaDucHQLjCz0Tc00szmes6r8HCHRWjk,600
+aiodatalite/datalite_decorator.py,sha256=aqyWBJp6GgoAPa6eD4o0Fpgjr8tyUy_JtSm5mVwzpWY,6588
+aiodatalite/fetch.py,sha256=bzFU9UEoC3jwqkVhha-MfjxuoN5NN-SidtAeArN0d00,8120
+aiodatalite/mass_actions.py,sha256=4jon9WoQYRsW9WqxYsQqU0JZ_YBMsDrGrvMTky0FOWM,5523
+aiodatalite/migrations.py,sha256=LXJ29KFnjrFsbqi5G4jOzSLkr5qEtcMByCfi_a7QN40,7750
+aiodatalite/typed.py,sha256=29sXc593UB30Olo9088zOeiIbm12PYsL4D1SHP4Q5Pk,830
+aiodatalite-1.0.2.dist-info/LICENSE,sha256=7qASuCdNNl2RJgmj8AMNV3sC2Z9-6TeELxc8aA6UJu0,1073
+aiodatalite-1.0.2.dist-info/METADATA,sha256=VOEAgtTwX893UYlw41z1c3FJB6i5BlDYguoL4QHmhkY,5557
+aiodatalite-1.0.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+aiodatalite-1.0.2.dist-info/RECORD,,
