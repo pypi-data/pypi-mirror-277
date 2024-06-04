@@ -1,0 +1,17 @@
+setup.cfg
+setup.py
+soda_generator/__init__.py
+soda_generator.egg-info/PKG-INFO
+soda_generator.egg-info/SOURCES.txt
+soda_generator.egg-info/dependency_links.txt
+soda_generator.egg-info/top_level.txt
+soda_generator/connectors/__init__.py
+soda_generator/connectors/click_connect.py
+soda_generator/connectors/connection_manager.py
+soda_generator/connectors/connectors.py
+soda_generator/connectors/trino_connector.py
+soda_generator/generators/__init__.py
+soda_generator/generators/contract_variable.py
+soda_generator/generators/soda_generator.py
+soda_generator/profilers/__init__.py
+soda_generator/profilers/profiler.py
