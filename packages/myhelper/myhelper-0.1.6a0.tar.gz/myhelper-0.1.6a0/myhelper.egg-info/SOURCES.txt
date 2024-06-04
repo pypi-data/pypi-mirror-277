@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+myhelper/__init__.py
+myhelper/cli.py
+myhelper/pdftk.py
+myhelper/utils.py
+myhelper/yt_dlp_helper.py
+myhelper.egg-info/PKG-INFO
+myhelper.egg-info/SOURCES.txt
+myhelper.egg-info/dependency_links.txt
+myhelper.egg-info/entry_points.txt
+myhelper.egg-info/requires.txt
+myhelper.egg-info/top_level.txt
