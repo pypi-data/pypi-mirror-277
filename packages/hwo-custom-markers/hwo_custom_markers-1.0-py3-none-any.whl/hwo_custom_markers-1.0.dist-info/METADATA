@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: hwo-custom-markers
+Version: 1.0
+Summary: Custom matplotlib markers for aperture concepts
+Home-page: https://github.com/sfr348/hwo_custom_markers
+Author: Susan F. Redmond
+License: UNKNOWN
+Keywords: development,setup,setuptools
+Platform: UNKNOWN
+Requires-Python: >=3.7, <4
+Requires-Dist: numpy (>=1.14.5)
+Requires-Dist: matplotlib (>=2.2.0)
+Requires-Dist: jupyter
+Requires-Dist: svgpath2mpl
+Requires-Dist: svgpathtools
+
+UNKNOWN
+
+
