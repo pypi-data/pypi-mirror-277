@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+gitrepochecker.egg-info/PKG-INFO
+gitrepochecker.egg-info/SOURCES.txt
+gitrepochecker.egg-info/dependency_links.txt
+gitrepochecker.egg-info/entry_points.txt
+gitrepochecker.egg-info/requires.txt
+gitrepochecker.egg-info/top_level.txt
+repochecker/__init__.py
+repochecker/git_info.py
