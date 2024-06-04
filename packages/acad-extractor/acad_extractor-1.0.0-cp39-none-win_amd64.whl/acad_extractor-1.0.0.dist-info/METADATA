@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: acad-extractor
+Version: 1.0.0
+Requires-Python: >=3.9.9
+Author-Email: Alexandr Gusev <alphacity@yandex.ru>
+Summary: A quick tool to extract block attributes and properties from AutoCAD drawings
+Description-Content-Type: text/markdown
+License: MIT
+Keywords: quick, extract, block, attributes, properties, AutoCAD
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Project-Url: Homepage, https://github.com/Alexandr-Gusev/acad-extractor
+
+# acad-extractor
+
+A quick tool to extract block attributes and properties from AutoCAD drawings.
