@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: Programming-Language-Final-Project
+Version: 0.1
+Summary: Programming Language Final Project
+Author: Jomar C. Geron, Pyarwin Jake E. Janoras
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Inventory Management Library
+
+![Python Version](https://img.shields.io/badge/Python-3.8%20%7C%203.9-blue)
+![License](https://img.shields.io/github/license/yourusername/inventory-management-library)
+
+A simple Python library for managing an inventory of parts, allowing users to add, delete, change descriptions, and update prices of parts efficiently.
+
+## Features
+
+- **Add Part:** Easily add new parts to the inventory with unique part numbers, descriptions, and prices.
+- **Delete Part:** Remove existing parts from the inventory by specifying their part numbers.
+- **Change Description:** Modify the description of a part in the inventory using its part number.
+- **Change Price:** Update the price of a part in the inventory by specifying its part number.
+
+## Installation
+
+You can install the library via pip:
+
+```bash
+pip install inventory-management-library
+```
+
+## Usage
+
+```python
+from inventory_management_library import Inventory
+
+# Initialize an inventory
+inventory = Inventory()
+
+# Add a part
+inventory.add_part("P001", "Widget A", 10.99)
+
+# Delete a part
+inventory.delete_part("P001")
+
+# Change description
+inventory.change_description("P002", "Updated Widget B")
+
+# Change price
+inventory.change_price("P002", 15.99)
+
+# Get all parts
+all_parts = inventory.get_all_parts()
+for part in all_parts:
+    print(f"Part Number: {part.get_part_number()}, Part Description: {part.get_part_description()}, Price: {part.get_price()}")
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Authors
+
+- Jomar C. Geron
+- Pyarwin Jake E. Janoras
+- 3CS-A
