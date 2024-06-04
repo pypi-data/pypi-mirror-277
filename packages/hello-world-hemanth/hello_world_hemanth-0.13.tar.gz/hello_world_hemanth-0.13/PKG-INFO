@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: hello_world_hemanth
+Version: 0.13
+Summary: A simple Hello package for subtracting two numbers
+Author: Hemanthbollina123
+Author-email: hsbollina@gmail.com
+License-File: LICENSE
+Requires-Dist: click
