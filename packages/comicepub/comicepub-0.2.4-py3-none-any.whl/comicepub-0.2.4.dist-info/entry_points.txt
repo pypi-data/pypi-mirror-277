@@ -1,0 +1,2 @@
+[console_scripts]
+comicepub = comicepub.cli:main
