@@ -1,0 +1,8 @@
+README.md
+setup.py
+metathreadspy/__init__.py
+metathreadspy/main.py
+metathreadspy.egg-info/PKG-INFO
+metathreadspy.egg-info/SOURCES.txt
+metathreadspy.egg-info/dependency_links.txt
+metathreadspy.egg-info/top_level.txt
