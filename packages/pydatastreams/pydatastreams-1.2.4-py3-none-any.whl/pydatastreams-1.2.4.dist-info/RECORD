@@ -1,0 +1,10 @@
+datastream/__about__.py,sha256=_Y5uxGUwMxg8VuksWkiGXU_QOTxRnVtkALvNtmszjOI,23
+datastream/__init__.py,sha256=HRZ5QVVuKGnD8LezjNfR1bXEfLXb07kugrxL_fOxLl0,282
+datastream/base.py,sha256=xWN3hlBR2n7zQzSJLzSRRng8SGHAcFCQnhrTX_X6whY,7468
+datastream/deserializing.py,sha256=2zAoL8rcf3KNE3bUKq0BFINCg7i41cLPmQdOtCI2myg,4850
+datastream/serializing.py,sha256=57ceaYGQd-NkSDp3i5-ZvC2jkh32p1sEIPjyALFdgAE,4268
+datastream/twoway.py,sha256=J_YU3rWkqHgjEih0FA2LWkruAVwRWOTga6WtkumqpSc,3651
+pydatastreams-1.2.4.dist-info/METADATA,sha256=LBdievwe3jIbRqtuDSGbceXJNUWe8JJ8friI-PZO22U,7214
+pydatastreams-1.2.4.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+pydatastreams-1.2.4.dist-info/licenses/LICENSE.txt,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pydatastreams-1.2.4.dist-info/RECORD,,
