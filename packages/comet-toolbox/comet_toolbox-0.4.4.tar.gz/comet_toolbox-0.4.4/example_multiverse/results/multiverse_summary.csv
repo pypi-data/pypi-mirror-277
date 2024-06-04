@@ -1,0 +1,13 @@
+Universe,negative_values,threshold,binarisation
+Universe_1,absolute,0.5,True
+Universe_2,absolute,0.5,False
+Universe_3,absolute,0.3,True
+Universe_4,absolute,0.3,False
+Universe_5,absolute,0.1,True
+Universe_6,absolute,0.1,False
+Universe_7,discard,0.5,True
+Universe_8,discard,0.5,False
+Universe_9,discard,0.3,True
+Universe_10,discard,0.3,False
+Universe_11,discard,0.1,True
+Universe_12,discard,0.1,False
