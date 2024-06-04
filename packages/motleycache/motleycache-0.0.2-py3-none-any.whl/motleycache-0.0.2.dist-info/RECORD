@@ -1,0 +1,8 @@
+motleycache/__init__.py,sha256=j4e-nrxokp3lreLlVAcIBDeNVu17mz2vEr-QdGwzYtQ,221
+motleycache/caching.py,sha256=72UboCvzIw4FJg4tjUsZeJdavD2EjppsUvDSMqCdpF4,1592
+motleycache/http_cache.py,sha256=Gun2k8s9x1Qh57mTPSGF3fMQ6TBb3UGFqY9T0kG864M,14637
+motleycache/utils.py,sha256=90NqNMdxMpFK6qDJVm2XMLvvHFeLyzdXA19YxhK0vzE,1987
+motleycache-0.0.2.dist-info/LICENSE,sha256=sfcQoJJ2rMbyKeUU9ym6h_eR8rmkLvd1u-lHd0llRYY,1067
+motleycache-0.0.2.dist-info/METADATA,sha256=dZGbOYgeE7TFyz8e_T_G076dANg_bUW1CjIKzIdnRsQ,4099
+motleycache-0.0.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+motleycache-0.0.2.dist-info/RECORD,,
