@@ -1,0 +1,13 @@
+et_al/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+foo_et_al/__init__.py,sha256=IUA8HSQ67wqPgpivtlLUEtep8gapq5w4EaHqxK3KqHU,29
+foo_et_al/foo_et_al.py,sha256=eV4LFPttFzsp37afc5tCJDIkf2vBsMgXfVe0QJ7ueSM,171
+foo_et_al/utils.py,sha256=J9slHKDjYfwfOzvRoOPie-SIpsTz9KclzvgoZoTjgHw,317
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/_test_example_contribution.py,sha256=F656Lq2JaxPoW8ciTmFlStmzv7swcep1i4Qhg6cles4,604
+tests/run_tests.py,sha256=7PHOI3vwvUpQcTp98lsEL_9ve2l2BPyQvQKTmu5NH68,180
+tests/test_foo_et_al.py,sha256=Kri8Wc-aSKejQkxUlLX7fGzmf0r1rCrUvSRBxBDSDXU,740
+foo_et_al_2-0.3.dist-info/LICENSE,sha256=6PctbiGn-8r5QOz4HUBoj5PaIXGwvx22M7f_8996WF4,1077
+foo_et_al_2-0.3.dist-info/METADATA,sha256=AhG_hal3XVkljG37yWaBkxALAg_bxJavu0dnQPxhuho,3763
+foo_et_al_2-0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+foo_et_al_2-0.3.dist-info/top_level.txt,sha256=gxlJW_4bq70WHZSigLsJz3in2d5Kj1faW6FybwX9YBM,22
+foo_et_al_2-0.3.dist-info/RECORD,,
