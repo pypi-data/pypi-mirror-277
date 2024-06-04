@@ -1,0 +1,7 @@
+auro_utils
+pyrealsense2>=2.54
+matplotlib>=3.7
+imageio>=2.34
+transforms3d>=0.4
+opencv-contrib-python>=4.9
+opencv-python>=4.9

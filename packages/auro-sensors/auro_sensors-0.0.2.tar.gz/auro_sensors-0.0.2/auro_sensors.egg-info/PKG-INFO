@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: auro_sensors
+Version: 0.0.2
+Summary: sensors for auromix application
+Home-page: https://github.com/Auromix/auro_sensors
+Author: Herman Ye
+Author-email: hermanye233@icloud.com
+Keywords: auro_sensors
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: auro_utils
+Requires-Dist: pyrealsense2>=2.54
+Requires-Dist: matplotlib>=3.7
+Requires-Dist: imageio>=2.34
+Requires-Dist: transforms3d>=0.4
+Requires-Dist: opencv-contrib-python>=4.9
+Requires-Dist: opencv-python>=4.9
+
+# Auro Sensors
+
+Auro Sensors is a Python library for interfacing with various sensors and sensor utilities.
+
+# Install
+
+```bash
+pip install auro_sensors
+```
+
+# Usage
+
+## Camera
+
+### Realsense Camera
+
+Realsense camera SDK wrapper.
+
+```bash
+python examples/cameras/example_realsense_camera.py
+```
+
+## Utils
+
+### Aruco
+
+Aruco marker detection and pose estimation.
+
+```bash
+python examples/utils/example_aruco.py
+```
