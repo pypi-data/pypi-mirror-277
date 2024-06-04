@@ -1,0 +1,8 @@
+[build-system]
+requires = [
+    "pandas==2.2.2",
+    "chembl-webresource-client==0.10.9",
+    "requests==2.32.3",
+]
+
+build-backend = "setuptools.build_meta"
