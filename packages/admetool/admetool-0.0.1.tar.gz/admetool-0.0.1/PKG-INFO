@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: admetool
+Version: 0.0.1
+Summary: Tool that uses Pharmit data to perform an ADMET analysis
+Author: Júlio César Xavier
+Author-email: jcaxavier2@gmail.com
+License: MIT License
+Keywords: admetlab
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# admetool
