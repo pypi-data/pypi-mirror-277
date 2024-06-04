@@ -1,0 +1,16 @@
+jusho/__about__.py,sha256=_rZLGpVag4nc_XQ7lq7P5PTdVj2mVE8fxRNBxvsnA3c,395
+jusho/__init__.py,sha256=yrHAI6mZlwqwuYCNduw5CngBuhoODBMznyHflQJImj0,314
+jusho/jusho.py,sha256=JL_2QgoH51ALWMv1WX7iTY8kQOJqkM1bIE13eR7KXx8,5041
+jusho/models.py,sha256=Al8EM9umnoa5OSd8r45tdbaMektzSutlSMt1vzQjcVs,2472
+jusho/organize_data.py,sha256=aLRmDnk4Ub-qX9fb0d5q7PEScvCi7v3dLZzY637OJlY,8967
+jusho/data/address.db,sha256=vlBdwwLM23dLFxXJ4TKwrT8fto9HsOpTLcqigzkLRBI,14667776
+jusho/gateway/__init__.py,sha256=6WJdRXd7X4djYpCc15pBPBykdKVRTgEYLRFqcyqmQrw,140
+jusho/gateway/addresses.py,sha256=tiAPf81KtYxCVSuqUYW0HETWoueUCPk_376BlAp4Czs,2133
+jusho/gateway/cities.py,sha256=_EluHd2B-KQctBZt2SuPOqVcNAgWqZju0pzvKwL_tuU,1360
+jusho/gateway/insert.py,sha256=nKgCdBap0M6jGlRWtI9csZf5KR-dk8073-w4LyP04eM,1930
+jusho/gateway/prefectures.py,sha256=_EFQTHbjrL9NpV1zJq_BwOh-nS1-otO-qyPWw9xvTdo,722
+jusho/gateway/utils.py,sha256=VZIDJgsYAyaoLosof-tJGEzwJSiiGqCb9upD8WFCr70,680
+jusho-1.0.1.dist-info/METADATA,sha256=wGPtTdEXIC-CyVF_01IMuN8T0Rc00A9AEhaWwr6P7Mo,4620
+jusho-1.0.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+jusho-1.0.1.dist-info/licenses/LICENSE,sha256=xnRipYzgxjzOfY-wvJRWxlp5BhH6Jk2FkEkVaQVasko,1062
+jusho-1.0.1.dist-info/RECORD,,
