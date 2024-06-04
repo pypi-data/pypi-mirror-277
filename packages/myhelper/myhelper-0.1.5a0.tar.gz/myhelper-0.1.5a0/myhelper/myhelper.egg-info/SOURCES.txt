@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+myhelper/myhelper.egg-info/PKG-INFO
+myhelper/myhelper.egg-info/SOURCES.txt
+myhelper/myhelper.egg-info/dependency_links.txt
+myhelper/myhelper.egg-info/entry_points.txt
+myhelper/myhelper.egg-info/requires.txt
+myhelper/myhelper.egg-info/top_level.txt
