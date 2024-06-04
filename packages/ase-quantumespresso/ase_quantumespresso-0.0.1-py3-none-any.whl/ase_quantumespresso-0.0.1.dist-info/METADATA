@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ase_quantumespresso
+Version: 0.0.1
+Summary: ASE Calculators for Quantum ESPRESSO
+Keywords: graph,workflows
+Author-email: Xing Wang <xingwang1991@gmail.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: ase>=3.23.0
+Project-URL: Documentation, https://ase-quantumespresso.readthedocs.io
+Project-URL: Source, https://github.com/superstar54/ase-quantumespresso
+
+# ASE-QuantumESPRESSO
+ASE calculators for Quantum ESPRESSO.
+
