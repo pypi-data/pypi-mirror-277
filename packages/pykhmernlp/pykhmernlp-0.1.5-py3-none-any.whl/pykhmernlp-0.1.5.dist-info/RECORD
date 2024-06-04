@@ -1,0 +1,12 @@
+pykhmernlp/corpus/__init__.py,sha256=D1BPq3xb_S9x5Wq8RwjbIlMJmhKvVtevCJ1vgJtjFcI,1839
+pykhmernlp/corpus/crawl_en2en.py,sha256=CYzYn7JkOt2bOY-6cT4-4dH1A2krNN3pm3f5P1PrBBg,1638
+pykhmernlp/corpus/english_dictionary.tsv,sha256=cu5QKmydUhPRgOAYkKH6VjWLaUjfxvEyuTMERmHEzwQ,15230658
+pykhmernlp/corpus/english_words.txt,sha256=0s5UoFkzv187QA1I14WGOp0_K0S_l5oZc68iIg98R8g,2493150
+pykhmernlp/corpus/icu_words.txt,sha256=15MwqE4era90pHB0hNDFco5av-Pkrfv5mF5uMd28c7E,2030884
+pykhmernlp/corpus/khmer_dictionary.xlsx,sha256=ImNZ5mKpuh5x1Zq6QKEIw_DdzcMyqZxUtlWYyBxC8_s,3435921
+pykhmernlp/corpus/lexicon.txt,sha256=vAK2M52_IF0EDOSBH2iFCxYvBRyVPZxrVRfncJdW9Vg,1460906
+pykhmernlp-0.1.5.dist-info/LICENSE,sha256=QlHVIUNO-2t5SXUrRf6Ah90kjUC3TYh69hX8p4XcIWM,11343
+pykhmernlp-0.1.5.dist-info/METADATA,sha256=7S-0px05psSqfCFUyCFHkcgM7Ms94r_wkl4denzVH94,4612
+pykhmernlp-0.1.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pykhmernlp-0.1.5.dist-info/top_level.txt,sha256=sUuC5giGF-WYpl4TJuZf5gjzHcSVbvkZKlygFNP7Vc8,11
+pykhmernlp-0.1.5.dist-info/RECORD,,
