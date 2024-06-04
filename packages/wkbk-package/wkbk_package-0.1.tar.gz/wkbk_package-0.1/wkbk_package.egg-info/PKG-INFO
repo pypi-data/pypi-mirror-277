@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: wkbk_package
+Version: 0.1
+Summary: A simple package to create a hello file in the user download directory
+Author: WK BK
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

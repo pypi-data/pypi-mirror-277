@@ -1,0 +1,2 @@
+[console_scripts]
+wkbk_package = my_pkg.Hello:main
