@@ -1,0 +1,45 @@
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+# SPDX-FileCopyrightText: 2024 Syslinbit <contact@syslinbit.com>
+
+# Default local configuration
+# This default configuration uses Borg as backend
+
+[general]
+ssh_key_dir = "/var/lib/nosaastrust/.ssh"
+
+[backend]
+type = "Borg"
+options = "None"
+repo_path = "/var/lib/nosaastrust/nost-backups"
+
+# Path to borg key
+borg_key_path = "/etc/nost.d/borg"
+
+[backend.rotate]
+year = 1
+month = 4
+
+[cache]
+# Stores local path to temporary keep files between sync and backend process
+# Default path is "/var/cache/nosaastrust" folder in current directory
+path = "/var/cache/nosaastrust"
+
+[vaults]
+order = ["localb64", "localfernet", "pass"]
+
+[vaults.localb64]
+mode = "local"
+path = "/srv/nost-vaults/localb64"
+encryption = "b64"
+
+[vaults.localfernet]
+mode = "local"
+path = "/srv/nost-vaults/localfernet"
+encryption = "fernet"
+# Default path to store fernet key
+keypath = "/var/lib/nosaastrust/localfernet.key"
+
+[vaults.pass]
+mode = "pass"
+path = "/srv/nost-vaults/.password-store"
+# subpass = ""

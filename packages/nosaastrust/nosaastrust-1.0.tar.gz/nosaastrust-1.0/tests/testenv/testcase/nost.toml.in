@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+# SPDX-FileCopyrightText: 2024 Syslinbit <contact@syslinbit.com>
+
+[general]
+
+[backend]
+type = "Borg"
+options = "None"
+# Backups are stored locally in "/usr/backup" by default
+repo_path = "@TESTDIR@/repo"
+
+[cache]
+# Stores local path to temporary keep files between sync and backend process
+# Default path is "/var/cache/nosaastrust" folder in current directory
+path = "@TESTDIR@/cache/nosaastrust"
+
+[backend.rotate]
+year = 1
+month = 4
