@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+OpenRecall.egg-info/PKG-INFO
+OpenRecall.egg-info/SOURCES.txt
+OpenRecall.egg-info/dependency_links.txt
+OpenRecall.egg-info/requires.txt
+OpenRecall.egg-info/top_level.txt
+openrecall/__init__.py
+openrecall/app.py
