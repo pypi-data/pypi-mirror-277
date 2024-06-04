@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: p2prev
+Version: 0.0.1
+Summary: estimating population prevalence from unthresholded p-values from repeated n=1 experiments
+Home-page: https://github.com/john-veillette/p2prev
+Author: John Veillette
+Author-email: johnv@uchicago.edu
+License: BSD-3-Clause
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: pymc>=4.0
+Requires-Dist: arviz
+Requires-Dist: numpy
+Requires-Dist: pandas

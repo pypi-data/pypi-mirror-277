@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+p2prev/__init__.py
+p2prev/_benchmarking.py
+p2prev/model.py
+p2prev/pcurve.py
+p2prev.egg-info/PKG-INFO
+p2prev.egg-info/SOURCES.txt
+p2prev.egg-info/dependency_links.txt
+p2prev.egg-info/requires.txt
+p2prev.egg-info/top_level.txt
