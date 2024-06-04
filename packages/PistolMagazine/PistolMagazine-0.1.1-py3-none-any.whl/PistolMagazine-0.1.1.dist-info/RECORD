@@ -1,0 +1,17 @@
+pistol_magazine/__init__.py,sha256=2GuIMBI5Yw7M4FmbJx1-4saj2xpKRL2xSRcu1FhUgIQ,604
+pistol_magazine/base.py,sha256=2PbOHF0iVQQzsdKCQB5sVgEZNrVbybhuHrrC3k4tn7k,899
+pistol_magazine/datetime.py,sha256=k8NVOPC4BBi8SGab7jej5Md9igLD8_i1AaIASRHySs8,919
+pistol_magazine/dict.py,sha256=h56ZinuPhnr1vGlt5DnaHx-DNKAsIkc99YbStLQ3EdY,642
+pistol_magazine/float.py,sha256=tQa5_RJ7A8bA0GZbKdbQpr0zND453R3Al7yAYOoLedE,397
+pistol_magazine/int.py,sha256=EdgbjOlkXfGjc9tegM5dhQgYq2-kfN-eW3nDWPpyb6Y,1187
+pistol_magazine/list.py,sha256=p_tu5XGwpa_QWZ_4_W_kpN8sZ6Ss6pRi9cfBSiHsE_c,592
+pistol_magazine/provider.py,sha256=tAKXLcJTqRjmfA972FNrwiMK0NOVkFMKxjGkfFPByLE,147
+pistol_magazine/self_made.py,sha256=SCclSi6HbHFJmNx7MTg2CgRGHQnCncA8hYuIL3sNk4U,3748
+pistol_magazine/str.py,sha256=M5TcxxD5bpj7JXkUo-FU6OQ5_3Oe7hoTumt9pNaIIbo,1753
+pistol_magazine/timestamp.py,sha256=qwbENOGdHgggkHZcuszkF7S0Xm-nKY8ZS44Q8kH8VOw,1134
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_example.py,sha256=VvjT7hZ4kOl0kcGQlISXERldLKDUUjh0TiiY-n78BDg,2537
+PistolMagazine-0.1.1.dist-info/METADATA,sha256=Am3fbQzK6fb5h0dQwk9_nr4n63aGo3kMipTNKyMOd4o,2104
+PistolMagazine-0.1.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+PistolMagazine-0.1.1.dist-info/top_level.txt,sha256=UXBdOsYxp9MNRSusuy0kFg2XHCCqwdwKqLLYgjo4DLw,21
+PistolMagazine-0.1.1.dist-info/RECORD,,
