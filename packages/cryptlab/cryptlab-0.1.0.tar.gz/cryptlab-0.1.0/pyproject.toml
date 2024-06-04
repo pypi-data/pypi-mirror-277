@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "cryptlab"
+version = "0.1.0"
+description = "A framework for CTF challenges in a malicious-server setting"
+authors = ["Kien Tuong Truong <info@ktruong.dev>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+loguru = "^0.7.2"
+fastapi = "^0.111.0"
+python-decouple = "^3.8"
+uvicorn = "^0.29.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+cryptlab = "cryptlab.entrypoint:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
