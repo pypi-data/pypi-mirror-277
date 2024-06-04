@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/automationfordb.egg-info/PKG-INFO
+src/automationfordb.egg-info/SOURCES.txt
+src/automationfordb.egg-info/dependency_links.txt
+src/automationfordb.egg-info/requires.txt
+src/automationfordb.egg-info/top_level.txt
+src/db_automation/__init__.py
+src/db_automation/mongo_crud.py
