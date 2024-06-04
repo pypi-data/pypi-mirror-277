@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+soda_generator.egg-info/PKG-INFO
+soda_generator.egg-info/SOURCES.txt
+soda_generator.egg-info/dependency_links.txt
+soda_generator.egg-info/top_level.txt
