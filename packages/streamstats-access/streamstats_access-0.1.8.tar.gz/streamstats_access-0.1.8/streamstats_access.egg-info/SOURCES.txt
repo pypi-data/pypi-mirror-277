@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+streamstats_access/__init__.py
+streamstats_access/api_client.py
+streamstats_access/batch_query.py
+streamstats_access/config.json
+streamstats_access/config.py
+streamstats_access/endpoints.py
+streamstats_access/models.py
+streamstats_access/utils.py
+streamstats_access.egg-info/PKG-INFO
+streamstats_access.egg-info/SOURCES.txt
+streamstats_access.egg-info/dependency_links.txt
+streamstats_access.egg-info/requires.txt
+streamstats_access.egg-info/top_level.txt
