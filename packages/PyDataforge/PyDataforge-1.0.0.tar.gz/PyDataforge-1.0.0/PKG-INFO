@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: PyDataforge
+Version: 1.0.0
+Summary: A package for removing sensitive information from data
+Home-page: UNKNOWN
+Author: Guipeng Wei
+Author-email: 18316734738@163.com
+License: MIT License
+Description: This is a package for removing sensitive information from data, which utilizes automatic encoder, one-dimensional convolutional layer and bidirectional generative adversarial network to build a model to generate high-quality data.
+        
+        It provides:
+        
+         - efficient feature extraction using multi-layer convolution
+         - novel bidirectional generative adversarial network
+         - secure sensitive information protection mechanism
+         - high-quality data generation for practical applications
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
