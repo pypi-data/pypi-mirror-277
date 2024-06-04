@@ -1,0 +1,8 @@
+pynamodb_single_table/__init__.py,sha256=UYBtxo_ny22pRw-fnJjbgGfxWmJmi9QQAIpip5agsSY,106
+pynamodb_single_table/base.py,sha256=ilcqVT_8fwk42jZ3JHGDQ_0y22laKcACoYbLpXKL478,5739
+pynamodb_single_table/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynamodb_single_table-0.1.4.dev1717448595.dist-info/LICENSE,sha256=FIXGphgBVgZj9czsKGFx6C7AC8bdatTwRMfXleSdSFU,1068
+pynamodb_single_table-0.1.4.dev1717448595.dist-info/METADATA,sha256=U13ls9dLK7u81Ozw116owwan5G8Yj1RoQf85_uEEf50,6546
+pynamodb_single_table-0.1.4.dev1717448595.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pynamodb_single_table-0.1.4.dev1717448595.dist-info/entry_points.txt,sha256=smL1vsc-F7HjxAXKLBUDs6uSSXf12TLsHocycLd_kD0,77
+pynamodb_single_table-0.1.4.dev1717448595.dist-info/RECORD,,
