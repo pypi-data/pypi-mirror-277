@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+gitpoll/__init__.py
+gitpoll/args.py
+gitpoll/config.py
+gitpoll/git.py
+gitpoll/log.py
+gitpoll/main.py
+gitpoll/shell.py
+gitpoll/version.py
+gitpoll.egg-info/PKG-INFO
+gitpoll.egg-info/SOURCES.txt
+gitpoll.egg-info/dependency_links.txt
+gitpoll.egg-info/entry_points.txt
+gitpoll.egg-info/requires.txt
+gitpoll.egg-info/top_level.txt

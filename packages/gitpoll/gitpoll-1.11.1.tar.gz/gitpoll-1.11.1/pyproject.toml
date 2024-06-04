@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=61.0", "build"]
+build-backend = "setuptools.build_meta"
+
+[tool.isort]
+profile = "black"
+use_parentheses = true
+line_length = 79
+
+[tool.black]
+line_length = 79
+skip_string_normalization = true
+skip_magic_trailing_comma = true
+preview = true
+target-version = ['py37']
+
+[project]
+name = "gitpoll"
+version = '1.11.1'
+authors = [{ name="Cary Carter", email="ccarterdev@gmail.com" }]
+description = "A tool to watch a GitHub repository for changes and perform actions before and after pulling updates."
+readme = "README.md"
+requires-python = ">=3.5"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "pyshared<2.0.0",
+    "logfunc<3.0.0",
+]
+
+[project.scripts]
+gitpoll = "gitpoll.main:main"
+
+
+[project.urls]
+Homepage = "https://github.com/cc-d/gitpoll"
+Repository = "https://github.com/cc-d/gitpoll"
+Issues = "https://github.com/cc-d/gitpoll/issues"
+Documentation = "https://github.com/cc-d/gitpoll"
+Changelog = "https://github.com/cc-d/gitpoll/blob/main/CHANGELOG.md"
+
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "black",
+    "isort",
+    "flake8",
+]

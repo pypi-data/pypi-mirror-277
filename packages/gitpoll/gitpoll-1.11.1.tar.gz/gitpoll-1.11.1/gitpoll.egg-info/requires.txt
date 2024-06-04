@@ -1,0 +1,9 @@
+pyshared<2.0.0
+logfunc<3.0.0
+
+[dev]
+pytest
+pytest-cov
+black
+isort
+flake8
