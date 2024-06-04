@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "ActionStreamerWS"
+version = "0.1.1"
+description = "This is a library that can be used to work with the ActionStreamer API."
+authors = ["ActionStreamer <joe@actionstreamer.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

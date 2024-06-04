@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ActionStreamerWS
+Version: 0.1.1
+Summary: This is a library that can be used to work with the ActionStreamer API.
+Author: ActionStreamer
+Author-email: joe@actionstreamer.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# myPackage
+
+A sample Python package with subpackages `mySubpackage1` and `mySubpackage2`.
+
