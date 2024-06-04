@@ -1,0 +1,2 @@
+[console_scripts]
+tirank = TiRank.app:main
