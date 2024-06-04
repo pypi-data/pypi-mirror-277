@@ -1,0 +1,1 @@
+include app/repositories/json_dir/*.json
