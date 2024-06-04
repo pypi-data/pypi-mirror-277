@@ -1,0 +1,17 @@
+sif_tools/CONVERT.py,sha256=KIcJ9vIUts94M1KF-Dy8nnnsLxh7Xg5-Xpz46yXMc6E,2678
+sif_tools/SIFopen.py,sha256=X5LUT6Jj3rBaSoMpGObfk_iIRsG7s-XXfJuA5bG2eAY,11034
+sif_tools/SIFplot.py,sha256=g2aXfj3jZSyyS9xqYaF7dA-ii38tV6k6dvWJYqqmQOw,8461
+sif_tools/SIFpy.py,sha256=6q15u2w9F3FsKC2jGp-z-ZIzXWl-dbhCNcCgzdA6WYU,5990
+sif_tools/SPECTRAL.py,sha256=BKJ89Acofj5GIV_EIrm3TOsUvdeVOzXKuwk6behX-fE,6669
+sif_tools/__init__.py,sha256=y42Jfb3yB5ICfeo3lty5LZV7AStoaOXgXT6RRe35nD8,66
+sif_tools/__main__.py,sha256=iR9cpEf_WFEyC-uxVbTEXJHIQjA_XKYwi-StpbMJpNk,460
+sif_tools/utils.py,sha256=PsBVtDgHbTNZZo_9IWOyV9apMwb2WnuA8qImwtN1sh8,7371
+sif_tools/CommandLine/CommandLineInterface.py,sha256=6GIp8BN1GjJOVVfHhwE2-RpxbLUd-RJ84-XA2geYz38,6318
+sif_tools/CommandLine/CommandLineTools.py,sha256=fWa6nPUgH83vLIJPHFbYGMqUFIaoq9ORwqf7BJs1z9g,2249
+sif_tools/CommandLine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sif_tools-1.1.3.dist-info/LICENSE,sha256=baLxFkeB7Yhvfd2bvZHGsxrX8T_0FeM0SOf8iPapzw8,14874
+sif_tools-1.1.3.dist-info/METADATA,sha256=KPEvnRf8-ZdEFiH8DkQIif5jdJRzC3sKlulkmOY3JrI,2217
+sif_tools-1.1.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+sif_tools-1.1.3.dist-info/entry_points.txt,sha256=DqG3nDHpwF6a9Pi-8ic6LnI9j5GbrFF-VZHepRl22HM,54
+sif_tools-1.1.3.dist-info/top_level.txt,sha256=8EV42y0oQ9ntR0iu1o7m8YbEoQeY9FvOzrc1RJhEgzo,10
+sif_tools-1.1.3.dist-info/RECORD,,
