@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: DataCraftHub
+Version: 0.1
+Description-Content-Type: text/markdown
+
+Python Utility Functions
+
+This Python library contains several utility functions for common tasks such as file manipulation, image processing, dataset splitting, and video processing. Below is a brief overview of each function:
+
+rename_and_copy_with_incremental_index(source_folder, destination_folder, rename_text, start_index)
+
+extract_and_save_cropped_images(input_folder, output_folder, roi)
+
+split_dataset_into_partitioned_sets(dataset_dir, output_dir, split_ratio=(0.8, 0.1, 0.1))
+
+generate_text_files_for_images(image_directory, label_directory, text)
+
+split_dataset_with_associated_labels(dataset_dir, output_dir, split_ratio=(0.8, 0.1, 0.1))
+
+split_video_into_frames(video_path, output_folder)
+
+
+
