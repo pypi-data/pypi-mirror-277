@@ -1,0 +1,6 @@
+gevent_requests-1.0.0.dist-info/METADATA,sha256=z80LnJVqRPfRero1EXr8MUUus3M8Uou8vlPs5xcrJuY,2955
+gevent_requests-1.0.0.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+gevent_requests-1.0.0.dist-info/licenses/LICENSE,sha256=QGOIKokT5LN0V9WP5mAL2XW6BTyNsujGshjnychXXKg,1283
+gevent_requests.py,sha256=tgydToRENUZ6BpmtHV5L3kaMvugYZbzeXHyf8ve6G1A,10765
+tests.py,sha256=b0ynPbP1nVuD0HBynG7GZbqFgc1kdaay1ELrwkoWBTU,8866
+gevent_requests-1.0.0.dist-info/RECORD,,
