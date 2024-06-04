@@ -1,0 +1,4 @@
+pyyaml
+llama_cpp_agent
+llama_cpp
+logging
