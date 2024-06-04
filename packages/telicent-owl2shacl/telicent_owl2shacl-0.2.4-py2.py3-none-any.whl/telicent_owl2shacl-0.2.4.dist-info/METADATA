@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: telicent-owl2shacl
+Version: 0.2.4
+Summary: Tool for generating shacl and validating instance data against that shacl and ontology.
+Author-email: Telicent Ltd <opensource@telicent.io>
+License: © Crown copyright (2023). 
+        
+        This information is licensed under the terms of the [Open Government Licence](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) except where otherwise stated. 
+        
+        Code forming part of this repository is licensed under the terms of the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0). 
+Project-URL: Repository, https://github.com/Telicent-io/shacl-tool
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: argcomplete >=3.1.1
+Requires-Dist: cffi >=1.15.1
+Requires-Dist: click >=8.1.6
+Requires-Dist: docutils >=0.20.1
+Requires-Dist: html5lib >=1.1
+Requires-Dist: isodate >=0.6.1
+Requires-Dist: owlrl >=6.0.2
+Requires-Dist: packaging >=23.1
+Requires-Dist: pipx >=1.2.0
+Requires-Dist: prettytable >=2.5.0
+Requires-Dist: pycparser >=2.21
+Requires-Dist: pyparsing >=3.1.0
+Requires-Dist: pyshacl >=0.23.0
+Requires-Dist: rdflib >=6.3.2
+Requires-Dist: six >=1.16.0
+Requires-Dist: typing >=3.7.4.3
+Requires-Dist: userpath >=1.9.0
+Requires-Dist: wcwidth >=0.2.6
+Requires-Dist: webencodings >=0.5.1
+Provides-Extra: dev
+Requires-Dist: pre-commit ==3.5.0 ; extra == 'dev'
+Requires-Dist: ruff ==0.1.5 ; extra == 'dev'
+Requires-Dist: types-pytz ==2023.3.1.1 ; extra == 'dev'
+Requires-Dist: types-requests ==2.31.0.10 ; extra == 'dev'
+Requires-Dist: mypy ==1.7.0 ; extra == 'dev'
+Requires-Dist: pytest ==8.2.1 ; extra == 'dev'
+Requires-Dist: cyclonedx-bom ==4.4.3 ; extra == 'dev'
+
+
+![Logo](Images/ies-logo.png)
+
+## [Introduction to IES](introduction.md)
+## [Introduction to 4D Ontology](4dOntologyIntro.md)
+## [The IES Ontology](ies.md)
+
+IES was developed by the UK Government with contributions from Dstl, Ministry of Defence, Metropolitan Police Service, Foreign & Commonwealth Office, Home Office, Department for Business and Trade (was BEIS), and HMRC, with technical support from Aurora Consulting (to Home Office) and Telicent (to Dstl).
+
+This repo provides public access to the IES for collaboration purposes including the specification itself, sample data/code and supporting documentation. There is also a [private repo](https://github.com/dstl/IES) used for the management of the IES; please get in touch if you require access, for example to submit formal Change Requests. 
+
+© Crown copyright (2023). This information is licensed under the terms of the [Open Government Licence](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) except where otherwise stated
