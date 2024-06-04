@@ -1,0 +1,3 @@
+[console_scripts]
+h2ogpt_finetune = h2ogpt.finetune:entrypoint_main
+h2ogpt_generate = h2ogpt.generate:entrypoint_main
