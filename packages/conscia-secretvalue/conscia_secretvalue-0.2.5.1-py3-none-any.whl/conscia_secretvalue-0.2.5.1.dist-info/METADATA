@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: conscia-secretvalue
+Version: 0.2.5.1
+Summary: Conscia Secretvalue
+Author-Email: "Kalle M. Aagaard" <km@conscia.com>
+License: MIT
+Requires-Python: >=3.9
+Provides-Extra: click
+Requires-Dist: click>=8.1.7; extra == "click"
+Description-Content-Type: text/markdown
+
+# conscia-secretvalue
