@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: rssfeed
+Version: 0.1
+Summary: A simple rss/atom feed parser
+Keywords: rssfeed,rss,feed,atom,rssparse,feedparse
+Author: p7e4
+License: GPLv3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Text Processing :: Markup :: XML
+Project-URL: Repository, https://github.com/p7e4/rssfeed
+Project-URL: Issues, https://github.com/p7e4/rssfeed/issues
+Project-URL: Changelog, https://github.com/p7e4/rssfeed/blob/main/changelog.md
+Requires-Python: >=3.12
+Requires-Dist: python-dateutil>=2.9
+Description-Content-Type: text/markdown
+
+# rssfeed
+
+A simple rss/atom feed parser
+
+## Installation
+
+`$ pip install --upgrade rssfeed`
+
+
