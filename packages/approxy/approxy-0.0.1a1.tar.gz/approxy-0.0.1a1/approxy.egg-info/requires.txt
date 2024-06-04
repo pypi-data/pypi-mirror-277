@@ -1,0 +1,6 @@
+numpy~=1.26
+scikit-learn~=1.4
+
+[dev]
+ruff~=0.2.2
+pytest~=7.4
