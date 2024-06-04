@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatchling.build.targets.wheel]
+packages = ["src/hibp_py"]
+
+[project]
+name = "hibp-py"
+version = "0.1.0"
+authors = [{ name = "Pavel Sushko", email = "github@psushko.com" }]
+description = "Python utility for Have I Been Pwned API"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+homepage = "https://github.com/Pavel-Sushko/hibp-py"
+issues = "https://github.com/Pavel-Sushko/hibp-py/issues"
