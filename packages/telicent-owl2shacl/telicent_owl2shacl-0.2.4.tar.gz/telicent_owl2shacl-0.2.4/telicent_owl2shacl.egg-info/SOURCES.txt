@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+pyproject.toml
+shacltool/__init__.py
+shacltool/owl2shacl.py
+telicent_owl2shacl.egg-info/PKG-INFO
+telicent_owl2shacl.egg-info/SOURCES.txt
+telicent_owl2shacl.egg-info/dependency_links.txt
+telicent_owl2shacl.egg-info/entry_points.txt
+telicent_owl2shacl.egg-info/requires.txt
+telicent_owl2shacl.egg-info/top_level.txt
+test/test_owl2shacl.py
