@@ -1,0 +1,2 @@
+recursive-include cleverdoc/resources *
+recursive-include cleverdoc *xxx.pyc

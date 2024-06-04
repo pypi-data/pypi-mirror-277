@@ -1,0 +1,10 @@
+pyspark<=3.4.2,>=3.0.2
+pyarrow
+tesserocr
+numpy
+openai
+pandas
+pillow
+PyMuPDF
+pyJWT
+cryptography
