@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: ProgLang-Final-Project
+Version: 0.1
+Summary: Programming Language Final Project
+Author: Jomar C. Geron, Pyarwin Jake E. Janoras
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+## Programming Final Project
+
+--DESCRIPTION--
+
+To publish a Python package, you'll want to provide a clear and comprehensive description that effectively communicates what your package does and its intended use. Here's a structured guide on how to create a compelling package description:
+
+1. **Name and Purpose**: Start with a concise statement of what your package does. This should be a brief overview that captures the essence of your package's functionality.
+
+2. **Features**: Highlight the key features and capabilities of your package. What problems does it solve? What makes it unique or useful?
+
+3. **Target Audience**: Describe the intended audience for your package. Is it aimed at beginners, experienced developers, data scientists, or a specific industry niche?
+
+4. **Usage**: Provide examples or use cases to illustrate how your package can be used. This helps users understand the practical applications and benefits.
+
+5. **Installation**: Include instructions on how to install your package using pip or any other package manager. Make sure to specify any dependencies or requirements.
+
+6. **Documentation**: Mention the availability of documentation, including where users can find more detailed information about your package, such as a website, README file, or official documentation page.
+
+7. **License**: Specify the license under which your package is distributed. This is important for users to understand the terms of use and distribution.
+
+8. **Versioning**: If applicable, mention your versioning scheme and how users can stay updated with the latest releases and changes.
+
+9. **Support**: Let users know how they can get support if they encounter issues or have questions about your package. This could include a link to a GitHub repository for bug reports or a community forum for discussions.
+
+10. **Credits**: Acknowledge any contributors or libraries that your package depends on. Giving credit where it's due helps foster a sense of community and collaboration.
+
+## Authors
+
+- Jomar C. Geron
+- Pyarwin Jake E. Janoras
+- 3CS-A
