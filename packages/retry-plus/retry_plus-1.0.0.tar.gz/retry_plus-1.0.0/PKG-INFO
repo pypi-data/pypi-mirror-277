@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: retry_plus
+Version: 1.0.0
+Summary: A generic retry package for Python
+Author: Talaat Magdy
+Author-email: Talaat Magdy <talaatmagdy75@gmail.com>
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: pytest
+Requires-Dist: pytest-asyncio
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-asyncio; extra == "dev"
