@@ -1,0 +1,13 @@
+.leaflet-container {
+    width: 100vw;
+    height: 400px;
+}
+
+/* Fixes for Django base.css */
+.module .leaflet-draw ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.module .leaflet-draw ul li {
+    list-style-type: none;
+}
