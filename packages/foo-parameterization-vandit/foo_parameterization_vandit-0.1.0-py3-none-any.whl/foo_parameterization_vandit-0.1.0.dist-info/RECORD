@@ -1,0 +1,8 @@
+foo_parameterization/__init__.py,sha256=EFCSgZP4wWlv5nXmTzL2NAx-KKO-GbugUPHc2jiTTqw,161
+foo_parameterization/foo_parameterization.py,sha256=QkJ17QEpMs9x3SfbcBlp75mpCTuXRMIFMi1KgT40jYs,568
+tests/__init__.py,sha256=EFCSgZP4wWlv5nXmTzL2NAx-KKO-GbugUPHc2jiTTqw,161
+tests/test_foo_parameterization.py,sha256=EpAR4ABpeCkQdhdq3KQ_AcZ6Kx6Rd8iQ1ACh4jTa-9U,780
+foo_parameterization_vandit-0.1.0.dist-info/METADATA,sha256=fdR0x9ejcJMqyZAZOrYgWlxnkvHMfeHNUSyP2xSIsCU,973
+foo_parameterization_vandit-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+foo_parameterization_vandit-0.1.0.dist-info/top_level.txt,sha256=sVUf3MgocM4JfR63BrwMPNfmtWDCPIjpxWx6hZWSeO0,27
+foo_parameterization_vandit-0.1.0.dist-info/RECORD,,
