@@ -1,0 +1,3 @@
+anomalib
+pandas==2.0.0
+tqdm

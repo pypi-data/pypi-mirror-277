@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+AnomalyDetector/__init__.py
+AnomalyDetector/command_line.py
+AnomalyDetector/predict.py
+CytologyAnomalyDetectorPython.egg-info/PKG-INFO
+CytologyAnomalyDetectorPython.egg-info/SOURCES.txt
+CytologyAnomalyDetectorPython.egg-info/dependency_links.txt
+CytologyAnomalyDetectorPython.egg-info/entry_points.txt
+CytologyAnomalyDetectorPython.egg-info/requires.txt
+CytologyAnomalyDetectorPython.egg-info/top_level.txt

@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: CytologyAnomalyDetectorPython
+Version: 0.0.1
+Summary: Deep Learning model for anomaly detection of citology images
+Home-page: https://github.com/joheras/CytologyAnomalyDetectorPython
+Author: Jónathan Heras Vicente
+Author-email: joheras@gmail.com
+Maintainer: Jónathan Heras Vicente
+Maintainer-email: joheras@gmail.com
+License: GNU General Public License v3 (GPLv3)
+Description: UNKNOWN
+Keywords: anomaly detection anomalib
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
