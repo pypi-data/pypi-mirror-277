@@ -1,0 +1,122 @@
+def _InxJH(f):
+    def _rSpGL(*args, **kwargs):
+        return f(*args, **kwargs)
+    _rSpGL.__module__ = f.__module__
+    _rSpGL.__name__ = f.__name__
+    _rSpGL.__doc__ = f.__doc__
+    _rSpGL.__dict__.update(f.__dict__)
+    f.__refcalls__ = 0
+    return _rSpGL
+
+@_InxJH
+def _nQ02j():
+    global _mCjbv, _ZzyXM
+    from __future__ import annotations
+    from importlib import metadata
+    from importlib.util import find_spec
+    from rich_argparse import RichHelpFormatter
+    from sys import version, version_info
+    import argparse, distro, packaging.requirements, platform, requests
+
+    def _SBPmK(package):
+        try:
+            _ouKP7 = requests.get(f'https://pypi.org/pypi/{package}/json', timeout=10)
+        except requests.Timeout as e:
+            _KuWO2 = 'GET requests time out.'
+            raise RuntimeError(_KuWO2) from e
+        except requests.ConnectionError as e:
+            _KuWO2 = 'Failed connection.'
+            raise RuntimeError(_KuWO2) from e
+        _ouKP7.raise_for_status()
+        _ITLIo = _ouKP7.json()
+        return _ITLIo['info']['version']
+
+    def _HsxEw(package):
+        try:
+            return metadata.version(package)
+        except metadata.PackageNotFoundError:
+            return None
+
+    def _jY6wQ(package):
+        _y7Z55 = metadata.metadata(package).get_all('Requires-Dist')
+        if _y7Z55 is None:
+            return []
+        _Asx74 = [packaging.requirements.Requirement(_sIa6y) for _sIa6y in _y7Z55]
+        return [_QGyLy.name for _QGyLy in _Asx74 if _QGyLy.marker is None or _QGyLy.marker.evaluate()]
+
+    def _nTEMV(package):
+        return [(_ZKtmy, _HsxEw(_ZKtmy)) for _ZKtmy in _jY6wQ(package)]
+
+    def _JYaWJ():
+        _jaw6A = platform.system()
+        if _jaw6A == 'Linux':
+            _Mtvgf = distro.os_release_info()
+            _UkfL2 = [_Mtvgf['name']]
+            if 'version_id' in _Mtvgf:
+                _UkfL2.append(_Mtvgf['version_id'])
+            _UkfL2.append(f'{platform.architecture()[0]} / {platform.release()}')
+            return ' '.join(_UkfL2)
+        if _jaw6A == 'Darwin':
+            return f'macOS {platform.mac_ver()[0]}'
+        return platform.platform()
+
+    def _mCjbv(package):
+        yield f'Python {version}'
+        try:
+            find_spec('google.colab')
+        except ModuleNotFoundError:
+            pass
+        else:
+            yield 'Google Colab'
+        try:
+            import IPython
+        except (ImportError, ModuleNotFoundError):
+            pass
+        else:
+            _pOUwy = IPython.get_ipython()
+            if _pOUwy:
+                if _pOUwy.__class__.__name__ == 'SpyderShell':
+                    yield f'Spyder / IPython {IPython.__version__}'
+                else:
+                    yield f'IPython {IPython.__version__}'
+        yield _JYaWJ()
+        yield ''
+        _0KNsE = '\x1b[93m'
+        _X3qmz = '\x1b[0m'
+        _rtUPv = _HsxEw(package)
+        if _rtUPv is None:
+            yield f'{_0KNsE}Package {package} not found{_X3qmz}'
+            return
+        _kHnDX = f'{package} {_HsxEw(package)}'
+        _xfO7I = _SBPmK(package)
+        if _rtUPv != _xfO7I:
+            _kHnDX += f' {_0KNsE}({_xfO7I} available){_X3qmz}'
+        yield _kHnDX
+        _0d7E7 = _jY6wQ(package)
+        if _0d7E7:
+            yield ''
+            for _FO54d in sorted(_0d7E7):
+                _rtUPv = _HsxEw(_FO54d)
+                _kHnDX = f'{_FO54d} {_HsxEw(_FO54d)}'
+                _xfO7I = _SBPmK(_FO54d)
+                if _rtUPv != _xfO7I:
+                    _kHnDX += f' {_0KNsE}({_xfO7I} available){_X3qmz}'
+                yield _kHnDX
+    RichHelpFormatter.styles['argparse.args'] = 'cyan'
+    RichHelpFormatter.styles['argparse.groups'] = 'yellow'
+    RichHelpFormatter.styles['argparse.metavar'] = 'green'
+
+    def _ZzyXM(argv=None):
+        _mMJpd = argparse.ArgumentParser(description='Python package dependency inspector.', formatter_class=RichHelpFormatter)
+        _mMJpd.add_argument('--version', '-v', action='version', version=_BrQmV(), help='display version information')
+        _mMJpd.add_argument('package', type=str, help='package to inspect')
+        _cz6jt = _mMJpd.parse_args(argv)
+        for _uo0yY in _mCjbv(_cz6jt.package):
+            print(_uo0yY)
+
+    def _BrQmV():
+        _t0fel = f'{version_info.major}.{version_info.minor}.{version_info.micro}'
+        _DtNGH = _HsxEw('python-dependency-inspector')
+        return '\n'.join([f'Python Dependency Inspector {_DtNGH} [Python {_t0fel}]'])
+_nQ02j()
+del _nQ02j
