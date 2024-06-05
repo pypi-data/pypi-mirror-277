@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ultra-cache
+Version: 0.1.0
+Summary: Simple and extensible caching for FastAPI requests
+License: MIT
+Author: Jegor Kitskerkin
+Author-email: jegor.kitskerkin@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fastapi (>=0.111.0,<0.112.0)
+Requires-Dist: pydantic (>=2.7.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+# ulra-cache 
+Simple and extensible caching for FastAPI requests.
+Meant to provide caching capabilities using a simple decorator, storing results in a preferred backend.
+
+Taken inspiration from: https://github.com/long2ice/fastapi-cache
+
+## Installation
+
+```shell
+pip install ultra-cache
+```
+
