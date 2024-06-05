@@ -1,0 +1,14 @@
+modularitypruning/__init__.py,sha256=U1iz51AVVzHw0aBZeJicxVg_L6TWq5pmv8Ep_bYyySU,238
+modularitypruning/champ_utilities.py,sha256=VveP8N9CvMODk3dPtVMRfNLji1pktaolA6iNoW6Fy-A,16348
+modularitypruning/leiden_utilities.py,sha256=sV3BkYONzVmKlpy-gUUUoL8XfKhwpytMRmCcijbsAiA,10395
+modularitypruning/louvain_utilities.py,sha256=Zt58Wl4hgu6-zejdl-N_NW04UC4rbYmSHgpfoGDC2Ws,8231
+modularitypruning/parameter_estimation.py,sha256=EPU5BDDauToPbAdG1lZc9p5Rl_oDqiC7bltfnjs5tg8,10479
+modularitypruning/parameter_estimation_utilities.py,sha256=OzgJT4jOo2ovoHzUbS0m40l2cqqOk9tBU9cF35Tmm_M,28150
+modularitypruning/partition_utilities.py,sha256=Fizqd0JuODL8W4BP2h8iV0WhZMK6HoKjH_QFNVDZkaI,956
+modularitypruning/plotting.py,sha256=3JqJOpfoq_Vj_6y8nqrYHhkSqDdI56iAb4pSAMcgEmI,10568
+modularitypruning/progress.py,sha256=XxkEVx8L9BoFnWtvUPg-kWtxUmE1RHqs5p5HPiTExUQ,971
+modularitypruning-1.4.0.dist-info/LICENSE,sha256=eWz3HIQQxg7p1iSpUOUDKdDhGcuMPuVDDlcXf9F12D8,1068
+modularitypruning-1.4.0.dist-info/METADATA,sha256=ZtLw4-g6NiP2r4G3Wcfk_ND_5wTjrNCn8etyjOkx5QM,3420
+modularitypruning-1.4.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+modularitypruning-1.4.0.dist-info/top_level.txt,sha256=ZPOx3a-ek0Ge0ZMq-uvbySSaAL9MZ-t23-JkuHZXo9E,18
+modularitypruning-1.4.0.dist-info/RECORD,,
