@@ -1,0 +1,793 @@
+{
+  "graph": {
+    "id": "hpc.ior",
+    "type": "compspec",
+    "label": "compatibilities",
+    "metadata": {
+      "version": "0.0.0",
+      "source": "https://github.com/supercontainers/compspec"
+    },
+    "nodes": {
+      "modules": {
+        "label": "IOR modules"
+      },
+      "module.cephfs": {
+        "label": "cephfs module"
+      },
+      "module.cephfs.olazy": {
+        "label": "enable Lazy I/O"
+      },
+      "module.mmap": {
+        "label": "MMAP module"
+      },
+      "module.mmap.madv_dont_need": {
+        "label": "Use advise don't need"
+      },
+      "module.mmap.madv_pattern": {
+        "label": "Use advise to indicate the pattern random/sequential"
+      },
+      "module.ncmpi": {
+        "label": "NCMPI module"
+      },
+      "module.ncmpi.preallocate": {
+        "label": "Preallocate file size"
+      },
+      "module.ncmpi.use_strided_datatype": {
+        "label": "put strided access into datatype"
+      },
+      "module.ncmpi.use_file_view": {
+        "label": "Use MPI_File_set_view"
+      },
+      "module.mpiio": {
+        "label": "Module MPIIO"
+      },
+      "module.mpiio.preallocate": {
+        "label": "Preallocate file size"
+      },
+      "module.mpiio.use_strided_datatype": {
+        "label": "put strided access into datatype"
+      },
+      "module.mpiio.use_file_view": {
+        "label": "Use MPI_File_set_view"
+      },
+      "module.dummy": {
+        "label": "Module DUMMY"
+      },
+      "module.dummy.delay_only_rank0": {
+        "label": "Delay only Rank0"
+      },
+      "module.dummy.delay_create_rank0": {
+        "label": "Delay per create in usec"
+      },
+      "module.dummy.delay_close0": {
+        "label": "Delay per close in usec"
+      },
+      "module.dummy.delay_sync0": {
+        "label": "Delay for sync in usec"
+      },
+      "module.dummy.delay_xfer0": {
+        "label": "Delay per xfer in usec"
+      },
+      "module.posix": {
+        "label": "POSIX module"
+      },
+      "module.posix.odirect": {
+        "label": "Direct I/O Mode"
+      },
+      "module.posix.rangelocks": {
+        "label": "Use range locks (read locks for read ops)"
+      },
+      "options": {
+        "label": "Options for running IOR"
+      },
+      "options.api": {
+        "label": "API for I/O [POSIX|PMDK|DUMMY|MPIIO|NCMPI|MMAP|CEPHFS|Gfarm]"
+      },
+      "options.blocksize": {
+        "label": "contiguous bytes to write per task  (e.g.: 8, 4k, 2m, 1g)"
+      },
+      "options.inter_test_delay": {
+        "label": "delay between reps in seconds"
+      },
+      "options.deadline_for_stonewalling": {
+        "label": "seconds before stopping write or read phase"
+      },
+      "options.stonewalling_wear_out": {
+        "label": "once the stonewalling timeout is over, all process finish to access the amount of data"
+      },
+      "options.stonewalling_wear_out_iterations": {
+        "label": "stop after processing this number of iterations, needed for reading data back written with"
+      },
+      "options.min_time_duration": {
+        "label": "minimum Runtime for the run (will repeat from beginning of the file if time is not yet over)"
+      },
+      "options.script_file": {
+        "label": "test script name"
+      },
+      "options.set_timestamp_signature": {
+        "label": "set value for time stamp signature/random seed"
+      },
+      "options.repetitions": {
+        "label": "number of repetitions of test"
+      },
+      "options.outlier_threshold": {
+        "label": "warn on outlier N seconds from mean"
+      },
+      "options.datapacket_type": {
+        "label": "type of packet that will be created [offset|incompressible|timestamp|random|o|i|t|r]"
+      },
+      "options.num_tasks": {
+        "label": "number of tasks that are participating in the test (overrides MPI)"
+      },
+      "options.test_file": {
+        "label": "full name for test"
+      },
+      "options.task_per_node_offset": {
+        "label": "for read tests use with -C & -Z options (-C constant N, -Z at least N)"
+      },
+      "options.segment_count": {
+        "label": "number of segments"
+      },
+      "options.transfer_size": {
+        "label": "size of transfer in bytes (e.g.: 8, 4k, 2m, 1g)"
+      },
+      "options.max_time_duration": {
+        "label": "max time in minutes executing repeated test; it aborts only between iterations and not within a test!"
+      },
+      "options.reorder_task_random_seed": {
+        "label": "random seed for -Z option"
+      },
+      "options.random_prefill": {
+        "label": "For random -z access only: Prefill the file with this blocksize, e.g., 2m"
+      },
+      "options.random_offset_seed": {
+        "label": "The seed for -z"
+      },
+      "version": {
+        "label": "The version of IOR"
+      },
+      "began": {
+        "label": "When the analysis began (human readable time)"
+      },
+      "finished": {
+        "label": "When the analysis finished (human readable time)"
+      },
+      "machine": {
+        "label": "IORs representation of the machine it ran on"
+      },
+      "command_line": {
+        "label": "Command line provided to run IOR"
+      },
+      "summary.write.operation": {
+        "label": "A summary of a write operation"
+      },
+      "summary.write.API": {
+        "label": "Module API used"
+      },
+      "summary.write.TestID": {
+        "label": "ID of the test"
+      },
+      "summary.write.ReferenceNumber": {
+        "label": "Reference number of write"
+      },
+      "summary.write.segmentCount": {
+        "label": "Segments counts of write"
+      },
+      "summary.write.blockSize": {
+        "label": "Block size of write"
+      },
+      "summary.write.transferSize": {
+        "label": "Transfer size of write"
+      },
+      "summary.write.numTasks": {
+        "label": "Number of tasks"
+      },
+      "summary.write.tasksPerNode": {
+        "label": "Taks per node"
+      },
+      "summary.write.repetitions": {
+        "label": "Repetitions of write"
+      },
+      "summary.write.filePerProc": {
+        "label": "Files per process of write"
+      },
+      "summary.write.reorderTasks": {
+        "label": "Reorder of tasks for write"
+      },
+      "summary.write.taskPerNodeOffset": {
+        "label": "Task per node offset of write"
+      },
+      "summary.write.reorderTasksRandom": {
+        "label": "Reorder tasks random for write"
+      },
+      "summary.write.reorderTasksRandomSeed": {
+        "label": "Reorder task random seed of write"
+      },
+      "summary.write.bwMaxMIB": {
+        "label": "Bandwidth Max MIB of write"
+      },
+      "summary.write.bwMinMIB": {
+        "label": "Bandwidth Min MIB of write"
+      },
+      "summary.write.bwMeanMIB": {
+        "label": "Bandwidth mean MIB of write"
+      },
+      "summary.write.bwStdMIB": {
+        "label": "Bandwidth standard deviation MID of write"
+      },
+      "summary.write.OPsMax": {
+        "label": "Operations max of write"
+      },
+      "summary.write.OPsMin": {
+        "label": "Operations min of write"
+      },
+      "summary.write.OPsMean": {
+        "label": "Operations mean of write"
+      },
+      "summary.write.OPsSD": {
+        "label": "Operations standard deviation of write"
+      },
+      "summary.write.MeanTime": {
+        "label": "Mean time of write"
+      },
+      "summary.write.xsizeMiB": {
+        "label": "Size MIB of write"
+      },
+      "summary.read.operation": {
+        "label": "A summary of a read operation"
+      },
+      "summary.read.API": {
+        "label": "Module API used"
+      },
+      "summary.read.TestID": {
+        "label": "ID of the test"
+      },
+      "summary.read.ReferenceNumber": {
+        "label": "Reference number of read"
+      },
+      "summary.read.segmentCount": {
+        "label": "Segments counts of read"
+      },
+      "summary.read.blockSize": {
+        "label": "Block size of read"
+      },
+      "summary.read.transferSize": {
+        "label": "Transfer size of read"
+      },
+      "summary.read.numTasks": {
+        "label": "Number of tasks"
+      },
+      "summary.read.tasksPerNode": {
+        "label": "Taks per node"
+      },
+      "summary.read.repetitions": {
+        "label": "Repetitions of read"
+      },
+      "summary.read.filePerProc": {
+        "label": "Files per process of read"
+      },
+      "summary.read.reorderTasks": {
+        "label": "Reorder of tasks for read"
+      },
+      "summary.read.taskPerNodeOffset": {
+        "label": "Task per node offset of read"
+      },
+      "summary.read.reorderTasksRandom": {
+        "label": "Reorder tasks random for read"
+      },
+      "summary.read.reorderTasksRandomSeed": {
+        "label": "Reorder task random seed of read"
+      },
+      "summary.read.bwMaxMIB": {
+        "label": "Bandwidth Max MIB of read"
+      },
+      "summary.read.bwMinMIB": {
+        "label": "Bandwidth Min MIB of read"
+      },
+      "summary.read.bwMeanMIB": {
+        "label": "Bandwidth mean MIB of read"
+      },
+      "summary.read.bwStdMIB": {
+        "label": "Bandwidth standard deviation MID of read"
+      },
+      "summary.read.OPsMax": {
+        "label": "Operations max of read"
+      },
+      "summary.read.OPsMin": {
+        "label": "Operations min of read"
+      },
+      "summary.read.OPsMean": {
+        "label": "Operations mean of read"
+      },
+      "summary.read.OPsSD": {
+        "label": "Operations standard deviation of read"
+      },
+      "summary.read.MeanTime": {
+        "label": "Mean time of read"
+      },
+      "summary.read.xsizeMiB": {
+        "label": "Size MIB of read"
+      },
+      "test": {
+        "label": "test list"
+      }
+    },
+    "edges": [
+      {
+        "source": "modules",
+        "target": "modules.cephfs",
+        "relation": "has-module"
+      },
+      {
+        "source": "modules.cephfs",
+        "target": "modules.cephfs.olazy",
+        "relation": "has-property"
+      },
+      {
+        "source": "modules",
+        "target": "modules.mmap",
+        "relation": "has-module"
+      },
+      {
+        "source": "modules.mmap",
+        "target": "modules.mmap.madv_dont_need",
+        "relation": "has-property"
+      },
+      {
+        "source": "modules.mmap",
+        "target": "modules.mmap.madv_pattern",
+        "relation": "has-property"
+      },
+      {
+        "source": "modules",
+        "target": "modules.ncmpi",
+        "relation": "has-module"
+      },
+      {
+        "source": "modules.ncmpi",
+        "target": "modules.ncmpi.preallocate",
+        "relation": "has-property"
+      },
+      {
+        "source": "modules.ncmpi",
+        "target": "modules.ncmpi.use_strided_datatype",
+        "relation": "has-property"
+      },
+      {
+        "source": "modules.ncmpi",
+        "target": "modules.ncmpi.use_file_view",
+        "relation": "has-property"
+      },
+      {
+        "source": "modules",
+        "target": "modules.mpiio",
+        "relation": "has-module"
+      },
+      {
+        "source": "modules.mpiio",
+        "target": "modules.mpiio.preallocate",
+        "relation": "has-property"
+      },
+      {
+        "source": "modules.mpiio",
+        "target": "modules.mpiio.preallocate",
+        "relation": "has-property"
+      },
+      {
+        "source": "modules.mpiio",
+        "target": "modules.mpiio.use_strided_datatype",
+        "relation": "has-property"
+      },
+      {
+        "source": "modules.mpiio",
+        "target": "modules.mpiio.use_file_view",
+        "relation": "has-property"
+      },
+      {
+        "source": "modules",
+        "target": "modules.dummy",
+        "relation": "has-module"
+      },
+      {
+        "source": "modules.dummy",
+        "target": "modules.dummy.delay_only_rank0",
+        "relation": "has-propery"
+      },
+      {
+        "source": "modules.dummy",
+        "target": "modules.dummy.delay_create_rank0",
+        "relation": "has-propery"
+      },
+      {
+        "source": "modules.dummy",
+        "target": "modules.dummy.delay_close0",
+        "relation": "has-propery"
+      },
+      {
+        "source": "modules.dummy",
+        "target": "modules.dummy.delay_sync0",
+        "relation": "has-propery"
+      },
+      {
+        "source": "modules.dummy",
+        "target": "modules.dummy.delay_xfer0",
+        "relation": "has-propery"
+      },
+      {
+        "source": "modules",
+        "target": "modules.posix",
+        "relation": "has-module"
+      },
+      {
+        "source": "modules.posix",
+        "target": "modules.posix.odirect",
+        "relation": "has-property"
+      },
+      {
+        "source": "modules.posix",
+        "target": "modules.posix.rangelocks",
+        "relation": "has-property"
+      },
+      {
+        "source": "options",
+        "target": "options.api",
+        "relation": "has-option"
+      },
+      {
+        "source": "options",
+        "target": "options.blocksize",
+        "relation": "has-option"
+      },
+      {
+        "source": "options",
+        "target": "options.inter_test_delay",
+        "relation": "has-option"
+      },
+      {
+        "source": "options",
+        "target": "options.deadline_for_stonewalling",
+        "relation": "has-option"
+      },
+      {
+        "source": "options",
+        "target": "options.stonewalling_wear_out",
+        "relation": "has-option"
+      },
+      {
+        "source": "options",
+        "target": "options.stonewalling_wear_out_iterations",
+        "relation": "has-option"
+      },
+      {
+        "source": "options",
+        "target": "options.min_time_duration",
+        "relation": "has-option"
+      },
+      {
+        "source": "options",
+        "target": "options.script_file",
+        "relation": "has-option"
+      },
+      {
+        "source": "options",
+        "target": "options.set_timestamp_signature",
+        "relation": "has-option"
+      },
+      {
+        "source": "options",
+        "target": "options.repetitions",
+        "relation": "has-option"
+      },
+      {
+        "source": "options",
+        "target": "options.outlier_threshold",
+        "relation": "has-option"
+      },
+      {
+        "source": "options",
+        "target": "options.num_tasks",
+        "relation": "has-option"
+      },
+      {
+        "source": "options",
+        "target": "options.test_file",
+        "relation": "has-option"
+      },
+      {
+        "source": "options",
+        "target": "options.task_per_node_offset",
+        "relation": "has-option"
+      },
+      {
+        "source": "options",
+        "target": "options.segment_count",
+        "relation": "has-option"
+      },
+      {
+        "source": "options",
+        "target": "options.transfer_size",
+        "relation": "has-option"
+      },
+      {
+        "source": "options",
+        "target": "options.max_time_duration",
+        "relation": "has-option"
+      },
+      {
+        "source": "options",
+        "target": "options.reorder_task_random_seed",
+        "relation": "has-option"
+      },
+      {
+        "source": "options",
+        "target": "options.random_prefill",
+        "relation": "has-option"
+      },
+      {
+        "source": "options",
+        "target": "options.random_offset_seed",
+        "relation": "has-option"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.operation",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.API",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.TestID",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.ReferenceNumber",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.SegmentCount",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.blockSize",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.transferSize",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.numTasks",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.tasksPerNode",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.repetitions",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.filePerProc",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.reorderTasks",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.taskPerNodeOffset",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.reorderTasksRandom",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.reorderTasksRandomSeed",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.bwMaxMIB",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.bwMinMIB",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.bwMeanMIB",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.bwStdMIB",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.OPsMax",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.OPsMin",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.OPsMean",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.OPsSD",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.MeanTime",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.write.xsizeMiB",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.operation",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.API",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.TestID",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.ReferenceNumber",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.SegmentCount",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.blockSize",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.transferSize",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.numTasks",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.tasksPerNode",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.repetitions",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.filePerProc",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.reorderTasks",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.taskPerNodeOffset",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.reorderTasksRandom",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.reorderTasksRandomSeed",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.bwMaxMIB",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.bwMinMIB",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.bwMeanMIB",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.bwStdMIB",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.OPsMax",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.OPsMin",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.OPsMean",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.OPsSD",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.MeanTime",
+        "relation": "contains"
+      },
+      {
+        "source": "summary",
+        "target": "summary.read.xsizeMiB",
+        "relation": "contains"
+      }
+    ]
+  }
+}
