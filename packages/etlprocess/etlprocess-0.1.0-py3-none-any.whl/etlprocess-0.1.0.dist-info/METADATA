@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: etlprocess
+Version: 0.1.0
+Author: Jian Zheng
+Author-email: zhengjian518@outlook.com
+Requires-Dist: pyspark
+
