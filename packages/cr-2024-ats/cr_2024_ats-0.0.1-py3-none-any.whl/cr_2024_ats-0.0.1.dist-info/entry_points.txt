@@ -1,0 +1,3 @@
+[console_scripts]
+ats_launcher=ats.bin.launcher:cli
+

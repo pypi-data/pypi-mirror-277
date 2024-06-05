@@ -1,0 +1,14 @@
+ats/bin/__init__.py,sha256=_dRkYxNUJx6TwZgyevVvNIz3O86FcCKX7pAeME8WCcQ,46
+ats/bin/launcher.py,sha256=7Vy3KF45KVFFerhzVvPoXvjKKBaOt4SRxAv3EmxRv2M,1124
+ats/bin/utils.py,sha256=me8oReyI_quve8f7R3dZ2QlWZgKzWTqXOqwdbyPV-Yw,3016
+ats/core/__init__.py,sha256=wfL50wkh-ykSD6PBert67RO0FY8qo0oWnF5z-sW2F0s,48
+ats/core/models/base/__init__.py,sha256=Quv-KFbYP4QmOQ0tUL-gWNoSXDqOQznJEpv03wC-228,72
+ats/core/models/base/app.py,sha256=Te6RL1g2UXX4x7hPMkRH8mZzPOdp-U3q8nuT5Z-IjJY,966
+ats/web/__init__.py,sha256=q4QLEDhVToMQ6KwzJa6ofDifJE9Vpfgqh__wELP00No,46
+ats/web/app.py,sha256=8GBfniur1PfArbuDCItJfl766QghvMEw3rZlnZHo7yE,1930
+ats/web/pages/default.py,sha256=NJU2U5bNRmvAStkmU4Z5pEA65rPOIqCoemWpTsydCzQ,7692
+cr_2024_ats-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cr_2024_ats-0.0.1.dist-info/METADATA,sha256=j8RGgSXQhWsBY_EoID22pCjQmHu0pc8YZ2Mhb5DDkyg,623
+cr_2024_ats-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cr_2024_ats-0.0.1.dist-info/entry_points.txt,sha256=MW5V4C1KudQrJmX0TxNY1MMCzkxbCfYoVjqdr7xvccY,53
+cr_2024_ats-0.0.1.dist-info/RECORD,,
