@@ -1,0 +1,3 @@
+# Ipychess
+
+> IPython chess displays

@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/ipychess/__init__.py
+src/ipychess/board.py
+src/ipychess/nav.py
+src/ipychess/observable.py
+src/ipychess.egg-info/PKG-INFO
+src/ipychess.egg-info/SOURCES.txt
+src/ipychess.egg-info/dependency_links.txt
+src/ipychess.egg-info/requires.txt
+src/ipychess.egg-info/top_level.txt
