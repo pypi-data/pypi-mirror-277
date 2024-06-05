@@ -1,0 +1,15 @@
+osparc/__init__.py,sha256=_4MrgISy4oMRuVWyOsntecXALQuKErwLODR5xFGfTL8,2783
+osparc/_exceptions.py,sha256=6u8Vu8RwOtvN3LluSqQfZ-KV659PmsAxEsS-_k-mL-0,543
+osparc/_files_api.py,sha256=IGJnYW3f5c1GpaBrBuIwpeU117pO9_GtVdhdwSDqKQo,8992
+osparc/_http_client.py,sha256=tRKatdla1Vcj38vAxqqObsjlXNBIkrYsEq6h07qOiyY,4359
+osparc/_info.py,sha256=h7Q8mxlesXV_YzOoKkBSn3TtX9Mymry6o6OI6rD6Fuo,303
+osparc/_solvers_api.py,sha256=zsx_hFWe4COzpnUz6oT7pqpq3XftMYGuh4_0ladVVAE,2612
+osparc/_studies_api.py,sha256=vfC1qcVk9kY8Iepw3ZZ5EsX1t-db-c8Zwp3OpcGg5uY,820
+osparc/_utils.py,sha256=Pem0ogyBhmfcUDId8rmSVVRQSGWAi-0jVefywB3Yiss,3864
+osparc/api.py,sha256=K60_6lmFKYTAdgYrJ2DUdbQNQMM39g6CS8CLqjzXQRU,553
+osparc/models.py,sha256=YPs7GtDza9e8jQ7dQUvHAYDZe44Ni3btJzh3XUWVCuw,1159
+osparc/data/openapi.json,sha256=0Xs1a8YwhXwmiUjkPSrJtAHJ_HHEBuNRZaWTK9bl5Tg,183566
+osparc-0.6.6.dist-info/METADATA,sha256=3Mu_wU9oPLHKjEVdhSa_8is0T_9GBKc79rIbGvOKpCU,763
+osparc-0.6.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+osparc-0.6.6.dist-info/top_level.txt,sha256=N4EQYi-wbygZALCiiGIcn-8pv3_zdttXWpYh9NFtInA,7
+osparc-0.6.6.dist-info/RECORD,,
