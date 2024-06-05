@@ -1,0 +1,17 @@
+original_sdk/__init__.py,sha256=N4SXSrRzvTHCDU_pJSyxYhdV0wz7Bo-ghJCTHUrfWvE,445
+original_sdk/__pkg__.py,sha256=bsfrs19xOyZ-67RKOzvsp_P7ex4TarknO46wJuobwuQ,148
+original_sdk/async_client.py,sha256=2gGWYDjMZflltwdCVc6pqrNkb3KbY07vCmgJdBfByhI,8816
+original_sdk/client.py,sha256=nM5GdxXUl86Jxb1TGZq_N9JJjH5JovrSEBDOoroVA8A,7808
+original_sdk/utils.py,sha256=3lwpaObHMknaETzLMrzXMIwYOjRDMm72EFtJjDEHTJE,449
+original_sdk/base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+original_sdk/base/client.py,sha256=h4MrfAHR51X4khGGYaP0xXGMZ48j3rpj1S2qHttYpIQ,9821
+original_sdk/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+original_sdk/types/environment.py,sha256=z6kX2Vd8z5j4Fe0AJiFrJJaxgibICM7w-yM_oOtkY8g,418
+original_sdk/types/exceptions.py,sha256=GnPW0n2SsqWgXd7hE8L6f8FuDlwCxP_zqozb43WH7P0,2858
+original_sdk/types/original_response.py,sha256=4-WH69E1kEToUgaYWJWVrGQKH7NPCxKe0-JPRxGcLT0,2219
+original_sdk/types/rate_limit.py,sha256=v3Z4Ur0yoEdFLiHa1CNABEej2nxPlHQ6Bpy2XxW-TYQ,165
+original_sdk-1.3.3.dist-info/LICENSE,sha256=nio-PAhtz0jsOlqE0LUUXuYkwaMrV8yOIxzFmyouAos,1065
+original_sdk-1.3.3.dist-info/METADATA,sha256=4leQRxE_PFPU07pwrgMhUboUTZeqau43-tvTY_mrwhQ,25899
+original_sdk-1.3.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+original_sdk-1.3.3.dist-info/top_level.txt,sha256=qreoiI17uD7T8702iflZvXAvXM0KHENxMzxFWWrRpdc,13
+original_sdk-1.3.3.dist-info/RECORD,,
