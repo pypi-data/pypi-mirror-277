@@ -1,0 +1,2 @@
+[console_scripts]
+alq = alq.alq:main
