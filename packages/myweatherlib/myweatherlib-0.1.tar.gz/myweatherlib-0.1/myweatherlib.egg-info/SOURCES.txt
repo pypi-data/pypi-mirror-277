@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+data/__init__.py
+data/parser.py
+myweatherlib.egg-info/PKG-INFO
+myweatherlib.egg-info/SOURCES.txt
+myweatherlib.egg-info/dependency_links.txt
+myweatherlib.egg-info/requires.txt
+myweatherlib.egg-info/top_level.txt
+weather/__init__.py
+weather/api.py
