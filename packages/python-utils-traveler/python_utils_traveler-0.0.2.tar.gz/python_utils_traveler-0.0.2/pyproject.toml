@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "python-utils-traveler"
+version = "v0.0.2"
+description = "SDK for internal python logging"
+authors = ["Ryan Bui <ryan.bui@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.packages]]
+include = "utils"
