@@ -1,0 +1,14 @@
+MANIFEST.in
+readme.md
+requirements.txt
+setup.py
+best_face_identification.egg-info/PKG-INFO
+best_face_identification.egg-info/SOURCES.txt
+best_face_identification.egg-info/dependency_links.txt
+best_face_identification.egg-info/entry_points.txt
+best_face_identification.egg-info/requires.txt
+best_face_identification.egg-info/top_level.txt
+face_identification/__init__.py
+face_identification/creat_face_bank.py
+face_identification/face_identification.py
+test/test_cow.py

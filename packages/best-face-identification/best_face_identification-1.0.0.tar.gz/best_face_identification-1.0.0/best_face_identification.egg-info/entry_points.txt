@@ -1,0 +1,2 @@
+[console_scripts]
+fi = face_identification:main
