@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: todomanager
+Version: 0.0.1
+Summary: Manage your daily tasks in the terminal with the super readable command-line interface design
+Author-email: Alex Zolotarov <alex@zolotarov.me>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: rich
