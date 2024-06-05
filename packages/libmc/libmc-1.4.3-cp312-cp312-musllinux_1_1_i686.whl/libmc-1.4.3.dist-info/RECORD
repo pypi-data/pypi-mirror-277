@@ -1,0 +1,9 @@
+libmc-1.4.3.dist-info/WHEEL,sha256=MhWbwqqc_ZSP2Uycbd9jQxJDL3VTGcnT16CYlXtCD-I,111
+libmc-1.4.3.dist-info/LICENSE.txt,sha256=ekn4a-T2B5a0euGbQq2StMZkXUA8L4BusZbjADquZF4,1512
+libmc-1.4.3.dist-info/top_level.txt,sha256=v4_LdObtuEECl-biQoRcOMjpV11rZtnQQ1_J0HUa9bs,6
+libmc-1.4.3.dist-info/RECORD,,
+libmc-1.4.3.dist-info/METADATA,sha256=CwPg_OUhe_fOMVSDauGHJjo0ACk2kT42qXmCuGlPqWk,9534
+libmc/__init__.py,sha256=jdGiX70-5WlylkgXZz6KKrUtEjbRFgcgzRgh2IzKyrU,1398
+libmc/_client.cpython-312-i386-linux-musl.so,sha256=4vDw5m-aZ7rXezo9xXFoxk6YMNbHt84J_pfvmRQDjL8,3408765
+libmc.libs/libgcc_s-8b50eaaa.so.1,sha256=WXj_FYQE1MDIyb-nN8siUALdxit6NHma0p9UxemQV8o,101649
+libmc.libs/libstdc++-8baf04f9.so.6.0.28,sha256=yrzOxg1heyJ9Y-43YCLLn04Cpl_A68FN0D2Q1iBTMcY,2428961
