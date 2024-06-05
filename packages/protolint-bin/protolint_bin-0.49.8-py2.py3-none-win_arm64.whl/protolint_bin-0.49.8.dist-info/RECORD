@@ -1,0 +1,6 @@
+-0.49.8.dist-info/WHEEL,sha256=9d3fe1769ebcc41d929b2a3153855bcddc3e35528dbbdaaf31ecf3d11f59b1d0,121
+-0.49.8.dist-info/LICENSE,sha256=43e46625432b3053f5bdec30d9c474589ad16968b75c3a8371dfc9a135f66470,1072
+-0.49.8.dist-info/METADATA,sha256=04dd47a52e9feb71f8f93a8c1faa0e9243b4c9f4d65065ef601a5fcff12d2519,2726
+-0.49.8.data/scripts/protoc-gen-protolint.exe,sha256=80f5885252c306ec28ff6a68bda4945b3424b308e3ed0fd2e66459d4ca73aec9,12279808
+-0.49.8.data/scripts/protolint.exe,sha256=69fcf92f52c0f1a181fdc0cf04ef60a19676145e615f5b0b99e932595d6f8441,12250112
+protolint_bin-0.49.8.dist-info/RECORD,,
