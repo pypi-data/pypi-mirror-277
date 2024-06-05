@@ -1,0 +1,10 @@
+eximreservoirsimulation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eximreservoirsimulation/explicit_and_implicit.py,sha256=BI9wZQXPqyH6iodeLHUP2ZYXU9q7uSOqNYw1wVXDEx0,6467
+eximreservoirsimulation/explicit_and_implicit_with_UI.py,sha256=D1Phb7ZHegRTezXmSE_5aNFE1OGR2IsfzwSYuzbEbOk,8214
+eximreservoirsimulation/main.py,sha256=SvpZr992hTDxBTshTlwYXvwYQg48QJsJhfgT1I5Zndw,552
+eximreservoirsimulation-0.0.3.dist-info/LICENSE,sha256=XHxux7GkjQ3in2FANZXdru42qGpojzFkqyhqB85Hce0,1098
+eximreservoirsimulation-0.0.3.dist-info/METADATA,sha256=FCk1wSnk1uz2iTDvVVZqDNjZYVeFbIAUebwO2ZYTcqI,691
+eximreservoirsimulation-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+eximreservoirsimulation-0.0.3.dist-info/entry_points.txt,sha256=GT-MsxTvQyg4yRqHiYY4263XeMNLueXvuvIj_sjeroc,71
+eximreservoirsimulation-0.0.3.dist-info/top_level.txt,sha256=xAPEWj4gEFVP5XiEXYFxvbyIOrAvMdD7m3PreqTUdZE,24
+eximreservoirsimulation-0.0.3.dist-info/RECORD,,
