@@ -1,0 +1,14 @@
+html5lib_typogrify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+html5lib_typogrify/french/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+html5lib_typogrify/french/filters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+html5lib_typogrify/french/filters/dashes.py,sha256=4rcvRpdLl2ggGCevxuK95-EAsxc7VWy5cSSviJsgPgg,1112
+html5lib_typogrify/french/filters/ellipsis.py,sha256=HKYwC3JoEFTy0MB1y1PRvDv99dYxeMc_rOE750eKHr8,1188
+html5lib_typogrify/french/filters/figures.py,sha256=RnPqdG1UIiasyHDoeW6OYwoe2SJMbRM5LYcYtvuokww,1196
+html5lib_typogrify/french/filters/hyphenate.py,sha256=QXYVW8WEb1tFpdaUmHSqxz6w4G0hv2qBd76310oCJCo,4331
+html5lib_typogrify/french/filters/medor.py,sha256=jMoje7i87w4dVkm27rHtsfKfhkYrQpS3fiAl9cyLoJs,3164
+html5lib_typogrify/french/filters/spaces.py,sha256=TICrNQpXpTXjYO7DpvuC-6BlqQlKuYGiX2U1bdsKQDg,3094
+html5lib_typogrify/french/filters/widows_orphans.py,sha256=6ZWSc7OrSDxncGoPg9wXjzKaCeYEf-xtijnuGnZCNAI,1552
+html5lib_typogrify-0.3.1.dist-info/METADATA,sha256=-BQqZ9bCgVl3h-gi8fUAvnKYNDdBvib5qlc6Hf5G6M4,968
+html5lib_typogrify-0.3.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+html5lib_typogrify-0.3.1.dist-info/top_level.txt,sha256=tAFwxiMZaTwoi82eLBCWCifjv3oxckpxqHJT7-Cpkfk,19
+html5lib_typogrify-0.3.1.dist-info/RECORD,,
