@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: sqlog
+Version: 1.3
+Summary: Hierarchical logging
+Author: Andriy Stremeluk
+Author-email: astremeluk@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+
