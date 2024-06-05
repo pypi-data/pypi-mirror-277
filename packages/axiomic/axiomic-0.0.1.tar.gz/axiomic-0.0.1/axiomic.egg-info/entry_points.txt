@@ -1,0 +1,2 @@
+[console_scripts]
+axiomic_params = aximoic.tools.params:main
