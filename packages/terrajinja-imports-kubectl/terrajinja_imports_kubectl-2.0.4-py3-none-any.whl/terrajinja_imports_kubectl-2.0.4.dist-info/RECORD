@@ -1,0 +1,16 @@
+terrajinja/imports/kubectl/__init__.py,sha256=CtdZ5Q_9Htj9Xa_atqSCC3dcLnSYSrl8L6IUx7PjuwM,499
+terrajinja/imports/kubectl/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+terrajinja/imports/kubectl/_jsii/__init__.py,sha256=aOS9wf32gnxjlhbD9mVg0iC2QczbPhT3ucKZgMD-7DM,379
+terrajinja/imports/kubectl/_jsii/kubectl@0.0.0.jsii.tgz,sha256=_eTM1bU1OpQU4btUfy_8xzSF4X1iL3SGxZwiAwjvVJ8,66250
+terrajinja/imports/kubectl/data_kubectl_file_documents/__init__.py,sha256=VK8rkj0s0g876EJxDMm5-IhsLFk5MTkshPaumyGgV-U,20680
+terrajinja/imports/kubectl/data_kubectl_filename_list/__init__.py,sha256=wGqRF_ZT0X7zWE7MRHiUpq4MizdsJGoyBZJ2Mj4QEJk,20640
+terrajinja/imports/kubectl/data_kubectl_path_documents/__init__.py,sha256=pkbLN-rKfsG3fKuE4Dx-i9dCPpxnj5Wda6MuAxv74PE,30026
+terrajinja/imports/kubectl/data_kubectl_server_version/__init__.py,sha256=T6z81wO950xcZPnFbFkIW5PbO6xj2Sm1kbiySRsabQ4,19594
+terrajinja/imports/kubectl/manifest/__init__.py,sha256=IjmwT8AiS6MQ-ums8O8a7pqhouGZhSJCY33ZnwmFBXo,87824
+terrajinja/imports/kubectl/provider/__init__.py,sha256=NUZhymRey0Txl0lxh52y8gN8WKvo2EsAIu6eftxdY-g,60891
+terrajinja/imports/kubectl/server_version/__init__.py,sha256=OPHY5243nXW-cvkx9S2-oHJf2NBhJvvp_coqT3ij4Dk,22029
+terrajinja_imports_kubectl-2.0.4.dist-info/LICENSE,sha256=Muqz0wlb0ZP8umtA2_fWfq4946_Xu-XQwprFq4tLSkg,1061
+terrajinja_imports_kubectl-2.0.4.dist-info/METADATA,sha256=xc8hSt2Pdn4z-RsdFzkXIn7t1GUcD3FXaA3sm-ESQu8,837
+terrajinja_imports_kubectl-2.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+terrajinja_imports_kubectl-2.0.4.dist-info/top_level.txt,sha256=apZ6Jo9O_SBI9yAAu0zz0pJpjZwf6vDrkc2ykRGC72s,11
+terrajinja_imports_kubectl-2.0.4.dist-info/RECORD,,
