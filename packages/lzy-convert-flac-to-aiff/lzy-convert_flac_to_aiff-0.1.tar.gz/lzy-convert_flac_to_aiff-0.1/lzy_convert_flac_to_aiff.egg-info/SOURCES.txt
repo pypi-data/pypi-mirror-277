@@ -1,0 +1,6 @@
+convert_flac_to_aiff.py
+setup.py
+lzy_convert_flac_to_aiff.egg-info/PKG-INFO
+lzy_convert_flac_to_aiff.egg-info/SOURCES.txt
+lzy_convert_flac_to_aiff.egg-info/dependency_links.txt
+lzy_convert_flac_to_aiff.egg-info/top_level.txt
