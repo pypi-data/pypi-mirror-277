@@ -1,0 +1,10 @@
+awscdk/appsync_utils/__init__.py,sha256=tkV6Gjr9xikYocU37UgIZE0qjsL7VMgMUopY3zPqhoc,162774
+awscdk/appsync_utils/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+awscdk/appsync_utils/_jsii/__init__.py,sha256=CrQqJrk8hHqfYhNMV7UuxTYSPa4jUSQlwOxDWWvARqs,500
+awscdk/appsync_utils/_jsii/awscdk-appsync-utils@0.0.452.jsii.tgz,sha256=U2oXN86Ni4t8bn5ulZAggLH-DuXlUhv6kq-VCkF0xuY,101712
+cdklabs.appsync_utils-0.0.452.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+cdklabs.appsync_utils-0.0.452.dist-info/METADATA,sha256=UFDDQ5kDBCdsm0B9Dc783kFEi45lzD_QLY3YZfJSdBE,20719
+cdklabs.appsync_utils-0.0.452.dist-info/NOTICE,sha256=1CkO1kwu3Q_OHYTj-d-yiBJA_lNN73a4zSntavaD4oc,67
+cdklabs.appsync_utils-0.0.452.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cdklabs.appsync_utils-0.0.452.dist-info/top_level.txt,sha256=Dkt6qQSQppDUlESKVaCu9svo6_tkERF2FfSQsS1QcuY,7
+cdklabs.appsync_utils-0.0.452.dist-info/RECORD,,
