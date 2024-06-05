@@ -1,0 +1,5 @@
+setup.py
+sheapientdone.egg-info/PKG-INFO
+sheapientdone.egg-info/SOURCES.txt
+sheapientdone.egg-info/dependency_links.txt
+sheapientdone.egg-info/top_level.txt
