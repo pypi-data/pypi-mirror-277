@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: dataframe-decorators
+Version: 0.1.0
+Summary: Decorators for pipeline functions involving dataframes
+Author: Patrick Bray
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: loguru (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+dataframe-decorators
+==============================
+
+decorators for pipeline functions involving dataframes
+
+Patrick Bray
+
+
+## Prerequisites
+- Python 3.9
+- poetry 
+  - `pip install poetry`
+
+## Installation
+1. Create your environment
+`poetry install`
+`poetry shell`
+2. Test the precommit script
+`inv precommit`
+3. Test the package
+`pytest .`
+
+## Invoke Commands
+This repository uses [invoke](https://www.pyinvoke.org/) to manage its command-line workflows.
+Enter `inv -l` to see the list of commands
+
