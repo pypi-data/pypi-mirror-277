@@ -1,0 +1,6 @@
+numpy
+andi-py
+matplotlib
+scipy
+bimms
+pyEIT
