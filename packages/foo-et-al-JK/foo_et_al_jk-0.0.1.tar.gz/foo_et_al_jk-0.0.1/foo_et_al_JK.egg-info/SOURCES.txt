@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+foo_et_al_JK/__init__.py
+foo_et_al_JK/foo_et_al.py
+foo_et_al_JK/sphere.py
+foo_et_al_JK.egg-info/PKG-INFO
+foo_et_al_JK.egg-info/SOURCES.txt
+foo_et_al_JK.egg-info/dependency_links.txt
+foo_et_al_JK.egg-info/top_level.txt
