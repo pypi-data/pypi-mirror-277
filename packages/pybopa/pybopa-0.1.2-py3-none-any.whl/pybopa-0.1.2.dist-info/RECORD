@@ -1,0 +1,11 @@
+pybopa/__init__.py,sha256=WJkr2ybENKgYVRhQnEVfG2JXv8LWzTLK0-yS-VL-6E0,227
+pybopa/biblioteca.py,sha256=dTJFb53650dUpSj2qFY5mGCrTECvx2-RCMn0D1q0hFI,2961
+pybopa/boletin.py,sha256=kmNsbT7vyfVOrYjcHQdwRIjwV0eNc43ycIhobZFJ7hU,9256
+pybopa/cli.py,sha256=8Mj8FM-4iYmXHB_xsAlIE4_S32xeU7MNO0SAj020BlU,423
+pybopa/disposicion.py,sha256=AxBBuLzE4uemBU2hB4kMMUYFKUisnmC9Xl0OYnb0DSI,5060
+pybopa-0.1.2.dist-info/AUTHORS.rst,sha256=Q_Rk_kAB7Y4SuyZzZ49eEj9uVCNM9O--YxKk2CWaVZI,274
+pybopa-0.1.2.dist-info/LICENSE,sha256=NNu-8au4vRAAhmCnZiyR_pCzVT07MG7KlvD37OfuoPY,1070
+pybopa-0.1.2.dist-info/METADATA,sha256=TiR7pqYLQUlHuxu6CQRRqsPkvl-1uK4txjclv2qXDd0,2483
+pybopa-0.1.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pybopa-0.1.2.dist-info/top_level.txt,sha256=5Jn_NC36fwwyQRTXu1KjwNF6rFHgUAJ50xnm3LawCME,7
+pybopa-0.1.2.dist-info/RECORD,,
