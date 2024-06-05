@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+comfyparse/__init__.py
+comfyparse/config.py
+comfyparse/lexer.py
+comfyparse/parser.py
+comfyparse.egg-info/PKG-INFO
+comfyparse.egg-info/SOURCES.txt
+comfyparse.egg-info/dependency_links.txt
+comfyparse.egg-info/top_level.txt
