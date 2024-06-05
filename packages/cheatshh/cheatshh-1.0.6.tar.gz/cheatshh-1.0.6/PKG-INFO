@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: cheatshh
+Version: 1.0.6
+Summary: Interactive CLI for managing command line cheatsheets, written in shell script.
+Home-page: https://github.com/AnirudhG07/cheatshh
+Keywords: cheatsheet,cheat,command-line,CLI,shell-script
+Author: Anirudh Gupta
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: System :: Shells
+Requires-Dist: fuzzyfinder (>=2.0.0,<3.0.0)
+Requires-Dist: whiptail (>=0.2.0,<0.3.0)
+Description-Content-Type: text/markdown
+
+# cheatshh
+
+Cheatshh is an interactive CLI meant for managing command line cheatsheets. Now you don't have to remember CLI commands and just refer your cheatsheet. You can group commands and view their TLDR and MAN pages along with a custom description for the command.
+
+# Features
+
+- Comprehensive cheatsheets for various command-line utilities and tools.
+- Easy-to-use interface for quickly accessing and executing commands, powered by fuzzy finder(fzf) and whiptail.
+- Customizable cheatsheets and groups to suit your needs.
+- TLDR and MAN pages visible in the preview.
+- Easy to add, edit, delete commands and groups and playing around.
+- Press Enter on a command to copy it to clipboard and exit.
+- Bookmark your favourite commands and view them in main preview despite being in a group.
+
+Visit the Github Repository for more details: https://github.com/AnirudhG07/cheatshh
+
+# Version
+1.0.6
+
+## Note:
+- This package is best used in Unix based systems, like linux and MacOS. For Windows, see the github repository for more details.
+- The package is installed in ~/.config/cheatshh directory.
+
+## New Features:
+- Now you can bookmark commands and view them in main preview despite being in a group.
+
+## Bugs Fixed:
+- Edit command and group bugs fixed.
+
