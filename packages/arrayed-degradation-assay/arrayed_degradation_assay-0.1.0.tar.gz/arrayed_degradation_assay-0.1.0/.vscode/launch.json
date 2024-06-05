@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "rna_deg_assay",
+            "type": "python",
+            "request": "launch",
+            "program": "arrayed_degradation/analyze_experiment.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--data_dir_path",
+                // "Stability/P1 RSV",
+                "data",
+                "--min_peak",
+                "600",
+                "--max_peak",
+                "2500",
+            ],
+            "justMyCode": true
+        },
+    ]
+}
