@@ -1,0 +1,20 @@
+# SPDX-FileCopyrightText: 2024 Dirk Beyer <https://www.sosy-lab.org>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+[benchexec]
+path = "../benchexec"
+
+[logging]
+level = "INFO"
+
+[mount]
+"../sv-benchmarks"="/home/sv-benchmarks"
+
+[defaults]
+image = "registry.gitlab.com/sosy-lab/benchmarking/competition-scripts/user:latest"
+cache_location = ".weck_cache" # Location of the cache in which the tools are saved
+
+[image_manager]
+# Configuration for the image manager
+database = ".weck.sqlite3" # For adhoc images the database stores the tags and metadata to avoid recomputation

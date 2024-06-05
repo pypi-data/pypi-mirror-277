@@ -1,0 +1,175 @@
+# SPDX-FileCopyrightText: 2024 Dirk Beyer <https://www.sosy-lab.org>
+#
+# SPDX-License-Identifier: CC-BY-4.0
+
+name: CPAchecker
+input_languages:
+  - C
+project_url: https://cpachecker.sosy-lab.org
+repository_url: https://gitlab.com/sosy-lab/software/cpachecker
+spdx_license_identifier: Apache-2.0
+benchexec_toolinfo_module: benchexec.tools.cpachecker
+fmtools_format_version: "2.0"
+fmtools_entry_maintainers:
+  - dbeyer
+  - ricffb
+
+maintainers:
+  - name: Dirk Beyer
+    institution: LMU Munich
+    country: Germany
+    url: https://www.sosy-lab.org/people/dbeyer/
+  - name: Philipp Wendler
+    institution: LMU Munich
+    country: Germany
+    url: https://www.sosy-lab.org/people/pwendler/
+
+versions:
+  - version: "svcomp24"
+    doi: 10.5281/zenodo.10203297
+    benchexec_toolinfo_options:
+      ["-svcomp24", "-heap", "10000M", "-benchmark", "-timelimit", "900 s"]
+    base_image: "ubuntu:22.04"
+    full_image: "registry.gitlab.com/sosy-lab/benchmarking/competition-scripts/user:latest"
+    required_ubuntu_packages:
+      - openjdk-17-jdk-headless
+  - version: "svcomp24-correctness"
+    doi: 10.5281/zenodo.10203297
+    benchexec_toolinfo_options:
+      [
+        "-setprop",
+        "witness.checkProgramHash=false",
+        "-heap",
+        "5000m",
+        "-benchmark",
+        "-setprop",
+        "cpa.predicate.memoryAllocationsAlwaysSucceed=true",
+      ]
+    required_ubuntu_packages:
+      - openjdk-17-jdk-headless
+  - version: "svcomp24-violation"
+    doi: 10.5281/zenodo.10203297
+    benchexec_toolinfo_options:
+      [
+        "-violation-witness-validation",
+        "-setprop",
+        "witness.checkProgramHash=false",
+        "-heap",
+        "5000m",
+        "-benchmark",
+        "-setprop",
+        "cpa.predicate.memoryAllocationsAlwaysSucceed=true",
+        "-setprop",
+        "cpa.smg.memoryAllocationFunctions=malloc,__kmalloc,kmalloc,kzalloc,kzalloc_node,ldv_zalloc,ldv_malloc",
+        "-setprop",
+        "cpa.smg.arrayAllocationFunctions=calloc,kmalloc_array,kcalloc",
+        "-setprop",
+        "cpa.smg.zeroingMemoryAllocation=calloc,kzalloc,kcalloc,kzalloc_node,ldv_zalloc",
+        "-setprop",
+        "cpa.smg.deallocationFunctions=free,kfree,kfree_const",
+      ]
+    required_ubuntu_packages:
+      - openjdk-17-jdk-headless
+  - version: "svcomp23"
+    doi: 10.5281/zenodo.7700944
+    benchexec_toolinfo_options:
+      ["-svcomp23", "-heap", "10000M", "-benchmark", "-timelimit", "900 s"]
+    required_ubuntu_packages:
+      - openjdk-11-jre-headless
+  - version: "2.2"
+    doi: 10.5281/zenodo.7700944
+    benchexec_toolinfo_options:
+      ["-svcomp23", "-heap", "10000M", "-benchmark", "-timelimit", "900 s"]
+    required_ubuntu_packages:
+      - openjdk-11-jre-headless
+  - version: "svcomp22"
+    url: https://gitlab.com/sosy-lab/sv-comp/archives-2022/-/raw/main/2022/cpachecker.zip
+    benchexec_toolinfo_options:
+      ["-svcomp22", "-heap", "10000M", "-benchmark", "-timelimit", "900 s"]
+    required_ubuntu_packages:
+      - openjdk-11-jre-headless
+  - version: "2.1"
+    doi: 10.5281/zenodo.5720557
+    benchexec_toolinfo_options:
+      ["-svcomp22", "-heap", "10000M", "-benchmark", "-timelimit", "900 s"]
+    required_ubuntu_packages:
+      - openjdk-11-jre-headless
+
+competition_participations:
+  - competition: "SV-COMP 2024"
+    track: "Verification"
+    tool_version: "svcomp24"
+    jury_member:
+      name: Daniel Baier
+      institution: LMU Munich
+      country: Germany
+      url: https://www.sosy-lab.org/people/baier/
+  - competition: "SV-COMP 2024"
+    track: "Validation of Correctness Witnesses 1.0"
+    tool_version: "svcomp24-correctness"
+    jury_member:
+      name: Daniel Baier
+      institution: LMU Munich
+      country: Germany
+      url: https://www.sosy-lab.org/people/baier/
+  - competition: "SV-COMP 2024"
+    track: "Validation of Correctness Witnesses 2.0"
+    tool_version: "svcomp24-correctness"
+    jury_member:
+      name: Daniel Baier
+      institution: LMU Munich
+      country: Germany
+      url: https://www.sosy-lab.org/people/baier/
+  - competition: "SV-COMP 2024"
+    track: "Validation of Violation Witnesses 1.0"
+    tool_version: "svcomp24-violation"
+    jury_member:
+      name: Daniel Baier
+      institution: LMU Munich
+      country: Germany
+      url: https://www.sosy-lab.org/people/baier/
+  - competition: "SV-COMP 2024"
+    track: "Validation of Violation Witnesses 2.0"
+    tool_version: "svcomp24-violation"
+    jury_member:
+      name: Daniel Baier
+      institution: LMU Munich
+      country: Germany
+      url: https://www.sosy-lab.org/people/baier/
+  - competition: SV-COMP 2023
+    track: "Verification"
+    tool_version: "svcomp23"
+    jury_member:
+      name: Henrik Wachowitz
+      institution: LMU Munich
+      country: Germany
+      url: https://www.sosy-lab.org/people/wachowitz/
+
+techniques:
+  - CEGAR
+  - Predicate Abstraction
+  - Symbolic Execution
+  - Bounded Model Checking
+  - k-Induction
+  - Property-Directed Reachability
+  - Explicit-Value Analysis
+  - Numeric Interval Analysis
+  - Shape Analysis
+  - Separation Logic
+  - Bit-Precise Analysis
+  - ARG-Based Analysis
+  - Lazy Abstraction
+  - Interpolation
+  - Automata-Based Analysis
+  - Concurrency Support
+  - Ranking Functions
+  - Algorithm Selection
+  - Portfolio
+
+literature:
+  - doi: 10.1007/978-3-642-22110-1_16
+    title: "CPAchecker: A Tool for Configurable Software Verification"
+    year: 2011
+  - doi: 10.1007/s10817-017-9432-6
+    title: "A Unifying View on SMT-Based Software Verification"
+    year: 2018
