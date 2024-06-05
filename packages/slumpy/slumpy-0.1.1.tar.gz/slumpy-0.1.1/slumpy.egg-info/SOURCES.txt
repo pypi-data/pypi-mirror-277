@@ -1,0 +1,4 @@
+slumpy.egg-info/PKG-INFO
+slumpy.egg-info/SOURCES.txt
+slumpy.egg-info/dependency_links.txt
+slumpy.egg-info/top_level.txt
