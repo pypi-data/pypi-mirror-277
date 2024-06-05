@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/json_rd/__init__.py
+src/json_rd/lexer.py
+src/json_rd/parser_.py
+src/json_rd/syntax_error.py
+src/json_rd/token_.py
+src/json_rd.egg-info/PKG-INFO
+src/json_rd.egg-info/SOURCES.txt
+src/json_rd.egg-info/dependency_links.txt
+src/json_rd.egg-info/top_level.txt
