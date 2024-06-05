@@ -1,0 +1,9 @@
+# requirement on rtd
+h5py
+ipython
+matplotlib
+numpy
+scipy
+sphinx
+sphinxcontrib.bibtex>=2.0
+sphinx_rtd_theme
