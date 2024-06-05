@@ -1,0 +1,16 @@
+modos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modos/api.py,sha256=UHhhuc3d8YdUlP-QKoxUOtIaz5rHOR7K8LqKsudAfQE,15819
+modos/cli.py,sha256=dHyNFKmwfmiBB0HzCEtFG0FnhjsWrTkS5lLfB-URZvA,10086
+modos/cram.py,sha256=_3oRTf6V2S-_-7bpaCehTYTIhWTmCF7MTEJb7Z6UcRg,4464
+modos/file_utils.py,sha256=-GbbrbJhqkEmGnlyNttSX9mgfeoUXL91mYIoiXMM16A,834
+modos/helpers.py,sha256=dZ8sBat0TnQlGtjhOZuDnPSZW4usJX-sayOag1DPTso,10798
+modos/introspection.py,sha256=QwTXAYuq97KWMU54XZppsgMy92S_7fhsz1XUciWa1Mg,2807
+modos/io.py,sha256=4FqP5UqSwus9JNAzH-nGcZa1jkj91d56BJZ7lUZbR3I,3103
+modos/rdf.py,sha256=0wtmzvoCWjTatHmkYaXuKZKAUB_B1d_Z3vTzupfHkeo,2002
+modos/remote.py,sha256=ylGfB84saPGykECaLb8EKvlaMHsni3Vv_EXGrCiCEZY,1534
+modos/storage.py,sha256=PTb3hGosKsTicpYRKOm0QKRdxN7ARmkCTogazinWhXg,1759
+modos-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+modos-0.1.0.dist-info/METADATA,sha256=dizzBtsF2WivviZjVkp1IROa28a_4cCQ79KqGC-DB_U,3162
+modos-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+modos-0.1.0.dist-info/entry_points.txt,sha256=cJ6u6UoU6LXPcCg1vnLhFhq-9-TuPN168-bHG-niY9k,39
+modos-0.1.0.dist-info/RECORD,,
