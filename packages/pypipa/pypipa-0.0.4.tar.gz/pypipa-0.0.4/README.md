@@ -1,0 +1,61 @@
+# PIPA-TREE
+
+PIPA-TREE is a part of PIPA (Platform Integrated Performance Analytics).
+
+![](asset/logo.png)
+
+PIPA-TREE is a Python-based project designed to collect, integrate, and analyze data across various platforms including x86_64, ARM, and RISC-V. It utilizes various tools such as `perf`, `sar`, and others to achieve its objectives.
+
+
+## Features
+
+* **Data Collection**: PIPA can collect data from a variety of sources, using tools like perf, sar, and more. It supports multiple platforms including x86_64, ARM, and RISC-V, making it versatile and adaptable.
+* **Perf Record Data**: PIPA is capable of collecting and parsing perf record data, providing detailed performance metrics.
+
+## Installation
+PIPA can be easily installed using pip:
+
+```sh
+pip install pipa
+```
+
+
+## Usage
+
+After installation, you can start using PIPA to collect, integrate, and analyze your data. 
+
+```py
+from pipa.service.run import run_and_collect_all
+
+sar_df_list, perf_stat_df, perf_script_df = run_and_collect_all(
+        "perf bench futex hash"
+)
+```
+
+## structure
+
+```py
+pipa-tree
+├── asset # images, icons, or other files used in the project
+├── data  # store data related to the project
+│   ├── dump # dump from sar/perf etc 
+│   └── out # store processed or generated data as output
+├── pipa # py package
+│   ├── command # command-related code
+│   ├── common # shared or common code used across the subpackage
+│   ├── parser # code related to parsing
+│   ├── service # providing services or functionalities
+│   └── system_info # gathering system information
+├── script # scripts to collect data
+├── test # testing the project's functionality
+└── doc # user manuals, API documentation, design documents, etc
+```
+
+## Build
+
+To build PIPA, you can use the `python` command with the `build` module:  `python -m build`, we use `hatchling` as the build backend.
+
+
+## Contributing
+
+Contributions to PIPA are always welcome. Whether it's feature enhancements, bug fixes, or documentation, your contributions are greatly appreciated.
