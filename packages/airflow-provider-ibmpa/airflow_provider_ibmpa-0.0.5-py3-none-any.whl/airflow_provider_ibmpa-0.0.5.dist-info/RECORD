@@ -1,0 +1,10 @@
+ibmpa_provider/__init__.py,sha256=9BWZn5nzGuR1OgfvRKcAb6OsJ7eMwpneDHhCV6hdJp4,624
+ibmpa_provider/hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ibmpa_provider/hooks/ibmpa.py,sha256=6ZkxhfQfN0Z8eyLY0HMC9pArXseVFZ7zTApRSs8FgfA,2207
+ibmpa_provider/operators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ibmpa_provider/operators/ibmpa.py,sha256=GhTIFTK1gzpxFIi7YqO9ignU5YiYXOrQFDruK7FDpnI,2276
+airflow_provider_ibmpa-0.0.5.dist-info/METADATA,sha256=6LkHJOLq3GLa2ewv_-XqvUJnqKEmnffI6bcmEGz-LXo,593
+airflow_provider_ibmpa-0.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+airflow_provider_ibmpa-0.0.5.dist-info/entry_points.txt,sha256=RvjZcy6YIY1M6Jg8IS9HN3lhVUss3hiSUoAJ4LraPsA,84
+airflow_provider_ibmpa-0.0.5.dist-info/top_level.txt,sha256=J5r1PSMJtHkH1ZDv3aJC_cRqQJ53rdGeqETtXaLJFiA,15
+airflow_provider_ibmpa-0.0.5.dist-info/RECORD,,

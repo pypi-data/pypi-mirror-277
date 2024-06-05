@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: airflow-provider-ibmpa
+Version: 0.0.5
+Summary: IBM Planning Analytics Apache Airflow provider package built by Sanghoon Kim. (Feat. TM1py by cubewise)
+Author-email: Sanghoon Kim <angtus76@gmail.com>
+License: Apache License 2.0
+Project-URL: Homepage, https://blog.naver.com/angtus
+Project-URL: Source, https://github.com/angtus76/airflow-provider-ibmpa/
+Classifier: Framework :: Apache Airflow
+Classifier: Framework :: Apache Airflow :: Provider
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: tm1py >=2.0
+
+Test version.
