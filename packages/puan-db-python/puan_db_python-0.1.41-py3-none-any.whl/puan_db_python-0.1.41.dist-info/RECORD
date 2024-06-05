@@ -1,0 +1,7 @@
+puan_db_pb2.py,sha256=JtnHdDEgB3UDHoeLQYlOpxRtd5I69643D56nPVgFKgs,13924
+puan_db_pb2.pyi,sha256=ZHHdsDP-MCOtVNKoZ948zZ-ymb5o7ohfJdD1JkAMKfQ,18362
+puan_db_pb2_grpc.py,sha256=73EV5KDP3eK9aKa0D5mGshy353ZpArly4CZ8lsdShyo,48070
+puan_db_python/__init__.py,sha256=mwvNIOfzHDQvlnDXc6jHjDehsrvXTk0kywnJb8CW0xM,23206
+puan_db_python-0.1.41.dist-info/METADATA,sha256=7tm4299pAjytns5l8I3vyfNxDfFeAihabtI-NjlcWgA,2986
+puan_db_python-0.1.41.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+puan_db_python-0.1.41.dist-info/RECORD,,
