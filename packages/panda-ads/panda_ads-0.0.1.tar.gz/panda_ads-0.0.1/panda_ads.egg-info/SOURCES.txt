@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+panda/__init__.py
+panda/ads/__init__.py
+panda_ads.egg-info/PKG-INFO
+panda_ads.egg-info/SOURCES.txt
+panda_ads.egg-info/dependency_links.txt
+panda_ads.egg-info/top_level.txt
