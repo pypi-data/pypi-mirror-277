@@ -1,0 +1,14 @@
+pansg/__init__.py,sha256=71kyIrBBlpQEj-zbXAcOjZK0f6SU2CKjEjp_HV89h-0,158
+pansg/_cli.py,sha256=LNrTiRIajhsyk2wlTekLpft8uihnBncLjXSje2D-x5k,3927
+pansg/_logging.py,sha256=03C_5p2XSA6vTMbDroSHEzcOHFGp3OAB1cZrO3g1Uy4,683
+pansg/_pool.py,sha256=UIN1Ju9Fou9jWbDXhqlz9M6vbnPGJhK5afAM0fwSYC8,573
+pansg/_version.py,sha256=ftNquZl3sCqrJX7WJNteq5Frr6lZxBnAWmbbwadk4aU,76
+pansg/blastp_2_dagchainer.py,sha256=0Sm4Z34azL96bQPwi_Yo7Dqoyviy5e3iCB1ohvJanGY,7727
+pansg/extract_longest_protein.py,sha256=vD6K1qoYdNDaH0RtWvh0M3yZILZs17Igoq9Uu_2Osnc,2367
+pansg/merge.py,sha256=0RhHzfDLq1nqmwo5V9l0Hsir9QXoJ_n6X-GsSfvKckU,6317
+pansg/polish.py,sha256=rkfKEvRBL7Mq6RtH2C-1QjXjnUqUHWdMBaxqDowKC0w,4507
+pansg/zzq.py,sha256=6niXZi0jXx7bvGdbDKCYtNGpMYsPjhOgLrbBkR8Hjz0,1405
+pansg-0.1.4.dist-info/METADATA,sha256=0oRAdvdzzXaduns5T38Zl65-dYRn7Y59YjVuICbd3go,3915
+pansg-0.1.4.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+pansg-0.1.4.dist-info/entry_points.txt,sha256=1rHAanAKxC3ksm93_4k4Hab2V9-_kN7eJK3k1FpRkbE,41
+pansg-0.1.4.dist-info/RECORD,,
