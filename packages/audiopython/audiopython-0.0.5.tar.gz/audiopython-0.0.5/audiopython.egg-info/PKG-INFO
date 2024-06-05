@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: audiopython
+Version: 0.0.5
+Summary: A package with functionality for offline audio processing
+Author-email: Jeffrey Martin <jmartin@jeffreymartincomposer.com>
+Project-URL: Homepage, https://fleximeter.github.io/
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: librosa
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pedalboard
+Requires-Dist: regex
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+
+# audiopython
+
+## Introduction
+This is a Python library for working with audio.
+
+## Dependencies
+You will need the following Python libraries: `librosa`, `matplotlib`, `numpy`, `pedalboard`, `regex`, `scipy`, `sklearn`

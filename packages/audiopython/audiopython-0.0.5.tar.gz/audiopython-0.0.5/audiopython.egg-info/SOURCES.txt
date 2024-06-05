@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+audiopython/analysis.py
+audiopython/audiofile.py
+audiopython/granulator.py
+audiopython/operations.py
+audiopython/sampler.py
+audiopython/spectrum.py
+audiopython.egg-info/PKG-INFO
+audiopython.egg-info/SOURCES.txt
+audiopython.egg-info/dependency_links.txt
+audiopython.egg-info/requires.txt
+audiopython.egg-info/top_level.txt
