@@ -1,0 +1,10 @@
+fastlite/__init__.py,sha256=Dgdgp1LHAPYVSLQOc0xbKt2ygq7_N5NuN76vOrVYkEo,61
+fastlite/_modidx.py,sha256=6Q5KTXO2SxAUnLYtg1JGkFFQxo-VEla6yC-0knX3V0Q,4543
+fastlite/core.py,sha256=O2LJI23B-q30Nd-rYhWLZmQWWReb9Ln-9dA8wMzRO8o,5494
+fastlite/kw.py,sha256=m8bCGNjtOqJbAmh4JJlNA-xz6MXv1ezMTZTU4oFwC7c,10532
+fastlite-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fastlite-0.0.4.dist-info/METADATA,sha256=J41ma8RAcH4TSYVrue2DZ99VqEhxf248vyNs1E0z1gw,7645
+fastlite-0.0.4.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+fastlite-0.0.4.dist-info/entry_points.txt,sha256=9Bw6xqVfdQgRJ-AZ9E64W4UreBvw7Lr9om1Ebw0wuB8,38
+fastlite-0.0.4.dist-info/top_level.txt,sha256=uZIDfrxOHZQrAcmr8ggBJWL7IC8Ch1o0_4-ywL31i2g,9
+fastlite-0.0.4.dist-info/RECORD,,
