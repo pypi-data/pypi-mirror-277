@@ -1,0 +1,196 @@
+Metadata-Version: 2.1
+Name: pga-gpt-tools
+Version: 0.1.0
+Summary: A collection of tools for PGA AI products
+Home-page: https://github.com/pgahq/pga-gpt-tools
+Author: PGA Tech
+Author-email: pgatech@pgahq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pydantic
+Requires-Dist: instructor
+Requires-Dist: google-search-results
+Requires-Dist: firecrawl-py
+Requires-Dist: fal-client
+Requires-Dist: openai
+
+# PGA GPT Tools
+
+A collection of tools for PGA AI projects. This repository contains various utilities designed to enhance automation and provide advanced AI capabilities for different applications.
+
+## Tools
+
+- **Generate Image**: Create images from textual descriptions using the OpenAI DALL-E 3 model.
+- **Remove Background**: Remove the background from images for better focus on the subject.
+- **Web Scrape**: Scrape web content from given URLs and extract specific HTML elements.
+- **Web Search**: Perform web searches using SerpAPI and return comprehensive search results.
+
+## Installation
+
+Clone the repository and install dependencies using `pipenv`:
+
+```bash
+git clone https://github.com/pgahq/pga-gpt-tools.git
+cd pga-gpt-tools
+pipenv install
+```
+
+## Environment Variables
+
+To use the tools effectively, you need to set the following environment variables:
+
+- `SERPAPI_API_KEY`: Your SerpAPI API key for web search.
+- `FIRECRAWL_API_KEY`: Your FireCrawl API key for web scrape.
+- `OPENAI_API_KEY`: Your OpenAI API key for image generation using DALL-E 3.
+- `FALAI_API_KEY`: Your fal.ai API key for image transformations.
+
+You can manage these environment variables by creating a `.env` file in the root of your project (for development environments) or setting them up in your CI/CD pipeline.
+
+### Example `.env` File
+
+```plaintext
+SERPAPI_API_KEY=your_serpapi_api_key_here
+FIRECRAWL_API_KEY=your_firecrawl_api_key_here
+OPENAI_API_KEY=your_openai_api_key_here
+FALAI_API_KEY=your_falai_api_key_here
+```
+
+Load the `.env` file in your script using `python-dotenv`:
+
+### Loading Environment Variables
+
+```python
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+```
+
+### Loading Environment Variables from AWS SSM
+
+Alternatively, you can load these environment variables directly from AWS SSM Parameters. Ensure you have the necessary permissions to access these SSM parameters.
+
+#### Example SSM Helper
+```python
+import boto3
+
+def ssm_get(parameter_name):
+    ssm = boto3.client('ssm')
+    response = ssm.get_parameter(
+        Name=parameter_name,
+        WithDecryption=True
+    )
+    if 'Parameter' in response:
+        if 'Value' in response['Parameter']:
+            return response['Parameter']['Value']
+    return None
+```
+
+#### Loading Environment Variables
+
+```python
+import os
+from src.helpers import ssm_get
+
+os.environ['SERPAPI_API_KEY'] = ssm_get('/pga-gpt/serpapi_api_key')
+os.environ['FIRECRAWL_API_KEY'] = ssm_get('/pga-gpt/firecrawl_api_key')
+os.environ['OPENAI_API_KEY'] = ssm_get('/pga-gpt/openai_api_key')
+os.environ['FALAI_API_KEY'] = ssm_get('/pga-gpt/falai_api_key')
+```
+
+## Usage
+
+### Import All Tools
+You can import all tools in a single statement:
+
+```python
+from pga_gpt_tools import GenerateImage, RemoveBackground, WebScrape, WebSearch
+```
+
+### Import Individual Tools
+
+#### Generate Image
+```python
+from pga_gpt_tools.generate_image import GenerateImage
+
+tool = GenerateImage(prompt="A scenic view of mountains during sunset")
+image_details = tool.run()
+print(image_details)
+```
+
+#### Remove Background
+```python
+from pga_gpt_tools.remove_background import RemoveBackground
+
+tool = RemoveBackground(image_url="https://example.com/image.jpg")
+result = tool.run()
+print(result)
+```
+
+#### Web Scrape
+```python
+from pga_gpt_tools.web_scrape import WebScrape
+
+tool = WebScrape(url="https://www.example.com", element="title")
+scraped_content = tool.run()
+print(scraped_content)
+```
+
+#### Web Search
+```python
+from pga_gpt_tools.web_search import WebSearch
+
+tool = WebSearch(query="PGA Championship 2023")
+search_results = tool.run()
+print(search_results)
+```
+
+## Development
+
+### Setting Up
+
+First, clone the repository and navigate into the project directory:
+
+```bash
+git clone https://github.com/pgahq/pga-gpt-tools.git
+cd pga-gpt-tools
+```
+
+### Installing Dependencies
+
+Install dependencies using `pipenv`:
+
+```bash
+pipenv install
+```
+
+### Running Tests
+
+Run tests to ensure everything is working correctly:
+
+```bash
+pipenv run pytest
+```
+
+## Contributing
+
+We welcome contributions from the community! To contribute:
+
+1. Create a new branch (`git checkout -b my-feature-branch`).
+2. Make your changes and commit them (`git commit -am 'Add new feature'`).
+3. Push the feature branch to origin (`git push origin my-feature-branch`).
+4. Create a new Pull Request into `main`.
+
+### Guidelines
+
+- Ensure your code follows the PEP 8 style guide.
+- Write tests for any new features or changes.
+- Make sure all tests pass before submitting a PR.
+
+## Continuous Integration and Deployment
+
+This repository uses CircleCI for continuous integration and deployment. Packages are automatically deployed to PyPI when PRs are merged into the `main` branch.
