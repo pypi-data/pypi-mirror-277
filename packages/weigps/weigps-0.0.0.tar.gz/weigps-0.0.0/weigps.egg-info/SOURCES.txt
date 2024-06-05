@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+weigps/__init__.py
+weigps/meta.py
+weigps/weigps.py
+weigps.egg-info/PKG-INFO
+weigps.egg-info/SOURCES.txt
+weigps.egg-info/dependency_links.txt
+weigps.egg-info/not-zip-safe
+weigps.egg-info/requires.txt
+weigps.egg-info/top_level.txt

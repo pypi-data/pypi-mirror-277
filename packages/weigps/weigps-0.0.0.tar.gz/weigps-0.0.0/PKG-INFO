@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: weigps
+Version: 0.0.0
+Summary: Wei's Gas-phase Polariton Simulation.
+Home-page: https://github.com/Weitheskmt/WeiGPS
+Author: Wei Liu
+Author-email: wordwaymusic@163.com
+License: MIT
+Keywords: gas-phase rovibrational-polariton gps
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Provides-Extra: docs
+Provides-Extra: test
+License-File: LICENSE
+
+The main challenge in polariton chemistry is the collective effect. When studying individual molecules in a Fabry-P\ ́erot cavity, the interaction between light and matter is so small that it’s often ignored. To achieve strong light-matter interactions, a large number of molecules must collectively couple with light.
+In our study, we simulate up to a million gas-phase molecules in a Fabry-P\ ́erot cavity, each with weak individual interactions with light. This approach allows us to address the collective challenges in polariton chemistry.
+Our simulation demonstrates that even with disorder and rotations, collective effects are observed in the spectra. Specifically, we find that increasing rotational frequencies result in larger Rabi splitting between lower and upper polaritons. However, randomness in rotational phases tends to reduce this splitting. Larger Rabi splitting helps polaritons withstand molecular level disorder. These findings are expected to be validated by gas-phase polariton experiments.
