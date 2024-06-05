@@ -1,0 +1,12 @@
+cj/__init__.py,sha256=WhxihzPehXtrCIhS_ju2WBTzSpzvGS9cENsWKPwUNZg,96
+cj/cj_ranking.py,sha256=QZuQMDN1qkuDnS9QLX6DxP2UwGvDOwXc0_noxQRGQ5A,115
+cj/models/BTM.py,sha256=ggFvaYDRc3lw1qrKBFLcnTB0AW5nlB8Ik96dyKP81L0,2568
+cj/models/BayesianCJ.py,sha256=Nr2Lj65fkhDM5muyj0yPhsT15RAqqE_jVLQ4yBrV_L8,6616
+cj/models/__init__.py,sha256=00xVQzt_KBdKXXkFnMXLkRc_yvMBuAuN26eKIM8kdqc,44
+cj/pair_selector/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cj/pair_selector/entropy.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cj/pair_selector/random.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+comparative_judgement-0.0.1.dist-info/METADATA,sha256=sejdRvPyEIx1x6FxixoGCciBfgX1rOmBy0NC5-4FTl8,248
+comparative_judgement-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+comparative_judgement-0.0.1.dist-info/top_level.txt,sha256=xf8CL6f0Y50XUHvnSyvXMlN8xW1EVwyuUR177TSC8Rc,3
+comparative_judgement-0.0.1.dist-info/RECORD,,
