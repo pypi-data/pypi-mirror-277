@@ -1,0 +1,14 @@
+camel/__init__.py,sha256=OZdipuZK0NgIy6gJHHBkz9qzLdeDK7eq2IGet0a6TA0,77
+camel/camel_model.py,sha256=NCdDFqW6pUtX-OAUw-bT6FYcShs2pmEYJErpPRiztHA,9305
+camel/camel_modifier.py,sha256=SnvUwihBVgH6jwy33a4B_vpGxREAfPAajYVO6JCJcqk,91
+camel/models/llama/configuration_llama.py,sha256=e5bCWwmYnDkJ30PlTgM0SVIknCpB2B_zxCx2F0-Lmpo,7604
+camel/models/llama/modeling_llama.py,sha256=4smbHiGao1hfYmvIAT3-yhKGKiID_FzI3latvEh4tG0,55450
+camel/models/llama/modifier_llama.py,sha256=_XPw78rsFzNFCxTbxjXZlpxukuwzh64aaXsBVnWAVb8,61487
+camel/utils/cache.py,sha256=LauGDW1ce50Nve9AJRdb9Mo6D_OjAGQitWkmRnFlI_k,6146
+camel/utils/choices.py,sha256=XvhqhLQB3OLWNzOs0ZgHyjqwS1SZSmRTUMwF1Ra1eaI,445
+camel/utils/logits_precessor.py,sha256=FyjTyod_n1GL_Y6qqeEoNLmiRAeQGE2zaGPeVRVKRO0,960
+camel/utils/tree.py,sha256=h2IrmGCHM31LolihwMADe7tfgMoJndncwE6olQbXba0,21821
+modifier-0.0.3.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+modifier-0.0.3.dist-info/METADATA,sha256=mIbX9COK1uIRgTRJ3PDmE80PhoGvSi3RXjNC5g5Zc8Y,3705
+modifier-0.0.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+modifier-0.0.3.dist-info/RECORD,,
