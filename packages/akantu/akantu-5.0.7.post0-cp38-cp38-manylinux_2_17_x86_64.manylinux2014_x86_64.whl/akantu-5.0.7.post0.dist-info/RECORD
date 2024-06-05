@@ -1,0 +1,10 @@
+akantu/py11_akantu.cpython-38-x86_64-linux-gnu.so,sha256=gyvvtW5FhsKhpaWBn5qybQQt-WNcVbM26uy3UZovcDk,3165185
+akantu/__init__.py,sha256=guXdh9892FD3LoinUGAXp8QHgRvoudXmy02-QlK0BVI,4949
+akantu.libs/libakantu-4932012d.so.5.0.7,sha256=_ztc4L1GpeGWCs-a0YK_TBP6Q9EERv1cgjYlKth5R6s,26416569
+akantu.libs/libiohelper-18d9bb61.so,sha256=smyeqtMXsKqSo6JdwkfQQDDCXo_0Ke9DzFQAmfsITZc,260601
+akantu-5.0.7.post0.dist-info/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+akantu-5.0.7.post0.dist-info/COPYING.lesser,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+akantu-5.0.7.post0.dist-info/WHEEL,sha256=CKI7hX_udpEyOOMQtVo4MuPvMy5fJbrBR3HJXFdbayw,142
+akantu-5.0.7.post0.dist-info/RECORD,,
+akantu-5.0.7.post0.dist-info/top_level.txt,sha256=AAyBZfYaxQJOYlUQaXI5wpvHMVM_3Ldfa4cPo8lo1do,7
+akantu-5.0.7.post0.dist-info/METADATA,sha256=yvNW233rWfmsEZYQ9Ug7IGCzOg4T9wpN_yN_sjPBY_A,6737
