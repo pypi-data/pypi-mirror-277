@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/fable/__init__.py
+src/fable/core.py
+src/fable/generators.py
+src/fable/models.py
+src/fabledata.egg-info/PKG-INFO
+src/fabledata.egg-info/SOURCES.txt
+src/fabledata.egg-info/dependency_links.txt
+src/fabledata.egg-info/requires.txt
+src/fabledata.egg-info/top_level.txt

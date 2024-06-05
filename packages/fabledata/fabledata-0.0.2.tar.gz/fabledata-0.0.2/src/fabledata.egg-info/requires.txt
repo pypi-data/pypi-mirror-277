@@ -1,0 +1,8 @@
+faker
+polars
+pydantic
+
+[dev]
+python-dotenv
+pytest
+ruff
