@@ -1,0 +1,13 @@
+fastcore
+pandas
+requests
+matplotlib
+pyopenssl
+
+[dev]
+fastcore
+pandas
+requests
+matplotlib
+black
+pyopenssl
