@@ -1,0 +1,11 @@
+tree_sitter_pymanifest/__init__.py,sha256=_kRfQCTHpaZg8CVPtDZWH2lEwR00myHoMaEZDkfrkcA,93
+tree_sitter_pymanifest/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tree_sitter_pymanifest/binding.c,sha256=XGKixZDoOv-RXdNh9UKoxFSjq0Jtxp2KCNxgc1ykwm0,644
+tree_sitter_pymanifest/__init__.pyi,sha256=8xf7bY1szgDY9HRJ7FJ326So4SFgMiSRfCB4LADkTpU,27
+tree_sitter_pymanifest/_binding.abi3.so,sha256=ZVHQxOrXkgFvvSElplqAv7XAaSS37tJu2GuXKBqOra0,96600
+tree_sitter_pymanifest/queries/highlights.scm,sha256=vx9e_s2gorrlBH7hhcBhi0Io2k8oBiuC0iZFJhIJN6E,314
+tree_sitter_pymanifest-0.5.0.dist-info/WHEEL,sha256=ZILpixIZNVGQBm0LS6ewaj4n2CmmhcQqjQcXGcDpX9Y,150
+tree_sitter_pymanifest-0.5.0.dist-info/LICENSE,sha256=QT7Ew4QvlbyvZiq6fWRrIrrwRKpqxe-mUxuU1O4AJIs,1058
+tree_sitter_pymanifest-0.5.0.dist-info/top_level.txt,sha256=jPNYlLwAHg8DbuO92aJiAdKu-BH1N3Ba9WQEKPJDfb8,32
+tree_sitter_pymanifest-0.5.0.dist-info/RECORD,,
+tree_sitter_pymanifest-0.5.0.dist-info/METADATA,sha256=4IctMDC_jr4zfTJZSFztUzr2pMAfllQe0gNW2WnwVVo,866
