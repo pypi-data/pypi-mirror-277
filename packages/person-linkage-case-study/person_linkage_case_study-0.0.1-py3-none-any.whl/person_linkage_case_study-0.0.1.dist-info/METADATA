@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: person_linkage_case_study
+Version: 0.0.1
+Summary: Person linkage case study for PyPI.
+Home-page: https://github.com/ihmeuw/person_linkage_case_study
+Author: IHME Simulation Science Team
+Author-email: zmbc@uw.edu
+License: BSD-3-Clause
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pseudopeople
+Requires-Dist: splink
+Requires-Dist: jellyfish
+Requires-Dist: snakemake
+Requires-Dist: papermill
+Requires-Dist: ipython
+Requires-Dist: ipykernel
+Requires-Dist: pulp <2.8
+Provides-Extra: dask
+Requires-Dist: pseudopeople[dask] ; extra == 'dask'
+Requires-Dist: dask-jobqueue ; extra == 'dask'
+Requires-Dist: bokeh !=3.0.*,>=2.4.2 ; extra == 'dask'
+Provides-Extra: dev
+Requires-Dist: jupyterlab ; extra == 'dev'
+Requires-Dist: nbdime ; extra == 'dev'
+Requires-Dist: black[jupyter] ; extra == 'dev'
+Requires-Dist: pseudopeople[dask] ; extra == 'dev'
+Requires-Dist: dask-jobqueue ; extra == 'dev'
+Requires-Dist: bokeh !=3.0.*,>=2.4.2 ; extra == 'dev'
+Requires-Dist: pyspark ==3.4.1 ; extra == 'dev'
+Provides-Extra: spark
+Requires-Dist: pyspark ==3.4.1 ; extra == 'spark'
+
+# person_linkage_case_study_pypi
