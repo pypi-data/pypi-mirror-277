@@ -1,0 +1,12 @@
+definance/__init__.py,sha256=Uggs9poWgfBBH5OwPMZOBH1WE_NdhOxrt_CnB-oY-sc,1733
+definance/classes.py,sha256=K5u-gmdlVZMZy8TvnulcDQJ8Y3dII1CAoulHjq2w76o,3077
+definance/exceptions.py,sha256=rq0wn5WKCsnmBSwfCMzLi43c3YpbUnh2WGIeWYJN9cE,121
+definance/exchange.py,sha256=vSglJxtuJ9JyTyWbzQ3GGsvV7kigzUiCNlwl7yCrn9g,5158
+definance/symbols.py,sha256=7dh9_Lbsh4Hyp6V3vCYdxcQ3Pk1M03zPyTKIlszA9cY,6787
+definance/url.py,sha256=8WJs8dXgg7kL0TUKozM00YUe8C1uN4jVOsvriRXS_HY,934
+definance/utils.py,sha256=ihhj2Ya4LsYLOwy_T6bpY-eLSWSQxrk5mIzxum3MIcE,2628
+definance-0.1.dist-info/LICENSE,sha256=d3RAEzP-cLVY4PHBpJIuk-GlVz9a_iGRAqc9VLSpD7U,1067
+definance-0.1.dist-info/METADATA,sha256=xvTUj2ST78_OQSilqMzN1_wWwy8_iZ2dkQJvMUNnyT4,2848
+definance-0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+definance-0.1.dist-info/top_level.txt,sha256=MhZuSHZQtlW0deK9Uj8XXRyTD8aeGYUTBg4SzTsUBGQ,10
+definance-0.1.dist-info/RECORD,,
