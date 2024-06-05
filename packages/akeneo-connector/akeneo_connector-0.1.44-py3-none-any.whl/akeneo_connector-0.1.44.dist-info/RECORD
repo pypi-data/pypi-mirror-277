@@ -1,0 +1,12 @@
+akeneo_connector/__init__.py,sha256=81NoXc8MePlQUx59m2ZKM-eKnILigIAhnEKK4Lh2VN0,179
+akeneo_connector/akeneo_attribute.py,sha256=FvOnOH5sSG6i8PJ_0I62GonKWAZ2eQk8Kjofpe4aYQY,2023
+akeneo_connector/akeneo_connector.py,sha256=jtMqiBWibW3OXatjLwlvclR7tpWBe4c4kMIgTyWjM3k,8353
+akeneo_connector/akeneo_paginator.py,sha256=IserzkKJfbx88lL1GlwdqqfC5MwaKVXzIo66kyMMtU4,4403
+akeneo_connector/akeneo_product.py,sha256=IcWZAiQDEexzqQH2vSK5EEGMaWl_ro05SW5y1JrkfP4,13209
+akeneo_connector/akeneo_units.py,sha256=1VkJFOZC1UC370woGfLjYksdMnSYoJeBR5fXrO2zglo,6030
+akeneo_connector/decorators.py,sha256=IccaQf6ijH2w2OL2tc1n0niDM-mo9sZbrG057DJoJDE,517
+akeneo_connector-0.1.44.dist-info/LICENSE,sha256=qpt0y_mj-PxH1fPGH7OTg45Zm4XSsyoyIZvvq2sMFng,1065
+akeneo_connector-0.1.44.dist-info/METADATA,sha256=vg-1i4Qvw5FKD48qiAp-LE-pw__kFb9pR7j_JFIYsiU,4675
+akeneo_connector-0.1.44.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+akeneo_connector-0.1.44.dist-info/top_level.txt,sha256=SvOAw0sgzo2jpZ3y5agoogbrFPD8_bzgy_JeII5VL84,17
+akeneo_connector-0.1.44.dist-info/RECORD,,
