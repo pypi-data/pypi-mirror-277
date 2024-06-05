@@ -1,0 +1,7 @@
+README
+setup.py
+xiaoEx/xiaofang_ex.egg-info/PKG-INFO
+xiaoEx/xiaofang_ex.egg-info/SOURCES.txt
+xiaoEx/xiaofang_ex.egg-info/dependency_links.txt
+xiaoEx/xiaofang_ex.egg-info/requires.txt
+xiaoEx/xiaofang_ex.egg-info/top_level.txt
