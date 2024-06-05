@@ -1,0 +1,9 @@
+simre/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simre/formats.py,sha256=HgDQplBImI14hJwAEynP0PYrSsmzMeFdc7Cgm6zKuTk,5422
+simre/init_models.py,sha256=AXNmvG8j2NPY8_JqF7oXjNxF0ML2-nl09VhSru2ZWT0,1638
+simre/similarity.py,sha256=Y-n2FwT62FtrJ5xlXPYfXjpRT0NcINVxwZT9m7lKr20,11707
+simre-0.0.2.dist-info/LICENSE,sha256=x1BODZXaKuC7PtQljUMApWR7UpMTCS6K1fzsRf6jnIA,1090
+simre-0.0.2.dist-info/METADATA,sha256=-MRTbysLyL0eQorJ-zQabEiJUafweccL1WwfBy56L88,5992
+simre-0.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+simre-0.0.2.dist-info/top_level.txt,sha256=C3rhFlKX09CW7QFcUYMGu4MlRpbfermFgQ-IsotiGzE,6
+simre-0.0.2.dist-info/RECORD,,
