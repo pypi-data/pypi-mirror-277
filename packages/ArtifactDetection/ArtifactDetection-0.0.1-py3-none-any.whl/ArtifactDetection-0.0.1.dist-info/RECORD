@@ -1,0 +1,17 @@
+artifactdetection/__init__.py,sha256=gY-YwiFqwe9Gpw--5Xw6dMTmkGqWwBkQ_WAMzdAs5E8,227
+artifactdetection/analyse.py,sha256=qlPmnBx_NaTcGgX3gLNwZFPlyURtRGBe4cZPgsaeoWo,5786
+artifactdetection/explore.py,sha256=zaysQ2ICuPJ7jvLp1nEtdTDDH0Sp3aiGEkQl2x9-76Y,4358
+artifactdetection/implement.py,sha256=6VDpQxdYNwh29M34vJL_wNqTw6fwxr4bj1qhIlBhWso,1957
+artifactdetection/load.py,sha256=gpv6hDuY6E2hxQeGMv93A8GvNTvBeHdfXGGLp8m84JU,5565
+artifactdetection/noisefilter.py,sha256=xjo_vLwpN9vM8smreCIAnMfwXaszUKjOHvVs5BoDSeo,2813
+artifactdetection/preprocess.py,sha256=JcEPl29yBY2aZuhIE1BgxMRT2BUHxZydVvh0-B-yC_Y,3306
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_analyse.py,sha256=1KyNTY67nRZX4YWKJMnmNFR5ymUGGKMErmDJpEJ4LbA,6004
+tests/test_explore.py,sha256=Vo5z82ocwNhi3D9qjnBgDIdhJ7Ntar5MnVX4bdff63Y,3815
+tests/test_load.py,sha256=NmgXOzjNswFD9riYCDtZLhNcQ1TKm-uIE3aXu_WYji4,2514
+tests/test_noisefilter.py,sha256=pyKEweDy0aHNBpnJtaI0gP3LTF-bbQX3rvLx5Cfvt9Q,1623
+ArtifactDetection-0.0.1.dist-info/LICENSE.md,sha256=OqJtWwB1XjynU2ythTwLV5u8cyGeH-WzLijiVfy5ZKM,1069
+ArtifactDetection-0.0.1.dist-info/METADATA,sha256=5dbPt8Igy24kzHY7RGjUBkrFMMqE4-jJV5vVtys_gCg,571
+ArtifactDetection-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ArtifactDetection-0.0.1.dist-info/top_level.txt,sha256=pDdUl8vhDAu_Feqna7c7HEsKaldc2Ws9LL1zOMZr2lc,24
+ArtifactDetection-0.0.1.dist-info/RECORD,,
