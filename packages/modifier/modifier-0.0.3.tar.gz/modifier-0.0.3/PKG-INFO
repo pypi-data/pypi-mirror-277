@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: modifier
+Version: 0.0.3
+Summary: CAMEL: Context-Aware Modifier for Efficient Language model
+Home-page: https://github.com/CSWellesSun/CAMEL
+License: Apache-2.0
+Author: Welles Sun
+Author-email: welles.sun@zju.edu.cn
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: accelerate (>=0.30.1,<0.31.0)
+Requires-Dist: datasets (>=2.19.1,<3.0.0)
+Requires-Dist: fastchat (>=0.1.0,<0.2.0)
+Requires-Dist: pytest (>=8.2.0,<9.0.0)
+Requires-Dist: ray (>=2.23.0,<3.0.0)
+Requires-Dist: sentencepiece (>=0.2.0,<0.3.0)
+Requires-Dist: shortuuid (>=1.0.13,<2.0.0)
+Requires-Dist: torch (>=2.3.0,<3.0.0)
+Requires-Dist: transformers (>=4.41.0,<5.0.0)
+Requires-Dist: wandb (>=0.17.0,<0.18.0)
+Project-URL: Repository, https://github.com/CSWellesSun/CAMEL
+Description-Content-Type: text/markdown
+
+# CAMEL
+
+## Introduction
+
+CAMEL(Context-Aware Modifier for Efficient Language model) is a speculative decoding method inspired by [EAGLE](https://github.com/SafeAILab/EAGLE). It compresses former input hidden states according to window size and then make speculations.
+
+<div align="center">
+    <img src="docs/arch.png" alt="architecture" width="300">
+</div>
+
+## Installation
+
+```bash
+pip install modifier
+```
+
+## Quick Start
+
+CAMEL only supports `meta-llama/Llama-2-7b-chat-hf` currently.
+
+```python
+import torch
+from camel import CamelModel
+
+prompt = "What is artificial intelligence?"
+model = CamelModel.from_pretrained(
+    base_model_path="meta-llama/Llama-2-7b-chat-hf",
+    modifier_path="0xWe11es/camel-llama2-h1024-w1",
+    torch_dtype=torch.float16,
+    device_map="auto"
+)
+tokenizer = model.get_tokenizer()
+input_ids = tokenizer(prompt).input_ids
+output_ids = model.generate(input_ids)
+output = tokenizer.decode(output_ids)
+print(output)
+```
+
+CAMEL has the following modifier based on Llama2 (`h` stands for hidden size, `w` stands for window size):
+
+- [0xWe11es/camel-llama2-h256-w1](https://huggingface.co/0xWe11es/camel-llama2-h256-w1)
+- [0xWe11es/camel-llama2-h256-w4](https://huggingface.co/0xWe11es/camel-llama2-h256-w4)
+- [0xWe11es/camel-llama2-h256-w16](https://huggingface.co/0xWe11es/camel-llama2-h256-w16)
+- [0xWe11es/camel-llama2-h256-w64](https://huggingface.co/0xWe11es/camel-llama2-h256-w64)
+- [0xWe11es/camel-llama2-h1024-w1](https://huggingface.co/0xWe11es/camel-llama2-h1024-w1)
+- [0xWe11es/camel-llama2-h1024-w4](https://huggingface.co/0xWe11es/camel-llama2-h1024-w4)
+- [0xWe11es/camel-llama2-h1024-w16](https://huggingface.co/0xWe11es/camel-llama2-h1024-w16)
+- [0xWe11es/camel-llama2-h1024-w64](https://huggingface.co/0xWe11es/camel-llama2-h1024-w64)
+
+## Performance
+
+We test modifier `0xWe11es/camel-llama2-h1024-w4` on several datasets, and get the following results compared to vanilla model (hf version).
+
+| Dataset  | Model       | Temperature | Speed(Token/s) | Speedup |
+|----------|-------------|-------------|----------------|---------|
+| MT-Bench | LlaMa2 7B   | 0.0         | 71.85          | 1.92x   |
+| MT-Bench | LlaMa2 7B   | 1.0         | 57.54          | 1.62x   |
+| GSM8K    | LlaMa2 7B   | 0.0         | 73.51          | 2.20x   |
+| GSM8K    | LlaMa2 7B   | 1.0         | 57.15          | 1.77x   |
+| Alpaca   | LlaMa2 7B   | 0.0         | 68.92          | 1.88x   |
+| Alpaca   | LlaMa2 7B   | 1.0         | 55.38          | 1.56x   |
+
+## Reference
+
+- [Medusa](https://github.com/FasterDecoding/Medusa)
+
+- [EAGLE](https://github.com/SafeAILab/EAGLE)
