@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+codecanvas/__init__.py
+codecanvas/color.py
+codecanvas/style.py
+codecanvas.egg-info/PKG-INFO
+codecanvas.egg-info/SOURCES.txt
+codecanvas.egg-info/dependency_links.txt
+codecanvas.egg-info/top_level.txt
