@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cellworld
+Version: 0.0.391
+Summary: Maciver Lab computational biology research package
+Author: german espinosa
+Author-email: germanespinosa@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: json-cpp>=1.0.77
+Requires-Dist: tcp-messages
+Requires-Dist: networkx
+Requires-Dist: cv
+
+#Add your readme in markdown format here
+---
+<small>Package created with Easy-pack</small>
