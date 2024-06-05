@@ -1,0 +1,7 @@
+setup.py
+fang/__init__.py
+fang/calc.py
+fang_module.egg-info/PKG-INFO
+fang_module.egg-info/SOURCES.txt
+fang_module.egg-info/dependency_links.txt
+fang_module.egg-info/top_level.txt
