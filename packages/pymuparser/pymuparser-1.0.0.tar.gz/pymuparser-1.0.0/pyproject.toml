@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "pymuparser"
+version = "1.0.0"
+description = "A python binding for muparser"
+license = "GPL"
+authors = ["Bob Myhill <bob.myhill@bristol.ac.uk>",]
+readme = "README.md"
+homepage = "https://github.com/bobmyhill/pymuparser"
+repository = "https://github.com/bobmyhill/pymuparser"
+documentation = "https://github.com/bobmyhill/pymuparser"
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.24"
+
+[tool.poetry.group.dev.dependencies]
+black = "23.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+files = "setup.py"
+python_version = "^3.7"
+strict = true
+show_error_codes = true
+enable_error_code = ["ignore-without-code", "redundant-expr", "truthy-bool"]
+warn_unreachable = true
+
