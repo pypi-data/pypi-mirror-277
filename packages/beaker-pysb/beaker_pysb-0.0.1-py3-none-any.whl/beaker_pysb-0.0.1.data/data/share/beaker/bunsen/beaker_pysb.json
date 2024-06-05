@@ -1,0 +1,1 @@
+{"libraries": {"python3": {"pysb": "Systems biology modeling in Python"}}, "build_uris": ["documentation:documentation", "examples:examples", "py-mod:pysb"]}

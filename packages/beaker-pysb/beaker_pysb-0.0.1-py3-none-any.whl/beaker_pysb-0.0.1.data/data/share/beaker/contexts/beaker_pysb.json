@@ -1,0 +1,5 @@
+{
+  "slug": "beaker_pysb",
+  "package": "beaker_pysb.context",
+  "class_name": "PySbContext"
+}
