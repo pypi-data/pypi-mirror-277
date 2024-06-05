@@ -1,0 +1,10 @@
+setup.py
+parse/__init__.py
+parse/parse.py
+parse/process_all.py
+parse/prompts.py
+parse/summarize.py
+sheapientpoc.egg-info/PKG-INFO
+sheapientpoc.egg-info/SOURCES.txt
+sheapientpoc.egg-info/dependency_links.txt
+sheapientpoc.egg-info/top_level.txt
