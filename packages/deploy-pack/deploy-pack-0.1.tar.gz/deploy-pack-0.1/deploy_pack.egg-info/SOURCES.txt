@@ -1,0 +1,7 @@
+deploy_pack.py
+setup.py
+deploy_pack.egg-info/PKG-INFO
+deploy_pack.egg-info/SOURCES.txt
+deploy_pack.egg-info/dependency_links.txt
+deploy_pack.egg-info/entry_points.txt
+deploy_pack.egg-info/top_level.txt
