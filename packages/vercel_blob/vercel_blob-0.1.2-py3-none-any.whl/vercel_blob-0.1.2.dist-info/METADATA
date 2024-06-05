@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: vercel_blob
+Version: 0.1.2
+Summary: A Python Wrapper for Vercel Blob Storage API
+Author: SuryaSekhar14
+Author-email: suryasekhardatta22@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# vercel_blob
+
+A Python wrapper for the Vercel Blob Storage API
+
+### Installation
+
+```
+pip3 install vercel_blob
+```
+
+### Usage
+
+#### Set Environment Variable for Authorization
+
+```
+export BLOB_READ_WRITE_TOKEN="************"
+```
+
