@@ -1,0 +1,4 @@
+[console_scripts]
+odoo-tools-grap=odoo_tools_grap.cli.cli:main
+otg=odoo_tools_grap.cli.cli:main
+
