@@ -1,0 +1,85 @@
+# NetSuite SEARCH SAVED EXPORT
+
+This library allows you to interact with saved searches by importing data from saved searches in Excel, CSV, and TXT formats.
+
+## Installation
+
+```python
+pip install ns_search_saved_export
+```
+
+## Usage
+
+```python
+from ns_search_saved_export.ns_search_saved_export import NsSearchSavedExport
+
+# Obtain the saved search ID
+search_saved_id = 'customsearch33885' # Replace with your saved search ID
+
+# Initialize the API
+api = NsSearchSavedExport(
+    url='https://your-netsuite-url',
+    consumer_key='your_consumer_key',
+    consumer_secret='your_consumer_secret',
+    token_key='your_token_key',
+    token_secret='your_token_secret',
+    realm='your_realm',
+    search_id=search_saved_id
+)
+
+# Send request
+payload = {
+    'searchID': saved, # Replace with your saved search ID
+    'pageIndex': page_index, # Replace with your page index. Default: 0 (first page) add 1 to get the next page
+    'pageRange': page_range # Replace with your page range. Default: 1000 (first page) add 1000 to get the next page. Maximum: 10000
+}
+
+Note: the values of pageIndex and pageRange are optional but both must be sent in case you want to obtain the data of a page
+Optional: pageIndex = 0, pageRange = 1000
+payload = {
+    'searchID': saved # Replace with your saved search ID
+}
+
+# Obtain the data
+response = api.send_request(payload)
+
+# Extract data
+"""Structured data obtained from the saved search
+
+    Args:
+        json_data (dict): Data obtained in the POST response
+
+    Returns:
+        list: List of saved search data
+"""
+data = api.extract_data(response)
+
+# Save data to Excel
+"""Save data in Excel format
+
+    Args:
+        matrix (list): Search data
+        file_name (str) opcional: Excel file name. Default: name of the saved search
+        sheet_name (str optional): Excel sheet name. Default: data
+"""
+api.save_to_excel(data, 'data.xlsx', 'Sheet1')
+
+# Save data to CSV
+"""Save data in CSV format
+
+    Args:
+        matrix (list): Search data. Default: name of the saved search
+        file_name (str) optional: CSV file name
+"""
+api.save_to_csv(data, 'data.csv')
+
+# Save data to TXT
+"""Save data in TXT format
+
+    Args:
+        matrix (list): Search data
+        file_name (str) optional: TXT file name. Default: name of the saved search
+"""
+api.save_to_txt(data, 'data.txt')
+
+```
