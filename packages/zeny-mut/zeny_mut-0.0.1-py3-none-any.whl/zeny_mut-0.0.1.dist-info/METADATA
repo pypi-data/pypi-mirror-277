@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: zeny_mut
+Version: 0.0.1
+Summary: detect mutation in gene and its location
+Home-page: https://github.com/Mostafa-Elzeny/zeny_mut
+Author: Mostafa Elzeny
+Author-email: elzeny.mostafa2000@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: Bio
+
+# this is project
