@@ -1,0 +1,8 @@
+model-trainer/__init__.py,sha256=HpJ4vAuBn3RA0psmod4Q3lJdBxAuScii09PN1IR8-XA,83
+model-trainer/data_splitting.py,sha256=DZOeg-VRJ8LOfIMxXEZxbwOKqX0dxsDhnbra32ITEno,4400
+model-trainer/model_training.py,sha256=sJ9xr2wmPE9O-iNCqrEzIRTO86ldc4zFhp94AZA3kKw,2065
+model_trainer-0.0.1.dist-info/LICENSE,sha256=1EhERK0Fa9hK6DyVFKfECXjrlTjAVSTQeN7E9yny3oM,1088
+model_trainer-0.0.1.dist-info/METADATA,sha256=uffpiTRHdTlMHJ8t9SD-_5fe6BPtXeigXNpsArZKDgA,3001
+model_trainer-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+model_trainer-0.0.1.dist-info/top_level.txt,sha256=q46FR--qpgsh7AH79FvKHamqVK1jYJfGAHlpjVY77r4,14
+model_trainer-0.0.1.dist-info/RECORD,,
