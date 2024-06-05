@@ -1,0 +1,26 @@
+env:
+  search_url: https://so.mingluji.com/
+  search_param_name: keyword
+  enterprise_url_prefix: https://gongshang.mingluji.com/
+
+search:
+  source_file_path: 行政区划.xlsx
+  sheet_name: Sheet1
+  sheet_config:
+    # 表头行索引
+    header_row: 0
+    # 客户名称列索引
+    name_column: G
+
+  search_result_element: tbody
+  search_result_id: search-result
+  region_element: legend
+  region_keyword: 单位所属行政区划分类信息
+
+output:
+  # 生成的目标Excel文件存放路径
+  target_directory: ./
+  # 目标文件名称
+  target_filename: 企业名单.xlsx
+  target_sheet_name: 企业名单
+environment: production

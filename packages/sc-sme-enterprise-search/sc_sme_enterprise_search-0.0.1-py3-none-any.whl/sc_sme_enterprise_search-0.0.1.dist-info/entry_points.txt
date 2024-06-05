@@ -1,0 +1,2 @@
+[console_scripts]
+sc-sme-enterprise-search = sc_sme_enterprise_search.main:main
