@@ -1,0 +1,2 @@
+[console_scripts]
+deploy-pack = deploy_pack:main
