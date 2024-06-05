@@ -1,0 +1,3 @@
+__version__ = '0.0.1'
+CREATED_DATE = '2024-06-04'
+print('You just imported the Public PyPI version of the dse-gk package -- it is empty by design.')
