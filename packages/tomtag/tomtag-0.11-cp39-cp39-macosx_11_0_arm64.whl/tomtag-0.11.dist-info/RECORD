@@ -1,0 +1,10 @@
+tomtag.cpython-39-darwin.so,sha256=8rbirS06S9Qz-VwWBG3bKhbknnCdhUzrNLacCR6GiCU,53160
+tomtag-0.11.dist-info/RECORD,,
+tomtag-0.11.dist-info/LICENSE,sha256=fBTs6jvcF8GJmPC-3GQ77IhhhHutCPU7f4bD_B-qkjA,1069
+tomtag-0.11.dist-info/WHEEL,sha256=t3aNIuHimB-eyeerOmc50nLML0b4_R6yjydcdcJkGHg,108
+tomtag-0.11.dist-info/top_level.txt,sha256=IjIxmwKdVhbwf_mt7mWQ7jYcRNCmB_LShbkSffCAwY0,7
+tomtag-0.11.dist-info/METADATA,sha256=sHfwb_YIYrxMFpz1yy0J_aEJR9TZWXOoksIWcknMtjI,2633
+tomtag/correlation_module.c,sha256=clEH6Oe5r6q_X5mF-EvNXTcdtsLKK5XIwB1AB9l12oM,8641
+tomtag/correlation.c,sha256=U6Lsq4VnBBlCvxHmuIZrgFOFi9LrVsq6U5o85PvjSTQ,6911
+tomtag/__init__.py,sha256=kZnw1xI5DztUOWl-W-sSNuoGStJU7YEzfUxSSzCleCw,1345
+tomtag/correlation.h,sha256=qxxP7LzvNEOlDZJu0hpoi0pk7lQVBBKT0mfB2RD3J5I,1817
