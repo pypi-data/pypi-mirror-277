@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/kokushibyo/__init__.py
+src/kokushibyo/main.py
+src/kokushibyo/utils.py
+src/kokushibyo.egg-info/PKG-INFO
+src/kokushibyo.egg-info/SOURCES.txt
+src/kokushibyo.egg-info/dependency_links.txt
+src/kokushibyo.egg-info/requires.txt
+src/kokushibyo.egg-info/top_level.txt
