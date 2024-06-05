@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: sunny_order_splitter
+Version: 0.1.3
+Home-page: https://github.com/sunnytrade/sunny-order-splitter-python-sdk
+Author: glede
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: binance-connector
+
+# sunny-order-splitter-python-sdk
+
+
+安装
+
+pip install sunny-order-splitter --upgrade
+
+
+使用
+
+```python
+from sunny_order_splitter.core import SunnyOrderSplitter
+
+def main():
+  platform = "BINANCE"
+  base_url = "https://api.binance.com"
+  #base_url = "https://testnet.binance.vision"
+  api_key = "Q9TdT7Tl9KaoFBWaxJ6Rlt8N4fEurKYeBsYfUhXgTRSFMZWzbWa14kybz5vLebCk"
+  secret_key = "9UJ7Vx3SZRF6mvmmLGksR08UMChTiWZG3fyA4JdsyK4pWKsnuqXQwk7N3q8mBw43"
+  symbol = 'NOTUSDT'
+
+  #base_url 可不传，默认正式环境
+  sos = SunnyOrderSplitter(platform, symbol, api_key, secret_key, base_url)
+  
+  params = {
+      "side": "BUY",
+      "orderAmount": 20, # USDT 金额
+      "totalAmount": 85, # USDT 金额
+      "interval": 5 #秒
+  }
+  """
+  params = {
+      "side": "SELL",
+      "orderAmount": 1000, #NOT 数量
+      "totalAmount": 4100, #NOT 数量 
+      "interval": 5
+  }
+  """
+  if not sos.split_order(params):
+      print("One or more orders failed.")
+  else:
+      print("All orders placed successfully.")
+
+if __name__ == "__main__":
+    main()
+```
