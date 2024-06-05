@@ -1,0 +1,9 @@
+pyneuralnet/__init__.py,sha256=72_-cidQxmwDf3OdhiglITscJjnYWAsoteL1dYOyxpw,45
+pyneuralnet/train.py,sha256=u3IJMTg49zMdY3YlZ4Fa8EkW2j22Y3C5eEL_JlNwjgE,4001
+pyneuralnet/models/__init__.py,sha256=PZ3ocVRFOkwg91QAe-tboRTl6y-4nhG8KvPkkgZxHT4,21
+pyneuralnet/models/test.py,sha256=RD7DMBI4wfN-O40fQCa9c9TxgWB0S8cTRKSTs1UC1eg,552
+PyNeuralNet-0.0.5.dist-info/LICENSE,sha256=Lg8NixLXU4sAHY1A2v6O6Ym0ImR3doq7gJrsUAc8zTE,1087
+PyNeuralNet-0.0.5.dist-info/METADATA,sha256=a2uZ6gMmHnW-faUZ7HviJGoufedLngC-b4hN1hA0eiw,2228
+PyNeuralNet-0.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+PyNeuralNet-0.0.5.dist-info/top_level.txt,sha256=e9lLxl0JkT7pXR8UbYhQA7b_jlpbVlZykeQp7MJDGI8,12
+PyNeuralNet-0.0.5.dist-info/RECORD,,
