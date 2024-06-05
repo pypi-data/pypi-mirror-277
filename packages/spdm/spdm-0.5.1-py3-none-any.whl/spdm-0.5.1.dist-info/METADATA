@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: spdm
+Version: 0.5.1
+Summary: A ontology based data integration tool.
+Author-email: Zhi YU <yuzhi@ipp.ac.cn>
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: f90nml
+Requires-Dist: h5py
+Requires-Dist: netcdf4
+Requires-Dist: pyyaml
+Requires-Dist: lxml
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-image
+Requires-Dist: matplotlib
+
+# SpDB
+=======
+![SpDB](./docs/spdb_logo.svg)
+
+
+**SpDB** is a data integration tool designed to organize scientific data from different sources under the same namespace according to a global schema and to provide access to them in a unified form (views). Its **main purpose** is to provide a unified data access interface for complex scientific computations in order to enable the interaction and integration between different programs and databases.
+
+![SpDB](./docs/figures/SpDB.svg)
