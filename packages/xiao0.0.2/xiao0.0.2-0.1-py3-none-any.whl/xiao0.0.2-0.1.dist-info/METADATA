@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: xiao0.0.2
+Version: 0.1
+Home-page: https://example.com/xiao0.0.2
+Author: Xiaofang
+Author-email: 1958976685@qq.com
+Requires-Dist: simplejson
+
