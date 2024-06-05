@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: hello-world-deshitha2
+Version: 0.5
+Summary: A simple hello world package  and uploading to pypi and adding it o the gitlab version2
+Home-page: UNKNOWN
+Author: deshi
+Author-email: deshithabollina28@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: click
+
+UNKNOWN
+
