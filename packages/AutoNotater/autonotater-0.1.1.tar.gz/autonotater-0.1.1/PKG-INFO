@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: AutoNotater
+Version: 0.1.1
+Summary: A Python script processes all the files in a source directory, adds comments to the code using Google's Generative AI model (Gemini), and saves the processed files to a specified destination directory.
+Home-page: https://github.com/Arsdeep/AutoAnnotate
+Author: Arsdeep
+Author-email: arsdeepdewangan@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: google-generativeai
+Requires-Dist: python-dotenv
+Requires-Dist: discord.py
+Requires-Dist: Ipython
+
+# AutoAnnotate
+## Auto Commenter for Codebase using Google's Gemini API
+
+This Python package automatically generates comments for your codebase using the power of Google's Gemini API. It analyzes your code and inserts relevant comments to improve readability and maintainability.
+
+## Features
+
+- Analyzes Python code files.
+- Generates meaningful comments using Google's Gemini API.
+- Integrates seamlessly into your development workflow.
+
+## Installation
+
+To install the package, use pip:
+
+```sh
+pip install AutoNotater
