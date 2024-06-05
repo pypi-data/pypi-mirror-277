@@ -1,0 +1,12 @@
+data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data/analysis.py,sha256=VWU31QRpYCezXE1OakqesGyBGtUBGYvlIAsj0985feY,199
+data/parser.py,sha256=3YuBLzsMv5EPrdjAJmmoj5vL7msj6nEOT0nw7N6pJoE,330
+data/storage.py,sha256=1imamwrBOPOHgGITHGGoQ1BB2qjiG-ymvDS-6GHHdSA,139
+weather/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weather/api.py,sha256=bh7cpOhsrfxsLmDFHi9LLgBBoHF963QldVCiXXoHT7w,306
+weather/conditions.py,sha256=sJcfPTtd8mwemNqRxnZPnChJIWpf9gbLR9E4DV3kc4o,219
+weather/forecast.py,sha256=vdO2Eg5FQI9FJLAn7Qpdq5fchjFpZr2QJtiKCgvdrjc,308
+myweatherlib-0.5.dist-info/METADATA,sha256=omfHfMKOVOkITw4J3wIOga0wBxOqf7CmvMF2m_4kx4g,307
+myweatherlib-0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+myweatherlib-0.5.dist-info/top_level.txt,sha256=OvqYN81b32MJt1R4hldsRg7kilYoDubuwq7kWbvO8xg,13
+myweatherlib-0.5.dist-info/RECORD,,
