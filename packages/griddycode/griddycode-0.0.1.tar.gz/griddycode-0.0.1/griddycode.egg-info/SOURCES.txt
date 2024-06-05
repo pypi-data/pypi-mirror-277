@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+griddycode/Color.py
+griddycode/__init__.py
+griddycode/rip.py
+griddycode/terminal.py
+griddycode.egg-info/PKG-INFO
+griddycode.egg-info/SOURCES.txt
+griddycode.egg-info/dependency_links.txt
+griddycode.egg-info/requires.txt
+griddycode.egg-info/top_level.txt
