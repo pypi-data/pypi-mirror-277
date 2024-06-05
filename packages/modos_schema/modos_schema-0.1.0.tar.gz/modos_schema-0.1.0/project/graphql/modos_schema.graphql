@@ -1,0 +1,111 @@
+type AlignmentSet
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    dataPath: String!
+    dataFormat: DataFormat!
+    hasSample: [Sample]
+    hasReference: [ReferenceGenome]
+  }
+
+type Array
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    dataPath: String!
+    dataFormat: DataFormat!
+    hasSample: [Sample]
+    hasReference: [ReferenceGenome]
+  }
+
+type Assay
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    hasSample: [Sample]
+    hasData: [DataEntity]
+    omicsType: [OmicsType]!
+  }
+
+type DataEntity
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    dataPath: String!
+    dataFormat: DataFormat!
+    hasSample: [Sample]
+    hasReference: [ReferenceGenome]
+  }
+
+type MODO
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    creationDate: Datetime!
+    hasAssay: [Assay]
+    lastUpdateDate: Datetime!
+    sourceUri: Uri
+  }
+
+type MODOCollection
+  {
+    entries: [MODO]
+  }
+
+type NamedThing
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+  }
+
+type ReferenceGenome
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    dataPath: String!
+    hasSequence: [ReferenceSequence]
+    taxonId: [Integer]
+    sourceUri: Uri
+    version: String
+  }
+
+type ReferenceSequence
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    sequenceMd5: String
+    sourceUri: Uri
+    version: String
+  }
+
+type Sample
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    cellType: String
+    sourceMaterial: String
+    sex: Sex
+    taxonId: [Integer]
+    collector: [String]
+  }
+
+type VariantSet
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    dataPath: String!
+    dataFormat: DataFormat!
+    hasSample: [Sample]
+    hasReference: [ReferenceGenome]
+  }
+
