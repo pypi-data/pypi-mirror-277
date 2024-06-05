@@ -1,0 +1,2 @@
+[console_scripts]
+PythonProjectBootstrapperTest3 = PythonProjectBootstrapperTest3:EntryPoint.app
