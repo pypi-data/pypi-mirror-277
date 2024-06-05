@@ -1,0 +1,9 @@
+simple_sftp/__init__.py,sha256=5xvN_gb61nKeq5TER5dSfcArTP3DVasZGN_MQq5dNpA,23
+simple_sftp/__main__.py,sha256=cC7-B7JEPVCxxDLGeC91OwMGdpLuj3ri6szZnQVdQFY,1350
+simple_sftp/client.py,sha256=zHv0q4H7FsOQ5EuHpLd6QxjERPhMoJ-Y5pXpabhtLyc,2296
+simple_sftp-0.1.1.dist-info/LICENSE,sha256=7VVZzWncG7CCjiTTQ4q9RSB13ejhdNtK52uIRgl3WmE,1089
+simple_sftp-0.1.1.dist-info/METADATA,sha256=qrP0Zcbe6LWzLn2rpXBHCU1gwVuOpLoK0C9UiYuAqAc,1900
+simple_sftp-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+simple_sftp-0.1.1.dist-info/entry_points.txt,sha256=OJY7f3CMdwF3ANdGGV-_MjErbs_CULVTvDFWgzUvO0Y,63
+simple_sftp-0.1.1.dist-info/top_level.txt,sha256=QAe5F8XkOsfFQO8pM1HMlOMTN88rKfHAo81FVH_5Bhw,12
+simple_sftp-0.1.1.dist-info/RECORD,,
