@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pymuparser
+Version: 1.0.0
+Summary: A python binding for muparser
+Home-page: https://github.com/bobmyhill/pymuparser
+License: GPL
+Author: Bob Myhill
+Author-email: bob.myhill@bristol.ac.uk
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=1.24,<2.0)
+Project-URL: Documentation, https://github.com/bobmyhill/pymuparser
+Project-URL: Repository, https://github.com/bobmyhill/pymuparser
+Description-Content-Type: text/markdown
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11479574.svg)](https://doi.org/10.5281/zenodo.11479574)
+
+# pyMuParser
+This is a Python binding for MuParser (https://github.com/beltoforion/muparser).
+It is based on the project by Robin Gohmert (https://github.com/Ayuto/Py-MuParser), adapted for the modern MuParser project, and with additional helper classes.
+
+Examples for scalar and vector expressions are given in the examples directory. 
+
