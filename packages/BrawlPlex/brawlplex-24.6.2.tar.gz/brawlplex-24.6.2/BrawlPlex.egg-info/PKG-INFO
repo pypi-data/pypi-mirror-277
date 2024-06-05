@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: BrawlPlex
+Version: 24.6.2
+Summary: A package for Brawl Stars API
+Home-page: https://github.com/yourusername/BrawlPlex
+Author: BrawlAPI Dev
+Author-email: brawlapi.dev@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Requires-Dist: requests>=2.32.3

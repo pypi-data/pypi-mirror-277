@@ -1,0 +1,13 @@
+setup.py
+BrawlPlex/__init__.py
+BrawlPlex/brawlers.py
+BrawlPlex/clubs.py
+BrawlPlex/errors.py
+BrawlPlex/events.py
+BrawlPlex/player.py
+BrawlPlex/rankings.py
+BrawlPlex.egg-info/PKG-INFO
+BrawlPlex.egg-info/SOURCES.txt
+BrawlPlex.egg-info/dependency_links.txt
+BrawlPlex.egg-info/requires.txt
+BrawlPlex.egg-info/top_level.txt
