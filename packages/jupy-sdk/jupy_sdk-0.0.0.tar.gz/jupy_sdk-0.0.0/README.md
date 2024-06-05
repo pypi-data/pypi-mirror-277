@@ -1,0 +1,60 @@
+# Jupy SDK
+
+The Jupy SDK provides access to the APIs of [https://jupy.dev](https://jupy.dev). The package comes with an SDK you 
+can use to create notebooks. In addition, it offers a CLI that has feature parity with the SDK.
+
+## Pre-requisites
+
+1. An account on [https://jupy.dev](https://jupy.dev)
+2. A registered organization
+3. An API key generated for that organization
+
+## Examples
+
+### SDK
+
+```python
+from jupy import Jupy
+from pathlib import Path
+
+# Initialize the Jupy SDK with your API key
+api_key = "your_api_key_here"
+jupy = Jupy(api_key=api_key)
+
+# Define the notebook details
+notebook_path = Path("path/to/your/notebook.ipynb")
+notebook_name = "My First Notebook"
+notebook_namespace = "default"
+notebook_description = "This is a description of my first notebook."
+notebook_tags = ["example", "jupy"]
+
+# Create the notebook
+response = jupy.create_notebook(
+    content=notebook_path,
+    name=notebook_name,
+    namespace=notebook_namespace,
+    description=notebook_description,
+    tags=notebook_tags
+)
+
+# Print the response from the API
+print(response)
+```
+
+### CLI
+
+```bash
+# Initialize Jupy with your API key
+jupy init --api-key your_api_key_here
+
+# Create a new notebook using the CLI
+jupy create notebook --path path/to/your/notebook.ipynb --title "My First Notebook" --namespace "default" --description "This is a description of my first notebook." --tags jupy example abc123
+```
+
+## Feedback
+
+We'd love to hear your feedback at [feedback@jupy.dev](feedback@jupy.dev).
+
+## Support
+
+For any questions feel free to contact us at [support@jupy.dev](support@jupy.dev)

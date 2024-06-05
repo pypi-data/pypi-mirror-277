@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "jupy-sdk"
+version = "0.0.0"
+description = "The Python SDK for jupy.dev"
+authors = ["The Jupy Authors <dev@jupy.dev>"]
+readme = "README.md"
+
+packages = [
+    {include = "jupy", from = "src"},
+]
+
+[[tool.poetry.source]]
+name = "pypi-public"
+url = "https://pypi.org/simple/"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.32.3"
+build = "^1.2.1"
+
+[tool.poetry.scripts]
+jupy = "jupy.cli:main"
+
+[tool.poetry.group.dev.dependencies]
+twine = "^5.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

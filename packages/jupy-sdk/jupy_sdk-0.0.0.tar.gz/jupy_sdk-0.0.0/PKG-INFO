@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: jupy-sdk
+Version: 0.0.0
+Summary: The Python SDK for jupy.dev
+Author: The Jupy Authors
+Author-email: dev@jupy.dev
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: build (>=1.2.1,<2.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Jupy SDK
+
+The Jupy SDK provides access to the APIs of [https://jupy.dev](https://jupy.dev). The package comes with an SDK you 
+can use to create notebooks. In addition, it offers a CLI that has feature parity with the SDK.
+
+## Pre-requisites
+
+1. An account on [https://jupy.dev](https://jupy.dev)
+2. A registered organization
+3. An API key generated for that organization
+
+## Examples
+
+### SDK
+
+```python
+from jupy import Jupy
+from pathlib import Path
+
+# Initialize the Jupy SDK with your API key
+api_key = "your_api_key_here"
+jupy = Jupy(api_key=api_key)
+
+# Define the notebook details
+notebook_path = Path("path/to/your/notebook.ipynb")
+notebook_name = "My First Notebook"
+notebook_namespace = "default"
+notebook_description = "This is a description of my first notebook."
+notebook_tags = ["example", "jupy"]
+
+# Create the notebook
+response = jupy.create_notebook(
+    content=notebook_path,
+    name=notebook_name,
+    namespace=notebook_namespace,
+    description=notebook_description,
+    tags=notebook_tags
+)
+
+# Print the response from the API
+print(response)
+```
+
+### CLI
+
+```bash
+# Initialize Jupy with your API key
+jupy init --api-key your_api_key_here
+
+# Create a new notebook using the CLI
+jupy create notebook --path path/to/your/notebook.ipynb --title "My First Notebook" --namespace "default" --description "This is a description of my first notebook." --tags jupy example abc123
+```
+
+## Feedback
+
+We'd love to hear your feedback at [feedback@jupy.dev](feedback@jupy.dev).
+
+## Support
+
+For any questions feel free to contact us at [support@jupy.dev](support@jupy.dev)
+
