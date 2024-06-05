@@ -1,0 +1,68 @@
+# py_BMD_abaqus
+
+**Authors:** <br>Dr. David E. Cunningham, Ph.D. <br><br>
+**Affiliation at Release:** <br>University of Western Ontario <br>St. Joseph's Hospital <br>Roth | McFarlane Hand and Upper Limb Clinic<br>
+
+## Description
+- **Purpose:** Hello and welcome! This library was created in order to assign trabecular bone material property values to an ABAQUS CAE input mesh file (INP). This script uses the "Pooled" Morgan et al. Modulus-Density relationship - retrieved from DOI: 10.1016/s0021-9290(03)00071-x in order to calculate material modulus from density in g/cm^3. This tool also returns an array of element HU, density, or modulus values which can be used to easy evaluation of bone quality in the meshed region. 
+
+**Online Tutorial** <br><br>[![Watch the video](https://img.shields.io/badge/YouTube-Tutorial-red)](https://www.youtube.com/watch?v=N-5Aw3gfb8s)
+
+## Features
+- **Retains Node and Element Parameters:** When adding materials to an ABAQUS input file, sets, boundary conditions are currently NOT preserved. This may be added in the future.
+- **Supported Element Types (Tested):**
+  - Quadratic tetrahedral elements TYPE=C3D8, C3D10
+
+## Requirements
+To run `py_BMD_abaqus`, you will need the following files:
+1. An ABAQUS input file (`.inp`)
+2. A CT scan (as a series of DICOM images in a folder. No other file types should be contained within the folder.)
+3. An understanding of the phantom HU and density values for calibration of the DICOM HU density extraction
+
+## Installation 
+### Using pip:
+1. Install package via pip:
+    ```sh
+    pip install py_BMD_abaqus
+    ```
+
+### Using git clone:
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/py_BMD_abaqus.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd py_BMD_abaqus
+    ```
+3. Install the required dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Citation
+If you use this Python package for your research, we kindly request that you cite it using the following information:
+
+### IEEE
+
+D. E. Cunningham, “py_BMD_abaqus.” Github, 2024. [Online]. Available: https://pypi.org/project/py-bmd-abaqus/
+
+### APA
+
+Cunningham, D. E. (2024). <i>py_BMD_abaqus</i> (0.1.8). Github. https://pypi.org/project/py-bmd-abaqus/
+
+### MLA
+
+Cunningham, David E. <i>py_BMD_abaqus</i>. 0.1.8, Github, 2024, https://pypi.org/project/py-bmd-abaqus/
+
+### JSES (Journal of Shoulder and Elbow Surgery)
+
+Cunningham DE. py_BMD_abaqus [Internet]. 2024;Available from: https://pypi.org/project/py-bmd-abaqus/
+
+
+
+<!-- ## Contact -->
+<!-- For questions or issues, please contact [yourname](mailto:your.email@example.com). -->

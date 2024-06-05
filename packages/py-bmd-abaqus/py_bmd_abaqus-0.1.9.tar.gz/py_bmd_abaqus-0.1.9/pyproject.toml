@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "py-bmd-abaqus"
+version = "0.1.9"
+description = "Assign bone material properties to an finite element mesh in ABAQUS. This library was created in order to automatically assign trabecular bone material property values to an ABAQUS CAE input mesh file (INP)."
+authors = ["Dr. David E. Cunningham, Ph.D."]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+matplotlib = "^3.9.0"
+pydicom = "^2.4.4"
+numpy = "^1.26.4"
+pandas = "^2.2.2"
+numba = "^0.59.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
