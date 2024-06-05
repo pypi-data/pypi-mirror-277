@@ -1,0 +1,7 @@
+setup.py
+grape_chem/__init__.py
+grape_chem.egg-info/PKG-INFO
+grape_chem.egg-info/SOURCES.txt
+grape_chem.egg-info/dependency_links.txt
+grape_chem.egg-info/requires.txt
+grape_chem.egg-info/top_level.txt
