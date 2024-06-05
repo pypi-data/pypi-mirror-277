@@ -1,0 +1,6 @@
+.DS_Store
+playground.py
+api_key.txt
+**__pycache__/
+**dist/
+**friendlyfred.egg-info/
