@@ -1,0 +1,7 @@
+inspect-ai
+aiohttp-sse-client2
+aiohttp
+pandas
+gql
+rich
+nest-asyncio

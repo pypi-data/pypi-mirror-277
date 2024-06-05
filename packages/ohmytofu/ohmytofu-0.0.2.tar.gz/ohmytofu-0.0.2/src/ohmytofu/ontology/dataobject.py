@@ -1,0 +1,2 @@
+def dataobject(rid):
+    pass
