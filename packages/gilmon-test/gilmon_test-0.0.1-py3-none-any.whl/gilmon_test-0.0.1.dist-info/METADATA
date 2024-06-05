@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: gilmon-test
+Version: 0.0.1
+Summary: gilmon test
+Home-page: https://github.com/HyunjunGil
+Author: gilmon
+Author-email: rlfahs3025@gmail.com
+Keywords: gilmon
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Requires-Dist: tqdm
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+
