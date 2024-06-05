@@ -1,0 +1,10 @@
+click
+numpy
+pygsdata
+scipy
+tqdm
+
+[dev]
+pre-commit
+pytest
+pytest-cov
