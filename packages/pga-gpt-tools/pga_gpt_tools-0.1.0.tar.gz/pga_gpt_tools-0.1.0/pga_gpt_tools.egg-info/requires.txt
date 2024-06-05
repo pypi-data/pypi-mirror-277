@@ -1,0 +1,7 @@
+requests
+pydantic
+instructor
+google-search-results
+firecrawl-py
+fal-client
+openai
