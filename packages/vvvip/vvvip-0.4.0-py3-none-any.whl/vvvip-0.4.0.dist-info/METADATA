@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: vvvip
+Version: 0.4.0
+Summary: Limit the number of code runs. When you pass on your project to others but do not want it to be plagiarized, you can use the vvvip library to limit the number of times others can run it. When someone modifies the access record file, it will be detected. This library can to some extent allow others to use your code a limited number of times!Author ysw
+Home-page: UNKNOWN
+Author: S.-W. yan
+Author-email: wq543477641@gamil.com
+License: MIT
+Keywords: Print safe money rich
+Platform: UNKNOWN
+
+UNKNOWN
+
