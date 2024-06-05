@@ -1,0 +1,52 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "airflow-provider-ibmpa"
+authors = [
+    { name = "Sanghoon Kim", email = "angtus76@gmail.com" }
+]
+license = { text = "Apache License 2.0" }
+description = "IBM Planning Analytics Apache Airflow provider package built by Sanghoon Kim. (Feat. TM1py by cubewise)"
+classifiers = [
+    "Framework :: Apache Airflow",
+    "Framework :: Apache Airflow :: Provider",
+]
+dynamic = [
+    "version"
+]
+requires-python = "~=3.8"
+dependencies = [
+    "tm1py>=2.0"
+]
+
+[project.urls]
+Homepage = "https://blog.naver.com/angtus"
+Source = "https://github.com/angtus76/airflow-provider-ibmpa/"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.entry-points.apache_airflow_provider]
+provider_info = "ibmpa_provider.__init__:get_provider_info"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.dynamic]
+version = { attr = "ibmpa_provider.__version__" }
+
+[tool.setuptools.packages.find]
+exclude = [
+    "*tests.*",
+    "*tests",
+    "venv*",
+    "airflow_provider_ibmpa*",
+    "dist*",
+    ".gitignore",
+]
