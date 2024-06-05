@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: axiomic
+Version: 0.0.2
+Summary: Primitives for Genreative AI.
+Home-page: https://github.com/axiomic-ai/axiomic
+Author: Victor Bittorf
+Author-email: bitfort@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+License-File: LICENSE
+Requires-Dist: pytest
+Requires-Dist: sphinx
+Requires-Dist: grpcio
+Requires-Dist: grpcio-tools
+Requires-Dist: icecream
+Requires-Dist: pytest
+Requires-Dist: anthropic
+Requires-Dist: jsonschema
+Requires-Dist: rich
+Requires-Dist: pydantic
+Requires-Dist: pydantic-settings
+Requires-Dist: requests
+Requires-Dist: pillow
+Requires-Dist: ascii_magic
+Requires-Dist: openai
+Requires-Dist: notebook
+Requires-Dist: ipywidgets
+Requires-Dist: together
+Requires-Dist: nbconvert
+Requires-Dist: sphinx-material
