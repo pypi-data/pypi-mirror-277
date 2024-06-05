@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: docqa_alpha
+Version: 0.0.2
+Author: Normal Computing
+Requires-Python: ==3.12.*
+Description-Content-Type: text/markdown
+
+An experimental project from Normal Computing

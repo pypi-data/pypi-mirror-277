@@ -1,0 +1,9 @@
+MANIFEST.in
+backend_shim.py
+setup.py
+docqa_alpha.egg-info/PKG-INFO
+docqa_alpha.egg-info/SOURCES.txt
+docqa_alpha.egg-info/dependency_links.txt
+docqa_alpha.egg-info/namespace_packages.txt
+docqa_alpha.egg-info/top_level.txt
+normal/doc_qa.py
