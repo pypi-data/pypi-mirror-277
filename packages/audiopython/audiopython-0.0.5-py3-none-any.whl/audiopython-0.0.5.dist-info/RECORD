@@ -1,0 +1,11 @@
+audiopython/analysis.py,sha256=ilvAwB0Rcx36rngL5V8E0JfNgSEi5IGcqNFZ1tFN3Ck,9458
+audiopython/audiofile.py,sha256=CC-7AyEJi_cboLOF9IKQrEw66g6YbpZBNAsiWkbAEjA,29873
+audiopython/granulator.py,sha256=a46xGNWSVq-zKt4sow_9Yp2Y7Fhl76Dk4DmGWBulnJA,3745
+audiopython/operations.py,sha256=a3yD4xUycVa_tf3MpEEZLoJ3It6EKCI7Q8UFDFV-oio,14358
+audiopython/sampler.py,sha256=rxUs2kiDpW_9yIMosTkYPmZ0O1Vkz14pngahKORfV-w,20361
+audiopython/spectrum.py,sha256=NMpEa4T8NmjLwe72BU01X0QJc3bg-t6zkAKpXqunARs,3070
+audiopython-0.0.5.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+audiopython-0.0.5.dist-info/METADATA,sha256=lHlp-oUwA_ZyZrIfmXCGBeEvm5lXLVmd3IHOTTFWuYs,917
+audiopython-0.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+audiopython-0.0.5.dist-info/top_level.txt,sha256=iJOJ9WDVJT7qOAZwdspNvtKeF0KKtKyybtgE_I2Jo30,12
+audiopython-0.0.5.dist-info/RECORD,,
