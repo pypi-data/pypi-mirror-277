@@ -1,0 +1,17 @@
+unquad/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unquad/enums/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unquad/enums/adjustment.py,sha256=ugF4KRS1x2WwY4ZybCiw5iIEk0rcvy7sGsGP11RKSBM,211
+unquad/enums/aggregation.py,sha256=o6Yikk6zTNPzU8E8lMnLgQyH_bGWjBbwMLbD9vsYd8U,249
+unquad/enums/method.py,sha256=bQwySWL_lojJmO33blPXRMw67qqjhXt4j8COC17FjwI,401
+unquad/errors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unquad/errors/forbidden_model_error.py,sha256=vKi9oxmJAJz28w3Ir7pvnBI7KCFL6RHzOTFWziWur6E,327
+unquad/estimator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unquad/estimator/conformal.py,sha256=bkTyEiN3SDdwwgkaqHvfpLw1QCJ5gPKwiR-MDlsgQec,15301
+unquad/estimator/split_config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unquad/estimator/split_config/bootstrap_config.py,sha256=doeIyBa05p4Q7oqRjdjfCHdQ44UsryesGdqgaXTRurA,2443
+unquad/evaluation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unquad/evaluation/metrics.py,sha256=x2WAA9MFU5CrwpPfeWnaQPbYuuKjdQ7bIenn_fEBHFg,1354
+unquad-0.0.4.dist-info/METADATA,sha256=0pVwLnkRPXFz5cFLaWVKF4dj5IkvnqrfkFcR375IP8U,10715
+unquad-0.0.4.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+unquad-0.0.4.dist-info/licenses/LICENSE,sha256=qMss-gzpDaDiFu-elhCk7k4DP6zATM-aOFTj5PRCQ3M,1530
+unquad-0.0.4.dist-info/RECORD,,
