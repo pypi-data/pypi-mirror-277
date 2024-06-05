@@ -1,0 +1,17 @@
+# How to contribute
+
+
+*(this section is freely adapted from the [calliope](https://github.com/calliope-project/calliope/blob/master/CONTRIBUTING.md) project)*
+
+We're really glad you're reading this, because we need volunteer developers to help this project come to fruition.
+
+Some of the resources to look at if you're interested in contributing:
+
+* [Join us on Gitter to chat!](https://gitter.im/RAMP-project/community)
+* Look at [open issues](https://github.com/RAMP-project/RAMP/issues)
+
+## Licensing
+
+By contributing to RAMP, e.g. through opening a pull request or submitting a patch, you represent that your contributions are your own original work and that you have the right to license them, and you agree that your contributions are licensed under the EUROPEAN UNION PUBLIC LICENCE v. 1.2.
+
+## Submitting changes
