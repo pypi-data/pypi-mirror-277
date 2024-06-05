@@ -1,0 +1,15 @@
+useful_funcs/__init__.py,sha256=eLZTnNJzwHb6wTx950J9NDOi94JZWyqcx6KcVZuZ2NU,439
+useful_funcs/useful_calendar.py,sha256=0HNl9tMwuJ1VjEMRf3R-nxDq3V6g5Okd55CR3P3GWEg,3783
+useful_funcs/useful_calendar_functions.py,sha256=eQH_0hDf47LKBgcVxHv2JFBgBjNPmqAA4mLcg9aPngY,3058
+useful_funcs/useful_closest.py,sha256=PDmizTCDXhijLpg5G7uUB4ayC2o68vBoMhdHQWdem28,3877
+useful_funcs/useful_colors.py,sha256=4hyQimMecDFmiDzCQ95CMFLeYRaLIufnogW5_J_kP6o,3151
+useful_funcs/useful_datetime.py,sha256=nheMRLItxBtfZnLjFlPUxP8nD4hvyuTp9Ehqbg6MGl4,12454
+useful_funcs/useful_datetime_functions.py,sha256=fGO4W1ndGl7_7bXh6xe8SSk1GnEXqSRg7KCUlwre-iM,2966
+useful_funcs/useful_interpol.py,sha256=MmLQg0Bd_A9SatLHZ3pIKYYDCr2kwwusTjMZDZqvtiM,18814
+useful_funcs/useful_isolated_points.py,sha256=JJRE3qCLFlb4Zw534ztu9T-KRYxIu4yDNLAidksydFo,1405
+useful_funcs/useful_stats_functions.py,sha256=7g_S_AwP2ID-WFNel78wG8LuKvSzxOXK2y5XnOOmt4M,1314
+useful_funcs-0.1.0.dist-info/LICENSE,sha256=eucZbM7y_HvnTcr0jUy5_7Zc2l02ZWJRClWj8ZQrsm8,1087
+useful_funcs-0.1.0.dist-info/METADATA,sha256=zTsLZ6uG3ASVjCYgK7VMdZBZhzEXrnnF74swGtY7QVc,1416
+useful_funcs-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+useful_funcs-0.1.0.dist-info/top_level.txt,sha256=ZKzqwuAmM-t09CjQicGOpnmRTe7JXg5ZhQ_XRMjuxJk,13
+useful_funcs-0.1.0.dist-info/RECORD,,
