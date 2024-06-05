@@ -1,0 +1,2 @@
+[console_scripts]
+moonlight = Moonlight.cli:cli
