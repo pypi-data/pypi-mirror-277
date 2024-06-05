@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: nnmoduletools
+Version: 0.0.2a0
+Summary: A collection of neural network utilities
+Author: chensquared
+Author-email: chensquared319@gmail.com
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: matplotlib
+Requires-Dist: tqdm
