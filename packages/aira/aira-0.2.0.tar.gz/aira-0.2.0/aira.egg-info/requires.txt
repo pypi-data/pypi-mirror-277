@@ -1,0 +1,7 @@
+python-dotenv
+termcolor
+art
+loguru
+tqdm
+harmon_ai
+gaiah_toolkit
