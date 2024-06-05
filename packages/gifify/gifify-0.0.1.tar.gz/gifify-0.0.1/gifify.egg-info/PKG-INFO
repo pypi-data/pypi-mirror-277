@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: gifify
+Version: 0.0.1
+License-File: LICENSE
+Requires-Dist: imageio
+Requires-Dist: matplotlib
+
+Wrap an iterator to make a gif out of matplotlib plots
