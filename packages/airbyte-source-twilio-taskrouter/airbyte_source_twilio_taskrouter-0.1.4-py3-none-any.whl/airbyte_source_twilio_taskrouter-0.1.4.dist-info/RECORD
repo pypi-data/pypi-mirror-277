@@ -1,0 +1,9 @@
+source_twilio_taskrouter/__init__.py,sha256=LGL06OGVEQ1BJ0s1UCKCLuwdtxQfVTPKrowxNGUooiU,144
+source_twilio_taskrouter/manifest.yaml,sha256=jIHI11BuBPDq8r92_bp8SaYSfJp8R4e6ayeU8RyYgcU,6932
+source_twilio_taskrouter/run.py,sha256=f8sEOqb2FhpTlU2hPjyxlQZHhKsLVMSw8uD8HfynNCk,261
+source_twilio_taskrouter/source.py,sha256=PBIg-1B9U7f2Zf5Y2Bh38obZDnS5yyX3xl8S5sIptj4,485
+source_twilio_taskrouter/spec.yaml,sha256=QososeNFMR9XagIWWobjadW-rgXZR2lei2WseOTRh94,542
+airbyte_source_twilio_taskrouter-0.1.4.dist-info/METADATA,sha256=GyHjq7cMNdRrAFJ3EXiVlLgomI1YmC9V1xgdUIb_xII,5441
+airbyte_source_twilio_taskrouter-0.1.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+airbyte_source_twilio_taskrouter-0.1.4.dist-info/entry_points.txt,sha256=TIEmznvA_eYU7IAd8Okx05h1Ix2mCHx2FahvE7owgeM,77
+airbyte_source_twilio_taskrouter-0.1.4.dist-info/RECORD,,
