@@ -1,0 +1,1107 @@
+import typing
+import collections.abc
+import bpy.ops.transform
+import bpy.types
+
+GenericType1 = typing.TypeVar("GenericType1")
+GenericType2 = typing.TypeVar("GenericType2")
+
+def bake(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+):
+    """Bake selected F-Curves to a set of sampled points defining a similar curve
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    """
+
+    ...
+
+def clean(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    threshold: typing.Any | None = 0.001,
+    channels: bool | typing.Any | None = False,
+):
+    """Simplify F-Curves by removing closely spaced keyframes
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    :param threshold: Threshold
+    :type threshold: typing.Any | None
+    :param channels: Channels
+    :type channels: bool | typing.Any | None
+    """
+
+    ...
+
+def click_insert(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    frame: typing.Any | None = 1.0,
+    value: typing.Any | None = 1.0,
+    extend: bool | typing.Any | None = False,
+):
+    """Insert new keyframe at the cursor position for the active F-Curve
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    :param frame: Frame Number, Frame to insert keyframe on
+    :type frame: typing.Any | None
+    :param value: Value, Value for keyframe on
+    :type value: typing.Any | None
+    :param extend: Extend, Extend selection instead of deselecting everything first
+    :type extend: bool | typing.Any | None
+    """
+
+    ...
+
+def clickselect(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    wait_to_deselect_others: bool | typing.Any | None = False,
+    mouse_x: typing.Any | None = 0,
+    mouse_y: typing.Any | None = 0,
+    extend: bool | typing.Any | None = False,
+    deselect_all: bool | typing.Any | None = False,
+    column: bool | typing.Any | None = False,
+    curves: bool | typing.Any | None = False,
+):
+    """Select keyframes by clicking on them
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    :param wait_to_deselect_others: Wait to Deselect Others
+    :type wait_to_deselect_others: bool | typing.Any | None
+    :param mouse_x: Mouse X
+    :type mouse_x: typing.Any | None
+    :param mouse_y: Mouse Y
+    :type mouse_y: typing.Any | None
+    :param extend: Extend Select, Toggle keyframe selection instead of leaving newly selected keyframes only
+    :type extend: bool | typing.Any | None
+    :param deselect_all: Deselect On Nothing, Deselect all when nothing under the cursor
+    :type deselect_all: bool | typing.Any | None
+    :param column: Column Select, Select all keyframes that occur on the same frame as the one under the mouse
+    :type column: bool | typing.Any | None
+    :param curves: Only Curves, Select all the keyframes in the curve
+    :type curves: bool | typing.Any | None
+    """
+
+    ...
+
+def copy(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+):
+    """Copy selected keyframes to the copy/paste buffer
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    """
+
+    ...
+
+def cursor_set(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    frame: typing.Any | None = 0.0,
+    value: typing.Any | None = 0.0,
+):
+    """Interactively set the current frame and value cursor
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    :param frame: Frame
+    :type frame: typing.Any | None
+    :param value: Value
+    :type value: typing.Any | None
+    """
+
+    ...
+
+def decimate(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    mode: str | None = "RATIO",
+    remove_ratio: typing.Any | None = 0.333333,
+    remove_error_margin: typing.Any | None = 0.0,
+):
+    """Decimate F-Curves by removing keyframes that influence the curve shape the least
+
+        :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+        :type execution_context: int | str | None
+        :type undo: bool | None
+        :param mode: Mode, Which mode to use for decimation
+
+    RATIO Ratio, Use a percentage to specify how many keyframes you want to remove.
+
+    ERROR Error Margin, Use an error margin to specify how much the curve is allowed to deviate from the original path.
+        :type mode: str | None
+        :param remove_ratio: Remove, The percentage of keyframes to remove
+        :type remove_ratio: typing.Any | None
+        :param remove_error_margin: Max Error Margin, How much the new decimated curve is allowed to deviate from the original
+        :type remove_error_margin: typing.Any | None
+    """
+
+    ...
+
+def delete(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+):
+    """Remove all selected keyframes
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    """
+
+    ...
+
+def driver_delete_invalid(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+):
+    """Delete all visible drivers considered invalid
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    """
+
+    ...
+
+def driver_variables_copy(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+):
+    """Copy the driver variables of the active driver
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    """
+
+    ...
+
+def driver_variables_paste(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    replace: bool | typing.Any | None = False,
+):
+    """Add copied driver variables to the active driver
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    :param replace: Replace Existing, Replace existing driver variables, instead of just appending to the end of the existing list
+    :type replace: bool | typing.Any | None
+    """
+
+    ...
+
+def duplicate(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    mode: str | None = "TRANSLATION",
+):
+    """Make a copy of all selected keyframes
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    :param mode: Mode
+    :type mode: str | None
+    """
+
+    ...
+
+def duplicate_move(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    GRAPH_OT_duplicate: duplicate | None = None,
+    TRANSFORM_OT_transform: bpy.ops.transform.transform | None = None,
+):
+    """Make a copy of all selected keyframes and move them
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    :param GRAPH_OT_duplicate: Duplicate Keyframes, Make a copy of all selected keyframes
+    :type GRAPH_OT_duplicate: duplicate | None
+    :param TRANSFORM_OT_transform: Transform, Transform selected items by mode type
+    :type TRANSFORM_OT_transform: bpy.ops.transform.transform | None
+    """
+
+    ...
+
+def easing_type(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    type: str | None = "AUTO",
+):
+    """Set easing type for the F-Curve segments starting from the selected keyframes
+
+        :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+        :type execution_context: int | str | None
+        :type undo: bool | None
+        :param type: Type
+
+    AUTO Automatic Easing, Easing type is chosen automatically based on what the type of interpolation used (e.g. 'Ease In' for transitional types, and 'Ease Out' for dynamic effects).
+
+    EASE_IN Ease In, Only on the end closest to the next keyframe.
+
+    EASE_OUT Ease Out, Only on the end closest to the first keyframe.
+
+    EASE_IN_OUT Ease In and Out, Segment between both keyframes.
+        :type type: str | None
+    """
+
+    ...
+
+def euler_filter(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+):
+    """Fix large jumps and flips in the selected Euler Rotation F-Curves arising from rotation values being clipped when baking physics
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    """
+
+    ...
+
+def extrapolation_type(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    type: str | None = "CONSTANT",
+):
+    """Set extrapolation mode for selected F-Curves
+
+        :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+        :type execution_context: int | str | None
+        :type undo: bool | None
+        :param type: Type
+
+    CONSTANT Constant Extrapolation, Values on endpoint keyframes are held.
+
+    LINEAR Linear Extrapolation, Straight-line slope of end segments are extended past the endpoint keyframes.
+
+    MAKE_CYCLIC Make Cyclic (F-Modifier), Add Cycles F-Modifier if one doesn't exist already.
+
+    CLEAR_CYCLIC Clear Cyclic (F-Modifier), Remove Cycles F-Modifier if not needed anymore.
+        :type type: str | None
+    """
+
+    ...
+
+def fmodifier_add(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    type: str | None = "NULL",
+    only_active: bool | typing.Any | None = True,
+):
+    """Add F-Modifier to the active/selected F-Curves
+
+        :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+        :type execution_context: int | str | None
+        :type undo: bool | None
+        :param type: Type
+
+    NULL Invalid.
+
+    GENERATOR Generator, Generate a curve using a factorized or expanded polynomial.
+
+    FNGENERATOR Built-In Function, Generate a curve using standard math functions such as sin and cos.
+
+    ENVELOPE Envelope, Reshape F-Curve values - e.g. change amplitude of movements.
+
+    CYCLES Cycles, Cyclic extend/repeat keyframe sequence.
+
+    NOISE Noise, Add pseudo-random noise on top of F-Curves.
+
+    LIMITS Limits, Restrict maximum and minimum values of F-Curve.
+
+    STEPPED Stepped Interpolation, Snap values to nearest grid-step - e.g. for a stop-motion look.
+        :type type: str | None
+        :param only_active: Only Active, Only add F-Modifier to active F-Curve
+        :type only_active: bool | typing.Any | None
+    """
+
+    ...
+
+def fmodifier_copy(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+):
+    """Copy the F-Modifier(s) of the active F-Curve
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    """
+
+    ...
+
+def fmodifier_paste(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    only_active: bool | typing.Any | None = True,
+    replace: bool | typing.Any | None = False,
+):
+    """Add copied F-Modifiers to the selected F-Curves
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    :param only_active: Only Active, Only paste F-Modifiers on active F-Curve
+    :type only_active: bool | typing.Any | None
+    :param replace: Replace Existing, Replace existing F-Modifiers, instead of just appending to the end of the existing list
+    :type replace: bool | typing.Any | None
+    """
+
+    ...
+
+def frame_jump(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+):
+    """Place the cursor on the midpoint of selected keyframes
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    """
+
+    ...
+
+def ghost_curves_clear(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+):
+    """Clear F-Curve snapshots (Ghosts) for active Graph Editor
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    """
+
+    ...
+
+def ghost_curves_create(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+):
+    """Create snapshot (Ghosts) of selected F-Curves as background aid for active Graph Editor
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    """
+
+    ...
+
+def handle_type(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    type: str | None = "FREE",
+):
+    """Set type of handle for selected keyframes
+
+        :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+        :type execution_context: int | str | None
+        :type undo: bool | None
+        :param type: Type
+
+    FREE Free, Completely independent manually set handle.
+
+    ALIGNED Aligned, Manually set handle with rotation locked together with its pair.
+
+    VECTOR Vector, Automatic handles that create straight lines.
+
+    AUTO Automatic, Automatic handles that create smooth curves.
+
+    AUTO_CLAMPED Auto Clamped, Automatic handles that create smooth curves which only change direction at keyframes.
+        :type type: str | None
+    """
+
+    ...
+
+def hide(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    unselected: bool | typing.Any | None = False,
+):
+    """Hide selected curves from Graph Editor view
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    :param unselected: Unselected, Hide unselected rather than selected curves
+    :type unselected: bool | typing.Any | None
+    """
+
+    ...
+
+def interpolation_type(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    type: str | None = "CONSTANT",
+):
+    """Set interpolation mode for the F-Curve segments starting from the selected keyframes
+
+        :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+        :type execution_context: int | str | None
+        :type undo: bool | None
+        :param type: Type
+
+    CONSTANT Constant, No interpolation, value of A gets held until B is encountered.
+
+    LINEAR Linear, Straight-line interpolation between A and B (i.e. no ease in/out).
+
+    BEZIER Bezier, Smooth interpolation between A and B, with some control over curve shape.
+
+    SINE Sinusoidal, Sinusoidal easing (weakest, almost linear but with a slight curvature).
+
+    QUAD Quadratic, Quadratic easing.
+
+    CUBIC Cubic, Cubic easing.
+
+    QUART Quartic, Quartic easing.
+
+    QUINT Quintic, Quintic easing.
+
+    EXPO Exponential, Exponential easing (dramatic).
+
+    CIRC Circular, Circular easing (strongest and most dynamic).
+
+    BACK Back, Cubic easing with overshoot and settle.
+
+    BOUNCE Bounce, Exponentially decaying parabolic bounce, like when objects collide.
+
+    ELASTIC Elastic, Exponentially decaying sine wave, like an elastic band.
+        :type type: str | None
+    """
+
+    ...
+
+def keyframe_insert(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    type: str | None = "ALL",
+):
+    """Insert keyframes for the specified channels
+
+        :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+        :type execution_context: int | str | None
+        :type undo: bool | None
+        :param type: Type
+
+    ALL All Channels, Insert a keyframe on all visible and editable F-Curves using each curve's current value.
+
+    SEL Only Selected Channels, Insert a keyframe on selected F-Curves using each curve's current value.
+
+    CURSOR_ACTIVE Active Channels At Cursor, Insert a keyframe for the active F-Curve at the cursor point.
+
+    CURSOR_SEL Selected Channels At Cursor, Insert a keyframe for selected F-Curves at the cursor point.
+        :type type: str | None
+    """
+
+    ...
+
+def mirror(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    type: str | None = "CFRA",
+):
+    """Flip selected keyframes over the selected mirror line
+
+        :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+        :type execution_context: int | str | None
+        :type undo: bool | None
+        :param type: Type
+
+    CFRA By Times Over Current Frame, Flip times of selected keyframes using the current frame as the mirror line.
+
+    VALUE By Values Over Cursor Value, Flip values of selected keyframes using the cursor value (Y/Horizontal component) as the mirror line.
+
+    YAXIS By Times Over Time=0, Flip times of selected keyframes, effectively reversing the order they appear in.
+
+    XAXIS By Values Over Value=0, Flip values of selected keyframes (i.e. negative values become positive, and vice versa).
+
+    MARKER By Times Over First Selected Marker, Flip times of selected keyframes using the first selected marker as the reference point.
+        :type type: str | None
+    """
+
+    ...
+
+def paste(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    offset: str | None = "START",
+    merge: str | None = "MIX",
+    flipped: bool | typing.Any | None = False,
+):
+    """Paste keyframes from copy/paste buffer for the selected channels, starting on the current frame
+
+        :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+        :type execution_context: int | str | None
+        :type undo: bool | None
+        :param offset: Offset, Paste time offset of keys
+
+    START Frame Start, Paste keys starting at current frame.
+
+    END Frame End, Paste keys ending at current frame.
+
+    RELATIVE Frame Relative, Paste keys relative to the current frame when copying.
+
+    NONE No Offset, Paste keys from original time.
+        :type offset: str | None
+        :param merge: Type, Method of merging pasted keys and existing
+
+    MIX Mix, Overlay existing with new keys.
+
+    OVER_ALL Overwrite All, Replace all keys.
+
+    OVER_RANGE Overwrite Range, Overwrite keys in pasted range.
+
+    OVER_RANGE_ALL Overwrite Entire Range, Overwrite keys in pasted range, using the range of all copied keys.
+        :type merge: str | None
+        :param flipped: Flipped, Paste keyframes from mirrored bones if they exist
+        :type flipped: bool | typing.Any | None
+    """
+
+    ...
+
+def previewrange_set(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+):
+    """Automatically set Preview Range based on range of keyframes
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    """
+
+    ...
+
+def reveal(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    select: bool | typing.Any | None = True,
+):
+    """Make previously hidden curves visible again in Graph Editor view
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    :param select: Select
+    :type select: bool | typing.Any | None
+    """
+
+    ...
+
+def sample(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+):
+    """Add keyframes on every frame between the selected keyframes
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    """
+
+    ...
+
+def select_all(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    action: str | None = "TOGGLE",
+):
+    """Toggle selection of all keyframes
+
+        :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+        :type execution_context: int | str | None
+        :type undo: bool | None
+        :param action: Action, Selection action to execute
+
+    TOGGLE Toggle, Toggle selection for all elements.
+
+    SELECT Select, Select all elements.
+
+    DESELECT Deselect, Deselect all elements.
+
+    INVERT Invert, Invert selection of all elements.
+        :type action: str | None
+    """
+
+    ...
+
+def select_box(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    axis_range: bool | typing.Any | None = False,
+    include_handles: bool | typing.Any | None = True,
+    tweak: bool | typing.Any | None = False,
+    xmin: typing.Any | None = 0,
+    xmax: typing.Any | None = 0,
+    ymin: typing.Any | None = 0,
+    ymax: typing.Any | None = 0,
+    wait_for_input: bool | typing.Any | None = True,
+    mode: str | None = "SET",
+):
+    """Select all keyframes within the specified region
+
+        :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+        :type execution_context: int | str | None
+        :type undo: bool | None
+        :param axis_range: Axis Range
+        :type axis_range: bool | typing.Any | None
+        :param include_handles: Include Handles, Are handles tested individually against the selection criteria
+        :type include_handles: bool | typing.Any | None
+        :param tweak: Tweak, Operator has been activated using a tweak event
+        :type tweak: bool | typing.Any | None
+        :param xmin: X Min
+        :type xmin: typing.Any | None
+        :param xmax: X Max
+        :type xmax: typing.Any | None
+        :param ymin: Y Min
+        :type ymin: typing.Any | None
+        :param ymax: Y Max
+        :type ymax: typing.Any | None
+        :param wait_for_input: Wait for Input
+        :type wait_for_input: bool | typing.Any | None
+        :param mode: Mode
+
+    SET Set, Set a new selection.
+
+    ADD Extend, Extend existing selection.
+
+    SUB Subtract, Subtract existing selection.
+        :type mode: str | None
+    """
+
+    ...
+
+def select_circle(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    x: typing.Any | None = 0,
+    y: typing.Any | None = 0,
+    radius: typing.Any | None = 25,
+    wait_for_input: bool | typing.Any | None = True,
+    mode: str | None = "SET",
+):
+    """Select keyframe points using circle selection
+
+        :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+        :type execution_context: int | str | None
+        :type undo: bool | None
+        :param x: X
+        :type x: typing.Any | None
+        :param y: Y
+        :type y: typing.Any | None
+        :param radius: Radius
+        :type radius: typing.Any | None
+        :param wait_for_input: Wait for Input
+        :type wait_for_input: bool | typing.Any | None
+        :param mode: Mode
+
+    SET Set, Set a new selection.
+
+    ADD Extend, Extend existing selection.
+
+    SUB Subtract, Subtract existing selection.
+        :type mode: str | None
+    """
+
+    ...
+
+def select_column(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    mode: str | None = "KEYS",
+):
+    """Select all keyframes on the specified frame(s)
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    :param mode: Mode
+    :type mode: str | None
+    """
+
+    ...
+
+def select_lasso(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    path: bpy.types.bpy_prop_collection[bpy.types.OperatorMousePath] | None = None,
+    mode: str | None = "SET",
+):
+    """Select keyframe points using lasso selection
+
+        :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+        :type execution_context: int | str | None
+        :type undo: bool | None
+        :param path: Path
+        :type path: bpy.types.bpy_prop_collection[bpy.types.OperatorMousePath] | None
+        :param mode: Mode
+
+    SET Set, Set a new selection.
+
+    ADD Extend, Extend existing selection.
+
+    SUB Subtract, Subtract existing selection.
+        :type mode: str | None
+    """
+
+    ...
+
+def select_leftright(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    mode: str | None = "CHECK",
+    extend: bool | typing.Any | None = False,
+):
+    """Select keyframes to the left or the right of the current frame
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    :param mode: Mode
+    :type mode: str | None
+    :param extend: Extend Select
+    :type extend: bool | typing.Any | None
+    """
+
+    ...
+
+def select_less(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+):
+    """Deselect keyframes on ends of selection islands
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    """
+
+    ...
+
+def select_linked(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+):
+    """Select keyframes occurring in the same F-Curves as selected ones
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    """
+
+    ...
+
+def select_more(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+):
+    """Select keyframes beside already selected ones
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    """
+
+    ...
+
+def smooth(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+):
+    """Apply weighted moving means to make selected F-Curves less bumpy
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    """
+
+    ...
+
+def snap(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    type: str | None = "CFRA",
+):
+    """Snap selected keyframes to the chosen times/values
+
+        :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+        :type execution_context: int | str | None
+        :type undo: bool | None
+        :param type: Type
+
+    CFRA Current Frame, Snap selected keyframes to the current frame.
+
+    VALUE Cursor Value, Set values of selected keyframes to the cursor value (Y/Horizontal component).
+
+    NEAREST_FRAME Nearest Frame, Snap selected keyframes to the nearest (whole) frame (use to fix accidental sub-frame offsets).
+
+    NEAREST_SECOND Nearest Second, Snap selected keyframes to the nearest second.
+
+    NEAREST_MARKER Nearest Marker, Snap selected keyframes to the nearest marker.
+
+    HORIZONTAL Flatten Handles, Flatten handles for a smoother transition.
+        :type type: str | None
+    """
+
+    ...
+
+def sound_bake(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    filepath: str | typing.Any = "",
+    filter_blender: bool | typing.Any | None = False,
+    filter_backup: bool | typing.Any | None = False,
+    filter_image: bool | typing.Any | None = False,
+    filter_movie: bool | typing.Any | None = True,
+    filter_python: bool | typing.Any | None = False,
+    filter_font: bool | typing.Any | None = False,
+    filter_sound: bool | typing.Any | None = True,
+    filter_text: bool | typing.Any | None = False,
+    filter_archive: bool | typing.Any | None = False,
+    filter_btx: bool | typing.Any | None = False,
+    filter_collada: bool | typing.Any | None = False,
+    filter_alembic: bool | typing.Any | None = False,
+    filter_usd: bool | typing.Any | None = False,
+    filter_folder: bool | typing.Any | None = True,
+    filter_blenlib: bool | typing.Any | None = False,
+    filemode: typing.Any | None = 9,
+    show_multiview: bool | typing.Any | None = False,
+    use_multiview: bool | typing.Any | None = False,
+    display_type: str | None = "DEFAULT",
+    sort_method: str | None = "FILE_SORT_ALPHA",
+    low: typing.Any | None = 0.0,
+    high: typing.Any | None = 100000.0,
+    attack: typing.Any | None = 0.005,
+    release: typing.Any | None = 0.2,
+    threshold: typing.Any | None = 0.0,
+    use_accumulate: bool | typing.Any | None = False,
+    use_additive: bool | typing.Any | None = False,
+    use_square: bool | typing.Any | None = False,
+    sthreshold: typing.Any | None = 0.1,
+):
+    """Bakes a sound wave to selected F-Curves
+
+        :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+        :type execution_context: int | str | None
+        :type undo: bool | None
+        :param filepath: File Path, Path to file
+        :type filepath: str | typing.Any
+        :param filter_blender: Filter .blend files
+        :type filter_blender: bool | typing.Any | None
+        :param filter_backup: Filter .blend files
+        :type filter_backup: bool | typing.Any | None
+        :param filter_image: Filter image files
+        :type filter_image: bool | typing.Any | None
+        :param filter_movie: Filter movie files
+        :type filter_movie: bool | typing.Any | None
+        :param filter_python: Filter python files
+        :type filter_python: bool | typing.Any | None
+        :param filter_font: Filter font files
+        :type filter_font: bool | typing.Any | None
+        :param filter_sound: Filter sound files
+        :type filter_sound: bool | typing.Any | None
+        :param filter_text: Filter text files
+        :type filter_text: bool | typing.Any | None
+        :param filter_archive: Filter archive files
+        :type filter_archive: bool | typing.Any | None
+        :param filter_btx: Filter btx files
+        :type filter_btx: bool | typing.Any | None
+        :param filter_collada: Filter COLLADA files
+        :type filter_collada: bool | typing.Any | None
+        :param filter_alembic: Filter Alembic files
+        :type filter_alembic: bool | typing.Any | None
+        :param filter_usd: Filter USD files
+        :type filter_usd: bool | typing.Any | None
+        :param filter_folder: Filter folders
+        :type filter_folder: bool | typing.Any | None
+        :param filter_blenlib: Filter Blender IDs
+        :type filter_blenlib: bool | typing.Any | None
+        :param filemode: File Browser Mode, The setting for the file browser mode to load a .blend file, a library or a special file
+        :type filemode: typing.Any | None
+        :param show_multiview: Enable Multi-View
+        :type show_multiview: bool | typing.Any | None
+        :param use_multiview: Use Multi-View
+        :type use_multiview: bool | typing.Any | None
+        :param display_type: Display Type
+
+    DEFAULT Default, Automatically determine display type for files.
+
+    LIST_VERTICAL Short List, Display files as short list.
+
+    LIST_HORIZONTAL Long List, Display files as a detailed list.
+
+    THUMBNAIL Thumbnails, Display files as thumbnails.
+        :type display_type: str | None
+        :param sort_method: File sorting mode
+
+    FILE_SORT_ALPHA Name, Sort the file list alphabetically.
+
+    FILE_SORT_EXTENSION Extension, Sort the file list by extension/type.
+
+    FILE_SORT_TIME Modified Date, Sort files by modification time.
+
+    FILE_SORT_SIZE Size, Sort files by size.
+        :type sort_method: str | None
+        :param low: Lowest frequency, Cutoff frequency of a high-pass filter that is applied to the audio data
+        :type low: typing.Any | None
+        :param high: Highest frequency, Cutoff frequency of a low-pass filter that is applied to the audio data
+        :type high: typing.Any | None
+        :param attack: Attack time, Value for the hull curve calculation that tells how fast the hull curve can rise (the lower the value the steeper it can rise)
+        :type attack: typing.Any | None
+        :param release: Release time, Value for the hull curve calculation that tells how fast the hull curve can fall (the lower the value the steeper it can fall)
+        :type release: typing.Any | None
+        :param threshold: Threshold, Minimum amplitude value needed to influence the hull curve
+        :type threshold: typing.Any | None
+        :param use_accumulate: Accumulate, Only the positive differences of the hull curve amplitudes are summarized to produce the output
+        :type use_accumulate: bool | typing.Any | None
+        :param use_additive: Additive, The amplitudes of the hull curve are summarized (or, when Accumulate is enabled, both positive and negative differences are accumulated)
+        :type use_additive: bool | typing.Any | None
+        :param use_square: Square, The output is a square curve (negative values always result in -1, and positive ones in 1)
+        :type use_square: bool | typing.Any | None
+        :param sthreshold: Square Threshold, Square only: all values with an absolute amplitude lower than that result in 0
+        :type sthreshold: typing.Any | None
+    """
+
+    ...
+
+def view_all(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    include_handles: bool | typing.Any | None = True,
+):
+    """Reset viewable area to show full keyframe range
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    :param include_handles: Include Handles, Include handles of keyframes when calculating extents
+    :type include_handles: bool | typing.Any | None
+    """
+
+    ...
+
+def view_frame(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+):
+    """Reset viewable area to show range around current frame
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    """
+
+    ...
+
+def view_selected(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+    *,
+    include_handles: bool | typing.Any | None = True,
+):
+    """Reset viewable area to show selected keyframe range
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    :param include_handles: Include Handles, Include handles of keyframes when calculating extents
+    :type include_handles: bool | typing.Any | None
+    """
+
+    ...
