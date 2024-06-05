@@ -1,0 +1,8 @@
+AUTHORS.md
+LICENSE
+README.md
+setup.py
+HtmlTestRunner_Ably.egg-info/PKG-INFO
+HtmlTestRunner_Ably.egg-info/SOURCES.txt
+HtmlTestRunner_Ably.egg-info/dependency_links.txt
+HtmlTestRunner_Ably.egg-info/top_level.txt
