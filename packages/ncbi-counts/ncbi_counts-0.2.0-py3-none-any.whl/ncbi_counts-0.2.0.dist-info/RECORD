@@ -1,0 +1,13 @@
+ncbi_counts/__init__.py,sha256=ycqo0Vnq8wrI9iZb5NBlblveRGJ-irDrY-mOzLJP0tE,48
+ncbi_counts/__main__.py,sha256=yek0njxdo1HnEdYbhIAXLIDSOxpzvKFezqaiEoXTtL4,3406
+ncbi_counts/__version__.py,sha256=0ZONgEGvd7B_mG304g2OF-b69apTF5swEakJYk7GCzU,85
+ncbi_counts/core.py,sha256=8craSQVw75pNYNhvCx-hiYBo6PSOZzEpdcz7NLXnSDk,5729
+ncbi_counts/load.py,sha256=FKmhnCVGYvYlzsg2SpU4kYaPbSSECgOPWgP3BVkTUaU,2235
+ncbi_counts/parser.py,sha256=eiE0rjM2IFO63iZ4k-c3fGxOt2wrxz3oLj6PnOAtE5I,2852
+ncbi_counts/types.py,sha256=nvmF9UQVj9xRAYGanVYvODiFqNBP2ZsuB_cHCHhZYN0,695
+ncbi_counts/utils.py,sha256=_2pX7UPmDHsNxL9oMg_FXNLCktUxDSQfYID0iLoo9lU,7813
+ncbi_counts-0.2.0.dist-info/LICENSE,sha256=CeyVhGQ6mN619_hqHt2hzF1kBaeBXQ-BTgtvdjgJxbI,1061
+ncbi_counts-0.2.0.dist-info/METADATA,sha256=1O-92D7dhcszr3nAPPppBVIHNN0fHLbA2L5aWzs1uIU,8110
+ncbi_counts-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ncbi_counts-0.2.0.dist-info/top_level.txt,sha256=PMe3V5FK0QGdyZyFjUm1C2x-AV3jhhQtRIjHAg8wgUc,12
+ncbi_counts-0.2.0.dist-info/RECORD,,
