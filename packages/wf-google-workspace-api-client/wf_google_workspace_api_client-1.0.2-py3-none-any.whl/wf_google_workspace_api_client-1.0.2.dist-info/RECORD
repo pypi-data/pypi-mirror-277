@@ -1,0 +1,10 @@
+wf_google_workspace_api_client/__init__.py,sha256=12tOQh_mHLXFrZbYt9bEbSaIz5dFWRcLmxX0_IyvTQ8,19
+wf_google_workspace_api_client/api/__init__.py,sha256=d0Q6Fn44e7wFfLabDOBxpcJ1DPKWlFunGYDUBmO-4hA,22
+wf_google_workspace_api_client/api/client.py,sha256=M3l8AGmvrcf095maAB52u4e9Cyjsp41YhFMiRiSrjlA,4324
+wf_google_workspace_api_client/const.py,sha256=I039zUCLZm0eujb3_g7Jjq3zUW-z3Bm88imumNS6esk,370
+wf_google_workspace_api_client/models/user.py,sha256=z6PQS3OjuFHzmSOaCVoAokzAqdHekfVkYnO8BbejJ8c,2741
+wf_google_workspace_api_client/models/watch.py,sha256=MKrPPXYeENaQaPydlDYkNOJnaAjpyfCUOq1P01HDFXc,680
+wf_google_workspace_api_client-1.0.2.dist-info/LICENSE,sha256=VV4EHqsjRsZIw9RC6SYL63Tm9kzPQsYaZn7a1cT9X3w,1088
+wf_google_workspace_api_client-1.0.2.dist-info/METADATA,sha256=dz2_YaHZKYbsZSRU9FMJG0QQW8LQoM5qQsjFSuhXm3E,607
+wf_google_workspace_api_client-1.0.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+wf_google_workspace_api_client-1.0.2.dist-info/RECORD,,
