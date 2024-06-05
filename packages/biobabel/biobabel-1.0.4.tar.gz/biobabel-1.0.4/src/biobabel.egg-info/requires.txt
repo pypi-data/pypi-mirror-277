@@ -1,0 +1,12 @@
+h5py
+numpy
+pyxdf
+matplotlib
+bioread
+opensignalsreader
+pandas
+pyedflib
+scipy
+
+[BDF]
+pybdf
