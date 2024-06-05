@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ArtifactDetection
+Version: 0.0.1
+Summary: Spectral slope technique to remove EEG artifacts.
+Home-page: https://github.com/melissafasol/ArtifactDetection
+Author: Melissa Fasol
+Author-email: melissaclairefasol@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: matplotlib
