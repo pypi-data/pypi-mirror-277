@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Clict
+Version: 0.4.1
+Summary: Python Dict with classlike access to its contents (dot.notation,creates missing keys on the fly,...)
+Project-URL: Homepage, https://github.com/hoefkensj/Clict
+Project-URL: Issues, https://github.com/hoefkensj/Clict/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Clict
+Python Dict with classlike access to its contents (dot.notation,creates missing keys on the fly,...)j
