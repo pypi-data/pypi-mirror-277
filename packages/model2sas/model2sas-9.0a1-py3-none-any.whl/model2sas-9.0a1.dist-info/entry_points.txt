@@ -1,0 +1,4 @@
+[console_scripts]
+model2sas = model2sas.cli.main:run
+model2sas-gui = model2sas.gui.main:run
+
