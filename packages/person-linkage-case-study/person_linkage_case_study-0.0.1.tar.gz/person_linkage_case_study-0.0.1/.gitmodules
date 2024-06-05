@@ -1,0 +1,3 @@
+[submodule "person_linkage_case_study"]
+	path = person_linkage_case_study
+	url = https://github.com/ihmeuw/person_linkage_case_study.git
