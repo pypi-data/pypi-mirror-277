@@ -1,0 +1,12 @@
+zoom_api/__init__.py,sha256=SrMnPdyf2LCJcVx7f75PxMbbi4PXpFTiCd2tlLYvs6A,153
+zoom_api/config.py,sha256=vkPGre_itQFf42GhY_H9DTAbdBf4ZeafM07EX2G2HTU,502
+zoom_api/init.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zoom_api/logging_config.py,sha256=CyPWKok1xHEuKjiye3o1orUxfvqAfBB-4rYB9SfM_Kc,85
+zoom_api/message_formatter.py,sha256=RWkh9emQr3rErBBFyXbTtpZrcaIB_7ZDCAXvycCbaB4,407
+zoom_api/zoom_api.py,sha256=GAnbUL21Fgj4OpGzrV4pfcVPuRAgrFfX06RrAYJqRpw,5831
+zoom_api/zoom_client.py,sha256=D5TPGB7H34rpnXlsT7lYkrVkSDagqE8bRAB-EO90EBo,4724
+codef2_zoom_notifier-0.1.0.dist-info/METADATA,sha256=Owf0UeE4g_2nt0VzvIsHhXMgug_qbUOeqTCv5YtgrIU,657
+codef2_zoom_notifier-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+codef2_zoom_notifier-0.1.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+codef2_zoom_notifier-0.1.0.dist-info/top_level.txt,sha256=bOzH8psSMFSxgLN8B02WWcS8aHQINdj5rMW6EK0SiK4,9
+codef2_zoom_notifier-0.1.0.dist-info/RECORD,,
