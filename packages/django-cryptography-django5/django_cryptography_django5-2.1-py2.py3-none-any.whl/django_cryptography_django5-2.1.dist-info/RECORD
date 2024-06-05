@@ -1,0 +1,10 @@
+django_cryptography/__init__.py,sha256=CYT_ZvX_4p5Z1Wj_LWH72hMDh4n3KVLalaC9lQb7GiY,114
+django_cryptography/conf.py,sha256=zMqyyiQLj99LAXWlGQWEz8dWS5TQ0Km7Yw09qo0uk80,1184
+django_cryptography/fields.py,sha256=TQl5NnQU8DWHbDI2RfwyH6ci6nG4zTS0brBYnhcdQdk,7929
+django_cryptography/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_cryptography/typing.py,sha256=G_DM4gTB3HwMrNaavAmTSI6xCTyQwHOPaRQvThr0CbU,1079
+django_cryptography_django5-2.1.dist-info/LICENSE,sha256=XXtbCgd0wNbdiYRg9i2gbITnPTnoZs3eWLvrPP86Su8,1492
+django_cryptography_django5-2.1.dist-info/METADATA,sha256=vPaDoxGInnmGA2TJd9xVpKxTLBmf6iR5h8WaGvZ_HE8,3461
+django_cryptography_django5-2.1.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+django_cryptography_django5-2.1.dist-info/top_level.txt,sha256=KSQbz-d8klcOU-KzABe7VjPSuJKareaSs_Jq11-Egug,20
+django_cryptography_django5-2.1.dist-info/RECORD,,
