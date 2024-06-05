@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+maithong_package/__init__.py
+maithong_package/module.py
+maithongpackage999.egg-info/PKG-INFO
+maithongpackage999.egg-info/SOURCES.txt
+maithongpackage999.egg-info/dependency_links.txt
+maithongpackage999.egg-info/requires.txt
+maithongpackage999.egg-info/top_level.txt
