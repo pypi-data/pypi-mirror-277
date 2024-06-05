@@ -1,0 +1,8 @@
+st_moe_pytorch/__init__.py,sha256=XWfU-B0IAZkEmvMhf5R_oebeg2cWdeFUOAGZX0xgJVM,74
+st_moe_pytorch/distributed.py,sha256=OjdCwzib5ZMFw-si6Iy67z_P7FFGh4VrexlUo6XbEpo,2993
+st_moe_pytorch/st_moe_pytorch.py,sha256=YvLe8QuAArX3U5G-fKuQV0fWdym4DYV0ZtCROAwL06k,20973
+st_moe_pytorch-0.1.8.dist-info/LICENSE,sha256=JCo3d2HvOFPGYvaXfnYX4-qjRyQvVElop5ZRITXMg-U,1066
+st_moe_pytorch-0.1.8.dist-info/METADATA,sha256=U_74CLlrT3hYz71lo64Q7CLmumUijUcqDPLoTIZtoJ8,732
+st_moe_pytorch-0.1.8.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+st_moe_pytorch-0.1.8.dist-info/top_level.txt,sha256=PS3aiGAfNf4gy6dPlKMMFIZ5GxKbO7nk7FgsqnP6Z8k,15
+st_moe_pytorch-0.1.8.dist-info/RECORD,,
