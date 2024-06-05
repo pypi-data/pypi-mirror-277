@@ -1,0 +1,49 @@
+Metadata-Version: 2.3
+Name: beaker-pysb
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/unknown/beaker-pysb#readme
+Project-URL: Issues, https://github.com/unknown/beaker-pysb/issues
+Project-URL: Source, https://github.com/unknown/beaker-pysb
+Author-email: Matthew Printz <matt@jataware.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Requires-Dist: beaker-bunsen>=0.0.6
+Requires-Dist: pysb
+Description-Content-Type: text/markdown
+
+# beaker-pysb
+
+[![PyPI - Version](https://img.shields.io/pypi/v/beaker-pysb.svg)](https://pypi.org/project/beaker-pysb)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/beaker-pysb.svg)](https://pypi.org/project/beaker-pysb)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install beaker-pysb
+```
+
+## Docker quickstart
+
+```
+export OPENAI_API_KEY=your OpenAI key goes here
+docker-compose up --build
+```
+
+## License
+
+`beaker-pysb` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.

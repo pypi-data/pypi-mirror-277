@@ -1,0 +1,10 @@
+{
+  "package": "pysb.examples.michment",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.examples.michment",
+  "source_uri": "py-mod:pysb.examples.michment",
+  "generated_at": "2024-05-31T18:48:05.605782",
+  "source_sha256_hash": "ae41648fb4ed2a02fb09cd7b37a3ebf80ee685b569d5346dd0dc4d6140480944",
+  "start_line": 3,
+  "stop_line": 26
+}

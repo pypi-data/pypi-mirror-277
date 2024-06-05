@@ -1,0 +1,10 @@
+{
+  "package": "pysb.tests.test_integrate",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.tests.test_integrate",
+  "source_uri": "py-mod:pysb.tests.test_integrate",
+  "generated_at": "2024-05-31T18:53:45.230888",
+  "source_sha256_hash": "07fc98730ff9e742c338e3a1426421b5cac1997e44c1c0f28d531289562cbfb6",
+  "start_line": 137,
+  "stop_line": 149
+}

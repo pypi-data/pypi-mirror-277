@@ -1,0 +1,10 @@
+{
+  "package": "pysb.logging",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.logging",
+  "source_uri": "py-mod:pysb.logging",
+  "generated_at": "2024-05-31T18:45:07.895756",
+  "source_sha256_hash": "9809d11cd6cb1b558abba88bfe45bd9ddf465a513e2cce1a8167761db3a92c80",
+  "start_line": 195,
+  "stop_line": 199
+}

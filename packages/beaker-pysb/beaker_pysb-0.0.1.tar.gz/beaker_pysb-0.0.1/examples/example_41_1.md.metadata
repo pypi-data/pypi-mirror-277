@@ -1,0 +1,10 @@
+{
+  "package": "pysb.examples.run_tyson_oscillator_stochkit",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.examples.run_tyson_oscillator_stochkit",
+  "source_uri": "py-mod:pysb.examples.run_tyson_oscillator_stochkit",
+  "generated_at": "2024-05-31T18:48:56.255699",
+  "source_sha256_hash": "2a2de9eda5f07f72cb369a89bd6bb2001dfe33e815419619702a3b06f852370e",
+  "start_line": 24,
+  "stop_line": 35
+}

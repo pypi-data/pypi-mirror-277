@@ -1,0 +1,10 @@
+{
+  "package": "pysb.tests.test_simulator_kappa",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.tests.test_simulator_kappa",
+  "source_uri": "py-mod:pysb.tests.test_simulator_kappa",
+  "generated_at": "2024-05-31T18:57:36.880656",
+  "source_sha256_hash": "f36088c3674f92b880d9ba62de96aa093f4d089c2091940020c395340c7bd938",
+  "start_line": 36,
+  "stop_line": 40
+}

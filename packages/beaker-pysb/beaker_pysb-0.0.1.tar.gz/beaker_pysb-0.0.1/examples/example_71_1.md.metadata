@@ -1,0 +1,10 @@
+{
+  "package": "pysb.tests.test_importers",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.tests.test_importers",
+  "source_uri": "py-mod:pysb.tests.test_importers",
+  "generated_at": "2024-05-31T18:53:37.962802",
+  "source_sha256_hash": "a71f861bfaf1d701f319af5803ad09f158fd1079a3bb19da3e4501e145ce6952",
+  "start_line": 25,
+  "stop_line": 68
+}

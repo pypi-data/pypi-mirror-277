@@ -1,0 +1,10 @@
+{
+  "package": "pysb.examples.run_bng_ssa_example",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.examples.run_bng_ssa_example",
+  "source_uri": "py-mod:pysb.examples.run_bng_ssa_example",
+  "generated_at": "2024-05-31T18:48:22.738205",
+  "source_sha256_hash": "af17e3a0e3e1b95230b4708ff3c42eab02cfdd98b400f5d93fe0a8cb5121aaa3",
+  "start_line": 5,
+  "stop_line": 16
+}

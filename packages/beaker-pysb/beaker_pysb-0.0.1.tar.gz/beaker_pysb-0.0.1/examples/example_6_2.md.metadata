@@ -1,0 +1,10 @@
+{
+  "package": "pysb.kappa",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.kappa",
+  "source_uri": "py-mod:pysb.kappa",
+  "generated_at": "2024-05-31T18:44:59.742149",
+  "source_sha256_hash": "c0f1e7de280ccac8be68ee671581c13f4477885081028cabfd028571893f92ad",
+  "start_line": 217,
+  "stop_line": 355
+}

@@ -1,0 +1,10 @@
+{
+  "package": "pysb.tests.test_bng",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.tests.test_bng",
+  "source_uri": "py-mod:pysb.tests.test_bng",
+  "generated_at": "2024-05-31T18:52:23.174097",
+  "source_sha256_hash": "c29b9920578a76dec33d7657d7bf46b2c7fbacecf964458fc53ce4dae793bc97",
+  "start_line": 75,
+  "stop_line": 89
+}

@@ -1,0 +1,10 @@
+{
+  "package": "pysb.core",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.core",
+  "source_uri": "py-mod:pysb.core",
+  "generated_at": "2024-05-31T18:44:32.680304",
+  "source_sha256_hash": "a6cc654a32243cae33af10d55dacb4293401d1368f38cac82f01ae2b1fcc9db2",
+  "start_line": 19,
+  "stop_line": 45
+}

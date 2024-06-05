@@ -1,0 +1,10 @@
+{
+  "package": "pysb.simulator.opencl_ssa",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.simulator.opencl_ssa",
+  "source_uri": "py-mod:pysb.simulator.opencl_ssa",
+  "generated_at": "2024-05-31T18:51:45.188665",
+  "source_sha256_hash": "ad92b0b9815e9acc7838efc044f20bb76b3e4b6b656589d7f1190c62c16aea6a",
+  "start_line": 186,
+  "stop_line": 266
+}

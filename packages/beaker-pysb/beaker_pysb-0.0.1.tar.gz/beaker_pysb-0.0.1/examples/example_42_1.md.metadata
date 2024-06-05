@@ -1,0 +1,10 @@
+{
+  "package": "pysb.examples.synth_deg",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.examples.synth_deg",
+  "source_uri": "py-mod:pysb.examples.synth_deg",
+  "generated_at": "2024-05-31T18:48:58.219058",
+  "source_sha256_hash": "517c0815dcc61947e124366ac57c22711fef8b3238dc981b305d64955f7e78ee",
+  "start_line": 5,
+  "stop_line": 18
+}

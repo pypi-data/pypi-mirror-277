@@ -1,0 +1,10 @@
+{
+  "package": "pysb.simulator.kappa",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.simulator.kappa",
+  "source_uri": "py-mod:pysb.simulator.kappa",
+  "generated_at": "2024-05-31T18:51:35.701123",
+  "source_sha256_hash": "636bb1a2d522542b755769f593435da492a8f9b8816ba2f0aabcf8ec505e0059",
+  "start_line": 69,
+  "stop_line": 75
+}

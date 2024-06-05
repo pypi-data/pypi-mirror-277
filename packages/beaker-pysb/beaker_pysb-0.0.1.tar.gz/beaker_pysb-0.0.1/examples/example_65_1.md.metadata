@@ -1,0 +1,10 @@
+{
+  "package": "pysb.tests.jacobian_runtimes",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.tests.jacobian_runtimes",
+  "source_uri": "py-mod:pysb.tests.jacobian_runtimes",
+  "generated_at": "2024-05-31T18:52:04.649885",
+  "source_sha256_hash": "3c565eb2102b1d0db728dcfaf25d397fede4908e2ab70905fe6d10e730933dfc",
+  "start_line": 19,
+  "stop_line": 31
+}

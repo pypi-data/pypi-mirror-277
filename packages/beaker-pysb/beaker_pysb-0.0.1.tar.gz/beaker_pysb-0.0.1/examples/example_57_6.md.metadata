@@ -1,0 +1,10 @@
+{
+  "package": "pysb.simulator.base",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.simulator.base",
+  "source_uri": "py-mod:pysb.simulator.base",
+  "generated_at": "2024-05-31T18:51:24.274840",
+  "source_sha256_hash": "7c0090238427deca7f89ad133e2e8a9db7b0b5a460228c78adb6d9c4b1c0b252",
+  "start_line": 706,
+  "stop_line": 708
+}

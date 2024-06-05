@@ -1,0 +1,10 @@
+{
+  "package": "pysb.examples.bngwiki_egfr_simple",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.examples.bngwiki_egfr_simple",
+  "source_uri": "py-mod:pysb.examples.bngwiki_egfr_simple",
+  "generated_at": "2024-05-31T18:46:35.129686",
+  "source_sha256_hash": "48184f58c24fdae39fba3e47d89d09b9d6f5275373c3b14da67869c2e2b7331b",
+  "start_line": 60,
+  "stop_line": 93
+}

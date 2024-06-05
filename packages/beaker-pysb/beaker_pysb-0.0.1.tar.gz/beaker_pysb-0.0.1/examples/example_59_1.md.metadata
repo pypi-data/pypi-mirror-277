@@ -1,0 +1,10 @@
+{
+  "package": "pysb.simulator.cupsoda",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.simulator.cupsoda",
+  "source_uri": "py-mod:pysb.simulator.cupsoda",
+  "generated_at": "2024-05-31T18:51:32.215587",
+  "source_sha256_hash": "d605657bcf1aa7a7064c37c090e8a4da8c6b3066b22edb129948419020d5b204",
+  "start_line": 682,
+  "stop_line": 700
+}

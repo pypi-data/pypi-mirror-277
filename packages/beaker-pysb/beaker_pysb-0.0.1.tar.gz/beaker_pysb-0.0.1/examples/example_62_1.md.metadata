@@ -1,0 +1,10 @@
+{
+  "package": "pysb.simulator.scipyode",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.simulator.scipyode",
+  "source_uri": "py-mod:pysb.simulator.scipyode",
+  "generated_at": "2024-05-31T18:51:55.488741",
+  "source_sha256_hash": "017c18796b2a791a4778c6177ce09c06001872ac53c811be44af9d46e1e013a3",
+  "start_line": 84,
+  "stop_line": 93
+}

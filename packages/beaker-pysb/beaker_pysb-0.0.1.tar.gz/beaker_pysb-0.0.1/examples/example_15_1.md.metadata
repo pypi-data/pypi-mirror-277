@@ -1,0 +1,10 @@
+{
+  "package": "pysb.examples.bngwiki_enzymatic_cycle_mm",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.examples.bngwiki_enzymatic_cycle_mm",
+  "source_uri": "py-mod:pysb.examples.bngwiki_enzymatic_cycle_mm",
+  "generated_at": "2024-05-31T18:46:36.876816",
+  "source_sha256_hash": "94bf548d8f4ef1aa5710ee567fa3df6ab9abe5c0eeef4351859b2dfc9ce80b91",
+  "start_line": 11,
+  "stop_line": 60
+}

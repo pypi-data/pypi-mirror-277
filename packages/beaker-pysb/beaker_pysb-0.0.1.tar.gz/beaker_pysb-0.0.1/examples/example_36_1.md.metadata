@@ -1,0 +1,10 @@
+{
+  "package": "pysb.examples.run_kinase_cascade",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.examples.run_kinase_cascade",
+  "source_uri": "py-mod:pysb.examples.run_kinase_cascade",
+  "generated_at": "2024-05-31T18:48:39.681160",
+  "source_sha256_hash": "ed39ece922a31debc487b62f20bb8b4264e483743ca1c31e1a15a19c35b44a91",
+  "start_line": 7,
+  "stop_line": 14
+}

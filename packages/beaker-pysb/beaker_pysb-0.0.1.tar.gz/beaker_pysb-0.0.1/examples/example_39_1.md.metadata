@@ -1,0 +1,10 @@
+{
+  "package": "pysb.examples.run_tutorial_a",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.examples.run_tutorial_a",
+  "source_uri": "py-mod:pysb.examples.run_tutorial_a",
+  "generated_at": "2024-05-31T18:48:48.169005",
+  "source_sha256_hash": "ccece6aed2106a1fad7564c81341fa4fbf96009756ab825fa5c5cb4dd8dee9fb",
+  "start_line": 4,
+  "stop_line": 8
+}

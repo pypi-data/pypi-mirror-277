@@ -1,0 +1,10 @@
+{
+  "package": "pysb.anneal_mod",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.anneal_mod",
+  "source_uri": "py-mod:pysb.anneal_mod",
+  "generated_at": "2024-05-31T18:42:24.291102",
+  "source_sha256_hash": "5121f9278135ebe93d5c89465b6d993adddd3b83bf626838836c75157fe98197",
+  "start_line": 323,
+  "stop_line": 336
+}

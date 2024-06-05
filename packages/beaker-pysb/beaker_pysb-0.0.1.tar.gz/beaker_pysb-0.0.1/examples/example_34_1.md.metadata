@@ -1,0 +1,10 @@
+{
+  "package": "pysb.examples.run_earm_stochkit",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.examples.run_earm_stochkit",
+  "source_uri": "py-mod:pysb.examples.run_earm_stochkit",
+  "generated_at": "2024-05-31T18:48:34.111957",
+  "source_sha256_hash": "2dc359d9f0067c3f114eac9f92791fb8bb425a946c3a95eacc11a90a58624540",
+  "start_line": 11,
+  "stop_line": 39
+}

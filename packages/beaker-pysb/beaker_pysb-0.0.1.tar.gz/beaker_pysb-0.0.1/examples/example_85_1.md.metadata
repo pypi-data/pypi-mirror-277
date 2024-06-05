@@ -1,0 +1,10 @@
+{
+  "package": "pysb.tools.render_reactions",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.tools.render_reactions",
+  "source_uri": "py-mod:pysb.tools.render_reactions",
+  "generated_at": "2024-05-31T18:58:48.548396",
+  "source_sha256_hash": "7be33ca447a0e710090499690dfd6581f941ed5dd01f993a0fde9eaad40edd62",
+  "start_line": 5,
+  "stop_line": 7
+}

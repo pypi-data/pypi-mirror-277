@@ -1,0 +1,10 @@
+{
+  "package": "pysb.examples.robertson",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.examples.robertson",
+  "source_uri": "py-mod:pysb.examples.robertson",
+  "generated_at": "2024-05-31T18:48:16.652987",
+  "source_sha256_hash": "f51bdb4b084ef449883eb79232f15a17a16f471ec0a1c6c1a70ab4a08f1d981c",
+  "start_line": 37,
+  "stop_line": 59
+}

@@ -1,0 +1,10 @@
+{
+  "package": "pysb.examples.localfunc",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.examples.localfunc",
+  "source_uri": "py-mod:pysb.examples.localfunc",
+  "generated_at": "2024-05-31T18:48:03.856564",
+  "source_sha256_hash": "8bd27e6a026593e45157be473ebf1f38cc5312aea4f9726f83f40b7012533135",
+  "start_line": 12,
+  "stop_line": 51
+}

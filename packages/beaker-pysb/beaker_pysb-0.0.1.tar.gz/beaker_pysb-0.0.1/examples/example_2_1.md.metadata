@@ -1,0 +1,10 @@
+{
+  "package": "pysb.builder",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.builder",
+  "source_uri": "py-mod:pysb.builder",
+  "generated_at": "2024-05-31T18:44:19.538485",
+  "source_sha256_hash": "1bf9cc83a68025e8dafe052ae8c9137a48bc87b7d776df49c81c270401e7ae09",
+  "start_line": 37,
+  "stop_line": 47
+}

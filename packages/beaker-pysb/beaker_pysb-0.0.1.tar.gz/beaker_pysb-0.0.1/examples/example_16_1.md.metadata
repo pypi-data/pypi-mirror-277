@@ -1,0 +1,10 @@
+{
+  "package": "pysb.examples.bngwiki_simple",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.examples.bngwiki_simple",
+  "source_uri": "py-mod:pysb.examples.bngwiki_simple",
+  "generated_at": "2024-05-31T18:46:40.290020",
+  "source_sha256_hash": "aadf724eec3a41af5d704325c43e4c3b436f42e28eb6e60b5c3d569d29995004",
+  "start_line": 11,
+  "stop_line": 40
+}

@@ -1,0 +1,10 @@
+{
+  "package": "pysb.export.json",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.export.json",
+  "source_uri": "py-mod:pysb.export.json",
+  "generated_at": "2024-05-31T18:49:41.097799",
+  "source_sha256_hash": "29c3f8e27dc695679ae81856d412187747fe76bee9c874a1b0294f371cc51492",
+  "start_line": 20,
+  "stop_line": 37
+}

@@ -1,0 +1,10 @@
+{
+  "package": "pysb.examples.hello_pysb",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.examples.hello_pysb",
+  "source_uri": "py-mod:pysb.examples.hello_pysb",
+  "generated_at": "2024-05-31T18:47:40.176583",
+  "source_sha256_hash": "11c1aa653c35af4717539e5cde06430e802c51ffdeb839b340b0f858d94b3a63",
+  "start_line": 8,
+  "stop_line": 44
+}

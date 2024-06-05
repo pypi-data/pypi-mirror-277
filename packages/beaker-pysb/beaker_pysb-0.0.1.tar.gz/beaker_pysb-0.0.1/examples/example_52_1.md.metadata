@@ -1,0 +1,10 @@
+{
+  "package": "pysb.export.sbml",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.export.sbml",
+  "source_uri": "py-mod:pysb.export.sbml",
+  "generated_at": "2024-05-31T18:50:40.455600",
+  "source_sha256_hash": "74bed86118d3672d65f76a578efce74e8a6cca9f35718a5c83aec755bba92a8e",
+  "start_line": 102,
+  "stop_line": 296
+}

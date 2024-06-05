@@ -1,0 +1,10 @@
+{
+  "package": "pysb.export.potterswheel",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.export.potterswheel",
+  "source_uri": "py-mod:pysb.export.potterswheel",
+  "generated_at": "2024-05-31T18:50:27.705950",
+  "source_sha256_hash": "3c7979bc6c106c72ff794141c452f91619f5f0a74f666e83c0a083e5884fb901",
+  "start_line": 77,
+  "stop_line": 165
+}

@@ -1,0 +1,10 @@
+{
+  "package": "pysb.importers.json",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.importers.json",
+  "source_uri": "py-mod:pysb.importers.json",
+  "generated_at": "2024-05-31T18:51:01.199633",
+  "source_sha256_hash": "4321b65b3443c4b3d9375a074b75886ce6bb0012fc56c7b4e51d02c65052c305",
+  "start_line": 19,
+  "stop_line": 272
+}

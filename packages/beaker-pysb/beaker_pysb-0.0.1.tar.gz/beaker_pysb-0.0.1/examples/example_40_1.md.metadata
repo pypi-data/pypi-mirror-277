@@ -1,0 +1,10 @@
+{
+  "package": "pysb.examples.run_tyson_oscillator",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.examples.run_tyson_oscillator",
+  "source_uri": "py-mod:pysb.examples.run_tyson_oscillator",
+  "generated_at": "2024-05-31T18:48:50.395612",
+  "source_sha256_hash": "886631f38ede17538158739619c062374e5c69f02ba4b4fa0361940620abe6e6",
+  "start_line": 5,
+  "stop_line": 17
+}

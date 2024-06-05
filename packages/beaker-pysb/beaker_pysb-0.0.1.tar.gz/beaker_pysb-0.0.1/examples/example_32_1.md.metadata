@@ -1,0 +1,10 @@
+{
+  "package": "pysb.examples.run_earm_1_0",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.examples.run_earm_1_0",
+  "source_uri": "py-mod:pysb.examples.run_earm_1_0",
+  "generated_at": "2024-05-31T18:48:29.386063",
+  "source_sha256_hash": "65473796cf47c6d2abe35f4dc4553d99d1dd0a64052a01766fc752856d065e58",
+  "start_line": 22,
+  "stop_line": 64
+}

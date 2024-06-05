@@ -1,0 +1,10 @@
+{
+  "package": "pysb.importers.bngl",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.importers.bngl",
+  "source_uri": "py-mod:pysb.importers.bngl",
+  "generated_at": "2024-05-31T18:50:51.585769",
+  "source_sha256_hash": "0ec36201b086aed9e9afe5092b23bfa59eaf423add27199d7b638a281236c620",
+  "start_line": 426,
+  "stop_line": 459
+}

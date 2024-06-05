@@ -1,0 +1,10 @@
+{
+  "package": "pysb.examples.run_bax_pore",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.examples.run_bax_pore",
+  "source_uri": "py-mod:pysb.examples.run_bax_pore",
+  "generated_at": "2024-05-31T18:48:18.763006",
+  "source_sha256_hash": "826322f4ae9ebdf3885d53bdaa90f969a342a351e256982998a3076bb43999da",
+  "start_line": 10,
+  "stop_line": 18
+}

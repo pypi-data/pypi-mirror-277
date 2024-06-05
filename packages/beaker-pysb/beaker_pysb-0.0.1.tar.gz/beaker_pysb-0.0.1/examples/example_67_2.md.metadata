@@ -1,0 +1,10 @@
+{
+  "package": "pysb.tests.test_core",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.tests.test_core",
+  "source_uri": "py-mod:pysb.tests.test_core",
+  "generated_at": "2024-05-31T18:52:31.111762",
+  "source_sha256_hash": "e5ccc4fa97986196f154a2027b7f2be4b7f03a2129daf192a65764540a77481e",
+  "start_line": 22,
+  "stop_line": 26
+}

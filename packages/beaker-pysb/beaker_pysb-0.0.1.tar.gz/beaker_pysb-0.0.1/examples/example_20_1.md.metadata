@@ -1,0 +1,10 @@
+{
+  "package": "pysb.examples.expression_observables",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.examples.expression_observables",
+  "source_uri": "py-mod:pysb.examples.expression_observables",
+  "generated_at": "2024-05-31T18:47:18.354149",
+  "source_sha256_hash": "c8f4a5e5a0a30476db93557cbb6e97067ace7fd568e09449f75632d4c37ebecf",
+  "start_line": 4,
+  "stop_line": 25
+}

@@ -1,0 +1,10 @@
+{
+  "package": "pysb.examples.move_connected",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.examples.move_connected",
+  "source_uri": "py-mod:pysb.examples.move_connected",
+  "generated_at": "2024-05-31T18:48:08.575761",
+  "source_sha256_hash": "38bd604b3d5c37d152ec7c30a1ab76fc403278fb316bfc8bdd3c0557bc16f147",
+  "start_line": 11,
+  "stop_line": 36
+}

@@ -1,0 +1,10 @@
+{
+  "package": "pysb.examples.fricker_2010_apoptosis",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.examples.fricker_2010_apoptosis",
+  "source_uri": "py-mod:pysb.examples.fricker_2010_apoptosis",
+  "generated_at": "2024-05-31T18:47:38.464508",
+  "source_sha256_hash": "5b45c9ef695d42cf77cc5bba02a9ef9be8d16144376cbe47e0def4326f388514",
+  "start_line": 42,
+  "stop_line": 147
+}

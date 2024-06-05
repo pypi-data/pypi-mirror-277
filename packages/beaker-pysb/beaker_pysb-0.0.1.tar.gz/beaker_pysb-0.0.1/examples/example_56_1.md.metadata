@@ -1,0 +1,10 @@
+{
+  "package": "pysb.importers.sbml",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.importers.sbml",
+  "source_uri": "py-mod:pysb.importers.sbml",
+  "generated_at": "2024-05-31T18:51:03.209510",
+  "source_sha256_hash": "c73b6105281a8d20f7ff5635aee1eb2847743eb490190f04d102b30afbafeb4f",
+  "start_line": 225,
+  "stop_line": 229
+}

@@ -1,0 +1,10 @@
+{
+  "package": "pysb.tests.test_simulator_bng",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.tests.test_simulator_bng",
+  "source_uri": "py-mod:pysb.tests.test_simulator_bng",
+  "generated_at": "2024-05-31T18:57:01.083775",
+  "source_sha256_hash": "d4c6b8b6343d604423bb9b31e7f117045cd978afe16a2a11d6e8f5ddf688f97e",
+  "start_line": 148,
+  "stop_line": 155
+}

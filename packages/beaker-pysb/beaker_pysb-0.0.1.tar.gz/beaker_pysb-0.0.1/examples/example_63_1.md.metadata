@@ -1,0 +1,10 @@
+{
+  "package": "pysb.simulator.stochkit",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.simulator.stochkit",
+  "source_uri": "py-mod:pysb.simulator.stochkit",
+  "generated_at": "2024-05-31T18:51:58.917300",
+  "source_sha256_hash": "0b0b7d344945bc0bfd7ce062d48eff2cafddca7e10970ee9a1eb5e9279ec1c4c",
+  "start_line": 65,
+  "stop_line": 82
+}

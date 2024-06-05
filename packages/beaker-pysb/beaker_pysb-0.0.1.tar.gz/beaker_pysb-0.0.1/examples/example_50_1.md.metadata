@@ -1,0 +1,10 @@
+{
+  "package": "pysb.export.matlab",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.export.matlab",
+  "source_uri": "py-mod:pysb.export.matlab",
+  "generated_at": "2024-05-31T18:50:25.198422",
+  "source_sha256_hash": "e6b5260a982de7a19a0a12f822f84c6332655aec9a92008e8413691540a4bf27",
+  "start_line": 81,
+  "stop_line": 88
+}

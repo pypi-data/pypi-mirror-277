@@ -1,0 +1,10 @@
+{
+  "package": "pysb.tools.render_species",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.tools.render_species",
+  "source_uri": "py-mod:pysb.tools.render_species",
+  "generated_at": "2024-05-31T18:59:02.221307",
+  "source_sha256_hash": "bd589529fc68d870352b1f195d3222c3e839dd0fcde53f872e5f142d8c591ade",
+  "start_line": 2,
+  "stop_line": 23
+}

@@ -1,0 +1,10 @@
+{
+  "package": "pysb.examples.fixed_initial",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.examples.fixed_initial",
+  "source_uri": "py-mod:pysb.examples.fixed_initial",
+  "generated_at": "2024-05-31T18:47:24.958554",
+  "source_sha256_hash": "176dca7e35c7b14474a670a1d0b109a39bea8b016ff02ef0c9a0e2508c658d43",
+  "start_line": 0,
+  "stop_line": 38
+}

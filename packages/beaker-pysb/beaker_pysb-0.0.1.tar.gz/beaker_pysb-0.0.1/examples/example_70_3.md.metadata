@@ -1,0 +1,10 @@
+{
+  "package": "pysb.tests.test_expressions",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.tests.test_expressions",
+  "source_uri": "py-mod:pysb.tests.test_expressions",
+  "generated_at": "2024-05-31T18:52:53.527298",
+  "source_sha256_hash": "4bdeb931568458206c1bc97e795cecc0666556bd8c5e6c547e25efe3bc0044db",
+  "start_line": 33,
+  "stop_line": 45
+}

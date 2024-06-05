@@ -1,0 +1,10 @@
+{
+  "package": "pysb.tools.species_graph",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.tools.species_graph",
+  "source_uri": "py-mod:pysb.tools.species_graph",
+  "generated_at": "2024-05-31T18:59:09.639625",
+  "source_sha256_hash": "419da8380ef0deccc6c998cb3dd1cdd1e8f3164e83156198fa3dba5e29568e43",
+  "start_line": 40,
+  "stop_line": 124
+}

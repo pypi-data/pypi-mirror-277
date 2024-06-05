@@ -1,0 +1,10 @@
+{
+  "package": "pysb.simulator.bng",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.simulator.bng",
+  "source_uri": "py-mod:pysb.simulator.bng",
+  "generated_at": "2024-05-31T18:51:26.070294",
+  "source_sha256_hash": "364131b45a33e9945d503087974fe5ef5b85480f7125f690e0c02c9e423d4a96",
+  "start_line": 86,
+  "stop_line": 91
+}

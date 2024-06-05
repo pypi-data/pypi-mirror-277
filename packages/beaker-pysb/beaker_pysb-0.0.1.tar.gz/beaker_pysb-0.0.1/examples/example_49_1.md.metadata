@@ -1,0 +1,10 @@
+{
+  "package": "pysb.export.mathematica",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.export.mathematica",
+  "source_uri": "py-mod:pysb.export.mathematica",
+  "generated_at": "2024-05-31T18:49:45.284395",
+  "source_sha256_hash": "206d4c6a04d3a72c5f365d804df2013cd13cc31675b1f04504c76a288dca2f60",
+  "start_line": 13,
+  "stop_line": 71
+}

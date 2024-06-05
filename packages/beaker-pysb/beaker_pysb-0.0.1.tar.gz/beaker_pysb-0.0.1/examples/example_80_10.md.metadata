@@ -1,0 +1,10 @@
+{
+  "package": "pysb.tests.test_simulator_cupsoda",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.tests.test_simulator_cupsoda",
+  "source_uri": "py-mod:pysb.tests.test_simulator_cupsoda",
+  "generated_at": "2024-05-31T18:57:26.297418",
+  "source_sha256_hash": "3aa0e0c5bf3091c4373abf703aa5bd91849b70fb09eddb5560eeed8d31f5c728",
+  "start_line": 105,
+  "stop_line": 104
+}

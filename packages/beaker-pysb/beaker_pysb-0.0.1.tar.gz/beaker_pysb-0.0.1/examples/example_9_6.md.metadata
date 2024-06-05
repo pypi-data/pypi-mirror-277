@@ -1,0 +1,10 @@
+{
+  "package": "pysb.pattern",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.pattern",
+  "source_uri": "py-mod:pysb.pattern",
+  "generated_at": "2024-05-31T18:46:05.860096",
+  "source_sha256_hash": "adaee18ca1bb0e2b5d7243db994c8ac4d0523af5666d8e533ddfc33b05421cd0",
+  "start_line": 736,
+  "stop_line": 798
+}

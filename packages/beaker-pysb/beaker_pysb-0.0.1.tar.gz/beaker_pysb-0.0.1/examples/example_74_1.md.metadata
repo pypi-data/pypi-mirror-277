@@ -1,0 +1,10 @@
+{
+  "package": "pysb.tests.test_macros",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.tests.test_macros",
+  "source_uri": "py-mod:pysb.tests.test_macros",
+  "generated_at": "2024-05-31T18:54:16.679896",
+  "source_sha256_hash": "22ce53e5bee674c06c7f5f52f975c5ce9e48430bb867bfbe1399b7303319313e",
+  "start_line": 4,
+  "stop_line": 11
+}

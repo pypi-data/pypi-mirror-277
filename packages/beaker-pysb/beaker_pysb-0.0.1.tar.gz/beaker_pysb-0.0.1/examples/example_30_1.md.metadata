@@ -1,0 +1,10 @@
+{
+  "package": "pysb.examples.run_bax_pore_sequential",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.examples.run_bax_pore_sequential",
+  "source_uri": "py-mod:pysb.examples.run_bax_pore_sequential",
+  "generated_at": "2024-05-31T18:48:20.706393",
+  "source_sha256_hash": "322fcc278c2f3ebd53b12de5b54c2352342e8246b7b540fa19f53437ac152e43",
+  "start_line": 12,
+  "stop_line": 32
+}

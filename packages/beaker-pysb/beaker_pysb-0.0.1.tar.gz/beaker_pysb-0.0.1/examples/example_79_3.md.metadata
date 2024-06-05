@@ -1,0 +1,10 @@
+{
+  "package": "pysb.tests.test_simulator_cuda_opencl_ssa",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.tests.test_simulator_cuda_opencl_ssa",
+  "source_uri": "py-mod:pysb.tests.test_simulator_cuda_opencl_ssa",
+  "generated_at": "2024-05-31T18:57:08.839524",
+  "source_sha256_hash": "ba5fa068d17f394a16a38de1d7150a0e05fb486a3571a1226bb19f852d584899",
+  "start_line": 79,
+  "stop_line": 84
+}

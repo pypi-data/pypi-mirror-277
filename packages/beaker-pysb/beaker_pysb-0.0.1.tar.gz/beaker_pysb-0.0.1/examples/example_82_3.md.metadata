@@ -1,0 +1,10 @@
+{
+  "package": "pysb.tests.test_simulator_scipy",
+  "type": "code",
+  "resource_id": "python:py-mod:pysb.tests.test_simulator_scipy",
+  "source_uri": "py-mod:pysb.tests.test_simulator_scipy",
+  "generated_at": "2024-05-31T18:57:48.791728",
+  "source_sha256_hash": "3dcb688f76f3c90a589a61dc8734ca5db2b7e7ca418135fd086812a27e7a6bbe",
+  "start_line": 417,
+  "stop_line": 428
+}
