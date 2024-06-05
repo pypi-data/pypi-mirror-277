@@ -1,0 +1,10 @@
+filelock
+sanic
+sanic_cors
+click
+pick
+InquirerPy
+rich
+loguru
+markdown
+aiofiles
