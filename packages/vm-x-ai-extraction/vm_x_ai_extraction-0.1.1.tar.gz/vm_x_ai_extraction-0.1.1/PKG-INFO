@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: vm-x-ai-extraction
+Version: 0.1.1
+Summary: VM-X AI Extraction Helper Library
+Home-page: https://github.com/vm-x-ai/vm-x-ai-labs
+License: MIT
+Keywords: VM-X,AI,AWS,CDK,Constructs,Serverless,Python,Extraction
+Author: VM-X Engineering
+Author-email: eng@vm-x.ai
+Maintainer: VM-X Engineering
+Maintainer-email: eng@vm-x.ai
+Requires-Python: >=3.9,<4
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: langchain-core (>=0.2.1,<0.3.0)
+Project-URL: Repository, https://github.com/vm-x-ai/vm-x-ai-labs
+Description-Content-Type: text/markdown
+
+# VM-X AI Extraction Helper Library
+
+This library is a helper library for abstracting the complexity added by the AWS Step Functions when integrating with the [VM-X SimilarityExtractionWorkflow CDK](https://github.com/vm-x-ai/vm-x-ai-labs/blob/main/packages/aws/cdk/constructs/README.md#similarityextractionworkflow)
+
+## Installation
+
+```bash
+pip install vm-x-ai-extraction
+```
+
+For more information on how to use this library combined with the CDK construct, please refer to the [VM-X SimilarityExtractionWorkflow CDK](https://github.com/vm-x-ai/vm-x-ai-labs/blob/main/packages/aws/cdk/constructs/README.md#similarityextractionworkflow) documentation.
+
