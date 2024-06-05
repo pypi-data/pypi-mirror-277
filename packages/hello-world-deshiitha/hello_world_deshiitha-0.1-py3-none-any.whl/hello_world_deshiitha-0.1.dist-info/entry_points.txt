@@ -1,0 +1,2 @@
+[console_scripts]
+greet = hello_world.cli:greet
