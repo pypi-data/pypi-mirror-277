@@ -1,0 +1,6 @@
+geohash2
+pycountry
+requests
+event-remote
+logger-local
+python-sdk-remote

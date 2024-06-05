@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: event-ticketmaster-graphql-imp-local
+Version: 0.0.6
+Summary: PyPI Package for Circles event-ticketmaster-graphql-imp-local Python
+Home-page: https://github.com/circles-zone/event-ticketmaster-graphql-imp-local-python-package
+Author: Circles
+Author-email: info@circlez.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: geohash2
+Requires-Dist: pycountry
+Requires-Dist: requests
+Requires-Dist: event-remote
+Requires-Dist: logger-local
+Requires-Dist: python-sdk-remote
+
+PyPI Package for Circles event-ticketmaster-graphql-imp-local Python
