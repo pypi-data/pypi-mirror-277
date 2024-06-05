@@ -1,0 +1,3 @@
+You probably don't know how to use dfrit, but I'll show you how to use it. It's very simple, let's start with the color change:
+to change the color, you need to put a , color=“(your color)” after the delay_print, delay_input and fast_print quotes.
+Warning: you can only change the color, not the time. In fact, you need rich, so go to the terminal of the IDE you're using and type: pip install rich

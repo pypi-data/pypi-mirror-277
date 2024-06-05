@@ -1,0 +1,7 @@
+README
+setup.py
+dfrint.egg-info/PKG-INFO
+dfrint.egg-info/SOURCES.txt
+dfrint.egg-info/dependency_links.txt
+dfrint.egg-info/requires.txt
+dfrint.egg-info/top_level.txt
