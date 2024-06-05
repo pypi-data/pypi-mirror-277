@@ -1,0 +1,40 @@
+Metadata-Version: 2.3
+Name: crabflow
+Version: 0.1.0
+Summary: Task orchestrator.
+Author: Guillaune Leroy <pro.guillaume.leroy@gmail.com>
+Author-email: Guillaune Leroy <pro.guillaume.leroy@gmail.com>
+License: MIT
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/leroyguillaume/crabflow
+
+# crabflow
+
+crabflow is a task orchestrator written in Rust.
+
+## Getting started
+
+### Rust
+
+Add `crabflow` in your `Cargo.toml`:
+```toml
+[dependencies]
+crabflow = "0"
+```
+
+### Python
+
+Add `crabflow` in your `requirements.txt`.
+
+## Examples
+
+You can see several examples [here](examples).
+
+## Docs
+
+See [full documentation](https://docs.rs/crabflow/latest/crabflow/).
+
+## Contributing
+
+cf. [CONTRIBUTING.md](CONTRIBUTING.md).
+
