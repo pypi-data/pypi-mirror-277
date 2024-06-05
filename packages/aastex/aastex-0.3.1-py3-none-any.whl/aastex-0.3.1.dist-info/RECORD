@@ -1,0 +1,9 @@
+aastex/__init__.py,sha256=n90jDTU41Ry7wierOKferitzepda4ISUr-4S4HAQ39I,50
+aastex/_aastex.py,sha256=2bHxUc5cUNKzkwOeDgoPSDHuZsEC2ak6QXYqsQvGAAg,12626
+aastex/_formatting.py,sha256=CnDSqaqw80onr3fmQWnT5C68Ir3_gYKtn-yViwu4uGI,1710
+aastex/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aastex/_tests/test_aastex.py,sha256=7QAJQO7seLCWgEgwL9D1dkWv5h-Sh2O0rSrNS8yYdiA,7048
+aastex-0.3.1.dist-info/METADATA,sha256=Q5TzBtzfDR9R4WfVZhTjVKeJxK0HWaXtRS-IF_QPPIw,1858
+aastex-0.3.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+aastex-0.3.1.dist-info/top_level.txt,sha256=yo0kVo3F5VlY8LjXf8XZ8fbl3RQgt2JgfwURjLJiti0,7
+aastex-0.3.1.dist-info/RECORD,,
