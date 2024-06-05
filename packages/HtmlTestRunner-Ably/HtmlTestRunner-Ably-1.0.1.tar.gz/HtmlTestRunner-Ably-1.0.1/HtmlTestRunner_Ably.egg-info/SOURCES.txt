@@ -1,0 +1,10 @@
+AUTHORS.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+HtmlTestRunner/.DS_Store
+HtmlTestRunner_Ably.egg-info/PKG-INFO
+HtmlTestRunner_Ably.egg-info/SOURCES.txt
+HtmlTestRunner_Ably.egg-info/dependency_links.txt
+HtmlTestRunner_Ably.egg-info/top_level.txt
