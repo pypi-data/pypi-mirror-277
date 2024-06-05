@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+tiny_ai_client/__init__.py
+tiny_ai_client/anthropic_.py
+tiny_ai_client/models.py
+tiny_ai_client/openai_.py
+tiny_ai_client/tools.py
+tiny_ai_client/vision.py
+tiny_ai_client.egg-info/PKG-INFO
+tiny_ai_client.egg-info/SOURCES.txt
+tiny_ai_client.egg-info/dependency_links.txt
+tiny_ai_client.egg-info/requires.txt
+tiny_ai_client.egg-info/top_level.txt
