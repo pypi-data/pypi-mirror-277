@@ -1,0 +1,6 @@
+frame_averaging_pytorch/__init__.py,sha256=A_X5WiD5eA4jfCuDSo3jtmPcaAAe436QpCOLMPgiEig,105
+frame_averaging_pytorch/frame_averaging.py,sha256=VsudTi5sgiYl9oQTANaqzDnHB0bng73lF_wJZhMckFo,5894
+frame_averaging_pytorch-0.0.18.dist-info/METADATA,sha256=kVmJo7HCNrMr_nPxiRhmDKw2o8Dgs_afyQt598DCqDs,4593
+frame_averaging_pytorch-0.0.18.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+frame_averaging_pytorch-0.0.18.dist-info/licenses/LICENSE,sha256=E7RGS7kpJIStk5za_-4DVhWEAamf65EU0CNML25mq4c,1066
+frame_averaging_pytorch-0.0.18.dist-info/RECORD,,
