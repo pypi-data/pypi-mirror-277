@@ -1,0 +1,11 @@
+swmfpy/__init__.py,sha256=tDZkCdN1TlFOQY-wETwNNEQ8TyHvIzTBvLkjuKRAlIs,2340
+swmfpy/io.py,sha256=LXkB4N-Cy-VSuQNPgbQYfIEsHPZDLII7lTtXZ44VIpQ,11563
+swmfpy/paramin.py,sha256=Tdme-BB6U-sZPWh-zGXN3jZGB6taUnB98mn8uH6fSYY,5387
+swmfpy/tecplottools.py,sha256=-CXt3GeYmC3MjLR51OJhkmpbEzKK0vd3sy4b_jynkqc,23657
+swmfpy/tools.py,sha256=3k9tClgXwOIftHcBog6K7U8TEVxCTlz7NKp09EHgzxk,1937
+swmfpy/web.py,sha256=tfOArM5FfghCUCtSFgpZcqQchQjw15-7f0drev4ZX3A,20987
+swmfpy-2024.1.dist-info/LICENSE,sha256=3IXI3x1RN4jDR2PonpWF1guc33zagcTgpq_VnboE3UU,7653
+swmfpy-2024.1.dist-info/METADATA,sha256=kx13F7MJoK4RBvUm1jxyKrSYyyw5E_c2_H295Glgq8g,4040
+swmfpy-2024.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+swmfpy-2024.1.dist-info/top_level.txt,sha256=x3e_6JF14IPPYWNHQVmSZQYiQ64d4Dt8_LYNWcQqozg,7
+swmfpy-2024.1.dist-info/RECORD,,
