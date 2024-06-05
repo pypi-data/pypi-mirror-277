@@ -1,0 +1,48 @@
+import typing
+import collections.abc
+import bpy.types
+
+GenericType1 = typing.TypeVar("GenericType1")
+GenericType2 = typing.TypeVar("GenericType2")
+
+def color_add(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+):
+    """Add new color to active palette
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    """
+
+    ...
+
+def color_delete(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+):
+    """Remove active color from palette
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    """
+
+    ...
+
+def new(
+    override_context: bpy.types.Context | dict[str, typing.Any] | None = None,
+    execution_context: int | str | None = None,
+    undo: bool | None = None,
+):
+    """Add new palette
+
+    :type override_context: bpy.types.Context | dict[str, typing.Any] | None
+    :type execution_context: int | str | None
+    :type undo: bool | None
+    """
+
+    ...
