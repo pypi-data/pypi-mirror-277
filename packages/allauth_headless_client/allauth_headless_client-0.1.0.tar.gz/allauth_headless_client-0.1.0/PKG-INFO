@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: allauth_headless_client
+Version: 0.1.0
+Summary: A headless client for django-allauth
+Author-email: Stephan Fitzpatrick <knowsuchagency@gmail.com>
+Classifier: License :: OSI Approved :: Apache Software License
+Project-URL: Home, https://github.com/knowsuchagency/allauth_headless_client
