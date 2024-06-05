@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: neurotool
+Version: 0.0.1
+Summary: LFP and spikes processing
+Home-page: https://github.com/ivanmysin/NeuroTools
+Author: Ivan Mysin, Sergey Dubrovin, Sergey Skorokhod, Artem Vasilev
+Author-email: imysin@mail.ru
+Project-URL: Documentation, https://github.com/ivanmysin/NeuroTools/tree/master/docs
+Keywords: brain rhythms neuron spike lfp place cells hippocampus
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.20.0
+Requires-Dist: scipy>=1.12.0
+
+# NeuroTools
+
+A Python module for LFP and spikes analysis. It includes a collection of routines for brain signals analysis, circular statistics and spatial maps.
+
+Please read the documentation https://github.com/ivanmysin/NeuroTools
+
+This module requires NumPy, SciPy. In addition, you will also need matplotlib to run the examples.
+
+The samples scripts illustrates the usage of functions. Results are plotted in figures similar to the sample images.
+
+## Installation
+
+We recommend using PyPI to install this package.
+
+```bash
+python3 -m pip install neurotools
+```
+
+Or, you can download the code and run the below line within the top level folder.
+```bash
+python3 setup.py install
+```
+## Authors
+
+The module is being developed by members of the Laboratory of the Neuron System Organization of the Institute of Theoretical and Experimental Biophysics of the Russian Academy of Sciences, Pushchino
+
+Ivan Mysin, Sergey Dubrovin, Sergey Skorokhod, Artem Vasilev
