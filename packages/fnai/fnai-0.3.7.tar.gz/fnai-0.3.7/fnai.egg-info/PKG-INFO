@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fnai
+Version: 0.3.7
+Summary: A Python library for AI-related functions
+Home-page: https://github.com/yourusername/fnai
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: opencv-python
+Requires-Dist: mediapipe
+Requires-Dist: deepface
+Provides-Extra: tensorflow
+Requires-Dist: tensorflow; platform_system != "Windows" and extra == "tensorflow"
+Requires-Dist: tensorflow-intel; platform_system == "Windows" and extra == "tensorflow"
