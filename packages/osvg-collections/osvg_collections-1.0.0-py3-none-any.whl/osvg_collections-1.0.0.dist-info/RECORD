@@ -1,0 +1,15 @@
+osvg_collections/__init__.py,sha256=JV1BST4tm-kWnYKQ-_YXJSGbDk5ZyQkSn-ElDKUrr64,73
+osvg_collections/base/parameters.py,sha256=zVPZC3zCpmNwuNXPWX4s1zVpfU0RAhZFdqhha2c6UEA,494
+osvg_collections/base/rectangle_shape.py,sha256=MUtWgN0QUitI3BL6_T1S5OAVE3vR38lgC1PzYZcFeQo,3503
+osvg_collections/base/rotated_group.py,sha256=uibcpLfEcfag-USrSNM6XVvo__-eR8NZs4GjcwtbLuc,1708
+osvg_collections/it/__init__.py,sha256=_24YvI10a2LycRYXmfV8s5i5Wtr8M_gPbkFmY838JZ4,23
+osvg_collections/it/network/__init__.py,sha256=lqi7sYt5y8Rapq9EA9ZLd2UKp72uWw2AuwMAeK5sbT4,266
+osvg_collections/it/network/cloud.py,sha256=PBdJTMNICzUK0Dxmlz2iJ7RR7R4MNvNq6-AaUkXrnlk,5069
+osvg_collections/it/network/firewall.py,sha256=brPXQnxCsvDRsZ0tinsGxofP2wn62qgrpCDL1kr22N4,3866
+osvg_collections/it/network/router.py,sha256=ZLhy_I1oHNShidJqPzr_uKdL16if9TUEFdW19b3_QAE,3426
+osvg_collections/it/network/rs_base.py,sha256=BvxajDVfiRVdJ9sC8kftN8im_wZq45q40cGML1-dygE,8591
+osvg_collections/it/network/switch.py,sha256=JG4FxntSe0MyA_Onhbumqw33_hRcok3vrdjeUG9_TV0,3446
+osvg_collections-1.0.0.dist-info/METADATA,sha256=lOB3XTtEaFjb-1uGL0K6jlkmAphhUQ3gzk6adg0gyIo,1803
+osvg_collections-1.0.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+osvg_collections-1.0.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+osvg_collections-1.0.0.dist-info/RECORD,,
