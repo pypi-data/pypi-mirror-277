@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+365sms.egg-info/PKG-INFO
+365sms.egg-info/SOURCES.txt
+365sms.egg-info/dependency_links.txt
+365sms.egg-info/requires.txt
+365sms.egg-info/top_level.txt
+three65smsapi/__init__.py
+three65smsapi/three65smsapi.py
