@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mtpynux
+Version: 1.0.0
+Summary: METATRADER PYTHON LINUX
+Home-page: https://github.com/pythonsystem/mtpynux
+Author: Original By Lucas Prett Campagna
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: plumbum ==1.7.0
+Requires-Dist: pyparsing ==2.4.7
+Requires-Dist: rpyc ==5.2.3
+
+METATRADER PYTHON LINUX
+
+python -m mtpynux --host 0.0.0.0 <python.exe>
+python -m mtpynux --port 18512 <python.exe>
+python -m mtpynux --wine wine.bin <python.exe>
