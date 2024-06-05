@@ -1,0 +1,11 @@
+tiny_ai_client/__init__.py,sha256=GVkqIRI8LV7GbMaTd0UUVGeVjTK4u0KYjED1zMJ-7XM,32
+tiny_ai_client/anthropic_.py,sha256=YOUQqkYqR9DQ4KLv0KPmZ-IDn3rb0vYaWCADxwJmHGA,6034
+tiny_ai_client/models.py,sha256=ec7lO-8jhNz-_X7QYQquJDkMbdvUJSDr2Y70hd9aPpk,6211
+tiny_ai_client/openai_.py,sha256=T60G8pXoPXSOKi5m-J-11eFt-PIWCFImpZEw4zADDWc,5072
+tiny_ai_client/tools.py,sha256=aMZV6yYcR9bsyX5HhncSzL7VfRyZYwfUHx11Fjuk-uU,1109
+tiny_ai_client/vision.py,sha256=a1LHQgpaKEc-FlkOCO401si4pfzR4HsYi3IP-F8qtn0,258
+tiny_ai_client-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tiny_ai_client-0.0.2.dist-info/METADATA,sha256=PeJOEaz76Gxrp9xaOTa61Qqu6AdxwzM1tU-199Sk47s,4952
+tiny_ai_client-0.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+tiny_ai_client-0.0.2.dist-info/top_level.txt,sha256=hmVCn36oKotTBRbUmM4KInOWlG57S6qS6_A-qb_QOLY,15
+tiny_ai_client-0.0.2.dist-info/RECORD,,
