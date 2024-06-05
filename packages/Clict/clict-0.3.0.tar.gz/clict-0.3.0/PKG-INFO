@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: Clict
+Version: 0.3.0
+Summary: Python Dict with classlike access to its contents (dot.notation,creates missing keys on the fly,...)
+License-File: LICENSE
