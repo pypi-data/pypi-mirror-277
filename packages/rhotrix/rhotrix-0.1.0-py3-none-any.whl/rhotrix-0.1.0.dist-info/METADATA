@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: rhotrix
+Version: 0.1.0
+Summary: A Python library to implement and manipulate Rhotrix matrices.
+Home-page: https://github.com/giulicrenna/rhotrix
+Author: Giuliano Crenna
+Author-email: giulicrenna@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE.TXT
+
+# Rhotrix Library
+
+The Rhotrix Library is a Python library designed to implement and manipulate Rhotrix matrices. Rhotrix matrices can be either rhomboidal or coupled matrices, providing a unique and specialized way to handle these mathematical structures.
+
+## Features
+
+- Initialize and manipulate Rhotrix matrices.
+- Perform matrix addition, subtraction, and multiplication.
+- Scalar multiplication with integer or float values.
+- Convert between rhomboidal and coupled matrix forms.
+- Generate identity matrices.
+- Extract the central element of the matrix, referred to as the "heart".
+
+## Installation
+
+To install the Rhotrix Library, you can simply clone this repository:
+
+```sh
+pip install rhotrix
+```
