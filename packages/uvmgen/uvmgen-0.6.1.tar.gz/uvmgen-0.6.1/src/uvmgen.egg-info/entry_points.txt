@@ -1,0 +1,3 @@
+[console_scripts]
+sudef = uvmgen.super_define:main
+uvmgen = uvmgen.uvmgen:main
