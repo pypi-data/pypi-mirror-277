@@ -1,0 +1,22 @@
+variables:
+  PYTHONDONTWRITEBYTECODE: "1"
+  HATCH_CACHE_DIR: "$CI_PROJECT_DIR/.cache/hatch"
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+stages:
+  - test
+
+test-job:
+  stage: test
+  image: docker-registry.tools.wmflabs.org/toolforge-python311-sssd-base:latest
+  cache:
+    - key: pip-python-3.11
+      paths:
+        - .cache/hatch
+        - .cache/pip
+  script:
+    - python3 -m venv /tmp/venv &&
+      . /tmp/venv/bin/activate &&
+      python3 -m pip install --upgrade pip &&
+      python3 -m pip install hatch &&
+      make check

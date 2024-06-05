@@ -1,0 +1,22 @@
+from flask import Flask
+from markupsafe import Markup
+
+from toolforge_i18n.flask_things import (
+	init_html_language_codes,
+	push_html_lang,
+	pop_html_lang,
+	assert_html_language_codes_empty,
+)
+
+
+test_app = Flask(__name__)
+
+
+def test_html_lang_stack() -> None:
+	with test_app.test_request_context():
+		init_html_language_codes()
+		assert push_html_lang('en') == MarkupSafe('lang="en" dir="ltr"')
+		assert push_html_lang('ar') == MarkupSafe('lang="ar" dir="rtl"')
+		assert pop_html_lang('ar') == MarkupSafe('')
+		assert pop_html_lang('en') == MarkupSafe('')
+		assert_html_language_codes_empty()
