@@ -1,0 +1,1 @@
+import{c_ as r,o as e,n as s,w as t,bj as c,z as o}from"./index-BVJsRopY.js";const n={};function d(a,_){return e(),s(o,{class:"card my-1",variant:"outlined"},{default:t(()=>[c(a.$slots,"default")]),_:3})}const f=r(n,[["render",d]]);export{f as C};
