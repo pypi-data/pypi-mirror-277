@@ -1,0 +1,9 @@
+opencv-python
+mediapipe
+deepface
+
+[:platform_system != "Windows"]
+tensorflow
+
+[:platform_system == "Windows"]
+tensorflow-cpu
