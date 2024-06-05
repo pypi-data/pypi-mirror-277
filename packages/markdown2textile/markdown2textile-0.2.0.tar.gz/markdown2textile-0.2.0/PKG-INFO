@@ -1,0 +1,64 @@
+Metadata-Version: 2.3
+Name: markdown2textile
+Version: 0.2.0
+Summary: This is a simple tool to convert markdown to textile. It's useful for handling redmine wiki.
+Project-URL: Documentation, https://github.com/magicwenli/markdown2textile#readme
+Project-URL: Issues, https://github.com/magicwenli/markdown2textile/issues
+Project-URL: Source, https://github.com/magicwenli/markdown2textile
+Author-email: irisTa56 <unknow@1.com>, magicwenli <yxnian@outlook.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: click
+Requires-Dist: panflute
+Requires-Dist: pypandoc
+Description-Content-Type: text/markdown
+
+# markdown2textile
+
+[![PyPI - Version](https://img.shields.io/pypi/v/markdown2textile.svg)](https://pypi.org/project/markdown2textile)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/markdown2textile.svg)](https://pypi.org/project/markdown2textile)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+
+## Installation
+
+```console
+pip install markdown2textile
+```
+
+## Usage
+
+This `markdown2textile` command-line utility converts a markdown file to a textile file or vice versa.
+
+If `i` `-input` receives file extension `.md` or `.markdown`, it will convert the markdown file to textile file.
+otherwise, it will convert the textile file to markdown file.
+
+```plaintext
+Usage: markdown2textile [OPTIONS]
+
+Options:
+  --version              Show the version and exit.
+  -i, --input FILENAME   The input file. Default is stdin.
+  -o, --output FILENAME  The output file. Default is stdout.
+  -h, --help             Show this message and exit.
+```
+
+## License
+
+`markdown2textile` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.

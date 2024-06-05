@@ -1,0 +1,89 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "markdown2textile"
+dynamic = ["version"]
+description = "This is a simple tool to convert markdown to textile. It's useful for handling redmine wiki."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "irisTa56", email = "unknow@1.com" },
+  { name = "magicwenli", email = "yxnian@outlook.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "click",
+  "pypandoc",
+  "panflute",
+]
+
+[project.urls]
+Documentation = "https://github.com/magicwenli/markdown2textile#readme"
+Issues = "https://github.com/magicwenli/markdown2textile/issues"
+Source = "https://github.com/magicwenli/markdown2textile"
+
+[project.scripts]
+markdown2textile = "markdown2textile.cli:markdown2textile"
+
+[tool.hatch.version]
+path = "src/markdown2textile/__about__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "coverage[toml]>=6.5",
+  "pytest",
+]
+[tool.hatch.envs.default.scripts]
+test = "pytest {args:tests}"
+test-cov = "coverage run -m pytest {args:tests}"
+cov-report = [
+  "- coverage combine",
+  "coverage report",
+]
+cov = [
+  "test-cov",
+  "cov-report",
+]
+
+[[tool.hatch.envs.all.matrix]]
+python = ["3.8", "3.9", "3.10", "3.11", "3.12"]
+
+[tool.hatch.envs.types]
+dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/markdown2textile tests}"
+
+[tool.coverage.run]
+source_pkgs = ["markdown2textile", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/markdown2textile/__about__.py",
+]
+
+[tool.coverage.paths]
+markdown2textile = ["src/markdown2textile", "*/markdown2textile/src/markdown2textile"]
+tests = ["tests", "*/markdown2textile/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
