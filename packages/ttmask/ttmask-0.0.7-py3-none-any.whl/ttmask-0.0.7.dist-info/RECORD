@@ -1,0 +1,14 @@
+ttmask/__init__.py,sha256=m6XJHGQYZG-v8d6NkekqDj8cCRpvgnxrSKL6TviYru0,473
+ttmask/_cli.py,sha256=nGHzKOj5_5Xz88IUV-_QrezC9pw4BaW28dygVxaL9Qk,46
+ttmask/cone.py,sha256=H4hnqKWS5PCb2TkoDDOtzUIHzYUBPWImGIHx7tz2UaY,2332
+ttmask/cube.py,sha256=4I2wC7ehsqboyHOBMi07ZoA82nXiDxEhcf7FziTV9rw,1430
+ttmask/cuboid.py,sha256=tSl29oX68Keqc_dwBq2WgP8Da-3J--Jlibyl4pA3EEw,1877
+ttmask/cylinder.py,sha256=yJU2A2aaKz7HhP3DIrwU4xYygA_nOEEPpjjrDYElyqQ,1794
+ttmask/ellipsoid.py,sha256=g42ySNLoIRJsE_aSvD9ukIFeCcRHgGjOTrESc4IYgGI,1729
+ttmask/py.typed,sha256=esB4cHc6c07uVkGtqf8at7ttEnprwRxwk8obY8Qumq4,187
+ttmask/sphere.py,sha256=cgv2q9q649HNebEL0w-ZjECHDyqUsdD9TvFMuVY0RxY,1512
+ttmask-0.0.7.dist-info/METADATA,sha256=qj3VsneXV8ScLW5UbSnO0m8bZLCACsi8Xe6mzprs3EU,1897
+ttmask-0.0.7.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+ttmask-0.0.7.dist-info/entry_points.txt,sha256=biEmf0T0gUXlI1VNQHW3xZpNg820rr70y3Cn23U4A5E,38
+ttmask-0.0.7.dist-info/licenses/LICENSE,sha256=86woeR5SiqWhULG5IzF2yKa4cwBkDz9drHhMNYBtv-8,1499
+ttmask-0.0.7.dist-info/RECORD,,
