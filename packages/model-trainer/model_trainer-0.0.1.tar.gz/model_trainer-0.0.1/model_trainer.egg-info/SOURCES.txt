@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+model-trainer/__init__.py
+model-trainer/data_splitting.py
+model-trainer/model_training.py
+model_trainer.egg-info/PKG-INFO
+model_trainer.egg-info/SOURCES.txt
+model_trainer.egg-info/dependency_links.txt
+model_trainer.egg-info/requires.txt
+model_trainer.egg-info/top_level.txt
