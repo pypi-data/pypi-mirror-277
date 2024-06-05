@@ -1,0 +1,17 @@
+fasthtml/__init__.py,sha256=_BBo8vx8NmFBd-DitcK1mTrt-mSL7vmnlPkQ0ko_lYw,111
+fasthtml/_modidx.py,sha256=uio4y5gnSxtAwbzAbE7ZVM7rzhtsGjgiuY3CsmweUFY,4810
+fasthtml/all.py,sha256=kwBQoCzJ2n4BpoylbObjxliP5S7n6Vv1cqETcJUguq8,155
+fasthtml/authmw.py,sha256=ft5L_DqJ88DXPVWxCz4WE6XXSXEB5g0-UzaRMIvCvEE,2026
+fasthtml/cli.py,sha256=OuTaRVMiBA5L6vmirIekOeiJatnkaMzXzAkU_OVCzfA,160
+fasthtml/components.py,sha256=A460uM6BhuRhMIcYJY9NwuvXqdlrz42PPzLhRBKaCUQ,5119
+fasthtml/core.py,sha256=ErzOZBX0N7CfMFosofqN571mxtzDq99tSpJuv_ayyzg,9830
+fasthtml/fastapp.py,sha256=ZjUbLtqThAYqXxPVHrQeoAy4y2Om_WLTHuxNkyp3RQU,1087
+fasthtml/oauth.py,sha256=UUH8rBcQwbSb9Y2uhZz9kOzK4SrZpwgJSS_Q1wIeD2Y,3555
+fasthtml/starlette.py,sha256=hCVpfTXhf0bMO06jwk8OshLvWzKL88JHVONSNHKG--Q,1200
+fasthtml/xtend.py,sha256=LJ1DhgotleKW7MYUkoP4WntE-7OtNwZPLiZTT9D6fMk,3486
+python_fasthtml-0.0.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+python_fasthtml-0.0.8.dist-info/METADATA,sha256=RMaGLaubc3GKJ6uZPKQHQKncViLpUSITAT70G1XoNFo,3716
+python_fasthtml-0.0.8.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+python_fasthtml-0.0.8.dist-info/entry_points.txt,sha256=4ZNtwxLP3iIsndHNv_cp6BC_1BHFUM2Oq6PdaTPBDyU,38
+python_fasthtml-0.0.8.dist-info/top_level.txt,sha256=3Y8ynUVnZshZl3n8eO_6SrDIrmO29VSnMInqgDmAzU4,9
+python_fasthtml-0.0.8.dist-info/RECORD,,
