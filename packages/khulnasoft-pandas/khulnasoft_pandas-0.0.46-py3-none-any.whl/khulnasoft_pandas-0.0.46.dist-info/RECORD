@@ -1,0 +1,11 @@
+khulnasoft_pandas/__init__.py,sha256=WvtDrm5o4jAYjOF-kumI_Il7bjdj2Nr-QuEWD_sgdXQ,23
+khulnasoft_pandas/_nbdev.py,sha256=xKQH4p-VJkfWtp7F9k2tEHEyuswfU62JrMJ3M_Cehyk,862
+khulnasoft_pandas/data.py,sha256=rVSBqNG5EMSxHCCcuztqpxmuFMYTdrVVoeQ1Gf8Mkpc,22365
+khulnasoft_pandas/data_cloud.py,sha256=MsIVctDppXJirjiOVy_nYesWRcm8xbZI874B_6Ho3-E,4700
+khulnasoft_pandas/utils.py,sha256=ihCCH5iBDbgo--Uc3hxO7Wh_g3F45FcyA5MgUjYNCWA,176
+khulnasoft_pandas/wrangle.py,sha256=EvT9dVOxQiUWkNBGMhQ-yVZCNpNTZjbg_Ss0-yILcuI,1331
+khulnasoft_pandas-0.0.46.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+khulnasoft_pandas-0.0.46.dist-info/METADATA,sha256=OYFTLJZ0yoobB7hD6uZZ18gtdZkqfiON9x0hxW8GKJU,7810
+khulnasoft_pandas-0.0.46.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+khulnasoft_pandas-0.0.46.dist-info/top_level.txt,sha256=8uhaqf_Tfbh2fEMl7ZMuClYGG9kE2_ALKZVLjy4JBmw,18
+khulnasoft_pandas-0.0.46.dist-info/RECORD,,
