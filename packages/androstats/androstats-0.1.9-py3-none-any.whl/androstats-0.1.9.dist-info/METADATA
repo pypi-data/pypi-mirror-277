@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: androstats
+Version: 0.1.9
+Summary: Stats for andrology
+Author: M-Jeffryes
+Author-email: michael@maleboxhealth.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: matplotlib (>=3.9.0,<4.0.0)
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: seaborn (>=0.13.2,<0.14.0)
+Description-Content-Type: text/markdown
+
+# AndroStats
