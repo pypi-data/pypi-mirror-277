@@ -1,0 +1,84 @@
+# This file is part of fm-weck: executing fm-tools in containerized environments.
+# https://gitlab.com/sosy-lab/software/fm-weck
+#
+# SPDX-FileCopyrightText: 2024 Dirk Beyer <https://www.sosy-lab.org>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fm-weck"
+requires-python = ">= 3.10"
+dynamic = ["version"]
+authors = [{ name = "Henrik Wachowitz", email = "henrik.wachowitz@ifi.lmu.de" }]
+maintainers = [
+    { name = "Henrik Wachowitz", email = "henrik.wachowitz@ifi.lmu.de" },
+]
+readme = "README.md"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "tomli >= 2.0; python_version <= '3.10'",
+    "pyyaml >= 6.0",
+    "fm-tools >= 0.2.3",
+]
+
+[tool.hatch.version]
+path = "src/fm_weck/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fm_weck"]
+artifacts = ["*.prp"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"fm-tools/data/" = "fm_weck/resources/fm_tools/"
+
+[project.scripts]
+fm-weck = "fm_weck.__main__:main"
+
+[tool.ruff]
+line-length = 120
+exclude = ["src/fm_weck/resources/fm-tools", "fm-tools"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+]
+
+[tool.hatch.envs.test]
+dependencies = [
+    "coverage[toml]",
+    "pytest",
+    "pytest-cov",
+    "pytest-mock",
+    "pyfakefs",
+    "pytest-subprocess",
+]
+
+scripts.cov = "pytest --cov=src/fm_weck --cov-report=xml --cov-report=term test/"
+scripts.verbose = "pytest -vv test/"
+
+
+[[tool.hatch.envs.test.matrix]]
+python = ["3.10", "3.11", "3.12"]

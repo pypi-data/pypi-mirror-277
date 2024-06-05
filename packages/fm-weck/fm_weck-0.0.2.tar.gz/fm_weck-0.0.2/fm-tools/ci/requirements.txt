@@ -1,0 +1,14 @@
+argcomplete>=1.9.4
+black>=23.1.0
+httpx[http2]>=0.25.0
+Jinja2==3.1.2
+jsonschema>=4.19.2
+json-schema-for-humans==0.41.8
+linkchecker>=10.1.0
+lxml>=4.8.0
+markdown>=3.3.6
+pandas>=1.5.2
+progressbar2>=4.2.0
+pyyaml>=5.4.1
+requests>=2.31.0
+yq>=3.1.0

@@ -1,0 +1,25 @@
+// This file is part of fm-weck: executing fm-tools in containerized environments.
+// https://gitlab.com/sosy-lab/software/fm-weck
+//
+// SPDX-FileCopyrightText: 2024 Dirk Beyer <https://www.sosy-lab.org>
+//
+// SPDX-License-Identifier: Apache-2.0
+
+= Early Exploration of envExec
+
+== RQ 1: Is using the API faster than using the CLI?
+
+Quick setup:
++ I implemented the API using the official go client library for podman.
++ For comparison I invoke the same command using the CLI in go.
+
+The results are as follows:
+
+- Even after investing multiple hours into the API, its still not fully correct; The API is about .1s faster than the CLI,
+but I have a feeling that this is because i still ignore some guarantees.
+- The API documentation is spread out over multiple different Sites; I only got as far as I am now by reading source code
+and combining the doc from the REST Api with what I assume reflects the go client library.
+
+== RQ 2: Does benchexec work with podman / docker on non linux systems?
+
+Setup: I have an Intel MacBook set up with docker.
