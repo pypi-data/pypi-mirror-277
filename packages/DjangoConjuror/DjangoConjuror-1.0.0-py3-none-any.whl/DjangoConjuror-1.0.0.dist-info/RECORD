@@ -1,0 +1,12 @@
+conjuror/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conjuror/cli.py,sha256=0pN-O0tCYuFhaTJp6AAM2ZtNqWCa0nNJJFd6p7xSnjk,2379
+conjuror/dbm.py,sha256=w-udwZGx8dpmLhg-iM7J_Nvjavs2ITHmQdpWnaxyLlE,2712
+conjuror/runcommands.py,sha256=DdPiixUx-2XI5xphC4ucselY28xgFMU-sVQ7Cp9ATDI,5893
+conjuror/Crud/Cruds.py,sha256=Q53fXfQa2775IOFGuN3XifJXp0KhJ-cs2vFm8LnUcO0,1869
+conjuror/Crud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DjangoConjuror-1.0.0.dist-info/License,sha256=dSvHKBVJvZDpHHFLb8DollWEFS8n3Mi2bMEDauMtUKA,1348
+DjangoConjuror-1.0.0.dist-info/METADATA,sha256=F_dlgvYU5PN_PPtosdhMFlZX3oarUSJwMwz1rAw8F_4,3594
+DjangoConjuror-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+DjangoConjuror-1.0.0.dist-info/entry_points.txt,sha256=zbzyZNW9HaSkZSJY9GlPC6jgVPcwHC0cu9RpynvNTAI,47
+DjangoConjuror-1.0.0.dist-info/top_level.txt,sha256=YrXIkCU5StFItufg-la0AHF3huG2pWEfs-p21R0D1K8,9
+DjangoConjuror-1.0.0.dist-info/RECORD,,
