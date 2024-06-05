@@ -1,0 +1,11 @@
+pp3/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pp3/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pp3/toolkit/__init__.py,sha256=OEexRiEf9cdDeZSNLPUNXtXa9GIys95QIsI1nyhBVyE,361
+pp3/toolkit/auth.py,sha256=KSYzSQkm3nTXIga53VHOSNY2XN84LHMrQrU0d_3e5oQ,2923
+pp3/toolkit/resource.py,sha256=LXNFAvt5W20Nw-HBknf8pVDNrHEMnl9zvHSf7-TcI5g,2265
+pp3/toolkit/utils.py,sha256=cIzyPid2IALSSTBfZNw-JgD60vQlxeAphDHUAHo2htg,1414
+pp3-0.1.1.dist-info/LICENSE.txt,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+pp3-0.1.1.dist-info/METADATA,sha256=hkvwmcmNwx9IiYntv7PLgQ7jJsbr7y7srboH9W74xCU,756
+pp3-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pp3-0.1.1.dist-info/top_level.txt,sha256=ZiGysOGhUpUCjtAOeyL8vptWvHVHDLZqcKc8aQ83MBw,4
+pp3-0.1.1.dist-info/RECORD,,
