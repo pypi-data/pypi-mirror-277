@@ -1,0 +1,15 @@
+openai>=1.25.0
+
+[dev]
+build
+pre-commit
+
+[lint]
+black>=23.10.0
+isort
+
+[test]
+coverage
+deepdiff>=1.7.0
+pytest
+pytest-cov
