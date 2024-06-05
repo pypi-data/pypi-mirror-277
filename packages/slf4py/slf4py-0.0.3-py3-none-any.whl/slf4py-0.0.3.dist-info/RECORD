@@ -1,0 +1,7 @@
+slf4py/__init__.py,sha256=67YTzMMfrzUIUbtNM1yESjeNXExTeTXCYD2hcr-XNs0,130
+slf4py/create_logger.py,sha256=r5KJ2FEpu6UIZdCAS4VsOgjWfOsKf0USQf0GDUaL4VY,666
+slf4py/set_logger.py,sha256=xmGlbsH37OMSrKF83goXFcOD8Qham8tkToMTqsOrqbA,970
+slf4py-0.0.3.dist-info/METADATA,sha256=lgtFboy6J5rgDya4o4LdY-5AT0CkwLWMwtwCHfj_dCY,714
+slf4py-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+slf4py-0.0.3.dist-info/top_level.txt,sha256=4rTGL9B4eD2URIwXRaGzoPURBGOVIFAdLDBymFVK118,7
+slf4py-0.0.3.dist-info/RECORD,,
