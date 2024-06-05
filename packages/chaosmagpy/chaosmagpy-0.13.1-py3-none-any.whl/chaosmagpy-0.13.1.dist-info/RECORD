@@ -1,0 +1,17 @@
+chaosmagpy/__init__.py,sha256=FzWYxUNbF0zYf6eh9GlnqCyBnaEZ8-oENLz_YeRx0L4,1674
+chaosmagpy/chaos.py,sha256=miRPETeHdCg5_ouDkxPdXpqrzx_QiM2o2b9j6Cg4iZk,116430
+chaosmagpy/config_utils.py,sha256=oV5VGcm7yabyRBQ6gdmBmye-uyuNkbLZXfYNEvqbNDg,10159
+chaosmagpy/coordinate_utils.py,sha256=UGi1FQqph9kXXd5NZaTQdJdVAxIxgdqfTzFGEDtFZUM,63485
+chaosmagpy/data_utils.py,sha256=_X-S9BrDdCa_ENGrH4umvYBsvz-IPJe50JkT05XJ-jw,20936
+chaosmagpy/model_utils.py,sha256=AgiehPZVi---w7URyDB5upXShZAhj4yib6TankKXKjI,41805
+chaosmagpy/plot_utils.py,sha256=urUMLijz7dGInPNm21f7W3-RW4nh_Fj8tl_lerrzL5A,11866
+chaosmagpy/lib/Earth_conductivity.dat,sha256=08WTF27cr45N7zumnL_X4i4r-CiYrfWPlUY_HL3FVu0,930
+chaosmagpy/lib/RC_index.h5,sha256=lice92JwC14zqqTmEReD7ckWor1XehMLLoiYXnJ4O7Y,7823347
+chaosmagpy/lib/frequency_spectrum_gsm.npz,sha256=0ZwhySWCvrU4CObF1wU-l3ksO6fs4C6JlH-cCuE41t8,64031
+chaosmagpy/lib/frequency_spectrum_sm.npz,sha256=6JFbAcsQCoNoAWOXKcdvhKae_pkicSCGE5iGAeheTYg,64027
+chaosmagpy/lib/ne_110m_coastline.zip,sha256=ZkRJs5BwAn6IKrspWXTRgq_sGMohEHJz0X6ei_b2SBc,85352
+chaosmagpy-0.13.1.dist-info/LICENSE,sha256=7LFoyl6z6WPmrNa143AngxoyQCfGixelGR4PDpFmfv0,1602
+chaosmagpy-0.13.1.dist-info/METADATA,sha256=hEAXfUEKV17Ta_qfTHLsO2Hvz0Ka_1c8x-xTOh2AD3E,6792
+chaosmagpy-0.13.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+chaosmagpy-0.13.1.dist-info/top_level.txt,sha256=eJ1av2egGTQKe6PCzqZzWTLv6QfdbAVDbV8kXY3-RTw,11
+chaosmagpy-0.13.1.dist-info/RECORD,,
