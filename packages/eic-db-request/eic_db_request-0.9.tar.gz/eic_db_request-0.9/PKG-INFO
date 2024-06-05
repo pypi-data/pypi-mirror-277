@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: eic-db-request
+Version: 0.9
+Summary: This library is used to request the API to get informations stored in the EIC database.
+Author: EIC
+Requires-Dist: requests
