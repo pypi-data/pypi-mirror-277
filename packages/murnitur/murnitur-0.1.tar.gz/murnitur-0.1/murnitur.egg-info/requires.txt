@@ -1,0 +1,5 @@
+requests
+openlit
+deepeval
+transformers>=4.39.3
+pandas
