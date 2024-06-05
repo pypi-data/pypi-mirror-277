@@ -1,0 +1,12 @@
+ipython
+pyzmq
+jupyter
+tensorflow
+keras
+scikit-learn
+matplotlib
+numpy
+pandas
+pandas_ta
+tf2onnx
+mtpynux

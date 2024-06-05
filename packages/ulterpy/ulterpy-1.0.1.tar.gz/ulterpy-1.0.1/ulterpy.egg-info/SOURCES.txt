@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.txt
+requirements.txt
+setup.cfg
+setup.py
+ulterpy/__init__.py
+ulterpy.egg-info/PKG-INFO
+ulterpy.egg-info/SOURCES.txt
+ulterpy.egg-info/dependency_links.txt
+ulterpy.egg-info/requires.txt
+ulterpy.egg-info/top_level.txt
