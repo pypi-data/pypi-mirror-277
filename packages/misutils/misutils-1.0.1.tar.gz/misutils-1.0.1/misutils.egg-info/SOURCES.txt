@@ -1,0 +1,10 @@
+pyproject.toml
+setup.py
+mis_utils_con_init/__init__.py
+mis_utils_con_init/operaciones.py
+mis_utils_con_init/traducciones.py
+mis_utils_con_init/validaciones.py
+misutils.egg-info/PKG-INFO
+misutils.egg-info/SOURCES.txt
+misutils.egg-info/dependency_links.txt
+misutils.egg-info/top_level.txt
