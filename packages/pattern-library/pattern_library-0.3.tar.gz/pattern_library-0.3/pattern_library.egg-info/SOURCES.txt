@@ -1,0 +1,8 @@
+README.txt
+setup.py
+pattern_library/__init__.py
+pattern_library/pattern_library.py
+pattern_library.egg-info/PKG-INFO
+pattern_library.egg-info/SOURCES.txt
+pattern_library.egg-info/dependency_links.txt
+pattern_library.egg-info/top_level.txt
