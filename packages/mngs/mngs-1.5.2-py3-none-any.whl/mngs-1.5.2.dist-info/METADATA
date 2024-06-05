@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: mngs
+Version: 1.5.2
+Summary: For lazy python users (monogusa people in Japanse), especially in ML/DSP fields
+Home-page: https://github.com/ywatanabe1989/mngs
+Author: ywatanabe1989
+Author-email: ywata1989@gmail.com
+License: MIT
+Keywords: utils,utilities,python,machine learning
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: GitPython
+Requires-Dist: Pillow
+Requires-Dist: PyYAML
+Requires-Dist: Pyarrow
+Requires-Dist: chardet
+Requires-Dist: geom-median
+Requires-Dist: h5py
+Requires-Dist: icecream
+Requires-Dist: ipdb
+Requires-Dist: ipython <8.0.0
+Requires-Dist: joblib
+Requires-Dist: julius
+Requires-Dist: matplotlib
+Requires-Dist: mne
+Requires-Dist: natsort
+Requires-Dist: numpy
+Requires-Dist: obspy
+Requires-Dist: openpyxl
+Requires-Dist: optuna
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: psutil
+Requires-Dist: pybids
+Requires-Dist: pyedflib
+Requires-Dist: pymatreader
+Requires-Dist: pyperclip
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
+Requires-Dist: pytest-env
+Requires-Dist: pytest-xdist
+Requires-Dist: readchar
+Requires-Dist: ripple-detection
+Requires-Dist: ruamel.yaml
+Requires-Dist: scikit-image
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: sktime
+Requires-Dist: sounddevice
+Requires-Dist: statsmodels
+Requires-Dist: sympy
+Requires-Dist: tensorpac
+Requires-Dist: termplotlib
+Requires-Dist: torch
+Requires-Dist: torchaudio
+Requires-Dist: torchsummary
+Requires-Dist: umap-learn
+Requires-Dist: wheel
+Requires-Dist: xarray
+Requires-Dist: xmltodict
+
+# monogusa (= lazy in Japanese)
+mngs is Python utilities for ML and DSP projects
+
+![CI](https://github.com/ywatanabe1989/mngs/actions/workflows/pypi_latest.yml/badge.svg)
+![CI](https://github.com/ywatanabe1989/mngs/actions/workflows/latest_release.yml/badge.svg)
+![CI](https://github.com/ywatanabe1989/mngs/actions/workflows/develop.yml/badge.svg)
+
+
+![Hard Working Sloth](./docs/hard_working_sloth.jpg)
+
+## Installation
+Due to frequent updates and occasional issues with backward compatibility, please specify the version of mngs when installing.
+``` bash
+$ pip install 'mngs==1.5.2'
+```
+
+## Galleries
+- [`mngs.io`](https://github.com/ywatanabe1989/mngs/tree/main/src/mngs/io#readme) Input / Output
+- [`mngs.path`](https://github.com/ywatanabe1989/mngs/tree/main/src/mngs/path#readme) Path
+- [`mngs.dsp`](https://github.com/ywatanabe1989/mngs/tree/main/src/mngs/dsp#readme) Digital Signal Processing
+- [`mngs.res`](https://github.com/ywatanabe1989/mngs/tree/main/src/mngs/res#readme) Resource
+- mngs.general
+- mngs.plt
+- mngs.ml
+- mngs.stats
+
+## Contact
+Yusuke Watanabe (ywata1989@gmail.com).
+
+
+
+
