@@ -1,0 +1,6 @@
+
+
+
+from .fine_tuning_job_wandb_integration_object import FineTuningJobWandbIntegrationObject
+
+FineTuningJobIntegration = FineTuningJobWandbIntegrationObject
