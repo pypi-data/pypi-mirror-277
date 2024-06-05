@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+fediboat/__init__.py
+fediboat/cli.py
+fediboat/feta.py
+fediboat.egg-info/PKG-INFO
+fediboat.egg-info/SOURCES.txt
+fediboat.egg-info/dependency_links.txt
+fediboat.egg-info/entry_points.txt
+fediboat.egg-info/top_level.txt
+fediboat/api/__init__.py
+fediboat/api/account.py
