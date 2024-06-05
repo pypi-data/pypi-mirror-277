@@ -1,0 +1,13 @@
+basic_type_operations/README.md,sha256=FFLwuMtyvCgG9vmXD7UTJPgWlis9C1wPvdjvMDAjjMs,1373
+basic_type_operations/__init__.py,sha256=IBFr4k2x1UdBjvPsOV_wyL3QCowx5PU8I1jWjGoZuas,157
+basic_type_operations/date_operation.py,sha256=HECyk3IPeqzFkjSCCUAS5PKXpiDCxUX9pMyDKG9DWec,27319
+basic_type_operations/dict_operation.py,sha256=X5Ssddxf8L0kSLn0C4arFUYCzKT-uanpEITmaB99Ygs,2738
+basic_type_operations/list_operation.py,sha256=EMTXvLu6pmoAax1bTSOG3r65DH8x3cyG3FAB_dEL_jI,16683
+basic_type_operations/number_operation.py,sha256=zXZEoR6YZUkEB_pbcg1TGdiORDBTkG3pTGRX0V31X7I,8675
+basic_type_operations/str_operation.py,sha256=HDRvtG9TUFutD0orEVItFu56Z_Tk7hZgOCMqHsAd18Y,29111
+basic_type_operations/tuple_operation.py,sha256=h744tmXm599rU8UxD6L6lUaFYjk-0GOgrnmJ6OObPXM,979
+basic_type_operations-0.1.1.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+basic_type_operations-0.1.1.dist-info/METADATA,sha256=YKluoGQNPOeXDhDy13OvRQ8CKEE1y1TTGLNc_TceZLE,2277
+basic_type_operations-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+basic_type_operations-0.1.1.dist-info/top_level.txt,sha256=QNeBgQTrlNzIGLS6etOawWNBLCQX_qxF9iSKGn4iibM,22
+basic_type_operations-0.1.1.dist-info/RECORD,,
