@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: maithongpackage1
+Version: 0.22
+Summary: ตัวอย่างการสร้าง Package
+Home-page: https://github.com/Pick999999/my_package
+Author: Nutthavate
+Author-email: chaikaew902@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# My Package
+
+---> python setup.py sdist bdist_wheel
+---> twine upload dist/*
+This is a simple example package โดย Nutv.
