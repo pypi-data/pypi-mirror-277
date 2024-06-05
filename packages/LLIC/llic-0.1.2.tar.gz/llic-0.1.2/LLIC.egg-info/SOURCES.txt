@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+LLIC.egg-info/PKG-INFO
+LLIC.egg-info/SOURCES.txt
+LLIC.egg-info/dependency_links.txt
+LLIC.egg-info/requires.txt
+LLIC.egg-info/top_level.txt
