@@ -1,0 +1,10 @@
+COPYING
+README.md
+pyproject.toml
+src/yapcc/__init__.py
+src/yapcc/cli.py
+src/yapcc.egg-info/PKG-INFO
+src/yapcc.egg-info/SOURCES.txt
+src/yapcc.egg-info/dependency_links.txt
+src/yapcc.egg-info/entry_points.txt
+src/yapcc.egg-info/top_level.txt

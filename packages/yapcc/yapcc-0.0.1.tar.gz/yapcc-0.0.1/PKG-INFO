@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: yapcc
+Version: 0.0.1
+Summary: Yet Another Python C compiler
+Author-email: Jon Webb <jon@jonwebb.dev>
+Project-URL: Homepage, https://github.com/jon-codes/yapcc
+Project-URL: Repository, https://github.com/jon-codes/yapcc.git
+Project-URL: Issues, https://github.com/jon-codes/yapcc/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: COPYING
+
+# yapcc
+
+> Yet Another Python C Compiler [^1]
+
+A Python implementation of the learning C compiler from the book [`Writing a C Compiler`](https://nostarch.com/writing-c-compiler) by Nora Sandler.
+
+```
+usage: yapcc [-h] [--lex | --parse | --codegen] [-S] file
+
+Yet Another Python C Compiler
+
+positional arguments:
+  file
+
+options:
+  -h, --help  show this help message and exit
+  --lex       lex only
+  --parse     lex and parse only
+  --codegen   lex, parse, and generate assembly only
+  -S          emit assembly
+```
+
+[^1]: not to be confused with:
+    - `yacc`: Yet Another Compiler-Compiler
+    - `pcc`: Portable C Compiler
