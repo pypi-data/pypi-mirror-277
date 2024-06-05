@@ -1,0 +1,7 @@
+setup.py
+fang/__init__.py
+fang/calc.py
+zxf_module.egg-info/PKG-INFO
+zxf_module.egg-info/SOURCES.txt
+zxf_module.egg-info/dependency_links.txt
+zxf_module.egg-info/top_level.txt
