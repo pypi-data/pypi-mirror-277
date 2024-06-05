@@ -1,0 +1,1 @@
+# MOVED TO [SerialManager](https://pypi.org/project/SerialManager/)
