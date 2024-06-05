@@ -1,0 +1,16 @@
+- implementation: nodestream_plugin_splunk:SplunkExtractor
+  arguments: 
+    host: !config 'host'
+    port: !config 'port'
+    username: !config 'username'
+    password: !config 'password'
+    search_query: !config 'search_query'
+
+- implementation: nodestream.interpreting:Interpreter
+  arguments:
+    interpretations:
+      - type: source_node
+        node_type: Source
+        key: 
+          value: !jmespath 'source'
+        
