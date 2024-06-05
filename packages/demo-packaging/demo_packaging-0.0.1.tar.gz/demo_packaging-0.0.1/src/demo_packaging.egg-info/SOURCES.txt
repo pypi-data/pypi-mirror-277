@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/demo_packaging/__init__.py
+src/demo_packaging/demo.py
+src/demo_packaging.egg-info/PKG-INFO
+src/demo_packaging.egg-info/SOURCES.txt
+src/demo_packaging.egg-info/dependency_links.txt
+src/demo_packaging.egg-info/top_level.txt
