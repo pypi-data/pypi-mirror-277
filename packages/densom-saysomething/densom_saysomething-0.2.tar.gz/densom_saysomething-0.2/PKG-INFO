@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: densom-saysomething
+Version: 0.2
+Summary: A simple text to speech implementation.
+Home-page: https://github.com/densom/saysomething
+Author: Dennis Somerville
+Description-Content-Type: text/markdown

@@ -1,0 +1,6 @@
+README.md
+setup.py
+densom_saysomething.egg-info/PKG-INFO
+densom_saysomething.egg-info/SOURCES.txt
+densom_saysomething.egg-info/dependency_links.txt
+densom_saysomething.egg-info/top_level.txt
