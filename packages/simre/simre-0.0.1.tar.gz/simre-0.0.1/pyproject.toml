@@ -1,0 +1,37 @@
+[project]
+name = "simre"
+version = "0.0.1"
+authors = [
+  { name="María Isabel Limaylla", email="mlimaylla@gmail.com" },
+]
+description = "Requirements Similarity tool for Software Product Lines"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = [
+  'Software Product Lines',
+  'Similar Requirements'
+]
+dependencies = [
+  "nltk",
+  "pandas",
+  "numpy",
+  "gensim",
+  "spacy",
+  "torch",
+  "sentence-transformers",
+  "bs4",
+  "uvlparser==2.0.1",
+  "lxml",
+  "scikit-learn",
+  "fasttext-wheel",
+  "gdown"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/sampleproject"
+Issues = "https://github.com/sampleproject/issues"
