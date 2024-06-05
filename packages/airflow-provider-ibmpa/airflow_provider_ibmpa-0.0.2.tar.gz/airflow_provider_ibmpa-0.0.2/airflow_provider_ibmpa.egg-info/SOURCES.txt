@@ -1,0 +1,15 @@
+.gitignore
+.ibmpa-registry.yaml
+README.md
+pyproject.toml
+airflow_provider_ibmpa.egg-info/PKG-INFO
+airflow_provider_ibmpa.egg-info/SOURCES.txt
+airflow_provider_ibmpa.egg-info/dependency_links.txt
+airflow_provider_ibmpa.egg-info/entry_points.txt
+airflow_provider_ibmpa.egg-info/requires.txt
+airflow_provider_ibmpa.egg-info/top_level.txt
+ibmpa_provider/__init__.py
+ibmpa_provider/hooks/__init__.py
+ibmpa_provider/hooks/ibmpa.py
+ibmpa_provider/operators/__init__.py
+ibmpa_provider/operators/ibmpa.py
