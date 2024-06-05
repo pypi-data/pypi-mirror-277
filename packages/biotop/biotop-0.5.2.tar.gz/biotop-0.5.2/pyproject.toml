@@ -1,0 +1,58 @@
+[project]
+
+name = "biotop"
+
+version = "0.5.2"
+
+description = "Semi-automated extrema detection in ECG and respiratory signals"
+
+readme = "README.md" 
+
+requires-python = ">=3.8"
+
+license = {file = "LICENSE.txt"}
+
+keywords = ["ECG", "cardiac", "biosignals", "peak detection", "signal processing", "respiration"]
+
+authors = [
+  {name = "Floris van Vugt", email = "floris.van.vugt@umontreal.ca" }
+]
+
+maintainers = [
+  {name = "Floris van Vugt", email = "floris.van.vugt@umontreal.ca" }
+]
+
+
+
+dependencies = [
+ "neurokit2",
+ "py-ecg-detectors",
+ "matplotlib>3.7.0",
+ "scipy",
+ "numpy",
+ "biobabel",
+ "heartpy"
+]
+
+
+[project.urls]
+"Homepage" = "https://github.com/florisvanvugt/biotop"
+"Bug Reports" = "https://github.com/florisvanvugt/biotop/issues"
+"Source" = "https://github.com/florisvanvugt/biotop"
+
+
+
+[project.scripts]
+biotop = "biotop:ecg"
+respire = "biotop:respire"
+
+
+
+[build-system]
+# These are the assumed default build requirements from pip:
+# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+
