@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: json_rd
+Version: 1.0
+Summary: Recursive descent JSON parser written in pure Python
+Author: dangduomg
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# json-rd-parser
+Recursive descent JSON parser written in pure Python
