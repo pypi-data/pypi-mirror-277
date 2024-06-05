@@ -1,0 +1,15 @@
+kgraphservice/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kgraphservice/kg_comparator.py,sha256=9BMQK3pYDnik84DwB263O7yyy2Uqrrul6hWlyAwFlCo,422
+kgraphservice/kgraph_service.py,sha256=icYiKfu1u0vGBnF_TK5B9ObnuFK9W36VZB4scJ4lIlo,5420
+kgraphservice/kgslot_criterion.py,sha256=f9JZj10N1iXQspfFOwJFm1A97EZbGlT6XEQMjhagEOY,265
+kgraphservice/frame/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kgraphservice/frame/frame_query_executor.py,sha256=aYdnxRf4w6U4eiPkdAZWPI7Ogumec5mEKOah4J7ermo,468
+kgraphservice/frame/frame_query_generator.py,sha256=1MspMAoYFKX7nDlvRDpPgowNA7OWt2dvtYZeluDKEfU,7830
+kgraphservice/frame/frame_query_processor.py,sha256=i8vdLmizjMt78Po6V9UQB1qFz46z6H8oAYrv_4ojLoM,979
+kgraphservice/query/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kgraphservice/query/construct_query.py,sha256=DA-VisYGgzqL4WUd4669GCIKF-Fh1y-HGRyF7DL_pwQ,573
+kgraphservice-0.0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+kgraphservice-0.0.5.dist-info/METADATA,sha256=HVm2hRDEDaMV64TInvw3ih5iYcC1wy-eZ9GJgUQRv6s,758
+kgraphservice-0.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+kgraphservice-0.0.5.dist-info/top_level.txt,sha256=0phxUJ73Ri8TAtpLcsEeKfQZsGFWa7M5AlzvwcTyIe0,14
+kgraphservice-0.0.5.dist-info/RECORD,,
