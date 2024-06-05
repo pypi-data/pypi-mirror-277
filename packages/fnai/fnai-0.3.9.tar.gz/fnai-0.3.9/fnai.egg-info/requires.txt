@@ -1,0 +1,9 @@
+opencv-python
+mediapipe
+deepface
+
+[:platform_system != "Windows"]
+tensorflow==2.16.1
+
+[:platform_system == "Windows"]
+tensorflow-cpu==2.16.1
