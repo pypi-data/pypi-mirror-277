@@ -1,0 +1,2 @@
+[console_scripts]
+start_my_GUI = Vibrationology_Interactive_GUI_demo.maindemo:main
