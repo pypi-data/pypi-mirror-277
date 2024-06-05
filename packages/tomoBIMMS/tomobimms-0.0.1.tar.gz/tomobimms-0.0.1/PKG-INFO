@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tomoBIMMS
+Version: 0.0.1
+Summary: BIMMS python API
+Home-page: https://github.com/ThomasCouppey/tomoBIMMS.git
+Author: Thomas Couppey - Louis Regnacq - Florian Kolbl
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: andi-py
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: bimms
+Requires-Dist: pyEIT
+
+file: README.md
