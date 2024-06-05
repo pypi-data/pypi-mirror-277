@@ -1,0 +1,37 @@
+# Gene Mutation Detection Package
+
+The Gene Mutation Detection Package is a Python library that allows you to analyze DNA sequences and identify mutations. It provides information about the position of the mutation and prints the mutated region.
+
+# Installation: 
+
+You can install the package using pip: pip install gene-mutation-detection
+
+# Usage:
+
+1. Import the detectMutation function from the package:
+
+from gene_mutation_detection import detectMutation
+
+2. Provide the paths to your original and mutant DNA sequence files 
+
+original_fasta_file = 'C:/Users/Dell/Downloads/HEXA_datasets/ncbi_dataset/data/gene.fna'
+
+mutant_fasta_file = 'C:/Users/Dell/Downloads/HEXA_datasets/ncbi_dataset/data/gene-mut.fna'
+
+3. Call the detectMutation function:
+
+mutation_detection_result = detectMutation(original_fasta_file, mutant_fasta_file)
+print(mutation_detection_result)
+
+Note: you can provide path to original and mutant DNA sequence files in the function directly
+
+
+# Example Output:
+
+If a mutation is detected, the output will be similar to:
+
+Mutation detected in gene NC_000015.10:c72376014-72340924 at position 10920. Mutated region: AAAAAGAGTATTTTTTTTTT
+
+If no mutation is found, it will display:
+
+No mutation detecteted. 
