@@ -1,0 +1,10 @@
+CPred/CPred_NN.py,sha256=fa4H8Se6K5P8L1KgxKH5tMiWx_3zJm-rdmTr_1IkUDw,9134
+CPred/CPred_main.py,sha256=0WCRnTEcTqEDDq3bG4vYOQ4NqPDWHwr7r09OjDy9-fw,9802
+CPred/FeatureEngineering.py,sha256=Ox-41MzlufE3aMObpYeuVxBqDEWzrlu-5BZ5kae7t6I,18109
+CPred/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CPred/Data/Unimod_modifications.xlsx,sha256=F0g_12q13ER15CMnhaA2UDqbXq8uh-7fvoYjzjTJdSA,251839
+CPred-0.0.12.dist-info/LICENSE.txt,sha256=mIss5rXpPuoTTN6McpTgDcUOXnmOl5lopcYvmLMI9oY,11523
+CPred-0.0.12.dist-info/METADATA,sha256=NwGfNMnr-73fLOyAcfIJGdXktS62C-GsCjXPzsf1af8,17384
+CPred-0.0.12.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+CPred-0.0.12.dist-info/top_level.txt,sha256=qRhCUUUiml1qW46Ob7-1tNjMlo52bDDxHkjorfRfbXc,6
+CPred-0.0.12.dist-info/RECORD,,
