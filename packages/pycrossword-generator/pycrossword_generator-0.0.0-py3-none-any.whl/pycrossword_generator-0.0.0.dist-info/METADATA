@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: pycrossword-generator
+Version: 0.0.0
+Summary: A Python library and CLI tool for generating customizable crossword puzzles.
+Author-email: Vladyslav Novotnyi <psejjkuczo@proxiedmail.com>
+Maintainer-email: Vladyslav Novotnyi <psejjkuczo@proxiedmail.com>
+License: The MIT License (MIT)
+        
+        Copyright (c) 2024 to present Vladyslav Novotnyi and individual contributors.
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/fabelx/pycrossword-generator
+Project-URL: Bug Reports, https://github.com/fabelx/pycrossword-generator/issues
+Project-URL: Source, https://github.com/fabelx/pycrossword-generator
+Keywords: crossword,generator,puzzle
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai >=1.25.0
+Provides-Extra: dev
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Provides-Extra: lint
+Requires-Dist: black >=23.10.0 ; extra == 'lint'
+Requires-Dist: isort ; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: deepdiff >=1.7.0 ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+# Crossword Puzzle Generator
+
+___
+> ## Currently, in development
+___
+
+## About
+`pycrossword-generator` is a powerful Python library and CLI tool designed for creating custom crossword puzzles. 
+
+___
+
+## Installation
+```bash
+pip install pycrossword-generator
+```
+From source:
+```bash
+make install
+```
+or
+```bash
+pip install .
+```
+
+___
+
+## Usage (N/A)
+
+> ## There are several other libraries, such as [pycrossword](https://pypi.org/project/pycrossword/) and [crossword-generator](https://pypi.org/project/crossword-generator/), which may cause conflicts if you are using them in your project.
+
+See [documentation](docs/README.md) for more details.
+
+___
+
+### To-do
+- [ ] Add support for user-specified dimensions of the crossword grid.
+
+___
+
+## License
+`pycrossword-generator` is released under the MIT License.
+See the [LICENSE](LICENSE) file for license information.

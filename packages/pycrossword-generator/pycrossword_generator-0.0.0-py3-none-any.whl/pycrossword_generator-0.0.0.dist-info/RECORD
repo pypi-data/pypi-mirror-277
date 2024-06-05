@@ -1,0 +1,12 @@
+pycrossword/__init__.py,sha256=SUAemcLX0HjfA23UxvqRbnO4rskhL1KkIO3DgVINlQA,139
+pycrossword/__main__.py,sha256=xxtPiPWvVNLvgSupRo784WX5zrVMmsPvQlSnHdeHQrU,1358
+pycrossword/__version__.py,sha256=ShXQBVjyiSOHxoQJS2BvNG395W4KZfqMxZWBAR0MZrE,22
+pycrossword/logger.py,sha256=BabxyenftH8v_7_0G52D0z3wpPRMzUWv3AbXbM6-AhY,641
+pycrossword/crossword/__init__.py,sha256=5CWCX81zszZHD8wuh4c4kLIj24yX6QHA30qMVh_-LAM,77
+pycrossword/crossword/generator.py,sha256=c5Qppin9pXkUDpSyHgD1gKt5sU69T7h-M-tqCmM4F28,64
+pycrossword_generator-0.0.0.dist-info/LICENSE,sha256=edJlB3JpY_N8RiV3kCW-kazcW_lNp84sqzX1B3EMMoo,1124
+pycrossword_generator-0.0.0.dist-info/METADATA,sha256=7zkXpBN63FZic66i-dEEnZTWipaHld3OVcXlxrH06F4,3624
+pycrossword_generator-0.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pycrossword_generator-0.0.0.dist-info/entry_points.txt,sha256=jsdT1ud2Ab7Ek3i9gnUgbNw890Ms6TlU0Cxf8bMROIE,58
+pycrossword_generator-0.0.0.dist-info/top_level.txt,sha256=0ksOVaGucXz2--ZnVdldErkjdRnpUjED5M5WMS6cePA,12
+pycrossword_generator-0.0.0.dist-info/RECORD,,
