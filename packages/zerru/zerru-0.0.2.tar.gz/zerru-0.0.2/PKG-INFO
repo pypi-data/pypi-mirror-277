@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: zerru
+Version: 0.0.2
+Summary: Zer-ru — это модуль zer на русском! Для сокращения и автоматизации кода.
+Author: ZerProg
+License-File: LICENSE
+Requires-Dist: tqdm
