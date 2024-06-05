@@ -1,0 +1,11 @@
+[rattail.config.extensions]
+rattail_mailchimp = rattail_mailchimp.config:MailchimpConfigExtension
+
+[rattail.emails]
+rattail_mailchimp = rattail_mailchimp.emails
+
+[rattail.subcommands]
+import-mailchimp = rattail_mailchimp.commands:ImportMailChimp
+
+[rattail.typer_imports]
+rattail_mailchimp = rattail_mailchimp.commands
