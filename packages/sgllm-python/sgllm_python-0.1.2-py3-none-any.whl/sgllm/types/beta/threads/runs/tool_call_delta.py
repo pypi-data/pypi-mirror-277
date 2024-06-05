@@ -1,0 +1,15 @@
+
+from typing import Union
+from typing_extensions import Annotated
+
+from ....._utils import PropertyInfo
+from .function_tool_call_delta import FunctionToolCallDelta
+from .file_search_tool_call_delta import FileSearchToolCallDelta
+from .code_interpreter_tool_call_delta import CodeInterpreterToolCallDelta
+
+__all__ = ["ToolCallDelta"]
+
+ToolCallDelta = Annotated[
+    Union[CodeInterpreterToolCallDelta, FileSearchToolCallDelta, FunctionToolCallDelta],
+    PropertyInfo(discriminator="type"),
+]
