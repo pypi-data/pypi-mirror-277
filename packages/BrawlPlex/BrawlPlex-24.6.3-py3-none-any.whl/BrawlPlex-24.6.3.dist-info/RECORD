@@ -1,0 +1,11 @@
+BrawlPlex/__init__.py,sha256=LIZGnH1SVlPAq5NwH4OoVqr8Ap-thJHmxvhxKVA2RGQ,259
+BrawlPlex/brawlers.py,sha256=kpsx5M14rFgk456cCp84ctkRs6tg3fNYqSBeZtkue4k,1104
+BrawlPlex/clubs.py,sha256=Pzu2iMIRjl7TRYpi215kySwhVJutS03Xl3GaGFSmIt8,1268
+BrawlPlex/errors.py,sha256=m2doDMQtrdhy1XN6C0H8vsIJQwJ8EYwQC_NW5ZR0-vE,148
+BrawlPlex/events.py,sha256=OvmPqHNlNwiG7oeda3su8qLhns0_VN7BgcqzEBVd0Wo,469
+BrawlPlex/player.py,sha256=CTdBcYEjm3egyG3CK8t65r2vBOCHsg-iROd8RQL3oq4,1282
+BrawlPlex/rankings.py,sha256=t6oUOWoght9y9pYCHTNCN7nNYet8lF01vyEMMuTG7Lk,5678
+BrawlPlex-24.6.3.dist-info/METADATA,sha256=_IqxCPAk1p16BmRxz0Gzsw4Iy0Xa_0iN5do6_owuOgI,2317
+BrawlPlex-24.6.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+BrawlPlex-24.6.3.dist-info/top_level.txt,sha256=FrBzD_fW1du6w_wi1RLiqBSIA4tQ457Zog9eyk8LXKY,10
+BrawlPlex-24.6.3.dist-info/RECORD,,
