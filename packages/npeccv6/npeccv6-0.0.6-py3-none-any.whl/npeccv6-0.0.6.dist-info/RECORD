@@ -1,0 +1,16 @@
+npeccv6/__init__.py,sha256=yw6NS1T54WFpGNroPDVLlY1e0djm49wKKL1uf9t-Huw,252
+npeccv6/api.py,sha256=ZBXTKp6LaxgJIEvmYYuS6NEcr_KAzJDKpOAJv2anuBk,2723
+npeccv6/api_calls.py,sha256=2_vnDguURNGKF6NxVY-BqcxbzT4GWWDjXXOQRMGBeXo,395
+npeccv6/data.py,sha256=PanTzazP71K7O2p_W3Xi5OmxPg_SBdWqKZP7Yeeyy8Y,26560
+npeccv6/main_api.py,sha256=c5aXZp3cbUt-_8M0Uj_6Be9K3ZReT7ZMDOj0cn8PUjY,235
+npeccv6/model_func.py,sha256=9cKalwrFjf3aTLJhhe6mJcCOL1tk1JWdPUAsK0dyJgI,17681
+npeccv6/postprocessing.py,sha256=gbgXuohyzZ43Pjj6oqJ4xHVPhx3TOainlBETRTFtqGQ,13663
+npeccv6/predict.py,sha256=AR1LfotrFrjAa1IKn8Wj_uGw-Rv8wMZyUqreFW0h1FM,10504
+npeccv6/test_landmark_detection.ipynb,sha256=wW_azd9u4SzRH8HJ6PWaQ8SJafmNt0cyz0hi25Z6XlM,138369
+npeccv6/train.py,sha256=0DqBu0OtmQjWlycvJGn3EybJw23S9WRjpV8iIyjPvuw,2598
+npeccv6/utils.py,sha256=wW-QOPjEjWonxySdgVgYzwg3bkUzE9lGvOC1YEVar7Y,9676
+npeccv6-0.0.6.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+npeccv6-0.0.6.dist-info/METADATA,sha256=VklCScfGykNy52EMZdezFXX4Ww-iDlSaFhaisnmHMsU,1416
+npeccv6-0.0.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+npeccv6-0.0.6.dist-info/entry_points.txt,sha256=jCJorCNvBuAjckI7nugdN35TH_F5YF3YMlSJNPcR470,126
+npeccv6-0.0.6.dist-info/RECORD,,
