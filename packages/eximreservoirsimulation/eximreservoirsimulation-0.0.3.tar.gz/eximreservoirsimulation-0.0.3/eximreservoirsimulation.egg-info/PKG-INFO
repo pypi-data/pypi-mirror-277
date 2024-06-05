@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: eximreservoirsimulation
+Version: 0.0.3
+Summary: Explicit and Implicit Reservoir Simulation Solver
+Author-email: Muhammad Adhim Mulia <adhimmuliam@gmail.com>
+Project-URL: Homepage, https://github.com/adhimmulia/ExImReservoirSimulation
+Keywords: Explicit Reservoir Simulation, Implicit Reservoir Simulation, Reservoir Simulation
+Classifier: Programming Language :: Python
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: streamlit
+Requires-Dist: click
+
+# ExImReservoirSimulation
+Explicit and Implicit Reservoir Simulation Solver

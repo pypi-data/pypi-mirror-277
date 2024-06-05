@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eximreservoirsimulation"
+version = "0.0.3"
+dependencies = [
+    "numpy",
+    "pandas",
+    "plotly",
+    "streamlit",
+    "click"
+
+]
+requires-python = ">=3.11"
+authors = [
+    {name = "Muhammad Adhim Mulia", email = "adhimmuliam@gmail.com"}
+]
+description = "Explicit and Implicit Reservoir Simulation Solver"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["Explicit Reservoir Simulation, Implicit Reservoir Simulation, Reservoir Simulation"]
+classifiers = [
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Homepage = "https://github.com/adhimmulia/ExImReservoirSimulation"
+
+[project.scripts]
+eximresim = "eximreservoirsimulation.main:entry_point"

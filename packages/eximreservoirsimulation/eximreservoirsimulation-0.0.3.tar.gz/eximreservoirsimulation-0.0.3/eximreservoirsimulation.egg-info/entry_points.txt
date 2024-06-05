@@ -1,0 +1,2 @@
+[console_scripts]
+eximresim = eximreservoirsimulation.main:entry_point
