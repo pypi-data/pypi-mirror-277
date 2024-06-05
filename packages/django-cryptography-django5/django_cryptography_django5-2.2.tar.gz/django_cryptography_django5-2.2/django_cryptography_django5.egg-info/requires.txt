@@ -1,0 +1,7 @@
+Django>=3.2
+cryptography>=42.0
+django-appconf
+
+[mypy]
+django-stubs
+mypy
