@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+hello_meghana/__init__.py
+hello_meghana/cli.py
+hello_meghana2.egg-info/PKG-INFO
+hello_meghana2.egg-info/SOURCES.txt
+hello_meghana2.egg-info/dependency_links.txt
+hello_meghana2.egg-info/entry_points.txt
+hello_meghana2.egg-info/requires.txt
+hello_meghana2.egg-info/top_level.txt
+tests/test_hello.py

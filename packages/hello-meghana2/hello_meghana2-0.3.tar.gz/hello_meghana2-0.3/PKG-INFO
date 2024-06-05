@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: hello_meghana2
+Version: 0.3
+Summary: A simple World package
+Author: megha
+Author-email: meghanabl2112@gmail.com
+Requires-Dist: click
