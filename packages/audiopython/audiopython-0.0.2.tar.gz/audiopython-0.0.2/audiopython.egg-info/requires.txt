@@ -1,0 +1,7 @@
+librosa
+matplotlib
+numpy
+pedalboard
+regex
+scipy
+sklearn
