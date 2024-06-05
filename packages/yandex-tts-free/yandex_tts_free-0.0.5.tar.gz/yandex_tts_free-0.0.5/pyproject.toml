@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling","hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "yandex-tts-free"
+version = "0.0.5"
+authors = [
+  { name="daswer123", email="daswerq123@gmail.com" },
+]
+description = "Free use of YandexSpeachKit in Russian language"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "ffmpeg-python",
+  "requests"
+]
+
+[project.urls]
+Homepage = "https://github.com/daswer123/xtts-api-server"
+"Bug Tracker" = "https://github.com/daswer123/xtts-api-server/issues"
+
+[tool.hatch.build.targets.wheel]
+only-include=["yandex_tts_free"]
