@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pybopa"
+version = "0.1.2"
+description = "Extractor de texto del BOPA para su análisis"
+readme = "README.rst"
+authors = [
+  {name = "Noelia Rico", email = "noeliarico@uniovi.es"}
+]
+maintainers = [
+  {name = "Noelia Rico", email = "noeliarico@uniovi.es"}
+]
+classifiers = [
+    # Agrega tus clasificadores aquí
+]
+license = {text = "MIT license"}
+dependencies = [
+  "bs4==0.0.2",
+  "matplotlib==3.9.0",
+  "numpy==1.26.4",
+  "pandas==2.0.3",
+  "requests==2.31.0",
+  "seaborn==0.13.2"
+]
+
+[project.optional-dependencies]
+dev = [
+    "coverage",  # testing
+    "mypy",  # linting
+    "pytest",  # testing
+    "ruff"  # linting
+]
+
+[project.urls]
+bugs = "https://github.com/noeliarico/pybopa/issues"
+changelog = "https://github.com/noeliarico/pybopa/blob/master/changelog.md"
+homepage = "https://github.com/noeliarico/pybopa"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.package-data]
+"*" = ["*.*"]
+
+# Mypy
+# ----
+
+[tool.mypy]
+files = "."
+
+# Use strict defaults
+strict = true
+warn_unreachable = true
+warn_no_return = true
+
+[[tool.mypy.overrides]]
+# Don't require test functions to include types
+module = "tests.*"
+allow_untyped_defs = true
+disable_error-code = "attr-defined"

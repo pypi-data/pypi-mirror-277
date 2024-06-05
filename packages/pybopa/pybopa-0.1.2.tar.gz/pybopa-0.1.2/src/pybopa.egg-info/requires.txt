@@ -1,0 +1,12 @@
+bs4==0.0.2
+matplotlib==3.9.0
+numpy==1.26.4
+pandas==2.0.3
+requests==2.31.0
+seaborn==0.13.2
+
+[dev]
+coverage
+mypy
+pytest
+ruff
