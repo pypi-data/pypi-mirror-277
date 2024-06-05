@@ -1,0 +1,16 @@
+argcomplete
+platformdirs
+rich-argparse>=1.5.0
+
+[:platform_system == "Linux"]
+inotify_simple
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[all]
+mpremote
+mpy-cross
+
+[shell]
+argcomplete
