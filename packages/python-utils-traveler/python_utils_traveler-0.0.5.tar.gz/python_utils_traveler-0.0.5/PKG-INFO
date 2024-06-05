@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: python-utils-traveler
+Version: 0.0.5
+Summary: SDK for internal python logging
+Author: Ryan Bui
+Author-email: ryan.bui@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# python-utils
+
+WIP. This package does not work yet
+
+# Repo Structure
+```
+python-utils/
+│
+├── utils/
+│   ├── __init__.py
+│   └── logger.py
+│
+└── Dockerfile
+
