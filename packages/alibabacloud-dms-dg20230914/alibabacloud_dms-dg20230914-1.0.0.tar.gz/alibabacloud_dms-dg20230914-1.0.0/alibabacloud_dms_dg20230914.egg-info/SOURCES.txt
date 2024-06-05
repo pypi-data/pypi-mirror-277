@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README-CN.md
+README.md
+setup.cfg
+setup.py
+alibabacloud_dms_dg20230914/__init__.py
+alibabacloud_dms_dg20230914/client.py
+alibabacloud_dms_dg20230914/models.py
+alibabacloud_dms_dg20230914.egg-info/PKG-INFO
+alibabacloud_dms_dg20230914.egg-info/SOURCES.txt
+alibabacloud_dms_dg20230914.egg-info/dependency_links.txt
+alibabacloud_dms_dg20230914.egg-info/requires.txt
+alibabacloud_dms_dg20230914.egg-info/top_level.txt
