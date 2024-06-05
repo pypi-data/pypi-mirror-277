@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Swarm_ECS.egg-info/PKG-INFO
+Swarm_ECS.egg-info/SOURCES.txt
+Swarm_ECS.egg-info/dependency_links.txt
+Swarm_ECS.egg-info/top_level.txt
+swarm/__init__.py
+swarm/version.py

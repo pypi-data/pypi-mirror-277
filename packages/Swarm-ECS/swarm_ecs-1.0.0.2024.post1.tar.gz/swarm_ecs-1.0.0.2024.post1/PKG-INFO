@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: Swarm-ECS
+Version: 1.0.0.2024.post1
+Summary: A Flexible Light-Weight Object-Oriented ECS
+Home-page: https://github.com/Zero-th/Swarm
+Author: Izaiyah Stokes
+Author-email: zeroth.bat@gmail.com
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Swarm
+![Swarm](https://img.shields.io/badge/Swarm-ECS-0?style=for-the-badge&logo=pypi&logoColor=turquoise&labelColor=black&color=turquoise&link=https%3A%2F%2Fpypi.org%2Fproject%2FSwarm-ECS%2F)
+<br>
+<br>
+A Flexible Light-Weight Object-Oriented ECS
+<br>
+<br>
+Swarm is designed [like esper] to allow for custom component/processor definitions, and registry.
+
+```python
+import swarm
+```
+
