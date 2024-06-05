@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: marray
+Version: 0.0.2
+Summary: Masked versions of array API compatible arrays
+Author-email: Matt Haberland <mhaberla@calpoly.edu>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, https://github.com/mdhaber/marray
+
+# marray
+Masked versions of array API compatible arrays
+
