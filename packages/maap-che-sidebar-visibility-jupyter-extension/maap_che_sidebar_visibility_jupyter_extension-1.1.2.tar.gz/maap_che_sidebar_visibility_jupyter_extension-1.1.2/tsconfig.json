@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": ["ES2022", "dom"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noUnusedLocals": true,
+    "outDir": "lib",
+    "paths": {
+      "@lumino/widgets": ["./node_modules/@lumino/widgets"]
+    },
+    "rootDir": "src",
+    "strict": true,
+    "strictNullChecks": false,
+    "target": "ES2022",
+    "types": []
+  },
+  "include": ["src/*"]
+}
