@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: sleep-viz-tool
+Version: 0.0.1
+Summary: package description
+Author-email: Curious Observer <curiousserver@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests >2.26.0
+Requires-Dist: pandas
+
+# Coming soon
