@@ -1,0 +1,27 @@
+# BMLGRAPHAPI
+
+Pacote para obter tabelas xlsx do SharePoint através de seu link.
+
+# Exemplo de uso
+```
+import pandas as pd
+from main import obter_planilha
+
+client_id = "__TOKEN__"
+client_secret = "__TOKEN__"
+tenant_id = "__TOKEN__"
+planilha_url = "https://xyz.sharepoint.com/sites/${SITE}/${DRIVE}/NOME_DA_TABELA.xlsx"
+
+workbook = obter_planilha(client_id, client_secret, tenant_id, planilha_url)
+
+aba = "NOME DA ABA"
+
+print('Lendo a tabela:', aba)
+
+linhas = workbook[aba].values
+colunas = next(linhas)
+
+planilha = pd.DataFrame(linhas, columns=colunas)
+
+print(planilha)
+```
