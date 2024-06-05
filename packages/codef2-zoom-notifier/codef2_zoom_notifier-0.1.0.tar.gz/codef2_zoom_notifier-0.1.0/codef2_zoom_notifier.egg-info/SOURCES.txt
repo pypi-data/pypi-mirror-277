@@ -1,0 +1,15 @@
+README.md
+setup.py
+codef2_zoom_notifier.egg-info/PKG-INFO
+codef2_zoom_notifier.egg-info/SOURCES.txt
+codef2_zoom_notifier.egg-info/dependency_links.txt
+codef2_zoom_notifier.egg-info/entry_points.txt
+codef2_zoom_notifier.egg-info/requires.txt
+codef2_zoom_notifier.egg-info/top_level.txt
+zoom_api/__init__.py
+zoom_api/config.py
+zoom_api/init.py
+zoom_api/logging_config.py
+zoom_api/message_formatter.py
+zoom_api/zoom_api.py
+zoom_api/zoom_client.py
