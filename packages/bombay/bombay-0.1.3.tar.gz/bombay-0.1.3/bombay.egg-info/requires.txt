@@ -1,0 +1,7 @@
+numpy
+hnswlib
+openai
+chromadb
+termcolor
+colorama
+pyfiglet

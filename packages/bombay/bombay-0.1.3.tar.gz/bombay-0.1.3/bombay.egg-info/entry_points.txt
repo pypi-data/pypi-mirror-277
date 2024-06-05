@@ -1,0 +1,2 @@
+[console_scripts]
+bombay = bombay.bombay_cli:main
