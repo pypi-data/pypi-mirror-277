@@ -1,0 +1,10 @@
+sc_data/__init__.py,sha256=La9FR2fRQRUuZAN_Shh51VXcFc5yxEpW0IivdgeTLhM,1079
+sc_data/constants.py,sha256=pUAnK8nTaOyXg3m7JR3C6U4E6Z48tgIqcVasqvrjOck,480
+sc_data/data.py,sha256=MuexTlFmuRl2IJbDmChCyEl5H-0dD_1CEKzFQTNxfyM,3325
+sc_data/data/db_hash,sha256=YOU9bniATd59kJmuWeJKYbwTqge1S8Bl0s9ma66c6a0,41
+sc_data/data/sc-data-priceless.db,sha256=UVfAZoeMg3FyyPEoeT-S6iRHQjHaC7oSmEgdVJGjrZU,675840
+sparecores_data-0.2.1.dist-info/LICENSE,sha256=er4Z7Ju3OzYUG5mbhh0krYVegIuv4PgehMzihVb2wpc,20131
+sparecores_data-0.2.1.dist-info/METADATA,sha256=ECLJq45X-c5kC9b38rlg2cXXGx-STUqJ51S0TJCeAhI,7140
+sparecores_data-0.2.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+sparecores_data-0.2.1.dist-info/top_level.txt,sha256=hSw9BcAFyqAUNBWAUmYoJi5RVnsyXqIscBQrIaYygfs,8
+sparecores_data-0.2.1.dist-info/RECORD,,
