@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+
+import fire
+from subfunctions.owncloud import Owncloud
+from subfunctions.configuration import Configuration
+from subfunctions.fileSystem import FileSystem
+
+
+
+def main():
+  fire.Fire({
+     "owncloud":Owncloud,
+     "config":Configuration,
+     "fs": FileSystem,
+  })
+
+
+if __name__ == '__main__':
+  main() 
