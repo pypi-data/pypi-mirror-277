@@ -1,0 +1,9 @@
+name: yfiles_jupyter_graphs_use
+channels:
+  - conda-forge
+dependencies:
+  - python=3.6
+# https://github.com/jupyter-server/jupyter_server/issues/661
+# https://github.com/jupyterlab/jupyterlab/issues/12094
+  - jupyter_server=1.13.1
+  - jupyterlab=3.2.9

@@ -1,0 +1,10 @@
+{
+  "name": "license-tool",
+  "version": "1.0.0",
+  "description": "Tool to create licenses for jupyter-diagrams widget",
+  "private": true,
+  "scripts": {
+    "start-server": "cd ./server/ && npm install && npm run start",
+    "start-fontend": "cd ./frontend/ && npm install && npm run dev"
+  }
+}

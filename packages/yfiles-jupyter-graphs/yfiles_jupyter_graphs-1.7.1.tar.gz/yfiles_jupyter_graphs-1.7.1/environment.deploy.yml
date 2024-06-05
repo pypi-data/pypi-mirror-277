@@ -1,0 +1,5 @@
+name: yfiles_jupyter_graphs_deploy
+channels:
+  - conda-forge
+dependencies:
+  - twine

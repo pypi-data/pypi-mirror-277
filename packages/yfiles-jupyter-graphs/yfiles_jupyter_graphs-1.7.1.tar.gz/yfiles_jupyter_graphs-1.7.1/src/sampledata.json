@@ -1,0 +1,51 @@
+{
+  "_directed": true,
+  "_nodes": [
+    {
+      "id": 0,
+      "labels": [
+        {
+          "id": 0,
+          "properties": {
+            "text": "Person"
+          }
+        }
+      ],
+      "properties": {
+        "firstName": "Ali"
+      }
+    },
+    {
+      "id": 1,
+      "labels": [
+        {
+          "id": 0,
+          "properties": {
+            "text": "Person"
+          }
+        }
+      ],
+      "properties": {
+        "firstName": "Bernd"
+      }
+    }
+  ],
+  "_edges": [
+    {
+      "id": 0,
+      "start": 0,
+      "end": 1,
+      "labels": [
+        {
+          "id": 0,
+          "properties": {
+            "text": "knows"
+          }
+        }
+      ],
+      "properties": {
+        "since": 1992
+      }
+    }
+  ]
+}

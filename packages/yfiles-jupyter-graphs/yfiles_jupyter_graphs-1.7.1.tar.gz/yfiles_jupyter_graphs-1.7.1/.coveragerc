@@ -1,0 +1,2 @@
+[run]
+omit = yfiles_jupyter_graphs/tests/*
