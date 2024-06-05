@@ -1,0 +1,8 @@
+data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data/parser.py,sha256=3YuBLzsMv5EPrdjAJmmoj5vL7msj6nEOT0nw7N6pJoE,330
+weather/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weather/api.py,sha256=wHN3Hn_ynJz8aI4x_yfY6ItoWbnJvf_JYNAwND4-1QU,549
+myweatherlib-0.1.dist-info/METADATA,sha256=-d1DMk8dLYqTZdTpqWvaUI-1Uh0diLeR3jZihm4kTvg,307
+myweatherlib-0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+myweatherlib-0.1.dist-info/top_level.txt,sha256=OvqYN81b32MJt1R4hldsRg7kilYoDubuwq7kWbvO8xg,13
+myweatherlib-0.1.dist-info/RECORD,,
