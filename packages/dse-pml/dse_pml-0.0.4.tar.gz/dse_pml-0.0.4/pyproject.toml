@@ -1,0 +1,18 @@
+[build-system]
+requires = [ "setuptools>=61.0.0", "wheel",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dse-pml"
+dynamic = [ "version",]
+description = "Custom package placeholder DO NOT DELETE OR TRANSFER OWNERSHIP"
+requires-python = ">=3.12"
+
+[project.license]
+text = "Proprietary"
+
+[tool.setuptools.dynamic.version]
+attr = "progml.__version__"
+
+[tool.setuptools.packages.find]
+where = [ "src",]
