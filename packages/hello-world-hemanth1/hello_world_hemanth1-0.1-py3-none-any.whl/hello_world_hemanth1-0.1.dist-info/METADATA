@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: hello-world-hemanth1
+Version: 0.1
+Summary: A simple Hello package for subtracting two numbers
+Home-page: UNKNOWN
+Author: Hemanthbollina123
+Author-email: hsbollina@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: click
+
+UNKNOWN
+
+

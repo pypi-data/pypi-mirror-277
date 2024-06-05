@@ -1,0 +1,3 @@
+[console_scripts]
+subtract = hello_world.cli:main
+
