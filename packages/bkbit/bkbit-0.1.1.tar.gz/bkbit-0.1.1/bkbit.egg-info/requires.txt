@@ -1,0 +1,10 @@
+linkml>=1.5
+pandas
+click
+schemasheets
+
+[docs]
+mkdocs-material
+
+[test]
+pytest
