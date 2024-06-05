@@ -1,0 +1,8 @@
+gendit/__init__.py,sha256=o5p_UoebTHAx3TRITTwbULBR8Vj8G7G5cgGTHIDikEA,27
+gendit/_duckdb.py,sha256=GCOxmTWzmASjDqFUTVna1gbUVZkiS6YVyh6lARYPAxA,1417
+gendit/api.py,sha256=YTP0ZLWuYEpxLtFOwly5aCF_iOQaxLh9DFcm8IyC-yw,3730
+gendit/core.py,sha256=U2Iu1thj4nvmUaBPVRoclpQ_1ny4EsWgohqyCF2Us8o,841
+gendit-1.0.0a2.dist-info/LICENSE,sha256=oIWdcUfoYadJktGCE2wj3MQJbEw6CIy4IS06B_7HL38,1073
+gendit-1.0.0a2.dist-info/METADATA,sha256=z-mpK6Ub-1PjWTbPakUmB9HJmqs945y7qu9d-AeqDdg,3308
+gendit-1.0.0a2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+gendit-1.0.0a2.dist-info/RECORD,,
