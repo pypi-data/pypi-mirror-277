@@ -1,0 +1,6 @@
+
+This is a test example for new user to learn how to upload the python package to the testpypi
+1. /src: source code directory; 
+   _init_.py: this is a package initialization file which run first to facilitate Python to find this directory.
+   ison.py: test source code.
+2. setup.py: this is the script for pip package installation.

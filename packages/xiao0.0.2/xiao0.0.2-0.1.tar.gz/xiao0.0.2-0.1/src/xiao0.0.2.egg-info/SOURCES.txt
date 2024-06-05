@@ -1,0 +1,7 @@
+README
+setup.py
+src/xiao0.0.2.egg-info/PKG-INFO
+src/xiao0.0.2.egg-info/SOURCES.txt
+src/xiao0.0.2.egg-info/dependency_links.txt
+src/xiao0.0.2.egg-info/requires.txt
+src/xiao0.0.2.egg-info/top_level.txt
