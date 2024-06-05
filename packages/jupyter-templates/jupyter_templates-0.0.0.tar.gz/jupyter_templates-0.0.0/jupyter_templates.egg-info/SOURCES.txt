@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+jupyter_templates.egg-info/PKG-INFO
+jupyter_templates.egg-info/SOURCES.txt
+jupyter_templates.egg-info/dependency_links.txt
+jupyter_templates.egg-info/top_level.txt
