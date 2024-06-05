@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "pyfsm-tool"
+version = "0.9.1"
+description = "pyfsm-tool is a module to create and manipulate finite states machines."
+authors = ["BEL AICH David <belaich.david@outlook.fr>"]
+maintainers = [
+    "BEL AICH David <belaich.david@outlook.fr>"
+]
+readme = "README.md"
+packages = [{include = "src"}]
+license = "MIT"
+repository = "https://github.com/DevAI-64/pyfsm-tool"
+keywords=[
+    "fsm", "pyfsm", "pyfsm-tool",
+    "state", "states", "transition", "transitions",
+    "fintite state machine", "fintite states machine", "finite states machines",
+    "graph", "pygraph", "pygraph-tool"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering"
+]
+include = ["LICENSE", "README.md", "CHANGELOG.md"]
+
+[tool.black]
+line-length = 79
+
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+pygraph-tool = "^0.2.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+flake8 = "^7.0.0"
+pylint = "^3.2.2"
+tox = "^3.9.0"
+tox-poetry-installer = {extras = ["poetry"], version = "^0.10.3"}
+commitizen = "^3.27.0"
+
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "pep440"
+version_provider = "poetry"
+update_changelog_on_bump = true
+major_version_zero = true
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
