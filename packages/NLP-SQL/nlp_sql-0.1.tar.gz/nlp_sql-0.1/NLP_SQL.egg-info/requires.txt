@@ -1,0 +1,7 @@
+datetime
+argparse
+requests
+sklearn
+mysql.connector
+flask
+virtualenv
