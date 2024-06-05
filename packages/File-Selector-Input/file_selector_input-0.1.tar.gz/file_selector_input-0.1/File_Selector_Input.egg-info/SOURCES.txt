@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+File_Selector_Input.egg-info/PKG-INFO
+File_Selector_Input.egg-info/SOURCES.txt
+File_Selector_Input.egg-info/dependency_links.txt
+File_Selector_Input.egg-info/requires.txt
+File_Selector_Input.egg-info/top_level.txt
+src/FileSelector.py
+src/__init__.py

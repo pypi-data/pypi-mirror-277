@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: File_Selector_Input
+Version: 0.1
+Summary: Sets up a basic application to move file locations
+Author: kunaalg
+Author-email: <kunaal@runcode.in>
+Keywords: python,FileSelector,App,Move,Function,math
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: datetime
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: numpy
+Requires-Dist: flask
+Requires-Dist: virtualenv
+
+
+Takes in an Input file and moves to a location
+
+import FileSelector
+
+print(FileSelector())
