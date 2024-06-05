@@ -1,0 +1,11 @@
+CHANGES
+=======
+
+0.2.3
+-----
+
+* fix logger not exists bug
+* remove logzero import
+* remove requests import
+* update usbmux, remove deps requests,logzero,cached-property,simplejson
+* add touch\_perform
