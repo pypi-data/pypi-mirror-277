@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+gamemode_example.py
+pyproject.toml
+requirements.txt
+setup.py
+version.py
+pylove/__init__.py
+pylove/lan.py
+pylove.egg-info/PKG-INFO
+pylove.egg-info/SOURCES.txt
+pylove.egg-info/dependency_links.txt
+pylove.egg-info/requires.txt
+pylove.egg-info/top_level.txt
