@@ -1,0 +1,140 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-06-04 09:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: collective/gridlisting/behaviors/grid_listing.py:93
+#: collective/gridlisting/controlpanel.py:70
+msgid "Additional masonry options"
+msgstr ""
+
+#: collective/gridlisting/behaviors/grid_listing.py:64
+#: collective/gridlisting/controlpanel.py:45
+msgid "CSS class(es) for preview image in column content"
+msgstr ""
+
+#: collective/gridlisting/behaviors/grid_listing.py:56
+#: collective/gridlisting/controlpanel.py:38
+msgid "CSS class(es) for title/description/link in column content"
+msgstr ""
+
+#: collective/gridlisting/behaviors/grid_listing.py:35
+#: collective/gridlisting/controlpanel.py:19
+msgid "Column"
+msgstr ""
+
+#: collective/gridlisting/behaviors/grid_listing.py:45
+#: collective/gridlisting/controlpanel.py:28
+msgid "Column content"
+msgstr ""
+
+#: collective/gridlisting/behaviors/grid_listing.py:63
+#: collective/gridlisting/controlpanel.py:44
+msgid "Column content image"
+msgstr ""
+
+#: collective/gridlisting/behaviors/grid_listing.py:55
+#: collective/gridlisting/controlpanel.py:37
+msgid "Column content text"
+msgstr ""
+
+#: collective/gridlisting/behaviors/grid_listing.py:25
+#: collective/gridlisting/controlpanel.py:12
+msgid "Container row"
+msgstr ""
+
+#: collective/gridlisting/behaviors/grid_listing.py:123
+msgid "Define grid listing properties. For further information see https://getbootstrap.com/docs/5.3/layout/grid/"
+msgstr ""
+
+#: collective/gridlisting/behaviors/grid_listing.py:85
+#: collective/gridlisting/controlpanel.py:63
+msgid "Enable masonry layout"
+msgstr ""
+
+#: collective/gridlisting/controlpanel.py:100
+#: collective/gridlisting/profiles/default/controlpanel.xml
+msgid "Grid Listing Settings"
+msgstr ""
+
+#: collective/gridlisting/behaviors/grid_listing.py:122
+#: collective/gridlisting/browser/configure.zcml:24
+msgid "Grid listing"
+msgstr ""
+
+#: collective/gridlisting/behaviors/grid_listing.py:46
+#: collective/gridlisting/controlpanel.py:29
+msgid "If you want borders or backgrounds inside the column define it here."
+msgstr ""
+
+#: collective/gridlisting/configure.zcml:24
+msgid "Installs the collective.gridlisting add-on."
+msgstr ""
+
+#: collective/gridlisting/behaviors/grid_listing.py:71
+#: collective/gridlisting/controlpanel.py:51
+msgid "Listing item title tag"
+msgstr ""
+
+#: collective/gridlisting/behaviors/grid_listing.py:94
+#: collective/gridlisting/controlpanel.py:71
+msgid "Options for \"pat-masonry\" see https://patternslib.com/demos/masonry."
+msgstr ""
+
+#: collective/gridlisting/behaviors/grid_listing.py:78
+#: collective/gridlisting/controlpanel.py:57
+msgid "Preview image scale"
+msgstr ""
+
+#: collective/gridlisting/behaviors/grid_listing.py:86
+#: collective/gridlisting/controlpanel.py:64
+msgid "See masonry documentation."
+msgstr ""
+
+#: collective/gridlisting/behaviors/grid_listing.py:104
+#: collective/gridlisting/controlpanel.py:80
+msgid "Show a separate link to the item below the description/title with the given text below. If deactivated, the item tile is used as link."
+msgstr ""
+
+#: collective/gridlisting/behaviors/grid_listing.py:103
+#: collective/gridlisting/controlpanel.py:79
+msgid "Show more link"
+msgstr ""
+
+#: collective/gridlisting/behaviors/grid_listing.py:114
+#: collective/gridlisting/controlpanel.py:90
+msgid "Text for 'more' link below title/description"
+msgstr ""
+
+#: collective/gridlisting/configure.zcml:33
+msgid "Uninstalls the collective.gridlisting add-on."
+msgstr ""
+
+#: collective/gridlisting/behaviors/grid_listing.py:36
+#: collective/gridlisting/controlpanel.py:20
+msgid "Use grid css class combinations for column. Example: 'col-12 col-md-6 col-xl-3'"
+msgstr ""
+
+#: collective/gridlisting/configure.zcml:24
+msgid "collective.gridlisting"
+msgstr ""
+
+#: collective/gridlisting/configure.zcml:33
+msgid "collective.gridlisting (uninstall)"
+msgstr ""
+
+#: collective/gridlisting/behaviors/grid_listing.py:26
+#: collective/gridlisting/controlpanel.py:13
+msgid "eg. if you want to set gutter between columns define here."
+msgstr ""
