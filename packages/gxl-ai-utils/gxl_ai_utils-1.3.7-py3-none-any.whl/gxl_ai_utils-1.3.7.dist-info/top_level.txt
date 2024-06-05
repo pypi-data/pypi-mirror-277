@@ -1,0 +1,6 @@
+eggs
+gxl_ai_utils
+gxl_toolkit
+icefall
+lhotse
+wenet
