@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pdf-ocr-txt
+Version: 0.5.0
+Summary: Tool to extract and store sentence embeddings to a fast and scalable vector db
+Home-page: https://github.com/ptarau/pdf_ocr_txt.git
+Author: Paul Tarau
+Author-email: paul.tarau@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pdf_ocr_txt
+Applies OCR to a PDF file and extracts its content to a TXT file.
