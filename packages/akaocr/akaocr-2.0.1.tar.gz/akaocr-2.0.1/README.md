@@ -1,0 +1,60 @@
+# akaOCR
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![Python 3.7](https://img.shields.io/badge/Python-3.7-blue.svg)](https://www.python.org/downloads/release/python-370/)
+[![ONNX Compatible](https://img.shields.io/badge/ONNX-Compatible-brightgreen)](https://onnx.ai/)
+
+## Description
+
+This package is compatible with [akaOCR](https://app.akaocr.io/) for ocr pipeline program (Text Detection & Text Recognition), using [ONNX](https://onnx.ai/) format model (CPU speed can be x2 times faster). This code is referenced from [this awesome repo](https://github.com/PaddlePaddle/PaddleOCR).
+
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install akaocr
+```
+
+## Usage
+
+Step 1: Use in your code: **Text Detection**.
+
+```python
+from akaocr import BoxEngine
+import cv2
+
+img_path = "path/to/image.jpg"
+image = cv2.imread(img_path)
+
+# side_len: minimum inference image size
+box_engine = BoxEngine(model_path: Any | None = None,
+                        side_len: int = 736,
+                        conf_thres: float = 0.5)
+
+# inference for one image
+bboxs = box_engine(image) # [[4 points],...]
+```
+
+Step 2: Use in your code: **Text Recognition**.
+
+```python
+from akaocr import TextEngine
+import cv2
+
+img_path = "path/to/cropped_image.jpg"
+cropped_image = cv2.imread(img_path)
+
+text_engine = TextEngine(model_path: Any | None = None,
+                        vocab_path: Any | None = None,
+                        use_space_char: bool = True)
+
+# inference for one or more images
+texts = text_engine(cropped_image) # [(text, conf),...]
+```
+
+## License
+
+This project is licensed under the Apache License 2.0
+
+"I hope this package will be useful for your projects". Nguyễn Trường Lâu (from [akaOCR](https://app.akaocr.io/) Team).
