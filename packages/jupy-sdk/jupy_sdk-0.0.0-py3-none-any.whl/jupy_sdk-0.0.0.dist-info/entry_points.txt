@@ -1,0 +1,3 @@
+[console_scripts]
+jupy=jupy.cli:main
+
