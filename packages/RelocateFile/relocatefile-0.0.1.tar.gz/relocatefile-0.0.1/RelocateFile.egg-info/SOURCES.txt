@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+RelocateFile.egg-info/PKG-INFO
+RelocateFile.egg-info/SOURCES.txt
+RelocateFile.egg-info/dependency_links.txt
+RelocateFile.egg-info/requires.txt
+RelocateFile.egg-info/top_level.txt
+src/FileMover.py
+src/__init__.py
