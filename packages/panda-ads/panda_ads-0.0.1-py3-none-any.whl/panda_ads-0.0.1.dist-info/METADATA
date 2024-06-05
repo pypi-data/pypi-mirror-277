@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: panda_ads
+Version: 0.0.1
+Summary: A wrapper of the api logic used to interact with panda_ads.
+Home-page: 
+Author: ranyu
+Author-email: wy176404@163.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Pandas Ads API Request Model
