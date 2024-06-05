@@ -1,0 +1,9 @@
+llamea/__init__.py,sha256=sfjfziRQZreYmkLntmu1nJBbPFSdQpCVWdThlQ2agms,128
+llamea/llamea.py,sha256=4CjeWPsU5K1EsUuBOOPOQHLqDONt03zZza7m1J6XiK0,12457
+llamea/llm.py,sha256=tyPgDkCH8akJrRmd915XgT7RbzSJePblgywbwWyFnys,731
+llamea/loggers.py,sha256=U6WjeGMhLieBWvZ5ikNo1IvXIYRtnOI3tqusufSpkiA,2239
+llamea/utils.py,sha256=P9CIVPJwSc1JKPzISKCCApogvcEvWW02Y0fW9YYcbKM,109
+llamea-0.9.1.dist-info/LICENSE,sha256=-fqLXExOTdhiU8Gyt39Nl1aZWCAI-Eeil_85GO0lP18,1071
+llamea-0.9.1.dist-info/METADATA,sha256=gUui3RhrEBRZiSP4WMXmE4MAO3R-tzQ2P9lwsBF4R80,5592
+llamea-0.9.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+llamea-0.9.1.dist-info/RECORD,,
