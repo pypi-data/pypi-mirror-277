@@ -1,0 +1,3 @@
+[console_scripts]
+wr = wrench_build.wr:main
+wrb = wrench_build.wrb:main
