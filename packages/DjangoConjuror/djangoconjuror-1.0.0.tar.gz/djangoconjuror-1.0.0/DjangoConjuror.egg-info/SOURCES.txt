@@ -1,0 +1,15 @@
+License
+README.md
+setup.py
+DjangoConjuror.egg-info/PKG-INFO
+DjangoConjuror.egg-info/SOURCES.txt
+DjangoConjuror.egg-info/dependency_links.txt
+DjangoConjuror.egg-info/entry_points.txt
+DjangoConjuror.egg-info/requires.txt
+DjangoConjuror.egg-info/top_level.txt
+conjuror/__init__.py
+conjuror/cli.py
+conjuror/dbm.py
+conjuror/runcommands.py
+conjuror/Crud/Cruds.py
+conjuror/Crud/__init__.py
