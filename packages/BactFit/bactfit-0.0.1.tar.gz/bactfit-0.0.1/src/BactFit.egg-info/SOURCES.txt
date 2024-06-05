@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/BactFit.egg-info/PKG-INFO
+src/BactFit.egg-info/SOURCES.txt
+src/BactFit.egg-info/dependency_links.txt
+src/BactFit.egg-info/requires.txt
+src/BactFit.egg-info/top_level.txt
+src/bactfit/__init__.py
+src/bactfit/fit.py
