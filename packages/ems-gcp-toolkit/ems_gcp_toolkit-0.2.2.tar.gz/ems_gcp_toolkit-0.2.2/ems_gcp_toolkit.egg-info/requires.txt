@@ -1,0 +1,7 @@
+google-cloud-storage<3,>=2
+google-cloud-spanner<4,>=3
+google-cloud-pubsub<3,>=2
+google-cloud-bigquery<4,>=3
+google-cloud-core<3,>=2
+googleapis-common-protos<2,>=1.63.0
+grpc-google-iam-v1==0.13.0
