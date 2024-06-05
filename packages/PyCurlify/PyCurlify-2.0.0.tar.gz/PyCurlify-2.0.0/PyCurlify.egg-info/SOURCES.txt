@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+PyCurlify.egg-info/PKG-INFO
+PyCurlify.egg-info/SOURCES.txt
+PyCurlify.egg-info/dependency_links.txt
+PyCurlify.egg-info/top_level.txt
+pycurlify/BaseCurl.py
+pycurlify/Curl.py
+pycurlify/__init__.py
