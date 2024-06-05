@@ -1,0 +1,13 @@
+maap_user_workspace_management_jupyter_extension/__init__.py,sha256=0BsbgutS4L-dJXpnf0zhuosH1oOAeOH6X65qsvee_bI,321
+maap_user_workspace_management_jupyter_extension/_version.py,sha256=vYZ6rLVUw05xbWIGie5W7cVk18sWwVN72cGSZ2ngSYU,171
+maap_user_workspace_management_jupyter_extension-0.1.2.data/data/share/jupyter/labextensions/maap-user-workspace-management-jupyter-extension/package.json,sha256=NktVkASaPkYN5STLcMPwzfUwashJ4CMk0gNwXKnpvSs,2854
+maap_user_workspace_management_jupyter_extension-0.1.2.data/data/share/jupyter/labextensions/maap-user-workspace-management-jupyter-extension/static/24.d1e7f3c091f254b3d33f.js,sha256=0efzwJHyVLPTP5ZteS9fO_9suTPAhAuxVImS04UtsZ4,12771
+maap_user_workspace_management_jupyter_extension-0.1.2.data/data/share/jupyter/labextensions/maap-user-workspace-management-jupyter-extension/static/728.165d7c37dca18d28e981.js,sha256=Fl18N9yhjSjpgYZnM70X7YUCIKopV3qfEdw5cxvnv4g,4123
+maap_user_workspace_management_jupyter_extension-0.1.2.data/data/share/jupyter/labextensions/maap-user-workspace-management-jupyter-extension/static/remoteEntry.28f26a02193abaa13e5f.js,sha256=KPJqAhk6uqE-X5AyGyb26nBIilK7CfW3SwaWBI3haRE,6920
+maap_user_workspace_management_jupyter_extension-0.1.2.data/data/share/jupyter/labextensions/maap-user-workspace-management-jupyter-extension/static/style.js,sha256=VjvOVBjVHiZnDaVVXbzJeS_ywDBE_0L2gvkLu369rjU,191
+maap_user_workspace_management_jupyter_extension-0.1.2.data/data/share/jupyter/labextensions/maap-user-workspace-management-jupyter-extension/static/third-party-licenses.json,sha256=W6N2sSD7tQihMqQk64F9xMd1Flfr2KO97esAiHUOYdM,2453
+maap_user_workspace_management_jupyter_extension-0.1.2.data/data/share/jupyter/labextensions/maap-user-workspace-management-jupyter-extension/install.json,sha256=fUr7JEdEIbCcbSK_W6Z5YroEWpBFR7wQa5nQ3Q3tR3E,252
+maap_user_workspace_management_jupyter_extension-0.1.2.dist-info/METADATA,sha256=Kez-CLoG-ZlechEIouy8cBnXFNU9Vxy1kEc_tF40pWQ,17900
+maap_user_workspace_management_jupyter_extension-0.1.2.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+maap_user_workspace_management_jupyter_extension-0.1.2.dist-info/licenses/LICENSE,sha256=uiovyVjDm0hEd3k_5PK8XUBAMDwQmH9LegS0YDm-y4w,10988
+maap_user_workspace_management_jupyter_extension-0.1.2.dist-info/RECORD,,
