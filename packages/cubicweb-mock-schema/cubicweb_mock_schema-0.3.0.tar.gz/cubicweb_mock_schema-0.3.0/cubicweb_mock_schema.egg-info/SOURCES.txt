@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+cubicweb_mock_schema/__init__.py
+cubicweb_mock_schema/__pkginfo__.py
+cubicweb_mock_schema/attribute.py
+cubicweb_mock_schema/blog.py
+cubicweb_mock_schema/relation.py
+cubicweb_mock_schema.egg-info/PKG-INFO
+cubicweb_mock_schema.egg-info/SOURCES.txt
+cubicweb_mock_schema.egg-info/dependency_links.txt
+cubicweb_mock_schema.egg-info/not-zip-safe
+cubicweb_mock_schema.egg-info/requires.txt
+cubicweb_mock_schema.egg-info/top_level.txt

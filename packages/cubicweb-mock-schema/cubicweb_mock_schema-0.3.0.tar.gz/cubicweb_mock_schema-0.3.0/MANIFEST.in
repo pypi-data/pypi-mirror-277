@@ -1,0 +1,10 @@
+include *.py
+include schema/*.py
+include README*
+
+exclude tox.ini
+exclude .gitlab-ci.yml
+exclude .yamllint
+exclude Dockerfile
+exclude CHANGELOG.md
+exclude node_modules
