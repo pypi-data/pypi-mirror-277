@@ -1,0 +1,2 @@
+[console_scripts]
+mytb = mytb.commands:main
