@@ -1,0 +1,8 @@
+setup.py
+zerotrust/__init__.py
+zerotrust/client.py
+zerotrust.egg-info/PKG-INFO
+zerotrust.egg-info/SOURCES.txt
+zerotrust.egg-info/dependency_links.txt
+zerotrust.egg-info/requires.txt
+zerotrust.egg-info/top_level.txt
