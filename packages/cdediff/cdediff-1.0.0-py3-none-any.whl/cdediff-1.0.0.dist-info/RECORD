@@ -1,0 +1,12 @@
+cdediff/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cdediff/data.py,sha256=l1dQKsXHUf8TVCn4YdbvMAfT99XGj-sUumw--DR3vfU,21740
+cdediff/difftool.py,sha256=og6muDaG4ExECxjzkP7JWoBbFBMWAuH9fxkin2j0aIE,1686
+cdediff/output.py,sha256=0puzcg1kI-yzXS8tQLK7Dljcd4iPZneqbxmVDUKF5z0,40821
+cdediff/setup_gitdiff.py,sha256=nLKZ0UZNC3J1f68uFNTw9YVMBwvU0TztG4Z9dxwpDmA,2079
+cdediff/textconv.py,sha256=pvTjDWTFy4bZPU62KhrZgn2mYmcqKIFEd4MAoqmQziI,345
+cdediff/util.py,sha256=yM2SirPwZVKa7HFJLuWtcPflr7imNmECcTVRz2t2Q4c,434
+cdediff-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cdediff-1.0.0.dist-info/METADATA,sha256=WeE4rg8cDdfeih9I2oli7-sY38NqCByhW0EC7zr7vsE,2975
+cdediff-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cdediff-1.0.0.dist-info/top_level.txt,sha256=zHK1twjNgD9KmUNqufUHgmnIAlCGbBqxzjtiPXNdAxo,8
+cdediff-1.0.0.dist-info/RECORD,,
