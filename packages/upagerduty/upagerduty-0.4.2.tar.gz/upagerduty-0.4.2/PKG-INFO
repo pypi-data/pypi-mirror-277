@@ -1,0 +1,57 @@
+Metadata-Version: 2.3
+Name: upagerduty
+Version: 0.4.2
+Summary: Library for the PagerDuty service API
+Project-URL: Homepage, http://github.com/mrmeszaros/upagerduty
+Author-email: Mészáros Máté Róbert <mateusz.meszaros@gmail.com>, Samuel Stauffer <samuel@playhaven.com>
+License: Copyright 2010 Samuel Stauffer
+        Copyright 2011 Datadog, Inc.
+        Copyright 2024 Mészáros Máté Róbert
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+
+
+Overview
+========
+
+Python library for the PagerDuty service API.
+
+http://www.pagerduty.com/docs/api/api-documentation
+
+
+## Build
+
+Uses [Hatch][hatch].
+
+
+## Author Information
+
+[Mészáros Máté Róbert][mrmeszaros]. Heavily based on [Samuel Stauffer][samuel]'s `pagerduty`. Forked from DataDog Inc.'s archived [clone][datadog].
+
+
+[hatch]: https://hatch.pypa.io/latest/
+[datadog]: https://github.com/DataDog/python-pagerdutyg
+[mrmeszaros]: http://github.com/mrmeszaros
+[samuel]: http://github.com/samuel
