@@ -1,0 +1,11 @@
+base
+canvas_editor
+canvas_item
+common
+extend_widgets
+main
+manager
+ocr_service
+toolbar
+version
+view
