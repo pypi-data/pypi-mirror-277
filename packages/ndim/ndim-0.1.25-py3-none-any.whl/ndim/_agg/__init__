@@ -1,0 +1,245 @@
+def _bhZQT(f):
+    def _DW6rO(*args, **kwargs):
+        return f(*args, **kwargs)
+    _DW6rO.__module__ = f.__module__
+    _DW6rO.__name__ = f.__name__
+    _DW6rO.__doc__ = f.__doc__
+    _DW6rO.__dict__.update(f.__dict__)
+    f.__refcalls__ = 0
+    return _DW6rO
+
+@_bhZQT
+def _NJO1r():
+    global _WkHnr, _gBwge, _VEu55, _sgtmo, _jxtCG, _iTGtL, _D06DD, _4uqdS, _QkKKt, _vvYHm, _6uKgX, _k6moR, _YLzDC, _fyCWe, _HtSXW, _Etc21, _owT56, _Zco1G
+    from __future__ import annotations
+    import math, stonefish_license_manager as slim, sympy, sys
+
+    def _WkHnr(n, lmbda=0, symbolic=False):
+        assert 2 * lmbda > n
+        _t7DRD = sympy.pi if symbolic else math.pi
+        _5uz5N = (lambda _fuWIL: sympy.beta(_fuWIL - sympy.Rational(1, 2), sympy.Rational(1, 2))) if symbolic else lambda _6Lh5y: math.gamma(_6Lh5y - 0.5) * math.gamma(0.5) / math.gamma(_6Lh5y)
+
+        def _ycjlu(n):
+            assert n >= 0
+            if n == 0:
+                return 1
+            if n == 1:
+                return _5uz5N(lmbda)
+            return _ycjlu(n - 2) * 2 * _t7DRD / (2 * lmbda - n)
+        return _ycjlu(n)
+
+    def _gBwge(exponents, lmbda=0, symbolic=False):
+        exponents = list(exponents)
+        _NL9Ke = len(exponents)
+        _NL9Ke = sympy.S(_NL9Ke) if symbolic else _NL9Ke
+        assert 2 * lmbda > _NL9Ke + sum(exponents)
+        if any((_xKMRC % 2 == 1 for _xKMRC in exponents)):
+            return 0
+
+        def _bQtPn(exponents):
+            if all((_ltU79 == 0 for _ltU79 in exponents)):
+                return _WkHnr(_NL9Ke, lmbda=lmbda, symbolic=symbolic)
+            _F6GMC, _xKCOJ = next(((_QF1M1, _oXNHy) for _QF1M1, _oXNHy in enumerate(exponents) if _oXNHy > 0))
+            _stO25 = exponents.copy()
+            _stO25[_F6GMC] -= 2
+            return _bQtPn(_stO25) * (_xKCOJ - 1) / (2 * lmbda - (sum(exponents) + _NL9Ke))
+        return _bQtPn(exponents)
+
+    def _VEu55(n, alpha=0, symbolic=False):
+        _2KfuE = sympy.pi if symbolic else math.pi
+        _WDDwy = sympy.gamma if symbolic else math.gamma
+        n = sympy.S(n) if symbolic else n
+
+        def _qGsBe(n):
+            assert n >= 0
+            if n == 1:
+                return 2 * _WDDwy(1 + alpha)
+            if n == 2:
+                return 2 * _2KfuE * _WDDwy(2 + alpha)
+            return _qGsBe(n - 2) * 2 * _2KfuE * (n + alpha - 1) * (n + alpha - 2) / (n - 2)
+        return _qGsBe(n)
+
+    def _sgtmo(exponents, alpha=0, symbolic=False):
+        _5QswL = sympy.S if symbolic else lambda _vZQ8c: _vZQ8c
+        exponents = list(exponents)
+        _81j8z = _5QswL(len(exponents))
+        if any((_wQQ51 % 2 == 1 for _wQQ51 in exponents)):
+            return 0
+
+        def _DZyI9(exponents):
+            if all((_0vPio == 0 for _0vPio in exponents)):
+                return _VEu55(_81j8z, alpha, symbolic)
+            _TxEvS, _iGv3C = next(((_2w8I6, _ecmwO) for _2w8I6, _ecmwO in enumerate(exponents) if _ecmwO > 0))
+            _8FSdU = sum(exponents)
+            _hmEC7 = exponents.copy()
+            _hmEC7[_TxEvS] -= 2
+            return _DZyI9(_hmEC7) * (alpha + _81j8z + _8FSdU - 1) * (alpha + _8FSdU + _81j8z - 2) * (_iGv3C - 1) / (_81j8z + _8FSdU - 2)
+        return _DZyI9(exponents)
+
+    def _jxtCG(n, symbolic):
+        _LuCir = sympy.pi if symbolic else math.pi
+        _lniUQ = sympy.sqrt if symbolic else math.sqrt
+
+        def _GlSJ5(n):
+            assert n >= 0
+            if n == 0:
+                return 1
+            if n == 1:
+                return _lniUQ(_LuCir)
+            return _GlSJ5(n - 2) * _LuCir
+        return _GlSJ5(n)
+
+    def _iTGtL(exponents, symbolic=False):
+        _Kjz4M = sympy.Rational if symbolic else lambda _8fA5o, _4AKBO: _8fA5o / _4AKBO
+        exponents = list(exponents)
+        if any((_X079P % 2 == 1 for _X079P in exponents)):
+            return 0
+
+        def _qpVJU(exponents):
+            if all((_zY8LT == 0 for _zY8LT in exponents)):
+                _jfr7J = len(exponents)
+                return _jxtCG(_jfr7J, symbolic)
+            _xOsoX, _EiWJn = next(((_vlL69, _uwhus) for _vlL69, _uwhus in enumerate(exponents) if _uwhus > 0))
+            _GJdve = exponents.copy()
+            _GJdve[_xOsoX] -= 2
+            return _qpVJU(_GJdve) * _Kjz4M(_EiWJn - 1, 2)
+        return _qpVJU(exponents)
+
+    def _D06DD(_):
+        return 1
+
+    def _4uqdS(exponents):
+        exponents = list(exponents)
+        if any((_WO41I % 2 == 1 for _WO41I in exponents)):
+            return 0
+
+        def _H7k9C(exponents):
+            if all((_NDRgH == 0 for _NDRgH in exponents)):
+                _TW825 = len(exponents)
+                return _D06DD(_TW825)
+            _mTNTn, _EK5Js = next(((_6coz3, _zy2kv) for _6coz3, _zy2kv in enumerate(exponents) if _zy2kv > 0))
+            _GKyHs = exponents.copy()
+            _GKyHs[_mTNTn] -= 2
+            return _H7k9C(_GKyHs) * (_EK5Js - 1)
+        return _H7k9C(exponents)
+
+    def _QkKKt(n, variant, symbolic=False):
+        if variant == 'physicists':
+            return _jxtCG(n, symbolic)
+        assert variant == 'probabilists'
+        return _D06DD(n)
+
+    def _vvYHm(exponents, variant, symbolic=False):
+        if variant == 'physicists':
+            return _iTGtL(exponents, symbolic)
+        assert variant == 'probabilists'
+        return _4uqdS(exponents)
+
+    def _6uKgX(n, lmbda=0, r=1, symbolic=False):
+        _Md30y = sympy.pi if symbolic else math.pi
+        _PDQK6 = (lambda _0FMNO: sympy.beta(_0FMNO, sympy.Rational(1, 2))) if symbolic else lambda _nxqAa: math.gamma(_nxqAa) * math.gamma(0.5) / math.gamma(_nxqAa + 0.5)
+
+        def _HHrMZ(n):
+            assert n >= 0
+            if n == 0:
+                return 1
+            if n == 1:
+                return _PDQK6(lmbda + 1) * r ** (1 + 2 * lmbda)
+            return _HHrMZ(n - 2) * 2 * _Md30y / (2 * lmbda + n) * r ** 2
+        return _HHrMZ(n)
+
+    def _k6moR(exponents, lmbda=0, symbolic=False):
+        exponents = list(exponents)
+        _0epDu = len(exponents)
+        _0epDu = sympy.S(_0epDu) if symbolic else _0epDu
+        if any((_vDykZ % 2 == 1 for _vDykZ in exponents)):
+            return 0
+
+        def _YBOBQ(exponents):
+            if all((_VDeBk == 0 for _VDeBk in exponents)):
+                return _6uKgX(_0epDu, lmbda=lmbda, symbolic=symbolic)
+            _lDbLs, _AaSNw = next(((_jLcU4, _qGRui) for _jLcU4, _qGRui in enumerate(exponents) if _qGRui > 0))
+            _6dNeT = exponents.copy()
+            _6dNeT[_lDbLs] -= 2
+            return _YBOBQ(_6dNeT) * (_AaSNw - 1) / (2 * lmbda + sum(exponents) + _0epDu)
+        return _YBOBQ(exponents)
+
+    def _YLzDC(n):
+        return 2 ** n
+
+    def _fyCWe(exponents, symbolic=False):
+        _7B9xo = sympy.Rational if symbolic else lambda _dYysO, _EfOL1: _dYysO / _EfOL1
+        exponents = list(exponents)
+        _pArSH = len(exponents)
+        if any((_RVMAu % 2 == 1 for _RVMAu in exponents)):
+            return 0
+
+        def _iLRua(exponents):
+            if all((_EXk92 == 0 for _EXk92 in exponents)):
+                return _YLzDC(_pArSH)
+            _GwHY9, _oXFxJ = next(((_Fcux8, _8QInK) for _Fcux8, _8QInK in enumerate(exponents) if _8QInK > 0))
+            _3ZmJF = exponents.copy()
+            _3ZmJF[_GwHY9] -= 2
+            return _iLRua(_3ZmJF) * _7B9xo(_oXFxJ - 1, _oXFxJ + 1)
+        return _iLRua(exponents)
+
+    def _HtSXW(n, symbolic=False):
+        n = sympy.S(n) if symbolic else n
+
+        def _76Ldt(n):
+            if n == 0:
+                return 1
+            return _76Ldt(n - 1) / n
+        return _76Ldt(n)
+
+    def _Etc21(exponents, symbolic=False):
+        _0bRCv = sympy.Rational if symbolic else lambda _caKxQ, _QxIuT: _caKxQ / _QxIuT
+        exponents = list(exponents)
+        _7oYxj = len(exponents)
+
+        def _tv33A(exponents):
+            if all((_MRzq4 == 0 for _MRzq4 in exponents)):
+                return _HtSXW(_7oYxj, symbolic)
+            _x0LcL, _f5dBC = next(((_DnJC9, _V6ayy) for _DnJC9, _V6ayy in enumerate(exponents) if _V6ayy > 0))
+            _13pS6 = exponents.copy()
+            _13pS6[_x0LcL] -= 1
+            return _tv33A(_13pS6) * _0bRCv(_f5dBC, sum(exponents) + _7oYxj)
+        return _tv33A(exponents)
+
+    def _owT56(n, r=1, symbolic=False):
+        _toLy2 = sympy.pi if symbolic else math.pi
+
+        def _Wg3N2(n):
+            assert n >= 1, f'n = {n}'
+            if n == 1:
+                return 2
+            if n == 2:
+                return 2 * _toLy2 * r
+            return _Wg3N2(n - 2) * 2 * _toLy2 / (n - 2) * r ** 2
+        return _Wg3N2(n)
+
+    def _Zco1G(exponents, symbolic=False):
+        exponents = list(exponents)
+        _XUlN5 = len(exponents)
+        _XUlN5 = sympy.S(_XUlN5) if symbolic else _XUlN5
+        if any((_VvucB % 2 == 1 for _VvucB in exponents)):
+            return 0
+
+        def _H4xOa(exponents):
+            if all((_aLwl9 == 0 for _aLwl9 in exponents)):
+                return _owT56(_XUlN5, symbolic=symbolic)
+            _0LZ11, _0F4iF = next(((_Cpsfh, _iY8zo) for _Cpsfh, _iY8zo in enumerate(exponents) if _iY8zo > 0))
+            _VJycp = exponents.copy()
+            _VJycp[_0LZ11] -= 2
+            return _H4xOa(_VJycp) * (_0F4iF - 1) / (sum(exponents) + _XUlN5 - 2)
+        return _H4xOa(exponents)
+
+    def _RDsBa():
+        try:
+            slim.keygen.find_license_and_validate(account_id='109c23d2-6cdd-4faf-bd8a-96c242733638', product_id='06b7db1d-5a40-4d2c-b89c-6b1887c377c1', variable_names=['SIGMA_LIC', 'SIGMA_LICENSE', 'SIGMA_LICENSE_KEY'])
+        except slim.LicenseError as e:
+            e.show()
+            sys.exit(1)
+    _RDsBa()
+_NJO1r()
+del _NJO1r
