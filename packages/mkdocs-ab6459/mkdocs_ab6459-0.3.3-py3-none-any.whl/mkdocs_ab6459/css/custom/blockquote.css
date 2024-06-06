@@ -1,0 +1,29 @@
+#blockquote-wrap {
+    display: flex
+}
+
+div#table:before {
+    background: rgba(var(--bs-body-color-rgb), 0.08);
+    border-bottom: var(--bs-border-width) solid var(--bs-border-color-translucent);
+    border-left: var(--bs-border-width) solid var(--bs-border-color-translucent);
+    border-top: var(--bs-border-width) solid var(--bs-border-color-translucent);
+    border-bottom-left-radius:  var(--bs-border-radius-xl);
+    border-top-left-radius:  var(--bs-border-radius-xl);
+    content: "\F683";
+    color: var(--bs-body-color);
+    display: inline-flex;
+    padding: 0.75rem;
+    align-items: start;
+    font-family: "bootstrap-icons";
+}
+
+blockquote {
+    background: rgba(var(--bs-body-color-rgb), 0.03);
+    border: var(--bs-border-width) solid var(--bs-border-color-translucent);
+    border-bottom-right-radius:  var(--bs-border-radius-xl);
+    border-top-right-radius:  var(--bs-border-radius-xl);
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0.75rem;
+    margin: 0 0 0 0;
+}
