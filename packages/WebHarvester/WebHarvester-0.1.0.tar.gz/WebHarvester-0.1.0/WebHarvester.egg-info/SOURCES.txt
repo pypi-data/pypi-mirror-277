@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+WebHarvester.egg-info/PKG-INFO
+WebHarvester.egg-info/SOURCES.txt
+WebHarvester.egg-info/dependency_links.txt
+WebHarvester.egg-info/requires.txt
+WebHarvester.egg-info/top_level.txt
