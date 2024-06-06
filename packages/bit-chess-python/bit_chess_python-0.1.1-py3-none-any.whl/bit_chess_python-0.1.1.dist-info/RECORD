@@ -1,0 +1,15 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/Core/BitboardUtility.py,sha256=xEUodETXDe8q2eDxRSRM4Q7weV0-DL2YY4ehE7UmOU0,4111
+src/Core/Board.py,sha256=wxQi0TUQ9SAIt3zjwHMtQhhv_9F9rhgiHsFTiee-L58,15896
+src/Core/GameState.py,sha256=QwRCENJItqpT3PaKgmA4YLONFsIVBRyihUwxsRd77Qw,625
+src/Core/Move.py,sha256=xtf_SYzrsp_a2lWXRcgc4hq1k4AKza7WzcUJsc5uwDY,509
+src/Core/MoveGeneration.py,sha256=BxC8DnUNZiB86YbO3R62_f6C-CpS64uqabyto-WT2Fo,20534
+src/Core/Perft.py,sha256=UN_xAqPTnQA3yEFLJ2trjSfwTxTzDGmxrgXJAaD0YJY,1380
+src/Core/Piece.py,sha256=4dK-p6d3-QFWUnSnUNfRINeNAYDNQ2JcaG2cqHx5jtM,59
+src/Core/PieceList.py,sha256=XJlfprz3LNulNv-oRneUhgK2pp30plB9qMjUi0XT9t0,740
+src/Core/PrecomputedAttacks.py,sha256=MRrtHXjC6g2wupIpFKckVkYA2kgN-Cy7dGU4XAhiLmE,10678
+src/Core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bit_chess_python-0.1.1.dist-info/METADATA,sha256=WATRq-rNrl_rDVtejdXTOEIw6HOUcADL1qoQigTxAXg,1889
+bit_chess_python-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+bit_chess_python-0.1.1.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+bit_chess_python-0.1.1.dist-info/RECORD,,
