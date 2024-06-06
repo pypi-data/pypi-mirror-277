@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dart_ops_engine
+Version: 0.1.0
+Summary: 一个可以被Dart dart_ops_engine执行的Python脚本引擎
+Home-page: https://github.com/josercc/dart_ops_engine/python
+Author: 君赏
+Author-email: josercc@163.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+https://github.com/DartOpsHub
+
+
