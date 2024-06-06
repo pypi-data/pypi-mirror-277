@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: deeplexer
+Version: 0.0.2
+Summary: Free DeepL Pro even Quota Exceeded
+Home-page: https://github.com/OrigamiDream/deeplexer.git
+Author: OrigamiDream
+Author-email: hello@origamidream.me
+License: MIT
+Keywords: machine translation,translate,translation,deepl,deeplx
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp>=3.9.5
+Requires-Dist: brotli>=1.1.0
+Requires-Dist: playwright>=1.44.0
+
+# DeepLexer
+
+Working DeepL Pro even Quota Exceeded.
+
+Use your own risks.
+
+## Usage
+```
+pip install deeplexer
+```
+
+```python
+import asyncio
+from deeplexer import Deeplexer
+
+async def main():
+    session_file = './sessions.json'  # Required. Path to the session be stored.
+    username = '<deepl username>'  # Optional if session file is valid
+    password = '<deepl password>'  # Optional if session file is valid
+    async with Deeplexer(session_file, 
+                         username=username, 
+                         password=password) as deeplex:
+        query = 'Hello World!'
+        translation = await deeplex.translate(query, 'EN', 'KO')
+        print('Translation:', translation.text)
+    print('All jobs have been finished')
+
+if __name__ == '__main__':
+    event_loop = asyncio.get_event_loop()
+    event_loop.run_until_complete(main())
+    event_loop.close()
+```
+
+## License
+
+Licensed under the [MIT license](https://github.com/OrigamiDream/deeplexer/blob/main/LICENSE).
