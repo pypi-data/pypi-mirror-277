@@ -1,0 +1,3 @@
+[console_scripts]
+decades=decades.main:app
+
