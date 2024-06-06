@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: jaximal
+Version: 0.1.1
+Summary: A JAX-based PyTree manipulation library 
+Author-email: Arvin Kushwaha <arvin.singh.kushwaha@gmail.com>
+License: MIT
+License-File: LICENSE.txt
+Requires-Python: >=3.12
+Requires-Dist: jax>=0.4.28
+Requires-Dist: jaxlib>=0.4.28
+Requires-Dist: jaxtyping>=0.2.29
+Requires-Dist: optax>=0.2.2
+Requires-Dist: safetensors>=0.4.3
+Description-Content-Type: text/markdown
+
+# Jaximal
+A JAX-based PyTree manipulation library
