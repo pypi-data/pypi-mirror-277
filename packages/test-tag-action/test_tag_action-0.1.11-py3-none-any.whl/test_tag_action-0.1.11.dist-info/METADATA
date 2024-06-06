@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: test-tag-action
+Version: 0.1.11
+Summary: 
+Author: Chuang Yu Min
+Author-email: chg.yumin@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+test-tag-action
+
+New doc
+
