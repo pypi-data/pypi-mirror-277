@@ -1,0 +1,61 @@
+import typer
+from . import server
+
+app = typer.Typer(pretty_exceptions_enable=False, add_completion=False)
+
+
+@app.command(help="Start a server")
+def start(name: str, clean: bool = False, update: bool = False):
+    server.cleanup_servers(log=False)
+    server.start_server(name, clean, update)
+
+
+@app.command(help="Stop a server")
+def stop(name: str):
+    server.cleanup_servers(log=False)
+    server.stop_server(name)
+
+
+@app.command(help="Restart a server without cleaning, rebuilding or updating")
+def restart(name: str):
+    server.cleanup_servers(log=False)
+    server.restart_server(name)
+
+
+@app.command(help="Start all servers")
+def start_all(clean: bool = False, update: bool = False):
+    server.cleanup_servers(log=False)
+    server.start_all_servers(clean, update)
+
+
+@app.command(help="Stop all servers")
+def stop_all():
+    server.cleanup_servers(log=False)
+    server.stop_all_servers()
+
+
+@app.command(help="Update a server")
+def update(name: str):
+    server.cleanup_servers(log=False)
+    server.update_server(name)
+
+
+@app.command(help="Get the status of a server")
+def status(name: str):
+    server.cleanup_servers(log=False)
+    server.show_server_status(name)
+
+
+@app.command(help="Run a server")
+def run(name: str):
+    server.cleanup_servers(log=False)
+    server.run_server(name)
+
+
+@app.command(help="Cleanup live servers that are not in the config")
+def sweep():
+    server.cleanup_servers()
+
+
+def main():
+    app()
