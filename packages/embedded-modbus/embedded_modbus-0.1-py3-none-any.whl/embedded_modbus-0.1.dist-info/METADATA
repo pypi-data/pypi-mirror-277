@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: embedded-modbus
+Version: 0.1
+Summary: A simple Python library for communication with devices via modbus.
+Author: EKTOS DNE
+Requires-Dist: pymodbus ==3.6.8
+Requires-Dist: PyYAML ==6.0.1
+Requires-Dist: RecursiveNamespace ==0.2.2
+Requires-Dist: typing-extensions ==4.12.0
+
