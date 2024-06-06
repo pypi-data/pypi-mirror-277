@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+dingtalk_utils/__init__.py
+dingtalk_utils.egg-info/PKG-INFO
+dingtalk_utils.egg-info/SOURCES.txt
+dingtalk_utils.egg-info/dependency_links.txt
+dingtalk_utils.egg-info/top_level.txt
+dingtalk_utils/client/__init__.py
+dingtalk_utils/client/corp.py
+dingtalk_utils/client/setting.py
+dingtalk_utils/client/user.py
+dingtalk_utils/contacts/__init__.py
+dingtalk_utils/contacts/api.py

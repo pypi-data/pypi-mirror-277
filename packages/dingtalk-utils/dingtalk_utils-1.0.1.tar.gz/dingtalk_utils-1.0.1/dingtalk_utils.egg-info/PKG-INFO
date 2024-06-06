@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dingtalk_utils
+Version: 1.0.1
+Summary: 钉钉API
+Home-page: https://github.com/wujialaoer/dingtalk_utils
+Author: hzIsFoodDesert
+Author-email: w18664144718@live.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+
+钉钉API
