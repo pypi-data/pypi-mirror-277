@@ -1,0 +1,5 @@
+setup.py
+src/henModule.egg-info/PKG-INFO
+src/henModule.egg-info/SOURCES.txt
+src/henModule.egg-info/dependency_links.txt
+src/henModule.egg-info/top_level.txt
