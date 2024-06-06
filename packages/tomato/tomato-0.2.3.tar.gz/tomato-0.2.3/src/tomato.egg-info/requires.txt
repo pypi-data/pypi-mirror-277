@@ -1,0 +1,14 @@
+appdirs>=1.4.0
+toml
+pyyaml
+psutil
+yadg==4.2.5
+dgbowl_schemas>=108
+
+[docs]
+sphinx>5.0
+sphinx-rtd-theme
+sphinx-autodoc-typehints
+
+[testing]
+pytest
