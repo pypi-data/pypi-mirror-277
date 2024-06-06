@@ -1,0 +1,9 @@
+fast_error_saver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fast_error_saver/error_saver.py,sha256=GktpEGCEHlF9lvd_Gxn9ZdMC2Ung7Wu-8gZy2Ap5bxM,2641
+fast_error_saver/utils/__init__.py,sha256=6kHw5Ay3y2Ki5FuPZiPchEegADLdRDGdtt58Nin5Lg4,503
+fast_error_saver/utils/type_saver.py,sha256=z3kY_zQd5_V4tOr8NrE3z0d-eM2HSoNZsZ6BI3SCGeM,1196
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fast_error_saver-0.2.0.dist-info/METADATA,sha256=swvyUrTSptTqMA2KqXVfTbYGvgEGMys31rNBo4fIfRE,475
+fast_error_saver-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+fast_error_saver-0.2.0.dist-info/top_level.txt,sha256=xW6S6fWpyF1jdqH1OQLdhv8gLIsTY-HlEugPEPYatSc,23
+fast_error_saver-0.2.0.dist-info/RECORD,,
