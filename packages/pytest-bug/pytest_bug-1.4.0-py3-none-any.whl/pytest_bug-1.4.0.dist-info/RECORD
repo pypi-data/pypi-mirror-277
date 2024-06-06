@@ -1,0 +1,10 @@
+pytest_bug/__init__.py,sha256=4czD7jBXyrluJdezeRfNOEapDDTECmAZTqU3WgaqX4c,210
+pytest_bug/__version__.py,sha256=R8-T9fmURjcuoxYpHTAjyNAhgJPDtI2jogCjqYYkfCU,411
+pytest_bug/hooks.py,sha256=N8bPVwIkDaMAlV8zq4MqUln_GzmS_AUMj2p7nudaRsY,566
+pytest_bug/plugin.py,sha256=8clRDyBscAZFLSSMiq2Zft80IccbKyyOdr_E_1iEwjQ,8497
+pytest_bug-1.4.0.dist-info/LICENSE,sha256=hCeZkoqQlaji5fqIKg1Ymd7E4OX_UcTEd12YZVPUO7U,1066
+pytest_bug-1.4.0.dist-info/METADATA,sha256=2O4uDCk6TNLNKI21PnBvO4bQ1ijBVEo1pylg_BQQ-2U,5889
+pytest_bug-1.4.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pytest_bug-1.4.0.dist-info/entry_points.txt,sha256=Dd0HwWrGCRHDSd45lmjePHwlaI41rOpPewOFhF-CguU,42
+pytest_bug-1.4.0.dist-info/top_level.txt,sha256=RE2c0u-x-8Hl3tBHEJ-VA5PmTDwyUSUaxo1fKA7vNxs,11
+pytest_bug-1.4.0.dist-info/RECORD,,
