@@ -1,0 +1,11 @@
+dialectid/__init__.py,sha256=KRiT1SAXvd4eqm2I4S49Ln_g4XGlCTGtm2kLY3xoxHU,1285
+dialectid/text_repr.py,sha256=0bIniMcpZjcjY06yEqsSRnelRZGfPP1o5eIA2ZvAvYo,2765
+dialectid/utils.py,sha256=GlSyD0AYY0g19fCR88ihZgHenw7LaFKq90s1o6hYP3U,6530
+dialectid/tests/__init__.py,sha256=Wf46T-OV2s7efRAJOE1DCkVPf48AmwGukxWdxArO_U4,1221
+dialectid/tests/test_text_repr.py,sha256=gWZch6wjI_3t94tQbR2BYTkbH6xEKJUziiljrOH-EC4,1536
+dialectid/tests/test_utils.py,sha256=jtau-rnqj3eCN5LkMpfk-pe7ilGGk62gzDpZDGb22Wo,2413
+dialectid-0.0.1.dist-info/LICENSE,sha256=b2Fw8m_VQjSbrrIs6BjgMGEix3a6GAMPvMkyrQAP-yU,1189
+dialectid-0.0.1.dist-info/METADATA,sha256=VsEEWLGbs-AeSqGzHdYFXxUXbQV5RDJaBFBSC2E2Iko,209
+dialectid-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dialectid-0.0.1.dist-info/top_level.txt,sha256=InE4bfGUJ2K3g9kbLjLt_Rjekx21ga-9LzMXpcqLGmg,10
+dialectid-0.0.1.dist-info/RECORD,,
