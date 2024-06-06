@@ -1,0 +1,2 @@
+[console_scripts]
+0xdirsan = 0xdirsan:main
