@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: offline_folium
+Version: 0.1
+Summary: Allows using folium with no internet connection
+Home-page: https://github.com/debrief/offline_folium
+Author: Robin Wilson
+Author-email: robin@rtwilson.com
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Eclipse Public License 2.0 (EPL-2.0)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: GIS
+License-File: LICENSE
+Requires-Dist: folium
+
