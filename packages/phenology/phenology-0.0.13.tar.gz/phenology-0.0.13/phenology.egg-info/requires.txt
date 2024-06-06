@@ -1,0 +1,10 @@
+cdsapi
+geopandas
+joblib
+numpy
+pandas
+pyproj
+scipy
+Shapely
+tqdm
+xarray
