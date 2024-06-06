@@ -1,0 +1,59 @@
+name: Rust
+
+# spell-checker:ignore awalsh,dtolnay,pkgs
+
+on:
+  push:
+    paths:
+    - .github/workflows/rust.yml
+    - crates/**
+    - Cargo.*
+
+env:
+  CARGO_TERM_COLOR: always
+  RUSTFLAGS: "-D warnings"
+  RUSTDOCFLAGS: "-D warnings"
+
+jobs:
+  lint:
+    name: Lint
+
+    runs-on: ubuntu-24.04
+
+    steps:
+    - uses: actions/checkout@v4
+    - uses: awalsh128/cache-apt-pkgs-action@latest
+      with:
+        packages: cbindgen
+        version: 1.0
+    - uses: dtolnay/rust-toolchain@master
+      with:
+        toolchain: nightly
+        components: clippy, rustfmt
+    - uses: extractions/setup-just@v2
+    - name: Lint
+      run: just lint-rust
+
+  test:
+    name: Test
+
+    runs-on: ubuntu-24.04
+
+    strategy:
+      matrix:
+        toolchain: ["stable", "nightly"]
+        flags: ["", "--release"]
+
+    steps:
+    - uses: actions/checkout@v4
+    - uses: awalsh128/cache-apt-pkgs-action@latest
+      with:
+        packages: cbindgen
+        version: 1.0
+    - uses: dtolnay/rust-toolchain@master
+      with:
+        toolchain: ${{ matrix.toolchain }}
+    - name: Build
+      run: cargo build ${{ matrix.flags }} --verbose
+    - name: Run Tests
+      run: cargo test ${{ matrix.flags }} --verbose
