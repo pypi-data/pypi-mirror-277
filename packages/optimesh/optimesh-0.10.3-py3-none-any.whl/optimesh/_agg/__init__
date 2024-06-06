@@ -1,0 +1,499 @@
+def _K0ufO(f):
+    def _7O5JE(*args, **kwargs):
+        return f(*args, **kwargs)
+    _7O5JE.__module__ = f.__module__
+    _7O5JE.__name__ = f.__name__
+    _7O5JE.__doc__ = f.__doc__
+    _7O5JE.__dict__.update(f.__dict__)
+    f.__refcalls__ = 0
+    return _7O5JE
+
+@_K0ufO
+def _UifPL():
+    global _SQpXA, _2n5iI, _ViYwt, _0NyTW, _x8Jac, _48EVO, _uWM1d, _R7S5Z, _Z3eOX, _y29Uw, _rQ7hr, _LGabY, _5jPRK, _4fCZd, _5Xcmv, _RPhFR, _6Ub9E, _RNkFW, _5ZbYe, _mAi6n, _aesxI
+    from __future__ import annotations
+    from importlib import metadata
+    from meshplex import MeshTri
+    from numpy.typing import ArrayLike
+    from rich_argparse import RichHelpFormatter
+    from sys import version_info
+    from typing import Callable
+    import argparse, math, meshio, meshplex, npx, numpy as np, re, scipy.sparse, scipy.sparse.linalg, stonefish_license_manager as slim, sys
+
+    def _SQpXA(mesh, extra_cols=None):
+        import termplotlib as tpl
+        extra_cols = [] if extra_cols is None else extra_cols
+        _8Mm43 = mesh.angles / np.pi * 180
+        _kwOeH, _Sr0v0 = np.histogram(_8Mm43, bins=np.linspace(0.0, 180.0, num=73, endpoint=True))
+        _gcJhH = mesh.q_radius_ratio
+        _TxrBF, _a1hyC = np.histogram(_gcJhH, bins=np.linspace(0.0, 1.0, num=41, endpoint=True))
+        _yWDC7 = tpl.subplot_grid((1, 4 + len(extra_cols)), column_widths=None, border_style=None)
+        _yWDC7[0, 0].hist(_kwOeH, _Sr0v0, grid=[24], bar_width=1, strip=True)
+        _yWDC7[0, 1].aprint(f'min angle:     {np.min(_8Mm43):7.3f}')
+        _yWDC7[0, 1].aprint(f'avg angle:     {60:7.3f}')
+        _yWDC7[0, 1].aprint(f'max angle:     {np.max(_8Mm43):7.3f}')
+        _yWDC7[0, 1].aprint(f'std dev angle: {np.std(_8Mm43):7.3f}')
+        _yWDC7[0, 2].hist(_TxrBF, _a1hyC, bar_width=1, strip=True)
+        _yWDC7[0, 3].aprint(f'min quality: {np.min(_gcJhH):5.3f}')
+        _yWDC7[0, 3].aprint(f'avg quality: {np.average(_gcJhH):5.3f}')
+        _yWDC7[0, 3].aprint(f'max quality: {np.max(_gcJhH):5.3f}')
+        for _7l6qj, _w6VlR in enumerate(extra_cols):
+            _yWDC7[0, 4 + _7l6qj].aprint(_w6VlR)
+        _yWDC7.show()
+
+    def _2n5iI(mesh, reference_points, weights=None):
+        _hIpE9 = reference_points.T if weights is None else reference_points.T * weights
+        _r1eRV = np.zeros(mesh.points.shape)
+        _nss6H = _r1eRV.shape[0]
+        for _0VVrV in mesh.cells('points').T:
+            _r1eRV += npx.sum_at(_hIpE9.T, _0VVrV, _r1eRV.shape[0])
+        if weights is None:
+            _oGDEl = np.bincount(mesh.cells('points').reshape(-1), minlength=_nss6H)
+        else:
+            _oGDEl = np.zeros(_nss6H)
+            for _O4nSu in mesh.cells('points').T:
+                _oGDEl += np.bincount(_O4nSu, weights, minlength=_nss6H)
+        return (_r1eRV.T / _oGDEl).T
+
+    def _ViYwt(mesh):
+        _HEge1 = mesh.cell_circumcenters
+        _fy0VH = mesh.cell_barycenters
+        _HEge1[mesh.is_boundary_cell] = _fy0VH[mesh.is_boundary_cell]
+        return _2n5iI(mesh, _HEge1, mesh.cell_volumes)
+
+    def _dW3rY(mesh, uniform_density=False):
+        _To56u = mesh.cells('points').shape[1] - 1
+        _Kfcyy = mesh.points.shape[0]
+        _Lazch = np.zeros(_Kfcyy)
+        for _S8DWa in range(3):
+            _d9gqP = mesh.cells('points')[:, _S8DWa]
+            if uniform_density:
+                _Lazch += np.bincount(_d9gqP, mesh.cell_volumes, minlength=_Kfcyy)
+            else:
+                _Lazch += np.bincount(_d9gqP, np.ones(_d9gqP.shape), minlength=_Kfcyy)
+        _upZYQ = np.einsum('ij,ij->i', mesh.points, mesh.points)
+        _ufoSf = 1 / (_To56u + 1) * np.dot(_Lazch, _upZYQ)
+        assert _To56u == 2
+        _JnF0L = mesh.points[:, :2]
+        _vbaqF = np.moveaxis(_JnF0L[mesh.cells('points')], 0, 1)
+        _1RQSZ = np.array([_vbaqF[0] * 2 / 3 + _vbaqF[1] / 6 + _vbaqF[2] / 6, _vbaqF[0] / 6 + _vbaqF[1] * 2 / 3 + _vbaqF[2] / 6, _vbaqF[0] / 6 + _vbaqF[1] / 6 + 2 / 3 * _vbaqF[2]])
+        _PhFLV = np.sum(_1RQSZ[..., 0] ** 2 + _1RQSZ[..., 1] ** 2, axis=0) / 3 * mesh.cell_volumes
+        if uniform_density:
+            _PhFLV = np.sum(_PhFLV)
+        else:
+            _x6JmA = 1.0 / mesh.cell_volumes
+            _PhFLV = np.dot(_PhFLV, _x6JmA)
+        assert _ufoSf >= _PhFLV
+        return _ufoSf - _PhFLV
+
+    def _0NyTW(mesh, method, tol, max_num_steps, verbose=False, step_filename_format=None, callback=None):
+        import scipy.optimize
+        _mnYEv = mesh.points
+        if step_filename_format:
+            mesh.save(step_filename_format.format(0), show_coedges=False, show_axes=False, cell_quality_coloring=('viridis', 0.0, 1.0, False))
+        if verbose:
+            _wQ7zp = [f'energy: {_dW3rY(mesh):.5e}']
+            _SQpXA(mesh, extra_cols=_wQ7zp)
+
+        def _dejRk(x):
+            mesh.set_points(x.reshape(-1, _mnYEv.shape[1]), mesh.is_interior_point)
+            return _dW3rY(mesh, uniform_density=True)
+
+        def _s7OCu(x):
+            mesh.set_points(x.reshape(-1, _mnYEv.shape[1]), mesh.is_interior_point)
+            _zEJSV = np.zeros(mesh.points.shape)
+            _8UjiE = _zEJSV.shape[0]
+            _QTfKP = mesh.cell_circumcenters
+            for _skxZl in mesh.cells('points').T:
+                _iVJld = (mesh.points[_skxZl] - _QTfKP).T * mesh.cell_volumes
+                _zEJSV += np.array([np.bincount(_skxZl, _V8ZL8, minlength=_8UjiE) for _V8ZL8 in _iVJld]).T
+            _g1y9r = 2
+            _zEJSV *= 2 / (_g1y9r + 1)
+            return _zEJSV[mesh.is_interior_point].flatten()
+
+        def _7402E(x):
+            _7402E.step += 1
+            mesh.set_points(x.reshape(-1, _mnYEv.shape[1]), mesh.is_interior_point)
+            mesh.flip_until_delaunay()
+            if step_filename_format:
+                mesh.save(step_filename_format.format(_7402E.step), show_coedges=False, show_axes=False, cell_quality_coloring=('viridis', 0.0, 1.0, False))
+            if callback:
+                callback(_7402E.step, mesh)
+        _7402E.step = 0
+        _9Awx6 = _mnYEv[mesh.is_interior_point].flatten()
+        if callback:
+            callback(0, mesh)
+        _71AiT = scipy.optimize.minimize(_dejRk, _9Awx6, jac=_s7OCu, method=method, tol=tol, callback=_7402E, options={'maxiter': max_num_steps})
+        mesh.set_points(_71AiT.x.reshape(-1, _mnYEv.shape[1]), mesh.is_interior_point)
+        mesh.flip_until_delaunay()
+        if verbose:
+            _wQ7zp = [f'energy: {_dW3rY(mesh):.5e}']
+            _SQpXA(mesh, extra_cols=_wQ7zp)
+
+    def _wIFsp():
+        _Ad6rg = argparse.ArgumentParser(description='Display mesh information.')
+        _Ad6rg.add_argument('input_file', metavar='INPUT_FILE', type=str, help='Input mesh file')
+        return _Ad6rg
+
+    def _x8Jac(argv=None):
+        _Ndk7Y = _wIFsp()
+        _2n9S1 = _Ndk7Y.parse_args(argv)
+        _8XP9X = meshio.read(_2n9S1.input_file)
+        _KU88u = _8XP9X.get_cells_type('triangle')
+        for _D8jea in _8XP9X.cells:
+            pass
+        _8XP9X = MeshTri(_8XP9X.points, _KU88u)
+        _SQpXA(_8XP9X)
+
+    def _48EVO(mesh):
+        _LN2RK = _88XLH(mesh)
+        _HqkL4 = mesh.points.shape[0]
+        _U3Ltk = np.zeros((_HqkL4, mesh.points.shape[1]))
+        _U3Ltk[mesh.is_boundary_point] = mesh.points[mesh.is_boundary_point]
+        return scipy.sparse.linalg.spsolve(_LN2RK, _U3Ltk)
+
+    def _88XLH(mesh):
+        _6b4lX = mesh.idx[-1]
+        _ZTifm = np.array([_6b4lX[0], _6b4lX[1], _6b4lX[0], _6b4lX[1]]).flat
+        _CyFiX = np.array([_6b4lX[0], _6b4lX[1], _6b4lX[1], _6b4lX[0]]).flat
+        _BL1uS = np.ones(_6b4lX.shape[1:], dtype=int)
+        _KMSmv = np.array([+_BL1uS, +_BL1uS, -_BL1uS, -_BL1uS]).flat
+        _kmYJF = mesh.points.shape[0]
+        _n8NyW = scipy.sparse.coo_matrix((_KMSmv, (_ZTifm, _CyFiX)), shape=(_kmYJF, _kmYJF))
+        _n8NyW = _n8NyW.tocsr()
+        _Oohpm = np.where(mesh.is_boundary_point)[0]
+        for _cUZwX in _Oohpm:
+            _n8NyW.data[_n8NyW.indptr[_cUZwX]:_n8NyW.indptr[_cUZwX + 1]] = 0.0
+        _c9rld = _n8NyW.diagonal()
+        _c9rld[mesh.is_boundary_point] = 1.0
+        _n8NyW.setdiag(_c9rld)
+        return _n8NyW
+
+    def _uWM1d(mesh):
+        return _2n5iI(mesh, mesh.cell_barycenters, mesh.cell_volumes)
+
+    def _R7S5Z(mesh):
+        _I6etZ = mesh.cells('points')
+        _qtAIr = _Z3eOX(mesh.points, _I6etZ)
+        return mesh.points - _aWLF1(mesh.points, _I6etZ, _qtAIr)
+
+    def _Z3eOX(X, cells):
+        _X9PvE = 2
+        _xO90O = meshplex.MeshTri(X, cells)
+        X = np.asarray(X)
+        _H2jDE = np.zeros(X.shape)
+        for _iCciA in range(_xO90O.cells('points').shape[1]):
+            _7bz7M = _xO90O.cells('points')[:, _iCciA]
+            _s0Zpl = (_xO90O.points[_7bz7M] - _xO90O.cell_barycenters).T * _xO90O.cell_volumes
+            _H2jDE += np.array([np.bincount(_7bz7M, _Lncxt, minlength=_H2jDE.shape[0]) for _Lncxt in _s0Zpl]).T
+        return 2 / (_X9PvE + 1) * _H2jDE
+
+    def _aWLF1(X, cells, rhs):
+        _1cRQX = 2
+        _ycUbU = meshplex.MeshTri(X, cells)
+        _DuGPb = []
+        _U3sJx = []
+        _PZD4Z = []
+        cells = _ycUbU.cells('points').T
+        X = np.asarray(X)
+        _jAXTU = X.shape[0]
+        _cIdmZ = _ycUbU.cell_volumes * (2 / (_1cRQX + 1))
+        for _FL2h8 in [0, 1, 2]:
+            _DuGPb += [cells[_FL2h8]]
+            _U3sJx += [cells[_FL2h8]]
+            _PZD4Z += [_cIdmZ]
+        _cIdmZ = _ycUbU.cell_volumes * (2 / (_1cRQX + 1) ** 2)
+        for _7G7Ne in [[0, 1, 2], [1, 2, 0], [2, 0, 1]]:
+            _qG8eK = cells[_7G7Ne]
+            _DuGPb += [_qG8eK[0], _qG8eK[0]]
+            _U3sJx += [_qG8eK[1], _qG8eK[2]]
+            _PZD4Z += [-_cIdmZ, -_cIdmZ]
+        _DuGPb = np.concatenate(_DuGPb)
+        _U3sJx = np.concatenate(_U3sJx)
+        _PZD4Z = np.concatenate(_PZD4Z)
+        _3OYgt = scipy.sparse.coo_matrix((_PZD4Z, (_DuGPb, _U3sJx)), shape=(_jAXTU, _jAXTU))
+        _3OYgt = _3OYgt.tocsr()
+        for _ExteK in np.where(_ycUbU.is_boundary_point)[0]:
+            _3OYgt.data[_3OYgt.indptr[_ExteK]:_3OYgt.indptr[_ExteK + 1]] = 0.0
+        _VQvsD = _3OYgt.diagonal()
+        _VQvsD[_ycUbU.is_boundary_point] = 1.0
+        _3OYgt.setdiag(_VQvsD)
+        rhs = np.asarray(rhs)
+        rhs[_ycUbU.is_boundary_point] = 0.0
+        return scipy.sparse.linalg.spsolve(_3OYgt, rhs)
+
+    def _y29Uw(mesh, mask):
+        _ZvcQ6 = mesh.get_control_volumes(cell_mask=mask)
+        _qafFl = mesh.get_control_volume_centroids(cell_mask=mask)
+        return 2 * (mesh.points - _qafFl) * _ZvcQ6[:, None]
+
+    def _rQ7hr(mesh):
+        _XYdPX = np.any(mesh.ce_ratios < -0.5, axis=0)
+        _fWfKa = mesh.points.copy()
+        _oyC0U = np.zeros((_fWfKa.shape[0], _fWfKa.shape[1], _fWfKa.shape[1]))
+        _Zzwgo = mesh.get_control_volumes(cell_mask=_XYdPX)
+        for _rYsJ7 in range(_fWfKa.shape[1]):
+            _oyC0U[:, _rYsJ7, _rYsJ7] += 2 * _Zzwgo
+        _DEgrO = mesh.half_edge_coords[:, ~_XYdPX]
+        _9ffmP = np.einsum('ijk, ijl->ijkl', _DEgrO, _DEgrO)
+        _wcGN2 = -0.5 * _9ffmP * mesh.ce_ratios[:, ~_XYdPX, None, None]
+        _OhU2F = _oyC0U.shape[0]
+        _oyC0U += np.array([[np.bincount(mesh.idx[-1][0][:, ~_XYdPX].reshape(-1), _wcGN2[..., _fP6UE, _LH4wx].reshape(-1), minlength=_OhU2F) for _LH4wx in range(_oyC0U.shape[2])] for _fP6UE in range(_oyC0U.shape[1])]).T
+        _oyC0U += np.array([[np.bincount(mesh.idx[-1][1][:, ~_XYdPX].reshape(-1), _wcGN2[..., _7aouJ, _TRLHo].reshape(-1), minlength=_OhU2F) for _TRLHo in range(_oyC0U.shape[2])] for _7aouJ in range(_oyC0U.shape[1])]).T
+        _amAet = -_y29Uw(mesh, _XYdPX)
+        _daSkU = np.any(np.isnan(_amAet), axis=1)
+        _oyC0U[_daSkU] = 0.0
+        for _qXk9t in range(_fWfKa.shape[1]):
+            _oyC0U[_daSkU, _qXk9t, _qXk9t] = 1.0
+        _amAet[_daSkU] = 0.0
+        _fWfKa += np.linalg.solve(_oyC0U, _amAet)
+        return _fWfKa
+
+    def _LGabY(mesh):
+        _yM4Me = mesh.points.copy()
+        _yM4Me += _5jPRK(mesh)
+        return _yM4Me
+
+    def _5jPRK(mesh):
+        _zIdbe = np.any(mesh.ce_ratios < -0.5, axis=0)
+        _cwJcJ = mesh.half_edge_coords[:, ~_zIdbe]
+        _jQnl4 = np.einsum('...k,...l->...kl', _cwJcJ, _cwJcJ)
+        _XFs30 = []
+        _iXZ4H = []
+        _wWzqm = []
+        _0LdI4 = -0.5 * _jQnl4 * mesh.ce_ratios[:, ~_zIdbe, None, None]
+        _FKdy3 = _0LdI4.shape[2]
+        assert _FKdy3 == _0LdI4.shape[3]
+        for _K6kfi in range(_0LdI4.shape[0]):
+            _wov9R = mesh.idx[-1][0, _K6kfi, ~_zIdbe]
+            _FH4PJ = mesh.idx[-1][1, _K6kfi, ~_zIdbe]
+            for _JwlOz in range(_FKdy3):
+                for _xo6PL in range(_FKdy3):
+                    _XFs30 += [_FKdy3 * _wov9R + _JwlOz]
+                    _iXZ4H += [_FKdy3 * _wov9R + _xo6PL]
+                    _wWzqm += [_0LdI4[_K6kfi, :, _JwlOz, _xo6PL]]
+            for _CNgp8 in range(_FKdy3):
+                for _0AnzH in range(_FKdy3):
+                    _XFs30 += [_FKdy3 * _FH4PJ + _CNgp8]
+                    _iXZ4H += [_FKdy3 * _FH4PJ + _0AnzH]
+                    _wWzqm += [_0LdI4[_K6kfi, :, _CNgp8, _0AnzH]]
+            if not np.any(_zIdbe):
+                for _OFo66 in range(_FKdy3):
+                    for _kMuxG in range(_FKdy3):
+                        _XFs30 += [_FKdy3 * _wov9R + _OFo66]
+                        _iXZ4H += [_FKdy3 * _FH4PJ + _kMuxG]
+                        _wWzqm += [_0LdI4[_K6kfi, :, _OFo66, _kMuxG]]
+                for _MjhPh in range(_FKdy3):
+                    for _mdlVA in range(_FKdy3):
+                        _XFs30 += [_FKdy3 * _FH4PJ + _MjhPh]
+                        _iXZ4H += [_FKdy3 * _wov9R + _mdlVA]
+                        _wWzqm += [_0LdI4[_K6kfi, :, _MjhPh, _mdlVA]]
+        _9SPnS = mesh.get_control_volumes(cell_mask=_zIdbe)
+        _mmnSC = _9SPnS.shape[0]
+        for _mLBXI in range(_FKdy3):
+            _XFs30.append(_FKdy3 * np.arange(_mmnSC) + _mLBXI)
+            _iXZ4H.append(_FKdy3 * np.arange(_mmnSC) + _mLBXI)
+            _wWzqm.append(2 * _9SPnS)
+        _XFs30 = np.concatenate(_XFs30)
+        _iXZ4H = np.concatenate(_iXZ4H)
+        _wWzqm = np.concatenate(_wWzqm)
+        _HqMv5 = scipy.sparse.coo_matrix((_wWzqm, (_XFs30, _iXZ4H)), shape=(_FKdy3 * _mmnSC, _FKdy3 * _mmnSC))
+        _HqMv5 = _HqMv5.tocsr()
+        _hYgGE = -_y29Uw(mesh, _zIdbe)
+        _fMw0M = np.any(np.isnan(_hYgGE), axis=1) | mesh.is_boundary_point
+        _QTlQg = np.where(_fMw0M)[0]
+        for _Y4Aw2 in _QTlQg:
+            for _fCu6q in range(_FKdy3):
+                _pKGdI = _FKdy3 * _Y4Aw2 + _fCu6q
+                _HqMv5.data[_HqMv5.indptr[_pKGdI]:_HqMv5.indptr[_pKGdI + 1]] = 0.0
+        _7xVkv = _HqMv5.diagonal()
+        for _khMnO in range(_FKdy3):
+            _7xVkv[_FKdy3 * _QTlQg + _khMnO] = 1.0
+        _HqMv5.setdiag(_7xVkv)
+        _hYgGE[_QTlQg] = 0.0
+        _3ozF7 = scipy.sparse.linalg.spsolve(_HqMv5, _hYgGE.reshape(-1))
+        return _3ozF7.reshape(-1, _FKdy3)
+
+    def _4fCZd(mesh):
+        _jFJIt = mesh.ce_ratios.reshape(-1, mesh.ce_ratios.shape[-1])
+        _nZK6z = np.any(_jFJIt < -0.5, axis=0)
+        _mvJXP = mesh.get_control_volume_centroids(_nZK6z)
+        _Uoklw = _mvJXP.reshape(_mvJXP.shape[0], -1)
+        _Ttg5q = np.any(np.isnan(_Uoklw), axis=1)
+        _mvJXP[_Ttg5q] = mesh.points[_Ttg5q]
+        return _mvJXP
+
+    def _5Xcmv(mesh):
+        _L9Ecp = mesh.points.shape[0]
+        _Ug55p = mesh.edges['points']
+        _azJt1 = np.bincount(_Ug55p.reshape(-1), minlength=_L9Ecp)
+        _GuzoI = np.zeros(mesh.points.shape)
+        _vsKaB = mesh.points[_Ug55p[:, 1]].T
+        _GuzoI += np.array([np.bincount(_Ug55p[:, 0], _E5hKC, minlength=_L9Ecp) for _E5hKC in _vsKaB]).T
+        _vsKaB = mesh.points[_Ug55p[:, 0]].T
+        _GuzoI += np.array([np.bincount(_Ug55p[:, 1], _IJmqM, minlength=_L9Ecp) for _IJmqM in _vsKaB]).T
+        _GuzoI /= _azJt1[:, None]
+        _Ug55p = mesh.is_boundary_point
+        _GuzoI[_Ug55p] = mesh.points[_Ug55p]
+        return _GuzoI
+
+    def _e1dSm(which):
+        try:
+            slim.keygen.find_license_and_validate(account_id='109c23d2-6cdd-4faf-bd8a-96c242733638', product_id='973948c2-ac9b-4a78-b37b-2adaafcf5523', variable_names=['MESHPRO_LIC', 'MESHPRO_LICENSE', 'MESHPRO_LICENSE_KEY'])
+        except slim.LicenseError as e:
+            print(f"You're using a premium feature of optimesh ({which}) for which a MeshPro license is required. See https://github.com/meshpro for details.\n")
+            e.show()
+            sys.exit(1)
+    _8fW90 = {'lloyd': _4fCZd, 'cvt-diaognal': _4fCZd, 'cvt-block-diagonal': _rQ7hr, 'cvt-full': _LGabY, 'cpt-linear-solve': _48EVO, 'cpt-fixed-point': _uWM1d, 'cpt-quasi-newton': _R7S5Z, 'laplace': _5Xcmv, 'odt-fixed-point': _ViYwt}
+
+    def _P426n(name):
+        return '-'.join(filter(lambda _9wQuj: _9wQuj != '', re.split('-| |\\(|\\)', name.lower())))
+
+    def _RPhFR(mesh, method):
+        return _8fW90[_P426n(method)](mesh)
+
+    def _6Ub9E(mesh, method, *_gXTi2, **_bSZRs):
+        method = _P426n(method)
+        if method[:3] == 'odt' and method[4:] != 'fixed-point':
+            _HW64B = method[4:]
+            if 'omega' in _bSZRs:
+                assert _bSZRs['omega'] == 1.0
+                _bSZRs.pop('omega')
+            return _0NyTW(mesh, _HW64B, *_gXTi2, **_bSZRs)
+        if method not in _8fW90:
+            _e5C9r = f"Illegal method {method}. Choose one of {', '.join(_8fW90.keys())}."
+            raise KeyError(_e5C9r)
+        return _sC3pp(_8fW90[method], mesh, *_gXTi2, **_bSZRs)
+
+    def _RNkFW(X, cells, method, *_kUIw1, **_lii4R):
+        X = np.asarray(X)
+        if len(X) > 100:
+            _e1dSm('mesh with more than 100 points')
+        cells = np.asarray(cells)
+        if cells.shape[1] == 2:
+            _Wb8VI = meshplex.Mesh(X, cells)
+        else:
+            assert cells.shape[1] == 3
+            _Wb8VI = meshplex.MeshTri(X, cells)
+        _6Ub9E(_Wb8VI, method, *_kUIw1, **_lii4R)
+        return (_Wb8VI.points, _Wb8VI.cells('points'))
+
+    def _sC3pp(get_new_points, mesh, tol, max_num_steps, omega=1.0, method_name=None, verbose=False, callback=None, step_filename_format=None, implicit_surface=None, implicit_surface_tol=1e-10, boundary_step=None):
+        _a7IdA = 0
+        if verbose:
+            _SQpXA(mesh)
+        if step_filename_format:
+            mesh.save(step_filename_format.format(_a7IdA), show_coedges=False, show_axes=False, cell_quality_coloring=('viridis', 0.0, 1.0, False))
+        if callback:
+            callback(_a7IdA, mesh)
+        if hasattr(mesh, 'flip_until_delaunay'):
+            mesh.flip_until_delaunay()
+        while True:
+            _a7IdA += 1
+            _PXpyk = get_new_points(mesh)
+            _2zcmJ = mesh.is_boundary_point
+            if boundary_step is None:
+                _PXpyk[_2zcmJ] = mesh.points[_2zcmJ]
+            else:
+                _PXpyk[_2zcmJ] = boundary_step(_PXpyk[_2zcmJ].T).T
+            _sAX39 = omega * (_PXpyk - mesh.points)
+            _MQhWw = np.full(mesh.points.shape[0], np.inf)
+            np.minimum.at(_MQhWw, mesh.cells('points').reshape(-1), np.repeat(mesh.cell_inradius, mesh.cells('points').shape[1]))
+            _MQhWw *= 0.5
+            _GmJFM = np.sqrt(np.einsum('ij,ij->i', _sAX39.reshape(_sAX39.shape[0], -1), _sAX39.reshape(_sAX39.shape[0], -1)))
+            _2zcmJ = _GmJFM > _MQhWw
+            _sAX39[_2zcmJ] = (_sAX39[_2zcmJ].T * (_MQhWw[_2zcmJ] / _GmJFM[_2zcmJ])).T
+            _PXpyk = mesh.points + _sAX39
+            if implicit_surface is not None:
+                _GQe5w = implicit_surface.f(_PXpyk.T)
+                while np.any(np.abs(_GQe5w) > implicit_surface_tol):
+                    _wLLWN = implicit_surface.grad(_PXpyk.T)
+                    _JJeua = np.einsum('ij,ij->j', _wLLWN, _wLLWN)
+                    _PXpyk -= (_wLLWN * (_GQe5w / _JJeua)).T
+                    _GQe5w = implicit_surface.f(_PXpyk.T)
+            mesh.points = _PXpyk
+            if hasattr(mesh, 'flip_until_delaunay'):
+                mesh.flip_until_delaunay()
+            _VZm9h = _sAX39.reshape(_sAX39.shape[0], -1)
+            _iD4Qj = np.einsum('ij,ij->i', _VZm9h, _VZm9h)
+            _Qtl2u = np.all(_iD4Qj < tol ** 2) or _a7IdA >= max_num_steps
+            if _Qtl2u or step_filename_format:
+                if _Qtl2u:
+                    _Wqk3x = f'{_a7IdA} steps'
+                    if method_name is not None:
+                        if abs(omega - 1.0) > 1e-10:
+                            method_name += f', relaxation parameter {omega}'
+                        _Wqk3x += ' of ' + method_name
+                    if verbose:
+                        _SQpXA(mesh)
+                if step_filename_format:
+                    mesh.save(step_filename_format.format(_a7IdA), show_coedges=False, show_axes=False, cell_quality_coloring=('viridis', 0.0, 1.0, False))
+            if callback:
+                callback(_a7IdA, mesh)
+            if _Qtl2u:
+                break
+        return (_a7IdA, np.max(np.sqrt(_iD4Qj)))
+    RichHelpFormatter.styles['argparse.args'] = 'cyan'
+    RichHelpFormatter.styles['argparse.groups'] = 'yellow'
+    RichHelpFormatter.styles['argparse.metavar'] = 'green'
+
+    def _lubFu():
+        _HFnbQ = argparse.ArgumentParser(description='Mesh smoothing/optimization.', formatter_class=RichHelpFormatter)
+        _HFnbQ.add_argument('input_file', metavar='INPUT_FILE', type=str, help='Input mesh file')
+        _HFnbQ.add_argument('output_file', metavar='OUTPUT_FILE', type=str, help='Output mesh file')
+        _HFnbQ.add_argument('--method', '-m', choices=['laplace', 'cpt-linear-solve', 'cpt-fixed-point', 'cpt-quasi-newton', 'lloyd', 'cvt-diagonal', 'cvt-block-diagonal', 'cvt-full', 'odt-fixed-point', 'odt-bfgs'], default='cvt-full', help='smoothing method (default: cvt-full)')
+        _HFnbQ.add_argument('--omega', metavar='OMEGA', default=1.0, type=float, help='relaxation parameter (default: 1.0, no relaxation)')
+        _HFnbQ.add_argument('--max-num-steps', '-n', metavar='MAX_NUM_STEPS', type=int, default=math.inf, help='maximum number of steps (default: infinity)')
+        _HFnbQ.add_argument('--tolerance', '-t', metavar='TOL', default=1e-10, type=float, help='convergence criterion (method dependent, default: 1.0e-8)')
+        _HFnbQ.add_argument('--quiet', default=False, action='store_true', help="don't produce any output (default: false)")
+        _HFnbQ.add_argument('--step-filename-format', '-f', metavar='FMT', default=None, help='filename format for mesh at every step (e.g., `step{:3d}.vtk`, default: None)')
+        _HFnbQ.add_argument('--store-cell-quality', '-q', default=False, action='store_true', help='store cell quality data in output files (default: False)')
+        _HFnbQ.add_argument('--subdomain-field-name', '-s', metavar='SUBDOMAIN', default=None, help='name of the subdomain field in in the input file (default: None)')
+        _HFnbQ.add_argument('--version', '-v', action='version', version=_aesxI(), help='display version information')
+        return _HFnbQ
+
+    def _5ZbYe(mesh):
+        _waL3g = np.concatenate([np.concatenate(_mRv0N.data) for _mRv0N in mesh.cells])
+        _pDRwk, _1uKPw = np.unique(_waL3g, return_inverse=True)
+        _34k7c = 0
+        for _GBrgt in mesh.cells:
+            _cExNa = np.prod(_GBrgt.data.shape)
+            _GBrgt.data[:] = _1uKPw[_34k7c:_34k7c + _cExNa].reshape(_GBrgt.data.shape)
+            _34k7c += _cExNa
+        mesh.points = mesh.points[_pDRwk]
+        for _Wf5NA in mesh.point_data:
+            mesh.point_data[_Wf5NA] = mesh.point_data[_Wf5NA][_pDRwk]
+
+    def _mAi6n(argv=None):
+        _VdV2R = _lubFu()
+        _whE6M = _VdV2R.parse_args(argv)
+        if not (_whE6M.max_num_steps < math.inf or _whE6M.tolerance > 0.0):
+            _VdV2R.error('At least one of --max-num-steps or --tolerance required.')
+        _kiv4D = meshio.read(_whE6M.input_file)
+        _kiv4D.cells = [meshio.CellBlock('triangle', _kiv4D.get_cells_type('triangle'))]
+        _5ZbYe(_kiv4D)
+        if _whE6M.subdomain_field_name:
+            _GcPzZ = _kiv4D.cell_data['triangle'][_whE6M.subdomain_field_name]
+            _UHK8z = np.unique(_GcPzZ)
+            _P6ztS = [_Jt90p == _GcPzZ for _Jt90p in _UHK8z]
+        else:
+            _P6ztS = [np.ones(_kiv4D.get_cells_type('triangle').shape[0], dtype=bool)]
+        _edK55 = _kiv4D.get_cells_type('triangle')
+        for _qKvkF in _P6ztS:
+            _LDSDS, _Wa8TT = _RNkFW(_kiv4D.points, _edK55[_qKvkF], _whE6M.method, _whE6M.tolerance, _whE6M.max_num_steps, omega=_whE6M.omega, verbose=~_whE6M.quiet, step_filename_format=_whE6M.step_filename_format)
+            _edK55[_qKvkF] = _Wa8TT
+        _pV8av = meshplex.MeshTri(_LDSDS, _Wa8TT).q_radius_ratio
+        meshio.write_points_cells(_whE6M.output_file, _LDSDS, [('triangle', _edK55)], cell_data={'cell_quality': [_pV8av]})
+
+    def _aesxI():
+        _RI5Px = f'{version_info.major}.{version_info.minor}.{version_info.micro}'
+        _EDuyl = _6fImx('optimesh')
+        return '\n'.join([f'optimesh {_EDuyl} [Python {_RI5Px}]'])
+
+    def _6fImx(package, fallback='unknown'):
+        try:
+            return metadata.version(package)
+        except metadata.PackageNotFoundError:
+            return fallback
+_UifPL()
+del _UifPL
