@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: modelslab
+Version: 0.1
+Summary: A package for interacting with the ModelsLab API
+Author: Sadchidananda C
+Author-email: sachith03122000@gmail.com
+License-File: LICENSE
+Requires-Dist: requests
+
