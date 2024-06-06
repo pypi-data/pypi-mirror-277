@@ -1,0 +1,46 @@
+# MDPDF Web Scraper
+
+A Python package for scraping websites and generating PDFs from their content.
+
+## What it does
+
+This package allows you to scrape a website's sitemap, extract the HTML content from each URL, convert it to Markdown, and generate a PDF file for each URL. The package uses concurrent futures for asynchronous processing, making it efficient and fast.
+
+## How to use
+
+### Installation
+
+You can install the package using pip:
+
+```
+pip install mdpdf-scraper
+```
+
+### Usage
+
+To use the package, simply import the `WebToPDF_Scraper` function and pass the URL of the website's sitemap as an argument:
+
+```
+from mdpdfscraper import WebToPDF_Scraper
+
+sitemap_url = "https://example.com/sitemap.xml"
+pdf_folder = "pdfs"  # change the folder path to the folder where you want the files to be saved in
+WebToPDF_Scraper(sitemap_url)
+```
+This will scrape the website's sitemap, extract the HTML content from each URL, convert it to Markdown, and generate a PDF file for each URL. The PDF files will be saved in a directory named "pdfs".
+
+## Configuration
+
+You can change the directory where the PDF files are saved by modifying the `pdf_folder` variable.
+
+## Requirements
+
+The package requires the following dependencies:
+
+- `requests`
+- `beautifulsoup4`
+- `fpdf2`
+
+## License
+
+This package is licensed under the MIT License.

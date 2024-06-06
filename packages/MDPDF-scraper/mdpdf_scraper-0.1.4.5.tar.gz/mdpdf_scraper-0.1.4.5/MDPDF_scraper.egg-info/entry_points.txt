@@ -1,0 +1,2 @@
+[console_scripts]
+mdpdf-scraper = MDPDF_scraper.mdpdfscraper:main
