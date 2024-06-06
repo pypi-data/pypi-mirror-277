@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: zerotrust
+Version: 0.1.0
+Summary: A Python package for interacting with FastAPI endpoints
+Author: sohaib anwar
+Author-email: ysohaib@example.com
+Requires-Dist: fastapi
+Requires-Dist: requests
