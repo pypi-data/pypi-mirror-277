@@ -1,0 +1,34 @@
+[build-system]
+requires = [
+    "oldest-supported-numpy; python_version=='3.8'",
+    "numpy >=2.0.0rc1; python_version>='3.9'",
+    "pyscf >=2.0.0",
+    "ase >=3.0.0", "spglib >=2.3.0", "logging >=0.4.0.0",
+    "argparse",
+    "pkgconfig",
+    "setuptools >=61",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "green-mbtools"
+version = "0.2.2-beta"
+authors = [
+  { name="Sergei Iskakov", email="siskakov@umich.edu" },
+  { name="Gaurav Harsha", email="gharsha@umich.edu" },
+  { name="Vibin Abraham", email="avibin@umich.edu" },
+  { name="Pavel Pokhilko", email="pokhilko@umich.edu" },
+]
+description = "Collection of tools for quantum many-body simulation using Green Software Package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://green-phys.org"
+Issues = "https://github.com/Green-Phys/green-mbpt/issues"
