@@ -1,0 +1,10 @@
+evodex/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+evodex/compute_operators.py,sha256=tthEMNNJ6cwAgMY8YM9hMGrlfIh2jnvp1OHVYBfgnaQ,186
+evodex/hydrogen_mapper.py,sha256=D5YlLBLFBDOmnqJsnAehcq6aQNS2zfherV8ZKMQe7t8,5751
+evodex/split_reactions.py,sha256=oJ2wwVUXVmxrEQHaBVmTb3N7QyU_xjVTfcMbfFSnOok,4902
+evodex/data/reactions.csv,sha256=bNWzLsb8D0P29Kd04gAlWkUw4BDW6rNOYaZI25Nz0Wc,21
+evodex-0.1.1.dist-info/LICENSE,sha256=LCISuwxLp9au16XoW27UxsbrNAm8_wwn2NlZq4X56WI,1078
+evodex-0.1.1.dist-info/METADATA,sha256=69qIMzdGbAuCK5jU6oHcJP2B_ZPdlrJ43jBCjZNRfgY,620
+evodex-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+evodex-0.1.1.dist-info/top_level.txt,sha256=a5UIb-6PEN_zyjYvTxOCYHzjC9DDAeZatPjeE6Cpm3I,7
+evodex-0.1.1.dist-info/RECORD,,
