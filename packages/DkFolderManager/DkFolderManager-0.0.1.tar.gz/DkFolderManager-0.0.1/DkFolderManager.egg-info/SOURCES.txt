@@ -1,0 +1,7 @@
+setup.py
+DkFolderManager.egg-info/PKG-INFO
+DkFolderManager.egg-info/SOURCES.txt
+DkFolderManager.egg-info/dependency_links.txt
+DkFolderManager.egg-info/top_level.txt
+dkfoldermanager/__init__.py
+dkfoldermanager/dkfoldermanager.py
