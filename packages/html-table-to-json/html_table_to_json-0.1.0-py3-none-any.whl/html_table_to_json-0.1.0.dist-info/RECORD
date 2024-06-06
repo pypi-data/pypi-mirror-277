@@ -1,0 +1,12 @@
+services/__init__.py,sha256=wMwgHm5fHjJ_ARyVB8_t2ZKi21tioGWOdX81tdJfpF4,28
+services/file_handler.py,sha256=kEkHnuI9QU4sPqOmhEiwGJPYO7sllsmus__Dp21Oau8,767
+services/html_parser.py,sha256=2FAiWw0ckRfDmKWlfZWQ5glaKSNsC5GX-4R_GqkCOKM,525
+services/json_converter.py,sha256=bbcsLCZiJrxp9IGMGGDzGvhm-7mMyiirawqfRcGzP-0,512
+utils/__init__.py,sha256=WqMjs6OIGCGkX7q6hR6B7rmTwp3_sLtbHUT3KgHJ2ow,25
+utils/logger.py,sha256=U9vEqWXF_Kno6At4knuppcwguRi__Qk-vl2W_DGfkDw,595
+html_table_to_json-0.1.0.dist-info/LICENSE.md,sha256=Yn-BmK6fLaSa-cnnTOUjq4rYSU6R7rUHUaQ5Iodxo-4,1088
+html_table_to_json-0.1.0.dist-info/METADATA,sha256=VpVk30QwJkpAsle19jHKRlQsllQx8ytMsJdtAZRnamM,3779
+html_table_to_json-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+html_table_to_json-0.1.0.dist-info/entry_points.txt,sha256=xiHVK8_0eIjhk0L1gIBVs0C9CEcgJbVM-ibjBIuaw2Q,50
+html_table_to_json-0.1.0.dist-info/top_level.txt,sha256=ZuoNWOZYdcWbTw0vidhz2-M6Hfu9rlffgTAPweJySgg,15
+html_table_to_json-0.1.0.dist-info/RECORD,,
