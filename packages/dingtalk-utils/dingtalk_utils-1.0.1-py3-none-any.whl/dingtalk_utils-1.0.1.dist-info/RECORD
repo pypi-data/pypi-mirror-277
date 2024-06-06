@@ -1,0 +1,12 @@
+dingtalk_utils/__init__.py,sha256=EjsOFC2O-UswR8-dKJzsYfxa5wUUjuEcZ-2ezk3AvFs,52
+dingtalk_utils/client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dingtalk_utils/client/corp.py,sha256=-Bty-yfJ0kDd6wqCbfK6WajfzTGMfSPN3OAdiBAm0mY,830
+dingtalk_utils/client/setting.py,sha256=0Sb-pJm7o5Sn_h9BFSMqwZoPasAf79OUV-Nro0ewqZ4,78
+dingtalk_utils/client/user.py,sha256=zi5gffpeVIz7es5K9tgp5IM6Or_MlVnS2orBvty-3rY,2105
+dingtalk_utils/contacts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dingtalk_utils/contacts/api.py,sha256=X3hCddQaqpWsUEqiqt-8uaGyQYctNgu9FtF-YqqZ5y0,2484
+dingtalk_utils-1.0.1.dist-info/LICENSE,sha256=uj6n5_l1fZbPw2OclJ4jkEdKIxwguFymy4UEoylgnBY,1088
+dingtalk_utils-1.0.1.dist-info/METADATA,sha256=qteqpsUC3v7ahpyKuQWghQLV0FDwiWReBB_GgAIIZR0,408
+dingtalk_utils-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dingtalk_utils-1.0.1.dist-info/top_level.txt,sha256=HnJvIiWkwmbg0-7Zz3ZxVdty4u0RxI697oEEWp2ViaM,15
+dingtalk_utils-1.0.1.dist-info/RECORD,,
