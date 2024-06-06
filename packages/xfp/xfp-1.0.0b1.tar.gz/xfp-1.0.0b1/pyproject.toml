@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "xfp"
+version = "1.0.0b1"
+description = "functional programming library for python"
+authors = ["Sébastien VEY", "Jérôme LIERMANN"]
+readme = "README.md"
+packages = [{include = "xfp"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.4"
+pre-commit = "^3.7.0"
+ipykernel = "^6.29.4"
+pyright = "^1.1.362"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
