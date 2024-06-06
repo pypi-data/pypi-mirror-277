@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: custom-ls
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: http://example.com/MyPackage/
+Author: zjlab
+Author-email: your.email@example.com
+License: apache
+Keywords: example package
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.19.2)
+Requires-Dist: torch (>=1.8.1)
+
+UNKNOWN
+
