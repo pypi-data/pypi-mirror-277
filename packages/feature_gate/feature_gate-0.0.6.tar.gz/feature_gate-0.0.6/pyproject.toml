@@ -1,0 +1,25 @@
+
+[tool.poetry]
+name = "feature_gate"
+version = "0.0.6"
+description = "An extensible feature flagging library for Python"
+authors = ["Patrick Wiseman <patrick@deft.services>"]
+maintainers = ["Patrick Wiseman <patrick@deft.services>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/deftinc/feature_gate"
+repository = "https://github.com/deftinc/feature_gate"
+keywords = ["feature flags", "feature gate"]
+
+[tool.poetry.dependencies]
+python = ">= 3.10"
+structlog = "^24.1.0"
+requests = "^2.31.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.0.0"
+pytest-mock = "^3.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
