@@ -1,0 +1,17 @@
+automatix/__init__.py,sha256=FwvLz15tFNqm16n4Us2ZfL6xex5ij8OFP5Rd1gozncg,5838
+automatix/automatix.py,sha256=HgWIiRevtwrr5bScMho-_xH_YY1tmvpcU1rIkayv_jU,6331
+automatix/bash_completion.py,sha256=Sj7_LzS2GAng9WlhuvjsoZexhxeC11SpiNqu-eHg1m4,1072
+automatix/bundlewrap.py,sha256=_MzWTsZtVn6xmfKCxKidJ4Cys04yVO8CvffYIuYOU_w,2753
+automatix/colors.py,sha256=R-lm-xyUxIP1oEwdKLmZ128ZJfZRG0UjipyNIuov9cI,569
+automatix/command.py,sha256=4UTNf66l9NeDyH7NXJfRVn2agb1zVrHje6qhWzRcfL4,17110
+automatix/command_test.py,sha256=ORQPVJVJNELfmdGra0tLiSLWt7THVOu9z2v7RObxGbY,2270
+automatix/config.py,sha256=em2IczLTi1yw-fjCfutH1lWMZdJ1jnW-9CYF7fhkUdk,9176
+automatix/environment.py,sha256=cQ-sGX_vmOSiyJcFSZysxNYEXyU6ThM08j-Za7P-d34,1107
+automatix/logger.py,sha256=Nf7XzHgh7wvDOSWiGzpAze3SNgYCU425ebG8OKMfsWU,2799
+automatix/parallel.py,sha256=cHO9PuPYpRtgAP7z7oriJFkRHTMejutAx3cS608hVlU,10090
+automatix_cmd-2.0.0.dist-info/LICENSE,sha256=VnKPFj2ue-ys4ftQTjq8LLW3YzdhHBy1Wzlty5qG2ps,1077
+automatix_cmd-2.0.0.dist-info/METADATA,sha256=uespHQYpOM7LzOUmUVatC5MB-NM7K3O3GglOLETz1Os,23233
+automatix_cmd-2.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+automatix_cmd-2.0.0.dist-info/entry_points.txt,sha256=NGtQ7_5sVNKs_Bu39X-sMLuqZuPglmBg6k7L12agYFQ,156
+automatix_cmd-2.0.0.dist-info/top_level.txt,sha256=iMpVuWUxRC8p9vSM-hrj-W_4VjvjkK5JPTGpGHdQMng,10
+automatix_cmd-2.0.0.dist-info/RECORD,,
