@@ -1,0 +1,187 @@
+name: CI
+on:
+    push:
+        branches:
+        - main
+        tags:
+        - v*
+    pull_request:
+    schedule:
+        - cron:  '17 3 * * 0'
+
+jobs:
+    flake8:
+        name: Flake8
+        runs-on: ubuntu-latest
+        steps:
+        -   uses: actions/checkout@v4
+        -
+            uses: actions/setup-python@v5
+            with:
+                # matches compat target in setup.py
+                python-version: '3.8'
+        -   name: "Main Script"
+            run: |
+                curl -L -O https://tiker.net/ci-support-v0
+                . ci-support-v0
+                install_and_run_flake8 "$(get_proj_name)" examples/*.py test/*.py
+
+    pylint:
+        name: Pylint
+        runs-on: ubuntu-latest
+        steps:
+        -   uses: actions/checkout@v4
+        -   name: "Main Script"
+            run: |
+                CONDA_ENVIRONMENT=.test-conda-env-py3.yml
+                echo "- matplotlib" >> $CONDA_ENVIRONMENT
+                echo "- pyopengl" >> $CONDA_ENVIRONMENT
+                echo "- ipython" >> $CONDA_ENVIRONMENT
+
+                curl -L -O https://tiker.net/ci-support-v0
+                . ci-support-v0
+                build_py_project_in_conda_env
+
+                # Avoid linting local directory, where native module
+                # cannot be imported.
+                rm -Rf "$(get_proj_name)"
+
+                run_pylint "$(get_proj_name)" test/*.py
+
+    mypy:
+        name: Mypy
+        runs-on: ubuntu-latest
+        steps:
+        -   uses: actions/checkout@v4
+        -   name: "Main Script"
+            run: |
+                curl -L -O https://tiker.net/ci-support-v0
+                . ci-support-v0
+                export CL_USE_SHIPPED_EXT=on
+                build_py_project_in_conda_env
+
+                python -m pip install mypy importlib-resources
+                ./run-mypy.sh
+
+    pytest:
+        name: Pytest Linux POCL
+        runs-on: ubuntu-latest
+        steps:
+        -   uses: actions/checkout@v4
+        -   name: "Main Script"
+            run: |
+                curl -L -O https://tiker.net/ci-support-v0
+                . ci-support-v0
+                export CL_USE_SHIPPED_EXT=on
+                build_py_project_in_conda_env
+                test_py_project
+
+    pytest_intel:
+        name: Pytest Linux Intel CL
+        runs-on: ubuntu-latest
+        steps:
+        -   uses: actions/checkout@v4
+        -   name: "Main Script"
+            run: |
+                export CONDA_ENVIRONMENT=.test-conda-env-py3.yml
+                .ci/hack-intel-cl-into-conda-env.sh
+
+                curl -L -O https://tiker.net/ci-support-v0
+                . ci-support-v0
+                export CL_USE_SHIPPED_EXT=on
+                build_py_project_in_conda_env
+                test_py_project
+
+    pytest_win:
+        name: Pytest Windows Intel CL
+        runs-on: windows-latest
+        steps:
+        -   uses: actions/checkout@v4
+        -   name: "Main Script"
+            shell: bash
+            run: |
+                set -x
+                export CONDA_ENVIRONMENT=.test-conda-env-py3.yml
+
+                sed -i 's/- ocl-icd/- khronos-opencl-icd-loader/g' "$CONDA_ENVIRONMENT"
+                sed -i '/- git/d' "$CONDA_ENVIRONMENT"
+
+                .ci/hack-intel-cl-into-conda-env.sh
+
+                curl -L -O https://tiker.net/ci-support-v0
+                . ci-support-v0
+                export CL_USE_SHIPPED_EXT=on
+                build_py_project_in_conda_env
+                test_py_project
+
+    pytest_mac:
+        name: Pytest Mac POCL
+        runs-on: macos-latest
+        steps:
+        -   uses: actions/checkout@v4
+        -   name: "Main Script"
+            run: |
+                export CC=gcc
+                CONDA_ENVIRONMENT=.test-conda-env.yml
+                grep -v ocl-icd .test-conda-env-py3.yml > $CONDA_ENVIRONMENT
+
+                curl -L -O https://tiker.net/ci-support-v0
+                . ci-support-v0
+                build_py_project_in_conda_env
+                test_py_project
+
+    docs:
+        name: Documentation
+        runs-on: ubuntu-latest
+        steps:
+        -   uses: actions/checkout@v4
+        -
+            uses: actions/setup-python@v5
+            with:
+                python-version: '3.x'
+        -   name: "Main Script"
+            run: |
+                CONDA_ENVIRONMENT=.test-conda-env-py3.yml
+
+                curl -L -O https://tiker.net/ci-support-v0
+                . ci-support-v0
+                export CL_USE_SHIPPED_EXT=on
+                build_py_project_in_conda_env
+                build_docs
+
+    examples:
+        name: Examples
+        runs-on: ubuntu-latest
+        steps:
+        -   uses: actions/checkout@v4
+        -   name: "Main Script"
+            run: |
+                EXTRA_INSTALL="pillow cgen mako imageio"
+
+                curl -L -O https://tiker.net/ci-support-v0
+                . ci-support-v0
+                build_py_project_in_conda_env
+                (cd examples; rm -f gl_*)
+                run_examples --no-require-main
+
+    downstream_tests:
+        strategy:
+            matrix:
+                downstream_project: [loopy, boxtree, meshmode]
+        name: Tests for downstream project ${{ matrix.downstream_project }}
+        runs-on: ubuntu-latest
+        steps:
+        -   uses: actions/checkout@v4
+        -   name: "Main Script"
+            env:
+                DOWNSTREAM_PROJECT: ${{ matrix.downstream_project }}
+            run: |
+                curl -L -O https://tiker.net/ci-support-v0
+                . ci-support-v0
+
+                prepare_downstream_build "https://github.com/inducer/$DOWNSTREAM_PROJECT.git"
+                sed -i 's/pyopencl/ocl-icd/' .test-conda-env-py3.yml
+                build_py_project_in_conda_env
+                test_py_project
+
+# vim: sw=4
