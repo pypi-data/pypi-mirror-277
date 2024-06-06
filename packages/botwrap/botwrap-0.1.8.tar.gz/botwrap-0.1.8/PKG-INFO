@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: botwrap
+Version: 0.1.8
+Summary: A convenient wrapper for the OpenAI API.
+Home-page: https://github.com/BizPrincess/botwrap
+Author: BizPrincess
+Author-email: professionallyjami@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp==3.9.5
+Requires-Dist: attrs==23.2.0
+Requires-Dist: beautifulsoup4==4.12.3
+Requires-Dist: certifi==2024.2.2
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: click==8.1.7
+Requires-Dist: Flask==3.0.3
+Requires-Dist: httpx==0.27.0
+Requires-Dist: Jinja2==3.1.4
+Requires-Dist: openai==1.30.5
+Requires-Dist: psycopg2-binary==2.9.9
+Requires-Dist: requests==2.31.0
+Requires-Dist: urllib3==2.2.1
+Requires-Dist: python-dotenv==1.0.1
+
+from openaiwrapper import (
+    initialize_client,
+    create_assistant,
+    delete_assistant,
+    create_thread,
+    add_message_to_thread,
+    list_thread_messages,
+    create_and_poll_run,
+    load_coreteam_profile_1,
+    load_coreteam_profile_2,
+    load_coreteam_profile_3,
+    load_coreteam_profile_4,
+    load_coreteam_profile_5,
+    load_coreteam_profile_6,
+    load_non_coreteam_profile
+)
+
+# Example usage
+client = initialize_client()
+profile = load_coreteam_profile_1()
+assistant = create_assistant(client, profile["name"], profile["instructions"], profile["tools"], profile["model"])
+thread = create_thread(client)
+add_message_to_thread(client, thread.id, "user", "Hello, can you help me with this task?")
+run = create_and_poll_run(client, thread.id, assistant.id, "Please assist with the task.")
+messages = list_thread_messages(client, thread.id)
+for message in messages:
+    print(f"{message.role}: {message.content[0].text.value}")
+

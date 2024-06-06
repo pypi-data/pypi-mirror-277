@@ -1,0 +1,52 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='botwrap',
+    version='0.1.8',
+    author='BizPrincess',
+    author_email='professionallyjami@gmail.com',
+    description='A convenient wrapper for the OpenAI API.',
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
+    url='https://github.com/BizPrincess/botwrap',
+    packages=find_packages(),
+    include_package_data=True,
+    package_data={
+        '': ['profiles/*.json'],
+    },
+    install_requires=[
+        'aiohttp==3.9.5',
+        'attrs==23.2.0',
+        'beautifulsoup4==4.12.3',
+        'certifi==2024.2.2',
+        'charset-normalizer==3.3.2',
+        'click==8.1.7',
+        'Flask==3.0.3',
+        'httpx==0.27.0',
+        'Jinja2==3.1.4',
+        'openai==1.30.5',
+        'psycopg2-binary==2.9.9',
+        'requests==2.31.0',
+        'urllib3==2.2.1',
+        'python-dotenv==1.0.1',
+    ],
+    entry_points={
+        'console_scripts': [
+            'minimal_test_convo=minimal_test_convo:main',
+        ],
+    },
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: Developers',
+        'Topic :: Software Development :: Libraries :: Python Modules',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Operating System :: OS Independent',
+    ],
+    python_requires='>=3.6',
+)
