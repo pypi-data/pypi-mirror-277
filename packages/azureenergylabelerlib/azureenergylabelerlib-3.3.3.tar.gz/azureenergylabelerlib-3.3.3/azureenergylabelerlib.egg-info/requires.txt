@@ -1,0 +1,15 @@
+azure-mgmt-security>=1.0.0
+azure-mgmt-resourcegraph>=8.0.0
+schema>=0.7.7
+
+[:python_full_version >= "3.8.0"]
+azure-cli-core>=2.61.0
+
+[:python_version >= "3.7"]
+azure-mgmt-resource>=21.2.1
+cachetools>=5.3.3
+opnieuw>=1.2.1
+
+[:python_version >= "3.8"]
+azure-identity>=1.16.0
+azure-storage-blob>=12.20.0
