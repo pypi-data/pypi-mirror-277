@@ -1,0 +1,3 @@
+include threadedproxyobject/requirements.txt
+include threadedproxyobject/thirdparty.json
+include threadedproxyobject/README.MD

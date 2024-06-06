@@ -1,0 +1,13 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+threadedproxyobject/README.MD
+threadedproxyobject/__init__.py
+threadedproxyobject/requirements.txt
+threadedproxyobject/thirdparty.json
+threadedproxyobject.egg-info/PKG-INFO
+threadedproxyobject.egg-info/SOURCES.txt
+threadedproxyobject.egg-info/dependency_links.txt
+threadedproxyobject.egg-info/top_level.txt
