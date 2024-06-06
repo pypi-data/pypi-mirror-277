@@ -1,0 +1,1 @@
+这是一个将sqllite文件转为excel文件的程序包，也可以将blast的xml结果解析为fasta和csv文件,对于所有人都方便使用。

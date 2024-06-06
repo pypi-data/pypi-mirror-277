@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+parserBioinfo/__init__.py
+parserBioinfo/blast2csv.py
+parserBioinfo/sqlite2excel.py
+parserBioinfo.egg-info/PKG-INFO
+parserBioinfo.egg-info/SOURCES.txt
+parserBioinfo.egg-info/dependency_links.txt
+parserBioinfo.egg-info/requires.txt
+parserBioinfo.egg-info/top_level.txt
