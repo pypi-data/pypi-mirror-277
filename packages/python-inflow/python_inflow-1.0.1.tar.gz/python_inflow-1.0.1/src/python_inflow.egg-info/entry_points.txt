@@ -1,0 +1,2 @@
+[console_scripts]
+inflow = inflow:main

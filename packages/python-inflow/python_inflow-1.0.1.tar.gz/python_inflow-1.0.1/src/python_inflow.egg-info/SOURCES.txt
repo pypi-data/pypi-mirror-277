@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/inflow/__init__.py
+src/inflow/inflow.py
+src/python_inflow.egg-info/PKG-INFO
+src/python_inflow.egg-info/SOURCES.txt
+src/python_inflow.egg-info/dependency_links.txt
+src/python_inflow.egg-info/entry_points.txt
+src/python_inflow.egg-info/top_level.txt
