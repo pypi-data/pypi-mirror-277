@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: cubicweb-mock-schema
+Version: 0.3.0
+Summary: a repository of schemas for testing
+Home-page: https://forge.extranet.logilab.fr/cubicweb/cubicweb-mock-schema/
+Author: Logilab
+Author-email: contact@logilab.fr
+License: LGPL
+Classifier: Framework :: CubicWeb
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+Requires-Dist: yams >=1.0.0
+Requires-Dist: pytz >=2023.3
+
+# CubicWeb Mock Schema
+
+Some schemas to use in Python and JavaScript/TypeScript tests.
+
+- [Python on PyPI](https://pypi.org/project/cubicweb-mock-schema/)
+- [JavaScript/TypeScript on `npmjs.org`](https://www.npmjs.com/package/@cubicweb/mock-schema)
+
+Version X.Y.Z are same in Python and JavaScript.

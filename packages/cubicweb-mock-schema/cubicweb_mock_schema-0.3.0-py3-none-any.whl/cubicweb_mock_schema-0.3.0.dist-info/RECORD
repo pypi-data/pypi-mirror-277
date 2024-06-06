@@ -1,0 +1,9 @@
+cubicweb_mock_schema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cubicweb_mock_schema/__pkginfo__.py,sha256=IIjjVgP00swBJnAhkDJrk7iArI4A1jNnN-FsT-tVApM,1458
+cubicweb_mock_schema/attribute.py,sha256=fPu7sdOkP8Pa9m0G_iwcA74n1psDyoTpQd9bcjHlXP4,7879
+cubicweb_mock_schema/blog.py,sha256=lISpAMv2sIoaobLHczFF2ULNFxS7XOcjfbWLYQ8C1AM,942
+cubicweb_mock_schema/relation.py,sha256=zhUbgA6KT-oXra2bq56i8arnyh8jDjQKdjK4eYRJA4I,1789
+cubicweb_mock_schema-0.3.0.dist-info/METADATA,sha256=OAQBLDAixzmVs8FUp-rab66qYcEDdXLdOBET4N-A7FY,826
+cubicweb_mock_schema-0.3.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cubicweb_mock_schema-0.3.0.dist-info/top_level.txt,sha256=N3nvsmrgv82p9rwdEwku3DsJzPLpqMTEfk8HduX5I0c,21
+cubicweb_mock_schema-0.3.0.dist-info/RECORD,,
