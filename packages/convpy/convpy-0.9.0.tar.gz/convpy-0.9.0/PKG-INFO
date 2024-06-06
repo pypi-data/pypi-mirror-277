@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: convpy
+Version: 0.9.0
+Summary: CLI base number type converter
+Author-email: Simon Crampton <simongc100@gmail.com>
+License: GPL-3.0
+Project-URL: Repository, https://github.com/DragonSGC/pyconv
+Keywords: cli,convertor,binary,octal,decimal,hexidecimal
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+
+# Pyconv
+
+Pyconv is a simple command line interface to convert from one base type number to another. It covers
+base 2, 8, 10, and 16. Pyconv will also take in a file containing numbers of one base type and write
+the conversions to another file. Orchestrated with the Click Module.
+
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install pyconv.
+
+```bash
+pip install pyconv
+```
+
+```bash
+pipx install pyconv
+```
+
+## Usage
+
+To convert one number from the terminal supply the number, its base type, (b - binary, o - octal, d - decimal, x- hexidecimal),
+and the base you wish to convert to (-b, -o, -d, -x)
+
+```bash
+pyconv conv 111 b -d
+
+7
+```
+
+Pyconv supports full paths as well as existance validation on the input file, this command spawns a background process for the
+conversion such as not to lock out the terminal incase of large files.
+
+```bash
+pyconv from-file ./hex_nums.txt ./binary_nums.txt x -b
+```
+
+## License
+
+[GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
