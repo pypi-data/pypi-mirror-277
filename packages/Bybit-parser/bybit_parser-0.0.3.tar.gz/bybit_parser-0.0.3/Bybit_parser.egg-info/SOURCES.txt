@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+Bybit_parser/__init__.py
+Bybit_parser/core.py
+Bybit_parser.egg-info/PKG-INFO
+Bybit_parser.egg-info/SOURCES.txt
+Bybit_parser.egg-info/dependency_links.txt
+Bybit_parser.egg-info/requires.txt
+Bybit_parser.egg-info/top_level.txt
