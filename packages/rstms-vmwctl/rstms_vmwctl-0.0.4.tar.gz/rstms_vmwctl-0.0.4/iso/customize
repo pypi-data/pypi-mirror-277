@@ -1,0 +1,38 @@
+#!/bin/bash
+
+set -ueo pipefail
+
+cd /tmp/iso
+
+ISO=systemrescue-11.01-amd64.iso
+
+apt update 
+apt install -y vim squashfs-tools patch rsync xorriso
+
+customize_config() {
+sed <$1 -e 's/copytoram: false/copytoram: true/;s/nofirewall: false/nofirewall: true/' | awk \
+    -v flag=0 -v shell='"/bin/bash"' -v password="\"$ISO_PASSWORD\"" '
+    /^[ \t]*$/{
+      if (!flag) {
+	printf("    rootshell: %s\n", shell);
+	printf("    rootpass: %s\n", password);
+	flag = 1;
+      }
+    }
+    { print }
+
+  ' >$1.new
+  mv $1.new $1
+}
+
+customize_grub() {
+    sed <$1 -e 's/set timeout=30/set timeout=3/;s/set default=0/set default=1/' >$1.new
+    mv $1.new $1
+}
+
+rm -rf custom
+rm -rf vmware-rescue.iso
+bash sysrescue-customize --unpack --source=$ISO --dest=custom
+customize_config custom/filesystem/sysrescue.d/100-defaults.yaml
+customize_grub custom/filesystem/boot/grub/grubsrcd.cfg
+bash sysrescue-customize --rebuild --source=custom --dest=vmware-rescue.iso
