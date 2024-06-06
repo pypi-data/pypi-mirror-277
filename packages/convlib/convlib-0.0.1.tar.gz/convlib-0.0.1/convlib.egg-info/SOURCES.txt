@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+convlib/__init__.py
+convlib.egg-info/PKG-INFO
+convlib.egg-info/SOURCES.txt
+convlib.egg-info/dependency_links.txt
+convlib.egg-info/requires.txt
+convlib.egg-info/top_level.txt
+convlib/util/__init__.py
+convlib/util/generic.py

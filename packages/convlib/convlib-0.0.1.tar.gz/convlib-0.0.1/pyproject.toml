@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools", "wheel", "setuptools-git-versioning>=2.0,<3"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools-git-versioning]
+enabled = true
+
+[project]
+name = "convlib"
+description = "Conversion library (pre-alpha)"
+readme = "README.md"
+requires-python = ">=3.12"
+dynamic = ["version"]
+#license = {file = "LICENSE"}
+authors = [
+  { name="Sam Griesemer", email="samgriesemer+git@gmail.com" },
+]
+keywords = ["conversion"]
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+]
+dependencies = [
+    "sqlalchemy",
+]
+
+[project.optional-dependencies]
+tests = ["pytest"]
+docs = [
+    "sphinx",
+    "sphinx-togglebutton",
+    "sphinx-autodoc-typehints",
+    "furo",
+    "myst-parser",
+]
+
+[project.urls]
+Homepage = "https://doc.olog.io/convlib"
+Documentation = "https://doc.olog.io/convlib"
+Repository = "https://git.olog.io/olog/convlib"
+Issues = "https://git.olog.io/olog/convlib/issues"
+
+
+[tool.setuptools.packages.find]
+include = ["convlib*"] # pattern to match package names 
