@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "spotipyss"
+version = "0.1.1"
+description = "A simple search track with track name and artist name using spotipy"
+authors = ["Dongwan Kim <kdw6485@gmail.com>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+spotipy = "^2.24.0"
+jellyfish = "^1.0.4"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.2"
+spotipy = "^2.24.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
