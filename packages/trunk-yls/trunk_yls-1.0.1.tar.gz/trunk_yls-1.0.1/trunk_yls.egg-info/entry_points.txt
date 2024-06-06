@@ -1,0 +1,2 @@
+[console_scripts]
+trunk-yls = trunk_yls.yls_check:main

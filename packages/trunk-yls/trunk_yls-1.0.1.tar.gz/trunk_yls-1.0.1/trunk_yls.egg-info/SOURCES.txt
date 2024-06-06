@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/trunk_yls/__init__.py
+src/trunk_yls/__main__.py
+src/trunk_yls/yls_check.py
+trunk_yls.egg-info/PKG-INFO
+trunk_yls.egg-info/SOURCES.txt
+trunk_yls.egg-info/dependency_links.txt
+trunk_yls.egg-info/entry_points.txt
+trunk_yls.egg-info/requires.txt
+trunk_yls.egg-info/top_level.txt
