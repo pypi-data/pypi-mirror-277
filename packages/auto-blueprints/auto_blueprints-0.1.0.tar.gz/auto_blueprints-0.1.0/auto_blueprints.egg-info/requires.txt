@@ -1,0 +1,4 @@
+Flask>=3.0.0
+
+[waitress]
+waitress>=3.0.0

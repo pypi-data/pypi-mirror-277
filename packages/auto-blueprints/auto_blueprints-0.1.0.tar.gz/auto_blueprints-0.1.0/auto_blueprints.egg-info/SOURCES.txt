@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+auto_blueprints.egg-info/PKG-INFO
+auto_blueprints.egg-info/SOURCES.txt
+auto_blueprints.egg-info/dependency_links.txt
+auto_blueprints.egg-info/requires.txt
+auto_blueprints.egg-info/top_level.txt
+blueprints/__init__.py
+blueprints/__main__.py
