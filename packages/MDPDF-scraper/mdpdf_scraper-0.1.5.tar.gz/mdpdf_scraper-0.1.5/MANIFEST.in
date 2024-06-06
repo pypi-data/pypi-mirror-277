@@ -1,0 +1,5 @@
+include README.md
+include LICENSE
+include MDPDF-scraper/DejaVuSans.ttf
+recursive-include MDPDF-scraper/util *
+
