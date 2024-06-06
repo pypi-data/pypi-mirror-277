@@ -1,0 +1,8 @@
+pandas
+geopandas
+polars
+prettytable
+
+[dev]
+pytest
+twine
