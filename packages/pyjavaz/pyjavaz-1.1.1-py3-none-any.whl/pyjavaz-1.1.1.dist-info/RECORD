@@ -1,0 +1,10 @@
+pyjavaz/__init__.py,sha256=bCe5nWJi38Sdm0DeRzphPuteTjd_bpsAXj39rWKDbFk,237
+pyjavaz/_version.py,sha256=M-Nn5mR5kbDBKzRqQWy9HVysba0EZYQkOR7EAb2gWio,72
+pyjavaz/bridge.py,sha256=6xaBXP38f-d48moUyxbxr9BKdNkzfuFwHnyml4AOGrc,44932
+pyjavaz/example.py,sha256=ynh8TsBauBWPY7aiR2XCIHAFFbTSz-c1uSY-CEEGgZU,179
+pyjavaz/wrappers.py,sha256=0EzLkaJWCYnquWRg_L1KufwAEgNSU1ZKprAiTiJLACc,3888
+pyjavaz-1.1.1.dist-info/LICENSE,sha256=2FCl6KCrd1amDWN1z_cIBWQl01-NdwzXf3ME2syP3co,1521
+pyjavaz-1.1.1.dist-info/METADATA,sha256=vd1P66U-rLkIMlzTbAkbh1iNVeKlagu6lCO9UWUnAnI,7136
+pyjavaz-1.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyjavaz-1.1.1.dist-info/top_level.txt,sha256=Qk5Fvx6p8a3XI6GWiHlDCiC_X8hS-C1sfZmh27A3Rus,8
+pyjavaz-1.1.1.dist-info/RECORD,,
