@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+spatch/__init__.py
+spatch.egg-info/PKG-INFO
+spatch.egg-info/SOURCES.txt
+spatch.egg-info/dependency_links.txt
+spatch.egg-info/top_level.txt
