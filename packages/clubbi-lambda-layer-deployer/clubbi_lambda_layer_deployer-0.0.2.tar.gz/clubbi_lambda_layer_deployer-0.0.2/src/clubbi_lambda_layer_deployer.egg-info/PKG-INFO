@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: clubbi-lambda-layer-deployer
+Version: 0.0.2
+Description-Content-Type: text/plain
+
+This tool helps to deploy lambda layers in AWS
