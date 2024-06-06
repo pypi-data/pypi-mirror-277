@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+MDPDF_scraper/DejaVuSans.ttf
+MDPDF_scraper/__init__.py
+MDPDF_scraper/mdpdfscraper.py
+MDPDF_scraper.egg-info/PKG-INFO
+MDPDF_scraper.egg-info/SOURCES.txt
+MDPDF_scraper.egg-info/dependency_links.txt
+MDPDF_scraper.egg-info/entry_points.txt
+MDPDF_scraper.egg-info/requires.txt
+MDPDF_scraper.egg-info/top_level.txt
