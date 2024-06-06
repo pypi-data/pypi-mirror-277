@@ -1,0 +1,11 @@
+pclick/Messaging_pb2.py,sha256=EnG6TO-mzn32Fk3meyRfobJ-hT9rigXmr_i8cOiJpUU,11498
+pclick/__init__.py,sha256=K2bMHs90EhN_ca-cdjbUNvCHU_RvayM4ehUdMHd0bf8,527
+pclick/client.py,sha256=6-Qkes8FX7wSIgKv5koOxk6gmuG8NGPvOKg9Zz0nsxA,1087
+pclick/demo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pclick/demo/client.py,sha256=DWNDZ-sxCpDOe0TcwHh2j-GnSoJv1jF44yX3Sip1FUo,4834
+pclick/demo/server.py,sha256=Kuxw2XvvUUY5f6UTYohhpCJj3-oFFL5m65BlRMmLUm8,3895
+pclick/message_proto_helpers.py,sha256=crjP1qFejcBrQT25aTKJP6RIFC2frSmc2uz8X_LaBJQ,2014
+pclick/server.py,sha256=cb5DhIMvK-y7LQAv_9IC5O0ZWoAjhxOijSUh0aihppk,2537
+pclick-0.4.0.dist-info/METADATA,sha256=FKh21mbYIlOXm9bRBVAU3F4BiZyetw65oUcxhCINoZs,2157
+pclick-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pclick-0.4.0.dist-info/RECORD,,
