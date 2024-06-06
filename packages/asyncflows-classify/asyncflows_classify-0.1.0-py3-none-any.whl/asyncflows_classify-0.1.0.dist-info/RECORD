@@ -1,0 +1,11 @@
+asyncflows_classify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asyncflows_classify/actions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asyncflows_classify/actions/classify.py,sha256=oqrrA0ileD1dnEgm1GG1MoqjSsDbAmvyti_OpOQXLvA,4086
+asyncflows_classify/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asyncflows_classify/tests/conftest.py,sha256=HFoDTqPD3ZyOcR1zxF7Z6xIZclRsfZLMFQq92FikDEs,326
+asyncflows_classify/tests/test_classify.py,sha256=qrn8ETubEKgaWeWtIUfBQ3bJ_Ql3Oqspis_J7vdz0DY,1215
+asyncflows_classify/utils.py,sha256=TdeqR70RhHaUzCtSdRI0wkbojP68rqJi6eTSv-SYHXQ,1745
+asyncflows_classify-0.1.0.dist-info/METADATA,sha256=gHpp-vIOENzPw1LeOCwg7gr7mXKSzRNCufVsvDBcerg,476
+asyncflows_classify-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+asyncflows_classify-0.1.0.dist-info/entry_points.txt,sha256=WPAC_MCuzg7FO3CgrnClZebu3F3zsgt4eZYCjxaZ0sM,50
+asyncflows_classify-0.1.0.dist-info/RECORD,,
