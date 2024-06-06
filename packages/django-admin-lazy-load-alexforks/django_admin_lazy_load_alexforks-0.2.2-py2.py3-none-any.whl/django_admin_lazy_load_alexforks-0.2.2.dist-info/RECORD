@@ -1,0 +1,10 @@
+admin_lazy_load/__init__.py,sha256=QCvhFdco5hc6COLabJjKtpZFJF1cNUF-X6Bp4GnBkkw,3412
+admin_lazy_load/__init__.pyc,sha256=QbwG3wP4CM5ah2FWYtZOL9-7_pUK6fyUgyUDL1yQi0I,4184
+admin_lazy_load/__pycache__/__init__.cpython-312.pyc,sha256=267qvk7XWoyl_kmz_jGC1OIG0CM9lrABpXqkIxC_WKg,4625
+admin_lazy_load/static/js/lazyload.js,sha256=7JWiIggBZckL2wShsblU3Xqg7YiHR7L-SkfEk1SCglA,990
+admin_lazy_load/templates/lazy_load_field.html,sha256=_IIc3PDtNVdovZxFY0lt2koMw7cSlXYbrcHFofrGL3s,510
+django_admin_lazy_load_alexforks-0.2.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+django_admin_lazy_load_alexforks-0.2.2.dist-info/METADATA,sha256=iNHI9YqgxNCplJ8Q7ejqD4EszQL7RaFJKof4zkWNjsE,1964
+django_admin_lazy_load_alexforks-0.2.2.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+django_admin_lazy_load_alexforks-0.2.2.dist-info/top_level.txt,sha256=Evh_WwQtObDAl_WXdYM1cc60cNmtmuHEeBcko53gZ1s,16
+django_admin_lazy_load_alexforks-0.2.2.dist-info/RECORD,,
