@@ -1,0 +1,6 @@
+scim2_client/__init__.py,sha256=xcCAq0aekpnljrYoOBz2LtFAhmKNaNFurdjy8HbQ9ak,705
+scim2_client/client.py,sha256=QTYDK3yM_89w2uneUQayx0dyCGVNAoRItgzNtCtVe7A,25020
+scim2_client/errors.py,sha256=xBpSCTA0pZHanH7SSDGEvdgztc-aWmSHSovFajnS-lI,3961
+scim2_client-0.1.5.dist-info/METADATA,sha256=PVAwcn-xKgYVyFZuzgWyYR6vZWVQLCmHtrzyfcL-r4A,3495
+scim2_client-0.1.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+scim2_client-0.1.5.dist-info/RECORD,,
