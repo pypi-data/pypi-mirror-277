@@ -1,0 +1,62 @@
+## seya_image_processor
+
+### Overview
+
+`seya_image_processor` is a Python library for image preprocessing that converts images to low-contrast, blurred sketches. It provides two main functions: one that returns the processed image as a base64 string, and another that returns the processed image as a PIL Image object.
+
+### Installation
+
+To install the `seya_image_processor` library, use the following pip command:
+
+```sh
+pip install seya_image_processor
+```
+
+### Usage
+
+Here's how you can use the library:
+
+1. **Import the library:**
+
+```python
+from seya_image_processor import process_image_to_base64, process_image_to_array
+```
+
+2. **Process an image to base64:**
+
+```python
+with open("path_to_image.png", "rb") as image_file:
+    base64_result = process_image_to_base64(image_file)
+print(base64_result)
+```
+
+3. **Process an image to a PIL Image:**
+
+```python
+with open("path_to_image.png", "rb") as image_file:
+    processed_image = process_image_to_array(image_file)
+processed_image.show()
+```
+
+### Functions
+
+#### `preprocess_image(image)`
+
+- **Parameters:**
+  - `image` (PIL.Image): The input image to preprocess.
+- **Returns:**
+  - `blurred_image` (numpy.ndarray): The preprocessed, blurred image.
+
+#### `process_image_to_base64(image_file)`
+
+- **Parameters:**
+  - `image_file` (file-like object): The input image file to process.
+- **Returns:**
+  - `processed_image_base64` (str): The processed image encoded as a base64 string.
+
+#### `process_image_to_array(image_file)`
+
+- **Parameters:**
+  - `image_file` (file-like object): The input image file to process.
+- **Returns:**
+  - `pil_image` (PIL.Image): The processed image as a PIL Image object.
