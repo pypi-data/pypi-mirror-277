@@ -1,0 +1,17 @@
+README.md
+setup.py
+bit_chess_python.egg-info/PKG-INFO
+bit_chess_python.egg-info/SOURCES.txt
+bit_chess_python.egg-info/dependency_links.txt
+bit_chess_python.egg-info/top_level.txt
+src/__init__.py
+src/Core/BitboardUtility.py
+src/Core/Board.py
+src/Core/GameState.py
+src/Core/Move.py
+src/Core/MoveGeneration.py
+src/Core/Perft.py
+src/Core/Piece.py
+src/Core/PieceList.py
+src/Core/PrecomputedAttacks.py
+src/Core/__init__.py
