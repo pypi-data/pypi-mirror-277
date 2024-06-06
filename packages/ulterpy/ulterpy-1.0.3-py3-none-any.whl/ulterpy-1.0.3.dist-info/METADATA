@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ulterpy
+Version: 1.0.3
+Summary: ULTRA ERGONOMIC PYTHON
+Home-page: https://github.com/pythonsystem/ulterpy
+Author: Original By Python Package Index
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: ipython
+Requires-Dist: pyzmq
+Requires-Dist: jupyter
+Requires-Dist: tensorflow
+Requires-Dist: keras
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pandas-ta
+Requires-Dist: tf2onnx
+Requires-Dist: mtpynux
+
+ULTRA ERGONOMIC PYTHON
