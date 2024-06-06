@@ -1,0 +1,10 @@
+ptwordfinder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ptwordfinder/main.py,sha256=iy1v-c83vCDDyVQ7kMTuw6l_xezZkgzz_0M_oVu0FPs,344
+ptwordfinder/commands/__init__.py,sha256=sd0OuALh7tR5OAiUGEgHy_g0Cn0o2N-mSL1QX8dKmTM,100
+ptwordfinder/commands/pt_word_finder.py,sha256=8sjEv7MoSzCgDOlfeBuz91a4UvdpL_De1NOGgyeD8Uk,8063
+PTWordFinder-1.2.9.dist-info/LICENSE,sha256=hRKVLb3DQRxFgs1YZ6qC0OeSOS0fpp9QRHwFqLHqLkE,1088
+PTWordFinder-1.2.9.dist-info/METADATA,sha256=nH50LjxBp_JTqqp31CZehksGnyHAIrVzDabZQL8cXJ0,4749
+PTWordFinder-1.2.9.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+PTWordFinder-1.2.9.dist-info/entry_points.txt,sha256=AKLchXondtURGVk73JlMglSfgVdtjMIeg3__ssypx4A,50
+PTWordFinder-1.2.9.dist-info/top_level.txt,sha256=gUw9T6pF_IFIc0h8V8GHOoM-IYeP7qOIqopmoXzSQlk,13
+PTWordFinder-1.2.9.dist-info/RECORD,,
