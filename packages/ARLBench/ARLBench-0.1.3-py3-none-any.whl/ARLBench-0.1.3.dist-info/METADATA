@@ -1,0 +1,257 @@
+Metadata-Version: 2.1
+Name: ARLBench
+Version: 0.1.3
+Summary: Python Boilerplate that contains all the code you need to create a Python package.
+Author-email: AutoML Hannover <automl@ai.uni-hannover.de>
+License: 
+        
+        BSD License
+        
+        Copyright (c) 2024, AutoML Hannover
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without modification,
+        are permitted provided that the following conditions are met:
+        
+        * Redistributions of source code must retain the above copyright notice, this
+          list of conditions and the following disclaimer.
+        
+        * Redistributions in binary form must reproduce the above copyright notice, this
+          list of conditions and the following disclaimer in the documentation and/or
+          other materials provided with the distribution.
+        
+        * Neither the name of the copyright holder nor the names of its
+          contributors may be used to endorse or promote products derived from this
+          software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+        ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+        WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+        IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+        INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+        BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+        DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+        OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+        OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+        OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+        
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.md
+Requires-Dist: typing-extensions
+Requires-Dist: tomli ==2.0.1
+Requires-Dist: pre-commit ==3.7.0
+Requires-Dist: codecarbon ==2.3.5
+Requires-Dist: memray ==1.12.0
+Requires-Dist: pathos ==0.3.2
+Requires-Dist: jax ==0.4.26
+Requires-Dist: jaxlib ==0.4.26
+Requires-Dist: flashbax ==0.1.2
+Requires-Dist: gymnax ==0.0.6
+Requires-Dist: chex ==0.1.86
+Requires-Dist: ConfigSpace ==0.7.1
+Requires-Dist: distrax ==0.1.5
+Requires-Dist: flax ==0.8.2
+Requires-Dist: brax ==0.10.3
+Requires-Dist: pytest ==7.4.4
+Requires-Dist: coverage ==7.4.4
+Requires-Dist: ruff
+Requires-Dist: hydra-core
+Requires-Dist: hydra-submitit-launcher
+Requires-Dist: hydra-colorlog
+Requires-Dist: mypy
+Requires-Dist: tox
+Requires-Dist: twine
+Requires-Dist: bump-my-version
+Provides-Extra: dev
+Requires-Dist: ARLBench[doc,examples,test,tooling] ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: automl-sphinx-theme ; extra == 'doc'
+Provides-Extra: envpool
+Requires-Dist: envpool ==0.8.4 ; extra == 'envpool'
+Provides-Extra: examples
+Requires-Dist: hypersweeper ; extra == 'examples'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-coverage ; extra == 'test'
+Requires-Dist: pytest-cases ; extra == 'test'
+Requires-Dist: ARLBench[examples] ; extra == 'test'
+Provides-Extra: tooling
+Requires-Dist: commitizen ; extra == 'tooling'
+Requires-Dist: pre-commit ; extra == 'tooling'
+Requires-Dist: ruff ; extra == 'tooling'
+
+<p align="center">
+    <a href="./docs/images/logo_lm.png#gh-light-mode-only">
+        <img src="./docs/images/logo_lm.png#gh-light-mode-only" alt="ARLBench Logo" width="80%"/>
+    </a>
+    <a href="./docs/images/logo_dm.png#gh-dark-mode-only">
+        <img src="./docs/images/logo_dm.png#gh-dark-mode-only" alt="ARLBench Logo" width="80%"/>
+    </a>
+</p>
+
+<div align="center">
+    
+<!--- [![PyPI Version](https://img.shields.io/pypi/v/arlbench.svg)](https://pypi.python.org/pypi/arlbench) -->
+![Python](https://img.shields.io/badge/Python-3.10-3776AB)
+![License](https://img.shields.io/badge/License-BSD3-orange)
+[![Test](https://github.com/automl/arlbench/actions/workflows/pytest.yaml/badge.svg)](https://github.com/automl/arlbench/actions/workflows/pytest.yaml)
+[![Doc Status](https://github.com/automl/arlbench/actions/workflows/docs.yaml/badge.svg)](https://github.com/automl/arlbench/actions/workflows/docs.yaml)
+    
+</div>
+
+<div align="center">
+    <h3>
+      <a href="#features">Features</a> |
+      <a href="#installation">Installation</a> |
+      <a href="#quickstart">Quickstart</a> |
+      <a href="#cite-us">Cite Us</a>
+    </h3>
+</div>
+
+---
+
+# 🦾 Automated Reinforcement Learning Benchmark
+
+The ARLBench is a benchmark for HPO in RL - evaluate your HPO methods fast and on a representative number of environments! For more information, see our [documentation](https://automl.github.io/arlbench/main/). The dataset is available at  [HuggingFace](https://huggingface.co/datasets/autorl-org/arlbench).
+
+## Features
+
+- **Lightning-fast JAX-Based implementations of DQN, PPO, and SAC**
+- **Compatible with many different environment domains via Gymnax, XLand and EnvPool**
+- **Representative benchmark set of HPO settings**
+
+<p align="center">
+    <a href="./docs/images/subsets.png">
+        <img src="./docs/images/subsets.png" alt="ARLBench Subsets" width="80%"/>
+    </a>
+</p>
+
+## Installation
+
+There are currently two different ways to install ARLBench.
+Whichever you choose, we recommend to create a virtual environment for the installation:
+
+```bash
+conda create -n arlbench python=3.10
+conda activate arlbench
+```
+
+The instructions below will help you install the default version of ARLBench with the CPU version of JAX.
+If you want to run the ARLBench on GPU, we recommend you check out the [JAX installation guide](https://jax.readthedocs.io/en/latest/installation.html) to see how you can install the correct version for your GPU setup before proceeding.
+
+<details>
+<summary>PyPI</summary>
+You can install ARLBench using `pip`:
+
+```bash
+pip install arlbench
+```
+
+If you want to use envpool environments (not currently supported for Mac!), instead choose:
+
+```bash
+pip install arlbench[envpool]
+```
+
+</details>
+
+<details>
+<summary>From source: GitHub</summary>
+First, you need to clone the ARLBench reopsitory:
+
+```bash
+git clone git@github.com:automl/arlbench.git
+cd arlbench
+```
+
+Then you can install the benchmark. For the base version, use:
+
+```bash
+make install
+```
+
+For the envpool functionality (not available on Mac!), instead use:
+
+```bash
+make install-envpool
+```
+
+</details>
+
+> [!CAUTION]
+> Windows is currently not supported and also not tested. We recommend using the [Linux subsytem](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux) if you're on a Windows machine.
+
+## Quickstart
+
+Here are the two ways you can use ARLBench: via the command line or as an environment. To see them in action, take a look at our [examples](https://github.com/automl/arlbench/tree/main/examples).
+
+### Use the CLI
+
+We provide a command line script for black-box configuration in ARLBench which will also save the results in a 'results' directory. To execute one run of DQN on CartPole, simply run:
+
+```bash
+python run_arlbench.py
+```
+
+You can use the [hydra](https://hydra.cc/) command line syntax to override some of the configuration like this to change to PPO:
+
+```bash
+python run_arlbench.py algorithm=ppo
+```
+
+Or run multiple different seeds after one another:
+
+```bash
+python run_arlbench.py -m autorl.seed=0,1,2,3,4
+```
+
+All hyperparamters to adapt are in the 'hpo_config' and architecture settings in the 'nas_config', so to run a grid of different configurations for 5 seeds each , you can do this:
+
+```bash
+python run_arlbench.py -m autorl.seed=0,1,2,3,4 nas_config.hidden_size=8,16,32 hp_config.learning_rate=0.001,0.01
+```
+
+We recommend you create your own custom config files if using the CLI (for more information on this, checkout [Hydra's guide to config files](https://hydra.cc/docs/tutorials/basic/your_first_app/config_file/)). Our [examples](https://github.com/automl/arlbench/tree/main/examples) can show you how these can look.
+
+### Use the AutoRL environment
+
+If you want to have specific control over the ARLBench loop, want to do dynamic configuration or learn based on the agent state, you should use the environment-like interface of ARLBench in your script.
+
+To do so, import ARLBench and use the `AutoRLEnv` to run an RL agent:
+
+```python
+from arlbench import AutoRLEnv
+
+env = AutoRLEnv()
+
+obs, info = env.reset()
+
+action = env.config_space.sample_configuration()
+obs, objectives, term, trunc, info = env.step(action)
+```
+
+Just like with RL agents, you can call 'step' multiple times until termination (which you define via the AutoRLEnv's config). For all configuration options, check out our [documentation](https://automl.github.io/arlbench/main/).
+
+## Cite Us
+
+If you use ARLBench in your work, please cite us:
+
+```bibtex
+@misc{beckdierkes24,
+  author    = {J. Becktepe and J. Dierkes and C. Benjamins and D. Salinas and A. Mohan and R. Rajan and F. Hutter and H. Hoos and M. Lindauer and T. Eimer},
+  title     = {ARLBench},
+  year      = {2024},
+  url = {https://github.com/automl/arlbench},
+```
