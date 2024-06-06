@@ -1,0 +1,5 @@
+coremltools~=4.0
+onnxmltools~=1.11.0
+onnx~=1.11.0
+typing_extensions
+onnxruntime
