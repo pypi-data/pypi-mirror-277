@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: py-watersmart
+Version: 0.1.1
+Summary: Obtain water usage data from Watersmart.com
+Author-email: "J.C. Jones" <jc@insufficient.coffee>
+Project-URL: Repository, https://github.com/jcjones/py-watersmart.git
+Project-URL: Issues, https://github.com/jcjones/py-watersmart/issues
+Keywords: water meter
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+Requires-Dist: aiohttp-client-cache[sqlite]
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-asyncio ; extra == 'test'
+
+This library supplies a mechanism to download water meter usage data for homes
+serviced by a water company that uses `<town_name>.watersmart.com` URLs 
+for such data.
+
+It supplies a simple `watersmart-cli` CLI that prints all hourly logs, but
+is generally expected to be used from another tool, like Home Assistant.
+
+## Developing
+
+```shell
+python -m venv .venv
+. .venv/bin/activate
+pip install -e .[test]
+python -m pytest .
+```
