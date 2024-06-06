@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+GameWorldNavigator.egg-info/PKG-INFO
+GameWorldNavigator.egg-info/SOURCES.txt
+GameWorldNavigator.egg-info/dependency_links.txt
+GameWorldNavigator.egg-info/requires.txt
+GameWorldNavigator.egg-info/top_level.txt
