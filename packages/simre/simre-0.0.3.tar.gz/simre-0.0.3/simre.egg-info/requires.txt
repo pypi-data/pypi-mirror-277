@@ -1,0 +1,13 @@
+nltk
+pandas
+numpy
+gensim
+spacy
+torch
+sentence-transformers
+bs4
+uvlparser==2.0.1
+lxml
+scikit-learn
+fasttext-wheel
+gdown

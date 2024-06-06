@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+simre/__init__.py
+simre/formats.py
+simre/init_models.py
+simre/similarity.py
+simre.egg-info/PKG-INFO
+simre.egg-info/SOURCES.txt
+simre.egg-info/dependency_links.txt
+simre.egg-info/requires.txt
+simre.egg-info/top_level.txt
