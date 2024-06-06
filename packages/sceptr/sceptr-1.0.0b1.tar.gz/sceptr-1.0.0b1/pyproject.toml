@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sceptr"
+requires-python = ">=3.9"
+authors = [
+    {name = "Yuta Nagano", email = "yutanagano51@proton.me"}
+]
+maintainers = [
+    {name = "Yuta Nagano", email = "yutanagano51@proton.me"}
+]
+description = "Fast and performant TCR representation model"
+readme = "README.md"
+keywords = ["TCR", "TR", "T cell", "transformer", "bert", "MLM", "immunology", "bioinformatics"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "libtcrlm~=1.0",
+    "numpy~=1.26",
+    "pandas~=2.0",
+    "torch~=2.0",
+]
+dynamic = ["version"]
+
+[project.urls]
+Repository = "https://github.com/yutanagano/sceptr"
+Issues = "https://github.com/yutanagano/sceptr/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "tox"
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = {attr = "sceptr.VERSION"}
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore:The PyTorch API"
+]
