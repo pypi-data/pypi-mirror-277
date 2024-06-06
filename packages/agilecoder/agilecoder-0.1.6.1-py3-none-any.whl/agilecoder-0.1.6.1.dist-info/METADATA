@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: agilecoder
+Version: 0.1.6.1
+Summary: AgileCoder
+Home-page: https://github.com/FSoft-AI4Code/AgileCoder
+Author: FSoft-AI4Code
+Author-email: support.aic@fpt.com
+License: Apache-2.0
+Requires-Python: >=3.8
+Requires-Dist: openai ==0.28.1
+Requires-Dist: tiktoken
+Requires-Dist: markdown
+Requires-Dist: colorama
+Requires-Dist: nltk
+Requires-Dist: flask
+Requires-Dist: tenacity
+Requires-Dist: python-dotenv
+Requires-Dist: codebleu
+Requires-Dist: google-auth
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: google-auth-httplib2
+Requires-Dist: anthropic
+
