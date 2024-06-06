@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=40.8.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "auto-blueprints-hello"
+version = "0.1.0"
+description = "Flask blueprints auto discovery example"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+requires-python = ">=3.11"
+dependencies = [
+    "auto-blueprints"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+]
+authors = [
+  {name = "David", email = "c0d3@gpobox.net"},
+]
+maintainers = [
+  {name = "David", email = "c0d3@gpobox.net"}
+]
+keywords = ["flask", "blueprints"]
+
+[project.urls]
+"Homepage" = "https://github.com/bbc6502/blueprints-hello"
+"Bug Tracker" = "https://github.com/bbc6502/blueprints-hello/issues"
+
+[tool.setuptools]
+packages = ["hello"]

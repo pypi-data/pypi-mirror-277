@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: auto-blueprints-hello
+Version: 0.1.0
+Summary: Flask blueprints auto discovery example
+Author-email: David <c0d3@gpobox.net>
+Maintainer-email: David <c0d3@gpobox.net>
+License: Copyright © 2024 David <c0d3@gpobox.net>
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+        associated documentation files (the “Software”), to deal in the Software without restriction,
+        including without limitation the rights to use, copy, modify, merge, publish, distribute,
+        sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or
+        substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+        BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+        NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+        DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/bbc6502/blueprints-hello
+Project-URL: Bug Tracker, https://github.com/bbc6502/blueprints-hello/issues
+Keywords: flask,blueprints
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: auto-blueprints
+
+# Blueprints-hello
+
+Blueprints is a library to perform auto-discovery of Flask blueprints
+by scanning the installed packages for blueprints.txt files.
+This is an example of an auto-discoverable project.
+
+## Installation
+
+    pip install --upgrade auto-blueprints-hello
+
+## Running
+
+Blueprints can be run as a command line executable.
+
+    blueprints --host 127.0.0.1 --port 5000
+
+## License
+
+MIT Licensed
