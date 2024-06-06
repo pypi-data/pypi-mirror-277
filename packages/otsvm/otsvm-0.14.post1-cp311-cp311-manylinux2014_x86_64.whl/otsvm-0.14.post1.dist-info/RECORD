@@ -1,0 +1,5 @@
+otsvm/__init__.py,sha256=pX42knUwufFB1UwNvNr7_OK5jtJ_9nco6Np2dChVd6M=,548
+otsvm/otsvm.py,sha256=ZfcuLc0CeQiVIgW0hjvnoXKZ83CBIa7PFHy3hvNNMVw=,40925
+otsvm/_otsvm.so,sha256=cdKbTzPZLeD6bzXUjtAwBtAMc3-Z43Ptg7zIJ4bmP2g=,1396624
+otsvm-0.14.post1.dist-info/RECORD,,
+otsvm-0.14.post1.dist-info/METADATA,sha256=hCFv8LEjmn9lre2WODJRsX1a96zPSFOnooWTv3F5TqE=,1657
