@@ -1,0 +1,43 @@
+[build-system]
+requires = [
+  "setuptools>=61.0.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytest-attributes"
+description = "A plugin that allows users to add attributes to their tests. These attributes can then be referenced by fixtures or the test itself."
+version = "0.1.1"
+readme = {file = "README.rst", content-type = "text/markdown"}
+requires-python = ">=3.8"
+authors = [
+    { name = "Babak Michael Engheta", email = "michaelengheta55@gmail.com" },
+]
+maintainers = [
+    { name = "Babak Michael Engheta", email = "michaelengheta55@gmail.com" },
+]
+license = {file = "LICENSE"}
+classifiers = [
+    "Framework :: Pytest",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Testing",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "License :: OSI Approved :: BSD License",
+]
+dependencies = [
+    "pytest>=6.2.0",
+]
+[project.urls]
+Repository = "https://github.com/MichaelE55/pytest-attributes"
+[project.entry-points.pytest11]
+attributes = "pytest_attributes.attributes"

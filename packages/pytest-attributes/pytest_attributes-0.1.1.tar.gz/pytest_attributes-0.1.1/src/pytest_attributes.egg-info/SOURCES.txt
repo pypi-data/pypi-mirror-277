@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+pyproject.toml
+src/pytest_attributes/__init__.py
+src/pytest_attributes/attributes.py
+src/pytest_attributes.egg-info/PKG-INFO
+src/pytest_attributes.egg-info/SOURCES.txt
+src/pytest_attributes.egg-info/dependency_links.txt
+src/pytest_attributes.egg-info/entry_points.txt
+src/pytest_attributes.egg-info/requires.txt
+src/pytest_attributes.egg-info/top_level.txt
