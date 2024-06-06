@@ -1,0 +1,8 @@
+stack_gen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stack_gen/main.py,sha256=nX2BVpmThvxdD8qqOwaiSWjmh8j5uBqTEquHsbWsYS8,974
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stack_gen-0.0.5.dist-info/METADATA,sha256=CUv2lAzbxz4z5rUYWd4gzy4TiAedKj_yzTYKBog7XIY,423
+stack_gen-0.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+stack_gen-0.0.5.dist-info/entry_points.txt,sha256=tzV3OCbqcGilANmGWvnJd0h4pB8Jo01qWU29uwy19oo,40
+stack_gen-0.0.5.dist-info/top_level.txt,sha256=siqROYPZHB6JKa8aCIUpir8OcMdwUI9lL7YV13ijQtg,16
+stack_gen-0.0.5.dist-info/RECORD,,
