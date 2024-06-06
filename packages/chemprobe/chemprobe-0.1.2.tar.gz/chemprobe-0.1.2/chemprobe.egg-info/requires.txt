@@ -1,0 +1,6 @@
+pandas
+scikit-learn
+pytorch-lightning
+optuna
+rdkit
+thunor
