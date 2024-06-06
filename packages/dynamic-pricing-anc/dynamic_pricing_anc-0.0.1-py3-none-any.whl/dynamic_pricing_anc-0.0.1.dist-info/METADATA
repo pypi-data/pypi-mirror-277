@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dynamic_pricing_anc
+Version: 0.0.1
+Summary: A package containing various methods that can be used for dynamic pricing of airline ancillaries
+Author-email: Petr Kocandrle <petr.kocandrle@amadeus.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Dynamic Pricing Package
+
+This is a package for dynamic pricing of airline ancillaries
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
