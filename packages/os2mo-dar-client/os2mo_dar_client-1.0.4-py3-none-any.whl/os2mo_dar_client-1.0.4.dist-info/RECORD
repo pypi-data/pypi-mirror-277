@@ -1,0 +1,9 @@
+os2mo_dar_client/__init__.py,sha256=TcZ8nzxvWOaJ3KJNtFq98wo09tFhgyO7A_DEr8jtdPw,314
+os2mo_dar_client/cli.py,sha256=mhUK6nWu5Z8As0bYEjSoBfEbPGQ5Hu8gaKS23QDgHqU,883
+os2mo_dar_client/dar_client.py,sha256=bjCxzvjOeKfpoccNTzO8L3Z9SEeGoYyddSl2keYYbGQ,14838
+os2mo_dar_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+os2mo_dar_client-1.0.4.dist-info/LICENSE,sha256=Xez-I9f_ECXfYKKwVpbPA25xYMNwv4McfGeH_1Y9DOI,15177
+os2mo_dar_client-1.0.4.dist-info/LICENSES/MPL-2.0.txt,sha256=Xez-I9f_ECXfYKKwVpbPA25xYMNwv4McfGeH_1Y9DOI,15177
+os2mo_dar_client-1.0.4.dist-info/METADATA,sha256=jXD8PYw5pmFEFSyvtF-PAD8wqYAaAMCTQQsLNi5Vwfk,1785
+os2mo_dar_client-1.0.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+os2mo_dar_client-1.0.4.dist-info/RECORD,,
