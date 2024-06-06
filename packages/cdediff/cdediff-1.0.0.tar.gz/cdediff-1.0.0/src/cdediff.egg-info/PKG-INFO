@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: cdediff
+Version: 1.0.0
+Summary: Creates human readable descriptions and comparisons of CdEDB-Events.
+Author-email: Tobias Udtke <tobias.udtke@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: termcolor~=2.4.0
+
+# Übersicht
+
+`cdediff` ist ein Komandozeilenwerkzeug um partielle Exporte von CdEDB-Veranstaltungen in eine menschenlesbare Form zu bringen, sowie um übersichtliche Änderungszusammenfassungen zwischen den Zuständen zu verschiedenen Zeitpunkten zu generieren.
+
+Der primär angedachte Anwendungsfall ist die Verwendung als `textconv` oder `difftool` mit `git`.
+
+## Installation und Voraussetzungen
+
+Die minimal erforderliche Python-Version ist `3.10`. Um `cdediff` zu verwenden klone dieses Repository oder lade es als ZIP-Datei herunter und führe die folgenden Befehle aus:
+
+    git clone ssh://gitea@tracker.cde-ev.de:20009/orgas/cdediff.git
+    # or
+    git clone https://tracker.cde-ev.de/gitea/orgas/cdediff.git
+    # or
+    unzip cdediff-main.zip
+
+    cd cdediff
+    python3 -m venv venv
+    . venv/bin/activate
+    pip install -r requirements.txt
+
+## Aktualisierung
+
+Sollte es eine neue Version dieses Tools geben, kannst du sie, abhängig von der gewählten Installationsmethode ganz einfach aktualisiert werden:
+
+    # Bei Installation mit git:
+    cd cdediff
+    git pull
+    # Bei Installation via zip:
+    unzip -u cdediff-main.zip
+    cd cdediff
+
+Ggf. sollte die Anbindung an EventKeeper neu etabliert werden, siehe "Anbindung an EventKeeper".
+
+## Verwendung
+
+Die Textkonvertierung kann nun wie folgt benutzt werden. Im Ordner `tests` stehen zwei beispielhafte partielle Exporte zu Testzwecken zur Verfügung.
+
+    # if venv is not active:
+    . venv/bin/activate
+
+    ./textconv.py tests/a.json
+    ./textconv.py tests/b.json
+
+Zwei Zeitpunkte können wie folgt verglichen werden:
+
+    # if venv is not active:
+    . venv/bin/activate
+
+    ./difftool.py tests/a.json tests/b.json --event
+    # or
+    ./difftool.py tests/a.json tests/b.json --reg
+
+## Anbindung an EventKeeper
+
+CdEdiff kann in einem EventKeeper repository installiert und für die Anzeige von git diffs verwendet werden:
+
+    # if venv is not active:
+    . venv/bin/activate
+
+    ./setup_gitdiff.py <path_to_event_keeper> --event
+    # or
+    ./setup_gitdiff.py <path_to_event_keeper> --reg
+
+    cd <path_to_event_keeper>
+    git diff <some revision>
+
+Um eine andere Ansicht einzurichten, kann das Setup-Skript einfach erneut mit anderen Argumenten ausgeführt werden. Um die Verwendung im Repository zu deaktivieren kann das `--remove` Argument verwendet werden:
+
+    # if venv is not active:
+    . venv/bin/activate
+
+    ./setup_gitdiff.py <path_to_event_keeper> --remove
