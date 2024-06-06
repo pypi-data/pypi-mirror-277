@@ -1,0 +1,9 @@
+nltk-stubs/py.typed,sha256=la67KBlbjXN-_-DfGNcdOcjYumVpKG_Tkw-8n5dnGB4,8
+nltk-stubs/tree/tree.pyi,sha256=xcOYKeWzx9_jOVJlHZxQQUPe68zzpUccazBd5rzi8zU,7930
+nltk_tree_ext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nltk_tree_ext/funcs.py,sha256=wv_k6W33CYTv5LD3ojgB5R-mmYk_5hsMDENA7Gc58Gs,18159
+nltk_tree_ext/patch.py,sha256=yPzUpEZ8GTSTOPx7Y-J99FJ1uGZJPCM8koO1yGjEu0c,976
+nltk_tree_extensions-3.7.0.3.0.dist-info/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nltk_tree_extensions-3.7.0.3.0.dist-info/METADATA,sha256=vsZAwMflQESvqMsOpdIymGjCRlFhE52tUCw-We2rCRI,675
+nltk_tree_extensions-3.7.0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+nltk_tree_extensions-3.7.0.3.0.dist-info/RECORD,,
