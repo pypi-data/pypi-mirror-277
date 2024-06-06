@@ -1,0 +1,7 @@
+pyproject.toml
+setup.py
+jatux.egg-info/PKG-INFO
+jatux.egg-info/SOURCES.txt
+jatux.egg-info/dependency_links.txt
+jatux.egg-info/entry_points.txt
+jatux.egg-info/top_level.txt
