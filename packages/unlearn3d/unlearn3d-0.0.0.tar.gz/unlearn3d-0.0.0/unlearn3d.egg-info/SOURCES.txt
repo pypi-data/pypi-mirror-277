@@ -1,0 +1,6 @@
+pyproject.toml
+unlearn3d/__init__.py
+unlearn3d.egg-info/PKG-INFO
+unlearn3d.egg-info/SOURCES.txt
+unlearn3d.egg-info/dependency_links.txt
+unlearn3d.egg-info/top_level.txt

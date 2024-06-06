@@ -1,0 +1,7 @@
+[project]
+name = "unlearn3d"
+authors = [
+    {name = "Kyle Fogarty", email = "ktf25@cam.ac.uk"},
+]
+description = "Coming soon"
+version = "0.0.0"
