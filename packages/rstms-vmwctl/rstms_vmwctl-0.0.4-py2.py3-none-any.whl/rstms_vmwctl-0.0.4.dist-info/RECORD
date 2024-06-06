@@ -1,0 +1,11 @@
+rstms_vmwctl/__init__.py,sha256=DszwrvC5aIpxGMme4j9mp_NAKpQwA7bddJO0zVq15e8,213
+rstms_vmwctl/cli.py,sha256=U5XreU2EE4OYWnu2xcyFeAuc1GAUqiQXcRqVr0URCzo,4361
+rstms_vmwctl/exception_handler.py,sha256=7ufLnOyT-SeSBLDSxqZMW1qmKJAJTk7suN8RgTDIWxc,1065
+rstms_vmwctl/shell.py,sha256=sOpRM9HEctVP9tcZoYL4s13aJsYvscfwahQyMWky57c,1092
+rstms_vmwctl/version.py,sha256=OQFMQuo9lYKf5djPoh_jpYByuYbXjvtKLEtKTVVFlfo,127
+rstms_vmwctl/vmware_workstation.py,sha256=-08HEcj5U43JOTzFFEYH-3b7_N5lnhOu01Kh9vTO5qo,4523
+rstms_vmwctl-0.0.4.dist-info/entry_points.txt,sha256=omp7wBVP9ayVdfe3xOolFZBFFFVddDKkm2lT3b0LfIA,42
+rstms_vmwctl-0.0.4.dist-info/LICENSE,sha256=6jbRHKR3wiDrMFFJrJKQsZiShvOK17f3FtxZLYdep7k,1071
+rstms_vmwctl-0.0.4.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+rstms_vmwctl-0.0.4.dist-info/METADATA,sha256=HppDY8Fk-mKKfG-m-9iJMPhW49AQJCHo1UxjfqI8HzQ,1874
+rstms_vmwctl-0.0.4.dist-info/RECORD,,
