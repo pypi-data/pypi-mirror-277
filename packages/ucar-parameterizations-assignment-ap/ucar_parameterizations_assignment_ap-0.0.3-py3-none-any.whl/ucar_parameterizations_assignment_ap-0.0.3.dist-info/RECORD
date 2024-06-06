@@ -1,0 +1,7 @@
+parameterizations/__init__.py,sha256=HhgKIHIJ5o-0QO0cWNf1qcLA2NUi_dkejcBQmPs39cs,51
+parameterizations/shapes.py,sha256=iktH39iukSksqPldTWa9dGiEuvOCPqMdRRbot99oSFA,976
+parameterizations/test_shapes.py,sha256=3T_f0kfpFzkNQYVQd_HI5X3MedmEVP_BnoI17OPkap4,824
+ucar_parameterizations_assignment_ap-0.0.3.dist-info/METADATA,sha256=CgdhYggbUwC6aZuWcz6xWRyIrUWmgWRhmig02dvryzY,606
+ucar_parameterizations_assignment_ap-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ucar_parameterizations_assignment_ap-0.0.3.dist-info/top_level.txt,sha256=Di3QQJdLoof_JpNZF8IuBlpC_tpNy6A3I1rYXqOhmP4,18
+ucar_parameterizations_assignment_ap-0.0.3.dist-info/RECORD,,
