@@ -1,0 +1,9 @@
+nada_algebra/__init__.py,sha256=SB6DRpT8Z5JF2PczrqRK7dt4HjmNrLfO4_WFmeQ1XKk,334
+nada_algebra/array.py,sha256=Aldmz4_9SeKzCxZMn7OILYcGjAwpktXewDwYjk3Npnw,18017
+nada_algebra/client.py,sha256=tqQgeGCVaP10E81-1l8H03nEvpD6p7hrw57YFkF_1l4,3878
+nada_algebra/funcs.py,sha256=t-BkFdiXAvGGxvvNWgxS2uxrB0JvklA1as0CF0fvctg,7777
+nada_algebra/types.py,sha256=ry11gjFwloTTZcnZ6SJ5tcFB9asghfG-XJ_45a95uxQ,48173
+nada_algebra-0.3.1.dist-info/LICENSE,sha256=mXp6aCYInyWMPzXwwdcJ9bOVYfSpw1oWS9Gk6ufOsTA,11303
+nada_algebra-0.3.1.dist-info/METADATA,sha256=8Lir-8IBGZ6qSNZ7vwn9xCLzzNeRLm_calWChGQ9ulA,2162
+nada_algebra-0.3.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+nada_algebra-0.3.1.dist-info/RECORD,,
