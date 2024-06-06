@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: seya_image_processor
+Version: 0.1.0
+Summary: A package for processing images and converting them into grayscale line images with extra blurness. It can be used for varies Machine learning algorithm traninig as it provide the more torn images
+Author: Abhilash Gaurav
+Author-email: abhilashgaurav003@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: Pillow
+Requires-Dist: opencv-python
+Requires-Dist: scipy
+
+# Seya Image Processor
+
+A package for processing images.
+
+## Installation
+
+```sh
+pip install seya_image_processor
