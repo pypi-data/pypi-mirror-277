@@ -1,0 +1,2 @@
+[console_scripts]
+google-calendar-invoices = invoice_creator.main:main
