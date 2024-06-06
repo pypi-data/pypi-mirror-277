@@ -1,0 +1,9 @@
+requests
+scipy
+numpy
+statsmodels
+pandas
+matplotlib
+mpmath
+sympy
+opencv-python
