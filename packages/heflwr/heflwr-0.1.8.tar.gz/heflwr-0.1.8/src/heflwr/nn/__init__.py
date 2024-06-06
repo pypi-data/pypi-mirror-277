@@ -1,0 +1,12 @@
+from typing import Union, List, Tuple
+
+from .sslinear import SSLinear
+from .ssconv2d import SSConv2d
+from .ssbatchnorm2d import SSBatchNorm2d
+
+
+SUPPORT_LAYER = Union[
+    SSLinear,
+    SSConv2d,
+    SSBatchNorm2d
+]
