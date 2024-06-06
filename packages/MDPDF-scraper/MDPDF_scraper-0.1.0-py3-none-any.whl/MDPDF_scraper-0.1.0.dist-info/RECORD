@@ -1,0 +1,9 @@
+util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+util/indexer.py,sha256=_5i1UPF5-h9F9iMxaGV5XCk2moweGg9YzcFwOfFh544,1195
+util/webtoPDF.py,sha256=xU2iW6iv2w6-_HauP0f6rhGNeAaqCojHJSF89yYblHk,3005
+MDPDF_scraper-0.1.0.dist-info/LICENSE,sha256=buvDHPKnyh_NIm0VL6-9oNYN8Nk3-P0w_UWRSGJzgOI,1078
+MDPDF_scraper-0.1.0.dist-info/METADATA,sha256=9bUnMb727RxaETm-9kjzP1_A9ATnrf3wKENfCpkfOrw,1897
+MDPDF_scraper-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+MDPDF_scraper-0.1.0.dist-info/entry_points.txt,sha256=RFr5KSeeDkDGQjo-sRXusIftd98kQebdLk7D2X9HyHY,52
+MDPDF_scraper-0.1.0.dist-info/top_level.txt,sha256=jswPZi03UYX0m-Bk_cJmUmvefA97NCJO0RFeXJG_d5o,5
+MDPDF_scraper-0.1.0.dist-info/RECORD,,
