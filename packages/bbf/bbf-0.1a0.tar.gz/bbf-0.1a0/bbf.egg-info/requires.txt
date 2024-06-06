@@ -1,0 +1,14 @@
+numpy
+pandas
+scipy
+scikit-sparse
+mkl
+sparse_dot_mkl
+matplotlib
+platformdirs
+sncosmo
+astropy
+getCalspec
+
+[:python_version < "3.9"]
+importlib_resources
