@@ -1,0 +1,9 @@
+py_pkg_logging/__init__.py,sha256=5R6V60nmR1_VFF-2c_kubPOPSiCITxZ1H4zjsk4i2R4,130
+py_pkg_logging/__version__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+py_pkg_logging/_log_config.py,sha256=8Qkx58kMm729jCv5sF9qtiJp4XfcJaU7tuAAoOzW_es,2586
+py_pkg_logging/_log_function_call.py,sha256=ICr5SpIHRP7MtPiMgCamTxUMbRuBqdN4tXErKs4E7KM,2647
+py_pkg_logging/_packing_logging.py,sha256=kdK2USH_bmnL3Q1QGQQCx6Ne5_Ie9AQxsJC7OtOizYo,1422
+py_pkg_logging-0.0.3.dist-info/METADATA,sha256=wOs_umN-qcRcy984xavoUD0yW2hLE6O5ygErSMjVDLU,1475
+py_pkg_logging-0.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+py_pkg_logging-0.0.3.dist-info/top_level.txt,sha256=B8fj6Xqyw1LxvpM_9Y3AMU9BZmppLhSHnQKJa2v9oIs,15
+py_pkg_logging-0.0.3.dist-info/RECORD,,
