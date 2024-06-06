@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: naowidgets
+Version: 0.1.1
+Summary: A small library with useful widgets for NAO in Jupyter.
+Home-page: https://github.com/NaosClassroom/naowidgets
+Author: Emile Kroeger
+Author-email: e.kroeger@unitedrobotics.group
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ipywidgets
+Requires-Dist: IPython
+
+# naowidgets
+
+This projects contains:
+
+ * General helpers for running NAOqi async calls in jupyter without locking, namely:
+  * the @as_widget decorator
+  * show
+
+ * Dedicated widgets for arm control (one at a time or both together)
+
+  ## Installation
+
+You can install the package using pip:
+
+```sh
+pip install naowidgets
