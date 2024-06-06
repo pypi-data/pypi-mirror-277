@@ -1,0 +1,14 @@
+_oxidd.abi3.so,sha256=CtBHmurfPrv6GPQs6NbgWnJum1-iJeGDcYpt2qrdo28,6453544
+oxidd/__init__.py,sha256=V-qMwPN3wtqkJqogXovzCNencFKtgYqJ3LMGN9kiX1c,220
+oxidd/bcdd.py,sha256=XrPWJez0XqAG1xV700GC7aita3gOBme35HKwLnpVC_0,11182
+oxidd/protocols.py,sha256=EegrjYJl4jNR-zi3zz6P8_EF5Ax5t7DZWsiuc-6TxHY,13521
+oxidd/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oxidd/zbdd.py,sha256=OxzIgAZi_5khJGPhBbWqxMEWN8ig7fzQaimOzjdi218,11541
+oxidd/util.py,sha256=tddWhzAS9S42GUs8QbYKc-9rKlUusyzKThxWLJ6WXHw,2512
+oxidd/bdd.py,sha256=d3JE6IaeP3r4CfvhtlGMdPS66Fy0NPQXQOqkE-C7P2I,11069
+oxidd-0.7.0.dist-info/WHEEL,sha256=ZILpixIZNVGQBm0LS6ewaj4n2CmmhcQqjQcXGcDpX9Y,150
+oxidd-0.7.0.dist-info/LICENSE-APACHE,sha256=Yseh419WQGiW16p8pS0MwNJyrAIrXSeW59aQXbijY2o,9723
+oxidd-0.7.0.dist-info/top_level.txt,sha256=dUW4XS8YKMDlT6aiwjHTPXT0qUeQAM21OHSBG0YZPQY,13
+oxidd-0.7.0.dist-info/LICENSE-MIT,sha256=gYPz9oZ7OVcO6RjE0IaDGh_4fx5bc3X14xOabjEzkLs,1067
+oxidd-0.7.0.dist-info/RECORD,,
+oxidd-0.7.0.dist-info/METADATA,sha256=wdJETsWU7TwWaXgzAIaEzWPpnuYnf5qgQ20exc5dIVE,4918
