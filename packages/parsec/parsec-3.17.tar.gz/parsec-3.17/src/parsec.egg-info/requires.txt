@@ -1,0 +1,8 @@
+setuptools
+
+[:python_version < "3.5"]
+enum34
+
+[dev]
+mypy
+coverage
