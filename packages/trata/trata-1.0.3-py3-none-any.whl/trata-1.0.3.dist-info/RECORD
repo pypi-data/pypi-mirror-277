@@ -1,0 +1,10 @@
+trata/__init__.py,sha256=8WhEUYwRDgToB5wqeqJEmGHzTTxfnefRHv-186jXrkk,62
+trata/adaptive_sampler.py,sha256=jxeJ4C8CzhCtMtrTPXi-ox0Ak8KhyzgjxSqQIztz9aI,18671
+trata/composite_samples.py,sha256=xxuo22PLXicxG8vtEQ429ESgP4EYXefNBs4HHVh2l0c,24532
+trata/sampler.py,sha256=_Yg52U8TsXoMQtNro1Ql-8IB3sKG7dVHVsR_ZFWsm44,62875
+trata-1.0.3.dist-info/LICENSE,sha256=TA341cnSXRWW7gOUDq22Lvo57HLjqBvy_Prmsup4l58,1098
+trata-1.0.3.dist-info/METADATA,sha256=vEJtDgoN1Otpbb6XI5gmjim6NDe2MRRH0agKNkooK28,5341
+trata-1.0.3.dist-info/NOTICE,sha256=9CR93geVKl_4ZrJORbXN0fzkEM2y4DglWhY1hn9ZwQw,1167
+trata-1.0.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+trata-1.0.3.dist-info/entry_points.txt,sha256=IEZBIMYeRTDLic5w9m-yVKAL5_XGHrxyzbiUi9kROMY,46
+trata-1.0.3.dist-info/RECORD,,
