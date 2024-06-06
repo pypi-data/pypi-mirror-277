@@ -1,0 +1,5 @@
+setup.py
+pipG2IP.egg-info/PKG-INFO
+pipG2IP.egg-info/SOURCES.txt
+pipG2IP.egg-info/dependency_links.txt
+pipG2IP.egg-info/top_level.txt
