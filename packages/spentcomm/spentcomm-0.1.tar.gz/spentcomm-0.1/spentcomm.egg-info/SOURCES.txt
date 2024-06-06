@@ -1,0 +1,10 @@
+setup.py
+parse/__init__.py
+parse/parse.py
+parse/process_all.py
+parse/prompts.py
+parse/summarize.py
+spentcomm.egg-info/PKG-INFO
+spentcomm.egg-info/SOURCES.txt
+spentcomm.egg-info/dependency_links.txt
+spentcomm.egg-info/top_level.txt
