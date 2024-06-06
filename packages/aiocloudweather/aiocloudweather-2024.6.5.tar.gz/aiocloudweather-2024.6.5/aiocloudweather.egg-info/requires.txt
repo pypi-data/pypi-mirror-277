@@ -1,0 +1,3 @@
+aiohttp>3
+requests>2
+dns-client>0.2
