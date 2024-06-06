@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: ScreenPinKit
+Version: 0.9
+Summary: A mini screenshot and annotation tool that incorporates ideas from Snipaste, Excalidraw, ShareX, and others.
+Home-page: https://github.com/YaoXuanZhi/ScreenPinKit
+Author: YaoXuanZhi
+Author-email: yaoxuanzhi@outlook.com
+License: GPLv3
+Project-URL: Documentation, https://github.com/YaoXuanZhi/ScreenPinKit/wiki
+Project-URL: Source Code, https://github.com/YaoXuanZhi/ScreenPinKit
+Project-URL: Bug Tracker, https://github.com/YaoXuanZhi/ScreenPinKit/issues
+Keywords: pyqt ScreenPinKit screenshot screen-paint
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: PyQt5>=5.15.0
+Requires-Dist: scipy
+Requires-Dist: pillow<=9.4.0
+Requires-Dist: PyQt-Fluent-Widgets
+Requires-Dist: system_hotkey
+
+<p align="center">
+  <img width="18%" align="center" src="https://raw.githubusercontent.com/YaoXuanZhi/ScreenPinKit/main/images/logo.svg" alt="logo">
+</p>
+  <h1 align="center">
+  ScreenPinKit
+</h1>
+<p align="center">
+  一款基于PyQt5的迷你截图标注、桌面标注工具
+</p>
+
+<p align="center">
+  <a href="https://pypi.org/project/ScreenPinKit" target="_blank">
+    <img src="https://img.shields.io/pypi/v/ScreenPinKit?color=%2334D058&label=Version" alt="Version">
+  </a>
+
+  <a style="text-decoration:none">
+    <img src="https://static.pepy.tech/personalized-badge/pyqt-fluent-widgets?period=total&units=international_system&left_color=grey&right_color=brightgreen&left_text=Downloads" alt="Download"/>
+  </a>
+
+  <a style="text-decoration:none">
+    <img src="https://img.shields.io/badge/License-GPLv3-blue?color=#4ec820" alt="GPLv3"/>
+  </a>
+
+  <a style="text-decoration:none">
+    <img src="https://img.shields.io/badge/Platform-Win32%20-blue?color=#4ec820" alt="Platform Win32"/>
+  </a>
+</p>
+
+<p align="center">
+<a href="../README.md">English</a> | 简体中文
+</p>
+
+![Interface](https://raw.githubusercontent.com/YaoXuanZhi/ScreenPinKit/main/images/Interface.png)
+
+
+## 安装
+```shell
+pip install ScreenPinKit -i https://pypi.org/simple/
+
+ScreenPinKit
+```
+
+> **Warning**
+> 该应用使用了第三方库system_hotkey来注册全局快捷键，但是由于该包已经有3年以上不维护了，推荐在python3.8上安装并运行
+
+## 运行示例
+使用 pip 安装好 ScreenPinKit 包并下载好此仓库的代码之后，就可以运行 src 目录下的任意示例程序，比如：
+
+```sh
+cd src
+python main.py
+
+python ./canvas_editor/demos/canvas_editor_demo_full.py
+
+python ./canvas_item/demos/canvas_arrow_demo.py
+
+```
+
+## 使用教程
+请仔细阅读 [wiki](https://github.com/YaoXuanZhi/ScreenPinKit/wiki)
+
+## 参考
+* [**Snipaste**: Snipaste 是一个简单但强大的截图工具，也可以让你将截图贴回到屏幕上](https://zh.snipaste.com/)
+* [**excalidraw**: Design guidelines and toolkits for creating native app experiences](https://excalidraw.com/)
+* [**PyQt-Fluent-Widgets**: A fluent design widgets library based on C++ Qt/PyQt/PySide. Make Qt Great Again.](https://github.com/zhiyiYo/PyQt-Fluent-Widgets)
+* [**ShareX**: Screen capture, file sharing and productivity tool](https://github.com/ShareX/ShareX)
+* [**ppInk**: An easy to use on-screen annotation software inspired by Epic Pen.](https://github.com/onyet/ppInk/)
+* [**pyqtgraph**: Fast data visualization and GUI tools for scientific / engineering applications](https://github.com/pyqtgraph/pyqtgraph)
+* [**Jamscreenshot**: 一个用python实现的类似微信QQ截屏的工具源码，整合提取自本人自制工具集Jamtools](https://github.com/fandesfyf/Jamscreenshot)
+* [**EasyCanvas**: 基于Qt QGraphicsView的简易画图软件](https://github.com/douzhongqiang/EasyCanvas)
+* [**PixPin**: 功能强大使用简单的截图/贴图工具，帮助你提高效率](https://pixpinapp.com/)
+
+<details>
+<summary>TodoList</summary>
+
+ - ☐ 修复system_hotkey的异常表现
+   >经测试，在python3.10下会抛异常，并且在python3.8上其异常也不能被正常捕获，考虑到它已经有将近3年不维护了，需要做对它做全方位的兼容性处理
+ - ☐ 无感设置快捷键
+ - ☐ 无感切换语言
+ - ☐ 插件市场
+ - ☐ 更快的离线OCR识别支持
+ - ☐ 完善OCR识别层的UI显示
+
+</details>
