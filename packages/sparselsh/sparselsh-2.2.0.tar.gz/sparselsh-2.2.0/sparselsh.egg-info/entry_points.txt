@@ -1,0 +1,2 @@
+[console_scripts]
+sparselsh = sparselsh.cli:cli
