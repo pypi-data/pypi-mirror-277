@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+nvl/ProjectStructure.yaml
+nvl/__debug__.py
+nvl/__init__.py
+nvl/cli.py
+nvl.egg-info/PKG-INFO
+nvl.egg-info/SOURCES.txt
+nvl.egg-info/dependency_links.txt
+nvl.egg-info/entry_points.txt
+nvl.egg-info/requires.txt
+nvl.egg-info/top_level.txt
