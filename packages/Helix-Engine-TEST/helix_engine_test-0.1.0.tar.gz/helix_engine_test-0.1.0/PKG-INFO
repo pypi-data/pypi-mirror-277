@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Helix-Engine-TEST
+Version: 0.1.0
+Summary: THE python game engine
+Home-page: https://github.com/Zero-th/Helix
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: moderngl
+Requires-Dist: glfw
+Requires-Dist: pyrr
+Requires-Dist: numba

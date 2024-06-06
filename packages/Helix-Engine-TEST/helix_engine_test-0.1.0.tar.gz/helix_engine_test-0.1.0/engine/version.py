@@ -1,0 +1,6 @@
+# version.py
+
+HLX_MAJOR_VER = 1
+HLX_MINOR_VER = 0
+HLX_PATCH_VER = 0
+HLX_YR_EDITION = 2024

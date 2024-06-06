@@ -1,0 +1,5 @@
+numpy
+moderngl
+glfw
+pyrr
+numba
