@@ -1,0 +1,14 @@
+
+[jax]
+optax
+flax
+jax
+
+[testing]
+pytest
+pytest-cov
+
+[torch]
+torch
+bitsandbytes
+accelerate

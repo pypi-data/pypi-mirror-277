@@ -1,0 +1,12 @@
+LICENSE
+LICENSE.GPL
+README.md
+setup.py
+flora_opt/__init__.py
+flora_opt.egg-info/PKG-INFO
+flora_opt.egg-info/SOURCES.txt
+flora_opt.egg-info/dependency_links.txt
+flora_opt.egg-info/requires.txt
+flora_opt.egg-info/top_level.txt
+tests/test_optax_utils.py
+tests/test_pytorch_utils.py
