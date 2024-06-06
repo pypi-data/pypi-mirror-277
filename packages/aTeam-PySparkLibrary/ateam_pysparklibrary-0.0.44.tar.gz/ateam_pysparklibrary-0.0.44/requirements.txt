@@ -1,0 +1,4 @@
+aTeam-PySparkLibrary == 0.0.44
+pyspark
+delta
+delta_spark
