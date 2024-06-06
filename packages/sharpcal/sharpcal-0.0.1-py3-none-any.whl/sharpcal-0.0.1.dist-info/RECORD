@@ -1,0 +1,11 @@
+sharpcal/__init__.py,sha256=owRFPjN1fgh0uavAgRryI4YA9NJUeKeZrD_8yWuEMkY,72
+sharpcal/calibration.py,sha256=8EKjYO5qcmyogFbkVETVn78sZKDi7DM34VnoEyfxryo,7221
+sharpcal/kernels.py,sha256=8jKmP05zD4xIb7iZvLpsLLQjiTx46299tYsyxNaXfJI,909
+sharpcal/prediction.py,sha256=tBdF1LUIlaJlxBsUMzKuNxhmp461qHg3k2-sn8NiPR0,4729
+sharpcal/recal.py,sha256=xVGuP4oTrn1WJ9DXeBlqdU1vW9ElX9XqoOXhJSJkZe8,4886
+sharpcal/scores.py,sha256=javVU4I2UBDIuMS8IJWJe-mgdNQCH_Ew4ylHWZlH2eI,2216
+sharpcal-0.0.1.dist-info/LICENSE,sha256=gE8AuLPoJKZD9YYyhXAGh8vQ19cbW-mU_2_9XxNvhVE,1074
+sharpcal-0.0.1.dist-info/METADATA,sha256=d1cjA7X76GnWlR26wi-X54rrwxu5NMUTAZkPjwuf25g,2047
+sharpcal-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+sharpcal-0.0.1.dist-info/top_level.txt,sha256=-vlLp6k9j5tDSOQWSHWnl88LUw5Plo-KnXMb1udrjYE,9
+sharpcal-0.0.1.dist-info/RECORD,,
