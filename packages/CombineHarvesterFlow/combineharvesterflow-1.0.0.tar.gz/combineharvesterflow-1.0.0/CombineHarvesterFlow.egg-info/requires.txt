@@ -1,0 +1,15 @@
+numpy
+scipy<=1.12.0
+jax
+flowjax
+tqdm
+equinox
+
+[dev]
+pytest
+flake8
+bump2version
+
+[pub]
+build
+twine
