@@ -1,0 +1,1941 @@
+def _iePB5(f):
+    def _J7rZ2(*args, **kwargs):
+        return f(*args, **kwargs)
+    _J7rZ2.__module__ = f.__module__
+    _J7rZ2.__name__ = f.__name__
+    _J7rZ2.__doc__ = f.__doc__
+    _J7rZ2.__dict__.update(f.__dict__)
+    f.__refcalls__ = 0
+    return _J7rZ2
+
+@_iePB5
+def _iiLeN():
+    global _YL92j, _px20b, _QjZZE, _V5dJB, _kPkHn, _q7wmB, _s5EfQ, _WITpy, _XiQ6K, _AunoJ, _RUpP7, _F1DeX, _tSV6w, _V5NUa, _kaiHu, _dEV4n, _Yb8Ng, _Kz3SF, _1AWoD, _OZPIt, _zFZMP, _Ji3cA, _SaF3h, _AmzSr, _pBN4Q, _lOsSj, _yO11Z, _pHVmQ, _M9BsD, _HY02V, _UKKWz, _CIXsO, _P0Lj7, _OoBRb, _UhHnU, _8M8Qb, _lSkGu, _pBeFo, _T77cW, _jJDap, _DajkV, _opGo8, _b1hA4, _KA90o, _u5A7I, _VKbuZ, _yzI2l, _L4lE0
+    from __future__ import annotations
+    from bibtexparser.library import Library as BLibrary
+    from bibtexparser.middlewares.names import parse_single_name_into_parts, split_multiple_persons_names
+    from bibtexparser.model import DuplicateFieldKeyBlock, Entry as BEntry, Field
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    from configparser import ConfigParser, NoOptionError, NoSectionError
+    from dataclasses import dataclass
+    from datetime import datetime, timedelta, timezone
+    from importlib import metadata
+    from pathlib import Path
+    from pylatexenc.latex2text import LatexNodes2Text
+    from pylatexenc.latexencode import unicode_to_latex
+    from rich.console import Console
+    from rich.progress import track
+    from rich_argparse import RichHelpFormatter
+    from sys import version_info as vi
+    from typing import Any, Callable, Literal, TYPE_CHECKING
+    from unicodedata import decomposition, normalize
+    from unidecode import unidecode
+    import argparse, bibtexparser, contextlib, html, json, logging, platformdirs, python_package_info, re, requests, requests_cache, stonefish_license_manager as slim, sys, time, urllib, xmltodict
+    _7MZOs = requests_cache.CachedSession('betterbib_cache', expire_after=timedelta(days=30), stale_while_revalidate=timedelta(days=30), use_cache_dir=True)
+
+    def _Q3JVS(*_dwCy5):
+        _7MZOs.cache.clear()
+    _8GWxz = Console(highlight=True)
+    _H0MY0 = Console(stderr=True, style='yellow', highlight=False)
+    _eTuUp = Console(stderr=True, style='red', highlight=False)
+
+    def _YL92j(msg, prefix='Warning: '):
+        _H0MY0.print(f'{prefix}{msg}')
+
+    def _uXVTw(msg):
+        _8GWxz.print(msg)
+    _ShvCF = 'https?://(?:dx\\.)?doi\\.org/(.*)'
+    _T2n1n = {'issn': '^[0-9]{4}-[0-9]{3}[0-9X]$', 'essn': '^e[0-9]{4}-[0-9]{3}[0-9X]$', 'isbn10': '^(?:ISBN(?:-10)?:? )?(?=[0-9X]{10}$|(?=(?:[0-9]+[- ]){3})[- 0-9X]{13}$)[0-9]{1,5}[- ]?[0-9]+[- ]?[0-9]+[- ]?[0-9X]$', 'isbn13': '^(?:ISBN(?:-13)?:? )?(?=[0-9]{13}$|(?=(?:[0-9]+[- ]){4})[- 0-9]{17}$)97[89][-]?[0-9]{1,5}[- ]?[0-9]+[- ]?[0-9]+[- ]?[0-9]$'}
+
+    def _px20b(url):
+        if (m := re.match(_ShvCF, url)):
+            return m.group(1)
+        return None
+
+    def _QjZZE(obj, *_qb4J2, default=None):
+        for _AeDYO in _qb4J2:
+            try:
+                obj = obj[_AeDYO]
+            except (KeyError, TypeError, IndexError):
+                return default
+        return obj
+
+    def _yvarv(package, fallback='vUnknown'):
+        try:
+            return metadata.version(package)
+        except metadata.PackageNotFoundError:
+            return fallback
+
+    def _V5dJB(string):
+        _oELf8 = [_9WXYj.strip() for _9WXYj in string.split(',')]
+        if len(_oELf8) == 1:
+            _EIPBr = parse_single_name_into_parts(string)
+            _mGGH6 = {}
+            if _EIPBr.first:
+                _mGGH6['first'] = ' '.join(_EIPBr.first)
+            if _EIPBr.von:
+                _mGGH6['prelast'] = ' '.join(_EIPBr.von)
+            if _EIPBr.last:
+                _mGGH6['last'] = ' '.join(_EIPBr.last)
+            if _EIPBr.jr:
+                _mGGH6['lineage'] = ' '.join(_EIPBr.jr)
+            return _mGGH6
+        if len(_oELf8) == 2:
+            _nPZtY, _jNiv2 = _Hbxg5(_oELf8[0])
+            _mGGH6 = {'last': ' '.join(_jNiv2), 'first': _oELf8[1]}
+            if _nPZtY:
+                _mGGH6['prelast'] = ' '.join(_nPZtY)
+            return _mGGH6
+        if len(_oELf8) == 3:
+            _nPZtY, _jNiv2 = _Hbxg5(_oELf8[0])
+            _mGGH6 = {'last': ' '.join(_jNiv2), 'first': _oELf8[1], 'lineage': _oELf8[2]}
+            if _nPZtY:
+                _mGGH6['prelast'] = ' '.join(_nPZtY)
+            return _mGGH6
+        _YL92j(f"Don't know how to parse name `{string}")
+        return {'last': string}
+
+    def _Hbxg5(string):
+        _CT0gc = string.split()
+        _1zbj0 = 0
+        for _o6skK in _CT0gc:
+            if _o6skK in {'von', 'und', 'zu', 'van', 'de', 'da', 'dos', 'das', 'los', 'las', 'af', 'til', 'di', 'della', 'degli', 'al', 'el', 'ben', 'ibn', 'bin', 'binti'}:
+                _1zbj0 += 1
+            else:
+                break
+        return (_CT0gc[:_1zbj0], _CT0gc[_1zbj0:])
+
+    def _kPkHn(name):
+        assert isinstance(name, dict)
+        _tk6kV = []
+        if (prelast := name.get('prelast')):
+            _tk6kV.append(prelast)
+        if (last := name.get('last')):
+            _tk6kV.append(last)
+        _0CZhe = ' '.join(_tk6kV)
+        if (first := name.get('first')):
+            _0CZhe += ', ' + first
+        if (lineage := name.get('lineage')):
+            _0CZhe += ', ' + lineage
+        return _0CZhe
+
+    def _WtJr7(name):
+        _MGqqE = re.split('([ -])', name)
+        for _bXiDi, _e6MNQ in enumerate(_MGqqE):
+            if _e6MNQ and _bXiDi % 2 == 0:
+                _MGqqE[_bXiDi] = _e6MNQ[0] + '.'
+        return ''.join(_MGqqE)
+
+    def _q7wmB(string):
+        if sys.version_info >= (3, 11):
+            return datetime.fromisoformat(string)
+        try:
+            return datetime.strptime(string, '%Y-%m-%dT%H:%M:%S.%f%z')
+        except ValueError:
+            pass
+        try:
+            return datetime.strptime(string, '%Y-%m-%dT%H:%M:%S%z')
+        except ValueError:
+            pass
+        try:
+            return datetime.strptime(string, '%Y-%m-%d').replace(tzinfo=timezone.utc)
+        except ValueError:
+            pass
+        return None
+
+    def _s5EfQ(lst, val):
+        _Zj0id = 0
+        for _eYrcu in lst[::-1]:
+            if _eYrcu == val:
+                _Zj0id += 1
+            else:
+                break
+        return lst[:-_Zj0id or None]
+
+    @dataclass
+    class _WITpy:
+        type: str
+        fields: list[tuple[str, str | int | dict]]
+        id: str | None = None
+        is_retracted: bool = False
+
+        @classmethod
+        def from_dict(cls, entry_type, d, entry_id=None):
+            return cls(entry_type, list(d.items()), entry_id)
+
+        def __post_init__(self):
+            assert isinstance(self.fields, list)
+            for _fjx5o, _Si22d in self.fields:
+                if _fjx5o == 'author':
+                    assert isinstance(_Si22d, dict), f'Require dict, got {_Si22d!r}'
+                elif _fjx5o in {'year', 'month'}:
+                    assert isinstance(_Si22d, (str, int))
+
+        def get_all_values(self):
+            _5lGP6 = []
+            for _td3Da, _BwSbG in self.fields:
+                if isinstance(_BwSbG, str):
+                    _5lGP6.append(_BwSbG)
+                elif isinstance(_BwSbG, dict):
+                    _5lGP6 += [_J1Bby for _J1Bby in _BwSbG.values() if isinstance(_J1Bby, str)]
+            return _5lGP6
+
+        def apply(self, fun):
+            for _Wu3MD, (_XL5ol, _OYdQG) in enumerate(self.fields):
+                if isinstance(_OYdQG, str):
+                    self.fields[_Wu3MD] = (_XL5ol, fun(_OYdQG))
+                elif isinstance(_OYdQG, dict):
+                    for _rqd4W, _hUrGQ in _OYdQG.items():
+                        if isinstance(_hUrGQ, str):
+                            _OYdQG[_rqd4W] = fun(_hUrGQ)
+
+        def get(self, key, default=None):
+            for _nfMwb, _OsNBe in self.fields:
+                if _nfMwb == key:
+                    return _OsNBe
+            return default
+
+        def __setitem__(self, key, new_value):
+            for _uufIi, (_tosVc, _QqvL1) in enumerate(self.fields):
+                if _tosVc == key:
+                    self.fields[_uufIi] = (key, new_value)
+                    return
+            self.fields.append((key, new_value))
+
+        def __contains__(self, item):
+            return any((_TnTXJ == item for _TnTXJ, _nZtlj in self.fields))
+
+        def remove_fields(self, rm_keys):
+            self.fields = [(_CpIht, _YQM3t) for _CpIht, _YQM3t in self.fields if _CpIht not in rm_keys]
+
+        def merge(self, other_entry):
+            if other_entry is None:
+                return
+            self.type = other_entry.type
+            if other_entry.id:
+                self.id = other_entry.id
+            self.is_retracted = other_entry.is_retracted
+            _1CkUE = self.fields
+            self.fields = other_entry.fields
+            _43Dzi = {key for key, _ in self.fields}
+            for _iY99x, _ct4MV in _1CkUE:
+                if _iY99x not in _43Dzi:
+                    self.fields.append((_iY99x, _ct4MV))
+
+    @dataclass
+    class _XiQ6K:
+        entries: list[Entry]
+        original_btp_library: BLibrary | None = None
+        original_is_ascii: bool = True
+
+    def _AunoJ(entries, doi_url_type):
+        if isinstance(entries, _XiQ6K):
+            entries = entries.entries
+        elif isinstance(entries, _WITpy):
+            entries = [entries]
+        for _X5MTW in entries:
+            _A3H9c = _X5MTW.get('url')
+            if not _A3H9c:
+                continue
+            _3HGs8 = _px20b(_A3H9c)
+            if not _3HGs8:
+                continue
+            if doi_url_type == 'new':
+                _X5MTW['url'] = f'https://doi.org/{_3HGs8}'
+            elif doi_url_type == 'old':
+                _X5MTW['url'] = f'https://dx.doi.org/{_3HGs8}'
+            elif doi_url_type == 'short':
+                _sHaZx = _7MZOs.get(f'https://shortdoi.org/{_3HGs8}', params={'format': 'json'}, timeout=30)
+                if _sHaZx.ok and (short_doi := _sHaZx.json().get('ShortDOI')):
+                    _X5MTW['url'] = f'https://doi.org/{short_doi}'
+                else:
+                    _YL92j('Failed to get short DOI.')
+            else:
+                assert doi_url_type == 'unchanged'
+
+    def _0yI0w(entries):
+        if isinstance(entries, _XiQ6K):
+            entries = entries.entries
+        elif isinstance(entries, _WITpy):
+            entries = [entries]
+        for _EPGN3 in entries:
+            for _oTXhl, (_YJc2N, _EKjVL) in enumerate(_EPGN3.fields):
+                if _YJc2N in {'url', 'doi'}:
+                    continue
+                if not isinstance(_EKjVL, str):
+                    continue
+                try:
+                    _EKjVL = re.sub(' +', ' ', _EKjVL).rstrip()
+                except TypeError:
+                    pass
+                else:
+                    _EPGN3.fields[_oTXhl] = (_YJc2N, _EKjVL)
+
+    def _RUpP7(string):
+        return normalize('NFC', LatexNodes2Text(math_mode='verbatim').latex_to_text(string))
+
+    def _F1DeX(string):
+        _9BmVP = ''
+        for _OU7va in string:
+            if _OU7va in '&_%':
+                _9BmVP += f'\\{_OU7va}'
+            elif _OU7va.isascii():
+                _9BmVP += _OU7va
+            elif (ltx := _rVhzn(_OU7va)):
+                _9BmVP += ltx
+            else:
+                _YL92j(f"Don't know how to convert `{_OU7va}` to TeX.")
+                _9BmVP += _OU7va
+        return _9BmVP
+
+    def _rVhzn(char):
+        assert len(char) == 1
+        _NrDT7 = {'ß': '\\ss', 'ł': '\\l', 'Ł': '\\L', 'ø': '\\o', 'Ø': '\\O', 'ı': '\\i', '\xa0': '~', '–': '--', '—': '---', '‘': '`', '’': "'", '“': '``', '”': "''", 'δ': '$\\delta$', '∈': '$\\in$', '…': '\\dots', '�': '?'}
+        if (r := _NrDT7.get(char)):
+            return r
+        _3J5jR = decomposition(char).split()
+        if len(_3J5jR) != 2:
+            return None
+        _keX77, _o18Mn = _3J5jR
+        try:
+            _HAyeP = bytes.fromhex(_keX77).decode()
+        except ValueError:
+            return None
+        if len(_HAyeP) > 1 and _HAyeP[0] == '\x00':
+            _HAyeP = _HAyeP[1:]
+        if len(_HAyeP) != 1 or not _HAyeP.isascii():
+            return None
+        _r38jc = {'0300': '`', '0301': "'", '0302': '^', '0303': '~', '0304': '=', '0307': '.', '0308': '"'}
+        if (r := _r38jc.get(_o18Mn)):
+            return f'\\{r}{_HAyeP}'
+        _Xuanc = {'0306': 'u', '030A': 'r', '030B': 'H', '030C': 'v', '0323': 'd', '0327': 'c', '0328': 'k'}
+        if (r := _Xuanc.get(_o18Mn)):
+            return f'\\{r}{{{_HAyeP}}}'
+        return None
+
+    def _C6qDb(string):
+        _oDey4, _1a5AN = _QG6qn(string).parse()
+        return _oDey4
+
+    def _cu6bD(lst):
+        _ioS3W = []
+        for _Dnomv in lst:
+            if isinstance(_Dnomv, str):
+                _ioS3W.append(unicode_to_latex(_Dnomv))
+            elif isinstance(_Dnomv, _d7w7H):
+                _Dnomv.children = _cu6bD(_Dnomv.children)
+                _ioS3W.append(_Dnomv)
+            else:
+                _ioS3W.append(_Dnomv)
+        return _ioS3W
+
+    def _GoEiA(lst):
+        if not lst:
+            return lst
+        _PwpkE = [lst[0]]
+        for _qJ0t1 in lst[1:]:
+            if isinstance(_qJ0t1, str):
+                if isinstance(_PwpkE[-1], str):
+                    _PwpkE[-1] += _qJ0t1
+                else:
+                    _PwpkE.append(_qJ0t1)
+            elif isinstance(_qJ0t1, _d7w7H):
+                _qJ0t1.children = _GoEiA(_qJ0t1.children)
+                _PwpkE.append(_qJ0t1)
+            else:
+                _PwpkE.append(_qJ0t1)
+        return _PwpkE
+
+    def _ACdTj(lst):
+        return ''.join((str(_7W0wF) for _7W0wF in lst))
+
+    class _Et038:
+
+        def visit_str(self, node):
+            return node
+
+        def visit_BraceGroup(self, node):
+            _Ram9z = self.visit(node.children)
+            if not isinstance(_Ram9z, list):
+                _Ram9z = [_Ram9z]
+            node.children = _Ram9z
+            return node
+
+        def visit_InlineMath(self, node):
+            return node
+
+        def visit(self, lst):
+            assert isinstance(lst, list)
+            _p7xuC = []
+            for _aNBxW in lst:
+                if isinstance(_aNBxW, str):
+                    _pXkYQ = self.visit_str(_aNBxW)
+                elif isinstance(_aNBxW, _77ixW):
+                    _pXkYQ = self.visit_InlineMath(_aNBxW)
+                else:
+                    _pXkYQ = self.visit_BraceGroup(_aNBxW)
+                if isinstance(_pXkYQ, list):
+                    _p7xuC += _pXkYQ
+                else:
+                    _p7xuC.append(_pXkYQ)
+            return _p7xuC
+
+    class _QG6qn:
+
+        def __init__(self, string):
+            self._string = string
+            self.string = list(string)
+
+        def parse(self):
+            _abFYU = []
+            while True:
+                try:
+                    _0roMT = self.string.pop(0)
+                except IndexError:
+                    break
+                if _0roMT == '{':
+                    _b57yD, _eJ2rW = self.parse()
+                    if _eJ2rW == ('group', '}'):
+                        _abFYU.append(_d7w7H(_b57yD))
+                    elif _eJ2rW is None:
+                        logging.warning('Unclosed LaTeX group {.')
+                        _abFYU.append(_d7w7H(_b57yD))
+                    else:
+                        _SmrEL = f'Unexpected closing {_eJ2rW}'
+                        raise RuntimeError(_SmrEL)
+                elif _0roMT == '}':
+                    return (_abFYU, ('group', '}'))
+                elif _0roMT == '$':
+                    assert self.string[0] != '$'
+                    _DyIxp = ''
+                    while self.string[0] != '$':
+                        _DyIxp += self.string.pop(0)
+                    assert self.string[0] == '$'
+                    self.string.pop(0)
+                    _abFYU.append(_77ixW(_DyIxp))
+                elif _abFYU and isinstance(_abFYU[-1], str):
+                    _abFYU[-1] += _0roMT
+                else:
+                    _abFYU.append(_0roMT)
+            return (_abFYU, None)
+
+    class _d7w7H:
+
+        def __init__(self, children):
+            assert isinstance(children, list)
+            self.children = children
+
+        def __repr__(self):
+            return f'<BraceGroup {self.children}>'
+
+        def __str__(self):
+            _66gSS = ''.join([str(_iZoVi) for _iZoVi in self.children])
+            return '{' + _66gSS + '}'
+
+    class _77ixW:
+
+        def __init__(self, content):
+            assert isinstance(content, str)
+            self.content = content
+
+        def __repr__(self):
+            return f'<InlineMath {self.content!r}>'
+
+        def __str__(self):
+            return f'${self.content}$'
+    try:
+        import tomllib
+    except ImportError:
+        import tomli as tomllib
+
+    def _tSV6w(string):
+        return re.sub('(?<!\\\\)([&%_])', '\\\\\\1', string)
+
+    def _qXFN7():
+        _dTJPA = Path(platformdirs.user_config_dir('betterbib', 'TeXWorld'))
+        _e3Wq9 = _dTJPA / 'config.ini'
+        _p82ok = _dTJPA / 'config.toml'
+        _8BDkK = []
+        _wmCMw = []
+        if _p82ok.exists():
+            with _p82ok.open('rb') as _httuB:
+                _NcHya = tomllib.load(_httuB)
+            _8BDkK = _QjZZE(_NcHya, 'DICTIONARY', 'add', default=[])
+            _wmCMw = _QjZZE(_NcHya, 'DICTIONARY', 'remove', default=[])
+        elif _e3Wq9.exists():
+            _YL92j(f'betterbib INI ({_e3Wq9}) config is deprecated. Please convert to TOML.')
+            _8T6Sd = ConfigParser()
+            _8T6Sd.read(_e3Wq9)
+            with contextlib.suppress(NoSectionError, NoOptionError):
+                _8BDkK = _8T6Sd.get('DICTIONARY', 'add').split(',')
+            with contextlib.suppress(NoSectionError, NoOptionError):
+                _wmCMw = _8T6Sd.get('DICTIONARY', 'remove').split(',')
+        return (_8BDkK, _wmCMw)
+
+    def _t9kd9():
+        _hUZgP = Path(__file__).resolve().parent
+        with (_hUZgP / 'data' / 'capit.json').open() as _WFx3u:
+            _r5ct4 = json.load(_WFx3u)
+        _hiavR, _FkW9r = _qXFN7()
+        _r5ct4 += _hiavR
+        return set(_r5ct4) - set(_FkW9r)
+    _xPwEr = _t9kd9()
+
+    def _V5NUa(entry):
+        _P9Iz3 = LatexNodes2Text()
+        if entry.fields is not None:
+            for _Batsr, _DDWd4 in entry.fields:
+                if _Batsr == 'url':
+                    continue
+                if not isinstance(_DDWd4, str):
+                    continue
+                if all((ord(_IOZAF) < 128 for _IOZAF in _DDWd4)):
+                    entry[_Batsr] = _P9Iz3.latex_to_text(_DDWd4)
+
+    def _kaiHu(key):
+        _bjIlO = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
+        try:
+            return _bjIlO[int(key) - 1]
+        except (TypeError, ValueError):
+            pass
+        _4u8Il = []
+        for _2CAMl in key.split('-'):
+            _fRLfL = _2CAMl[:3].lower()
+            if _fRLfL in _bjIlO:
+                _4u8Il.append(_fRLfL)
+            else:
+                return None
+        return ' # "-" # '.join(_4u8Il)
+
+    def _i5Wox(word):
+        if not word or word.count('{') != word.count('}') or (word[0] == '{' and word[-1] == '}') or (word[0] == '\\'):
+            return False
+        if any((_hOOPE.isupper() for _hOOPE in word[1:])):
+            return True
+        return word[0].isupper() and (word in _xPwEr or (word[-2:] == "'s" and word[:-2] in _xPwEr))
+
+    def _hH9kA(ranges):
+        ranges = sorted(ranges)
+        _8WY5t: list[tuple[int, int]] = []
+        for _mS0Yf, _Imipk in ranges:
+            if len(_8WY5t) == 0:
+                _8WY5t.append((_mS0Yf, _Imipk))
+            elif _mS0Yf >= _8WY5t[-1][0] and _Imipk <= _8WY5t[-1][1]:
+                pass
+            elif _mS0Yf <= _8WY5t[-1][0] and _Imipk >= _8WY5t[-1][1]:
+                _8WY5t[-1] = (_mS0Yf, _Imipk)
+            elif _mS0Yf <= _8WY5t[-1][1]:
+                pass
+            else:
+                _8WY5t.append((_mS0Yf, _Imipk))
+        return _8WY5t
+
+    class _3ohZc(_Et038):
+
+        def __init__(self):
+            self.mwc = ['La Gomera', 'Los Angeles', 'New Hampshire', 'New York', 'New York City', 'San Francisco']
+
+        def visit_str(self, node):
+            _V0mNh = [(_4RGuG.start(), _4RGuG.end()) for _LT09K in self.mwc for _4RGuG in re.finditer(_LT09K, node)]
+            if not _V0mNh:
+                return node
+            _V0mNh = _hH9kA(_V0mNh)
+            for _kAdob, (_Hc5gj, _YkXQl) in enumerate(_V0mNh):
+                if _YkXQl < len(node) and node[_YkXQl] in [',', '.', ';', ':']:
+                    _V0mNh[_kAdob] = (_Hc5gj, _YkXQl + 1)
+            _IYhni = 0
+            _ySYji = []
+            for _rwBah, _cGgTp in _V0mNh:
+                if _rwBah > _IYhni:
+                    _ySYji.append(node[_IYhni:_rwBah])
+                _ySYji.append(_d7w7H([node[_rwBah:_cGgTp]]))
+                _IYhni = _cGgTp
+            if _IYhni < len(node):
+                _ySYji.append(node[_IYhni:])
+            return _ySYji
+
+    def _2KiaT(lst, inter):
+        if not lst:
+            return lst
+        _EzNON = [lst[0]]
+        for _a8hp7 in lst[1:]:
+            _EzNON += [inter, _a8hp7]
+        return _EzNON
+
+    class _gEjCf(_Et038):
+
+        def visit_str(self, node):
+            _YxXQa = False
+            _LdIj4 = []
+            for _ZgiGs in node.split(' '):
+                if _YxXQa and len(_ZgiGs) > 0:
+                    _Ksdtv = _d7w7H([_ZgiGs.capitalize()])
+                    _YxXQa = False
+                else:
+                    _Ksdtv = _ZgiGs
+                if len(_ZgiGs) > 0 and _ZgiGs[-1] == ':':
+                    _YxXQa = True
+                _LdIj4.append(_Ksdtv)
+            return _GoEiA(_2KiaT(_LdIj4, ' '))
+
+    class _BoDra(_Et038):
+
+        def visit_BraceGroup(self, node):
+            return node
+
+        def visit_str(self, node):
+            _9WgUC = []
+            for _sK0IS in node.split(' '):
+                _AFfrD = [_d7w7H([_u7ur8]) if _i5Wox(_u7ur8) else _u7ur8 for _u7ur8 in _sK0IS.split('-')]
+                _9WgUC.append(_GoEiA(_2KiaT(_AFfrD, '-')))
+            _sQn0D = _2KiaT(_9WgUC, [' '])
+            _sQn0D = [_7pFbA for _CnuzS in _sQn0D for _7pFbA in _CnuzS]
+            return _GoEiA(_sQn0D)
+
+    def _dEV4n(string):
+        if string == string.upper():
+            string = string.title()
+        try:
+            _H2NyX = _C6qDb(string)
+        except ValueError:
+            return string
+        _H2NyX = _3ohZc().visit(_H2NyX)
+        _H2NyX = _gEjCf().visit(_H2NyX)
+        _H2NyX = _BoDra().visit(_H2NyX)
+        return _ACdTj(_H2NyX)
+
+    def _Yb8Ng(entries):
+        if isinstance(entries, _XiQ6K):
+            entries = entries.entries
+        elif isinstance(entries, _WITpy):
+            entries = [entries]
+        for _FSuuh in entries:
+            for _HOhmB, _yvb0M in _FSuuh.fields:
+                if _HOhmB in {'url', 'doi'}:
+                    continue
+                if not isinstance(_yvb0M, str):
+                    continue
+                if _HOhmB == 'title':
+                    try:
+                        _gTj3a = _cu6bD(_C6qDb(_yvb0M))
+                    except ValueError:
+                        pass
+                    else:
+                        _FSuuh[_HOhmB] = _ACdTj(_gTj3a)
+                else:
+                    _FSuuh[_HOhmB] = unicode_to_latex(_yvb0M)
+
+    def _Kz3SF(author, date_published):
+        assert isinstance(author, dict)
+        _Wdev7 = ''
+        if author is not None:
+            _Wdev7 = unidecode(''.join(author['last']).lower())
+        if date_published is not None:
+            _Wdev7 += str(date_published[0])
+        return _Wdev7 if _Wdev7 else 'key'
+
+    def _b6iVM(entries):
+        if isinstance(entries, _XiQ6K):
+            entries = entries.entries
+        elif isinstance(entries, _WITpy):
+            entries = [entries]
+        for _J1dBy in entries:
+            if (title := _J1dBy.get('title')):
+                _J1dBy['title'] = _dEV4n(title)
+    _0cWWE = {'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'may': 5, 'jun': 6, 'jul': 7, 'aug': 8, 'sep': 9, 'oct': 10, 'nov': 11, 'dec': 12}
+
+    def _1AWoD(string):
+        try:
+            return int(string)
+        except ValueError:
+            pass
+        try:
+            return _0cWWE[string.lower()[:3]]
+        except KeyError:
+            return None
+
+    def _OZPIt(string):
+        _GMp7F = '-‐‑‒–—―'
+        if (m := re.match(f' *([0-9]+) *[{_GMp7F}]+ *([0-9]*) *', string)):
+            _ZaboE, _ot1t3 = m.groups()
+            return (_ZaboE, _ot1t3)
+        return string
+    _3jV8Z = {'journal': 'journal-name', 'title': 'title', 'doi': 'doi', 'number': 'number', 'url': 'url', 'volume': 'volume', 'publisher': 'publisher', 'source': 'data_source'}
+    _hJ0MO = {v: k for k, v in _3jV8Z.items()}
+
+    def _zFZMP(string):
+        _f5r1P = bibtexparser.parse_string(string)
+        _yL5Vf: list[Entry] = []
+        for _8lvPq in _f5r1P.blocks:
+            if isinstance(_8lvPq, BEntry):
+                _yL5Vf.append(_KoA2i(_8lvPq))
+            elif isinstance(_8lvPq, DuplicateFieldKeyBlock):
+                _ImjMN = _8lvPq.ignore_error_block
+                for _8OsdH in _ImjMN.fields:
+                    if _8OsdH.value.startswith('{') and _8OsdH.value.endswith('}'):
+                        _8OsdH.value = _8OsdH.value[1:-1]
+                _yL5Vf.append(_KoA2i(_ImjMN))
+        _coz3G = True
+        for _pXnaj in _yL5Vf:
+            _coz3G &= all((_8Q9m9.isascii() for _8Q9m9 in _pXnaj.get_all_values()))
+            _pXnaj.apply(_RUpP7)
+        return _XiQ6K(_yL5Vf, original_btp_library=_f5r1P, original_is_ascii=_coz3G)
+
+    def _KoA2i(btp_entry):
+        _GSMIG = _B5s0U(btp_entry.fields)
+        _EybUe = []
+        for _vpXn5 in btp_entry.fields:
+            if _vpXn5.value.strip() == '' or re.match('" *"', _vpXn5.value):
+                pass
+            elif (nkey := _3jV8Z.get(_vpXn5.key)):
+                _EybUe.append((nkey, _vpXn5.value))
+            elif _vpXn5.key == 'author':
+                _EybUe += [('author', _V5dJB(_ihB8E)) for _ihB8E in split_multiple_persons_names(_vpXn5.value)]
+            elif _vpXn5.key == 'pages':
+                _EybUe.append(('pages', _OZPIt(_vpXn5.value)))
+            elif _vpXn5.key in {'year', 'month', 'date'}:
+                if _GSMIG:
+                    _EybUe.append(('date-published', _GSMIG))
+                    _GSMIG = None
+            elif _vpXn5.key in {'issn', 'isbn'}:
+                _EybUe += [(_vpXn5.key, _UO5cw.strip()) for _UO5cw in _vpXn5.value.split(',')]
+            else:
+                _EybUe.append((_vpXn5.key, _vpXn5.value))
+        return _WITpy(btp_entry.entry_type, _EybUe, btp_entry.key)
+
+    def _B5s0U(fields):
+        _Z3zDc: list[str | int | None] = [None, None, None]
+        for _ZAkSn in fields:
+            if _ZAkSn.key == 'date':
+                _x0kWx = _ZAkSn.value.split('-')
+                for _EsqPc, _XfYBi in enumerate(_x0kWx):
+                    _Z3zDc[_EsqPc] = int(_XfYBi)
+            elif _ZAkSn.key == 'year':
+                try:
+                    _Z3zDc[0] = int(_ZAkSn.value)
+                except ValueError:
+                    _Z3zDc[0] = _ZAkSn.value
+            elif _ZAkSn.key == 'month':
+                if _ZAkSn.value.strip() == '':
+                    pass
+                elif (mi := _1AWoD(_ZAkSn.value)):
+                    _Z3zDc[1] = mi
+                else:
+                    _YL92j(f"Don't know how to interpret month = {_ZAkSn.value}")
+                    _Z3zDc[1] = _ZAkSn.value
+        _d8i69 = tuple(_s5EfQ(_Z3zDc, None))
+        if len(_d8i69) == 1:
+            return _d8i69[0]
+        return _d8i69
+
+    def _Ji3cA(*_tME3T, **_muSxY):
+        return _ttyHQ(False, *_tME3T, **_muSxY)
+
+    def _ttyHQ(biblatex, library, indent='  ', block_separator='\n', trailing_comma=True, value_column=0, page_range_separator='--', sort_fields=False):
+        if isinstance(library, _WITpy):
+            library = [library]
+        if isinstance(library, list):
+            library = _XiQ6K(library)
+        if library.original_btp_library:
+            _M2YfX = library.original_btp_library
+            _2zg9K = 0
+            for _LZnTj, _IoyMM in enumerate(library.original_btp_library.blocks):
+                if isinstance(_IoyMM, (BEntry, DuplicateFieldKeyBlock)):
+                    _M2YfX.blocks[_LZnTj] = _RUdn3(library.entries[_2zg9K], biblatex, page_range_separator, sort_fields=sort_fields)
+                    _2zg9K += 1
+        else:
+            _M2YfX = BLibrary([_RUdn3(_QqkWU, biblatex, page_range_separator, sort_fields=sort_fields) for _QqkWU in library.entries])
+        _8ySeQ = _tSV6w if biblatex else _F1DeX
+        for _Jn2zi in _M2YfX.blocks:
+            if isinstance(_Jn2zi, BEntry):
+                for _eglgk in _Jn2zi.fields:
+                    _eglgk.value = _8ySeQ(_eglgk.value)
+        _I8wxe = bibtexparser.BibtexFormat()
+        _I8wxe.indent = indent
+        _I8wxe.block_separator = block_separator
+        _I8wxe.trailing_comma = trailing_comma
+        _I8wxe.value_column = value_column
+        _fHC7t = bibtexparser.write_string(_M2YfX, bibtex_format=_I8wxe)
+
+        def _saPdS(m):
+            _LN9ge, _0LBWf, _rhcqA = m.groups()
+            _FZRFB = {'1': 'jan', '2': 'feb', '3': 'mar', '4': 'apr', '5': 'may', '6': 'jun', '7': 'jul', '8': 'aug', '9': 'sep', '10': 'oct', '11': 'nov', '12': 'dec'}
+            return _LN9ge + _FZRFB[_0LBWf] + _rhcqA
+        if not biblatex:
+            _fHC7t = re.sub('(month *= *)\\{([0-9]+)\\}( *,? *)', _saPdS, _fHC7t)
+        return _fHC7t.strip()
+
+    def _RUdn3(entry, biblatex, page_range_separator, sort_fields=False):
+        _nq0Di = []
+        _3cXqJ = []
+        _INojT: list[dict] = []
+        _6ruGj = []
+        for _WSkXJ, _eZGIQ in entry.fields:
+            if _WSkXJ == 'issn':
+                assert isinstance(_eZGIQ, str)
+                _nq0Di.append(_eZGIQ)
+            elif _WSkXJ == 'isbn':
+                assert isinstance(_eZGIQ, str)
+                _3cXqJ.append(_eZGIQ)
+            elif _WSkXJ == 'author':
+                assert isinstance(_eZGIQ, dict)
+                _INojT.append(_eZGIQ)
+            elif _WSkXJ == 'journal-name':
+                assert isinstance(_eZGIQ, str)
+                _6ruGj.append(_eZGIQ)
+        _9naZq = []
+        for _lx51x, _p3KWt in entry.fields:
+            if _lx51x == 'author':
+                if not _INojT:
+                    continue
+                _9naZq.append(Field('author', ' and '.join((_kPkHn(_tDkYJ) for _tDkYJ in _INojT))))
+                _INojT = []
+            elif _lx51x == 'issn':
+                if _nq0Di:
+                    _9naZq.append(Field(_lx51x, ','.join(_nq0Di)))
+                    _nq0Di = []
+            elif _lx51x == 'isbn':
+                if _3cXqJ:
+                    _9naZq.append(Field(_lx51x, ','.join(_3cXqJ)))
+                    _3cXqJ = []
+            elif _lx51x == 'pages':
+                if isinstance(_p3KWt, str):
+                    _9naZq.append(Field('pages', _p3KWt))
+                elif isinstance(_p3KWt, tuple) and len(_p3KWt) == 2:
+                    _9naZq.append(Field('pages', f'{_p3KWt[0]}{page_range_separator}{_p3KWt[1]}'))
+                else:
+                    _YL92j("Don't know how to interprete {key} = {value}")
+            elif _lx51x == 'date-published':
+                _9naZq += _SaF3h(_p3KWt, biblatex)
+            elif _lx51x == 'journal-name':
+                if _6ruGj:
+                    _9naZq.append(Field('journal', _6ruGj[0]))
+                    _6ruGj = []
+            elif (bkey := _hJ0MO.get(_lx51x)):
+                _9naZq.append(Field(bkey, _p3KWt))
+            else:
+                _9naZq.append(Field(_lx51x, _p3KWt))
+        if sort_fields:
+            _9naZq = sorted(_9naZq, key=lambda _Cwu6Z: _Cwu6Z.key)
+        if entry.id:
+            _lx51x = entry.id
+        elif (bk := _Kz3SF(entry.get('author'), entry.get('date-published'))):
+            _lx51x = bk
+        else:
+            _lx51x = 'key'
+        assert _lx51x is not None
+        return BEntry(entry.type, _lx51x, _9naZq)
+
+    def _SaF3h(value, biblatex):
+        if isinstance(value, int):
+            return [Field('year', str(value))]
+        if isinstance(value, tuple):
+            if biblatex:
+                return [Field('date', '-'.join((f'{_vSHb7:02}' for _vSHb7 in value)))]
+            _dfJJP = []
+            if value[0]:
+                _dfJJP.append(Field('year', str(value[0])))
+            if value[1]:
+                _dfJJP.append(Field('month', str(value[1])))
+            return _dfJJP
+        if isinstance(value, str):
+            try:
+                _2AHUm = datetime.strptime(value, '%B %d, %Y').replace(tzinfo=timezone.utc)
+            except ValueError:
+                pass
+            else:
+                if biblatex:
+                    return [Field('date', f'{_2AHUm.year}-{_2AHUm.month}-{_2AHUm.day}')]
+                _dfJJP = []
+                if value[0]:
+                    _dfJJP.append(Field('year', str(_2AHUm.year)))
+                if value[1]:
+                    _dfJJP.append(Field('month', str(_2AHUm.month)))
+                return _dfJJP
+        _S0pJ2 = f'bibtex: Unexpected date value `{value}`'
+        raise RuntimeError(_S0pJ2)
+
+    def _AmzSr(string):
+        return _zFZMP(string)
+
+    def _pBN4Q(*_WKJZi, **_xTmyp):
+        return _ttyHQ(True, *_WKJZi, **_xTmyp)
+    try:
+        from functools import cache
+    except ImportError:
+        from functools import lru_cache as cache
+
+    @cache
+    def _lOsSj():
+        _gJ1CG = {'aa': ['Afar'], 'ab': ['Abkhazian'], 'af': ['Afrikaans'], 'ak': ['Akan'], 'am': ['Amharic'], 'an': ['Aragonese'], 'ar': ['Arabic'], 'as': ['Assamese'], 'av': ['Avaric'], 'ay': ['Aymara'], 'az': ['Azerbaijani'], 'ba': ['Bashkir'], 'be': ['Belarusian'], 'bg': ['Bulgarian'], 'bi': ['Bislama'], 'bm': ['Bambara'], 'bn': ['Bengali', 'Bangla'], 'bo': ['Tibetan'], 'br': ['Breton'], 'bs': ['Bosnian'], 'ca': ['Catalan'], 'ce': ['Chechen'], 'ch': ['Chamorro'], 'co': ['Corsican'], 'cr': ['Cree'], 'cs': ['Czech'], 'cu': ['Church Slavic', 'Old Slavonic', 'Church Slavonic', 'Old Bulgarian', 'Old Church Slavonic'], 'cv': ['Chuvash'], 'cy': ['Welsh'], 'da': ['Danish'], 'de': ['German'], 'dv': ['Divehi', 'Dhivehi', 'Maldivian'], 'dz': ['Dzongkha'], 'el': ['Greek (modern)'], 'en': ['English'], 'eo': ['Esperanto'], 'es': ['Spanish'], 'et': ['Estonian'], 'eu': ['Basque'], 'ee': ['Ewe'], 'fa': ['Persian'], 'ff': ['Fula', 'Fulah', 'Pulaar', 'Pular'], 'fi': ['Finnish'], 'fj': ['Fijian'], 'fo': ['Faroese'], 'fr': ['French'], 'fy': ['Western Frisian'], 'ga': ['Irish'], 'gd': ['Gaelic (Scottish)'], 'gl': ['Galician'], 'gu': ['Gujarati'], 'gv': ['Manx'], 'ha': ['Hausa'], 'he': ['Hebrew (modern)'], 'hi': ['Hindi'], 'hr': ['Croatian'], 'ht': ['Haitian', 'Haitian Creole'], 'hu': ['Hungarian'], 'hy': ['Armenian'], 'hz': ['Herero'], 'ia': ['Interlingua'], 'id': ['Indonesian'], 'ie': ['Interlingue'], 'ig': ['Igbo'], 'ii': ['Sichuan Yi', 'Nuosu'], 'ik': ['Inupiaq'], 'io': ['Ido'], 'is': ['Icelandic'], 'it': ['Italian'], 'iu': ['Inuktitut'], 'ja': ['Japanese'], 'jv': ['Javanese'], 'ka': ['Georgian'], 'kg': ['Kongo'], 'ki': ['Kikuyu', 'Gikuyu'], 'kj': ['Kwanyama', 'Kuanyama'], 'kk': ['Kazakh'], 'kl': ['Kalaallisut', 'Greenlandic'], 'km': ['Central Khmer'], 'kn': ['Kannada'], 'ko': ['Korean'], 'kr': ['Kanuri'], 'ks': ['Kashmiri'], 'ku': ['Kurdish'], 'kv': ['Komi'], 'kw': ['Cornish'], 'ky': ['Kirghiz', 'Kyrgyz'], 'la': ['Latin'], 'lb': ['Luxembourgish', 'Letzeburgesch'], 'lg': ['Ganda'], 'li': ['Limburgish', 'Limburgan', 'Limburger'], 'ln': ['Lingala'], 'lo': ['Lao'], 'lt': ['Lithuanian'], 'lu': ['Luba-Katanga'], 'lv': ['Latvian'], 'mg': ['Malagasy'], 'mh': ['Marshallese'], 'mi': ['Maori'], 'mk': ['Macedonian'], 'ml': ['Malayalam'], 'mn': ['Mongolian'], 'mr': ['Marathi'], 'ms': ['Malay'], 'mt': ['Maltese'], 'my': ['Burmese'], 'na': ['Nauru'], 'nb': ['Norwegian Bokmål'], 'nd': ['Northern Ndebele'], 'ne': ['Nepali'], 'ng': ['Ndonga'], 'nl': ['Dutch', 'Flemish'], 'nn': ['Norwegian Nynorsk'], 'no': ['Norwegian'], 'nr': ['Southern Ndebele'], 'nv': ['Navajo', 'Navaho'], 'ny': ['Chichewa', 'Chewa', 'Nyanja'], 'oc': ['Occitan (post 1500)'], 'oj': ['Ojibwa'], 'om': ['Oromo'], 'or': ['Oriya'], 'os': ['Ossetian', 'Ossetic'], 'pa': ['Panjabi', 'Punjabi'], 'pi': ['Pali'], 'pl': ['Polish'], 'ps': ['Pashto', 'Pushto'], 'pt': ['Portuguese'], 'qu': ['Quechua'], 'rm': ['Romansh'], 'rn': ['Kirundi'], 'ro': ['Romanian', 'Moldavian', 'Moldovan'], 'ru': ['Russian'], 'rw': ['Kinyarwanda'], 'sa': ['Sanskrit'], 'sc': ['Sardinian'], 'sd': ['Sindhi'], 'se': ['Northern Sami'], 'sg': ['Sango'], 'si': ['Sinhala', 'Sinhalese'], 'sk': ['Slovak'], 'sl': ['Slovene'], 'sm': ['Samoan'], 'sn': ['Shona'], 'so': ['Somali'], 'sq': ['Albanian'], 'sr': ['Serbian'], 'ss': ['Swati'], 'st': ['Southern Sotho'], 'su': ['Sundanese'], 'sv': ['Swedish'], 'sw': ['Swahili'], 'ta': ['Tamil'], 'te': ['Telugu'], 'tg': ['Tajik'], 'th': ['Thai'], 'ti': ['Tigrinya'], 'tk': ['Turkmen'], 'tl': ['Tagalog'], 'tn': ['Tswana'], 'to': ['Tonga (Tonga Islands)'], 'tr': ['Turkish'], 'ts': ['Tsonga'], 'tt': ['Tatar'], 'tw': ['Twi'], 'ty': ['Tahitian'], 'ug': ['Uighur', 'Uyghur'], 'uk': ['Ukrainian'], 'ur': ['Urdu'], 'uz': ['Uzbek'], 've': ['Venda'], 'vi': ['Vietnamese'], 'vo': ['Volapük'], 'wa': ['Walloon'], 'wo': ['Wolof'], 'xh': ['Xhosa'], 'yi': ['Yiddish'], 'yo': ['Yoruba'], 'za': ['Zhuang', 'Chuang'], 'zh': ['Chinese'], 'zu': ['Zulu']}
+        _vmHvx = {}
+        for _WE7qe, _u9FRC in _gJ1CG.items():
+            for _NO5qk in _u9FRC:
+                _vmHvx[_NO5qk.lower()] = _WE7qe
+        return (_gJ1CG, _vmHvx)
+
+    def _yO11Z(string):
+        return _XiQ6K(entries=[_u8Njp(_20zRY) for _20zRY in json.loads(string)])
+
+    def _u8Njp(d):
+        _95TSP, _rIfl3 = _lOsSj()
+        _rJUWQ = None
+        _5yVcg = None
+        _yNvXT: list[tuple[str, Any]] = []
+        for _kQYjP, _VWdYt in d.items():
+            if _kQYjP == 'type':
+                _rJUWQ = _VWdYt
+            elif _kQYjP == 'id':
+                _5yVcg = _VWdYt
+            elif _kQYjP == 'author':
+                for _Wa4GS in _VWdYt:
+                    _p3Tgx = {}
+                    for _lmuzY, _oPsp7 in _Wa4GS.items():
+                        if _lmuzY == 'given':
+                            _p3Tgx['first'] = _oPsp7
+                        elif _lmuzY == 'family':
+                            _p3Tgx['last'] = _oPsp7
+                        elif _lmuzY == 'suffix':
+                            _p3Tgx['lineage'] = _oPsp7
+                        elif _lmuzY == 'dropping-particle':
+                            _p3Tgx['prelast'] = _oPsp7
+                        else:
+                            _YL92j(f'CSL.loads(): Unexpected name component {_lmuzY} = {_oPsp7}')
+                    _yNvXT.append(('author', _p3Tgx))
+            elif _kQYjP.lower() in {'abstract', 'title', 'issue', 'volume', 'publisher', 'doi', 'number', 'url'}:
+                _yNvXT.append((_kQYjP.lower(), _VWdYt))
+            elif _kQYjP.lower() == 'source':
+                _yNvXT.append(('data_source', _VWdYt))
+            elif _kQYjP.lower() == 'container-title':
+                _yNvXT.append(('journal-name', _VWdYt))
+            elif _kQYjP.lower() == 'publisher-place':
+                _yNvXT.append(('place', _VWdYt))
+            elif _kQYjP.lower() == 'page':
+                _yNvXT.append(('pages', _OZPIt(_VWdYt)))
+            elif _kQYjP.lower() in {'keyword', 'note', 'issn', 'isbn'}:
+                _yNvXT += [(_kQYjP.lower(), _48NtX.strip()) for _48NtX in _VWdYt.split(';')]
+            elif _kQYjP.lower() == 'language':
+                if (langs := _95TSP.get(_VWdYt.lower())):
+                    _yNvXT.append(('language', langs[0]))
+            elif _kQYjP.lower() == 'issued':
+                if isinstance(_VWdYt, (list, tuple)) and len(_VWdYt) == 1:
+                    _yNvXT.append(('date-published', tuple(_VWdYt[0])))
+                else:
+                    _YL92j(f'CSL.loads(): Unexpected value {_kQYjP} = {_VWdYt}')
+            else:
+                _YL92j(f'CSL.loads(): Unknown field {_kQYjP} = {_VWdYt}')
+        assert _rJUWQ is not None
+        return _WITpy(_rJUWQ, _yNvXT, _5yVcg)
+
+    def _pHVmQ(library, indent=2):
+        if isinstance(library, _WITpy):
+            library = [library]
+        if isinstance(library, list):
+            library = _XiQ6K(library)
+        _SmiZl = [_dXVl9(_0aGBG) for _0aGBG in library.entries]
+        return json.dumps(_SmiZl, indent=indent, ensure_ascii=False)
+
+    def _dXVl9(entry):
+        _iI10Q: dict[str, Any] = {'id': entry.id or _Kz3SF(entry.get('author'), entry.get('date-published')), 'type': entry.type}
+        _eC9Pp: dict[str, list[Any]] = {}
+        for _9UZrb, _Mdc2T in entry.fields:
+            if _9UZrb in {'keyword', 'note', 'issn', 'isbn'}:
+                assert isinstance(_Mdc2T, str)
+                if _9UZrb not in _eC9Pp:
+                    _eC9Pp[_9UZrb] = []
+                _eC9Pp[_9UZrb].append(_Mdc2T.strip())
+            elif _9UZrb == 'author':
+                if _9UZrb not in _eC9Pp:
+                    _eC9Pp[_9UZrb] = []
+                _9I9nC = {}
+                assert isinstance(_Mdc2T, dict)
+                for _llAdI, _WUJfy in _Mdc2T.items():
+                    if _llAdI == 'last':
+                        _9I9nC['family'] = _WUJfy
+                    elif _llAdI == 'prelast':
+                        _9I9nC['dropping-particle'] = _WUJfy
+                    elif _llAdI == 'first':
+                        _9I9nC['given'] = _WUJfy
+                    elif _llAdI == 'lineage':
+                        _9I9nC['suffix'] = _WUJfy
+                    else:
+                        _YL92j(f'CSL.dumps(): Unexpected name component {_llAdI}')
+                _eC9Pp[_9UZrb].append(_9I9nC)
+        _YoN7H, _U0Qed = _lOsSj()
+        for _X8kwn, _FcWaG in entry.fields:
+            if _X8kwn in {'abstract', 'title', 'issue', 'volume', 'publisher', 'number'}:
+                assert isinstance(_FcWaG, str)
+                _iI10Q[_X8kwn] = _FcWaG
+            elif _X8kwn in {'doi', 'url'}:
+                assert isinstance(_FcWaG, str)
+                _iI10Q[_X8kwn.upper()] = _FcWaG
+            elif _X8kwn == 'journal-name':
+                _iI10Q['container-title'] = _FcWaG
+            elif _X8kwn == 'author':
+                if (authors := _eC9Pp.get(_X8kwn)):
+                    _iI10Q['author'] = authors
+                    _yf7or = []
+            elif _X8kwn == 'date-published':
+                if isinstance(_FcWaG, str):
+                    _iI10Q['issued'] = [[_FcWaG]]
+                elif isinstance(_FcWaG, (tuple, list)):
+                    _iI10Q['issued'] = [_FcWaG]
+                else:
+                    _YL92j(f'CSL: Unexpected {_X8kwn} = {_FcWaG}')
+            elif _X8kwn == 'pages':
+                if isinstance(_FcWaG, tuple) and len(_FcWaG) == 2:
+                    _iI10Q['page'] = f'{_FcWaG[0]}-{_FcWaG[1]}'
+                elif isinstance(_FcWaG, str):
+                    _iI10Q['page'] = _FcWaG
+                else:
+                    _YL92j(f'CSL: Unexpected {_X8kwn} = {_FcWaG}')
+            elif _X8kwn in {'keyword', 'note', 'issn', 'isbn'}:
+                if (val := _eC9Pp.get(_X8kwn)):
+                    _iI10Q[_X8kwn] = ';'.join(val)
+                    _eC9Pp.pop(_X8kwn)
+            elif _X8kwn == 'language':
+                assert isinstance(_FcWaG, str)
+                if (iso639_1_code := _U0Qed.get(_FcWaG.lower())):
+                    _iI10Q[_X8kwn] = iso639_1_code
+            elif _X8kwn == 'data_source':
+                _iI10Q['source'] = _FcWaG
+            elif _X8kwn == 'place':
+                _iI10Q['publisher-place'] = _FcWaG
+            else:
+                _YL92j(f'CSL.dumps(): Unknown field {_X8kwn} = {_FcWaG}')
+        return _iI10Q
+    try:
+        from functools import cache
+    except ImportError:
+        from functools import lru_cache as cache
+
+    def _M9BsD(string):
+        _TIZMY, _7VHE6 = _WxqHI()
+        return _TIZMY.get(_15VQE(string))
+
+    def _HY02V(string):
+        _i8TvK, _I4NfT = _WxqHI()
+        return _I4NfT.get(_15VQE(string))
+
+    def _UKKWz(entries, which):
+        if isinstance(entries, _WITpy):
+            entries = [entries]
+        elif isinstance(entries, _XiQ6K):
+            entries = entries.entries
+        _KDp4X, _f3Fhv = _WxqHI()
+        _PqgUp = _f3Fhv if which == 'long' else _KDp4X
+        _ZHaly = {'true', '1', 't', 'y', 'yes'}
+        for _COyQA in entries:
+            if _COyQA.get('protect', default='').lower() in _ZHaly:
+                continue
+            _rMC5H = _COyQA.get('journal-name')
+            if _rMC5H and (s := _PqgUp.get(_15VQE(_rMC5H))):
+                _COyQA['journal-name'] = s
+
+    @cache
+    def _WxqHI():
+        _bDDYi = Path(__file__).resolve().parent
+        with (_bDDYi / 'data' / 'journals.json').open(encoding='utf-8') as _5OSyA:
+            _5F6wo = json.load(_5OSyA)
+        _dW8gE = {v: k for k, v in _5F6wo.items()}
+        _5F6wo = {_15VQE(k): v for k, v in _5F6wo.items()}
+        _dW8gE = {_15VQE(k): v for k, v in _dW8gE.items()}
+        return (_5F6wo, _dW8gE)
+
+    def _15VQE(string):
+        string = string.lower()
+        if sys.version_info >= (3, 9):
+            string = string.removeprefix('the ')
+        elif string.startswith('the '):
+            string = string[4:]
+        return string
+    _bc3NE = {'JOUR': 'article', 'BOOK': 'book', 'CHAP': 'chapter', 'CONF': 'proceedings', 'EBOOK': 'ebook', 'RPRT': 'report', 'THES': 'thesis', 'WEB': 'webpage'}
+    _YTGJA = {v: k for k, v in _bc3NE.items()}
+    _MsSvM = {'AB': 'abstract', 'CN': 'call_number', 'CY': 'place', 'DO': 'doi', 'DOI': 'doi', 'DP': 'database_provider', 'DS': 'data_source', 'IS': 'number', 'KW': 'keyword', 'L1': 'file_attachment', 'LA': 'language', 'LB': 'label', 'N1': 'note', 'N2': 'abstract', 'NO': 'note', 'PB': 'publisher', 'ST': 'short_title', 'T1': 'title', 'T2': 'secondary_title', 'TI': 'title', 'VL': 'volume', 'UR': 'url', 'Y1': 'year', 'Y2': 'access_date'}
+    _UXucL = {'title': 'TI', 'secondary_title': 'T2', 'volume': 'VL', 'number': 'IS', 'publisher': 'PB', 'url': 'UR', 'abstract': 'AB', 'place': 'CY', 'keyword': 'KW', 'doi': 'DO', 'language': 'LA', 'note': 'N1', 'issn': 'SN', 'essn': 'SN', 'isbn': 'SN', 'serial_number': 'SN', 'file_attachment': 'L1', 'access_date': 'Y2', 'database_provider': 'DP', 'short_title': 'ST', 'call_number': 'CN', 'data_source': 'DS'}
+    _DpuhZ = {'A1': 'author', 'A2': 'secondary_author', 'A3': 'tertiary_author', 'A4': 'quaternary_author', 'A5': 'quinary_author', 'A6': 'website_editor', 'AU': 'author'}
+    _mf8Ye = {v: k for k, v in _DpuhZ.items()}
+
+    def _CIXsO(string):
+        return _XiQ6K([_igJKT(_MFCl4) for _MFCl4 in _SGnw3(string)])
+
+    def _SGnw3(string):
+        _qXQiV: list[tuple[str, str]] = []
+        _p4mop = []
+        for _jg2gh, _3Dbux in enumerate(string.split('\n')):
+            if _3Dbux.strip() == '':
+                continue
+            _pDFLC = re.match('(..) *- *(.*) *', _3Dbux)
+            if not _pDFLC:
+                _YL92j(f'Failed to parse RIS line {_jg2gh} ({_3Dbux[:10]}...)')
+                continue
+            _6DqX0, _LDrqN = _pDFLC.groups()
+            if _6DqX0 == 'ER':
+                assert _LDrqN.strip() == ''
+                _p4mop.append(_qXQiV)
+                _qXQiV = []
+            else:
+                _qXQiV.append((_6DqX0, _LDrqN))
+        return _p4mop
+
+    def _igJKT(rentry):
+        _KyCt2 = None
+        _ZiRQc = None
+        _SXZdl = None
+        datetime: list[None | int] = [None, None, None, None]
+        for _chM59, _XNXQU in rentry:
+            if _chM59 in {'PY', 'Y1'}:
+                if datetime[0] is not None and datetime[0] != int(_XNXQU):
+                    _YL92j('RIS.loads(): Overriding month value')
+                datetime[0] = int(_XNXQU)
+            elif _chM59 == 'DA':
+                if (mi := _1AWoD(_XNXQU)):
+                    if datetime[1] is not None and datetime[1] != mi:
+                        _YL92j('RIS.loads(): Overriding month value')
+                    datetime[1] = mi
+                elif isinstance(_XNXQU, str):
+                    _n3J6l = [_suaDz.strip() for _suaDz in _XNXQU.split('/')]
+                    _n3J6l = [_pnksZ for _pnksZ in _n3J6l if _pnksZ]
+                    for _UCvyR, _bv0BL in enumerate(_n3J6l):
+                        datetime[_UCvyR] = int(_bv0BL)
+                else:
+                    _YL92j(f"Don't know how to interpret DA {_XNXQU}")
+            elif _chM59 == 'SP':
+                if _ZiRQc and _ZiRQc != _XNXQU:
+                    _YL92j('RIS.loads(): Entry has multiple different SP. Overriding.')
+                _ZiRQc = _XNXQU
+            elif _chM59 == 'EP':
+                if _SXZdl and _SXZdl != _XNXQU:
+                    _YL92j('RIS.loads(): Entry has multiple different EP. Overriding.')
+                _SXZdl = _XNXQU
+        datetime = _s5EfQ(datetime, None)
+        _zSBWq: None | str | tuple[str, str]
+        if _ZiRQc and _SXZdl:
+            _zSBWq = (_ZiRQc, _SXZdl)
+        elif _ZiRQc or _SXZdl:
+            _zSBWq = _ZiRQc or _SXZdl
+        else:
+            _zSBWq = None
+        _yRD6n: list[tuple[str, Any]] = []
+        for _TcwKS, _m2EQJ in rentry:
+            if (key_ := _DpuhZ.get(_TcwKS)):
+                _yRD6n.append((key_, _V5dJB(_m2EQJ)))
+            elif _TcwKS == 'TY':
+                _KyCt2 = _bc3NE[_m2EQJ]
+            elif _TcwKS == 'SN':
+                if re.match(_T2n1n['issn'], _m2EQJ):
+                    _fCvOY = 'issn'
+                elif re.match(_T2n1n['essn'], _m2EQJ):
+                    _fCvOY = 'essn'
+                elif re.match(_T2n1n['isbn10'], _m2EQJ) or re.match(_T2n1n['isbn13'], _m2EQJ):
+                    _fCvOY = 'isbn'
+                else:
+                    _fCvOY = 'serial_number'
+                _yRD6n.append((_fCvOY, _m2EQJ))
+            elif _TcwKS in {'DA', 'PY', 'Y1'}:
+                if datetime:
+                    _yRD6n.append(('date-published', tuple(datetime)))
+                    datetime = []
+            elif _TcwKS in {'SP', 'EP'}:
+                if _zSBWq:
+                    _yRD6n.append(('pages', _zSBWq))
+                    _zSBWq = None
+            elif _TcwKS in {'JF', 'JO'}:
+                _yRD6n.append(('journal-name', _m2EQJ))
+            elif (nkey := _MsSvM.get(_TcwKS)):
+                _yRD6n.append((nkey, _m2EQJ))
+            else:
+                _yRD6n.append((_TcwKS, _m2EQJ))
+        assert _KyCt2 is not None
+        return _WITpy(_KyCt2, _yRD6n)
+
+    def _P0Lj7(library):
+        if isinstance(library, _WITpy):
+            library = [library]
+        if isinstance(library, list):
+            library = _XiQ6K(library)
+        _3TgSH: list[tuple[str, str]] = []
+        for _rB8C9 in library.entries:
+            _3TgSH.append(('TY', _YTGJA[_rB8C9.type]))
+            for _IByql, _FlUye in _rB8C9.fields:
+                if (key_ := _mf8Ye.get(_IByql)):
+                    assert isinstance(_FlUye, dict)
+                    _3TgSH.append((key_, _kPkHn(_FlUye)))
+                elif _IByql == 'pages':
+                    if isinstance(_FlUye, tuple) and len(_FlUye) == 2:
+                        _3TgSH += [('SP', _FlUye[0]), ('EP', _FlUye[1])]
+                    elif isinstance(_FlUye, str):
+                        _3TgSH.append(('SP', _FlUye))
+                    else:
+                        _YL92j(f'RIS.dumps(): Unexpected field {_IByql} = {_FlUye}')
+                elif (rkey := _UXucL.get(_IByql)):
+                    assert isinstance(_FlUye, str)
+                    _3TgSH.append((rkey, _FlUye))
+                elif _IByql == 'journal-name':
+                    assert isinstance(_FlUye, str)
+                    if (s := _M9BsD(_FlUye)):
+                        _3TgSH += [('JF', _FlUye), ('JO', s)]
+                    elif (s := _HY02V(_FlUye)):
+                        _3TgSH += [('JF', s), ('JO', _FlUye)]
+                    else:
+                        _3TgSH += [('JF', _FlUye)]
+                elif _IByql == 'date-published':
+                    if isinstance(_FlUye, (list, tuple)):
+                        _3TgSH.append(('DA', '/'.join((f'{_YW2ig:02}' for _YW2ig in _FlUye))))
+                    elif isinstance(_FlUye, str):
+                        _3TgSH.append(('DA', _FlUye))
+                    else:
+                        _YL92j(f'RIS.dumps(): Unexpected field {_IByql} = {_FlUye}')
+                else:
+                    assert isinstance(_FlUye, str)
+                    _3TgSH.append((_IByql, _FlUye))
+            _3TgSH.append(('ER', ''))
+        return '\n'.join((f'{_30t98}  - {_cC6Ek}'.rstrip() for _30t98, _cC6Ek in _3TgSH))
+    if TYPE_CHECKING:
+        from typing import Callable
+
+    def _OoBRb(filename):
+        _yKqNl = Path(filename)
+        _RSKir: Callable
+        if _yKqNl.suffix in '.bib':
+            _RSKir = _zFZMP
+        elif _yKqNl.suffix in '.bibx':
+            _RSKir = _AmzSr
+        elif _yKqNl.suffix in '.json':
+            _RSKir = _yO11Z
+        elif _yKqNl.suffix in '.ris':
+            _RSKir = _CIXsO
+        else:
+            _QcfPu = f'Unknown file format {_yKqNl}'
+            raise RuntimeError(_QcfPu)
+        with _yKqNl.open() as _eoB0V:
+            _73gIQ = _eoB0V.read()
+        return _RSKir(_73gIQ)
+
+    class _UhHnU(Exception):
+        pass
+
+    class _8M8Qb(Exception):
+        pass
+
+    class _lSkGu(Exception):
+
+        def __init__(self, msg, status_code, reason):
+            self.status_code = status_code
+            self.reason = reason
+            super().__init__(msg)
+    _SMEb7 = 'https://export.arxiv.org/api/query'
+
+    def _pBeFo(arxiv_id):
+        _qqKB1 = {'id_list': arxiv_id, 'sortBy': 'relevance', 'max_results': 1}
+        _kEiLR = _7MZOs.get(_SMEb7, params=_qqKB1, timeout=30)
+        if not _kEiLR.ok:
+            if _kEiLR.status_code == 429 and (wait_s := _kEiLR.headers.get('Retry-After')):
+                _YL92j(f'Waiting on arxiv.org ({wait_s} secs)...')
+                time.sleep(int(wait_s))
+                return _pBeFo(arxiv_id)
+            _v66tH = f'Failed request to {_kEiLR.url}'
+            raise _lSkGu(_v66tH, _kEiLR.status_code, f'arxiv.org: {_kEiLR.reason}')
+        _yNVBK = _QjZZE(xmltodict.parse(_kEiLR.content), 'feed', 'entry')
+        if not _yNVBK:
+            _v66tH = f"Didn't find arXiv ID {arxiv_id}"
+            raise _UhHnU(_v66tH)
+        _bVzji: list[tuple[str, Any]] = []
+        for _72aad, _pvy9G in _yNVBK.items():
+            if _72aad == 'title':
+                _bVzji.append(('title', re.sub('[ \n]+', ' ', _pvy9G)))
+            elif _72aad == 'id':
+                _bVzji.append(('url', _pvy9G))
+            elif _72aad == 'author':
+                if isinstance(_pvy9G, list):
+                    _bVzji += [('author', _V5dJB(_R3rZH['name'])) for _R3rZH in _pvy9G]
+                elif isinstance(_pvy9G, dict):
+                    _bVzji.append(('author', _V5dJB(_pvy9G['name'])))
+                else:
+                    _YL92j(f'Unexpected {_72aad} value {_pvy9G}')
+            elif _72aad == 'published':
+                _M1dzw = _q7wmB(_pvy9G)
+                if _M1dzw:
+                    _bVzji.append(('date-published', (_M1dzw.year, _M1dzw.month, _M1dzw.day)))
+            elif _72aad == 'arxiv:primary_category':
+                _bVzji.append(('primaryclass', _pvy9G['@term']))
+        _bVzji.append(('archiveprefix', 'arXiv'))
+        return _WITpy('article', _bVzji)
+
+    def _T77cW(results, input_entry, minimum_score):
+        _TMLKn = []
+        for _r32lv in results:
+            for _tQVSX in ['score', '@score']:
+                if (score := _QjZZE(_r32lv, _tQVSX)):
+                    _TMLKn.append(float(score))
+                    break
+        for _572DZ in _TMLKn:
+            if _572DZ is None:
+                continue
+            if _572DZ < minimum_score:
+                _KUAim = f'Score too low ({_572DZ})'
+                raise _UhHnU(_KUAim)
+        if _TMLKn[0] is not None and _TMLKn[1] is not None and (float(_TMLKn[0]) > 1.5 * float(_TMLKn[1])):
+            return results[0]
+        if (doi := input_entry.get('doi')):
+            if (doi_ := _px20b(doi)):
+                _2Enlw = doi_
+            for _UQWXg in results:
+                for _PTU7W in ('doi', 'DOI'):
+                    try:
+                        _1pOn7 = _UQWXg[_PTU7W]
+                    except KeyError:
+                        continue
+                    if _1pOn7.lower() == _2Enlw.lower():
+                        return _UQWXg
+        if (title_ := input_entry.get('title')):
+            for _PlZx8 in results:
+                _w5SAa = _QjZZE(_PlZx8, 'title', 0)
+                if _w5SAa is None:
+                    continue
+                if _w5SAa.lower() in title_.lower():
+                    return _PlZx8
+        if (pages := input_entry.get('pages')):
+            for _ehsEL in results:
+                if _QjZZE(_ehsEL, 'page') == pages:
+                    return _ehsEL
+        _am6Gq = _QjZZE(results, 1, 'publisher')
+        _iSW09 = _QjZZE(results, 0, 'title', 0)
+        _gTyhT = _QjZZE(results, 1, 'title', 0)
+        if _am6Gq == 'JSTOR' and _iSW09 is not None and (_gTyhT is not None) and (_iSW09.lower() == _gTyhT.lower()):
+            return results[0]
+        _KUAim = 'Could not find a unique match.'
+        raise _8M8Qb(_KUAim)
+    _DcezQ = 'nico.schloemer@gmail.com'
+    _YWdAN = 'https://github.com/texworld/betterbib'
+    _wPku7 = {'User-Agent': f"betterbib/{_yvarv('betterbib')} ({_YWdAN}; mailto:{_DcezQ})"}
+    _nx6Xy = {'book': 'book', 'dataset': 'misc', 'dissertation': 'phdthesis', 'journal-article': 'article', 'monograph': 'book', 'other': 'misc', 'proceedings': 'proceedings', 'proceedings-article': 'inproceedings', 'report': 'techreport', 'reference-book': 'book'}
+    _nCCXq = ['book-chapter']
+    _bfbFe = 'https://api.crossref.org/works'
+
+    def _jJDap(doi, bibkey=None):
+        _vL0Ff = _7MZOs.get(_bfbFe + '/' + doi, headers=_wPku7, timeout=30)
+        if not _vL0Ff.ok:
+            if _vL0Ff.status_code == 429 and (wait_s := _vL0Ff.headers.get('Retry-After')):
+                _YL92j(f'Waiting on crossref.org ({wait_s} secs)...')
+                time.sleep(int(wait_s))
+                return _jJDap(doi, bibkey)
+            _xTom1 = f'Failed request to {_vL0Ff.url}'
+            raise _lSkGu(_xTom1, _vL0Ff.status_code, f'Crossref: DOI {doi}. {_vL0Ff.reason}')
+        _uGk0o = _vL0Ff.json()
+        if (message := _QjZZE(_uGk0o, 'message')):
+            return _opGo8(message, bibkey)
+        _xTom1 = f'DOI {doi} not found on CrossRef'
+        raise _UhHnU(_xTom1)
+
+    def _DajkV(entry, minimum_score=0.0):
+        _cz0tr = entry.get('title')
+        _F6XNR = entry.get('doi')
+        _aitIT = entry.get('author')
+        if not _cz0tr and (not _F6XNR) and (not _aitIT):
+            _VMuRL = 'Not enough input data'
+            raise _UhHnU(_VMuRL)
+        if _F6XNR:
+            try:
+                return _jJDap(_F6XNR, bibkey=entry.id)
+            except _lSkGu as e:
+                _VMuRL = f'DOI {_F6XNR} not found on CrossRef'
+                raise _UhHnU(_VMuRL) from e
+        _FqxkY: list[str] = []
+        for _0uIxN, _txNZX in entry.fields:
+            if _0uIxN in {'booktitle', 'title', 'journal', 'doi', 'volume', 'number', 'publisher'}:
+                assert isinstance(_txNZX, str)
+                _FqxkY.append(_txNZX)
+            elif _0uIxN == 'author':
+                assert isinstance(_txNZX, dict)
+                _FqxkY.append(_txNZX['last'])
+            elif _0uIxN == 'date-published':
+                if isinstance(_txNZX, tuple):
+                    _FqxkY.append(str(_txNZX[0]))
+                elif isinstance(_txNZX, str):
+                    _FqxkY.append(_txNZX)
+        _EwiGE = ' '.join(_FqxkY)
+        _EwiGE = _EwiGE.replace('…', '')
+        _EwiGE = re.sub(' +', '\\+', _EwiGE)
+        _qoxKU = {'query': _EwiGE, 'rows': 2}
+        _sDrtN = _7MZOs.get(_bfbFe, params=_qoxKU, headers=_wPku7, timeout=30)
+        if not _sDrtN.ok:
+            _VMuRL = f'Failed request to {_sDrtN.url}'
+            raise _lSkGu(_VMuRL, _sDrtN.status_code, _sDrtN.reason)
+        _g7kwI = _sDrtN.json()['message']['items']
+        if not _g7kwI:
+            _VMuRL = 'No match'
+            raise _UhHnU(_VMuRL)
+        _rZxOO = []
+        _e5xBj = []
+        for _IHgVx in _g7kwI:
+            if _IHgVx.get('type') in _nx6Xy or _IHgVx.get('type') in _nCCXq:
+                _rZxOO.append(_IHgVx)
+            else:
+                _e5xBj.append(_IHgVx)
+        if not _rZxOO:
+            _VMuRL = 'No match of proper type'
+            raise _UhHnU(_VMuRL)
+        if len(_rZxOO) == 1:
+            return _opGo8(_rZxOO[0], bibkey=entry.id)
+        return _opGo8(_T77cW(_rZxOO, entry, minimum_score), bibkey=entry.id)
+
+    def _UWMi5(crossref_type, doi, timeout=30):
+        if (out := _nx6Xy.get(crossref_type)):
+            return out
+        if crossref_type != 'book-chapter':
+            _YL92j(f'{crossref_type} is not a supported type')
+            return None
+        _IcTlQ = re.match('(.*?)([^0-9]+[0-9]+)$', doi)
+        if _IcTlQ is None:
+            return 'incollection'
+        _jt0W4 = _IcTlQ.group(1)
+        _iiTVK = _7MZOs.get(_bfbFe + '/' + _jt0W4, headers=_wPku7, timeout=timeout)
+        if _iiTVK.ok:
+            _UtsOu = _iiTVK.json()
+            if _QjZZE(_UtsOu, 'message', 'author'):
+                return 'inbook'
+        return 'incollection'
+
+    def _opGo8(data, bibkey=None):
+        _H74yT = None
+        _tY67l = None
+        _BdWRC = None
+        _hyDXE = []
+        _bwg5A = None
+        _gfd4V = None
+        _GACpf = None
+        for _KCDXM, _9bt8m in data.items():
+            if _KCDXM == 'type':
+                _H74yT = _9bt8m
+            elif _KCDXM == 'DOI':
+                _tY67l = _9bt8m
+                _hyDXE.append(('doi', _9bt8m))
+            elif _KCDXM == 'issue':
+                _hyDXE.append(('number', _9bt8m))
+            elif _KCDXM == 'source':
+                _hyDXE.append(('data_source', _9bt8m))
+            elif _KCDXM == 'institution':
+                _bwg5A = _QjZZE(_9bt8m, 0, 'name')
+            elif _KCDXM == 'URL':
+                _hyDXE.append(('url', _9bt8m))
+            elif _KCDXM == 'volume':
+                _hyDXE.append(('volume', _9bt8m))
+            elif _KCDXM == 'title':
+                if isinstance(_9bt8m, list):
+                    if len(_9bt8m) > 0 and _9bt8m[0]:
+                        _GACpf = _9bt8m[0]
+                else:
+                    _YL92j(f'Unexpected {_KCDXM} value {_9bt8m}')
+            elif _KCDXM == 'subtitle':
+                if isinstance(_9bt8m, list):
+                    if len(_9bt8m) > 0 and _9bt8m[0]:
+                        _hyDXE.append(('subtitle', _9bt8m[0]))
+                else:
+                    _YL92j(f'Unexpected {_KCDXM} value {_9bt8m}')
+            elif _KCDXM == 'publisher':
+                if isinstance(_9bt8m, list):
+                    _gfd4V = _9bt8m[0]
+                elif isinstance(_9bt8m, str):
+                    _gfd4V = _9bt8m
+                else:
+                    _YL92j(f'Unexpected {_KCDXM} value {_9bt8m}')
+            elif _KCDXM == 'container-title':
+                if isinstance(_9bt8m, list):
+                    if _9bt8m:
+                        _BdWRC = _9bt8m[-1]
+                else:
+                    _YL92j(f'Unexpected {_KCDXM} value {_9bt8m}')
+            elif _KCDXM in {'ISSN', 'ISBN'}:
+                if isinstance(_9bt8m, list):
+                    _hyDXE += [(_KCDXM.lower(), _CTNLn) for _CTNLn in _9bt8m]
+                else:
+                    _YL92j(f'Unexpected {_KCDXM} value {_9bt8m}')
+            elif _KCDXM == 'issued' and (dp0 := _QjZZE(_9bt8m, 'date-parts', 0)):
+                assert len(dp0) < 4
+                _hyDXE.append(('date-published', tuple(dp0)))
+            elif _KCDXM in {'page', 'pages'}:
+                if (m := re.match(' *([0-9]+) *-+ *([0-9]+) *', _9bt8m)):
+                    _9bt8m = m.groups()
+                _hyDXE.append(('pages', _9bt8m))
+            elif _KCDXM == 'author':
+                for _iMYlY in _9bt8m:
+                    _W7zTV = {}
+                    if (n := _iMYlY.get('given')):
+                        _W7zTV['first'] = n
+                    if (n := _iMYlY.get('family')):
+                        _W7zTV['last'] = n
+                    if (n := _iMYlY.get('suffix')):
+                        _W7zTV['lineage'] = n
+                    _hyDXE.append(('author', _W7zTV))
+        assert isinstance(_H74yT, str)
+        assert isinstance(_tY67l, str)
+        _KZPuP = _UWMi5(_H74yT, _tY67l)
+        if _KZPuP == 'article':
+            _hyDXE += [('journal-name', _BdWRC), ('publisher', _gfd4V), ('title', _GACpf)]
+        elif _KZPuP == 'book':
+            _hyDXE += [('publisher', _gfd4V), ('title', _GACpf)]
+        elif _KZPuP == 'inbook':
+            _hyDXE += [('booktitle', _BdWRC), ('publisher', _gfd4V), ('chapter', _GACpf)]
+        elif _KZPuP in {'incollection', 'inproceedings'}:
+            _hyDXE += [('booktitle', _BdWRC), ('publisher', _gfd4V), ('title', _GACpf)]
+        elif _KZPuP == 'proceedings':
+            _hyDXE += [('publisher', _gfd4V), ('title', _GACpf)]
+        elif _KZPuP == 'techreport':
+            _hyDXE += [('institution', _gfd4V), ('title', _GACpf)]
+        elif _KZPuP == 'phdthesis':
+            _hyDXE += [('title', _GACpf), ('school', _bwg5A)]
+        else:
+            assert _KZPuP == 'misc', f"Unknown type '{_KZPuP}'"
+            _hyDXE += [('publisher', _gfd4V), ('title', _BdWRC), ('title', _GACpf)]
+        _q2r9w = False
+        for _JzPvi in _QjZZE(data, 'cr-labs-updates', default=[]):
+            if _QjZZE(_JzPvi, 'update-nature') == 'Retraction':
+                _YL92j(f'The article\n\n{_GACpf}\n\nhas been retracted! Reasons:\n  - ' + '\n  - '.join(_QjZZE(_JzPvi, 'reasons', default=[])))
+                _q2r9w = True
+        return _WITpy(_KZPuP, _hyDXE, bibkey, is_retracted=_q2r9w)
+    _E4buc = 'https://dblp.org/search/publ/api'
+
+    def _b1hA4(entry, minimum_score=0.0):
+        _raCMO: list[str] = []
+        for _IN0Dj, _qt7Yz in entry.fields:
+            if _IN0Dj == 'title':
+                assert isinstance(_qt7Yz, str)
+                _raCMO.append(_qt7Yz)
+            elif _IN0Dj == 'author':
+                assert isinstance(_qt7Yz, dict)
+                _raCMO.append(_qt7Yz['last'])
+        _Ov9Ig = ' '.join(_raCMO)
+        _Ov9Ig = _Ov9Ig.replace('…', '')
+        _Ov9Ig = re.sub(' +', '\\+', _Ov9Ig)
+        _wannr = {'q': _Ov9Ig, 'format': 'json', 'h': 2}
+        _Tvyjo = _7MZOs.get(_E4buc, params=_wannr, timeout=30)
+        if not _Tvyjo.ok:
+            if _Tvyjo.status_code == 429 and (wait_s := _Tvyjo.headers.get('Retry-After')):
+                _YL92j(f'Waiting on dblp.org ({wait_s} secs)...')
+                time.sleep(int(wait_s))
+                return _b1hA4(entry, minimum_score=minimum_score)
+            _J1koW = f'Failed request to {_E4buc}'
+            raise _lSkGu(_J1koW, _Tvyjo.status_code, f'dblp.org: {_Tvyjo.reason}')
+        _bsOzJ = _Tvyjo.json()
+        try:
+            _voXPd = _bsOzJ['result']['hits']['hit']
+        except KeyError as e:
+            _J1koW = 'No match'
+            raise _UhHnU(_J1koW) from e
+        if len(_voXPd) == 1:
+            return _gC450(_voXPd[0]['info'])
+        return _gC450(_T77cW(_voXPd, entry, minimum_score)['info'])
+
+    def _gC450(data):
+        _II7cL = None
+        _tpIXU = []
+        for _73tyw, _962bI in data.items():
+            if _73tyw in {'title', 'volume', 'doi', 'number'}:
+                _tpIXU.append((_73tyw, _962bI))
+            elif _73tyw == 'year':
+                _tpIXU.append(('date-published', _962bI))
+            elif _73tyw == 'ee':
+                _tpIXU.append(('url', _962bI))
+            elif _73tyw == 'authors':
+                _NV9OD = _962bI['author']
+                if isinstance(_NV9OD, dict):
+                    _NV9OD = [_NV9OD]
+                if isinstance(_962bI, list):
+                    _tpIXU += [('author', _V5dJB(_T2PpH['text'])) for _T2PpH in _NV9OD]
+                else:
+                    _YL92j(f'dblp: Unexpected field {_73tyw} = {_962bI}')
+            elif _73tyw == 'venue':
+                _tpIXU.append(('journal-name', _962bI))
+            elif _73tyw == 'pages':
+                if (m := re.match(' *([0-9]+) *-+ *([0-9]+) *', _962bI)):
+                    _962bI = m.groups()
+                _tpIXU.append(('pages', _962bI))
+            elif _73tyw == 'type':
+                assert _962bI == 'Journal Articles'
+                _II7cL = 'article'
+        for _FwQa1, (_YY8FD, _CPrLr) in enumerate(_tpIXU):
+            if isinstance(_CPrLr, str):
+                _Llnt5 = html.unescape(_CPrLr)
+                if _Llnt5 != _CPrLr:
+                    _tpIXU[_FwQa1] = (_YY8FD, _Llnt5)
+        _tpIXU.append(('data_source', 'DBLP'))
+        assert _II7cL is not None
+        return _WITpy(_II7cL, _tpIXU)
+    _9iOeY = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi'
+    _X7dX2 = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi'
+    _dWqaI = 'pubmed'
+
+    def _KA90o(entry, _=0):
+        _S9jnY: list[str] = []
+        for _pHhdm, _ktv1A in entry.fields:
+            if _pHhdm == 'title':
+                assert isinstance(_ktv1A, str)
+                _S9jnY.append(_ktv1A)
+            elif _pHhdm == 'author':
+                assert isinstance(_ktv1A, dict)
+                _S9jnY.append(_ktv1A['last'])
+        _ljo0n = ' '.join(_S9jnY)
+        _ljo0n = _ljo0n.replace('…', '')
+        _ljo0n = re.sub(' +', ' ', _ljo0n)
+        _MWOiv = {'db': _dWqaI, 'retmode': 'json', 'retmax': 1, 'sort': 'relevance', 'term': _ljo0n}
+        _rCMQ9 = urllib.parse.urlencode(_MWOiv, quote_via=urllib.parse.quote)
+        _Pph0a = _7MZOs.get(_9iOeY, params=_rCMQ9, timeout=30)
+        if not _Pph0a.ok:
+            if _Pph0a.status_code == 429 and (wait_s := _Pph0a.headers.get('Retry-After')):
+                _YL92j(f'Waiting on PubMed ({wait_s} secs)...')
+                time.sleep(int(wait_s))
+                return _KA90o(entry)
+            _IT9Hq = f'Failed request to {_Pph0a.url}'
+            raise _lSkGu(_IT9Hq, _Pph0a.status_code, _Pph0a.reason)
+        _EUOLI = _Pph0a.json()
+        _drDuB = int(_QjZZE(_EUOLI, 'esearchresult', 'count', default=0))
+        if _drDuB == 0:
+            _IT9Hq = 'No article found'
+            raise _UhHnU(_IT9Hq)
+        _yGaAX = _QjZZE(_EUOLI, 'esearchresult', 'idlist', 0)
+        _MWOiv = {'db': _dWqaI, 'retmode': 'json', 'retmax': 1, 'id': _yGaAX}
+        _Pph0a = _7MZOs.get(_X7dX2, params=_MWOiv, timeout=30)
+        if not _Pph0a.ok:
+            if _Pph0a.status_code == 429 and (wait_s := _Pph0a.headers.get('Retry-After')):
+                _YL92j(f'Waiting on PubMed ({wait_s} secs)...')
+                time.sleep(int(wait_s))
+                return _KA90o(entry)
+            _IT9Hq = f'Failed request to {_Pph0a.url}'
+            raise _lSkGu(_IT9Hq, _Pph0a.status_code, f'PubMed: {_Pph0a.reason}')
+        _EUOLI = _Pph0a.json()
+        return _Xkf7W(_EUOLI['result'][_yGaAX])
+
+    def _Xkf7W(data):
+        _4Iyjl = None
+        _ksm0m = []
+        for _RYemi, _JkugD in data.items():
+            if _RYemi in {'volume', 'title'}:
+                _ksm0m.append((_RYemi, _JkugD))
+            elif _RYemi == 'issue':
+                _ksm0m.append(('number', _JkugD))
+            elif _RYemi in {'issn', 'essn'}:
+                if _JkugD.strip():
+                    _ksm0m.append((_RYemi, _JkugD.strip()))
+            elif _RYemi == 'fulljournalname':
+                _ksm0m.append(('journal-name', _JkugD))
+            elif _RYemi == 'pages':
+                if (m := re.match(' *([0-9]+) *-+ *([0-9]+) *', _JkugD)):
+                    _JkugD = m.groups()
+                _ksm0m.append(('pages', _JkugD))
+            elif _RYemi == 'pubtype':
+                if 'Journal Article' not in _JkugD:
+                    _Lil53 = f"Don't know how to handle publication types {_JkugD} yet"
+                    raise ValueError(_Lil53)
+                _4Iyjl = 'article'
+            elif _RYemi == 'articleids':
+                _ksm0m += [('doi', _v4PRt['value']) for _v4PRt in _JkugD if _QjZZE(_v4PRt, 'idtype') == 'doi']
+            elif _RYemi == 'sortpubdate':
+                try:
+                    _pzpyQ = datetime.strptime(_JkugD, '%Y/%m-/%d %H:%M').astimezone(timezone.utc)
+                except ValueError:
+                    pass
+                else:
+                    _ksm0m.append(('date-published', (_pzpyQ.year, _pzpyQ.month, _pzpyQ.day)))
+            elif _RYemi == 'authors':
+                for _0XtT3 in _JkugD:
+                    if _QjZZE(_0XtT3, 'authtype').lower() != 'author':
+                        continue
+                    _VCyGz = _0XtT3['name'].split()
+                    if len(_VCyGz) == 2:
+                        _corAV = {'last': _VCyGz[0], 'first': _VCyGz[1]}
+                    else:
+                        _corAV = _V5dJB(_0XtT3['name'])
+                        _YL92j(f"PubMed: Couldn't reliably parse name {_0XtT3['name']}")
+                    _ksm0m.append(('author', _corAV))
+        _ksm0m.append(('source', 'PubMed'))
+        assert _4Iyjl is not None
+        return _WITpy(_4Iyjl, _ksm0m)
+    _GMTOT = 'https://zenodo.org/api/records/'
+
+    def _u5A7I(zenodo_id):
+        _DXifZ = _7MZOs.get(_GMTOT + zenodo_id, timeout=30)
+        if not _DXifZ.ok:
+            if _DXifZ.status_code == 429 and (wait_s := _DXifZ.headers.get('Retry-After')):
+                _YL92j(f'Waiting on zenodo.org ({wait_s} secs)...')
+                time.sleep(int(wait_s))
+                return _u5A7I(zenodo_id)
+            _mwpmC = f'Failed request to {_DXifZ.url}'
+            raise _lSkGu(_mwpmC, _DXifZ.status_code, f'zenodo.org: {_DXifZ.reason}')
+        _tyUFt = _DXifZ.json()
+        _OajfC: list[tuple[str, Any]] = []
+        for _mtYC3, _4NfIZ in _tyUFt['metadata'].items():
+            if _mtYC3 == 'title':
+                _OajfC.append(('title', re.sub('[ \n]+', ' ', _4NfIZ)))
+            elif _mtYC3 == 'doi':
+                _OajfC.append(('doi', _4NfIZ))
+            elif _mtYC3 == 'version':
+                _OajfC.append(('version', _4NfIZ))
+            elif _mtYC3 == 'creators':
+                assert isinstance(_4NfIZ, list)
+                _OajfC += [('author', _V5dJB(_brdXZ['name'])) for _brdXZ in _4NfIZ]
+            elif _mtYC3 == 'publication_date':
+                _1Kfhl = _q7wmB(_4NfIZ)
+                if _1Kfhl:
+                    _OajfC.append(('date-published', (_1Kfhl.year, _1Kfhl.month, _1Kfhl.day)))
+        _OajfC.append(('url', f'https://zenodo.org/records/{zenodo_id}'))
+        return _WITpy('software', _OajfC)
+    if TYPE_CHECKING:
+        pass
+
+    def _VKbuZ(entry, minimum_score=0.0, debug_output=False):
+        if (arxiv_id := _mOQyC(entry)):
+            return _pBeFo(arxiv_id)
+        if (zenodo_id := _aGWyQ(entry)):
+            return _u5A7I(zenodo_id)
+        _AttJD = entry.get('doi', None)
+        _zj1EW = entry.get('url', None)
+        if _AttJD is None and _zj1EW is not None:
+            _AttJD = _px20b(_zj1EW)
+        if _AttJD:
+            return _jJDap(_AttJD)
+        for _OamWL in [_DajkV, _b1hA4, _KA90o]:
+            try:
+                _elra0 = _OamWL(entry, minimum_score)
+            except (_UhHnU, _8M8Qb) as e:
+                if debug_output:
+                    _YL92j(f'{entry.id}: {e}')
+            except requests.ReadTimeout as e:
+                if debug_output:
+                    _YL92j(str(e))
+            else:
+                return _elra0
+        return None
+
+    def _mOQyC(entry):
+        if (entry.get('archiveprefix', '').lower() == 'arxiv' or entry.get('eprinttype', '').lower() == 'arxiv' or entry.get('publisher', '').lower() == 'arxiv') and 'eprint' in entry:
+            return entry.get('eprint')
+        if (m := re.match('https?://arxiv.org/abs/([0-9]+\\.[0-9]+)(?:v[0-9])?', entry.get('url', ''))):
+            return m.group(1)
+        if (m := re.search('ar[xX]iv:([0-9]+.[0-9]+)', entry.get('journal-name', ''))):
+            return m.group(1)
+        return None
+
+    def _aGWyQ(entry):
+        if (m := re.match('https?://zenodo.org/records/([0-9]+)', entry.get('url', ''))):
+            return m.group(1)
+        if (m := re.match('.*?/zenodo\\..*', entry.get('doi', ''))):
+            return m.group(1)
+        return None
+    if TYPE_CHECKING:
+        pass
+
+    def _yzI2l(entries, max_workers, verbose, minimum_score, debug_output=False):
+        entries = [_RQ26G for _RQ26G in entries if _RQ26G.get('protect', default='').lower() not in {'true', '1', 't', 'y', 'yes'}]
+        _akHPr = 0
+        _zWh81 = None
+        with ThreadPoolExecutor(max_workers=max_workers) as _NzYaV:
+            _zk32j = {_NzYaV.submit(_VKbuZ, _RQ26G, minimum_score, debug_output): _RQ26G for _RQ26G in entries}
+            for _LCOR1 in track(as_completed(_zk32j), total=len(_zk32j), description='Syncing...', console=Console(file=sys.stderr), disable=not verbose):
+                _RQ26G = _zk32j[_LCOR1]
+                try:
+                    _vm1Qp = _LCOR1.result()
+                except requests.ReadTimeout as e:
+                    if debug_output:
+                        _YL92j(str(e))
+                except _lSkGu as e:
+                    if 400 <= e.status_code < 500:
+                        _zWh81 = f'{e.reason}! ({e.status_code})'
+                        _YL92j(_zWh81)
+                    elif 500 <= e.status_code < 600:
+                        _zWh81 = f'{e.reason}! ({e.status_code})'
+                        _NzYaV.shutdown(wait=False)
+                        break
+                else:
+                    _RQ26G.merge(_vm1Qp)
+                    _akHPr += 1
+        if _zWh81:
+            _YL92j(f'{_zWh81}\nTry again later.')
+        return _akHPr
+
+    def _mAyQr(args):
+        _4XbfR = Path(args.infile)
+        _GDbS9 = Path(args.outfile)
+        _EAzFD = _OoBRb(_4XbfR)
+        if _GDbS9.suffix == '.bib':
+            _zMbBW = _Ji3cA if _EAzFD.original_is_ascii else _pBN4Q
+        elif _GDbS9.suffix == '.bibx':
+            _zMbBW = _pBN4Q
+        elif _GDbS9.suffix == '.json':
+            _zMbBW = _pHVmQ
+        elif _GDbS9.suffix == '.ris':
+            _zMbBW = _P0Lj7
+        else:
+            _YcOzy = f'Unknown filename suffix {_GDbS9.suffix}'
+            raise RuntimeError(_YcOzy)
+        _98AMq = _zMbBW(_EAzFD)
+        with _GDbS9.open('w') as _14Zlb:
+            _14Zlb.write(_98AMq)
+
+    def _TZdFJ(parser):
+        parser.add_argument('infile', type=str, help='input bibliography file')
+        parser.add_argument('outfile', type=str, help='output bibliography file')
+
+    def _KU8Dw(args):
+        _h3vHo = args.doi
+        if (m := re.match(_ShvCF, _h3vHo)):
+            _h3vHo = m.group(1)
+        _VtqE3 = _jJDap(_h3vHo)
+        if args.format == 'bibtex':
+            _9QttB = _Ji3cA
+        elif args.format == 'biblatex':
+            _9QttB = _pBN4Q
+        elif args.format == 'csl-json':
+            _9QttB = _pHVmQ
+        elif args.format == 'ris':
+            _9QttB = _P0Lj7
+        else:
+            _dIiHi = f'Unknown format {args.format}'
+            raise RuntimeError(_dIiHi)
+        _AunoJ(_VtqE3, 'new')
+        print(_9QttB(_VtqE3))
+
+    def _e1oTv(parser):
+        parser.add_argument('format', type=str, choices=['bibtex', 'biblatex', 'csl-json', 'ris'], help='output format')
+        parser.add_argument('doi', type=str, help='input DOI or DOI URL')
+
+    def _dWwSO(args):
+        for _Bmws0 in args.infiles:
+            _46MwK(_Bmws0, args)
+
+    def _46MwK(infile, args):
+        infile = Path(infile)
+        _1PrXV = _OoBRb(infile)
+        if args.drop:
+            for _ItEY0 in _1PrXV.entries:
+                _ItEY0.remove_fields(args.drop)
+        if args.journal_names in {'long', 'short'}:
+            _UKKWz(_1PrXV.entries, args.journal_names)
+        if args.abbrev_first_names:
+            for _ndwWV in _1PrXV.entries:
+                for _i8v81, _4kV8u in _ndwWV.fields:
+                    if _i8v81 == 'author' and 'first' in _4kV8u:
+                        _4kV8u['first'] = _WtJr7(_4kV8u['first'])
+        if args.sort_entries:
+            _1PrXV.entries = sorted(_1PrXV.entries, key=lambda _BEQ6C: _BEQ6C.id)
+        _0yI0w(_1PrXV)
+        if args.doi_url_type != 'unchanged':
+            _AunoJ(_1PrXV, args.doi_url_type)
+        if args.protect_title_capitalization:
+            _b6iVM(_1PrXV)
+        try:
+            _92tAd = int(args.indent)
+        except ValueError:
+            _GosjE = args.indent
+        else:
+            _GosjE = _92tAd * ' '
+        try:
+            _92tAd = int(args.page_range_separator)
+        except ValueError:
+            _BgTvw = args.page_range_separator
+        else:
+            _BgTvw = _92tAd * '-'
+        if infile.suffix == '.bib':
+            _q7v7J = _Ji3cA if _1PrXV.original_is_ascii else _pBN4Q
+        elif infile.suffix == '.bibx':
+            _q7v7J = _pBN4Q
+        elif infile.suffix == '.json':
+            _q7v7J = _pHVmQ
+        elif infile.suffix == '.ris':
+            _q7v7J = _P0Lj7
+        else:
+            _VEeqm = f'Unknown filename suffix {infile.suffix}'
+            raise RuntimeError(_VEeqm)
+        _ivTSg = _q7v7J(_1PrXV, indent=_GosjE, value_column='auto' if args.align_values else 0, sort_fields=args.sort_fields, page_range_separator=_BgTvw)
+        if args.in_place:
+            with infile.open('w') as _tB0Cl:
+                _tB0Cl.write(_ivTSg)
+        else:
+            print(_ivTSg)
+
+    def _DOy5u(parser):
+        parser.add_argument('infiles', nargs='+', type=str, help='input bibliography files')
+        parser.add_argument('-i', '--in-place', action='store_true', help='modify infile in place')
+        parser.add_argument('--drop', action='append', help='drop fields from entries (can be passed multiple times)')
+        parser.add_argument('--journal-names', choices=['long', 'short', 'unchanged'], default='unchanged', help='force full or abbreviated journal names (default: unchanged)')
+        parser.add_argument('--abbrev-first-names', action='store_true', default=False, help='abbreviate first names in author lists etc. (default: false)')
+        parser.add_argument('--sort-entries', action='store_true', help='sort entries alphabetically by key (default: false)')
+        parser.add_argument('--sort-fields', action='store_true', help='sort fields alphabetically (default: false)')
+        parser.add_argument('--doi-url-type', choices=['unchanged', 'old', 'new', 'short'], default='new', help='DOI URL (new: https://doi.org/<DOI>, short: https://doi.org/abcde) (default: new)')
+        parser.add_argument('--page-range-separator', default='2', help='page range separator (int or string, default: 2)')
+        parser.add_argument('--protect-title-capitalization', action='store_true', default=False, help='brace-protect names in titles (e.g., {Newton}; default: false)')
+        parser.add_argument('--indent', nargs='?', default='2', help='indentation (int or string; default: 2)')
+        parser.add_argument('--align-values', action='store_true', help='align field values (default: false)')
+
+    def _zUIws(args):
+        for _mHOG3 in args.infiles:
+            _mHOG3 = Path(_mHOG3)
+            _OsZju = _OoBRb(_mHOG3)
+            _Atd0I = _yzI2l(_OsZju.entries, max_workers=args.num_concurrent_requests, verbose=not args.quiet, minimum_score=args.minimum_score, debug_output=args.debug)
+            _AunoJ(_OsZju, 'new')
+            _y83LO = _pBN4Q if not _OsZju.original_is_ascii or _mHOG3.suffix == '.bibx' else _Ji3cA
+            if _mHOG3.suffix in {'.bib', '.bibx'}:
+                _j0SAO = _y83LO(_OsZju)
+            else:
+                _5hJ9i = f'Unknown filename suffix {_mHOG3.suffix}'
+                raise RuntimeError(_5hJ9i)
+            if args.in_place:
+                with _mHOG3.open('w') as _mOX6A:
+                    _mOX6A.write(_j0SAO)
+            else:
+                print(_j0SAO)
+            if _Atd0I < len(_OsZju.entries):
+                _YL92j(f'Synced {_Atd0I} of {len(_OsZju.entries)} entries', prefix='')
+
+    def _Zstfy(parser):
+        parser.add_argument('infiles', nargs='+', type=str, help='input bibliography files')
+        parser.add_argument('-i', '--in-place', action='store_true', help='modify infile in place')
+        parser.add_argument('-c', '--num-concurrent-requests', type=int, default=5, metavar='N', help='number of concurrent HTTPS requests (default: 5)')
+        parser.add_argument('-m', '--minimum-score', type=float, default=0.0, help='minimum score to count as a match (default: 0.0)')
+        parser.add_argument('-q', '--quiet', action='store_true', default=False, help="don't show progress info (default: show)")
+        parser.add_argument('--debug', action='store_true', default=False, help='some debug output (default: false)')
+        return parser
+    RichHelpFormatter.styles['argparse.args'] = 'cyan'
+    RichHelpFormatter.styles['argparse.groups'] = 'yellow'
+    RichHelpFormatter.styles['argparse.metavar'] = 'green'
+
+    def _L4lE0(argv=None):
+        _05hmL = argparse.ArgumentParser(description='Tools for working with bibliography data.', formatter_class=RichHelpFormatter)
+        _05hmL.add_argument('--version', '-v', action='version', version=_nv3fS(), help='display version information')
+        _ESGRj = _05hmL.add_subparsers(title='subcommands', dest='command', required=True)
+        _xwtJQ = _ESGRj.add_parser('sync', help='sync bibliography files with information from online sources', aliases=['update', 'up'], formatter_class=RichHelpFormatter)
+        _Zstfy(_xwtJQ)
+        _xwtJQ.set_defaults(func=_zUIws)
+        _xwtJQ = _ESGRj.add_parser('format', help='format bibliography files', aliases=['f'], formatter_class=RichHelpFormatter)
+        _DOy5u(_xwtJQ)
+        _xwtJQ.set_defaults(func=_dWwSO)
+        _xwtJQ = _ESGRj.add_parser('convert', help='convert bibliography files', aliases=['c'], formatter_class=RichHelpFormatter)
+        _TZdFJ(_xwtJQ)
+        _xwtJQ.set_defaults(func=_mAyQr)
+        _xwtJQ = _ESGRj.add_parser('doi-to', help='turn a DOI into a BibTeX entry', aliases=['db'], formatter_class=RichHelpFormatter)
+        _e1oTv(_xwtJQ)
+        _xwtJQ.set_defaults(func=_KU8Dw)
+        _xwtJQ = _ESGRj.add_parser('clear-cache', aliases=['cc'], help='clear cache', formatter_class=RichHelpFormatter)
+        _xwtJQ.set_defaults(func=_Q3JVS)
+        _z3jUS = _ESGRj.add_parser('versions', help='Display version information, including dependencies', aliases=['vv'], formatter_class=_xwtJQ.formatter_class)
+        _z3jUS.set_defaults(func=lambda _mwcOw: _CLNVd())
+        _VApIe = _05hmL.parse_args(argv)
+        return _VApIe.func(_VApIe)
+
+    def _CLNVd():
+        for _1hPuj in python_package_info.yield_info_lines('betterbib'):
+            print(_1hPuj)
+
+    def _nv3fS():
+        _PwfPe = _yvarv('betterbib')
+        return f'betterbib {_PwfPe} [Python {vi.major}.{vi.minor}.{vi.micro}]'
+
+    def _krn1l():
+        try:
+            slim.keygen.find_license_and_validate(account_id='109c23d2-6cdd-4faf-bd8a-96c242733638', product_id='6a72efd6-e4e2-44bf-acbe-f6f1b3f2e6fc', variable_names=['TEXWORLD_LIC', 'TEXWORLD_LICENSE', 'TEXWORLD_LICENSE_KEY', 'TEX_WORLD_LIC', 'TEX_WORLD_LICENSE', 'TEX_WORLD_LICENSE_KEY'])
+        except slim.LicenseError as e:
+            e.show()
+            sys.exit(1)
+    _krn1l()
+_iiLeN()
+del _iiLeN
