@@ -1,0 +1,9 @@
+LICENSE.py
+README.md
+setup.cfg
+setup.py
+nvl.egg-info/PKG-INFO
+nvl.egg-info/SOURCES.txt
+nvl.egg-info/dependency_links.txt
+nvl.egg-info/entry_points.txt
+nvl.egg-info/top_level.txt
