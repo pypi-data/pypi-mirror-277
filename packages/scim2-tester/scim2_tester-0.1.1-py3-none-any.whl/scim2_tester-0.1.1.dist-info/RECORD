@@ -1,0 +1,10 @@
+scim2_tester/__init__.py,sha256=LS-YNeKGvtiOdTbjsLc9cowaFD6-t1fcB9S1bM0wU4E,144
+scim2_tester/checker.py,sha256=4_86-9gi5lz0z4qeaQh6ZHrV1GQtxgNS5IQIcDMGTwM,3474
+scim2_tester/resource.py,sha256=2jDkdMfPtayZlfUlXrEKbiL7ROIWxwrqzJAYGtpSUYY,6410
+scim2_tester/resource_types.py,sha256=U64lF4jT7Mpx_y-9gPmUWeDUEKJX8W9XSXLnxHEPObw,1251
+scim2_tester/schemas.py,sha256=9JpxZ9QgLchYfKtmKtp1kv-IuBhg6J-1Lxija1Tdwmw,1320
+scim2_tester/service_provider_config.py,sha256=qVvrJM-Jq-qSlQ5YZiE2L7yxo86RiDGM7RjJur4jBYc,896
+scim2_tester/utils.py,sha256=pauZn0xT-f-iOhmTQsdNoujX7588WI3pUa23HtI9YJs,1034
+scim2_tester-0.1.1.dist-info/METADATA,sha256=FdRig1RNiwX6rmxmEn9HCNISa6B17aOggehJ_0za1mE,2244
+scim2_tester-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+scim2_tester-0.1.1.dist-info/RECORD,,
