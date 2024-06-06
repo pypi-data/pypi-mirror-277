@@ -1,0 +1,12 @@
+# Project Description
+This package is created to control the **Hamamatsu C11204-01** power supply module for MPPC.
+The reference command manual (Doc.No.K29-B61218) was utilized to develop the code, which describes the command specifications (uses the UART communication protocol).
+
+For more information, please consult the following Git repository.
+[Repository](https://gitlab.ahuekna.org.ar/labo_6y7/2024/galan_moreno/software.git) 
+
+<br>
+
+# Descripción del proyecto
+Esta libreria está creada para controlar el módulo de fuente de alimentación **C11204-01** para MPPC de la empresa **Hamamatsu Photonics K.K.**
+Se utilizó el manual de comandos de referencia (Doc.No.K29-B61218) para desarrollar el código (utiliza el protocolo de comunicación UART).
