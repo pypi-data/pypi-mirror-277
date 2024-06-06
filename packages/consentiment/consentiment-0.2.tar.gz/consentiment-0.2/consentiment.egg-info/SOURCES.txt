@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+consentiment/__init__.py
+consentiment/consentiment.py
+consentiment.egg-info/PKG-INFO
+consentiment.egg-info/SOURCES.txt
+consentiment.egg-info/dependency_links.txt
+consentiment.egg-info/top_level.txt
+consentiment/utils/__init__.py
+consentiment/utils/consentiment.py
+consentiment/utils/utils.py
