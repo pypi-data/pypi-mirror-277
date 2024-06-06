@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+epp_event_log_parser/__init__.py
+epp_event_log_parser/epp_event_log_parser.py
+epp_event_log_parser.egg-info/PKG-INFO
+epp_event_log_parser.egg-info/SOURCES.txt
+epp_event_log_parser.egg-info/dependency_links.txt
+epp_event_log_parser.egg-info/top_level.txt
