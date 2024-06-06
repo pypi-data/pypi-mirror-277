@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+auto_blueprints_hello.egg-info/PKG-INFO
+auto_blueprints_hello.egg-info/SOURCES.txt
+auto_blueprints_hello.egg-info/dependency_links.txt
+auto_blueprints_hello.egg-info/requires.txt
+auto_blueprints_hello.egg-info/top_level.txt
+hello/__init__.py
+hello/blueprints.txt
+hello/entry.py
+hello/templates/hello/hello.html

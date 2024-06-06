@@ -1,0 +1,12 @@
+<html lang="en">
+<head>
+    <title>Hello {{hello}}!</title>
+</head>
+<body>
+<h1>Hello {{hello}}!</h1>
+<form action="{{ url_for('hello.hello') }}" method="POST" enctype="multipart/form-data">
+    <label for="world">Your name </label><input type="text" name="world" id="world"/>
+    <input type="submit" value="Submit"/>
+</form>
+</body>
+</html>
