@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: AnalisisJannette
+Version: 0.14
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Classifier: Operating System :: OS Independent
+Requires-Dist: Django>=3.0
+Requires-Dist: sweetify
+Requires-Dist: django-bootstrap5
+Requires-Dist: pandas
+Requires-Dist: unicodedata2

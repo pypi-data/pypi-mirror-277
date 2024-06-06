@@ -1,0 +1,9 @@
+include README.md
+include LICENSE
+include requirements.txt
+recursive-include analisisJannette/templates *
+recursive-include analisisJannette/static *
+recursive-include analisisJannette/media *
+recursive-include analisisJannette/ *
+recursive-include Algoritmos/ *
+recursive-include ListasRetrasadas/ *
