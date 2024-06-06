@@ -1,0 +1,8 @@
+README.md
+setup.py
+0xdirsan.egg-info/PKG-INFO
+0xdirsan.egg-info/SOURCES.txt
+0xdirsan.egg-info/dependency_links.txt
+0xdirsan.egg-info/entry_points.txt
+0xdirsan.egg-info/requires.txt
+0xdirsan.egg-info/top_level.txt
