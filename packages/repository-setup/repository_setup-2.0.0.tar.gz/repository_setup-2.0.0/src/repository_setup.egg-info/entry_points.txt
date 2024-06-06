@@ -1,0 +1,2 @@
+[console_scripts]
+repository_setup = repository_setup.__main__:main

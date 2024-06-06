@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: repository_setup
+Version: 2.0.0
+Summary: Creates the basic repository structure for python projects
+Home-page: https://github.com/5f0ne/repository-setup
+Author: 5f0
+License: MIT
+Classifier: Operating System :: OS Independent 
+Classifier: Programming Language :: Python :: 3 
+Classifier: License :: OSI Approved :: MIT License 
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# Description
+
+Creates the basic repository structure for python projects
+
+# Installation
+
+`pip install repository_setup`
+
+# Usage
+
+`python -m repository_setup [-h] --path PATH --name NAME`
+
+
+| Option | Short | Type | Default | Description |
+|---|---|---|---|---|
+|--path | -p | String | - | Path of the directory in which the repository shall be created |
+|--name | -n | String | - | Name of the new repository |
+
+# Example
+
+`python -m repository_setup -p /path/to/repo/dir -n new-module-repo`
+
+Creates the following result:
+
+```
+################################################################################
+
+Repository Setup by 5f0
+Creates the basic repository structure for python projects
+
+Current working directory: /path/to/repository-setup
+
+Target directory: /path/to/repo/dir
+Name of new repository: new-module-repo
+
+Creation Datetime: 01/01/1970 10:11:12
+
+################################################################################
+
+Repository of type module created successfully under /path/to/repo/dir/new-module-repo
+
+################################################################################
+```
+
+With the following folder structure:
+
+```
+/path/to/repo/dir/new-module-repo
+â”œâ”€â”€â”€ /src
+     â””â”€â”€â”€ /new_module_repo
+          â””â”€â”€â”€ /output
+               â””â”€â”€â”€ __init__.py
+               â””â”€â”€â”€ Output.py
+          â””â”€â”€â”€ /util
+               â””â”€â”€â”€ __init__.py
+               â””â”€â”€â”€ Util.py
+          â””â”€â”€â”€ /args
+               â””â”€â”€â”€ __init__.py
+               â””â”€â”€â”€ Args.py
+          â””â”€â”€â”€ __init__.py
+          â””â”€â”€â”€ __main__.py
+â””â”€â”€â”€ .gitignore
+â””â”€â”€â”€ LICENSE.md
+â””â”€â”€â”€ README.md
+â””â”€â”€â”€ setup.py
+```
+
+# License
+
+MIT
