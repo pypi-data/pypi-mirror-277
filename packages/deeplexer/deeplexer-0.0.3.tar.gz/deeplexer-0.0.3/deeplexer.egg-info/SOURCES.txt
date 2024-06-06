@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+deeplexer/__init__.py
+deeplexer/deeplexer.py
+deeplexer.egg-info/PKG-INFO
+deeplexer.egg-info/SOURCES.txt
+deeplexer.egg-info/dependency_links.txt
+deeplexer.egg-info/requires.txt
+deeplexer.egg-info/top_level.txt
