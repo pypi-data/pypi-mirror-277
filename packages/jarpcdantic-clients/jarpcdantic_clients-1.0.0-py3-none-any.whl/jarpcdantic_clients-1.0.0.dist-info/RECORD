@@ -1,0 +1,9 @@
+jarpcdantic_clients/__init__.py,sha256=g2uPZtsxpAsB2SDTTXaBnb6ZTB1o3SC6KlkzJpnkrug,430
+jarpcdantic_clients/aiohttp_client.py,sha256=zxaUKPQyvjfeiQHdGX6YPV8ZhZMwT9Yzshy3E2jldrM,4474
+jarpcdantic_clients/cabbage_client.py,sha256=_6iyINiHlgkeo4dmrwJRxqbaXTz-MoSbjvXvAlIDvx8,2725
+jarpcdantic_clients/requests_client.py,sha256=-F35iruZjNYOQ1fb7SFOLUgR5JHQhcx72BWhAyFE7uI,4017
+jarpcdantic_clients-1.0.0.dist-info/LICENSE,sha256=S4nUUYvRNatO4VSnvOciJGtXqYw9fvwaCUCYmBYMK9E,16724
+jarpcdantic_clients-1.0.0.dist-info/METADATA,sha256=uyA_mTHJjo1X6upJYDlrSi20_k2taQp1sjAlbVWV_zk,2259
+jarpcdantic_clients-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+jarpcdantic_clients-1.0.0.dist-info/top_level.txt,sha256=NnkiQ2emalEmEUtuLUq6UNGZSXHqvxHKQkgt3I9o4oA,20
+jarpcdantic_clients-1.0.0.dist-info/RECORD,,
