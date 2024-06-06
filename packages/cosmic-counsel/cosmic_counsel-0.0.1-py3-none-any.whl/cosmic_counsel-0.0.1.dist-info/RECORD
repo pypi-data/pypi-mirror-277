@@ -1,0 +1,9 @@
+cosmic-counsel/__init__.py,sha256=UVKFCvrcaG5S28ZSCUENJ0Ca2p_Kbkkt_1oay1lQtrI,59
+cosmic-counsel/__main__.py,sha256=QWy5am5qzj9i8_L1AV2BqBe9ExFao5vSi8UZ65uRWME,3830
+cosmic-counsel/cosmic_utils.py,sha256=e_SuGWZ-IdFFui8_uH_lpHzw_0MwG8_hUrL5axQ4kdk,3088
+cosmic-counsel/data/chat_history.json,sha256=eGEWebMiPfKaobH-t7F4esim8sb7vNDJXcXz_Bya0P0,169
+cosmic-counsel/data/relevant_history.json,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cosmic_counsel-0.0.1.dist-info/METADATA,sha256=W_AqpGRqEccikEOeWBdEyO-1gg1yFC212UJV5TggvKo,769
+cosmic_counsel-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cosmic_counsel-0.0.1.dist-info/top_level.txt,sha256=pzPaNInv4P1j5jFlmsdB3DuOoI5vRGEK3_ns2wVKWqs,15
+cosmic_counsel-0.0.1.dist-info/RECORD,,
