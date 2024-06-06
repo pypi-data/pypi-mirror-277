@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: logger-dsi
+Version: 0.2
+Summary: A Python client library to send logs to Loki.
+Home-page: https://bitbucket.org/dsinno/lokiclient
+Author: Design Systems Inno.
+Author-email: sebastian@dsinno.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Loki Client
+
+Loki Client is a Python library to send logs to Loki for visualization in Grafana.
+
+## Installation
+
+```bash
+pip install loki_client
+```
+
+## License
+
+This project is licensed under the MIT License.
+
+### Conclusión
+
+La librería `LokiClient` permite a los usuarios enviar logs a un servidor Loki de manera sencilla y eficiente. La configuración es flexible, permitiendo establecer la IP y el puerto del servidor. La estructura del código y la documentación siguen las mejores prácticas de programación para asegurar que el código sea mantenible y fácil de usar.
