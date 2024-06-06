@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pi-blink"
+version = "0.2.1"
+description = ""
+authors = ["leeparnell <152523161+leeparnell@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+blinker = "^1.8.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.1"
+pytest-asyncio = "^0.23.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
