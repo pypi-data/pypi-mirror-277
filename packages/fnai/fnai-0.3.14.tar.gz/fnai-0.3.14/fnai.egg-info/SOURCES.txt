@@ -1,0 +1,11 @@
+README.md
+setup.py
+fnai/__init__.py
+fnai/fine_face.py
+fnai/fine_hand.py
+fnai/fine_weather.py
+fnai.egg-info/PKG-INFO
+fnai.egg-info/SOURCES.txt
+fnai.egg-info/dependency_links.txt
+fnai.egg-info/requires.txt
+fnai.egg-info/top_level.txt
