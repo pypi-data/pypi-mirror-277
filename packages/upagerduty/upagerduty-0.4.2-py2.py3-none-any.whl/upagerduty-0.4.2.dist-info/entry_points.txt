@@ -1,0 +1,2 @@
+[console_scripts]
+pagerduty = upagerduty.command:main
