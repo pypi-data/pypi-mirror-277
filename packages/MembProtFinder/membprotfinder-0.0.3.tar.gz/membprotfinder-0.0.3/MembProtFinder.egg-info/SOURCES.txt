@@ -1,0 +1,9 @@
+MembProtFinder.py
+README.md
+setup.py
+MembProtFinder.egg-info/PKG-INFO
+MembProtFinder.egg-info/SOURCES.txt
+MembProtFinder.egg-info/dependency_links.txt
+MembProtFinder.egg-info/entry_points.txt
+MembProtFinder.egg-info/requires.txt
+MembProtFinder.egg-info/top_level.txt
