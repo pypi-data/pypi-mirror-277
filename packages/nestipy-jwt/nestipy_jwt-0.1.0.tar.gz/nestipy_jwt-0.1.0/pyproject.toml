@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "nestipy-jwt"
+version = "0.1.0"
+description = ""
+authors = ["tsiresymila <tsiresymila@gmail.com>"]
+readme = "README.md"
+packages = [{include = "nestipy_jwt", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+nestipy = "^0.3.12"
+pyjwt = "^2.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
