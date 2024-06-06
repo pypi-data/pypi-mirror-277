@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/undetected_webdriver/browser.py
+src/undetected_webdriver.egg-info/PKG-INFO
+src/undetected_webdriver.egg-info/SOURCES.txt
+src/undetected_webdriver.egg-info/dependency_links.txt
+src/undetected_webdriver.egg-info/requires.txt
+src/undetected_webdriver.egg-info/top_level.txt
