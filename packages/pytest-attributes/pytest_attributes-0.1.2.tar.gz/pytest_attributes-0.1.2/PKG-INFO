@@ -1,0 +1,197 @@
+Metadata-Version: 2.1
+Name: pytest-attributes
+Version: 0.1.2
+Summary: A plugin that allows users to add attributes to their tests. These attributes can then be referenced by fixtures or the test itself.
+Author-email: Babak Michael Engheta <michaelengheta55@gmail.com>
+Maintainer-email: Babak Michael Engheta <michaelengheta55@gmail.com>
+License: 
+        Copyright (c) 2024, Babak Michael Engheta
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        * Redistributions of source code must retain the above copyright notice, this
+          list of conditions and the following disclaimer.
+        
+        * Redistributions in binary form must reproduce the above copyright notice,
+          this list of conditions and the following disclaimer in the documentation
+          and/or other materials provided with the distribution.
+        
+        * Neither the name of pytest-attributes nor the names of its
+          contributors may be used to endorse or promote products derived from
+          this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Repository, https://github.com/MichaelE55/pytest-attributes
+Classifier: Framework :: Pytest
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytest>=6.2.0
+
+
+A powerful tool that allows you to add custom attributes and variables to your tests. 
+
+With this plugin, you can easily attach additional data to each test, which can then be referenced by fixtures or even the test itself.
+This enables you to create more flexible and dynamic test suites tailored to your specific needs.
+
+
+Features
+--------
+
+- Custom Attributes for Tests: Add custom attributes to individual tests using the @attributes marker, allowing you to store important metadata or configuration data directly with the test.
+
+- Access Attributes in Fixtures: Easily access attribute values within fixtures, enabling you to create dynamic fixtures that adapt to the specific requirements of each test.
+
+- Reference Attributes in Tests: Directly access attribute values within the test functions themselves, providing a convenient way to parameterize tests, perform conditional logic, or customize test behavior based on the attached attributes.
+
+
+Installation
+------------
+
+```bash
+pip install pytest-attributes
+```
+
+
+Usage
+-----
+
+First, import attributes from pytest_attributes:
+
+```python
+from pytest_attributes import attributes
+```
+
+
+Now you can add attributes to each of your tests using the @attributes marker. Like so:
+
+```python
+@attributes(
+    step = 1,
+    action = "Test the functionality of feature X",
+    expected = "Feature X works successfully"
+    )
+def test_functionality():
+    assert True
+```
+
+In the above example, we created our attributes marker, and then added whatever parameters we wanted inside and set those values.
+Now those values are associated with this specific test called "test_functionality".
+
+
+We can now reference these attributes by using the provided keyterm 'attr':
+
+```python
+@attributes(
+    step = 1,
+    action = "Test the functionality of feature X",
+    expected = "Feature X works successfully"
+    )
+def test_functionality(attr):
+    print(attr.step)
+    print(attr.action)
+    print(attr.expected)
+    assert True
+```
+
+The above example prints the following:
+
+```bash
+test.py 1
+Test the functionality of feature X
+Feature X works successfully
+.
+```
+
+
+More importantly, however, we can use attr to get these attributes from within fixtures!
+This opens up the door to many possibilities, such as determining what to do with each test before running it, attaching attributes to report files, and even sending them alongside the test results to any desired endpoints. 
+
+The process of doing this is extremely simple.
+Simply provide attr as an argument to the desired fixture and you can access its attributes. Like so:
+
+```python
+@pytest.fixture(autouse=True)
+def my_fixture(attr):
+    print(attr.action)
+```
+
+
+Example Code
+------------
+
+my_test.py
+
+```python
+import pytest
+from pytest_attributes import attributes
+
+@attributes(
+    step = 1,
+    action = "Test the functionality of feature X",
+    expected = "Feature X works successfully"
+    )
+def test_functionality(attr):
+    print(attr.step)
+    print(attr.action)
+    print(attr.expected)
+    assert True
+```
+
+
+conftest.py
+
+```python
+import pytest
+
+@pytest.fixture(autouse=True)
+def my_fixture(attr):
+    print(attr.action)
+```
+
+
+Contributing
+------------
+
+Contributions are very welcome. Tests can be run with `tox`_, please ensure
+the coverage at least stays the same before you submit a pull request.
+
+
+License
+-------
+
+Distributed under the terms of the `BSD-3`_ license, "pytest-attributes" is free and open source software
+
+
+Issues
+------
+
+If you encounter any problems, please `file an issue`_ along with a detailed description.
+
+.. _`file an issue`: https://github.com/MichaelE55/pytest-attributes/issues
