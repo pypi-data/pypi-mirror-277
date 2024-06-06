@@ -1,0 +1,5 @@
+llama_index/llms/premai/__init__.py,sha256=eH0Px9XQJiqsaicg1B2g-EFJyQn8lPcDAsAKMq6b9Hw,70
+llama_index/llms/premai/base.py,sha256=dRQg4t2SqKUEIG66W5NCqtbHlxv_AbqadTCiSMV87ds,10168
+llama_index_llms_premai-0.1.6.dist-info/METADATA,sha256=LR9F_9UgYibYdTnGdCSgLaulBtdGSL9QOu5Xu31Se-Y,593
+llama_index_llms_premai-0.1.6.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+llama_index_llms_premai-0.1.6.dist-info/RECORD,,
