@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: ccHBGF
+Version: 0.0.1
+Summary: Consensus Clustering using Hybrid Bipartite Graph Formulation (HBGF)
+Home-page: https://github.com/ehvr20/ccHBGF
+Author: E. H. von Rein
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+
+# Consensus Clustering with Hybrid Bipartite Graph Formulation (HBGF)
+
+This repository provides an implementation of the `ccHBGF` function, which performs consensus clustering using Hybrid Bipartite Graph Formulation (HBGF).
+
+## Overview
+
+The `ccHBGF` function performs consensus clustering by following these steps:
+1. Construction of a `bipartite graph`
+2. Definition of an Adjaceny Matrix `A`
+3. Partitioning of `A` using spectral partitioning
+
+## Installation
+
+To use this function, you need to have Python installed along with the following packages:
+- `numpy`
+- `scipy`
+- `sklearn`
+
+You can install these packages using pip:
+
+```bash
+pip install numpy scipy scikit-learn
+```
