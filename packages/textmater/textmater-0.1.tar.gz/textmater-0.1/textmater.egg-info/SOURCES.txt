@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/test_Textmater.py
+tests/test_utils.py
+textmater/__init__.py
+textmater/textmater.py
+textmater/tools.py
+textmater/utils.py
+textmater.egg-info/PKG-INFO
+textmater.egg-info/SOURCES.txt
+textmater.egg-info/dependency_links.txt
+textmater.egg-info/top_level.txt
