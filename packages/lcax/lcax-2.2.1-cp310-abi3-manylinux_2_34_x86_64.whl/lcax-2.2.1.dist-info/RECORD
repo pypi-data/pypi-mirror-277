@@ -1,0 +1,9 @@
+lcax-2.2.1.dist-info/METADATA,sha256=HBhA8lySnvqQZ4AExKM9e_-d0S2d7Rdq9iwRGha7MBM,2517
+lcax-2.2.1.dist-info/WHEEL,sha256=xAh5bZLI0NqIZmTE1wPUKerYqfGn69RD276bWJfZo20,107
+lcax-2.2.1.dist-info/license_files/LICENSE,sha256=psuoW8kuDP96RQsdhzwOqi6fyWv0ct8CR6Jr7He_P_k,10173
+lcax-2.2.1.dist-info/license_files/LICENSE,sha256=psuoW8kuDP96RQsdhzwOqi6fyWv0ct8CR6Jr7He_P_k,10173
+lcax/__init__.py,sha256=3fnBntcLWBMAq6oTOFnoTVI4_gm2alZaNp8CLCfAtpA,2825
+lcax/lcax.pyi,sha256=xGmvddg7CLbeU0m-5vH9upaCjvQtUaH2jExJReL0U30,407
+lcax/pydantic.py,sha256=mqQ8ce4SERrDgFGNAzIbG_O7z2P0yRzElfUYkf-9en4,15805
+lcax/lcax.abi3.so,sha256=LqOQVXZIrG8zfZgf2MH-zKuoGolIaoIANZNGL2d2M58,2560000
+lcax-2.2.1.dist-info/RECORD,,
