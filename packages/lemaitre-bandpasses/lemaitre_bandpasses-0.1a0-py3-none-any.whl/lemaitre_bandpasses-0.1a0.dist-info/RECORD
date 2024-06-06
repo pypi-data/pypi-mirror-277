@@ -1,0 +1,12 @@
+lemaitre/bandpasses/__init__.py,sha256=7oC6ix_4sg3JHljyXmyoKuu9fGxEAB-vhgm6GjHkURI,3889
+lemaitre/bandpasses/builtins.py,sha256=jKifxxjKeVb-MKF24erB5c4-gCq2oQwqS26J-T5wL0w,7048
+lemaitre/bandpasses/flibs.py,sha256=AXOwXvOH_wa8l83abW6yaOYnYq-jdUlExUysx4qZ4hY,5511
+lemaitre/bandpasses/flycheck_builtins.py,sha256=S9sJ8QeGUPF3uQZZwWzI8qZ5l7Bi6Op-to9dnoqMgV8,4604
+lemaitre/bandpasses/plots.py,sha256=W0YvkuH0SfYNM1RxTkPrRJMjmXFigbOWNbQ9pEfwuyo,3844
+lemaitre/bandpasses/data/hsc_v0.hdf5,sha256=yQf2LPmRMS2hJVaooLMXjPkEAM1QG0II6hIn3vRAZis,1020264
+lemaitre/bandpasses/data/megacam6_v0.hdf5,sha256=IP51qtf4hGsoI29I6BHKzPFRQDaqq3LsbYKRTqKFh5U,1855552
+lemaitre/bandpasses/data/ztf_v0.hdf5,sha256=m8MABtjXHmIxr_5bZ_9hdOmXs_7CO_gB2ZitgFNqxBw,693808
+lemaitre_bandpasses-0.1a0.dist-info/METADATA,sha256=Q891dLpsSlMiBtq3vySA7pwvlIlxODVwzppi4La5ZdU,5387
+lemaitre_bandpasses-0.1a0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+lemaitre_bandpasses-0.1a0.dist-info/top_level.txt,sha256=CxPzJnFWeaEtFFid1Hbq9WJ00Q5c3411xaTdsr0sThs,9
+lemaitre_bandpasses-0.1a0.dist-info/RECORD,,
