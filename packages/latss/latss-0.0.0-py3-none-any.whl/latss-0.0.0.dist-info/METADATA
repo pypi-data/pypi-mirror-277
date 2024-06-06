@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: latss
+Version: 0.0.0
+Summary: A subject-independent motor imagery classification model utilizing advanced domain adaptation techniques.
+Author-email: Zeyad Ahmed <zeyadmansour2@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://pypi.org/project/latss/
+Project-URL: Repository, https://github.com/zeyadmohaymen/latss.git
+Keywords: motor imagery,EEG,label alignment
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyriemann
+Requires-Dist: scipy >=1.10.1
+Requires-Dist: mne
+Requires-Dist: mne-icalabel
+Requires-Dist: onnxruntime
+
+# LATSS
+
+A subject-independent motor imagery classification model utilizing advanced domain adaptation techniques.
+
+## Description
+
+LATSS is a subject-independent motor imagery classification model that utilizes advanced domain adaptation techniques to improve the generalization of the model across subjects. The model employs latent alignment to align source domain data to a target domain with the help of some labeled 'calibration' data. Tangent space mapping is then used as a feature extraction technique. The extracted features are then fed into an SVM classifier with an RBF kernel to classify the motor imagery data.
+
+## Installation
+
+```bash
+$ pip install latss
+```
+
+## Usage
+
+Training and predicting with the LATSS model is simple. Here's an example of how to use it:
+
+```python
+from latss import LATSS
+
+# Load source data
+source_data = ...
+
+# Initialize the model
+model = LATSS(source_data=source_data)
+
+# Calibrate and train the model
+# Note: calibration_data must be an annotated mne.io.Raw object
+calibration_data = ...
+event_id = {
+            'left_hand': 1,
+            'right_hand': 2,
+            }
+acc = model.calibrate(calibration_data, event_id=event_id)
+
+# Predict on new data
+# Note: new_data must be a mne.io.Raw object as well
+new_data = ...
+prediction = model.predict(new_data)
+```
+
+<br />
+Source data can be any [mne.Epochs](https://mne.tools/stable/generated/mne.Epochs.html) object or a dictionary with the following structure:
+```python
+{
+    'data': np.array,  # shape: (n_trials, n_channels, n_samples)
+    'labels': np.array,  # shape: (n_events, 3)
+}
+```
+
+
+## License
+
+`latss` was created by Zeyad Ahmed. It is licensed under the terms
+of the MIT license.
+
+## Credits
+
+The LATSS model was inspired by the work of He et al. [1], while introducing some key modifications and improvements.
+
+[1] H. He and D. Wu, "Different Set Domain Adaptation for Brain-Computer Interfaces: A Label Alignment Approach," in IEEE Transactions on Neural Systems and Rehabilitation Engineering, vol. 28, no. 5, pp. 1091-1108, May 2020, doi: [10.1109/TNSRE.2020.2980299](https://doi.org/10.1109/TNSRE.2020.2980299).
+
