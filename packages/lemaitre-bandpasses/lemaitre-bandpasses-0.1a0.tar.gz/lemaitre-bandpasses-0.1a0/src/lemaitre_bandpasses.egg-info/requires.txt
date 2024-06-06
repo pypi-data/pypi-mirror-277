@@ -1,0 +1,21 @@
+requests
+numpy
+pandas
+scipy
+scikit-sparse
+matplotlib
+sncosmo
+astropy
+h5py
+bbf
+
+[:python_version < "3.10"]
+importlib-metadata
+
+[pdf]
+ReportLab>=1.2
+RXP
+
+[rest]
+docutils>=0.3
+pack==1.1,==1.3
