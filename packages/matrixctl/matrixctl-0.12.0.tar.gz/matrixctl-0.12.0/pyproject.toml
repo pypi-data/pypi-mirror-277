@@ -1,0 +1,429 @@
+[tool.poetry]
+name = "matrixctl"
+version = "0.12.0"
+description = "Control, manage, provision and deploy matrix homeservers."
+
+license = "GPL-3.0-or-later"
+readme = "README.md"
+repository = "https://github.com/MichaelSasser/matrixctl"
+homepage = "https://michaelsasser.github.io/matrixctl/index.html"
+documentation = "https://michaelsasser.github.io/matrixctl/index.html"
+keywords = ['Matrix', 'Synapse', 'Docker']
+authors = ["Michael Sasser <Michael@MichaelSasser.org>"]
+maintainers = ["Michael Sasser <Michael@MichaelSasser.org>"]
+# Look here for all Classifiers:
+# https://pypi.python.org/pypi?%3Aaction=list_classifiers
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Customer Service",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Other Audience",
+  "Intended Audience :: System Administrators",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Natural Language :: English",
+  "Operating System :: POSIX",
+  "Operating System :: POSIX :: Linux",
+  "Operating System :: Unix",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Utilities",
+  "Typing :: Typed",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+GitPython = "^3.1.43"
+coloredlogs = "^15.0.1"
+paramiko = "^3.4.0"
+"ruamel.yaml" = ">=0.18.6"
+ansible-runner = "^2.4.0"
+attrs = ">=23.2.0"
+xdg = "^6.0.0"
+Jinja2 = "^3.1.4"
+psycopg = "^3.1.19"
+httpx = { version = ">=0.27.0", extras = ["http2"] }
+sshtunnel = "^0.4.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.2"
+coverage = "^7.5.3"
+pre-commit = "^3.7.1"
+tox = "^4.15.0"
+
+[tool.poetry.group.dev.dependencies]
+towncrier = ">=23.11.0"
+flake8 = "^7.0.0"
+pylint = ">=3.2.2"
+yapf = ">=0.40.2"
+vulture = "^2.11"
+mypy = "^1.10.0"
+interrogate = "^1.7.0"
+flake8-bugbear = "^24.4.26"
+pynvim = "^0.5.0"
+black = { version = "^24.4.2", allow-prereleases = true }
+isort = { version = "^5.13.2", extras = ["pyproject"] }
+
+# typesheds
+types-pkg-resources = "^0.1.3"
+types-paramiko = "^3.4.0.20240423"
+types-attrs = "^19.1.0"
+types-Jinja2 = "^2.11.9"
+ruff = ">=0.4.8"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+sphinx = ">=6.1.3,<8.0.0"
+sphinx-autodoc-typehints = "^1.22"
+sphinxcontrib-programoutput = "^0.17"
+numpydoc = "^1.5.0"
+sphinx_rtd_theme = ">=1.2,<3.0"
+
+[tool.poetry.scripts]
+matrixctl = "matrixctl.__main__:main"
+
+[tool.ruff]
+line-length = 79
+cache-dir = "~/.cache/ruff"
+fix = true
+src = ["matrixctl", "docs"]
+show-fixes = true
+target-version = "py310"
+
+exclude = [
+  ".git",
+  ".mypy_cache",
+  ".nox",
+  ".pytype",
+  ".ruff_cache",
+  ".tox",
+  ".venv",
+  "__pypackages__",
+  "_build",
+  "buck-out",
+  "build",
+  "dist",
+  "venv",
+]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+task-tags = ["TODO", "FIXME", "WARN", "SEC", "SECURITY", "INFO", "NOTE"]
+ignore = [
+  "D202",
+  "D203",
+  "TCH003",
+  "TCH001",
+  "ANN401",
+  "ANN101",
+  "T201",    # Print statements
+  "TD002",   # Missing TODO author
+  "TD003",   # Missing TODO issue link
+  "FIX002",  # Unresolved TODO
+  "PERF203", # Try/except in loop
+]
+select = ["ALL"]
+
+[tool.ruff.lint.flake8-annotations]
+allow-star-arg-any = true
+suppress-dummy-args = true
+# suppress-none-returning = true
+
+[tool.ruff.lint.flake8-bandit]
+check-typed-exception = true
+
+[tool.ruff.lint.flake8-copyright]
+author = "Michael Sasser <Michael@MichaelSasser.org>"
+min-file-size = 512
+
+[tool.ruff.lint.flake8-import-conventions]
+banned-from = ["typing"]
+
+[tool.ruff.lint.flake8-import-conventions.extend-aliases]
+"typing" = "t"
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.ruff.lint.mccabe]
+# Unlike Flake8, default to a complexity level of 10.
+max-complexity = 10
+
+[tool.ruff.lint.isort]
+force-single-line = true
+lines-after-imports = 2
+constants = ["__version__"]
+forced-separate = ["tests", "matrixctl"]
+required-imports = ["from __future__ import annotations"]
+known-first-party = ["matrixctl"]
+lines-between-types = 2
+known-third-party = [
+  "pytest",
+  "paramiko",
+  "argcomplete",
+  "coloredlogs",
+  "sphinx_rtd_theme",
+  "git",
+  "httpx",
+  "attr",
+  "ansible_runner",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["S101"]
+"docs/*" = ["INP001"]
+
+[tool.black]
+line-length = 79
+include = '\.pyi?$'
+# exclude __init__.py because of ordered importing
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | tests/.*/setup.py
+)/
+'''
+
+[tool.mypy]
+python_version = "3.11"
+platform = "linux"
+ignore_missing_imports = true
+strict_equality = true
+strict = true
+show_traceback = true
+# CI output differs from local
+warn_unused_ignores = false # workaround see PR: 308
+
+[[tool.mypy.overrides]]
+module = "tests.matrixctl.handlers.*"
+allow_untyped_decorators = true       # pytest fixtures
+
+[tool.pyright]
+include = ["matrixctl", "tests"]
+exclude = ["**/__pycache__"]
+
+reportMissingImports = true
+reportMissingTypeStubs = false
+
+pythonVersion = "3.11"
+pythonPlatform = "Linux"
+typeCheckingMode = "basic"
+
+# reportUnknownVariableType ="none"
+# reportUnknownMemberType ="none"
+# reportUnknownParameterType = "none"
+# reportUnknownArgumentType = "none"
+# reportUnknownLambdaType = "none"
+
+
+[tool.isort]
+line_length = 79
+force_single_line = true
+atomic = true
+float_to_top = true
+include_trailing_comma = true
+lines_after_imports = 2
+lines_between_types = 1
+multi_line_output = 3
+use_parentheses = true
+skip_glob = [
+  "*/setup.py",
+  "*.rst",
+  "*.md",
+  "*.yaml",
+  "*.txt",
+  "*.yml",
+  "*.lock",
+  "*.toml",
+  "*.ini",
+  "Makefile",
+  "docs/source/conf.py",
+]
+filter_files = true
+known_first_party = "matrixctl"
+known_third_party = [
+  "pytest",
+  "paramiko",
+  "argcomplete",
+  "coloredlogs",
+  "sphinx_rtd_theme",
+  "git",
+  "httpx",
+  "attr",
+  "ansible_runner",
+]
+
+[tool.pycln]
+all = true
+
+[tool.flake8]
+max-line-length = 79
+# max-complexity = 12
+ignore = "E501"
+select = "C,E,F,W,B,B901"
+
+[tool.interrogate]
+ignore-init-method = true
+ignore-init-module = true
+ignore-magic = true
+# ignore-semiprivate = false
+# ignore-private = false
+# ignore-property-decorators = false
+# ignore-module = false
+fail-under = 100
+exclude = ["setup.py", "docs", "build"]
+# ignore-regex = ["^get$", "^mock_.*", ".*BaseClass.*"]
+# ignore-regex see: https://github.com/econchick/interrogate/issues?q=is%3Aissue+overload
+ignore-regex = ["request", "exec_async_request"]
+verbose = 1
+# quiet = false
+# whitelist-regex = []
+# color = true
+
+
+[tool.vulture]
+make_whitelist = true
+min_confidence = 80
+paths = ["matrixctl"]
+sort_by_size = true
+
+[tool.coverage.report]
+exclude_also = ["@t.overload", "pragma: no cover"]
+
+[tool.towncrier]
+package = "matrixctl"
+package_dir = "matrixctl"
+filename = "CHANGELOG.rst"
+issue_format = "`#{issue} <https://github.com/MichaelSasser/matrixctl/issues/{issue}>`_"
+directory = "news/"
+top_line = false
+# title_format = "{version} ({project_date})"  # {name}
+all_bullets = true                      # make all fragments bullet points
+wrap = true                             # Wrap text to 79 characters
+template = "news/templates/default.rst"
+
+[[tool.towncrier.type]]
+directory = "breaking"
+name = "Behavior & Breaking Changes"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "feature"
+name = "Features & Improvements"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "bugfix"
+name = "Bugfixes"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "docs"
+name = "Improved Documentation"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "removal"
+name = "Removals & Deprecations"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "trivial"
+name = "Trivial Changes"
+showcontent = false
+
+[[tool.towncrier.type]]
+directory = "misc"
+name = "Miscellaneous"
+showcontent = true
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.tox]
+legacy_tox_ini = """
+[pytest]
+
+addopts = -ra
+testpaths = tests
+xfail_strict = true
+filterwarnings =
+    once::Warning
+    ignore:::pympler[.*]
+
+
+# Keep docs in sync with docs env and .readthedocs.yml.
+# [gh-actions]
+# python =
+#     3.10: py39, precommit, changelog, docs
+# # 3.10: py310
+
+
+[tox]
+envlist = precommit,py310,py311,py312,docs,changelog,
+isolated_build = True
+
+[coverage:report]
+exclude_also =
+    @t.overload
+    pragma: no cover
+
+[testenv]
+allowlist_externals = poetry
+# Prevent random setuptools/pip breakages like
+# https://github.com/pypa/setuptools/issues/1042 from breaking our builds.
+setenv =
+    VIRTUALENV_NO_DOWNLOAD=1
+extras = {env:TOX_AP_TEST_EXTRAS:tests}
+commands =
+  poetry install -v
+  poetry run coverage run -m pytest --doctest-modules {posargs}
+
+[testenv:precommit]
+allowlist_externals = poetry
+basepython = python3.12
+skip_install = true
+deps =
+    pre-commit
+passenv = HOMEPATH  # needed on Windows
+commands =
+  poetry install -v
+  poetry run pre-commit run --all-files
+
+
+[testenv:docs]
+allowlist_externals = poetry
+# Keep basepython in sync with gh-actions and .readthedocs.yml.
+basepython = python3.12
+# extras = docs, func
+# currently disable -n
+commands =
+  poetry install --with docs -v
+  poetry run sphinx-build -T -W -b html -d {envtmpdir}/doctrees docs/source docs/build/html
+
+
+[testenv:changelog]
+allowlist_externals = poetry
+basepython = python3.12
+# deps = towncrier
+skip_install = true
+commands =
+  poetry install -v
+  poetry run towncrier --draft
+"""
