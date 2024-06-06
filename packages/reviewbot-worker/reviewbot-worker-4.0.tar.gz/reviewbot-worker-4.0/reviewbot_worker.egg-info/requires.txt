@@ -1,0 +1,12 @@
+appdirs>=1.4.4
+celery~=5.3
+RBTools<6,>=4.0
+flake8-json>=21.1
+
+[all]
+cpplint>=1.6
+doc8>=0.10.1
+flake8>=4.0
+pycodestyle>=2.8
+pydocstyle>=6.1.1
+pyflakes>=2.4
