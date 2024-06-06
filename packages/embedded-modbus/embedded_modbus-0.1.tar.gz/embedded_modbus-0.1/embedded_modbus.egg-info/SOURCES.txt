@@ -1,0 +1,10 @@
+README.md
+setup.py
+embedded_modbus/ModulConnector.py
+embedded_modbus/__init__.py
+embedded_modbus/utils.py
+embedded_modbus.egg-info/PKG-INFO
+embedded_modbus.egg-info/SOURCES.txt
+embedded_modbus.egg-info/dependency_links.txt
+embedded_modbus.egg-info/requires.txt
+embedded_modbus.egg-info/top_level.txt

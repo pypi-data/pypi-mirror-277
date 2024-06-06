@@ -1,0 +1,4 @@
+pymodbus==3.6.8
+PyYAML==6.0.1
+RecursiveNamespace==0.2.2
+typing_extensions==4.12.0
