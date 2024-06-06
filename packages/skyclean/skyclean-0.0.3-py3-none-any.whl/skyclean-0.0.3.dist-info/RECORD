@@ -1,0 +1,10 @@
+skyclean/__init__.py,sha256=si8vN1jU9TKpFE33TJOR_P1h_qcRjH5oHJRsD4RW-_w,59
+skyclean/cmb_data.py,sha256=ggbAT-WN5v_JkYbLas4WoNEJOtToC6UwqefZwKuwKn0,4725
+skyclean/CMB_data/__init__.py,sha256=PeNMzx-tcWnbm2QGDe8zY2v7jlcSNPhhkHgFVlG4PT0,83
+skyclean/CMB_data/cmb_data.py,sha256=ggbAT-WN5v_JkYbLas4WoNEJOtToC6UwqefZwKuwKn0,4725
+skyclean/CMB_data/test.py,sha256=NUiHV6GdgA9yKzqlixRzNWcioFgREK0JrCdkdSy3FDY,305
+skyclean-0.0.3.dist-info/LICENSE,sha256=Q1hluJL6zypj-Ma-wbgER8y51HjDC6-po5iEuWAx_UM,1068
+skyclean-0.0.3.dist-info/METADATA,sha256=hWbx0cp49dsgh2SMruGqLYiIPy9BRLWJ4POg5PeI0ZU,757
+skyclean-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+skyclean-0.0.3.dist-info/top_level.txt,sha256=YsUY4pjs3ligt-7FfaRtKmL0VWZL2HMC1eyEgVllDlY,9
+skyclean-0.0.3.dist-info/RECORD,,
