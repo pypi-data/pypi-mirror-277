@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bmlgraphapi"
+version = "0.5"
+requires-python = ">=3.8"
+dependencies = [
+  "msal", 
+  "requests", 
+  "openpyxl",
+  "pandas"
+]
+authors = [
+  { name="Brenda Moura", email="brendamoura@bemol.com.br" },
+]
+description = "Pacote para obter tabelas xlsx do SharePoint através de seu link"
+readme = "README.md"
+keywords = ["xlsx", "sharepoint", "tabela", "dataframe", "dados", "graphapi", "microsoft"]
