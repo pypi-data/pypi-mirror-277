@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+DocTableFlow/__init__.py
+DocTableFlow/_docTableExtractor.py
+DocTableFlow/main.py
+DocTableFlow.egg-info/PKG-INFO
+DocTableFlow.egg-info/SOURCES.txt
+DocTableFlow.egg-info/dependency_links.txt
+DocTableFlow.egg-info/requires.txt
+DocTableFlow.egg-info/top_level.txt
