@@ -1,0 +1,9 @@
+[console_scripts]
+check_precision = jdsk.helper.check_precision:main
+cnpy_helper = jdsk.helper.cnpy_helper:main
+jdsk_simulator = jdsk.simulator.test:main
+model_helper = jdsk.helper.model_helper:main
+onnx2jdsk = jdsk.converter.onnx2jdsk:main
+paddle2jdsk = jdsk.converter.paddle2jdsk:main
+test_helper = jdsk.helper.create_test_dir:main
+tf2jdsk = jdsk.converter.tf2jdsk:main
