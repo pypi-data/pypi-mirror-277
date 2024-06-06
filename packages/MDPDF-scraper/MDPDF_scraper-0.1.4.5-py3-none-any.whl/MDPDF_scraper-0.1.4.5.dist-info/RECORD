@@ -1,0 +1,11 @@
+MDPDF_scraper/DejaVuSans.ttf,sha256=CMqY5p2dj6EGVYS0-at9SbYgWr6mVyuQ4XGyVIRbuZA,741536
+MDPDF_scraper/__init__.py,sha256=rX8mwJohdYArfvRvGPBvmZWsJbTOV7ok7vuB3swm6OI,118
+MDPDF_scraper/indexer.py,sha256=_5i1UPF5-h9F9iMxaGV5XCk2moweGg9YzcFwOfFh544,1195
+MDPDF_scraper/mdpdfscraper.py,sha256=osZ6NsoRMhSoVuzxQBGoa60N9sMoD5K-gH_nsbLdThk,1641
+MDPDF_scraper/webtoPDF.py,sha256=xU2iW6iv2w6-_HauP0f6rhGNeAaqCojHJSF89yYblHk,3005
+MDPDF_scraper-0.1.4.5.dist-info/LICENSE,sha256=buvDHPKnyh_NIm0VL6-9oNYN8Nk3-P0w_UWRSGJzgOI,1078
+MDPDF_scraper-0.1.4.5.dist-info/METADATA,sha256=P0v0775Xvg_jTekHpngaEhKmkxbrDTY2E8GVFipsDqA,1899
+MDPDF_scraper-0.1.4.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+MDPDF_scraper-0.1.4.5.dist-info/entry_points.txt,sha256=OubRqBlyPiu6PpcH96U4jFyMXHXpBrgGuCGoMVPVjbc,66
+MDPDF_scraper-0.1.4.5.dist-info/top_level.txt,sha256=Xyhp-cQ_7AfYCt4SyWDLYBwIivZxZOT8pQx2BJDCVjw,14
+MDPDF_scraper-0.1.4.5.dist-info/RECORD,,
