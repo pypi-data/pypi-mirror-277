@@ -1,0 +1,21 @@
+[build-system]
+requires = ["maturin>=1.5,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "rwkv_tokenizer"
+version = "0.4.2"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+description = "RWKV Tokenizer"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["LLM", "RWKV", "Language Model"]
+authors = [{ name = "Cahya Wirawan", email = "cahya.wirawan@gmail.com" }]
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
