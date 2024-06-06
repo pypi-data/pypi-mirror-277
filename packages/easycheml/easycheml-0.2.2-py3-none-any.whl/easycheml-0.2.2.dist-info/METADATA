@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: easycheml
+Version: 0.2.2
+Summary: A simple tool for using artificial intelligence in chemistry
+Home-page: https://github.com/anandsahuofficial/easycheml.git
+Author: Anand Sahu
+Author-email: anandsahuofficial@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/anandsahuofficial/easycheml/archive/refs/tags/easycheml.tar.gz
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# EasyCheml
+EasyCheml is a tensorflow-based package for deep/machine learning application in chemistry, which doesn't require any advanced knowledge of Python (or machine learning).  The intended audience is domain scientists with basic knowledge of python.
+
+
+The purpose of the EasyCheml is to provide an environment that bridges the instrument specific libraries and general physical analysis by enabling the seamless deployment of deep/machine learning algorithms.
+
+# Installation
+
+To install EasyCheml, you can use pip:
+
+> pip install easycheml
+
+
