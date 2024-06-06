@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "psqlomni"
+version = "0.1.1"
+description = "LLM-powered chat interface to your Postgres database - (psql powered with Natural Language)"
+authors = ["emmakodes <emmamichael65@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+prompt-toolkit = "^3.0.43"
+halo = "^0.0.31"
+psycopg2 = "^2.9.9"
+toml = "^0.10.2"
+langchain = "^0.1.20"
+langchain-community = "^0.0.38"
+langchain-openai = "^0.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+psqlomni = 'psqlomni.__main__:main'
