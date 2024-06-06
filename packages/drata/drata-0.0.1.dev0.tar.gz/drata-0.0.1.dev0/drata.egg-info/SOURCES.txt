@@ -1,0 +1,8 @@
+LICENSE
+README.rst
+setup.py
+drata.egg-info/PKG-INFO
+drata.egg-info/SOURCES.txt
+drata.egg-info/dependency_links.txt
+drata.egg-info/not-zip-safe
+drata.egg-info/top_level.txt
