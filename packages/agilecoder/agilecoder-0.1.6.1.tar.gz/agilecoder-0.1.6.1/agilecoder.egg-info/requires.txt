@@ -1,0 +1,13 @@
+openai==0.28.1
+tiktoken
+markdown
+colorama
+nltk
+flask
+tenacity
+python-dotenv
+codebleu
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+anthropic
