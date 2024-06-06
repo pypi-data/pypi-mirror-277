@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "iterlab"
+version = "0.1.3"
+description = "Collection of helper functions that perform operations on iterables."
+authors = ["Zachary Einck <zacharyeinck@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/zteinck/iterlab"
+homepage = "https://github.com/zteinck/iterlab"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

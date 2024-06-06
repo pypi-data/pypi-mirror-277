@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: iterlab
+Version: 0.1.3
+Summary: Collection of helper functions that perform operations on iterables.
+Home-page: https://github.com/zteinck/iterlab
+License: MIT
+Author: Zachary Einck
+Author-email: zacharyeinck@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/zteinck/iterlab
+Description-Content-Type: text/markdown
+
+# iterlab
+
+<div>
+
+[![Package version](https://img.shields.io/pypi/v/iterlab?color=%2334D058&label=pypi)](https://pypi.org/project/iterlab/)
+[![License](https://img.shields.io/github/license/zteinck/iterlab)](https://github.com/zteinck/iterlab/blob/master/LICENSE)
+
+</div>
+
+`iterlab` is a collection of helper functions that perform operations on iterables.
+
+
+## Installation
+```sh
+pip install iterlab
+```
+
