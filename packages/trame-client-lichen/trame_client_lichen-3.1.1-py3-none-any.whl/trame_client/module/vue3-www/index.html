@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="" data-app-name="Lichen Viewer">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1"
+    />
+    <meta
+      name="description"
+      content="Lichen Viewer - A web-based viewer for geological data."
+    />
+    <meta
+      name="keywords"
+      content="Lichen Viewer, Lichen Commodities, Visualisation Tool, Geological Data"
+    />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="icon" href="logo.png" />
+    <script src="vue.global.js"></script>
+    <title>Lichen Viewer</title>
+    <script defer="defer" src="js/chunk-vendors.3aa0189c.js"></script>
+    <script defer="defer" src="js/app.7d0e64a7.js"></script>
+    <link href="css/app.0b077e70.css" rel="stylesheet" />
+  </head>
+  <body style="margin: 0; padding: 0">
+    <noscript
+      ><strong
+        >Please enable JavaScript to continue.</strong
+      ></noscript
+    >
+    <div id="app"></div>
+    <script>
+      fetch("./loading.tpl")
+        .then((r) => r.text())
+        .then((c) => (document.querySelector("#app").innerHTML = c));
+    </script>
+  </body>
+</html>
