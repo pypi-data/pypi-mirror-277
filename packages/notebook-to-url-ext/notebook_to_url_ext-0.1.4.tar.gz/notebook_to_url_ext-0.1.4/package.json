@@ -1,0 +1,31 @@
+{
+    "name": "notebook_to_url_ext",
+    "version": "0.1.4",
+    "description": "A JupyterLite extension to compress and decompress notebook text",
+    "main": "notebook-to-url-lib/index.js",
+    "scripts": {
+      "build": "webpack"
+    },
+    "jupyterlab": {
+        "extension": true,
+        "outputDir": "notebook-to-url-lib"
+      },
+    "dependencies": {
+      "@jupyterlite/server": "^0.1.0",
+      "lz-string": "^1.4.4",
+      "@jupyterlab/notebook": "^3.0.0",
+      "@jupyterlab/apputils": "^3.0.0",
+      "@jupyterlab/application": "^3.0.0"
+    },
+    "devDependencies": {
+      "webpack": "^5.0.0",
+      "webpack-cli": "^4.0.0",
+      "babel-loader": "^8.0.0",
+      "@babel/core": "^7.0.0",
+      "@babel/preset-env": "^7.0.0",
+      "raw-loader": "^4.0.0",
+      "file-loader": "^6.0.0",
+      "url-loader": "^4.0.0"
+    }
+  }
+  
