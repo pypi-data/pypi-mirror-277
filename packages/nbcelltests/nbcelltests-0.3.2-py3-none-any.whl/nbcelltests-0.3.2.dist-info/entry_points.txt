@@ -1,0 +1,2 @@
+[console_scripts]
+nbcelltests = nbcelltests.__main__:main
