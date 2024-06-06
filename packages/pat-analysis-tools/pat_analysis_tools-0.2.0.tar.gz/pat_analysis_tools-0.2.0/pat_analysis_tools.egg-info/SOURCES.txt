@@ -1,0 +1,6 @@
+README.md
+setup.py
+pat_analysis_tools.egg-info/PKG-INFO
+pat_analysis_tools.egg-info/SOURCES.txt
+pat_analysis_tools.egg-info/dependency_links.txt
+pat_analysis_tools.egg-info/top_level.txt
