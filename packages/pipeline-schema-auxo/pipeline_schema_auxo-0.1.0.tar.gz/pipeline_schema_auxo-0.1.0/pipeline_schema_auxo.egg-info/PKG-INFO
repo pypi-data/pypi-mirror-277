@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: pipeline-schema-auxo
+Version: 0.1.0
+Summary: A description of your package
+Home-page: https://github.com/ProcDNA-Auxo/pipeline_schema_auxo
+Author: Sujit
+Author-email: sujit.chaurasia@procdna.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Pipeline Schema Auxo
+
+A description of your package.
+
+## Installation
+
+```bash
+pip install your_package
+
+```
+
+## Usage
+
+```
+from your_package import User, ClinicalTrial, Claim, Payment, Session
+
+# Create a new session
+session = Session()
+
+# Example of adding a new user
+new_user = User(username='example_user', npi=123456)
+session.add(new_user)
+session.commit()
+
+# Example of adding a new clinical trial
+new_trial = ClinicalTrial(user_id=new_user.id, trial_name='Trial 1', status='ongoing')
+session.add(new_trial)
+session.commit()
+
+# Similarly, you can add claims and payments
+```
+

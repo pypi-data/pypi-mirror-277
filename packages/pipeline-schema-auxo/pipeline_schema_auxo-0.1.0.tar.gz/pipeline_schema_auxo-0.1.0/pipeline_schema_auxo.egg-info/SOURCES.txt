@@ -1,0 +1,8 @@
+README.md
+setup.py
+pipeline_schema_auxo.egg-info/PKG-INFO
+pipeline_schema_auxo.egg-info/SOURCES.txt
+pipeline_schema_auxo.egg-info/dependency_links.txt
+pipeline_schema_auxo.egg-info/entry_points.txt
+pipeline_schema_auxo.egg-info/requires.txt
+pipeline_schema_auxo.egg-info/top_level.txt
