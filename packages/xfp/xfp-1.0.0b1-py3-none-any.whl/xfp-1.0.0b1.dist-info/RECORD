@@ -1,0 +1,12 @@
+xfp/__init__.py,sha256=vPy6LkqcYB-jyFy73zIge1kbzJXVOfEOv6S_VMYVTQU,153
+xfp/tests/xeffect/test_xeffect_methods.py,sha256=LwsW4SU1mGmk_Coy9dxnBJ2Sp4oGDqw1wAPBqZ2sBj8,4497
+xfp/tests/xiter/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xfp/tests/xlist/test_xlist_constructors.py,sha256=WOe1L8qultVqfbesLCDSUXc3PEKIRmvciC1J8vRZOII,837
+xfp/tests/xlist/test_xlist_methods.py,sha256=pYwwUHU_oJY-Jb-Eo1QzuzhBolFSuSiVY62MOeQ05K8,2447
+xfp/utils.py,sha256=MFCG0PQpWdFdQM8NqS5FIRZkkWj6aNgvUBNHAr5eDc0,114
+xfp/xeffect.py,sha256=LlDISKMQdgtyaAw-6hz7EyGjigVmxN4JxsOg-N3M7VY,13221
+xfp/xiter.py,sha256=Ob75qA2UCwi4YNmNDajDKLIuYW6CF9YRhfmRH_r0Flg,1109
+xfp/xlist.py,sha256=QQ4TwE9R8nu3Y-JZzCGn9khJbELrBmM6XMCaeezu-dQ,9618
+xfp-1.0.0b1.dist-info/METADATA,sha256=9Ezsntc8THc-EoSb-d1Ou9eOVRar368HSapVhxui7Is,1364
+xfp-1.0.0b1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+xfp-1.0.0b1.dist-info/RECORD,,
