@@ -1,0 +1,9 @@
+csmap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+csmap/__main__.py,sha256=vHtQELib6zvFcdG8vA2D4BUZYYli_0xNYan343nwboQ,2115
+csmap/calc.py,sha256=ZWFs-_MeQx9QDtpDO67_uBnrKVnDj6fqIKXIQLVGFqE,2049
+csmap/color.py,sha256=eBY_NsZkCAOkWWB9lzttMzxS1zmglbENbHZmJFv0r-A,3717
+csmap/process.py,sha256=Xm9Dj9AcOzxvfpek2Mu6CGjisEf3hImk6dzXSGqLatw,6585
+csmap_py-0.1.4.dist-info/METADATA,sha256=bC4bzf4d2sLVvIuJSZgmzkasbbIWV2ktbm3bRbls2EQ,2995
+csmap_py-0.1.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+csmap_py-0.1.4.dist-info/entry_points.txt,sha256=AA2FLDzmxBHG6SunC-AZzVtyS1lKcJQk0MTM58019Ps,45
+csmap_py-0.1.4.dist-info/RECORD,,
