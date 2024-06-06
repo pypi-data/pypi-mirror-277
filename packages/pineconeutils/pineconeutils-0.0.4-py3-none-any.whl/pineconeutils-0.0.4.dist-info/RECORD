@@ -1,0 +1,14 @@
+pineconeutils/__init__.py,sha256=Sl8pP8cIZGnU8noVkuJFOAdwlvB9-dKMzE3oBk37KEk,33
+pineconeutils/cohere_embedding.py,sha256=0dtbBA6EB__JJtPW4T0SrARzWHaPl4PUePSoanVWC5A,521
+pineconeutils/cohere_services.py,sha256=xIjiXkkmwcMpuRBxU7kBax7lEACd0HJdOJ8bSjmMPSU,1437
+pineconeutils/docx_handler.py,sha256=wPJ2efWhM45icmHJetp2V9AX52eDTze8jNU_o9E9jqY,345
+pineconeutils/openai_embedding.py,sha256=UNYcMhY0-UV7fXBhFoTAnqvhFCfGdilE_TUzfXIqx_o,567
+pineconeutils/openai_services.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pineconeutils/pdf_handler.py,sha256=kjFRI_FL2w_pu9iFkDT_W48NajffG5BBg47-83sCl5o,519
+pineconeutils/pinecone_services.py,sha256=EBRZ23sYyvPV52ZhXX4gEzTyb42vcd3Kev-dKXA6xqg,3006
+pineconeutils/text_handler.py,sha256=F6wwKoFKA6Nbd2salZY0i006MUvOasTCCDI007yY1EY,303
+pineconeutils/utils.py,sha256=p01YzsTwa-TRFLnxKzubEbOLQGiq8maUQfJXjZjbo2M,2489
+pineconeutils-0.0.4.dist-info/METADATA,sha256=DgfcQApkpkZ5w504upJ5-mgg5mkH8xVa9dwGNPWZPpw,4232
+pineconeutils-0.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pineconeutils-0.0.4.dist-info/top_level.txt,sha256=qVbQyx0HzgDB_lVWSM_r29yKJizpqLBnWTiZ-6Gagj4,14
+pineconeutils-0.0.4.dist-info/RECORD,,
