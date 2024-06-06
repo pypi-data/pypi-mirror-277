@@ -1,0 +1,12 @@
+deepcs/__init__.py,sha256=F8OVhAhMXSkvvXYgZtbPn2SG1AQC3joK4yu-FrHt81Y,22
+deepcs/display.py,sha256=8qT6bd31zbB6yt09VgLEw_I2WL65BQZIhpYGaYM1kKM,2584
+deepcs/fileutils.py,sha256=0sVVrbo2MyMxDC_wHhR9CnPStXblW3j7W-c97d9Dwqg,555
+deepcs/metrics.py,sha256=m4t4zpFe1mMb7oS_yfPfKPUB8Ckzx0KxeGd6Wq1k5y8,4802
+deepcs/rng.py,sha256=n7VxDQmHma8JemX3c9xgIzbH9bKk0U1AxgF_6w2KbNo,494
+deepcs/testing.py,sha256=HhAhOM7aJiB-CKLnbtLPymNWe5hI9hR6PxCSWJu4YFY,2375
+deepcs/training.py,sha256=0EaYQGUgE-6-kQehYyJLleea0zamAbAQTmxAQAYgz5Y,4933
+deepcs-0.2.9.dist-info/LICENSE.txt,sha256=SGzKWBb1-7-VMaq3j_VoYf5IoTuHVBCxGSpIUBi-DDQ,178
+deepcs-0.2.9.dist-info/METADATA,sha256=PVkOTMthF--8hCX8EG7FYn9w84e94txahniKrpXRPZ4,1579
+deepcs-0.2.9.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+deepcs-0.2.9.dist-info/top_level.txt,sha256=uHgP2qiTgJxYLsaNZMHCGBIpfG6H1Lpm-tGUtmWWN6c,7
+deepcs-0.2.9.dist-info/RECORD,,
