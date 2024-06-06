@@ -1,0 +1,8 @@
+README.md
+setup.py
+myfunctions_dorukkakici/__init__.py
+myfunctions_dorukkakici/math.py
+myfunctions_dorukkakici.egg-info/PKG-INFO
+myfunctions_dorukkakici.egg-info/SOURCES.txt
+myfunctions_dorukkakici.egg-info/dependency_links.txt
+myfunctions_dorukkakici.egg-info/top_level.txt
