@@ -1,0 +1,8 @@
+acoustics_toolbox/__init__.py,sha256=yJ2yxp3dxKAbUVRFCvxJH5WoKWNvzqlfNbFJMlqIWyo,1106
+acoustics_toolbox/acoustics_basics.py,sha256=lUGeqOFS0yze6jwcO6ePhh3921vGhMXaipmL7ckMdMw,6677
+acoustics_toolbox/outdoor_propagation_tools.py,sha256=mDJ8r1SGkDfpFbHlwVgvRRxzwHtsURTJI0XR8uas-ks,2419
+acoustics_toolbox/replicate_iso9613_1.py,sha256=FI1qSHzr1i8d_gN2Dn1bOeMXacV4ra2fid4bCLPZkWY,9743
+acoustics_toolbox/replicate_iso9613_2.py,sha256=2waFjGEeJUJw9yK1Gri15zmNdwuSj1JrzIDPsUdPpYk,5949
+acoustics_toolbox-0.0.3.dist-info/METADATA,sha256=E6xwyfW-hf88o2K1PT62v7CacrYcD1tp_soZj3kL-8c,1361
+acoustics_toolbox-0.0.3.dist-info/WHEEL,sha256=IrRNNNJ-uuL1ggO5qMvT1GGhQVdQU54d6ZpYqEZfEWo,92
+acoustics_toolbox-0.0.3.dist-info/RECORD,,
