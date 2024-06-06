@@ -1,0 +1,9 @@
+README.md
+setup.py
+hwo_custom_markers/__init__.py
+hwo_custom_markers/generate_custom_markers.py
+hwo_custom_markers.egg-info/PKG-INFO
+hwo_custom_markers.egg-info/SOURCES.txt
+hwo_custom_markers.egg-info/dependency_links.txt
+hwo_custom_markers.egg-info/requires.txt
+hwo_custom_markers.egg-info/top_level.txt
