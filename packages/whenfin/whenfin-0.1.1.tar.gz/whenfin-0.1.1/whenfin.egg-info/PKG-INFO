@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: whenfin
+Version: 0.1.1
+Summary: Connects a Python program to Whenfin services
+Author: Luca Dovichi
+Author-email: lucadovichi@uchicago.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
