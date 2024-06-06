@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: notipi
+Version: 0.0.3
+Summary: A package to deliver notifications via your telegram bot
+Author-email: Harshit Sharma <harshit158@gmail.com>
+Project-URL: Homepage, https://github.com/harshit158/notipi
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: anyio ==4.4.0
+Requires-Dist: certifi ==2024.6.2
+Requires-Dist: enum34 ==1.1.10
+Requires-Dist: h11 ==0.14.0
+Requires-Dist: httpcore ==1.0.5
+Requires-Dist: httpx ==0.27.0
+Requires-Dist: idna ==3.7
+Requires-Dist: python-dotenv ==1.0.1
+Requires-Dist: python-telegram-bot ==21.2
+Requires-Dist: sniffio ==1.3.1
+
+## Installation
+    $ pip install notipi 
+
+## Setup
+In order to use notipi library - you would be needing two environment variables: `BOT_API_TOKEN` and `CHAT_ID`
+
+<u>To get `BOT_API_TOKEN`:</u>
+
+- In the telegram app, initiate conversation with `@BotFather` and follow the instructions to create a new bot and get the `BOT_API_TOKEN`<br>
+- You will be required to enter bot's account name and username.
+- Detailed instructions can be found at [Telegram website](https://core.telegram.org/bots/features#creating-a-new-bot:~:text=and%20managing%20bots.-,Creating%20a%20new%20bot,-Use%20the%20/newbot)
+
+<u>To get `CHAT_ID`:</u>
+- Once a new bot is created, send a dummy message to the bot via Telegram app so that your chat gets assigned an ID. <br>
+- Run the following script with your `BOT_API_TOKEN` to get your `CHAT_ID`
+```python
+from notipi.notipi import get_chat_id
+get_chat_id(BOT_API_TOKEN)
+```
+
+This will give the following output:
+```
+Your CHAT ID: 1234567890
+```
+
+Once the `BOT_API_TOKEN` and `CHAT_ID` are obtained, set the environment variables
+
+    export BOT_API_TOKEN=<bot_api_token>
+    export CHAT_ID=<chat_id>
+
+## Usage
+
+Once the required environment variables are in place, following script can be used to send messages to your telegram app.
+
+```python
+from notipi.notipi import notify
+
+def example():
+    for i in range(1000):
+        if i%100==0:
+            notify(f"Currently at {i}")
+```
