@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: manufacture
+Version: 0.5.7
+Summary: A simple command-line tool to create and manage files.
+Home-page: https://github.com/Spandan7724/manufacture.git
+Author: Spandan Chavan
+Author-email: spandanchavan727477@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Manufacture
+
+Manufacture is a simple command-line tool to create files with the specified name and type.
+
+## Installation
+
+You can install Manufacture using pip:
+
+```sh
+pip install manufacture
