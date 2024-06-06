@@ -1,0 +1,261 @@
+Metadata-Version: 2.1
+Name: sn-nacl
+Version: 0.5.0
+Summary: SN modeling package
+Home-page: https://gitlab.in2p3.fr/cosmo/sn-nacl
+Author: Nicolas Regnault, Guy Augarde
+Author-email: nicolas.regnault@lpnhe.in2p3.fr
+License: Apache Software License
+Keywords: astronomy,astrophysics
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: importlib_resources; python_version < "3.9"
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: tables
+Requires-Dist: keyring
+Requires-Dist: bbf
+Requires-Dist: lemaitre-bandpasses
+Requires-Dist: astropy
+Requires-Dist: sncosmo
+Requires-Dist: extinction
+
+# NaCl: *Nouveaux algorithmes de Courbes de lumiere*
+
+> |:warning:|  **This code is still under development and cannot be considered stable** 
+
+The `NaCl` package contains code to develop and train type Ia supernova
+spectrophotometric models. NaCl can train hybrid models, i.e. models trained
+simultaneously on lightcurves, spectral and/or, optionaly, spectrophotometric
+data, such as the spectrophotometric sequences published by the SNfactory
+collaboration.
+
+As of today, `NaCl` contains:
+  - a re-implementation of the SALT2 model and error model (Guy et al, 2007,
+    2010), with various improvements to make sure that the training can be
+    performed in one single minimization 
+  - classes to manage a hybrid (light curves + spectra + photometric spectra)
+    training sample
+  - a minimization framework that is able to minize a log-likelihood function,
+    along with quadratic constraints (optional) and quadratic regularization
+    penalities (optional).  It is also possible to fit a fairly general error
+    model simultaneously.
+
+
+# Installation
+
+It it generally a good idea to work in a clean virtual environment. One 
+can use either Miniconda or virtualenv:
+
+## Miniconda (recommended)
+
+This is currently the recommended method. NaCl depends on the
+[cholmod](https://scikit-sparse.readthedocs.io/en/latest/cholmod.html) library,
+a component of
+[suitesparse](https://people.engr.tamu.edu/davis/suitesparse.html), which may be
+missing on some platforms. conda provides compiled packages for suitesparse and
+cholmod, which may greatly simplify the installation process. Another (optional,
+but potentially very useful dependency) is the [sparse_dot_mkl
+package](https://pypi.org/project/sparse-dot-mkl), a component of the Intel
+[mkl](https://anaconda.org/intel/mkl) library. Both may be obtained from conda.
+
+``` bash
+conda create -n nacl python
+conda activate nacl
+```
+
+Some packages actually come from conda-forge:
+
+``` bash
+conda config --add channels conda-forge
+conda config --add channel_priority strict
+```
+
+Mamba is a C++ rewrite of the conda package manager. It is much faster, so we
+recommend you install it:
+
+``` bash
+conda install mamba
+```
+
+Install the pre-requisites:
+
+``` bash
+conda install numpy scipy mkl sparse_dot_mkl
+```
+
+Now, you are ready to install NaCl either via pip, or from source (see below).
+
+
+
+## virtualenv
+
+Alternatively, you can create a virtualenv:
+
+``` bash
+python -m venv naclenv
+source naclenv/bin/activate
+```
+
+Install the pre-requisites:
+
+``` bash
+pip install numpy scipy scikit-sparse
+```
+
+
+## Compile NaCl from source [recommended]
+
+At this stage of development, the best option is to clone the `NaCl` repository
+and install from source:
+
+```bash
+git clone https://gitlab.in2p3.fr/cosmo/sn-nacl
+cd sn-nacl
+pip install -r requirements.txt
+```
+
+To install the code: 
+```bash
+python setup.py install [--user]
+```
+or (recommended):
+```bash
+pip install . 
+```
+
+if you intend to hack the code, and prefer to work with an editable install:
+```bash
+pip install -e . 
+```
+
+### With pip
+
+`NaCl` may also be installed with pip:
+> |:warning:|  **the current version of NaCl is outdated - we will update it with the next code release**
+
+```bash
+pip install sn-nacl 
+```
+
+### Dealing with scikit-sparse
+
+`NaCl` depends on the python bindings to the `cholmod` package,
+distributed with the `scikit-sparse` package.  In most cases,
+`scikit-sparse` will be fetched automatically and installed without any
+problem.  However, depending on your version of python the
+installation may crash for various reasons: 
+  - he package needs numpy to be installed already (and doesn't fetch it
+    automatically if missing).  
+  - the packages needs `cython` : `pip install cython` should solve the problem.
+  - finally, libsuitesparse should also be available on your
+	system. On a debian or ubuntu system: ```sudo apt-get install
+	libsuitesparse-dev``` should suffice. On Fedora/CentOS the
+	equivalent is ```sudo yum install
+	libsuitesparse-devel```. Otherwise, an alternative is to to the
+	[SuiteSparse repository](https://github.com/DrTimothyAldenDavis/SuiteSparse),
+	clone it and follow the installation instructions.
+  - Also, for python>=3.10, the pip
+installation of scikit-sparse may complain about various things and
+stops.  If you encounter this kind of problem, this longer install
+sequence should work:
+
+```bash 
+pip install numpy
+git clone https://github.com/scikit-sparse/scikit-sparse.git
+cd scikit-sparse; python setup.py install; cd ..
+pip install sn-nacl
+```
+
+## Install the Metadata [mandatory]
+
+To work, NaCl needs a number of metadata files, notably the passbands
+of the survey instruments used to gather the training datasets. We
+intend to interface NaCl with the sncosmo registry. Until it is done,
+you need to download the metadata archive, unpack it somewhere and
+point the SALTPATH environment variable to its location:
+
+```
+wget http://me.lsst.eu/regnault/nacl/snfit_data.tar.gz 
+tar xvzf snfit_data.tar.gz 
+cd snfit_data
+export SALTPATH=`pwd`
+```
+
+## SALT2 files [mandatory]
+
+`NaCl` uses the original SALT2 model to generate its simulated
+datasets. All relevant SALT2 files have been compacted into one single
+archive. To create it:
+
+```
+cd sn-nacl/data
+python make_salt2_npz.py 
+```
+
+It creates a `salt2.npz` which can be used by the `NaCl` code. 
+
+
+## Training datasets [optional]
+
+NaCl was developped using three kinds of simulated training datasets. 
+  - ideal datasets. These are generated on the fly
+  - JLA- and K21-emulations. To use those, you need to download the
+    original data and compact it into two single data frames (for the
+    spectra and the photometry respectively). Since it takes some time, 
+	it is done manually once for all (see instructions below). 
+	
+  
+### JLA 
+
+```
+cd sn-nacl/data/jla
+python make.py
+```
+
+### K21
+
+```
+cd sn-nacl/data/k21
+make -f src/module.mk
+```
+
+In a near future, we will probably distribute the compacted training
+samples using the sncosmo registry. Consider the above as a temporary
+annoyance.
+
+
+## Building the documentation 
+
+First make sure you have sphinx installed: 
+```bash
+pip install sphinx_gallery sphinx_rtd_theme
+```
+then 
+```bash
+$ cd docs
+$ make html  # for example 
+```
+type 
+```bash
+$ make 
+```
+for a list of targets. 
+
+
+## Tutorials
+
+```bash
+cd sn-nacl/tutorials
+python simple_tutorial.py
+python tutorial_model_error_snake.py
+# python tutorial_model_variancemodel_calib.py
+```
+

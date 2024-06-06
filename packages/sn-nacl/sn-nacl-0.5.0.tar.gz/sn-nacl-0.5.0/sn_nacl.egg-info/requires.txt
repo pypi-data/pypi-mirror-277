@@ -1,0 +1,13 @@
+numpy
+pandas
+scipy
+tables
+keyring
+bbf
+lemaitre-bandpasses
+astropy
+sncosmo
+extinction
+
+[:python_version < "3.9"]
+importlib_resources
