@@ -1,0 +1,5 @@
+setup.py
+letbabytalk.egg-info/PKG-INFO
+letbabytalk.egg-info/SOURCES.txt
+letbabytalk.egg-info/dependency_links.txt
+letbabytalk.egg-info/top_level.txt
