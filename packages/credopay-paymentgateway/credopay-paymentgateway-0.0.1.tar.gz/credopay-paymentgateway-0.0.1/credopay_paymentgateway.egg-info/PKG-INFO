@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: credopay-paymentgateway
+Version: 0.0.1
+Summary: A small example package
+Author: Credopay
+Author-email: Madhan R <madhan4r@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# CredoPay Gateway
+
+CredoPay Gateway is a Python package that provides an easy-to-use interface for interacting with the CredoPay payment gateway API. This package allows you to create orders, check order status, and manage transactions securely and efficiently.
+
+## Features
+
+- **Order Management**: Create and manage orders through CredoPay.
+- **Transaction Management**: Handle transactions with ease.
+- **Secure Authentication**: Uses secure basic authentication for API requests.
+- **System Information**: Attaches system and server information to each request for better tracking and security.
+
+## Installation
+
+You can install the package via pip:
+
+```bash
+pip install credopay-gateway
