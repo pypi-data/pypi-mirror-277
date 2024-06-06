@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "my_yo_yo_test"
+version = "0.1.0-beta.0"
+description = "some test"
+license = "Apache-2.0"
+authors = [
+    "Rami Mashkouk <rami.n.mashkouk@gmail.com>",
+]
+readme = "README.md"
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
