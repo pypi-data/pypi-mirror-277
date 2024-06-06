@@ -1,0 +1,9 @@
+clwdevops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clwdevops/aws.py,sha256=ZYX4TbDih_JIaSsp_Q77xmPDiDvHNKo7mTL1G5-yT58,1450
+clwdevops/connect.py,sha256=xCyh8GuBVvLAe5aNUwWtnR3Dz8x6b61QG9MszE0FLDw,2064
+clwdevops/csvutils.py,sha256=ZuugH8KKthunsLCgilruaOl14HTRnZUeiIJiRmC8CNQ,2159
+clwdevops/utils.py,sha256=9UHUom5VZzYo12QbnRcOV6y0D--kN0RpPksGJpaQ-L0,966
+clwdevops-0.4.4.dist-info/METADATA,sha256=kwbTrNn3QnVzeoVCrnUwCnu9IrXGZddu4b8E1GLRh0s,487
+clwdevops-0.4.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+clwdevops-0.4.4.dist-info/top_level.txt,sha256=j8ba6yN2yEG88sbygCxJbnzr_quFPjN7H3hGtAG9wwc,10
+clwdevops-0.4.4.dist-info/RECORD,,
