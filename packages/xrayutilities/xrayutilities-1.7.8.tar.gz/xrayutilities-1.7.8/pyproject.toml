@@ -1,0 +1,38 @@
+[build-system]
+requires = [
+    "scipy",
+    "h5py",
+    "setuptools",
+    "wheel",
+    # Note for packagers: the numpy version constraint is specific to wheels
+    # for PyPI; it is also supported to build against 1.xx still.
+    # If you do so, please ensure to include a `numpy<2.0` runtime requirement
+    # for those binary packages.
+    "numpy>=2.0.0rc1",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.coverage.paths]
+source = [
+    "lib",
+    "*/site-packages"
+]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+source = [
+    "xrayutilities"
+]
+
+[tool.pylint]
+disable = ["invalid-name", "R", "C", "W"]
+extension-pkg-allow-list = ["xrayutilities.cxrayutilities"]
+ignored-modules = ["scipy.special"]
+
+[tool.flake8]
+extend-ignore = ["E741", "E203", ]
+per-file-ignores = [
+    "__init__.py:F401",
+]
+count = true
