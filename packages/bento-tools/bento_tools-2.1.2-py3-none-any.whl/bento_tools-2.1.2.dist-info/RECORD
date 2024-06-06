@@ -1,0 +1,10 @@
+bento/datasets/datasets.csv,sha256=u_bOniUgcFMoRxpFH19_q8JCV8uBvWFDOICd32jXcIU,1215
+bento/models/rf_calib_20220514.pkl,sha256=eWCIWKnjN6oPKE1OstJ7s3N_RDLDuNyE8_abrATbUQQ,51685360
+bento/models/rf_model_20211102.pkl,sha256=tgkVZeb0ygGzHDCIrELl6gRXu84lAsHYY2pD8boevY0,51682884
+bento/tools/gene_sets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bento/tools/gene_sets/fazal2019.csv,sha256=L_J71Ry14Gad0o_1U3D85vU5PRfUaUojWODcAN9y7rc,700014
+bento/tools/gene_sets/xia2019.csv,sha256=bzsoeIycpEp3jPZ-Vue8ruiMkvNt7hL6dO_tkTphFjw,746826
+bento_tools-2.1.2.dist-info/METADATA,sha256=lI2yB7B7iuCLMkxI8fQdERABA47V8edYN2Mg5EoQIts,3312
+bento_tools-2.1.2.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+bento_tools-2.1.2.dist-info/licenses/LICENSE,sha256=hw7jR6XZQUrG2T_60IOnBbs7yQaDcIDaBCmf_XsGS3o,1353
+bento_tools-2.1.2.dist-info/RECORD,,
