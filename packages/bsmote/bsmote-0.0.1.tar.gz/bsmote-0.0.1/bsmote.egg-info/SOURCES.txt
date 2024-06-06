@@ -1,0 +1,8 @@
+setup.py
+bsmote.egg-info/PKG-INFO
+bsmote.egg-info/SOURCES.txt
+bsmote.egg-info/dependency_links.txt
+bsmote.egg-info/requires.txt
+bsmote.egg-info/top_level.txt
+libname/__init__.py
+libname/hello.py
