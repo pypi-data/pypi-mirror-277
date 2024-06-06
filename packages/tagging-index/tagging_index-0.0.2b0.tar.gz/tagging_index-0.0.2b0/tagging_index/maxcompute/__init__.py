@@ -1,0 +1,1 @@
+from .initialize_maxcompute import _maxcompute_setup as maxcompute_setup
