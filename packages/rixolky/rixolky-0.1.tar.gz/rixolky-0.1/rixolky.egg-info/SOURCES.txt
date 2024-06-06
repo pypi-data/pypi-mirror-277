@@ -1,0 +1,7 @@
+pyproject.toml
+setup.py
+rixolky.egg-info/PKG-INFO
+rixolky.egg-info/SOURCES.txt
+rixolky.egg-info/dependency_links.txt
+rixolky.egg-info/entry_points.txt
+rixolky.egg-info/top_level.txt
