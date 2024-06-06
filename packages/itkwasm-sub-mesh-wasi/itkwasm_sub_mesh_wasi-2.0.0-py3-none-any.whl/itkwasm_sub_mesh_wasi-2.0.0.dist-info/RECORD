@@ -1,0 +1,7 @@
+itkwasm_sub_mesh_wasi/__init__.py,sha256=9O15dAnECrMQpb8pANcicyy_Wwt6HHgZu7uUUyexKek,232
+itkwasm_sub_mesh_wasi/_version.py,sha256=_7OlQdbVkK4jad0CLdpI0grT-zEAb-qgFmH5mFzDXiA,22
+itkwasm_sub_mesh_wasi/sub_mesh.py,sha256=qkkAKWCwCXu6k-F9m1IbeS-jVk6HMcoT2wkYv43-_tA,1639
+itkwasm_sub_mesh_wasi/wasm_modules/sub-mesh.wasi.wasm,sha256=eZZVczZcE-7h4xiz0pecfegJvh_S7zZ26xzZfvNfYqE,4548971
+itkwasm_sub_mesh_wasi-2.0.0.dist-info/METADATA,sha256=OSceE32sfnLwhRY9Pavj_1dsgaxugTKPlHQSe_8DTC8,1753
+itkwasm_sub_mesh_wasi-2.0.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+itkwasm_sub_mesh_wasi-2.0.0.dist-info/RECORD,,
