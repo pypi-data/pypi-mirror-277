@@ -1,0 +1,6 @@
+onnxruntime~=1.14.1
+tf2onnx~=1.15.0
+tensorflow~=1.15.0
+onnx==1.14.1
+h5py==2.9.0
+numpy
