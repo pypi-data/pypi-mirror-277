@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ImageLabelingTool/Image_Labeling.py
+ImageLabelingTool/__init__.py
+ImageLabelingTool.egg-info/PKG-INFO
+ImageLabelingTool.egg-info/SOURCES.txt
+ImageLabelingTool.egg-info/dependency_links.txt
+ImageLabelingTool.egg-info/requires.txt
+ImageLabelingTool.egg-info/top_level.txt
