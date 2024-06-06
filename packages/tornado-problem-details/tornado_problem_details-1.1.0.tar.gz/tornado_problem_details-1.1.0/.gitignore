@@ -1,0 +1,9 @@
+.*
+!/.github/
+!/.gitignore
+!/.readthedocs.yml
+/build/
+/dist/
+/env/
+*.egg-info
+*.pyc
