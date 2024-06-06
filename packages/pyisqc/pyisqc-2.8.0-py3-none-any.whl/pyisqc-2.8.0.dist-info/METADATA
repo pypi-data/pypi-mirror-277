@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyisqc
+Version: 2.8.0
+Summary: python interface to call isqc
+Home-page: https://www.arclightquantum.com/
+License: LICENSE.md
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich (>=13.7.0)
+
+# pyisqc 
+
+support Linux and Windows
