@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+VERSION.txt
+pyproject.toml
+setup.cfg
+setup.py
+my_new_release_project_aba1.egg-info/PKG-INFO
+my_new_release_project_aba1.egg-info/SOURCES.txt
+my_new_release_project_aba1.egg-info/dependency_links.txt
+my_new_release_project_aba1.egg-info/top_level.txt
+package1/__init__.py
+package1/add_sub_mult_div.py
+package1/main.py
+tests/test_add_sub_mult_div.py
