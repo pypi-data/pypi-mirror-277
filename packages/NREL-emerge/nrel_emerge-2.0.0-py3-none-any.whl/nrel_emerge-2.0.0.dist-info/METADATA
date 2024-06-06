@@ -1,0 +1,64 @@
+Metadata-Version: 2.3
+Name: NREL-emerge
+Version: 2.0.0
+Summary: Emerging technologies Management and Risk evaluation on distributions Grid Evolution
+Project-URL: Documentation, https://github.com/NREL/EMeRGE#readme
+Project-URL: Issues, https://github.com/NREL/EMeRGE/issues
+Project-URL: Source, https://github.com/NREL/EMeRGE/grid-data-models
+Author-email: Kapil Duwadi <kapil.duwadi@nrel.gov>
+License-File: LICENSE.txt
+Keywords: DER,Distribution,System,analysis,impact,management,risk,technologies
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Requires-Dist: click
+Requires-Dist: json5
+Requires-Dist: loguru
+Requires-Dist: networkx
+Requires-Dist: opendssdirect-py==0.8.4
+Requires-Dist: pandas
+Requires-Dist: polars
+Requires-Dist: psutil
+Requires-Dist: pyarrow
+Requires-Dist: pydantic
+Requires-Dist: pyyaml
+Requires-Dist: sqlmodel
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: autodoc-pydantic; extra == 'doc'
+Requires-Dist: myst-parser; extra == 'doc'
+Requires-Dist: pydata-sphinx-theme; extra == 'doc'
+Requires-Dist: sphinx; extra == 'doc'
+Requires-Dist: sphinxcontrib-mermaid; extra == 'doc'
+Description-Content-Type: text/markdown
+
+## Emerging technologies Management and Risk evaluation on distribution Grids Evolution (EMERGE)
+
+<p align="center"> 
+<img src="docs/images/logo.svg" width="150" style="display:flex;justify-content:center;">
+<p align="center">Modern tool for exploring and performing DER impact assessment for power distribution networks. </p>
+</p>
+
+![GitHub all releases](https://img.shields.io/github/downloads/NREL/emerge/total?logo=Github&logoColor=%2300ff00&style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/nrel/emerge?style=flat-square)
+![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/nrel/emerge?color=%23ff0000&logo=python&logoColor=%2300ff00&style=flat-square)
+[![GitHub license](https://img.shields.io/github/license/NREL/emerge?style=flat-square)](https://github.com/NREL/emerge/blob/main/LICENSE.txt)
+[![GitHub issues](https://img.shields.io/github/issues/NREL/emerge?style=flat-square)](https://github.com/NREL/emerge/issues)
+![GitHub top language](https://img.shields.io/github/languages/top/nrel/emerge?style=flat-square)
+
+[Check for full documentation here.](https://nrel.github.io/EMeRGE/)
+
+### :wave: Welcome to EMERGE Repository !
+
+EMERGE allows user quickly analyze the distribution feeder by providing access to simple yet powerful visualization platform. You can compute metrics for both snapshot and time series simulations (note we are still actively developing new features on this so things might change rapidly. if you have any feedback reach out to us by creating issue).
+
+:rocket: We would appreciate if you can star our repo. 
+
+
+
+
