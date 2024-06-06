@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: todomanager
+Version: 0.0.2
+Summary: Manage your daily tasks in the terminal with the super readable command-line interface design
+Author-email: Alex Zolotarov <alex@zolotarov.me>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+Requires-Dist: rich
+Requires-Dist: fire
+
+# ToDoManager
+Human readble command line task manager
+
+### Example commands
+```
+todo add "read a book"
+todo list
+todo check 1
+todo delete 0
+```
+
+**ToDoManager** automatically create and stores all your tasks in YAML files.
+You can find all your daylogs in the `$HOME/Documents/todo`
+
+```
+/home/alex/Documents/todo
+├── 2024-06-04.yaml
+└── 2024-06-05.yaml
+```
+
+Each **YAML** file represents a new **daylog**, containing all your tasks for a specific day
+
+

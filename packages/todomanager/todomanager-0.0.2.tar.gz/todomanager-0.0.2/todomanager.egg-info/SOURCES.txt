@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+todo/__init__.py
+todo/manager.py
+todomanager.egg-info/PKG-INFO
+todomanager.egg-info/SOURCES.txt
+todomanager.egg-info/dependency_links.txt
+todomanager.egg-info/entry_points.txt
+todomanager.egg-info/requires.txt
+todomanager.egg-info/top_level.txt
