@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+shifrator.egg-info/PKG-INFO
+shifrator.egg-info/SOURCES.txt
+shifrator.egg-info/dependency_links.txt
+shifrator.egg-info/requires.txt
+shifrator.egg-info/top_level.txt
