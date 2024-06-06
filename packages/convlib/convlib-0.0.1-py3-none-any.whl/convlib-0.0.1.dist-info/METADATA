@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: convlib
+Version: 0.0.1
+Summary: Conversion library (pre-alpha)
+Author-email: Sam Griesemer <samgriesemer+git@gmail.com>
+Project-URL: Homepage, https://doc.olog.io/convlib
+Project-URL: Documentation, https://doc.olog.io/convlib
+Project-URL: Repository, https://git.olog.io/olog/convlib
+Project-URL: Issues, https://git.olog.io/olog/convlib/issues
+Keywords: conversion
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sqlalchemy
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-togglebutton ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'docs'
+Requires-Dist: furo ; extra == 'docs'
+Requires-Dist: myst-parser ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+
+# Overview
