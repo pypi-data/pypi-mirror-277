@@ -1,0 +1,2 @@
+faster-whisper
+llm-dataset-converter>=0.2.3
