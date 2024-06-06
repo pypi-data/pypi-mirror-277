@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: evalTool
+Version: 0.1
+Summary: Validation framework with feedback loop
+Home-page: https://github.com/Deloitte-US/RAG_Validation_Framework
+Author: Validation_team
+Author-email: vidhjain@deloitte.com
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: streamlit
+Requires-Dist: json5
+Requires-Dist: aider-chat
+Requires-Dist: deepeval
+Requires-Dist: python-dotenv
+
