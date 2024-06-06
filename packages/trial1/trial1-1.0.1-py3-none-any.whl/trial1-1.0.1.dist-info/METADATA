@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: trial1
+Version: 1.0.1
+Summary: Tools that update the pyOpenSci contributor and review metadata
+Home-page: https://example.com
+Author: James
+Author-email: james@example.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy >=1.0
+Requires-Dist: pandas
+Requires-Dist: emcee
+Requires-Dist: corner
+Requires-Dist: matplotlib
+
+Hello
