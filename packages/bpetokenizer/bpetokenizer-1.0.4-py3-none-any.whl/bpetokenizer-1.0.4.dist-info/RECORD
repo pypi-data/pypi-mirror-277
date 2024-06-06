@@ -1,0 +1,9 @@
+bpetokenizer/__init__.py,sha256=MP7LaBjjWcJVEjyZ9yGVBdawQ32q9PibzCqdq2fDGbw,96
+bpetokenizer/base.py,sha256=Z2GbkvceVocNS2fm2xXJa8EKEjJJpmCS42TFjKvszwI,9646
+bpetokenizer/tokenizer.py,sha256=QA9Z8W0IGu92AYi3jbZd-SW7TjNADRwWnkk9q0IeDtc,7767
+bpetokenizer/version.py,sha256=O-a1T6uLdX0DYXelAnzqY4NDGktopbWdpKZloec7oxY,21
+bpetokenizer/pretrained/wi17k_base/wi17k_base.json,sha256=RAXsaxN4Cz9c8DewbF2bm1PciacddjxW9cbIFkft2U0,965745
+bpetokenizer-1.0.4.dist-info/METADATA,sha256=u2JU2rq4j7dhIHhQZSlIHyXxboZYpv3b0v5dCMUbkUs,7393
+bpetokenizer-1.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+bpetokenizer-1.0.4.dist-info/top_level.txt,sha256=VWTyHVnYZzE8wR9g0xNOC6bt3fN8OR_O_tGDWvo6dpE,13
+bpetokenizer-1.0.4.dist-info/RECORD,,
