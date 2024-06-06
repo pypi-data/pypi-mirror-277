@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: topacademy_api
+Version: 1.1
+Summary: A library for Python that provides an easy interface to interact with the TOP Academy resources
+License: GPL-2.0
+Author: Egor A. Balenko
+Author-email: contact@dust0n.ru
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (>=2.32.3,<3.0.0)
