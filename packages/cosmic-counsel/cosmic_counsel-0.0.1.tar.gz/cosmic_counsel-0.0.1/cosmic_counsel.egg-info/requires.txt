@@ -1,0 +1,8 @@
+torch
+transformers
+numpy
+pandas
+uvicorn
+bitsandbytes
+accelerate
+sentence-transformers

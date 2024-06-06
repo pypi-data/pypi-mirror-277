@@ -1,0 +1,12 @@
+README.md
+setup.py
+cosmic-counsel/__init__.py
+cosmic-counsel/__main__.py
+cosmic-counsel/cosmic_utils.py
+cosmic-counsel/data/chat_history.json
+cosmic-counsel/data/relevant_history.json
+cosmic_counsel.egg-info/PKG-INFO
+cosmic_counsel.egg-info/SOURCES.txt
+cosmic_counsel.egg-info/dependency_links.txt
+cosmic_counsel.egg-info/requires.txt
+cosmic_counsel.egg-info/top_level.txt
