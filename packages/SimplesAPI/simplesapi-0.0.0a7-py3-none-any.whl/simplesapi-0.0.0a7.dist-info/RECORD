@@ -1,0 +1,8 @@
+simplesapi/__init__.py,sha256=JejeOeUdFaKBBAOzwK-BAhJPOaNWftm0vVpZA3fvlb4,173
+simplesapi/app.py,sha256=iaI3uf0c7ZO9QigRNJ_I3EM81IYeaWDW8KbwH7QgqdA,932
+simplesapi/auto_routing.py,sha256=K2dw5Tjoj4a7qCSCJ1hTNymfOjRFzNjYT6aFID3Nu0c,1480
+simplesapi/lifespan.py,sha256=S1H_jnob8BIwRM4JHKjtBGKAyFU0QW6pS-k9mnWPrSg,143
+simplesapi/settings.py,sha256=gsFzMAA6Momz74uFbCfj_5TN_OoieH_NMwj5jO1kkXA,1091
+simplesapi-0.0.0a7.dist-info/METADATA,sha256=urVS4Z-nP_gqXFBWQYBttC9SQHQuqKEijhmeRcFHW4I,566
+simplesapi-0.0.0a7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+simplesapi-0.0.0a7.dist-info/RECORD,,
