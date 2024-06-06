@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/google_calendar_invoices.egg-info/PKG-INFO
+src/google_calendar_invoices.egg-info/SOURCES.txt
+src/google_calendar_invoices.egg-info/dependency_links.txt
+src/google_calendar_invoices.egg-info/entry_points.txt
+src/google_calendar_invoices.egg-info/requires.txt
+src/google_calendar_invoices.egg-info/top_level.txt
+src/invoice_creator/main.py
+src/invoice_creator/quickstart.py
