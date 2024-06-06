@@ -1,0 +1,11 @@
+License.txt
+README.md
+pyproject.toml
+src/OneGen/__init__.py
+src/OneGen/example.py
+src/OneGen.egg-info/PKG-INFO
+src/OneGen.egg-info/SOURCES.txt
+src/OneGen.egg-info/dependency_links.txt
+src/OneGen.egg-info/requires.txt
+src/OneGen.egg-info/top_level.txt
+tests/test_example.py

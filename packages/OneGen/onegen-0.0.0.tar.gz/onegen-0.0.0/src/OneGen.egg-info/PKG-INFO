@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: OneGen
+Version: 0.0.0
+Summary: OneGen是基于pytorch的深度学习项目的快速构建
+Author-email: Charles Zhu <ion_uig@163.com>
+Maintainer-email: Charles Zhu <ion_uig@163.com>
+Keywords: Deep Learning,Pytorch, Build Tools
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools  
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: License.txt
+Requires-Dist: tqdm
+Requires-Dist: transformer
+
+# OneGen
+
+OneGen是一个基于pytorch的第三方库，用于快速的构建深度学习模型。省略掉繁琐的项目构建代码，使开发者只关注模型的开发，数据的读取和清洗，以及训练的参数调优。后续还会继续省略掉数据相关的工作。
+
+## 安装
+
+```shell
+
+pip install OneGen
+
+```

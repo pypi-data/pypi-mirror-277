@@ -1,0 +1,45 @@
+[project]
+name = "OneGen"
+dynamic = ["version"]
+dependencies = ["tqdm","transformer"] #替换为自己的依赖
+requires-python = ">= 3.6"
+authors = [
+  {name = "Charles Zhu", email = "ion_uig@163.com"}
+]
+maintainers = [
+  {name = "Charles Zhu", email = "ion_uig@163.com"}
+]
+description = "OneGen是基于pytorch的深度学习项目的快速构建" 
+readme = "README.md"
+license = {file = "LICENSE"}
+
+keywords = ["Deep Learning", "Pytorch"," Build Tools"] # 替换关键词，用于在pypi平台搜索
+
+classifiers = [
+  # 根据项目的开发程度来选
+  #   3 - Alpha
+  #   4 - Beta
+  #   5 - Production/Stable
+  "Development Status :: 3 - Alpha",
+
+  # 指出项目的目标对象
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Build Tools  ",
+
+  # Specify the Python versions you support here.
+  "Programming Language :: Python"
+]
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
+minversion = "8.2.1"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
