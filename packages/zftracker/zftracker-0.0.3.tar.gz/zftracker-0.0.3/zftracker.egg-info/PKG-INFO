@@ -1,0 +1,269 @@
+Metadata-Version: 2.1
+Name: zftracker
+Version: 0.0.3
+Summary: Python library for tracking group of zebrafish
+Home-page: https://github.com/yourusername/zftracker
+Author: Junhao An
+Author-email: anjunhao_23@163.com
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: absl-py==2.1.0
+Requires-Dist: aiohttp==3.8.6
+Requires-Dist: aiosignal==1.3.1
+Requires-Dist: aiosqlite==0.19.0
+Requires-Dist: albumentations==1.3.1
+Requires-Dist: anyio==3.7.1
+Requires-Dist: argon2-cffi==23.1.0
+Requires-Dist: argon2-cffi-bindings==21.2.0
+Requires-Dist: arrow==1.2.3
+Requires-Dist: asttokens==2.2.1
+Requires-Dist: async-lru==2.0.4
+Requires-Dist: async-timeout==4.0.3
+Requires-Dist: attrs==23.1.0
+Requires-Dist: autopep8==2.0.4
+Requires-Dist: av==11.0.0
+Requires-Dist: Babel==2.12.1
+Requires-Dist: backcall==0.2.0
+Requires-Dist: beautifulsoup4==4.12.2
+Requires-Dist: black==23.7.0
+Requires-Dist: bleach==6.0.0
+Requires-Dist: certifi==2022.12.7
+Requires-Dist: cffi==1.15.1
+Requires-Dist: charset-normalizer==2.1.1
+Requires-Dist: click==8.1.7
+Requires-Dist: cloudpickle==2.2.1
+Requires-Dist: codeium-jupyter==1.1.21
+Requires-Dist: colorama==0.4.6
+Requires-Dist: comm==0.1.4
+Requires-Dist: contourpy==1.1.0
+Requires-Dist: crc32c==2.3.post0
+Requires-Dist: cycler==0.11.0
+Requires-Dist: dask==2023.9.1
+Requires-Dist: dataclasses-json==0.6.1
+Requires-Dist: debugpy==1.6.7.post1
+Requires-Dist: decorator==4.4.2
+Requires-Dist: deepmerge==1.1.0
+Requires-Dist: defusedxml==0.7.1
+Requires-Dist: distributed==2023.9.1
+Requires-Dist: docopt==0.6.2
+Requires-Dist: executing==1.2.0
+Requires-Dist: faiss-cpu==1.7.4
+Requires-Dist: fastjsonschema==2.18.0
+Requires-Dist: filelock==3.9.0
+Requires-Dist: fonttools==4.42.1
+Requires-Dist: fqdn==1.5.1
+Requires-Dist: frozenlist==1.4.0
+Requires-Dist: fsspec==2023.9.0
+Requires-Dist: graphviz==0.20.3
+Requires-Dist: greenlet==3.0.0
+Requires-Dist: grpcio==1.63.0
+Requires-Dist: huggingface-hub==0.23.0
+Requires-Dist: icecream==2.1.3
+Requires-Dist: idna==3.4
+Requires-Dist: imageio==2.31.2
+Requires-Dist: imageio-ffmpeg==0.4.9
+Requires-Dist: imgaug==0.4.0
+Requires-Dist: importlib-metadata==6.8.0
+Requires-Dist: ipykernel==6.25.1
+Requires-Dist: ipython==8.12.3
+Requires-Dist: ipython-genutils==0.2.0
+Requires-Dist: ipywidgets==8.1.0
+Requires-Dist: isoduration==20.11.0
+Requires-Dist: isort==5.12.0
+Requires-Dist: jedi==0.19.0
+Requires-Dist: Jinja2==3.1.2
+Requires-Dist: joblib==1.3.2
+Requires-Dist: json5==0.9.14
+Requires-Dist: jsonpatch==1.33
+Requires-Dist: jsonpath-ng==1.6.0
+Requires-Dist: jsonpointer==2.4
+Requires-Dist: jsonschema==4.19.0
+Requires-Dist: jsonschema-specifications==2023.7.1
+Requires-Dist: jupyter==1.0.0
+Requires-Dist: jupyter-console==6.6.3
+Requires-Dist: jupyter-contrib-core==0.4.2
+Requires-Dist: jupyter-events==0.7.0
+Requires-Dist: jupyter-lsp==2.2.0
+Requires-Dist: jupyter-nbextensions-configurator==0.6.3
+Requires-Dist: jupyter_ai_magics==2.3.0
+Requires-Dist: jupyter_client==8.3.1
+Requires-Dist: jupyter_core==5.3.1
+Requires-Dist: jupyter_server==2.7.2
+Requires-Dist: jupyter_server_terminals==0.4.4
+Requires-Dist: jupyterlab==4.0.5
+Requires-Dist: jupyterlab-pygments==0.2.2
+Requires-Dist: jupyterlab-widgets==3.0.8
+Requires-Dist: jupyterlab_code_formatter==2.2.1
+Requires-Dist: jupyterlab_server==2.24.0
+Requires-Dist: kiwisolver==1.4.5
+Requires-Dist: langchain==0.0.308
+Requires-Dist: langsmith==0.0.43
+Requires-Dist: lazy_loader==0.3
+Requires-Dist: locket==1.0.0
+Requires-Dist: Markdown==3.6
+Requires-Dist: MarkupSafe==2.1.2
+Requires-Dist: marshmallow==3.20.1
+Requires-Dist: matplotlib==3.7.2
+Requires-Dist: matplotlib-inline==0.1.6
+Requires-Dist: mistune==3.0.1
+Requires-Dist: moviepy==1.0.3
+Requires-Dist: mpmath==1.2.1
+Requires-Dist: msgpack==1.0.5
+Requires-Dist: multidict==6.0.4
+Requires-Dist: mypy-extensions==1.0.0
+Requires-Dist: nbclient==0.8.0
+Requires-Dist: nbconvert==7.16.4
+Requires-Dist: nbformat==5.9.2
+Requires-Dist: nest-asyncio==1.5.7
+Requires-Dist: networkx==3.0
+Requires-Dist: notebook==7.0.2
+Requires-Dist: notebook_shim==0.2.3
+Requires-Dist: numpy==1.24.1
+Requires-Dist: numpy-financial==1.0.0
+Requires-Dist: openai==0.28.1
+Requires-Dist: opencv-python==4.8.0.76
+Requires-Dist: opencv-python-headless==4.8.0.76
+Requires-Dist: overrides==7.4.0
+Requires-Dist: packaging==23.1
+Requires-Dist: pandas==2.2.2
+Requires-Dist: pandocfilters==1.5.0
+Requires-Dist: parso==0.8.3
+Requires-Dist: partd==1.4.0
+Requires-Dist: pathspec==0.11.2
+Requires-Dist: patsy==0.5.6
+Requires-Dist: pickleshare==0.7.5
+Requires-Dist: Pillow==9.3.0
+Requires-Dist: pipreqs==0.5.0
+Requires-Dist: platformdirs==3.10.0
+Requires-Dist: plotly==5.16.1
+Requires-Dist: ply==3.11
+Requires-Dist: proglog==0.1.10
+Requires-Dist: prometheus-client==0.17.1
+Requires-Dist: prompt-toolkit==3.0.39
+Requires-Dist: protobuf==5.26.1
+Requires-Dist: psutil==5.9.5
+Requires-Dist: pure-eval==0.2.2
+Requires-Dist: pycodestyle==2.11.0
+Requires-Dist: pycparser==2.21
+Requires-Dist: pydantic==1.10.13
+Requires-Dist: Pygments==2.16.1
+Requires-Dist: pyparsing==3.0.9
+Requires-Dist: python-dateutil==2.8.2
+Requires-Dist: python-json-logger==2.0.7
+Requires-Dist: pytz==2023.3.post1
+Requires-Dist: PyWavelets==1.4.1
+Requires-Dist: PyYAML==6.0.1
+Requires-Dist: pyzmq==25.1.1
+Requires-Dist: qtconsole==5.4.4
+Requires-Dist: QtPy==2.4.0
+Requires-Dist: qudida==0.0.4
+Requires-Dist: referencing==0.30.2
+Requires-Dist: regex==2023.10.3
+Requires-Dist: requests==2.28.1
+Requires-Dist: rfc3339-validator==0.1.4
+Requires-Dist: rfc3986-validator==0.1.1
+Requires-Dist: rpds-py==0.10.0
+Requires-Dist: safetensors==0.4.3
+Requires-Dist: scikit-image==0.21.0
+Requires-Dist: scikit-learn==1.3.0
+Requires-Dist: scipy==1.11.2
+Requires-Dist: Send2Trash==1.8.2
+Requires-Dist: shapely==2.0.1
+Requires-Dist: six==1.16.0
+Requires-Dist: sniffio==1.3.0
+Requires-Dist: sortedcontainers==2.4.0
+Requires-Dist: soupsieve==2.4.1
+Requires-Dist: spyder-kernels==2.4.4
+Requires-Dist: SQLAlchemy==2.0.21
+Requires-Dist: stack-data==0.6.2
+Requires-Dist: statsmodels==0.14.2
+Requires-Dist: sympy==1.11.1
+Requires-Dist: tblib==2.0.0
+Requires-Dist: tenacity==8.2.3
+Requires-Dist: tensorboard==2.16.2
+Requires-Dist: tensorboard-data-server==0.7.2
+Requires-Dist: terminado==0.17.1
+Requires-Dist: threadpoolctl==3.2.0
+Requires-Dist: tifffile==2023.8.30
+Requires-Dist: tiktoken==0.5.1
+Requires-Dist: tinycss2==1.2.1
+Requires-Dist: tokenizers==0.19.1
+Requires-Dist: toolz==0.12.0
+Requires-Dist: torch-tb-profiler==0.4.3
+Requires-Dist: torchviz==0.0.2
+Requires-Dist: tornado==6.3.3
+Requires-Dist: tqdm==4.66.1
+Requires-Dist: traitlets==5.9.0
+Requires-Dist: transformers==4.40.1
+Requires-Dist: typing-inspect==0.9.0
+Requires-Dist: typing_extensions==4.8.0
+Requires-Dist: tzdata==2023.3
+Requires-Dist: uri-template==1.3.0
+Requires-Dist: urllib3==1.26.13
+Requires-Dist: wcwidth==0.2.6
+Requires-Dist: webcolors==1.13
+Requires-Dist: webencodings==0.5.1
+Requires-Dist: websocket-client==1.6.2
+Requires-Dist: Werkzeug==3.0.2
+Requires-Dist: widgetsnbextension==4.0.8
+Requires-Dist: yarg==0.1.9
+Requires-Dist: yarl==1.9.2
+Requires-Dist: zict==3.0.0
+Requires-Dist: zipp==3.16.2
+
+# zftracker
+
+![Python Version](https://img.shields.io/badge/python-3.9-blue.svg)
+
+![License](https://img.shields.io/badge/license-GPLv3-blue.svg)
+
+![Development Status](https://img.shields.io/badge/status-PreAlpha-orange.svg)
+
+`zftracker` is a Python library for tracking groups of zebrafish. This tool is designed to help researchers and scientists easily track and analyze the behavior of zebrafish in a group setting. The project is still under development and models are currently not available to the public. We plan to release model files in the future.
+
+## Features
+
+- Track multiple zebrafish simultaneously
+- Export data for further analysis
+- Easy-to-use API
+- 10~20x performance compared to previous systems
+
+## Status
+
+**Note:** This project is in the Alpha stage. The main functionality has been tested, but there are still many features to be implemented. Use with caution and report any issues you encounter.
+
+## Installation
+
+You can install `zftracker` using pip:
+
+```bash
+pip install zftracker
+```
+
+## License
+
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or issues, please open an issue on [GitHub](https://github.com/yourusername/zftracker/issues) or contact the author:
+
+- **Author:** Junhao An
+- **Email:** anjunhao_23@163.com
+
+## AI-Generated Code
+
+Please note that part of the code in this project has been generated with the assistance of Language Learning Models (LLMs). While every effort has been made to ensure the accuracy and functionality of the code, further testing and review are recommended.
+
+## Update Log
+
+`0.0.3` First release.
+
+---
+
+*This project is maintained by Junhao An.*
