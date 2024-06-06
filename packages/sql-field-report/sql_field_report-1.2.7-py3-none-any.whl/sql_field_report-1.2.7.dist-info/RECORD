@@ -1,0 +1,17 @@
+sql_field_report/__init__.py,sha256=Zo8IFQx6UEx4w8lcospoMtWWzxWnSZIog0oj-mx4Qfw,123
+sql_field_report/__main__.py,sha256=TSxqWVtGYqVTEWvI5q0ZTedJpLjzbMPeeBxqNnsyqUc,69
+sql_field_report/constants/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sql_field_report/constants/datatypes.py,sha256=waDQeiYfnvZyCxQZSeQptRQkmbhl3zp7maJKI5dqzBM,360
+sql_field_report/constants/field_report_schema.py,sha256=Iry8k90ZO5MxARc_1L6Ifyc8DMebPKBNQos-nKhbUqM,1173
+sql_field_report/constants/illegal_chars.py,sha256=X_kxMwQAgRBUKxb7QtMvgUGYRa8CTlqTSobtweM2uBY,121
+sql_field_report/sql_field_report.py,sha256=1fQvQ911XhqL_uDL3tyL3OujOzWsu5l6R1ciCG1FdFA,6242
+sql_field_report/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sql_field_report/utils/analysis.py,sha256=ESsxM3vHsyVegsHJfql_TVn_HhqZm0m7Gh14AvmCtOA,8845
+sql_field_report/utils/databases.py,sha256=-3LKTqBQPlVaIckswNU9Sp999VTcnHsPNC_SbdDjoF4,3243
+sql_field_report/utils/excel.py,sha256=tGiG1qx86nnoY-VEY8mzQlg27XFlHNUzuH8bTVyS5z4,8630
+sql_field_report/utils/file_utils.py,sha256=eMaIodNAdvLkHuF4qAm0zEpykJe9FkS3hDdam6Dh-Ic,809
+sql_field_report-1.2.7.dist-info/LICENSE,sha256=WLh-1zHSZkkxSaVVSxSyPvn1roDp5sq0MUs8Fj7qSHg,1067
+sql_field_report-1.2.7.dist-info/METADATA,sha256=R0EvzsCnlm1EcRedrD-axATfXzjF_zluaIVumxo6Zhs,4233
+sql_field_report-1.2.7.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+sql_field_report-1.2.7.dist-info/entry_points.txt,sha256=ElG3kK5oE7yl_7D8ROZZzYmsckTYl0YyRRgpzVP1xEw,74
+sql_field_report-1.2.7.dist-info/RECORD,,
