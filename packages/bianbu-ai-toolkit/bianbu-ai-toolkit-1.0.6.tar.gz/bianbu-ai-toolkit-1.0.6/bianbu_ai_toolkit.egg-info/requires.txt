@@ -1,0 +1,6 @@
+paddle2onnx~=1.1.0
+onnxruntime~=1.15.0
+tf2onnx~=1.15.0
+tensorflow~=2.13.0
+onnx==1.14.1
+onnxsim
