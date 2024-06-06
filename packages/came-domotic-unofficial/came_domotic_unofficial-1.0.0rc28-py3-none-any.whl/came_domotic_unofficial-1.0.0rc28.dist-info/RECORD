@@ -1,0 +1,13 @@
+came_domotic_unofficial/__init__.py,sha256=e9b3n8pBIj_1TntEixs2HTPd1WnKKsGtjDwCk6BSj2o,1809
+came_domotic_unofficial/auth.py,sha256=0tnDhe_nr9mfsVfdGBo4s3lj59mW_iuLsJmJA3sny5Q,18482
+came_domotic_unofficial/came_domotic_api.py,sha256=QLDHoAPbjMOK4n0LM2_xkBoF0ujDVZz-GyF11wR7-_E,7785
+came_domotic_unofficial/const.py,sha256=R2QLBEOe4-Vh2cHmeWL872Adti5HYj3gmd-xs-_Dl3w,1653
+came_domotic_unofficial/errors.py,sha256=-ObyvKCozhFMALOjXvs00BDbwx3hGWz-TBmJtoPe564,1771
+came_domotic_unofficial/models/__init__.py,sha256=8YYg0Q26SacWXgROLpigJZecTXVP9EoMVq-MLAFFwaA,929
+came_domotic_unofficial/models/base.py,sha256=J9ZHHH0nEb6-aFZ050gSiGKtCoMA5cRajPtcIrnI6gE,3563
+came_domotic_unofficial/models/light.py,sha256=coYbdwNmb8KFVz1Ph6SrHMXeOFHFzxtmTHDXSrVSZdM,5081
+came_domotic_unofficial/models/update.py,sha256=KO4L-WMjAKPxVuV9B2bwL5rkYUkKz8T1LXiIeJO5dwQ,1748
+came_domotic_unofficial-1.0.0rc28.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+came_domotic_unofficial-1.0.0rc28.dist-info/METADATA,sha256=9Oxc_tKXvRfKvAzAkZDlkrEhOAp0LByYKKQ0flTHYJM,6673
+came_domotic_unofficial-1.0.0rc28.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+came_domotic_unofficial-1.0.0rc28.dist-info/RECORD,,
