@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+textannotate/__init__.py
+textannotate/cli.py
+textannotate.egg-info/PKG-INFO
+textannotate.egg-info/SOURCES.txt
+textannotate.egg-info/dependency_links.txt
+textannotate.egg-info/entry_points.txt
+textannotate.egg-info/requires.txt
+textannotate.egg-info/top_level.txt
+textannotate/templates/index.html
