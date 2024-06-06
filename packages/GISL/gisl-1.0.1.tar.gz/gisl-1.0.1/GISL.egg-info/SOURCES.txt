@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+GISL/__init__.py
+GISL/gisl.py
+GISL/gisl_libinfo.py
+GISL.egg-info/PKG-INFO
+GISL.egg-info/SOURCES.txt
+GISL.egg-info/dependency_links.txt
+GISL.egg-info/requires.txt
+GISL.egg-info/top_level.txt
