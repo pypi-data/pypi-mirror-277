@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "khu-llm-toolkit"
+packages = [
+    { include = "khu_llm_toolkit" }
+]
+version = "0.1.7a"
+description = ""
+authors = ["Ken Hu <ken.hu@hwacom.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+langchain = "^0.2.1"
+langchain-openai = "^0.1.7"
+pytest = "^8.0.0"
+langchain-community = "^0.2.1"
+langchain-google-genai = "^1.0.5"
+llama-index-llms-openai = "^0.1.22"
+llama-index-llms-azure-openai = "^0.1.8"
+llama-index-embeddings-openai = "^0.1.10"
+llama-index-embeddings-azure-openai = "^0.1.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
