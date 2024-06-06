@@ -1,0 +1,4 @@
+include README.md
+recursive-include analisisJannette/templates *
+recursive-include analisisJannette/static *
+recursive-include analisisJannette/media *
