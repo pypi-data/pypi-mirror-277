@@ -1,0 +1,15 @@
+LICENSE.md
+README.md
+setup.py
+src/html_table_to_json.egg-info/PKG-INFO
+src/html_table_to_json.egg-info/SOURCES.txt
+src/html_table_to_json.egg-info/dependency_links.txt
+src/html_table_to_json.egg-info/entry_points.txt
+src/html_table_to_json.egg-info/requires.txt
+src/html_table_to_json.egg-info/top_level.txt
+src/services/__init__.py
+src/services/file_handler.py
+src/services/html_parser.py
+src/services/json_converter.py
+src/utils/__init__.py
+src/utils/logger.py
