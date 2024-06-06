@@ -1,0 +1,2 @@
+[console_scripts]
+convpy = pyconv.pyconv:pyconv
