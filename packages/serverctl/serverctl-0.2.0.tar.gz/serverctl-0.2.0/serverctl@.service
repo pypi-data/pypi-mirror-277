@@ -1,0 +1,12 @@
+[Unit]
+After=network.target
+
+[Service]
+Type=simple
+Restart=on-failure
+WorkingDirectory=%h/.serverctl/servers/%i
+ExecStart=/bin/bash -l -c "serverctl run %i"
+StandardOutput=file:%h/.serverctl/logs/%i.log
+
+[Install]
+WantedBy=default.target
