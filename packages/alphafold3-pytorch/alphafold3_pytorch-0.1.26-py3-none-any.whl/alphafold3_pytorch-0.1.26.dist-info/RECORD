@@ -1,0 +1,12 @@
+alphafold3_pytorch/__init__.py,sha256=NA4lth58RHZ9dZP8z4NS13JmYjn1nysRz5bw3MQSyis,1724
+alphafold3_pytorch/alphafold3.py,sha256=JE5v6ARlYmlt3iLWPGUImkHUJnoOJ9jtWtxCa_KWjg4,109196
+alphafold3_pytorch/attention.py,sha256=gKM0AX9lQ_ixe9BtJcAsarCuLPB0bjKUxoyHRnBNIko,13248
+alphafold3_pytorch/configs.py,sha256=bEPe7lZlAb4HGZq2TxqDmys0j9o8MNWq76z_xweY26M,3955
+alphafold3_pytorch/life.py,sha256=psdKCCIQSRyTKCSmipkFkPMsRDTHjKSD2Gc0Y7x6jPg,1918
+alphafold3_pytorch/pdb_dataset_curation.py,sha256=SFogodXI3ZyV5iTZWcVZ82uX7hQcdG05ca4xAC9Rmpo,37282
+alphafold3_pytorch/trainer.py,sha256=4-9ipOgceM3sHTMzfu9W9gC7N7EFIkdSz9F_ILNmWJ0,15180
+alphafold3_pytorch/typing.py,sha256=ubVzSi_UMGFFjcZlFivf7uYXRRlvn3f2JYagh2yNVqE,1178
+alphafold3_pytorch-0.1.26.dist-info/METADATA,sha256=WtenBzIMAawTlIdeytMVTA1dUwnPc_vry0FoHT6gy9E,12228
+alphafold3_pytorch-0.1.26.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+alphafold3_pytorch-0.1.26.dist-info/licenses/LICENSE,sha256=E7RGS7kpJIStk5za_-4DVhWEAamf65EU0CNML25mq4c,1066
+alphafold3_pytorch-0.1.26.dist-info/RECORD,,
