@@ -1,0 +1,10 @@
+redactive/__init__.py,sha256=gIwL5O0k2yzKvqFyioEv0y07vwcBCw9fnZorG4ZnzME,227
+redactive/auth_client.py,sha256=BLa_vtgwkFPfdrmNhVfZlTze8usfDKCYGO4DcF-bWsE,3168
+redactive/search_client.py,sha256=KV_Sz4zo8uIQmxA4HyHCOo9s97AvW7K4cC5uUdXmrnE,2010
+redactive/client/rest/__init__.py,sha256=deaV090KK6pgi8dMT6z8-ZbS0GZ8fLORONahSjZjA5c,4425
+redactive/grpc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+redactive/grpc/v1/__init__.py,sha256=U6Pu-OW4A_XukFYm8LOmXLlNMjKV2mTf2Ungq85UGlg,6668
+redactive-0.1.1.dist-info/METADATA,sha256=SJjRMeMl5dyUSnJrmxDW8NEtM_YK2NMx2M9mvzxThM0,2543
+redactive-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+redactive-0.1.1.dist-info/top_level.txt,sha256=Bf0XtMt8uBSbpldhLxA_WKdCav87Q7Noxuxs_OaRHak,10
+redactive-0.1.1.dist-info/RECORD,,
