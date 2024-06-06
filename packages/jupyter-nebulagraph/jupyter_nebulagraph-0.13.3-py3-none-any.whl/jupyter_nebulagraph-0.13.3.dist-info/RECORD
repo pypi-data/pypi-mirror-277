@@ -1,0 +1,10 @@
+ngql/__init__.py,sha256=jzsXqKN2Tf1tDA9f_Fu2Oje1uO-nqheajMhaleQ7Dig,111
+ngql/magic.py,sha256=o4Sl7vbH6_X58W8LA6xWxIBtu9Nea788YAYl7yJt5gs,33851
+ngql/ng_load.py,sha256=hvIt7M5tMW7gWgcxW0UP6RS088HfidgvxAa35SRSjxA,15753
+ngql/types.py,sha256=rCDDBKSY3UqdX0dO-ieWKra7__GTzitnFdllf_x58gw,471
+ngql/utils.py,sha256=QlHByL9Nlo8gxwtxwwKNx8HKWwWLENSDVznG1bqmbpA,1268
+jupyter_nebulagraph-0.13.3.dist-info/LICENSE,sha256=LFHqusTYfhMdoSAttNJPfMh-wA0z1h4hSg2tEuFB1-U,550
+jupyter_nebulagraph-0.13.3.dist-info/METADATA,sha256=lrdVji9-rIfh9T8nYbgw2WhVYUJ-8zLxG8fv3wPoVyY,11118
+jupyter_nebulagraph-0.13.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+jupyter_nebulagraph-0.13.3.dist-info/top_level.txt,sha256=SdTCgV_euqUc5GEevzybz33vAe_a7aCBZ4bif9o7i-s,5
+jupyter_nebulagraph-0.13.3.dist-info/RECORD,,
