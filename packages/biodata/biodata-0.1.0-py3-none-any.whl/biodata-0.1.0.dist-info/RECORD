@@ -1,0 +1,12 @@
+biodata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biodata/baseio.py,sha256=SzPk6abMeJ6F2XHgMTDcGZy4yF1bKeSPDRTIhhoXYys,10409
+biodata/bed.py,sha256=RmGjajhXWvXRBsSmvB615337USER94kfGht0t2boZWg,14795
+biodata/bigwig.py,sha256=lx5OVvRgNfZfBVoeIv17fDT6mqPdEdifx-EnarOLUzs,3107
+biodata/delimited.py,sha256=pqkaM-okBXABwrpl6txc96cZQekWiQl5RY9AkskmFIc,8834
+biodata/fasta.py,sha256=AyO68Qb0pfsGdXRAecIS9nEUJESpMngEzw1foTbk59Y,5522
+biodata/gff.py,sha256=8JXw87m2qvt8P6VEEc3TjmtgPxgd2rOKgzQRpj2AaR4,5659
+biodata/meme.py,sha256=v9gWRQm-EXzf-rWQPf-FQhZm9XhrvC1KgEFgrXS1gzw,6360
+biodata-0.1.0.dist-info/METADATA,sha256=LT0GuoyAOdpbQ7zxU2xbmtg8Z36U_ysnB8pKWD5rddI,5659
+biodata-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+biodata-0.1.0.dist-info/top_level.txt,sha256=-Gz6ifS5RetXmDZb9SBJUpItTBe4hjym_xIp25Wxo7Y,8
+biodata-0.1.0.dist-info/RECORD,,
