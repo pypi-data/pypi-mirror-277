@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+PyBiPlot/PyBiPlot.py
+PyBiPlot/__init__.py
+PyBiPlot.egg-info/PKG-INFO
+PyBiPlot.egg-info/SOURCES.txt
+PyBiPlot.egg-info/dependency_links.txt
+PyBiPlot.egg-info/requires.txt
+PyBiPlot.egg-info/top_level.txt
