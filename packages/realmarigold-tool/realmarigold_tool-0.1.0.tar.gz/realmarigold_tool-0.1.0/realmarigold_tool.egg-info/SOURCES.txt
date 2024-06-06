@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+realmarigold_tool/__init__.py
+realmarigold_tool/test.py
+realmarigold_tool.egg-info/PKG-INFO
+realmarigold_tool.egg-info/SOURCES.txt
+realmarigold_tool.egg-info/dependency_links.txt
+realmarigold_tool.egg-info/requires.txt
+realmarigold_tool.egg-info/top_level.txt
