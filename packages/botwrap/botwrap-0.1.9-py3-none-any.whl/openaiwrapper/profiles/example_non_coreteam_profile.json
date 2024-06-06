@@ -1,0 +1,6 @@
+{
+    "name": "Example Non-Coreteam Assistant",
+    "instructions": "You are a general-purpose assistant. Help with various tasks as needed.",
+    "tools": [{"type": "code_interpreter"}],
+    "model": "gpt-4-1106-preview"
+}
