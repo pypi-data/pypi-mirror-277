@@ -1,0 +1,11 @@
+# List all available commands
+_default:
+    @just --list
+
+@mg *ARGS:
+    hatch run python -m src.mygists.cli {{ ARGS }}
+
+@fmt:
+    just --fmt --unstable
+    hatch fmt --formatter
+    hatch run pyproject-fmt pyproject.toml
