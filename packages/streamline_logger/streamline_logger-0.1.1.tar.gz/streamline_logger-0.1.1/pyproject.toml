@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "streamline_logger"
+version = "0.1.1"
+description = ""
+authors = ["Eric Hasegawa <erichasegawa1@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "src/*" }
+]
+
+[tool.poetry.dependencies]
+python = "3.11.4"
+boto3 = "^1.28.54"
+pydantic = "^2.4.1"
+sentry-sdk = "^1.31.0"
+
+[tool.poetry.group.dev.dependencies]
+pyinstaller = { version = "<6.0.0", python = ">=3.11,<3.13" } 
+black = "^24.4.2"
+flake8 = "^7.0.0"
+flake8-black = "^0.3.6"
+
+[tool.black]
+line-length = 79
+
+[tool.flake8]
+max-line-length = 79
+ignore = ["E203"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
