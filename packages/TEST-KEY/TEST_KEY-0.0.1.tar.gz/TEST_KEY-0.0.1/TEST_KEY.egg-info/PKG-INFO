@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: TEST-KEY
+Version: 0.0.1
+Author: User
+License: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai==0.28

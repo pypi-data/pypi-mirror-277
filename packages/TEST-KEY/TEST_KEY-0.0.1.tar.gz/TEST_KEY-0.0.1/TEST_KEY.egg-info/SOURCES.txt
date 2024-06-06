@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+TEST_KEY.egg-info/PKG-INFO
+TEST_KEY.egg-info/SOURCES.txt
+TEST_KEY.egg-info/dependency_links.txt
+TEST_KEY.egg-info/requires.txt
+TEST_KEY.egg-info/top_level.txt
+calculatetestando/__init__.py
+calculatetestando/calculate.py
