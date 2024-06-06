@@ -1,0 +1,11 @@
+supabase_functions/__init__.py,sha256=Y8ncO0cdMUkhjwJyb3pUuYO8nPPrRtzvkhtygDaEj9k,821
+supabase_functions/_async/__init__.py,sha256=U4S_2y3zgLZVfMenHRaJFBW8yqh2mUBuI291LGQVOJ8,35
+supabase_functions/_async/functions_client.py,sha256=n46jxKHz5sHFbbUFyJMd8kZtA4hl7AuvMV2mEY9re9M,3067
+supabase_functions/_sync/__init__.py,sha256=U4S_2y3zgLZVfMenHRaJFBW8yqh2mUBuI291LGQVOJ8,35
+supabase_functions/_sync/functions_client.py,sha256=RfXT1r68ANIPqK4aWkwQYzMusVWWHhQRo1QOe8mdsYU,3040
+supabase_functions/errors.py,sha256=2UwuE3q0PLQuFlOZHqcRMBIAFsh-_v6yp7pROQlzIcE,999
+supabase_functions/utils.py,sha256=bhCzP4IaZ1d5vqKjJGonnNsBySPZhuSsbABUjAIDfNQ,204
+supabase_functions-0.4.6.dist-info/LICENSE,sha256=48n0MgJUQxqPFT6HBjBa7aDfSU8a31WVjAfUuL5mpEs,1065
+supabase_functions-0.4.6.dist-info/METADATA,sha256=zRuXKzOigmXpwt0A5yNIQM3L6-GhCgNZ-yfANqny6B0,1193
+supabase_functions-0.4.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+supabase_functions-0.4.6.dist-info/RECORD,,
