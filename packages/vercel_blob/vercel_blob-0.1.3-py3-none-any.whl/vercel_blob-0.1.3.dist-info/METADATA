@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: vercel_blob
+Version: 0.1.3
+Summary: A Python Wrapper for Vercel Blob Storage API
+Home-page: https://github.com/SuryaSekhar14/vercel_blob
+Author: SuryaSekhar14
+Author-email: suryasekhardatta22@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Project-URL: Repository, https://github.com/SuryaSekhar14/vercel_blob
+Description-Content-Type: text/markdown
+
+# vercel_blob
+
+A Python wrapper for the Vercel Blob Storage API
+
+## Installation
+
+
+```
+pip3 install vercel_blob
+```
+
+## Getting Started
+
+### Python Version
+
+This package (vercel_blob) was written using Python 3 in mind, and Python 2 will not work properly.
+
+### Set Environment Variable for Authorization
+
+```
+export BLOB_READ_WRITE_TOKEN="superssecretkey"
+```
+
+### Add vercel_blob to your code
+
+```
+
+```
+
+## Using vercel_blob
+
+Currently only supports the basic list, put, delete and head(get file metadata) operations. Here's a quick overview:
+
+### Upload File / Blob to the Storage
+```
+
+```
+
+### List all files in the Blob Storage
+```
+
+```
+
+### Delete a blob or a list of blobs from the Blob Storage
+```
+
+```
+
+### Get blob metadata
+```
+
+```
