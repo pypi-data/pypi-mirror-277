@@ -1,0 +1,21 @@
+repos:
+- repo: local
+  hooks:
+  - id: format
+    name: Formatting
+    entry: rye
+    args: ["format"]
+    pass_filenames: false
+    language: system
+  - id: lint
+    name: Lint
+    entry: rye
+    args: ["lint"]
+    pass_filenames: false
+    language: system
+  - id: test
+    name: Test
+    entry: rye
+    args: ["test"]
+    pass_filenames: false
+    language: system
