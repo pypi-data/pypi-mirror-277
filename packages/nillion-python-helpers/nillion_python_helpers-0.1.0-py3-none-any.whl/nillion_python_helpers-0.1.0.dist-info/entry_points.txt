@@ -1,0 +1,3 @@
+[console_scripts]
+bootstrap-local-environment=nillion_python_helpers.scripts.bootstrap_local_environment:main
+
