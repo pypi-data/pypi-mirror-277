@@ -1,0 +1,615 @@
+def _7fVgY(f):
+    def _LB4pm(*args, **kwargs):
+        return f(*args, **kwargs)
+    _LB4pm.__module__ = f.__module__
+    _LB4pm.__name__ = f.__name__
+    _LB4pm.__doc__ = f.__doc__
+    _LB4pm.__dict__.update(f.__dict__)
+    f.__refcalls__ = 0
+    return _LB4pm
+
+@_7fVgY
+def _1PLCp():
+    global _4tMyo, _zI1QG, _4hAzX, _sVaB1, _Irz27, _HIDYD, _DVkvy, _lerw3, _EXdrv, _olMT6, _5fXFB, _fpRBN, _PXLA0, _4fHQ9, _x0Gc8, _DJ2LA, _N0j6s, _0qKDz, _rhHde, _68INV, _ZEspO, _p06x5, _6toND, _gtWQi, _HIsy7
+    from __future__ import annotations
+    from numpy.typing import ArrayLike
+    import numpy as np, stonefish_license_manager as slim, sys
+    _KXWXQ = 100
+
+    def _0kM8I():
+        try:
+            slim.keygen.find_license_and_validate(account_id='109c23d2-6cdd-4faf-bd8a-96c242733638', product_id='973948c2-ac9b-4a78-b37b-2adaafcf5523', variable_names=['MESHPRO_LIC', 'MESHPRO_LICENSE', 'MESHPRO_LICENSE_KEY'])
+        except slim.LicenseError as e:
+            print(f"meshzoo: You're creating a mesh with more than {_KXWXQ} for which a MeshPro license is required. See https://github.com/meshpro for details.\n")
+            e.show()
+            sys.exit(1)
+
+    def _4tMyo(cells_nodes):
+        _axi9G = np.array([[1, 2], [2, 0], [0, 1]]).T
+        _i4NHF = cells_nodes.T
+        _jevtL = _i4NHF[_axi9G]
+        _IYhDl = _jevtL.shape
+        _TyqkA = np.sort(_jevtL.reshape(_IYhDl[0], _IYhDl[1] * _IYhDl[2]).T)
+        _s6dhd = np.ascontiguousarray(_TyqkA).view(np.dtype((np.void, _TyqkA.dtype.itemsize * _TyqkA.shape[1])))
+        _kdVWG, _K4wLt, _ZOxQx, _FU7Cb = np.unique(_s6dhd, return_index=True, return_inverse=True, return_counts=True)
+        assert all(_FU7Cb < 3)
+        _levNp = _TyqkA[_K4wLt]
+        _FpvaS = _ZOxQx.reshape(3, -1).T
+        return (_levNp, _FpvaS)
+
+    def _zI1QG(*_6fj3T, **_nKmVZ):
+        import matplotlib.pyplot as plt
+        _sVaB1(*_6fj3T, **_nKmVZ)
+        plt.show()
+
+    def _4hAzX(filename, *_RwHjO, **_pz05j):
+        import matplotlib.pyplot as plt
+        _sVaB1(*_RwHjO, **_pz05j)
+        plt.savefig(filename, transparent=True, bbox_inches='tight')
+
+    def _sVaB1(points, cells, show_axes=False, fill='#c8c5bd', stroke='#000080'):
+        import matplotlib.pyplot as plt
+        _mYc02 = plt.figure()
+        _F2x7G = _mYc02.gca()
+        plt.axis('equal')
+        if not show_axes:
+            _F2x7G.set_axis_off()
+        assert points.shape[1] == 2
+        _9ZOVH = np.amin(points[:, 0])
+        _l6Ong = np.amax(points[:, 0])
+        _0B0Oq = np.amin(points[:, 1])
+        _XYH7Y = np.amax(points[:, 1])
+        _1ByS2 = _l6Ong - _9ZOVH
+        _9ZOVH -= 0.1 * _1ByS2
+        _l6Ong += 0.1 * _1ByS2
+        _KlMic = _XYH7Y - _0B0Oq
+        _0B0Oq -= 0.1 * _KlMic
+        _XYH7Y += 0.1 * _KlMic
+        _F2x7G.set_xlim(_9ZOVH, _l6Ong)
+        _F2x7G.set_ylim(_0B0Oq, _XYH7Y)
+        for _Xmf5h in cells:
+            import matplotlib.patches
+            _aFqhc = matplotlib.patches.Polygon(points[_Xmf5h], ec=stroke, fc=fill)
+            _F2x7G.add_patch(_aFqhc)
+        return _mYc02
+
+    def _yJ2g8(corners, faces, n, edge_adjust=None, face_adjust=None, idx_dtype=None):
+        if idx_dtype is None:
+            _aY9ET = len(faces) * (n + 1) * (n + 2) // 2 - 1
+            idx_dtype = _ymbgW(_aY9ET)
+        _VFLPY = [corners]
+        _PkOPI = len(corners)
+        _rq3uE = np.arange(len(corners))
+        _7tLKj = set()
+        for _WXekq in faces:
+            _7tLKj.add(tuple(sorted([_WXekq[0], _WXekq[1]])))
+            _7tLKj.add(tuple(sorted([_WXekq[1], _WXekq[2]])))
+            _7tLKj.add(tuple(sorted([_WXekq[2], _WXekq[0]])))
+        _7tLKj = list(_7tLKj)
+        _pP2zx = {}
+        _ybqHL = np.linspace(1 / n, 1.0, n - 1, endpoint=False)
+        corners = _VFLPY[0]
+        _aPa7b = corners.shape[0]
+        for _ED5cj in _7tLKj:
+            _BPT5G, _zbYeh = _ED5cj
+            _NTpP8 = np.outer(1 - _ybqHL, corners[_BPT5G]) + np.outer(_ybqHL, corners[_zbYeh])
+            if edge_adjust:
+                _NTpP8 = edge_adjust(_ED5cj, _NTpP8)
+            _VFLPY.append(_NTpP8)
+            _PkOPI += len(_VFLPY[-1])
+            _pP2zx[_ED5cj] = np.arange(_aPa7b, _aPa7b + len(_ybqHL))
+            _aPa7b += len(_ybqHL)
+        _w6gSn = []
+        _aPa7b = 0
+        for _a6KtJ in range(n):
+            _kl0f1 = np.arange(n - _a6KtJ, dtype=idx_dtype)
+            _w6gSn.append(np.column_stack([_aPa7b + _kl0f1, _aPa7b + _kl0f1 + 1, _aPa7b + n - _a6KtJ + _kl0f1 + 1]))
+            _kl0f1 = _kl0f1[:-1]
+            _w6gSn.append(np.column_stack([_aPa7b + _kl0f1 + 1, _aPa7b + n - _a6KtJ + _kl0f1 + 2, _aPa7b + n - _a6KtJ + _kl0f1 + 1]))
+            _aPa7b += n - _a6KtJ + 1
+        _w6gSn = np.vstack(_w6gSn)
+        _x9dzL = []
+        for _D00PQ in faces:
+            corners = _D00PQ
+            _7tLKj = [(_D00PQ[0], _D00PQ[1]), (_D00PQ[1], _D00PQ[2]), (_D00PQ[2], _D00PQ[0])]
+            _WkWVm = [False, False, False]
+            for _U4jn6, _isNzd in enumerate(_7tLKj):
+                if _isNzd[0] > _isNzd[1]:
+                    _7tLKj[_U4jn6] = (_isNzd[1], _isNzd[0])
+                    _WkWVm[_U4jn6] = True
+            if n == 1:
+                _F6EfN = 0
+            else:
+                _OuiYP = np.hstack([[np.full(n - _zu2xb - 1, _zu2xb), np.arange(1, n - _zu2xb)] for _zu2xb in range(1, n)]) / n
+                _OuiYP = np.array([1.0 - _OuiYP[0] - _OuiYP[1], _OuiYP[1], _OuiYP[0]])
+                _XHwPM = np.array([_VFLPY[0][_xOJ1X] for _xOJ1X in corners])
+                _1e2Kd = np.dot(_XHwPM.T, _OuiYP).T
+                if face_adjust:
+                    _1e2Kd = face_adjust(_D00PQ, _OuiYP, _1e2Kd, _XHwPM)
+                _VFLPY.append(_1e2Kd)
+                _F6EfN = len(_VFLPY[-1])
+            _Vre2w = (n + 1) * (n + 2) // 2
+            _kpt3n = np.empty(_Vre2w, dtype=idx_dtype)
+            _kpt3n[0] = _rq3uE[corners[0]]
+            _kpt3n[n] = _rq3uE[corners[1]]
+            _kpt3n[_Vre2w - 1] = _rq3uE[corners[2]]
+            _kpt3n[1:n] = _pP2zx[_7tLKj[0]]
+            if _WkWVm[0]:
+                _kpt3n[1:n] = _kpt3n[1:n][::-1]
+            _QVU7i = 2 * n
+            for _hQ76C in range(n - 1):
+                if _WkWVm[1]:
+                    _kpt3n[_QVU7i] = _pP2zx[_7tLKj[1]][n - 2 - _hQ76C]
+                else:
+                    _kpt3n[_QVU7i] = _pP2zx[_7tLKj[1]][_hQ76C]
+                _QVU7i += n - _hQ76C - 1
+            _QVU7i = n + 1
+            for _6J3Mp in range(n - 1):
+                if _WkWVm[2]:
+                    _kpt3n[_QVU7i] = _pP2zx[_7tLKj[2]][_6J3Mp]
+                else:
+                    _kpt3n[_QVU7i] = _pP2zx[_7tLKj[2]][n - 2 - _6J3Mp]
+                _QVU7i += n - _6J3Mp
+            _QVU7i = n + 2
+            _kl0f1 = _PkOPI
+            for _nZ4Dy in range(n - 2):
+                for _R8q7L in range(n - _nZ4Dy - 2):
+                    _kpt3n[_QVU7i] = _kl0f1
+                    _kl0f1 += 1
+                    _QVU7i += 1
+                _QVU7i += 2
+            _x9dzL += [_kpt3n[_w6gSn]]
+            _PkOPI += _F6EfN
+        _VFLPY = np.concatenate(_VFLPY)
+        _x9dzL = np.concatenate(_x9dzL)
+        if len(_VFLPY) > _KXWXQ:
+            _0kM8I()
+        return (_VFLPY, _x9dzL)
+
+    def _Irz27(points, cells, cell_type):
+        _ZFE5H = {'triangle': 3, 'tetra': 4, 'quad': 4, 'hexahedron': 8}
+        if cells.shape[1] != _ZFE5H[cell_type]:
+            _Jel6r = 'Mismatch of cell type and shape of cells array.'
+            raise ValueError(_Jel6r)
+        if cell_type == 'triangle':
+            _7SaKO = [[0, 1], [1, 2], [2, 0]]
+        elif cell_type == 'tetra':
+            _7SaKO = [[0, 1], [1, 2], [2, 0], [3, 0], [3, 1], [3, 2]]
+        elif cell_type == 'quad':
+            _7SaKO = [[0, 1], [1, 2], [2, 3], [3, 0]]
+        elif cell_type == 'hexahedron':
+            _7SaKO = [[0, 1], [1, 2], [2, 3], [3, 0], [4, 5], [5, 6], [6, 7], [7, 4], [0, 4], [1, 5], [2, 6], [3, 7]]
+        else:
+            _Jel6r = 'Cell type not implemented.'
+            raise TypeError(_Jel6r)
+        _gQjxV = cells[:, _7SaKO]
+        _Vx3z9 = np.sort(_gQjxV.reshape(-1, 2), axis=1)
+        _1V3hL, _AJMm8 = np.unique(_Vx3z9, return_index=False, return_inverse=True, return_counts=False, axis=0)
+        _SvRfi = np.mean(points[_1V3hL.T], axis=0)
+        _v6TTv = _AJMm8.reshape(len(cells), -1) + len(points)
+        _dByPe = np.vstack((points, _SvRfi))
+        _Mk3Rd = np.hstack((cells, _v6TTv))
+        return (_dByPe, _Mk3Rd)
+
+    def _ymbgW(n):
+        for _Y5nwe in [np.uint8, np.uint16, np.uint32, np.uint64]:
+            if n <= np.iinfo(_Y5nwe).max:
+                return _Y5nwe
+        _3YVMN = f'n = {n} cannot be represented by np.uint type'
+        raise ValueError(_3YVMN)
+
+    def _HIDYD(num_twists=1, nl=60, nw=11, variant='classical', idx_dtype=None):
+        _Z2X5V = 1.0
+        _iPCP5 = 10.0
+        _RWcQt = 1.0
+        _9ptjF = 0.0
+        _tgdUC = 1.0
+        _hpUr9 = np.linspace(0.0, 2 * np.pi, num=nl, endpoint=False)
+        _ivNOc = np.linspace(-0.5 * _Z2X5V, 0.5 * _Z2X5V, num=nw)
+        _MNR7b = np.sin(_hpUr9)
+        _ydQQi = np.cos(_hpUr9)
+        _wXjFW = num_twists * 0.5 * _hpUr9 + _9ptjF
+        _xeqrd = np.sin(_wXjFW)
+        _bKB2e = np.cos(_wXjFW)
+        if variant == 'classical':
+            _sXeLC = _bKB2e
+            _O2i6S = _xeqrd
+            _AXO5r = num_twists % 2 == 1
+        elif variant == 'smooth':
+            _sXeLC = np.copysign(_bKB2e ** 2, _bKB2e)
+            _O2i6S = np.copysign(_xeqrd ** 2, _xeqrd)
+            _AXO5r = num_twists % 2 == 1
+        else:
+            assert variant == 'pseudo'
+            _sXeLC = _bKB2e ** 2
+            _O2i6S = _xeqrd ** 2
+            _AXO5r = False
+        _NO23W = _iPCP5 * np.array([np.outer(_sXeLC * _ydQQi, _ivNOc) + _RWcQt * _ydQQi[:, np.newaxis], np.outer(_sXeLC * _MNR7b, _ivNOc) + _RWcQt * _MNR7b[:, np.newaxis], np.outer(_O2i6S, _ivNOc) * _tgdUC]).reshape(3, -1).T
+        _NhjBb = _RkVMh(nl, nw, _AXO5r, idx_dtype=idx_dtype)
+        if len(_NO23W) > _KXWXQ:
+            _0kM8I()
+        return (_NO23W, _NhjBb)
+
+    def _RkVMh(nl, nw, reverse_seam, idx_dtype):
+        _ehbUw = []
+        for _l9cf1 in range(nl - 1):
+            for _zz9MO in range(nw - 1):
+                if (_l9cf1 + _zz9MO) % 2 == 0:
+                    _ehbUw.append([_l9cf1 * nw + _zz9MO, (_l9cf1 + 1) * nw + _zz9MO + 1, _l9cf1 * nw + _zz9MO + 1])
+                    _ehbUw.append([_l9cf1 * nw + _zz9MO, (_l9cf1 + 1) * nw + _zz9MO, (_l9cf1 + 1) * nw + _zz9MO + 1])
+                else:
+                    _ehbUw.append([_l9cf1 * nw + _zz9MO, _l9cf1 * nw + _zz9MO + 1, (_l9cf1 + 1) * nw + _zz9MO])
+                    _ehbUw.append([_l9cf1 * nw + _zz9MO + 1, (_l9cf1 + 1) * nw + _zz9MO, (_l9cf1 + 1) * nw + _zz9MO + 1])
+        _l9cf1 = nl - 1
+        if reverse_seam:
+            for _QAIXt in range(nw - 1):
+                if (_l9cf1 + _QAIXt) % 2 == 0:
+                    _ehbUw.append([_l9cf1 * nw + _QAIXt, nw - 1 - (_QAIXt + 1), _l9cf1 * nw + _QAIXt + 1])
+                    _ehbUw.append([_l9cf1 * nw + _QAIXt, nw - 1 - _QAIXt, nw - 1 - (_QAIXt + 1)])
+                else:
+                    _ehbUw.append([_l9cf1 * nw + _QAIXt, _l9cf1 * nw + _QAIXt + 1, nw - 1 - _QAIXt])
+                    _ehbUw.append([_l9cf1 * nw + _QAIXt + 1, nw - 1 - _QAIXt, nw - 1 - (_QAIXt + 1)])
+        else:
+            for _Afwux in range(nw - 1):
+                if (_l9cf1 + _Afwux) % 2 == 0:
+                    _ehbUw.append([_l9cf1 * nw + _Afwux, _Afwux + 1, _l9cf1 * nw + _Afwux + 1])
+                    _ehbUw.append([_l9cf1 * nw + _Afwux, _Afwux, _Afwux + 1])
+                else:
+                    _ehbUw.append([_l9cf1 * nw + _Afwux, _l9cf1 * nw + _Afwux + 1, _Afwux])
+                    _ehbUw.append([_l9cf1 * nw + _Afwux + 1, _Afwux, _Afwux + 1])
+        if idx_dtype is None:
+            _7vTtx = max([_gZRaR for _Xrut2 in _ehbUw for _gZRaR in _Xrut2])
+            idx_dtype = _ymbgW(_7vTtx)
+        return np.array(_ehbUw, dtype=idx_dtype)
+
+    def _8pgHp(n, idx_dtype=None):
+        _9FMpi = np.array([[2 * np.sqrt(2) / 3, 0.0, -1.0 / 3.0], [-np.sqrt(2) / 3, np.sqrt(2.0 / 3.0), -1.0 / 3.0], [-np.sqrt(2) / 3, -np.sqrt(2.0 / 3.0), -1.0 / 3.0], [0.0, 0.0, 1.0]])
+        _7vsh4 = [(0, 2, 1), (0, 1, 3), (0, 3, 2), (1, 2, 3)]
+        return _yJ2g8(_9FMpi, _7vsh4, n, idx_dtype=idx_dtype)
+
+    def _3Ej97(n, idx_dtype=None):
+        _eHqgx = np.array([[1.0, 0.0, 0.0], [-1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, -1.0, 0.0], [0.0, 0.0, 1.0], [0.0, 0.0, -1.0]])
+        _pquBm = [(0, 2, 4), (1, 4, 2), (1, 3, 4), (0, 4, 3), (0, 5, 2), (1, 2, 5), (1, 5, 3), (0, 3, 5)]
+        return _yJ2g8(_eHqgx, _pquBm, n, idx_dtype=idx_dtype)
+
+    def _DVkvy(n, flat_top=False, idx_dtype=None):
+        assert n >= 1
+        _eBZ7E = (1.0 + np.sqrt(5.0)) / 2.0
+        if flat_top:
+            _t2hCN = _eBZ7E / np.sqrt(_eBZ7E ** 2 + (_eBZ7E - 1) ** 2)
+            _cOsAk = (_eBZ7E - 1) / np.sqrt(_eBZ7E ** 2 + (_eBZ7E - 1) ** 2)
+            _epCBR = np.array([[-_t2hCN, +_eBZ7E, +_cOsAk], [+_t2hCN, +_eBZ7E, -_cOsAk], [-_t2hCN, -_eBZ7E, +_cOsAk], [+_t2hCN, -_eBZ7E, -_cOsAk], [+_eBZ7E * _cOsAk, -1, +_eBZ7E * _t2hCN], [+_eBZ7E * _cOsAk, +1, +_eBZ7E * _t2hCN], [-_eBZ7E * _cOsAk, -1, -_eBZ7E * _t2hCN], [-_eBZ7E * _cOsAk, +1, -_eBZ7E * _t2hCN], [+_eBZ7E * _t2hCN - _cOsAk, 0, -_t2hCN - _eBZ7E * _cOsAk], [+_eBZ7E * _t2hCN + _cOsAk, 0, +_t2hCN - _eBZ7E * _cOsAk], [-_eBZ7E * _t2hCN - _cOsAk, 0, -_t2hCN + _eBZ7E * _cOsAk], [-_eBZ7E * _t2hCN + _cOsAk, 0, +_t2hCN + _eBZ7E * _cOsAk]])
+        else:
+            _epCBR = np.array([[-1, +_eBZ7E, +0], [+1, +_eBZ7E, +0], [-1, -_eBZ7E, +0], [+1, -_eBZ7E, +0], [+0, -1, +_eBZ7E], [+0, +1, +_eBZ7E], [+0, -1, -_eBZ7E], [+0, +1, -_eBZ7E], [+_eBZ7E, +0, -1], [+_eBZ7E, +0, +1], [-_eBZ7E, +0, -1], [-_eBZ7E, +0, +1]])
+        _ERaHm = [(0, 11, 5), (0, 5, 1), (0, 1, 7), (0, 7, 10), (0, 10, 11), (1, 5, 9), (5, 11, 4), (11, 10, 2), (10, 7, 6), (7, 1, 8), (3, 9, 4), (3, 4, 2), (3, 2, 6), (3, 6, 8), (3, 8, 9), (4, 9, 5), (2, 4, 11), (6, 2, 10), (8, 6, 7), (9, 8, 1)]
+        return _yJ2g8(_epCBR, _ERaHm, n, idx_dtype=idx_dtype)
+
+    def _lerw3(num_points_per_circle, num_circles, radius=1.0, idx_dtype=None):
+        _zhENr = num_points_per_circle
+        _yED83 = num_circles
+        _b5pVw = np.linspace(0.0, 2 * np.pi, num=_zhENr, endpoint=False)
+        _tR1TK = np.linspace(-np.pi / 2 + np.pi / (_yED83 - 1), np.pi / 2 - np.pi / (_yED83 - 1), num=_yED83 - 2)
+        _kP7hz = radius * np.array([[0.0, 0.0, -1.0]] + [[np.cos(_3pjCM) * np.sin(_XoPIO), np.cos(_3pjCM) * np.cos(_XoPIO), np.sin(_3pjCM)] for _3pjCM in _tR1TK for _XoPIO in _b5pVw] + [[0.0, 0.0, 1.0]])
+        _nwk8p = 0
+        _Eih2a = len(_kP7hz) - 1
+        _TNWTI = 2 * (_yED83 - 2) * _zhENr
+        _oj4dL = [[_nwk8p, _HozMa + 1, _HozMa + 2] for _HozMa in range(_zhENr - 1)]
+        _oj4dL.append([_nwk8p, _zhENr, 1])
+        for _Txu3X in range(_yED83 - 3):
+            for _P5OPl in range(_zhENr - 1):
+                _oj4dL += [[_Txu3X * _zhENr + _P5OPl + 2, _Txu3X * _zhENr + _P5OPl + 1, (_Txu3X + 1) * _zhENr + _P5OPl + 2], [_Txu3X * _zhENr + _P5OPl + 1, (_Txu3X + 1) * _zhENr + _P5OPl + 1, (_Txu3X + 1) * _zhENr + _P5OPl + 2]]
+        for _Z0OCf in range(_yED83 - 3):
+            _oj4dL += [[_Z0OCf * _zhENr + 1, (_Z0OCf + 1) * _zhENr, (_Z0OCf + 1) * _zhENr + 1], [(_Z0OCf + 1) * _zhENr + 1, (_Z0OCf + 1) * _zhENr, (_Z0OCf + 2) * _zhENr]]
+        for _QY2NE in range(_zhENr - 1):
+            _oj4dL.append([_QY2NE + 1 + _zhENr * (_yED83 - 3) + 1, _QY2NE + _zhENr * (_yED83 - 3) + 1, _Eih2a])
+        _oj4dL.append([0 + _zhENr * (_yED83 - 3) + 1, _zhENr - 1 + _zhENr * (_yED83 - 3) + 1, _Eih2a])
+        assert len(_oj4dL) == _TNWTI, 'Wrong element count.'
+        if idx_dtype is None:
+            _5cbxd = _TNWTI - 1
+            idx_dtype = _ymbgW(_5cbxd)
+        _oj4dL = np.array(_oj4dL, dtype=idx_dtype)
+        if len(_kP7hz) > _KXWXQ:
+            _0kM8I()
+        return (_kP7hz, _oj4dL)
+
+    def _EXdrv(num_points_per_circle, num_circles, radius=1.0):
+        _j2equ = num_points_per_circle
+        _1jdG8 = num_circles
+        _u2vdt = np.linspace(0.0, 2 * np.pi, num=_j2equ, endpoint=False)
+        _XAHGC = np.linspace(-np.pi / 2 + np.pi / (_1jdG8 - 1), np.pi / 2 - np.pi / (_1jdG8 - 1), num=_1jdG8 - 2)
+        _8HZ1k = radius * np.array([[0.0, 0.0, -1.0]] + [[np.cos(_HaMhw) * np.sin(_eoXrU), np.cos(_HaMhw) * np.cos(_eoXrU), np.sin(_HaMhw)] for _HaMhw in _XAHGC for _eoXrU in _u2vdt] + [[0.0, 0.0, 1.0]])
+        _Pfkyd = 0
+        _NhezY = len(_8HZ1k) - 1
+        _vBeM9 = []
+        _ndzHO = []
+        _vBeM9 += [[_Pfkyd, _oKNXr + 1, _oKNXr + 2] for _oKNXr in range(_j2equ - 1)]
+        _vBeM9.append([_Pfkyd, _j2equ, 1])
+        for _zZYiQ in range(_1jdG8 - 3):
+            for _Ulvvn in range(_j2equ - 1):
+                _ndzHO += [[_zZYiQ * _j2equ + _Ulvvn + 1, _zZYiQ * _j2equ + _Ulvvn + 2, (_zZYiQ + 1) * _j2equ + _Ulvvn + 2, (_zZYiQ + 1) * _j2equ + _Ulvvn + 1]]
+        for _75hL9 in range(_1jdG8 - 3):
+            _ndzHO += [[_75hL9 * _j2equ + 1, (_75hL9 + 1) * _j2equ + 1, (_75hL9 + 2) * _j2equ, (_75hL9 + 1) * _j2equ]]
+        for _9BeHu in range(_j2equ - 1):
+            _vBeM9.append([_9BeHu + 1 + _j2equ * (_1jdG8 - 3) + 1, _9BeHu + _j2equ * (_1jdG8 - 3) + 1, _NhezY])
+        _vBeM9.append([0 + _j2equ * (_1jdG8 - 3) + 1, _j2equ - 1 + _j2equ * (_1jdG8 - 3) + 1, _NhezY])
+        _vBeM9 = np.array(_vBeM9)
+        _ndzHO = np.array(_ndzHO)
+        if len(_8HZ1k) > _KXWXQ:
+            _0kM8I()
+        return (_8HZ1k, _vBeM9, _ndzHO)
+
+    def _olMT6(n):
+        _w3ZWS, _RGDIp = _8pgHp(n)
+        _0MCKO = np.sqrt(np.einsum('ij,ij->i', _w3ZWS, _w3ZWS))
+        _w3ZWS = (_w3ZWS.T / _0MCKO).T
+        return (_w3ZWS, _RGDIp)
+
+    def _5fXFB(n):
+        _sTVsq, _n12K8 = _3Ej97(n)
+        _oMJd9 = np.sqrt(np.einsum('ij,ij->i', _sTVsq, _sTVsq))
+        _sTVsq = (_sTVsq.T / _oMJd9).T
+        return (_sTVsq, _n12K8)
+
+    def _fpRBN(n, flat_top=False, idx_dtype=None):
+        _MFzsb, _IAMUg = _DVkvy(n, flat_top, idx_dtype)
+        _BIFy3 = np.sqrt(np.einsum('ij,ij->i', _MFzsb, _MFzsb))
+        _MFzsb = (_MFzsb.T / _BIFy3).T
+        return (_MFzsb, _IAMUg)
+
+    def _PXLA0(x0, x1, y0, y1, nx, ny, idx_dtype=None):
+        _seqvH = np.linspace(x0, x1, nx + 1)
+        _b7yfT = np.linspace(y0, y1, ny + 1)
+        return _x0Gc8(_seqvH, _b7yfT, idx_dtype=idx_dtype)
+
+    def _4fHQ9(x_range, y_range, cell_type='quad4', idx_dtype=None):
+        x_range = np.asarray(x_range)
+        y_range = np.asarray(y_range)
+        if cell_type == 'quad4':
+            return _VPQcN(x_range, y_range, idx_dtype)
+        if cell_type == 'quad8':
+            return _QD1Cf(x_range, y_range, idx_dtype)
+        assert cell_type == 'quad9'
+        return _MqNVE(x_range, y_range, idx_dtype)
+
+    def _VPQcN(x_range, y_range, idx_dtype):
+        _JCORT = np.array(np.meshgrid(x_range, y_range)).reshape(2, -1).T
+        _9zKDw = len(x_range)
+        _p24sJ = len(y_range)
+        if idx_dtype is None:
+            _DTvoI = _9zKDw * _p24sJ - 1
+            idx_dtype = _ymbgW(_DTvoI)
+        _kAnxB = np.arange(_9zKDw * _p24sJ, dtype=idx_dtype).reshape(_p24sJ, _9zKDw).T
+        _Y9BI9 = np.array([_kAnxB[:-1, :-1], _kAnxB[1:, :-1], _kAnxB[1:, 1:], _kAnxB[:-1, 1:]]).reshape(4, -1).T
+        if len(_JCORT) > _KXWXQ:
+            _0kM8I()
+        return (_JCORT, _Y9BI9)
+
+    def _QD1Cf(x_range, y_range, idx_dtype):
+        _9YPV0 = len(x_range)
+        _Cm6aT = len(y_range)
+        if idx_dtype is None:
+            _CZYqD = _9YPV0 * _Cm6aT + (_9YPV0 - 1) * _Cm6aT + _9YPV0 * (_Cm6aT - 1) - 1
+            idx_dtype = _ymbgW(_CZYqD)
+        _9RSv9 = 0
+        _6ajw5 = np.array(np.meshgrid(x_range, y_range)).reshape(2, -1).T
+        _C5IPl = np.arange(_9YPV0 * _Cm6aT, dtype=idx_dtype).reshape(_Cm6aT, _9YPV0).T
+        _9RSv9 += _C5IPl.size
+        _h1l2C = (x_range[:-1] + x_range[1:]) / 2
+        _Hn4Hx = np.array(np.meshgrid(_h1l2C, y_range)).reshape(2, -1).T
+        _z0XfH = _9RSv9 + np.arange((_9YPV0 - 1) * _Cm6aT, dtype=idx_dtype).reshape(_Cm6aT, _9YPV0 - 1).T
+        _9RSv9 += _z0XfH.size
+        _naftY = (y_range[:-1] + y_range[1:]) / 2
+        _nhyKo = np.array(np.meshgrid(x_range, _naftY)).reshape(2, -1).T
+        _9PbZA = _9RSv9 + np.arange(_9YPV0 * (_Cm6aT - 1), dtype=idx_dtype).reshape(_Cm6aT - 1, _9YPV0).T
+        _lggWQ = np.row_stack([_6ajw5, _Hn4Hx, _nhyKo])
+        _3Aj7K = np.array([_C5IPl[:-1, :-1], _C5IPl[1:, :-1], _C5IPl[1:, 1:], _C5IPl[:-1, 1:], _z0XfH[:, :-1], _9PbZA[1:, :], _z0XfH[:, 1:], _9PbZA[:-1, :]]).reshape(8, -1).T
+        if len(_lggWQ) > _KXWXQ:
+            _0kM8I()
+        return (_lggWQ, _3Aj7K)
+
+    def _MqNVE(x_range, y_range, idx_dtype):
+        _X9GvN = len(x_range)
+        _vjAHz = len(y_range)
+        if idx_dtype is None:
+            _9Zz7A = _X9GvN * _vjAHz + (_X9GvN - 1) * _vjAHz + _X9GvN * (_vjAHz - 1) + (_X9GvN - 1) * (_vjAHz - 1) - 1
+            idx_dtype = _ymbgW(_9Zz7A)
+        _6M0rA = 0
+        _PsYZe = np.array(np.meshgrid(x_range, y_range)).reshape(2, -1).T
+        _4UahE = np.arange(_X9GvN * _vjAHz, dtype=idx_dtype).reshape(_vjAHz, _X9GvN).T
+        _6M0rA += _4UahE.size
+        _8zyWs = (x_range[:-1] + x_range[1:]) / 2
+        _57lq6 = np.array(np.meshgrid(_8zyWs, y_range)).reshape(2, -1).T
+        _k4kwF = _6M0rA + np.arange((_X9GvN - 1) * _vjAHz, dtype=idx_dtype).reshape(_vjAHz, _X9GvN - 1).T
+        _6M0rA += _k4kwF.size
+        _Luw05 = (y_range[:-1] + y_range[1:]) / 2
+        _Ihsan = np.array(np.meshgrid(x_range, _Luw05)).reshape(2, -1).T
+        _AiuWu = _6M0rA + np.arange(_X9GvN * (_vjAHz - 1), dtype=idx_dtype).reshape(_vjAHz - 1, _X9GvN).T
+        _6M0rA += _AiuWu.size
+        _FC6dC = np.array(np.meshgrid(_8zyWs, _Luw05)).reshape(2, -1).T
+        _4Fg4j = _6M0rA + np.arange((_X9GvN - 1) * (_vjAHz - 1), dtype=idx_dtype).reshape(_vjAHz - 1, _X9GvN - 1).T
+        _pNj2M = np.row_stack([_PsYZe, _57lq6, _Ihsan, _FC6dC])
+        _dKop1 = np.array([_4UahE[:-1, :-1], _4UahE[1:, :-1], _4UahE[1:, 1:], _4UahE[:-1, 1:], _k4kwF[:, :-1], _AiuWu[1:, :], _k4kwF[:, 1:], _AiuWu[:-1, :], _4Fg4j]).reshape(9, -1).T
+        if len(_pNj2M) > _KXWXQ:
+            _0kM8I()
+        return (_pNj2M, _dKop1)
+
+    def _x0Gc8(x_range, y_range, variant='zigzag', idx_dtype=None):
+        x_range = np.asarray(x_range)
+        y_range = np.asarray(y_range)
+        _FKZzO = len(x_range)
+        _cH7NV = len(y_range)
+        if idx_dtype is None:
+            _PDjHY = _FKZzO * _cH7NV - 1
+            idx_dtype = _ymbgW(_PDjHY)
+        _K1NhM = np.array(np.meshgrid(x_range, y_range)).reshape(2, -1).T
+        _fEPiF = np.arange(_FKZzO * _cH7NV, dtype=idx_dtype).reshape(_cH7NV, _FKZzO).T
+        _RbkWF = [_fEPiF[:-1, :-1], _fEPiF[1:, :-1], _fEPiF[1:, 1:], _fEPiF[:-1, 1:]]
+        if variant == 'up':
+            _KlSbk = [[_RbkWF[0], _RbkWF[1], _RbkWF[2]], [_RbkWF[0], _RbkWF[2], _RbkWF[3]]]
+        elif variant == 'down':
+            _KlSbk = [[_RbkWF[0], _RbkWF[1], _RbkWF[3]], [_RbkWF[1], _RbkWF[2], _RbkWF[3]]]
+        elif variant == 'zigzag':
+            _XhAsr = np.ones((_FKZzO - 1, _cH7NV - 1), dtype=bool)
+            _XhAsr[1::2, ::2] = False
+            _XhAsr[::2, 1::2] = False
+            _KlSbk = [[_RbkWF[0][_XhAsr], _RbkWF[1][_XhAsr], _RbkWF[2][_XhAsr]], [_RbkWF[0][_XhAsr], _RbkWF[2][_XhAsr], _RbkWF[3][_XhAsr]], [_RbkWF[0][~_XhAsr], _RbkWF[1][~_XhAsr], _RbkWF[3][~_XhAsr]], [_RbkWF[1][~_XhAsr], _RbkWF[2][~_XhAsr], _RbkWF[3][~_XhAsr]]]
+        else:
+            assert variant == 'center'
+            _XhAsr = np.ones((_FKZzO - 1, _cH7NV - 1), dtype=bool)
+            _XhAsr[:(_FKZzO - 1) // 2, :(_cH7NV - 1) // 2] = False
+            _XhAsr[(_FKZzO - 1) // 2:, (_cH7NV - 1) // 2:] = False
+            _KlSbk = [[_RbkWF[0][_XhAsr], _RbkWF[1][_XhAsr], _RbkWF[2][_XhAsr]], [_RbkWF[0][_XhAsr], _RbkWF[2][_XhAsr], _RbkWF[3][_XhAsr]], [_RbkWF[0][~_XhAsr], _RbkWF[1][~_XhAsr], _RbkWF[3][~_XhAsr]], [_RbkWF[1][~_XhAsr], _RbkWF[2][~_XhAsr], _RbkWF[3][~_XhAsr]]]
+        _KlSbk = np.column_stack([np.array(_1ev7W).reshape(3, -1) for _1ev7W in _KlSbk]).T
+        if len(_K1NhM) > _KXWXQ:
+            _0kM8I()
+        return (_K1NhM, _KlSbk)
+
+    def _DJ2LA(x0, x1, y0, y1, z0, z1, nx, ny, nz):
+        return _0qKDz(np.linspace(x0, x1, nx + 1), np.linspace(y0, y1, ny + 1), np.linspace(z0, z1, nz + 1))
+
+    def _N0j6s(x_range, y_range, z_range, idx_dtype=None):
+        x_range = np.asarray(x_range)
+        y_range = np.asarray(y_range)
+        z_range = np.asarray(z_range)
+        _sY91u = len(x_range)
+        _Fhlxx = len(y_range)
+        _SPYEr = len(z_range)
+        _uAg7z, _F0CdG, _Q54tr = np.meshgrid(x_range, y_range, z_range, indexing='ij')
+        _Yt64f = np.array([_uAg7z, _F0CdG, _Q54tr]).T.reshape(-1, 3)
+        if idx_dtype is None:
+            _P7eD2 = len(_Yt64f) - 1
+            idx_dtype = _ymbgW(_P7eD2)
+        _aTngB = np.arange(len(_Yt64f), dtype=idx_dtype).reshape(_SPYEr, _Fhlxx, _sY91u)
+        _aTngB = np.transpose(_aTngB, [2, 1, 0])
+        _Uf0WC = np.array([_aTngB[:-1, :-1, :-1], _aTngB[1:, :-1, :-1], _aTngB[1:, 1:, :-1], _aTngB[:-1, 1:, :-1], _aTngB[:-1, :-1, 1:], _aTngB[1:, :-1, 1:], _aTngB[1:, 1:, 1:], _aTngB[:-1, 1:, 1:]]).reshape(8, -1).T
+        return (_Yt64f, _Uf0WC)
+
+    def _0qKDz(x_range, y_range, z_range, idx_dtype=None):
+        x_range = np.asarray(x_range)
+        y_range = np.asarray(y_range)
+        z_range = np.asarray(z_range)
+        _mAGZR = len(x_range)
+        _qxmkq = len(y_range)
+        _UOFn7 = len(z_range)
+        _uSHOv, _0Vbpw, _UxGrd = np.meshgrid(x_range, y_range, z_range, indexing='ij')
+        _e6l4C = np.array([_uSHOv, _0Vbpw, _UxGrd]).T.reshape(-1, 3)
+        if idx_dtype is None:
+            _3oAMB = len(_e6l4C) - 1
+            idx_dtype = _ymbgW(_3oAMB)
+        _BAcHH = np.arange(len(_e6l4C), dtype=idx_dtype).reshape(_UOFn7, _qxmkq, _mAGZR)
+        _BAcHH = np.transpose(_BAcHH, [2, 1, 0])
+        _dcJa0 = [_BAcHH[:-1, :-1, :-1], _BAcHH[1:, :-1, :-1], _BAcHH[1:, 1:, :-1], _BAcHH[:-1, 1:, :-1], _BAcHH[:-1, :-1, 1:], _BAcHH[1:, :-1, 1:], _BAcHH[1:, 1:, 1:], _BAcHH[:-1, 1:, 1:]]
+        _OKzSy = np.ones((_mAGZR - 1, _qxmkq - 1, _UOFn7 - 1), dtype=bool)
+        _OKzSy[::2, 1::2, ::2] = False
+        _OKzSy[::2, ::2, 1::2] = False
+        _OKzSy[1::2, ::2, ::2] = False
+        _OKzSy[1::2, 1::2, 1::2] = False
+        _PUWH1 = [[_dcJa0[0][_OKzSy], _dcJa0[1][_OKzSy], _dcJa0[3][_OKzSy], _dcJa0[4][_OKzSy]], [_dcJa0[1][_OKzSy], _dcJa0[2][_OKzSy], _dcJa0[3][_OKzSy], _dcJa0[6][_OKzSy]], [_dcJa0[1][_OKzSy], _dcJa0[3][_OKzSy], _dcJa0[4][_OKzSy], _dcJa0[6][_OKzSy]], [_dcJa0[1][_OKzSy], _dcJa0[4][_OKzSy], _dcJa0[5][_OKzSy], _dcJa0[6][_OKzSy]], [_dcJa0[3][_OKzSy], _dcJa0[4][_OKzSy], _dcJa0[6][_OKzSy], _dcJa0[7][_OKzSy]], [_dcJa0[4][~_OKzSy], _dcJa0[5][~_OKzSy], _dcJa0[0][~_OKzSy], _dcJa0[7][~_OKzSy]], [_dcJa0[5][~_OKzSy], _dcJa0[6][~_OKzSy], _dcJa0[2][~_OKzSy], _dcJa0[7][~_OKzSy]], [_dcJa0[5][~_OKzSy], _dcJa0[7][~_OKzSy], _dcJa0[2][~_OKzSy], _dcJa0[0][~_OKzSy]], [_dcJa0[5][~_OKzSy], _dcJa0[0][~_OKzSy], _dcJa0[2][~_OKzSy], _dcJa0[1][~_OKzSy]], [_dcJa0[7][~_OKzSy], _dcJa0[0][~_OKzSy], _dcJa0[3][~_OKzSy], _dcJa0[2][~_OKzSy]]]
+        _PUWH1 = np.column_stack([np.array(_OUXxb).reshape(4, -1) for _OUXxb in _PUWH1]).T
+        if len(_e6l4C) > _KXWXQ:
+            _0kM8I()
+        return (_e6l4C, _PUWH1)
+
+    def _rhHde(length=1.0, radius=1.0, n=30):
+        _1VEqY = int(round(length * n / (2 * np.pi * radius)))
+        _ZKE3v = np.linspace(0.0, 2 * np.pi, num=n, endpoint=False)
+        _cX0qi = np.linspace(-0.5 * length, 0.5 * length, num=_1VEqY)
+        _rjhIT = np.dstack(np.meshgrid(_ZKE3v, _cX0qi, indexing='ij')).reshape(-1, 2)
+        _UJzio = np.column_stack([radius * np.cos(_rjhIT[:, 0]), radius * np.sin(_rjhIT[:, 0]), _rjhIT[:, 1]])
+        _XJKaJ = []
+        for _pQmSW in range(n - 1):
+            for _GNnMT in range(_1VEqY - 1):
+                _XJKaJ.append([_pQmSW * _1VEqY + _GNnMT, (_pQmSW + 1) * _1VEqY + _GNnMT + 1, _pQmSW * _1VEqY + _GNnMT + 1])
+                _XJKaJ.append([_pQmSW * _1VEqY + _GNnMT, (_pQmSW + 1) * _1VEqY + _GNnMT, (_pQmSW + 1) * _1VEqY + _GNnMT + 1])
+        for _AisQ8 in range(_1VEqY - 1):
+            _XJKaJ.append([(n - 1) * _1VEqY + _AisQ8, _AisQ8 + 1, (n - 1) * _1VEqY + _AisQ8 + 1])
+            _XJKaJ.append([(n - 1) * _1VEqY + _AisQ8, _AisQ8, _AisQ8 + 1])
+        if len(_UJzio) > _KXWXQ:
+            _0kM8I()
+        if len(_UJzio) > _KXWXQ:
+            _0kM8I()
+        return (_UJzio, np.array(_XJKaJ))
+
+    def _68INV(p, n, offset=np.pi / 2, idx_dtype=None):
+        _b02X1 = np.linspace(offset, offset + 2 * np.pi, p, endpoint=False)
+        _dxYEe = np.vstack([[[0.0, 0.0]], np.array([np.cos(_b02X1), np.sin(_b02X1)]).T])
+        _Ew8pz = [(0, _jsdYV + 1, _jsdYV + 2) for _jsdYV in range(p - 1)] + [(0, p, 1)]
+
+        def _42cHj(edge, verts):
+            if 0 in edge:
+                return verts
+            _lYlIZ = np.sqrt(np.einsum('ij,ij->i', verts, verts))
+            return verts / _lYlIZ[:, None]
+
+        def _6VV9l(face, bary, verts, corner_verts):
+            assert face[0] == 0
+            _2HRQF = np.zeros_like(bary[1])
+            _TaGQJ = np.array([_2HRQF, bary[1], bary[2]]) / (bary[1] + bary[2])
+            _9ioay = np.dot(corner_verts.T, _TaGQJ).T
+            _jCm5N = np.sqrt(np.einsum('ij,ij->i', _9ioay, _9ioay))
+            return verts / _jCm5N[:, None]
+        return _yJ2g8(_dxYEe, _Ew8pz, n, edge_adjust=_42cHj, face_adjust=_6VV9l, idx_dtype=idx_dtype)
+
+    def _ZEspO(n, cell_type='quad4', idx_dtype=None):
+        _L6orK = 1 / np.sqrt(2)
+        _dNyqp, _Zwp8R = _4fHQ9(np.linspace(-_L6orK, _L6orK, n + 1), np.linspace(-_L6orK, _L6orK, n + 1), cell_type=cell_type, idx_dtype=idx_dtype)
+        _4LEuT = np.max(np.abs(_dNyqp), axis=1)
+        _PqKxQ = np.linalg.norm(_dNyqp, axis=1)
+        _2I2Qj = _PqKxQ > 1e-13
+        _dNyqp[_2I2Qj] = (_dNyqp[_2I2Qj].T * (_4LEuT[_2I2Qj] / _PqKxQ[_2I2Qj])).T
+        if len(_dNyqp) > _KXWXQ:
+            _0kM8I()
+        return (_dNyqp, _Zwp8R)
+
+    def _p06x5(n, idx_dtype=None):
+        _qMkym = 1 / np.sqrt(3)
+        _Cc4ea = np.linspace(-_qMkym, _qMkym, n + 1)
+        _buz7k, _Sprwf = _N0j6s(_Cc4ea, _Cc4ea, _Cc4ea, idx_dtype=idx_dtype)
+        _hw9PH = np.max(np.abs(_buz7k), axis=1)
+        _m80lT = np.linalg.norm(_buz7k, axis=1)
+        _j5FJr = _m80lT > 1e-13
+        _buz7k[_j5FJr] = (_buz7k[_j5FJr].T * (_hw9PH[_j5FJr] / _m80lT[_j5FJr])).T
+        if len(_buz7k) > _KXWXQ:
+            _0kM8I()
+        return (_buz7k, _Sprwf)
+
+    def _6toND(n, idx_dtype=None):
+        _iQcQ2 = 1 / np.sqrt(3)
+        _5SW4S = np.linspace(-_iQcQ2, _iQcQ2, n + 1)
+        _p4g1w, _lFybi = _0qKDz(_5SW4S, _5SW4S, _5SW4S, idx_dtype=idx_dtype)
+        _OL5sk = np.max(np.abs(_p4g1w), axis=1)
+        _qCBbL = np.linalg.norm(_p4g1w, axis=1)
+        _JnTkL = _qCBbL > 1e-13
+        _p4g1w[_JnTkL] = (_p4g1w[_JnTkL].T * (_OL5sk[_JnTkL] / _qCBbL[_JnTkL])).T
+        if len(_p4g1w) > _KXWXQ:
+            _0kM8I()
+        return (_p4g1w, _lFybi)
+
+    def _gtWQi(n, idx_dtype=None):
+        _vbp5s = np.hstack([[np.full(n - _DAR9P + 1, _DAR9P / n), np.linspace(0.0, (n - _DAR9P + 1) / n, n - _DAR9P + 1, endpoint=False)] for _DAR9P in range(n + 1)])
+        _vbp5s = np.array([1.0 - _vbp5s[0] - _vbp5s[1], _vbp5s[1], _vbp5s[0]])
+        _vbp5s[_vbp5s < 0.0] = 0.0
+        _vbp5s[_vbp5s > 1.0] = 1.0
+        if idx_dtype is None:
+            _pBGvJ = (n + 1) * (n + 2) // 2 - 1
+            idx_dtype = _ymbgW(_pBGvJ)
+        _3v54P = []
+        _9mB15 = 0
+        for _BsHMH in range(n):
+            _RrRSo = np.arange(n - _BsHMH, dtype=idx_dtype)
+            _3v54P.append(np.column_stack([_9mB15 + _RrRSo, _9mB15 + _RrRSo + 1, _9mB15 + n - _BsHMH + _RrRSo + 1]))
+            _RrRSo = _RrRSo[:-1]
+            _3v54P.append(np.column_stack([_9mB15 + _RrRSo + 1, _9mB15 + n - _BsHMH + _RrRSo + 2, _9mB15 + n - _BsHMH + _RrRSo + 1]))
+            _9mB15 += n - _BsHMH + 1
+        _3v54P = np.vstack(_3v54P)
+        if len(_vbp5s) > _KXWXQ:
+            _0kM8I()
+        return (_vbp5s, _3v54P)
+
+    def _HIsy7(p, n, offset=np.pi / 2):
+        _wCwkZ = np.linspace(offset, offset + 2 * np.pi, p, endpoint=False)
+        _HybLS = np.vstack([[[0.0, 0.0]], np.array([np.cos(_wCwkZ), np.sin(_wCwkZ)]).T])
+        _z851J = [(0, _Kb0n7 + 1, _Kb0n7 + 2) for _Kb0n7 in range(p - 1)] + [(0, p, 1)]
+        return _yJ2g8(_HybLS, _z851J, n)
+_1PLCp()
+del _1PLCp
