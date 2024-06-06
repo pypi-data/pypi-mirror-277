@@ -1,0 +1,2 @@
+[console_scripts]
+get-language-versions = wolfsoftware.get_language_versions.main:main

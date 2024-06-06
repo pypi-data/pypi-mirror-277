@@ -1,0 +1,17 @@
+wolfsoftware/get_language_versions/__init__.py,sha256=Ed36vVm2_cTe0s91TAq9NeYHShcKjmnpm0JfgI8zGpo,482
+wolfsoftware/get_language_versions/cli.py,sha256=XXa0M5ooyKHdlOS19MHpYMz1cMir0t-hLPyiX1lfw-Y,5360
+wolfsoftware/get_language_versions/config.py,sha256=Vl0GhY5GqIWtOulZJggg2sEbeD1iKZ3MxP9Ohfogcvo,1445
+wolfsoftware/get_language_versions/constants.py,sha256=ABlPe1CBa8RklR1lspS16KZWCDKGDnhjqQ1zJsJCfes,2862
+wolfsoftware/get_language_versions/exceptions.py,sha256=glfBy75RHbh0ewy-X-lOivlYO7DIHqw9jIxH9PYyD_4,492
+wolfsoftware/get_language_versions/globals.py,sha256=UzaIjy5bC017GqdVmKXL1ZKUwJv0D-ztJJpFc7Eq8BI,1022
+wolfsoftware/get_language_versions/main.py,sha256=dy6epxcy9dljNuECetHI8Q7da94qDkXsv0K1ItVD21I,1025
+wolfsoftware/get_language_versions/process.py,sha256=whC_nmrCWtwSLL5Tk86pEei0XaSRWlcWpoM-nlpN9no,5129
+wolfsoftware/get_language_versions/tags.py,sha256=GS2_NQzzxlftnCv_rg-5mwekyBJi2qQ3MjyAOVD3h2g,849
+wolfsoftware/get_language_versions/utils.py,sha256=flVPfn5I_cKXbOXL-sF4zWy1Dtaab5yz_isrKPfMI_8,924
+wolfsoftware/get_language_versions/versions.py,sha256=M-_yDXK-e9H1gSRD6iXbgujbWSWLQoyNzhzRqPptDDw,6737
+wolfsoftware.get_language_versions-0.1.0.dist-info/LICENSE.md,sha256=lGeU8YsP7-Ty2Mf5d_qmyYrdhBahKio3jhRcsKkW3nw,1118
+wolfsoftware.get_language_versions-0.1.0.dist-info/METADATA,sha256=n291k495SSDMNV3rm5CNSO43bNRVD9zpKp-FDdz5ASM,6222
+wolfsoftware.get_language_versions-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+wolfsoftware.get_language_versions-0.1.0.dist-info/entry_points.txt,sha256=XtfG76ZW6utFWHWUErLTQ9Tbr2dv5m6Tg9Am2lh5n60,87
+wolfsoftware.get_language_versions-0.1.0.dist-info/top_level.txt,sha256=fseJlDQdZOeclXNvg0wy0fFFgxsKIMhQDo5jMxmyrV4,13
+wolfsoftware.get_language_versions-0.1.0.dist-info/RECORD,,
