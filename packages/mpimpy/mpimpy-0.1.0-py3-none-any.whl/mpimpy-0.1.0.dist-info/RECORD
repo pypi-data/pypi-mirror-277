@@ -1,0 +1,11 @@
+mpimpy/__init__.py,sha256=QwnCg-MQtdXj3ZOS9C2Hb-5sCQ_D0_3RwAcQq-XaT9A,202
+mpimpy/memmat.py,sha256=XKAcBIhFYWcL7cQ5962B2kQ72ICefZTDOpWJm8mLMSE,7967
+mpimpy/memmatdp.py,sha256=pCMev2xjcEEtOFwVxRKNTNvXtVn37e02SIicKX121xo,4336
+mpimpy/memmatfp.py,sha256=RW1HNn7aUgYHdKmNvTzXdH0HZNt_mxbuX3H8FDFToO8,8243
+mpimpy/crossbar/__init__.py,sha256=NPExSp694cva_fUxEwk2WPmXD0ppBX3wEKXs4KHFasU,80
+mpimpy/crossbar/crossbar.py,sha256=O1mOSf5hkP-FTIuXY_4dqRaZt1G4tkt3lh1HKXcynJE,4314
+mpimpy-0.1.0.dist-info/LICENSE.txt,sha256=kGH2GnOPx_xPqKJwbCC79h9NqB5U8S_w3lmDKd9o768,1085
+mpimpy-0.1.0.dist-info/METADATA,sha256=uoNuBZXxTCBCcMPviXsJ_Xq8TrGB2qrIoU3HkZVgsvE,7190
+mpimpy-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mpimpy-0.1.0.dist-info/top_level.txt,sha256=-PJqHRPx4M30jLLqm9hCEZ-oaNNgCvKzmd_UhvhoT3c,7
+mpimpy-0.1.0.dist-info/RECORD,,
