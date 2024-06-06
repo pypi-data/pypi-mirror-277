@@ -1,0 +1,3 @@
+[console_scripts]
+pystodon=pystodon.__main__:main
+
