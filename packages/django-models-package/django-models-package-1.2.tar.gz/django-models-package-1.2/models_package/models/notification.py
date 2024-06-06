@@ -1,0 +1,10 @@
+from django.db import models
+from models_package.models.user import MyUserLibModel
+
+class NotificationLibModel(models.Model):
+    user = models.ForeignKey(MyUserLibModel, on_delete=models.CASCADE)
+    message = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    
+    class Meta:
+        app_label = 'models_package'
