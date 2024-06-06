@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "krules-core"
+version = "0.12.0rc0"
+description = "KRules Python core package"
+authors = ["Alberto Degli Esposti <alberto@arispot.tech>", "Lorenzo Campo <lorenzo@airspot.tech>"]
+license = "Apache Licence 2.0"
+readme = "README.md"
+repository = "https://github.com/airspot-dev/krules-core"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: Apache Software License",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11, <3.12"
+dependency-injector = "^4.41.0"
+wrapt = "^1.16.0"
+rx = "^3.2.0"
+jsonpatch = "^1.33"
+jsonpath-rw-ext = "^1.2.2"
+pydantic = "^2.7.3"
+deepmerge = "^1.1.1"
+cel-python = "^0.1.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.2.2"
+pytest-runner = "^6.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
