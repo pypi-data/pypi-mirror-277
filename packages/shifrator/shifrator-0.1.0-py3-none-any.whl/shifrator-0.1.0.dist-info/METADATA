@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: shifrator
+Version: 0.1.0
+Summary: This is encoder for your text.
+Home-page: https://discord.gg/hbB4WBdshf
+Author: harryys
+Author-email: gniceso225@gmail.com
+Project-URL: GitHub, https://github.com/gnice225
+Keywords: files speedfiles
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests >=2.25.1
+
+## What is this ? ##
+
+Python library for text encryption.
+
+```python
+from shifrator.main import Shifrator 
+
+sh = Shifrator()
+print(sh.shifr('Hello World!'))
+```
+
+output: `Ifmmp Xpsme!`
+
+```python
+from shifrator.main import Shifrator 
+
+sh = Shifrator()
+print(sh.reshifr('Ifmmp Xpsme!'))
+```
+
+output: `Hello World!`
+
+## To encrypt files ##
+
+in file text.txt:
+`Hello World!`
+
+```python
+from shifrator.main import Shifrator
+
+sh = Shifrator()
+sh.shdocs(file='text.txt', op='shifr')
+```
+
+after: 
+`Ifmmp xpsme!` 
+
+## Additionally ##
+
+The encoder supports text encryption in both Russian and English.
+
