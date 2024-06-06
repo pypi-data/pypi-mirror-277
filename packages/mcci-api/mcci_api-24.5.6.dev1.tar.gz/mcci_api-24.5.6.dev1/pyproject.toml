@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "mcci-api"
+version = "24.05.06.dev1"
+description = "Unofficial Python bindings to the MCC Island API."
+authors = ["osfanbuff63 <91388253+osfanbuff63@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/osfanbuff63/mcci-api-python"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+gql = {extras = ["httpx"], version = "^3.5.0"}
+mypy = "^1.10.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.3"
+pytest = "^8.2.2"
+pytest-asyncio = "^0.23.7"
+
+# [tool.poetry.group.docs.dependencies]
+# mkdocs = "^1.6.0"
+# mkdocs-material = "^9.5.25"
+# mkdocstrings = "^0.25.1"
+# mkdocstrings-python = "^1.10.3"
+# mkdocs-git-committers-plugin-2 = "^2.3.0"
+
+[tool.ruff]
+exclude = [
+    ".git",
+    ".mypy_cache",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "build",
+    "dist",
+    ".venv",
+    "tests/tmp",
+    "examples/"
+]
+
+
+[tool.ruff.lint]
+select = ["D"]
+ignore = ["E722", "D417"] # do not use bare except (usually temporary), relax docstrings
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
