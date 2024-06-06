@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: metatrain
+Version: 0.0.0
+Summary: Atomistic models using metatensor
+License: BSD-3-Clause
+Project-URL: homepage, https://github.com/lab-cosmo/metatrain
+Project-URL: documentation, https://lab-cosmo.github.io/metatrain/
+Project-URL: repository, https://github.com/lab-cosmo/metatrain
+Keywords: machine learning,molecular modeling
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Metatrain
+
+This project is not yet fully released on PyPI, please install it from source
+for now: https://github.com/lab-cosmo/metatrain

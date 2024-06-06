@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+src/metatrain/__init__.py
+src/metatrain.egg-info/PKG-INFO
+src/metatrain.egg-info/SOURCES.txt
+src/metatrain.egg-info/dependency_links.txt
+src/metatrain.egg-info/top_level.txt
