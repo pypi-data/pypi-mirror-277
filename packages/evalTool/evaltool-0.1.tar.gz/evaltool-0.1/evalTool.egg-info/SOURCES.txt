@@ -1,0 +1,17 @@
+LICENSE
+setup.py
+evalTool.egg-info/PKG-INFO
+evalTool.egg-info/SOURCES.txt
+evalTool.egg-info/dependency_links.txt
+evalTool.egg-info/entry_points.txt
+evalTool.egg-info/requires.txt
+evalTool.egg-info/top_level.txt
+validation/__init__.py
+validation/add_custom_metric.py
+validation/create_custom_metrics.py
+validation/custom_metrics.py
+validation/diff_tool.py
+validation/manage_metrics.py
+validation/metrics.py
+validation/script.py
+validation/validate.py

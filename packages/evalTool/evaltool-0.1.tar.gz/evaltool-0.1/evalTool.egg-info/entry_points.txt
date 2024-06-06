@@ -1,0 +1,5 @@
+[console_scripts]
+add_metric = validation.add_custom_metric:add_custom_metric
+create_custom_metrics = validation.create_custom_metrics:create_custom_metric
+custom_metrics = validation.custom_metrics:view_custom_metrics
+manage_metrics = validation.manage_metrics:main

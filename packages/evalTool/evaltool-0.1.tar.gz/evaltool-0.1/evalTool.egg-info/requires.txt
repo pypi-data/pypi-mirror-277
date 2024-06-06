@@ -1,0 +1,5 @@
+streamlit
+json5
+aider-chat
+deepeval
+python-dotenv
