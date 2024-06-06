@@ -1,0 +1,9 @@
+README.md
+setup.py
+mana_bibloteka/__init__.py
+mana_bibloteka/datu_strukturas.py
+mana_bibloteka/funkcijas.py
+mans_biblioteka.egg-info/PKG-INFO
+mans_biblioteka.egg-info/SOURCES.txt
+mans_biblioteka.egg-info/dependency_links.txt
+mans_biblioteka.egg-info/top_level.txt
