@@ -1,0 +1,39 @@
+<style>
+:root {
+    --color-border-light: #eaeaea;
+    --border-thin: 1px solid;
+    --border-thick: 3px solid;
+}
+
+.default { }
+.error { color: red; }
+.list { color: blue; }
+.alt { font-style: italic; }
+.titled { text-decoration: underline dotted; }
+.right { text-align: right; }
+.center { text-align: right; }
+
+caption { font-style: italic; margin-bottom: 1em; }
+
+table {
+  border: var(--border-thin) var(--color-border-light);
+  border-spacing: 0;
+  border-collapse: collapse;
+  table-layout: auto;
+  margin: 1em auto;
+}
+
+tr { vertical-align: middle; }
+
+th {
+  border: var(--border-thin) var(--color-border-light);
+  padding: 0.5rem;
+  background: var(--color-bg-box);
+}
+
+td {
+  vertical-align: top;
+  padding: 0.5rem;
+  border: var(--border-thin) var(--color-border-light);
+}
+</style>
