@@ -1,0 +1,134 @@
+Metadata-Version: 2.1
+Name: pineconeutils
+Version: 0.0.4
+Summary: PineconeUtils is a Python module designed to handle and process data for embedding and indexing using Pinecone, Cohere, and OpenAI services. This utility module makes it easy to load, chunk, prepare, and upsert data into a Pinecone index, making it ideal for applications involving text embedding and retrieval augmented systems(RAG)
+Home-page: https://github.com/kowshik24/PineconeUtils
+Author: kowshik24
+Author-email: kowshikcseruet1998@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/kowshik24/PineconeUtils/issues
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: ensure
+Requires-Dist: python-docx==1.1.2
+Requires-Dist: openpyxl==3.1.3
+Requires-Dist: llama-index-core==0.10.43
+Requires-Dist: langchain
+Requires-Dist: langchain-community
+Requires-Dist: langchain-core
+Requires-Dist: llama-index-readers-web
+Requires-Dist: llama-index
+Requires-Dist: PyPDF2
+Requires-Dist: cohere
+Requires-Dist: pinecone-client
+Requires-Dist: openai
+Requires-Dist: pytest==7.1.3
+Requires-Dist: tox==4.15.0
+Requires-Dist: black==22.8.0
+Requires-Dist: flake8==5.0.4
+Requires-Dist: mypy==0.971
+Provides-Extra: testing
+Requires-Dist: pytest>=7.1.3; extra == "testing"
+Requires-Dist: mypy>=0.971; extra == "testing"
+Requires-Dist: flake8>=5.0.4; extra == "testing"
+Requires-Dist: tox==4.15.0; extra == "testing"
+Requires-Dist: black>=22.8.0; extra == "testing"
+
+# PineconeUtils
+
+PineconeUtils is a Python module designed to handle and process data for embedding and indexing using Pinecone, Cohere, and OpenAI services. This utility module makes it easy to load, chunk, prepare, and upsert data into a Pinecone index, making it ideal for applications involving text embedding and retrieval systems(RAG).
+
+## Features
+
+- Load text data from `.txt`, `.docx`, and `.pdf` files.
+- Chunk text data for processing.
+- Prepare embeddings using either Cohere or OpenAI models.
+- Upsert prepared data into a Pinecone index.
+
+## Installation
+
+To install PineconeUtils, you can use pip:
+
+```bash
+pip install pineconeutils
+```
+
+# Usage
+
+Here's a quick example of how to use PineconeUtils:
+
+## Setup
+
+First, ensure you have the necessary API keys and setup information:
+
+```bash
+pinecone_api_key = "your_pinecone_api_key"
+cohere_api_key = "your_cohere_api_key"
+openai_api_key = "your_openai_api_key"
+index_name = "your_index_name"
+namespace_id = "your_namespace_id"
+```
+
+# Load Data
+
+Load data from a supported file format:
+
+```bash
+from pineconeutils import PineconeUtils
+
+# Create instance of PineconeUtils
+pinecone = PineconeUtils(pinecone_api_key=pinecone_api_key, openai_api_key=openai_api_key,cohere_api_key =cohere_api_key, index_name=index_name, namespace_id=namespace_id)
+
+path = "path_to_your_file.docx"
+data = pinecone.load_data(path)
+print("Loaded Data:", data)
+```
+
+# Process Data
+
+## Chunk and prepare data for embedding:
+
+
+## For openai
+```bash
+chunks = pinecone.chunk_data(data, chunk_size=100, chunk_overlap=10)
+print("Data Chunks:", chunks)
+
+prepared_data = pinecone.prepare_data(chunks, model="text-embedding-ada-002", service="openai")
+```
+
+## For cohere
+
+```bash
+chunks = pinecone.chunk_data(data, chunk_size=100, chunk_overlap=10)
+print("Data Chunks:", chunks)
+
+prepared_data = pinecone.prepare_data(chunks, model="embed-english-v3.0", service="cohere",input_type="search_document")
+```
+For more about Cohere Embeddings: [Cohere Embeddings](https://docs.cohere.com/docs/embeddings)
+
+# Upsert Data
+
+## Upsert data into Pinecone index:
+
+```bash
+successful = pinecone.upsert_data(prepared_data)
+print("Data upsertion was", "successful" if successful else "unsuccessful")
+```
+
+# Development
+
+To contribute to the development of PineconeUtils, you can clone the repository and submit pull requests.
+
+# Support
+
+If you encounter any issues or have questions, please file an issue on the GitHub repository.
+
+# License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
