@@ -1,0 +1,12 @@
+README.md
+setup.py
+jsonmorph/__init__.py
+jsonmorph/helpers.py
+jsonmorph/main.py
+jsonmorph.egg-info/PKG-INFO
+jsonmorph.egg-info/SOURCES.txt
+jsonmorph.egg-info/dependency_links.txt
+jsonmorph.egg-info/requires.txt
+jsonmorph.egg-info/top_level.txt
+jsonmorph/tests/__init__.py
+jsonmorph/tests/test_main.py
