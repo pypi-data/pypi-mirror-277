@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: kakuyomub
+Version: 0.0.4
+Summary: Convert kakuyomu articles to one epub file
+Home-page: https://github.com/XHLin-gamer/kakuyomub
+Author: XHLin-gamer
+Author-email: earllin@shu.edu.cn
+License: MIT Licence
+Keywords: kakuyomu,epub
+Platform: any
+Requires-Dist: grequests
+Requires-Dist: loguru
+Requires-Dist: bs4
+Requires-Dist: jinja2
+Requires-Dist: requests
+Requires-Dist: ebooklib
+
+Convert kakuyomu articles to one epub file
