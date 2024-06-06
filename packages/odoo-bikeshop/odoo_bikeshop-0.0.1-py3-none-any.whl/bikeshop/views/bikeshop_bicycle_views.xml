@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<odoo>
+  <record id="bikeshop_bicycle_action" model="ir.actions.act_window">
+    <field name="name">Bicycles</field>
+    <field name="res_model">bikeshop.bicycle</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <record id="bikeshop_bicycle_view_tree" model="ir.ui.view">
+    <field name="name">bikeshop.bicycle.view.tree</field>
+    <field name="model">bikeshop.bicycle</field>
+    <field name="arch" type="xml">
+      <tree string="Bikes">
+        <field name="serial"/>
+        <field name="make"/>
+        <field name="model"/>
+        <field name="color"/>
+        <field name="owner_id"/>
+        <field name="battery_key" optional="hide"/>
+        <field name="notes" optional="hide"/>
+      </tree>
+    </field>
+  </record>
+
+  <record id="bikeshop_bicycle_view_form" model="ir.ui.view">
+    <field name="name">bikeshop.bicycle.view.form</field>
+    <field name="model">bikeshop.bicycle</field>
+    <field name="arch" type="xml">
+      <form string="Bike">
+        <sheet>
+          <group>
+            <group>
+              <field name="serial"/>
+              <field name="owner_id"/>
+            </group>
+            <group>
+              <field name="make"/>
+              <field name="model"/>
+              <field name="color"/>
+              <field name="battery_key"/>
+            </group>
+            <notebook>
+              <page string="Notes">
+                <field name="notes"/>
+              </page>
+              <page string="History">
+                <field name="workorder_id">
+                  <tree string="Work Orders">
+                    <button name="get_formview_action" string="View" type="object" class="btn-primary"/>
+                    <field name="name"/>
+                    <field name="state"/>
+                    <field name="date_deadline" optional="hide"/>
+                    <field name="create_date" optional="show"/>
+                    <field name="display_state"/>
+                    <field name="activity_ids" widget="list_activity" optional="hide"/>
+                    <field name="labor_hours" optional="show"/>
+                    <field name="customer_request" optional="hide"/>
+                  </tree>
+                </field>
+              </page>
+            </notebook>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+</odoo>
