@@ -1,0 +1,10 @@
+databridge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+databridge/databridge.py,sha256=DCJcTp-AqS4ihaw3fsoIm-LlrsFQkIVCsw4Gwx3fiBM,3988
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/run.py,sha256=3NRQysl4XDu0qEW_A8oPkMoUdIJzvU4s5GiDReTOeeQ,374
+tests/test_config_updater.py,sha256=BPlm-DrscwAdCccODGXgqCINEtrRnm9Z1lLitNFR4GQ,1527
+databridge-0.2.1.dist-info/LICENSE,sha256=vf8FEO-SZgvmPmmqNrhpuQSr2S2zHbEMqMhI9nXAZ4Q,1070
+databridge-0.2.1.dist-info/METADATA,sha256=xd24R5M5dWFC0lNgNKWNVw1uGxsdwhXQ9GtcXQT1aL8,2195
+databridge-0.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+databridge-0.2.1.dist-info/top_level.txt,sha256=IR60z1K0NTL3fd3PQB8dp6tlllxCFMdIHFOkl5PAG2I,17
+databridge-0.2.1.dist-info/RECORD,,
