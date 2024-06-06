@@ -1,0 +1,16 @@
+typeinc_mini/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+typeinc_mini/main.py,sha256=F7P_AsyPlLVVye-UP5pkYaQDKWXm52icENvIrLb8QNY,6750
+typeinc_mini/wordlist.txt,sha256=ryeIstU3ipitmg5QfibSz1hvNHejZIlH-PmDnOtObBw,43366
+typeinc_mini/configurations/input_config.py,sha256=1G75qIwfTwqgTfqdIkfGNaC-h6ZVO_W9VYjY8ixGoLg,6587
+typeinc_mini/configurations/mainscreen.py,sha256=VAr81BZL98L8IOEjBYMTbI_jytg6fJqBs-4TDNkK8M8,6596
+typeinc_mini/configurations/result.py,sha256=XI-IRcjKDPuE2tcej0dZ6lQ1JkYnY50HI4Cy0iByCLQ,9312
+typeinc_mini/configurations/text_gen.py,sha256=yL0_nukdTjC3zHaMtGL_5jZAuptFnzqUxyHljyhcNaw,4017
+typeinc_mini/configurations/ui.py,sha256=ia2etr6dm0jkiBkCVS3boozY2WNnSdkGGVxA--bM0hY,1999
+typeinc_mini/scores/highscore.py,sha256=kjhKY0EAJCo3_rAU7psZNJ4Dtx6Eaeeh6B9xNwroO68,7727
+typeinc_mini/scores/scores.json,sha256=6hTOiXpv9BFm_FpKnHbvk2rYW6K351O7U7QYhBvp7zs,167
+typeinc_mini-1.0.0.dist-info/LICENSE.md,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+typeinc_mini-1.0.0.dist-info/METADATA,sha256=itPzhGxHnDh8r-ce4phLdqLuCvbXjS-Lnk8WLl4y6u0,2360
+typeinc_mini-1.0.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+typeinc_mini-1.0.0.dist-info/entry_points.txt,sha256=CgBR7AuBdML-lTiqe9dVfzTrGTKZRi0fcuRr232iyBs,56
+typeinc_mini-1.0.0.dist-info/top_level.txt,sha256=mwIO4QgI_y4-d8u1T6uUKYghfIUqGwWReABSnX1ZJI0,13
+typeinc_mini-1.0.0.dist-info/RECORD,,
