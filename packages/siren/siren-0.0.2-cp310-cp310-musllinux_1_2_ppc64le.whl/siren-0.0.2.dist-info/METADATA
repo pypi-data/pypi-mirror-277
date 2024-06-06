@@ -1,0 +1,340 @@
+Metadata-Version: 2.1
+Name: siren
+Version: 0.0.2
+Summary: Sampling and Injection for Rare EveNts: A neutrino and rare-process injection toolkit
+Keywords: physics,hep,netrino,bsm,simulation,injection,weighting
+Author-Email: Austin Schneider <aschn@mit.edu>, Nicholas Kamp <nkamp@fas.harvard.edu>
+Maintainer-Email: Austin Schneider <aschn@mit.edu>, Nicholas Kamp <nkamp@fas.harvard.edu>
+License:                    GNU LESSER GENERAL PUBLIC LICENSE
+                               Version 3, 29 June 2007
+        
+         Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+         Everyone is permitted to copy and distribute verbatim copies
+         of this license document, but changing it is not allowed.
+        
+        
+          This version of the GNU Lesser General Public License incorporates
+        the terms and conditions of version 3 of the GNU General Public
+        License, supplemented by the additional permissions listed below.
+        
+          0. Additional Definitions.
+        
+          As used herein, "this License" refers to version 3 of the GNU Lesser
+        General Public License, and the "GNU GPL" refers to version 3 of the GNU
+        General Public License.
+        
+          "The Library" refers to a covered work governed by this License,
+        other than an Application or a Combined Work as defined below.
+        
+          An "Application" is any work that makes use of an interface provided
+        by the Library, but which is not otherwise based on the Library.
+        Defining a subclass of a class defined by the Library is deemed a mode
+        of using an interface provided by the Library.
+        
+          A "Combined Work" is a work produced by combining or linking an
+        Application with the Library.  The particular version of the Library
+        with which the Combined Work was made is also called the "Linked
+        Version".
+        
+          The "Minimal Corresponding Source" for a Combined Work means the
+        Corresponding Source for the Combined Work, excluding any source code
+        for portions of the Combined Work that, considered in isolation, are
+        based on the Application, and not on the Linked Version.
+        
+          The "Corresponding Application Code" for a Combined Work means the
+        object code and/or source code for the Application, including any data
+        and utility programs needed for reproducing the Combined Work from the
+        Application, but excluding the System Libraries of the Combined Work.
+        
+          1. Exception to Section 3 of the GNU GPL.
+        
+          You may convey a covered work under sections 3 and 4 of this License
+        without being bound by section 3 of the GNU GPL.
+        
+          2. Conveying Modified Versions.
+        
+          If you modify a copy of the Library, and, in your modifications, a
+        facility refers to a function or data to be supplied by an Application
+        that uses the facility (other than as an argument passed when the
+        facility is invoked), then you may convey a copy of the modified
+        version:
+        
+           a) under this License, provided that you make a good faith effort to
+           ensure that, in the event an Application does not supply the
+           function or data, the facility still operates, and performs
+           whatever part of its purpose remains meaningful, or
+        
+           b) under the GNU GPL, with none of the additional permissions of
+           this License applicable to that copy.
+        
+          3. Object Code Incorporating Material from Library Header Files.
+        
+          The object code form of an Application may incorporate material from
+        a header file that is part of the Library.  You may convey such object
+        code under terms of your choice, provided that, if the incorporated
+        material is not limited to numerical parameters, data structure
+        layouts and accessors, or small macros, inline functions and templates
+        (ten or fewer lines in length), you do both of the following:
+        
+           a) Give prominent notice with each copy of the object code that the
+           Library is used in it and that the Library and its use are
+           covered by this License.
+        
+           b) Accompany the object code with a copy of the GNU GPL and this license
+           document.
+        
+          4. Combined Works.
+        
+          You may convey a Combined Work under terms of your choice that,
+        taken together, effectively do not restrict modification of the
+        portions of the Library contained in the Combined Work and reverse
+        engineering for debugging such modifications, if you also do each of
+        the following:
+        
+           a) Give prominent notice with each copy of the Combined Work that
+           the Library is used in it and that the Library and its use are
+           covered by this License.
+        
+           b) Accompany the Combined Work with a copy of the GNU GPL and this license
+           document.
+        
+           c) For a Combined Work that displays copyright notices during
+           execution, include the copyright notice for the Library among
+           these notices, as well as a reference directing the user to the
+           copies of the GNU GPL and this license document.
+        
+           d) Do one of the following:
+        
+               0) Convey the Minimal Corresponding Source under the terms of this
+               License, and the Corresponding Application Code in a form
+               suitable for, and under terms that permit, the user to
+               recombine or relink the Application with a modified version of
+               the Linked Version to produce a modified Combined Work, in the
+               manner specified by section 6 of the GNU GPL for conveying
+               Corresponding Source.
+        
+               1) Use a suitable shared library mechanism for linking with the
+               Library.  A suitable mechanism is one that (a) uses at run time
+               a copy of the Library already present on the user's computer
+               system, and (b) will operate properly with a modified version
+               of the Library that is interface-compatible with the Linked
+               Version.
+        
+           e) Provide Installation Information, but only if you would otherwise
+           be required to provide such information under section 6 of the
+           GNU GPL, and only to the extent that such information is
+           necessary to install and execute a modified version of the
+           Combined Work produced by recombining or relinking the
+           Application with a modified version of the Linked Version. (If
+           you use option 4d0, the Installation Information must accompany
+           the Minimal Corresponding Source and Corresponding Application
+           Code. If you use option 4d1, you must provide the Installation
+           Information in the manner specified by section 6 of the GNU GPL
+           for conveying Corresponding Source.)
+        
+          5. Combined Libraries.
+        
+          You may place library facilities that are a work based on the
+        Library side by side in a single library together with other library
+        facilities that are not Applications and are not covered by this
+        License, and convey such a combined library under terms of your
+        choice, if you do both of the following:
+        
+           a) Accompany the combined library with a copy of the same work based
+           on the Library, uncombined with any other library facilities,
+           conveyed under the terms of this License.
+        
+           b) Give prominent notice with the combined library that part of it
+           is a work based on the Library, and explaining where to find the
+           accompanying uncombined form of the same work.
+        
+          6. Revised Versions of the GNU Lesser General Public License.
+        
+          The Free Software Foundation may publish revised and/or new versions
+        of the GNU Lesser General Public License from time to time. Such new
+        versions will be similar in spirit to the present version, but may
+        differ in detail to address new problems or concerns.
+        
+          Each version is given a distinguishing version number. If the
+        Library as you received it specifies that a certain numbered version
+        of the GNU Lesser General Public License "or any later version"
+        applies to it, you have the option of following the terms and
+        conditions either of that published version or of any later version
+        published by the Free Software Foundation. If the Library as you
+        received it does not specify a version number of the GNU Lesser
+        General Public License, you may choose any version of the GNU Lesser
+        General Public License ever published by the Free Software Foundation.
+        
+          If the Library as you received it specifies that a proxy can decide
+        whether future versions of the GNU Lesser General Public License shall
+        apply, that proxy's public statement of acceptance of any version is
+        permanent authorization for you to choose that version for the
+        Library.
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Topic :: Scientific/Engineering :: Physics
+Project-URL: Homepage, https://github.com/Harvard-Neutrino/SIREN
+Project-URL: Documentation, https://readthedocs.org
+Project-URL: Repository, https://github.com/Harvard-Neutrino/SIREN.git
+Project-URL: Issues, https://github.com/Harvard-Neutrino/LeptonInjector/issues
+Requires-Python: >=3.8
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: awkward
+Requires-Dist: pyarrow
+Requires-Dist: h5py
+Requires-Dist: DarkNews>=0.4.2; extra == "darknews"
+Provides-Extra: darknews
+Description-Content-Type: text/markdown
+
+[![Build](https://github.com/Harvard-Neutrino/SIREN/actions/workflows/build_wheels.yml/badge.svg)](https://github.com/Harvard-Neutrino/SIREN/actions/workflows/build_wheels.yml)
+
+# SIREN
+
+SIREN (**S**ampling and **I**njection for **R**are **E**ve**N**ts) is a framework for injecting and weighting interaction final states of complex topology, with specific concern for the detector geometry. SIREN is designed to support a wide variety of neutrino experimental setups, including atmospheric neutrinos, accelerator beam decay-in-flight neutrinos, and neutrinos from decay-at-rest sources. SIREN grew out of [LeptonInjector](https://github.com/icecube/LeptonInjector), a neutrino injection code developed within the IceCube collaboration to study atmospheric and astrophysical neutrino interactions in the IceCube detector.
+
+SIREN provides a generic interface for user-defined BSM processes (and includes several pre-defined processes). It also supports generation of any number of secondary processes, e.g. the decay of a BSM particle after it has been created by an initial process. SIREN also includes detector geometry definitions for a number of existing HEP experiments, although contributions are always appreciated!
+
+# Python installation of SIREN
+
+SIREN is distributed on pypi as `siren`, and can be installed via pip with:
+
+```
+pip install siren
+```
+
+For development of SIREN as a python project, simply clone the repository:
+
+```
+git clone https://github.com/Harvard-Neutrino/SIREN.git
+cd SIREN
+```
+
+and run the following command to build and install SIREN:
+
+```
+pip install . --config-settings='build-dir=build'
+```
+
+After the python bindings are installed, you should be able to import the `siren` python library. Open a python interpreter by running `python`, and then run
+
+```
+import siren
+```
+
+To use SIREN, you will
+
+1. Define a primary process and a list of secondary processes by specifying a particle type and which interactions (cross sections or decays) each particle can undergo
+
+2. For each (primary or secondary) process, define a set of distributions from which to sample when injecting that particle (e.g. energy, position, direction)
+
+3. Combine this information to define an InjectorBase object
+
+4. Generate interaction trees using the InjectorBase object
+
+5. Create a TreeWeighter object using a list of primary and secondary physical processes
+
+6. Calculate the event weight for each interaction tree using the TreeWeighter object
+
+For an example of this in action, see `resources/DipoleInjection/inject_HNLs_CCM.{py,ipynb}`
+
+# Dependencies
+
+For local installations, you need the following:
+
+* A C++ compiler with C++14 support.
+
+* Some classes also require Photospline to create and to read cross sections. Read more about it, and its installation at [github.com/icecube/photospline](https://github.com/icecube/photospline). Note that Photospline has dependencies that you will need that are not listed here.
+
+* SIREN requires Photospline's `SuiteSparse` capabilities, whose dependencies are available [here](http://faculty.cse.tamu.edu/davis/suitesparse.html).
+
+For building py-bindings,
+
+* Python > 3.8
+
+* That's it! We use pybind11 to generate our pybindings, which is automatically included in SIREN as a submodule
+
+
+# Included External Dependencies
+
+These are not ostensibly a part of SIREN, but are included automatically as submodules for its functionality.
+
+* [cereal](https://github.com/USCiLab/cereal): for serialization
+
+* [delabella](https://github.com/msokalski/delabella): for Delaunay triangulation in our interpolation classes
+
+* [googletest](https://github.com/google/googletest): for constructing our tests
+
+* [pybind11](https://github.com/pybind/pybind11): for compiling our python bindings
+
+* [rk](https://rk.hepforge.org/): a relativistic kinematics library used mostly in the CrossSection and Decay subclasses
+
+* [photospline](https://github.com/icecube/photospline): a library that uses the penalized spline technique to efficiently compute, store, and evaluate B-spline representations of such large multi-dimensional tables
+
+# C++ installation of SIREN
+
+To use SIREN in a C++ project, there are a few more steps.
+
+We will be trying to keep our source, build, and install directories separate. To this end, these instructions will assume the following directory structure:
+
+```
+| local (for installing built libraries, headers, and binaries)
+|  --lib
+|  --include
+|  --bin
+| source (source code for SIREN and other dependencies)
+|  --SIREN
+|     --build (for building SIREN)
+|  --(SIREN dependencies...)
+```
+
+`git clone git@github.com:Harvard-Neutrino/SIREN.git`
+
+or
+
+`git clone https://github.com/Harvard-Neutrino/SIREN.git`
+
+to download the source code. To download the submodules, run
+
+`git submodule update --init`
+
+Now `cd SIREN/build` to get to the build directory. We call cmake
+
+`cmake ../ -DCMAKE_INSTALL_PREFIX=../../local`
+
+This tells cmake to install the shared objects in the `local` directory. CMake prepares a `Makefile` which calls the `g++` compiler with the necessary instructions to compile. So now you'll call
+
+`make -j4 && make install`
+
+to build the project and install the project. Now you need to set all the environmental variables so this actually works. We recommend putting the followig commands into a `env.sh` script that can load the environment.
+
+```
+export PROJECTSPACE=/path/to/parent/directory
+export PROJECTBUILDPATH=$PROJECTSPACE/local
+export PROJECTSOURCEPATH=$PROJECTSPACE/source
+export PREFIX=$PROJECTBUILDPATH
+# On linux:
+export LD_LIBRARY_PATH=$PROJECTBUILDPATH/lib/:$LD_LIBRARY_PATH
+# On mac:
+export DYLD_FALLBACK_LIBRARY_PATH=$PROJECTBUILDPATH/lib/:$DYLD_FALLBACK_LIBRARY_PATH
+```
+
+Now you should be good to go!
+
+# Making Contributions
+If you would like to make contributions to this project, please create a branch off of the `main` branch and name it something following the template: `$YourLastName/$YourSubProject`.
+Work on this branch until you have made the changes you wished to see and your branch is stable.
+Then, pull from main, and create a pull request to merge your branch back into main.
