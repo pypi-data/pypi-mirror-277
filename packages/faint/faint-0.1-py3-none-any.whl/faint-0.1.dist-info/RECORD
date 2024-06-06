@@ -1,0 +1,13 @@
+faint/__init__.py,sha256=kqksdPg2l47Zc0G7KQhvIu0_K6Xh1NQfkM029M9lgi0,65
+faint/__main__.py,sha256=5OahysJ3OakR7rrMI3dEuRquo3wWNUeB-mo0bSOAasQ,90
+faint/branch_structure.py,sha256=9KPy-pgkrM7kxhOtG8MuT6lbVaYN2nCJi_JDDe-JAyc,3978
+faint/cli.py,sha256=TYjk2RBk-osq-YYk9Oul0sNnHb0fmKTxkPg8E9Izokg,1762
+faint/diff_trees.py,sha256=N82ul4vSCoqOFV9zi7U4hxiGmSTVIdB6dczHbZB1fpk,8212
+faint/extract_comments.py,sha256=bBiQgfNVqe9rCvGyjJ6PLehLgqbqW8aPYj8dLNVBBU8,3436
+faint/join_comments.py,sha256=GlR84gpeSRfjasGlx6dm-ZfLU00Pys6cY-9hftqFoVs,1728
+faint/utils.py,sha256=WSBmrMGF8C4xwQgTsHoopNg5HF8l10EcRJzlEmYajJ4,1754
+faint-0.1.dist-info/entry_points.txt,sha256=RbHwFQLelHH14s-WCCpSnB7zSBHHKbio2OOPK6v3Hik,45
+faint-0.1.dist-info/LICENSE,sha256=Cp1jh-SY8Vk4csJhsAtHcB2wSVnTU0N5zqN2KGmSqWU,1064
+faint-0.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+faint-0.1.dist-info/METADATA,sha256=lGWj0Pq1mrLeVkCa-DZHfe2JPq2paRIfHD4Lhyz1KOg,3403
+faint-0.1.dist-info/RECORD,,
