@@ -1,0 +1,18 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "spentcommnew"
+authors = [{name = "me", email = "shemagen1@publicisgroupe.net"}]
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+
+[project.urls]
+Home = "https://upload.pypi.org/legacy/"
+
+[pypi]
+repository = "https://upload.pypi.org/legacy/"
+username = "__token__"
+password = "pypi-AgEIcHlwaS5vcmcCJGIxYzc3OTg2LTA0NzctNGNlMS1iNDM5LTBhMmQ1NTk5MmM3NgACKlszLCI3OTE3MjUwMS1hN2JkLTRiMjAtOTg1Mi00NjUzNWFiOTUxNGMiXQAABiDpv_Ud5gwuYssqeAwri3u5iVUc3iXc5_lzLtf2YQbflg"

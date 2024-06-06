@@ -1,0 +1,112 @@
+paths:
+  input_path: "/home/jupyter/code/sapient/knowledge-powerhouse-pocs/data/poc-docs-all-pdf-converted-by-powerpoint/tests"
+  summaries_path: "/home/jupyter/code/sapient/knowledge-powerhouse-pocs/outputs/poc-docs-all-summaries/tests"
+  error_path: "/home/jupyter/code/sapient/knowledge-powerhouse-pocs/outputs/poc-docs-all-summaries/poc-docs-errors"
+  postprocessed_path: "/home/jupyter/code/sapient/knowledge-powerhouse-pocs/outputs/poc-docs-all-summaries/!poc-docs-all-summaries-fulltext-postprocessed(v2).json"
+  postprocessed_embed_path: "/home/jupyter/code/sapient/knowledge-powerhouse-pocs/outputs/poc-docs-all-summaries/!poc-docs-all-summaries-fulltext-postprocessed(v2)-embeddings.json"
+
+process_all_behavior:
+  redo_or_continue: "CONTINUE" # Options: "REDO" or "CONTINUE"
+
+postprocessing_behavior:
+  postprocess: True
+  embed: True
+  min_text_words_to_embed: 6
+  url_patterns:
+    - "https://publicis*.sharepoint.com"
+    - "https://lion.app.box.com"
+
+llm_models:
+  summarization_model: "mistralai/Mixtral-8x22B-Instruct-v0.1" # "gpt-4" #"gpt-4o" "mistralai/Mixtral-8x22B-Instruct-v0.1" # "gpt-4" # , "mixtral-8x7b-32768", "gpt-4-turbo", "gpt-4-0125-preview", "gpt-35-turbo-16k", "meta-llama/Meta-Llama-3-70B-Instruct", "mistralai/Mixtral-8x22B-Instruct-v0.1"
+
+openai_client:
+  api_key: "ENV_VAR_OPENAI_API_KEY"
+
+azure_openai_clients:
+  gpt4:
+    api_version: "2024-02-15-preview"
+    azure_endpoint: "https://software-is.openai.azure.com/"
+    api_key: "414b25d6440741579a6f1197f0d515fd"
+    azure_deployment: "softwareis-gpt4"
+
+  gpt35_16k:
+    api_version: "2023-07-01-preview"
+    azure_endpoint: "https://core-is.openai.azure.com/"
+    api_key: "d0c096c023d2417b8f87271e337134fa"
+    azure_deployment: "gpt-35-turbo-16k"
+
+  text_embedding:
+    api_version: "2023-07-01-preview"
+    azure_endpoint: "https://core-is.openai.azure.com/"
+    api_key: "d0c096c023d2417b8f87271e337134fa"
+    azure_deployment: "coreis-text-embedding-3-large"
+    model: "text-embedding-3-large"
+    dimension_docs: 512
+    dimension_pages: 256
+
+anyscale_client:
+  base_url: "ENV_VAR_ANYSCALE_API_BASE"
+  api_key: "ENV_VAR_ANYSCALE_API_KEY"
+
+groq_client:
+  api_key: "ENV_VAR_GROQ_API_KEY"
+
+llama_parser_client:
+  api_key: "llx-ll41g0u5K1QLxMFFeq8CRcfwkDSM1tPrCVzGQnRhtIJ7IegV"
+
+image_embedding:
+  model: "multimodalembedding"
+  dimension: 1408
+
+elasticsearch:
+  host: "https://kph-es-dev001.es.westus2.azure.elastic-cloud.com"
+  username: "elastic"
+  password: "U7vj0aSfyOywPVjkqdLJNslf"
+  indices:
+    docs:
+      base_name: "poc-docs"
+      alias: "poc-docs-alias"
+    pages:
+      base_name: "poc-pages"
+      alias: "poc-pages-alias"
+  similarity: "cosine"
+  index_options:
+    type: "hnsw"
+    m: 32
+    ef_construction: 100
+  max_results: 100
+  slop: 2
+  minimum_should_match: 1
+  kw_weight: 1.0
+  knn_weight: 1.2
+  fields:
+    - "file_metadata.file_name^10"
+    - "client_name^10"
+    - "project_name^4"
+    - "agency_name^10"
+    - "industry^4"
+    - "region^2"
+    - "country^2"
+    - "capabilities^4"
+    - "services^4"
+    - "keywords^10"
+    - "key_technologies^4"
+    - "solution^4"
+    - "long_summary^2"
+    - "doc_metadata_text^2"
+    - "doc_unstructured_text"
+
+reranker:
+  api_url: "http://34.89.80.11:8000/predictions/rerank-gpu/"
+
+fuzzy_matching:
+  agency_threshold: 95
+  client_threshold: 95
+  industry_threshold: 95
+  region_threshold: 95
+  country_threshold: 95
+  capability_threshold: 95
+  service_threshold: 95
+  keywords_threshold: 95
+  key_technologies_threshold: 95
+  threshold: 95
