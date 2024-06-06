@@ -1,0 +1,11 @@
+osmem/__init__.py,sha256=9sf_WcirTGy59FkiXXfmduupYJvymJYDwAW370cLZt0,173
+osmem/__main__.py,sha256=Bs8uosQVVTpkwe-VRwNZDt6maSeCdWxbpYvB2h5ktd4,285
+osmem/cli.py,sha256=L0IiKvnfhb1XYONQHm3-dSWuyhg6FFx8w-oe7s1xT-s,2237
+osmem/memory.py,sha256=v6KAlGaikdBSMdgVI1E1wOeLgVZe7IFQIR2XuJK83O8,5442
+osmem/process.py,sha256=uTgcm0DmS39rSxyvIwriCIFbnsCCeuzENJvvrx3XYH8,1998
+osmem/windows.py,sha256=07SEOER4NzkWyj8V4EV9tN7szmiuiNqRuIZmfx9gvmM,2453
+osmem-0.2.0.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+osmem-0.2.0.dist-info/METADATA,sha256=AsisiJgfJpbNchSkeEUUMgdl5Nph6A8Wt32PCmCt13M,4265
+osmem-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+osmem-0.2.0.dist-info/entry_points.txt,sha256=S9BF6CubWlVqyBeDbZ-Z-Six2e3zwOVxsWO8lPY-nbE,147
+osmem-0.2.0.dist-info/RECORD,,
