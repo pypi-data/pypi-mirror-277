@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: realmarigold-tool
+Version: 0.1.0
+Summary: ……
+Author: ralmarigold
+Author-email: your.email@example.com
+License-File: LICENSE
+Requires-Dist: pandas
+
