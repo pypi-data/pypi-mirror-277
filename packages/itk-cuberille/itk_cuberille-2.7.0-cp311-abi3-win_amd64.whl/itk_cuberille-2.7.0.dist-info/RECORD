@@ -1,0 +1,13 @@
+itk/CuberillePython.py,sha256=iYvwl2_mZ21RBe_VgxHvP9DwzO9Vz0R1xwbH76X_DLQ,2321
+itk/_CuberillePython.pyd,sha256=7yJHmom7Vt7LO3hUa-0jjmXiTMl5QW-FTz0RnZOYXS8,2309632
+itk/__init_cuberille__.py,sha256=Rcu27WugnzdtZVqWnu4fc7TxPE8TRwhU6RuVJhgORzM,343
+itk/itkCuberilleImageToMeshFilterPython.py,sha256=mOm1UZouZvHH12Eb4Ak85umO03AMgF2CMp8LCLMbe_c,252505
+itk/Configuration/CuberilleConfig.py,sha256=CYhXLfADr1nQLjrzQFBcm_PnBgs4NaJM13R0NiDcrK0,3782
+itk/Configuration/Cuberille_snake_case.py,sha256=fT6M7FM_5pvaZOfFluMg_VN6Qo6Oy4mnjS_tIQMk2Tw,100
+itk_cuberille-2.7.0.dist-info/licenses/LICENSE,sha256=6N4ac5NFfpyIdot45rp5BiL777BAzkgZTCyw8bbU6f8,11562
+itk_cuberille.libs/msvcp140.dll,sha256=0hLSH-7MyA0P38uPgVsm771QUL8bmjUlEbWrzd9f_R0,573552
+itk_cuberille.libs/tbb12.dll,sha256=uAYeUFrGU4BfPGbeEDcO5SoBUd0xLQeYCBIUMYGAUwA,313344
+itk_cuberille-2.7.0.dist-info/DELVEWHEEL,sha256=nuc8fE7hSaUUeYjI2Lg5x1GzoJAi0giFgyHcZbHlg5Q,276
+itk_cuberille-2.7.0.dist-info/METADATA,sha256=yAR-MleTBjnJU9e2DVTt5N06JkgFbrs1WJ_YBGDMSjg,16094
+itk_cuberille-2.7.0.dist-info/WHEEL,sha256=h5OzpTHWLX4u6URYhI5vnOtF2SY5MhTMrippdH8FvGU,104
+itk_cuberille-2.7.0.dist-info/RECORD,,
