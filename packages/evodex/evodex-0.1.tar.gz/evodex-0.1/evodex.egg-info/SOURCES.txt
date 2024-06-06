@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+evodex/__init__.py
+evodex/compute_operators.py
+evodex/hydrogen_mapper.py
+evodex/split_reactions.py
+evodex.egg-info/PKG-INFO
+evodex.egg-info/SOURCES.txt
+evodex.egg-info/dependency_links.txt
+evodex.egg-info/requires.txt
+evodex.egg-info/top_level.txt
+evodex/data/reactions.csv
