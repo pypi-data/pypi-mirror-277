@@ -1,0 +1,51 @@
+[project]
+name = "py-watersmart"
+authors = [
+  {name = "J.C. Jones", email = "jc@insufficient.coffee"},
+]
+version = "0.1.2"
+readme = "README.md"
+description = "Obtain water usage data from Watersmart.com"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+  "Programming Language :: Python :: 3",
+]
+keywords = ["water meter"]
+dependencies = [
+  "aiohttp",
+  "aiohttp-client-cache[sqlite]",
+  "async_timeout"
+]
+requires-python = ">=3.11"
+
+[project.urls]
+Repository = "https://github.com/jcjones/py-watersmart.git"
+Issues = "https://github.com/jcjones/py-watersmart/issues"
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov",
+    "pytest-asyncio",
+]
+
+[project.scripts]
+watersmart-cli = "client.client:start"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 88  # default is 88
+target-version = "py38"
+
+[tool.ruff.lint]
+ignore = [
+  "ISC001", # Implicit string concatenation can conflict with ruff format
+  "S101",   # Allow assert statements
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"

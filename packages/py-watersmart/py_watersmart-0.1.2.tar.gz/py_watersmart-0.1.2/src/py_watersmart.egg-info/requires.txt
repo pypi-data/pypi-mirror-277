@@ -1,0 +1,8 @@
+aiohttp
+aiohttp-client-cache[sqlite]
+async_timeout
+
+[test]
+pytest
+pytest-cov
+pytest-asyncio
