@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: henModule
+Version: 0.0.2
+Summary: free and open source module to perform heat integration designs
+Home-page: https://github.com/CarlosTadeuVassoler/hen-module
+Author: carlos vassoler
+Author-email: carloshtvassoler@gmail.com
+Requires-Python: >=3.6
+
