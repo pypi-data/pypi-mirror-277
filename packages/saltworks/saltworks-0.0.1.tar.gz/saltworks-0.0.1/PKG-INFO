@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: saltworks
+Version: 0.0.1
+Project-URL: Documentation, https://gitlab.in2p3.fr/lemaitre/saltworks#readme
+Project-URL: Issues, https://gitlab.in2p3.fr/lemaitre/saltworks/issues
+Project-URL: Source, https://gitlab.in2p3.fr/lemaitre/saltworks
+Author-email: Leander Lacroix <leander.lacroix.dev@protonmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# saltworks
+
+[![PyPI - Version](https://img.shields.io/pypi/v/saltworks.svg)](https://pypi.org/project/saltworks)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/saltworks.svg)](https://pypi.org/project/saltworks)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install saltworks
+```
+
+## License
+
+`saltworks` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.

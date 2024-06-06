@@ -1,0 +1,24 @@
+# -*- mode: python; -*- 
+# 
+
+def build(bld):
+    c_sources = bld.path.ant_glob('*.c')
+    f_sources = bld.path.ant_glob('*.f')
+
+    
+    bld(name     = 'selinv_f',
+        features = 'fc',
+        fcflags  = ['-fPIC', '-O3', '-Wall'],
+        source   = f_sources,
+        )
+
+    bld(name     = 'selinv_c',
+        features = 'c',
+        cflags   = ['-fPIC', '-Wall', '-O3'],
+        source   = c_sources)
+
+    bld(features = 'c cshlib',
+        use      = ['selinv_f', 'selinv_c', 'lapack', 'blas', 'm'],
+        linkflags = ['-llapack', '-lblas', '-lm'],
+        target   = 'selinv',
+        install_path = "${PREFIX}/lib/python2.7/site-packages/saunerie")
