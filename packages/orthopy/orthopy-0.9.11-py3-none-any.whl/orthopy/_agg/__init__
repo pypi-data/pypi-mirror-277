@@ -1,0 +1,1721 @@
+def _QEBjL(f):
+    def _ECIZB(*args, **kwargs):
+        return f(*args, **kwargs)
+    _ECIZB.__module__ = f.__module__
+    _ECIZB.__name__ = f.__name__
+    _ECIZB.__doc__ = f.__doc__
+    _ECIZB.__dict__.update(f.__dict__)
+    f.__refcalls__ = 0
+    return _ECIZB
+
+@_QEBjL
+def _CwVNP():
+    global _2XGkm, _7SGBD, _W4BnX, _mzDYi, _8kHkU, _iqO2M, _P0Xns, _YFUG8, _KHF7v, _LPTMj, _ignVg, _fHvmJ, _okgT4, _CBGg7, _n512C, _l5rH8, _FGfCb, _Th2iG, _4AogJ, _nRpBS, _5Ynny, _iyZ7G, _sYeKP, _7PrXm, _oq3Bh, _LvgLQ, _sOTov, _8LoU9, _QZpvU, _xRbsI, _PVqO2, _6mHaD, _6FcL0, _ORnFX, _ZuUQt, _1NLvJ, _vNN1n, _Bc8t2, _AXG97, _ewAek, _m6GeY, _9cXbw, _May9l, _VLa12, _w72Ng, _6RWd5, _F3VKj, _9GbNc, _9DOQ0, _zYEzs, _8AQYO, _YVI9N, _YlZKg, _wjfP8, _C1VwY, _ZgpYS, _R3YP6, _67Bft, _xdygO, _u4EFt, _c9QAN, _EhMqk, _Js8gI, _K3Y4t, _XkmF8, _YPJmX, _1kmSo, _kKHFd, _PxrSq, _MCVJV, _63FNi, _rzVSZ, _66lCS, _x2PYt, _sVW4c, _XXWps, _u3Ebk, _8y0O9, _dNM5p, _DMd3d, _Lw1WV, _CSZMl, _EbkxG, _v2G2N, _9WD0Y, _osoMF, _CnoOw, _cAbkq, _70M7j, _45KbV, _IB6wU, _GbEVX, _omeGj, _rBH8o, _sZ9ZE, _AVgme, _bQYkr, _FSQcA, _Jix6m, _ts7bk, _9y3mU, _ugciT
+    from __future__ import annotations
+    from typing import Literal, TYPE_CHECKING
+    import itertools, math, numpy as np, stonefish_license_manager as slim, sympy, sys
+
+    def _2XGkm(name, evaluator, degrees, res=50, scaling='normal', colorbar=True, cmap='RdBu_r'):
+        import meshzoo
+        from matplotlib import pyplot as plt
+        _ZOQwx = sum(degrees)
+        _ZfZiD = degrees[0]
+
+        def _hKg1p(bary):
+            for _Z70Jo, _T6eRH in enumerate(evaluator(bary, scaling)):
+                if _Z70Jo == _ZOQwx:
+                    return _T6eRH[_ZfZiD]
+            _4gIdy = 'Level not found'
+            raise RuntimeError(_4gIdy)
+        _OdZYe, _oXKf8 = meshzoo.disk(6, res)
+        _XIHCe = np.array(_hKg1p(_OdZYe.T), dtype=float)
+        plt.tripcolor(_OdZYe[:, 0], _OdZYe[:, 1], _oXKf8, _XIHCe, shading='flat')
+        if colorbar:
+            plt.colorbar()
+        plt.set_cmap(cmap)
+        _9xjQx = plt.gci().get_clim()
+        _XHJb6 = max(abs(_9xjQx[0]), abs(_9xjQx[1]))
+        plt.clim(-_XHJb6, _XHJb6)
+        _AVvGq = plt.Circle((0, 0), 1.0, edgecolor='k', fill=False)
+        plt.gca().add_patch(_AVvGq)
+        plt.gca().set_aspect('equal')
+        plt.axis('off')
+        plt.title(f'{name} orthogonal polynomial on disk ([{degrees[0]}, {degrees[1]}], {scaling})')
+
+    def _zfMbF(filename, *_p7xhR, dpi=None, **_b7NAk):
+        from matplotlib import pyplot as plt
+        _8MIoZ(*_p7xhR, **_b7NAk)
+        plt.savefig(filename, dpi=dpi, transparent=True, bbox_inches='tight')
+
+    def _f7Lzb(*_xC9tr, **_zKsSo):
+        from matplotlib import pyplot as plt
+        _8MIoZ(*_xC9tr, **_zKsSo)
+        plt.show()
+
+    def _8MIoZ(name, evaluator, n, res=50, scaling='normal', colorbar=False, cmap='RdBu_r', clim=None, show_title=True):
+        import matplotx
+        import meshzoo
+        from matplotlib import pyplot as plt
+        plt.style.use(matplotx.styles.dufte)
+        _9lhiM, _B0icp = meshzoo.disk(6, res)
+        evaluator = evaluator(_9lhiM.T, scaling)
+        plt.set_cmap(cmap)
+        plt.gca().set_aspect('equal')
+        plt.axis('off')
+        for _zHo2x, _bA2f3 in enumerate(itertools.islice(evaluator, n + 1)):
+            for _gT83r, _ksgVF in enumerate(_bA2f3):
+                _TIg7f = _9lhiM.copy()
+                _5EW1P = [2.6 * (_gT83r - _zHo2x / 2), -2.3 * _zHo2x]
+                _TIg7f[:, 0] += _5EW1P[0]
+                _TIg7f[:, 1] += _5EW1P[1]
+                plt.tripcolor(_TIg7f[:, 0], _TIg7f[:, 1], _B0icp, _ksgVF, shading='flat')
+                plt.clim(clim)
+                _Q6Zs0 = plt.Circle(_5EW1P, 1.0, edgecolor='k', fill=False)
+                plt.gca().add_patch(_Q6Zs0)
+        if colorbar:
+            plt.colorbar()
+        if show_title:
+            plt.title(f'{name} orthogonal polynomials on the disk ({scaling})')
+    if TYPE_CHECKING:
+        from numpy.typing import ArrayLike
+
+    def _7SGBD(filename, *_1tNhC, **_xj5WQ):
+        from matplotlib import pyplot as plt
+        _mzDYi(*_1tNhC, **_xj5WQ)
+        plt.savefig(filename, transparent=True, bbox_inches='tight')
+
+    def _W4BnX(*_OeFgt, **_NdRwn):
+        from matplotlib import pyplot as plt
+        _mzDYi(*_OeFgt, **_NdRwn)
+        plt.show()
+
+    def _mzDYi(*_RY1z2, **_q6fyj):
+        _2XGkm('Xu', _YFUG8, *_RY1z2, **_q6fyj)
+
+    def _8kHkU(filename, *_TxIqY, **_qXVgs):
+        from matplotlib import pyplot as plt
+        _P0Xns(*_TxIqY, **_qXVgs)
+        plt.savefig(filename, transparent=True, bbox_inches='tight')
+
+    def _iqO2M(*_sRJNr, **_c471V):
+        from matplotlib import pyplot as plt
+        _P0Xns(*_sRJNr, **_c471V)
+        plt.show()
+
+    def _P0Xns(*_H0aAS, **_hWfhX):
+        _8MIoZ('Xu', _YFUG8, *_H0aAS, **_hWfhX)
+
+    class _YFUG8:
+
+        def __init__(self, X, scaling, symbolic='auto'):
+            if symbolic == 'auto':
+                symbolic = np.asarray(X).dtype == sympy.Basic
+            assert isinstance(symbolic, bool)
+            self.rc: RCMonic | RCClassical | RCNormal
+            if scaling == 'monic':
+                self.rc = _LPTMj(symbolic)
+            elif scaling == 'classical':
+                self.rc = _KHF7v(symbolic)
+            elif scaling == 'normal':
+                self.rc = _ignVg(symbolic)
+            else:
+                _ahtkm = f'Illegal scaling `{scaling}`'
+                raise ValueError(_ahtkm)
+            self.X = X
+            self.one_min_x2 = 1 - self.X[0] ** 2
+            self.L = 0
+            self.last = [None, None]
+            _yxLov = sympy.pi if symbolic else np.pi
+            self.int_p0 = self.rc.p0 * _yxLov
+
+        def __iter__(self):
+            return self
+
+        def __next__(self):
+            if self.L == 0:
+                _PNTnT = np.array([0 * self.X[0] + self.rc.p0])
+            else:
+                _2EIgb, _bmHsr, _gC0ir, _uEFJD = self.rc[self.L]
+                _PNTnT = np.concatenate([self.last[0] * np.multiply.outer(_2EIgb, self.X[0]), [self.last[0][-1] * _bmHsr * self.X[1]]])
+                if self.L > 1:
+                    _PNTnT[:-2] -= (self.last[1].T * _gC0ir).T
+                    _PNTnT[-1] -= self.last[1][-1] * _uEFJD * self.one_min_x2
+            self.last[1] = self.last[0]
+            self.last[0] = _PNTnT
+            self.L += 1
+            return _PNTnT
+
+    class _KHF7v:
+
+        def __init__(self, symbolic, mu=1):
+            self.S = sympy.S if symbolic else lambda _cyP6r: _cyP6r
+            self.sqrt = np.vectorize(sympy.sqrt) if symbolic else np.sqrt
+            self.mu = mu
+            assert self.mu > -1
+            self.p0 = 1
+
+        def __getitem__(self, n):
+            assert n > 0
+            n = self.S(n)
+            _rgKPC = self.mu
+            _ttfaf = np.full(n, (_rgKPC + 2 * n - 1) / (_rgKPC + n))
+            _sehy8 = 1 if n == 1 else (_rgKPC + 2 * n - 2) / (_rgKPC + n - 1)
+            if n == 1:
+                _RJCik = None
+                _VCAlj = None
+            else:
+                _TyweO = np.arange(n - 1)
+                _RJCik = (n - 1 - _TyweO) * (n + _TyweO + _rgKPC - 1) / ((_rgKPC + n) * (_rgKPC + n - 1))
+                _VCAlj = (n - 1) / (_rgKPC + n - 1)
+            return (_ttfaf, _sehy8, _RJCik, _VCAlj)
+
+    class _LPTMj:
+
+        def __init__(self, symbolic, mu=1):
+            self.S = sympy.S if symbolic else lambda _TJtg1: _TJtg1
+            self.sqrt = np.vectorize(sympy.sqrt) if symbolic else np.sqrt
+            self.mu = mu
+            assert self.mu > -1
+            self.p0 = 1
+
+        def __getitem__(self, n):
+            assert n > 0
+            n = self.S(n)
+            _EIkE0 = self.mu
+            _kb3yB = np.ones(n, dtype=int)
+            _jZktQ = 1
+            if n == 1:
+                _YsuwF = None
+                _pmzyN = None
+            else:
+                _2chTh = np.arange(n - 1)
+                _YsuwF = (n - 1 - _2chTh) * (n + _2chTh + _EIkE0 - 1) / ((2 * n + _EIkE0 - 3) * (2 * n + _EIkE0 - 1))
+                _pmzyN = self.S(1) / (_EIkE0 + 2) if n == 2 else (n - 1) * (n + _EIkE0 - 2) / ((2 * n + _EIkE0 - 2) * (2 * n + _EIkE0 - 4))
+            return (_kb3yB, _jZktQ, _YsuwF, _pmzyN)
+
+    class _ignVg:
+
+        def __init__(self, symbolic, mu=1):
+            self.S = sympy.S if symbolic else lambda _ginqK: _ginqK
+            self.sqrt = np.vectorize(sympy.sqrt) if symbolic else np.sqrt
+            self.mu = mu
+            assert self.mu > -1
+            _1DbKC = sympy.pi if symbolic else np.pi
+            self.p0 = 1 / self.sqrt(_1DbKC)
+
+        def __getitem__(self, n):
+            assert n > 0
+            n = self.S(n)
+            _z6AU6 = self.mu
+            _9fTNd = np.arange(n)
+            _9kVsR = self.sqrt((2 * n + _z6AU6 + 1) * (2 * n + _z6AU6 - 1) / ((n - _9fTNd) * (n + _9fTNd + _z6AU6)))
+            _W9wug = self.sqrt((2 * n + _z6AU6 - 2) * (2 * n + _z6AU6 + 1) / (n * (n + _z6AU6 - 1)))
+            if n == 1:
+                _N7Huw = None
+                _eFw3z = None
+            else:
+                _9fTNd = np.arange(n - 1)
+                _N7Huw = self.sqrt((n - 1 - _9fTNd) * (2 * n + _z6AU6 + 1) * (n + _9fTNd + _z6AU6 - 1) / ((n - _9fTNd) * (2 * n + _z6AU6 - 3) * (n + _9fTNd + _z6AU6)))
+                if n == 2:
+                    _Ln5Bt = self.S(2)
+                    _eFw3z = self.sqrt((3 + _z6AU6) * (5 + _z6AU6) / (_Ln5Bt * (1 + _z6AU6) * (2 + _z6AU6)))
+                else:
+                    _eFw3z = self.sqrt((n - 1) * (n + _z6AU6 - 2) * (2 * n + _z6AU6 - 1) * (2 * n + _z6AU6 + 1) / (n * (n + _z6AU6 - 1) * (2 * n + _z6AU6 - 2) * (2 * n + _z6AU6 - 4)))
+            return (_9kVsR, _W9wug, _N7Huw, _eFw3z)
+
+    def _fHvmJ(moments):
+        assert len(moments) % 2 == 1
+        _xIWbn = (len(moments) - 1) // 2
+        _EGATq = np.array([[moments[_hAcyH + _XYcmD] for _XYcmD in range(_xIWbn + 1)] for _hAcyH in range(_xIWbn + 1)])
+        _XfKFX = np.linalg.cholesky(_EGATq).T
+        _Z0VBE = _XfKFX.diagonal()
+        _775xi = _XfKFX.diagonal(1) / _Z0VBE[:-1]
+        _Uxkkb = _775xi.copy()
+        _Uxkkb[+1:] -= _775xi[:-1]
+        _G2XiZ = np.hstack([math.nan, _Z0VBE[1:-1] / _Z0VBE[:-2]]) ** 2
+        _W9Eej = _Z0VBE[0]
+        return (_Uxkkb, _G2XiZ, _W9Eej)
+
+    def _okgT4(integrate, n):
+        _WadYb = sympy.Symbol('t')
+        _ZpSmf = n * [None]
+        _lzT6Z = n * [None]
+        _BoiqH = [None, None]
+        _CaIQT = [None, None, None]
+        _0gHjz = None
+        for _ZneQn in range(n):
+            _CaIQT[1], _CaIQT[2] = (_CaIQT[0], _CaIQT[1])
+            _BoiqH[1] = _BoiqH[0]
+            if _ZneQn == 0:
+                _CaIQT[0] = 1
+                _BoiqH[0] = integrate(_WadYb, _CaIQT[0] ** 2)
+                _ZpSmf[_ZneQn] = integrate(_WadYb, _WadYb * _CaIQT[0] ** 2) / _BoiqH[0]
+                _0gHjz = _BoiqH[0]
+            else:
+                _CaIQT[0] = (_WadYb - _ZpSmf[_ZneQn - 1]) * _CaIQT[1]
+                if _ZneQn > 1:
+                    _CaIQT[0] -= _lzT6Z[_ZneQn - 1] * _CaIQT[2]
+                _BoiqH[0] = integrate(_WadYb, _CaIQT[0] ** 2)
+                _ZpSmf[_ZneQn] = integrate(_WadYb, _WadYb * _CaIQT[0] ** 2) / _BoiqH[0]
+                _lzT6Z[_ZneQn] = _BoiqH[0] / _BoiqH[1]
+        return (_ZpSmf, _lzT6Z, _0gHjz)
+
+    def _CBGg7(moments):
+        _dSe55 = len(moments)
+        assert _dSe55 % 2 == 0
+        _zBbRQ = sympy.Rational if isinstance(moments[0], sympy.Basic) else moments.dtype
+        _Ql7Z7 = np.zeros((_dSe55, 3), dtype=_zBbRQ)
+        return _n512C(moments, _Ql7Z7)
+
+    def _n512C(nu, recurrence_coefficients):
+        _gh3Eh = len(nu)
+        assert _gh3Eh % 2 == 0, 'Need an even number of moments.'
+        _P77QQ = _gh3Eh // 2
+        _KJH1N = []
+        _9oYZx = []
+        _5jFYZ = [None, None, None]
+        _AtF9T = nu[0]
+        if _P77QQ > 0:
+            _pzurs = 0
+            _5jFYZ[0] = np.asarray(nu)
+            _8SHU3, _uRY0R, _8SHU3 = recurrence_coefficients[0]
+            _KJH1N.append(_uRY0R + nu[1] / nu[0])
+            _9oYZx.append(math.nan)
+        for _nalY5 in range(1, _P77QQ):
+            _5jFYZ[2], _5jFYZ[1] = (_5jFYZ[1], _5jFYZ[0])
+            _8SHU3, _vb7r7, _OvFdY = np.array([recurrence_coefficients[_PW05k] for _PW05k in range(_nalY5, 2 * _P77QQ - _nalY5)]).T
+            _5jFYZ[0] = _5jFYZ[0][2:] - (_KJH1N[_nalY5 - 1] - _vb7r7) * _5jFYZ[0][1:-1] + _OvFdY * _5jFYZ[1][:-2]
+            if _nalY5 > 1:
+                _5jFYZ[0] -= _9oYZx[_nalY5 - 1] * _5jFYZ[2][2:-2]
+            _toGqc = _vb7r7[0]
+            _KJH1N.append(_toGqc + _5jFYZ[0][1] / _5jFYZ[0][0] - _5jFYZ[1][1] / _5jFYZ[1][0])
+            _9oYZx.append(_5jFYZ[0][0] / _5jFYZ[1][0])
+        return (np.asarray(_KJH1N), np.asarray(_9oYZx), _AtF9T)
+
+    def _l5rH8(moments, alpha, beta):
+        _UOqaW = len(alpha)
+        assert len(beta) == _UOqaW
+        _mMSbW = np.empty(_UOqaW + 1)
+        _vvt9D = np.empty(_UOqaW + 1)
+        _mMSbW[0] = 1.0
+        _mMSbW[1] = moments[0]
+        _vvt9D[0] = 0.0
+        _vvt9D[1] = moments[1]
+        for _IU8rw in range(2, _UOqaW + 1):
+            _G5RpH = np.array([moments[_av7BN:_av7BN + _IU8rw] for _av7BN in range(_IU8rw)])
+            _mMSbW[_IU8rw] = np.linalg.det(_G5RpH)
+            _G5RpH[:, -1] = moments[_IU8rw:2 * _IU8rw]
+            _vvt9D[_IU8rw] = np.linalg.det(_G5RpH)
+        _E8H0C = np.zeros(_UOqaW)
+        _xoU1D = np.zeros(_UOqaW)
+        _E8H0C[0] = abs(alpha[0] - (_vvt9D[1] / _mMSbW[1] - _vvt9D[0] / _mMSbW[0]))
+        _xoU1D[0] = abs(beta[0] - _mMSbW[1])
+        for _DO6dd in range(1, _UOqaW):
+            _E8H0C[_DO6dd] = abs(alpha[_DO6dd] - (_vvt9D[_DO6dd + 1] / _mMSbW[_DO6dd + 1] - _vvt9D[_DO6dd] / _mMSbW[_DO6dd]))
+            _xoU1D[_DO6dd] = abs(beta[_DO6dd] - _mMSbW[_DO6dd + 1] * _mMSbW[_DO6dd - 1] / _mMSbW[_DO6dd] ** 2)
+        return (_E8H0C, _xoU1D)
+
+    def _FGfCb(filename, *_0xElN, **_6QW1c):
+        from matplotlib import pyplot as plt
+        _4AogJ(*_0xElN, **_6QW1c)
+        plt.savefig(filename, transparent=True, bbox_inches='tight')
+
+    def _Th2iG(*_NCdFq, **_PvjVV):
+        from matplotlib import pyplot as plt
+        _4AogJ(*_NCdFq, **_PvjVV)
+        plt.show()
+
+    def _4AogJ(*_iRCKQ, **_fLfLq):
+        _2XGkm('Zernike', _sYeKP, *_iRCKQ, **_fLfLq)
+
+    def _nRpBS(filename, *_WkaYJ, dpi=None, **_2ncjr):
+        from matplotlib import pyplot as plt
+        _iyZ7G(*_WkaYJ, **_2ncjr)
+        plt.savefig(filename, dpi=dpi, transparent=True, bbox_inches='tight')
+
+    def _5Ynny(*_rxVYr, **_9d0C3):
+        from matplotlib import pyplot as plt
+        _iyZ7G(*_rxVYr, **_9d0C3)
+        plt.show()
+
+    def _iyZ7G(*_IoNib, **_6VBpA):
+        _8MIoZ('Zernike', _sYeKP, *_IoNib, **_6VBpA)
+
+    class _sYeKP:
+
+        def __init__(self, X, scaling, symbolic='auto'):
+            if symbolic == 'auto':
+                symbolic = np.asarray(X).dtype == sympy.Basic
+            self.rc = {'classical': _7PrXm, 'normal': _oq3Bh}[scaling](symbolic)
+            self.X = X
+            self.L = 0
+            self.last = [None, None]
+            _0BnSJ = sympy.pi if symbolic else np.pi
+            self.int_p0 = self.rc.p0 * _0BnSJ
+
+        def __iter__(self):
+            return self
+
+        def __next__(self):
+            if self.L == 0:
+                _kK2Mc = np.array([0 * self.X[0] + self.rc.p0])
+            else:
+                _eHdUL, _AKnaN, _TXa85 = self.rc[self.L]
+                _ZXlLM = list(self.last[0].shape)
+                _ZXlLM[0] += 1
+                _kK2Mc = np.zeros(_ZXlLM, dtype=self.last[0].dtype)
+                _4JNF8 = self.L + 1
+                _TmcIV = _4JNF8 // 2
+                if _4JNF8 % 2 == 0 and _4JNF8 > 2:
+                    self.last[0][_TmcIV - 1] *= _AKnaN
+                _rkEOm = _eHdUL * self.last[0] * self.X[0]
+                _psaja = _eHdUL * self.last[0] * self.X[1]
+                _kK2Mc[:-1] += _rkEOm + _psaja[::-1]
+                _kK2Mc[1:] += _rkEOm - _psaja[::-1]
+                if _4JNF8 % 2 == 0:
+                    _kK2Mc[_TmcIV - 1] -= _rkEOm[_TmcIV - 1]
+                    _kK2Mc[_TmcIV] += _psaja[_TmcIV - 1]
+                else:
+                    _kK2Mc[_TmcIV] += _rkEOm[_TmcIV]
+                    _kK2Mc[_TmcIV] += _psaja[_TmcIV - 1]
+                if self.L > 1:
+                    _kK2Mc[1:-1] -= _TXa85 * self.last[1]
+                if _4JNF8 % 2 == 1:
+                    _kK2Mc[_TmcIV] *= 1 / _AKnaN
+            self.last[1] = self.last[0]
+            self.last[0] = _kK2Mc
+            self.L += 1
+            return _kK2Mc
+
+    class _7PrXm:
+
+        def __init__(self, _):
+            self.p0 = 1
+
+        def __getitem__(self, n):
+            assert n > 0
+            _DYGFy = 1
+            _r7k8b = 1
+            _r2JUW = None if n == 1 else 1
+            return (_DYGFy, _r7k8b, _r2JUW)
+
+    class _oq3Bh:
+
+        def __init__(self, symbolic):
+            self.S = sympy.S if symbolic else lambda _jsRxu: _jsRxu
+            self.sqrt = sympy.sqrt if symbolic else math.sqrt
+            _7LLks = sympy.pi if symbolic else math.pi
+            self.p0 = 1 / self.sqrt(_7LLks)
+
+        def __getitem__(self, n):
+            assert n > 0
+            n = self.S(n)
+            _LiEG5 = self.sqrt(2)
+            if n == 1:
+                _5m9Ou = self.sqrt(2 * (n + 1) / n)
+                _qfpDn = None
+            elif n == 2:
+                _5m9Ou = self.sqrt((n + 1) / n)
+                _qfpDn = self.sqrt(2 * (n + 1) / (n - 1))
+            else:
+                _5m9Ou = self.sqrt((n + 1) / n)
+                _qfpDn = self.sqrt((n + 1) / (n - 1))
+            return (_5m9Ou, _LiEG5, _qfpDn)
+
+    class _LvgLQ:
+
+        def __init__(self, bary, scaling, symbolic='auto'):
+            if symbolic == 'auto':
+                symbolic = np.asarray(bary).dtype == sympy.Basic
+            self.bary = bary
+            self.k = 0
+            self.last = [None, None]
+            self.rc = {'classical': _8urBN, 'monic': _f2nCk, 'normal': _53kkH}[scaling](symbolic)
+            self.int_p0 = self.rc.p0
+
+        def __iter__(self):
+            return self
+
+        def __next__(self):
+            _UGAoL, _Gxbd2, _eVgul = self.bary
+            if self.k == 0:
+                _gd80N = np.array([_UGAoL * 0 + self.rc.p0])
+            else:
+                _oLL3K, _swHNo, _9GhS8, _bRcZy, _OOwEw = self.rc[self.k]
+                _gd80N = np.concatenate([self.last[0] * (np.multiply.outer(_oLL3K, 1 - 2 * _eVgul).T - _swHNo).T, [_bRcZy * self.last[0][-1] * (_UGAoL - _Gxbd2)]])
+                if self.k > 1:
+                    _gd80N[:-2] -= (self.last[1].T * _9GhS8).T
+                    _gd80N[-1] -= _OOwEw * self.last[1][-1] * (_UGAoL + _Gxbd2) ** 2
+            self.last[1] = self.last[0]
+            self.last[0] = _gd80N
+            self.k += 1
+            return _gd80N
+
+    class _8urBN:
+
+        def __init__(self, symbolic):
+            self.S = sympy.S if symbolic else lambda _icPa9: _icPa9
+            self.p0 = 1
+
+        def __getitem__(self, n):
+            n = self.S(n)
+            _2Aem8 = np.arange(n)
+            _AVgnS = n * (2 * n + 1) / ((n - _2Aem8) * (n + _2Aem8 + 1))
+            _PNvmP = n * (2 * _2Aem8 + 1) ** 2 / ((n - _2Aem8) * (n + _2Aem8 + 1) * (2 * n - 1))
+            _sXOle = (2 * n - 1) / n
+            if n in [0, 1]:
+                _puquc = None
+                _ZvYIn = None
+            else:
+                _2Aem8 = np.arange(n - 1)
+                _puquc = (n - _2Aem8 - 1) * (n + _2Aem8) * (2 * n + 1) / ((n - _2Aem8) * (n + _2Aem8 + 1) * (2 * n - 1))
+                _ZvYIn = (n - 1) / n
+            return (_AVgnS, _PNvmP, _puquc, _sXOle, _ZvYIn)
+
+    class _f2nCk:
+
+        def __init__(self, symbolic):
+            self.S = sympy.S if symbolic else lambda _nuEJS: _nuEJS
+            self.p0 = 1
+
+        def __getitem__(self, n):
+            assert n > 0
+            _aHYPJ = np.arange(n)
+            _uWfgU = np.ones(n, dtype=int)
+            _cLJCm = 1
+            n = self.S(n)
+            _HmjVy = (2 * _aHYPJ + 1) ** 2 / ((2 * n - 1) * (2 * n + 1))
+            if n == 1:
+                _LHbro = None
+                _WhC8V = None
+            else:
+                _aHYPJ = np.arange(n - 1)
+                _LHbro = (n - _aHYPJ - 1) ** 2 * (n + _aHYPJ) ** 2 / ((2 * n - 1) ** 2 * (n - 1) * n)
+                _WhC8V = (n - 1) ** 2 / ((2 * n - 1) * (2 * n - 3))
+            return (_uWfgU, _HmjVy, _LHbro, _cLJCm, _WhC8V)
+
+    class _53kkH:
+
+        def __init__(self, symbolic):
+            self.S = sympy.S if symbolic else lambda _Ebjz4: _Ebjz4
+            self.sqrt = sympy.sqrt if symbolic else np.sqrt
+            self.p0 = self.sqrt(2)
+
+        def __getitem__(self, n):
+            n = self.S(n)
+            _u7pfH = self.sqrt
+            _D26DU = np.arange(n)
+            _G7YBD = _u7pfH((n + 1) * n) * ((2 * n + 1) / ((n - _D26DU) * (n + _D26DU + 1)))
+            _9T3iu = _u7pfH((n + 1) * n) * (2 * _D26DU + 1) ** 2 / ((n - _D26DU) * (n + _D26DU + 1) * (2 * n - 1))
+            _rjEbc = _u7pfH((2 * n + 1) * (n + 1) * (2 * n - 1) / n ** 3)
+            if n in [0, 1]:
+                _NhR0o = None
+                _vvFMm = None
+            else:
+                _D26DU = np.arange(n - 1)
+                _NhR0o = _u7pfH((n + 1) / (n - 1)) * ((n - _D26DU - 1) * (n + _D26DU) * (2 * n + 1) / ((n - _D26DU) * (n + _D26DU + 1) * (2 * n - 1)))
+                _vvFMm = _u7pfH((2 * n + 1) * (n + 1) * (n - 1) / ((2 * n - 3) * n ** 2))
+            return (_G7YBD, _9T3iu, _NhR0o, _rjEbc, _vvFMm)
+
+    def _i2SY5(x, val):
+        if isinstance(x, np.ndarray):
+            return np.full_like(x, val)
+        return x * 0 + val
+
+    class _sOTov:
+
+        def __init__(self, x, rc):
+            self.rc = rc
+            self.x = x
+            self.k = 0
+            self.last = [None, None]
+
+        def __iter__(self):
+            return self
+
+        def __next__(self):
+            if self.k == 0:
+                _eliuT = _i2SY5(self.x, self.rc.p0)
+            else:
+                _nYXIM, _Ud0k8, _auFzF = self.rc[self.k - 1]
+                _eliuT = self.last[0] * (self.x * _nYXIM - _Ud0k8)
+                if self.k > 1:
+                    _eliuT -= self.last[1] * _auFzF
+            self.last[1] = self.last[0]
+            self.last[0] = _eliuT
+            self.k += 1
+            return _eliuT
+
+    class _fgMQu:
+
+        def __init__(self, rc, int_1, X):
+            self.rc = rc
+            self.a = None
+            self.b = None
+            self.c = None
+            X = np.asarray(X)
+            self.dim = X.shape[0]
+            self.p0n = rc.p0 ** self.dim
+            self.int_p0 = self.p0n * int_1 ** self.dim
+            self.L = 0
+            self.X = X
+            self.last_values = [None, None]
+            self.last_degrees = [None, None]
+
+        def __iter__(self):
+            return self
+
+        def __next__(self):
+            _WBXPb = self.X
+            _CdfgX = _WBXPb.shape[0]
+            if self.L == 0:
+                _FkDqJ = np.array([_WBXPb[0] * 0 + self.p0n])
+                _QogPv = np.array([np.zeros(_CdfgX, dtype=int)])
+            else:
+                _zwcYy, _KqW9l, _qbrAC = self.rc[self.L - 1]
+                self.a = np.array([_zwcYy]) if self.a is None else np.append(self.a, _zwcYy)
+                self.b = np.array([_KqW9l]) if self.b is None else np.append(self.b, _KqW9l)
+                self.c = np.array([_qbrAC]) if self.c is None else np.append(self.c, _qbrAC)
+                _DyDUw = self.a
+                _ucA4f = self.b
+                _Dd2CK = self.c
+                _FkDqJ = []
+                _QogPv = []
+                _jHspk = np.ones(len(self.last_degrees[0]), dtype=bool)
+                if self.L > 1:
+                    _q1Efd = np.ones(len(self.last_degrees[1]), dtype=bool)
+                for _k0Iyh in range(_CdfgX):
+                    _rWrri = self.last_values[0][_jHspk]
+                    _16Xjx = self.last_degrees[0][_jHspk][:, _k0Iyh]
+                    _2mgvY = _rWrri * (np.multiply.outer(_DyDUw[_16Xjx], _WBXPb[_k0Iyh]).T - _ucA4f[_16Xjx]).T
+                    if self.L > 1:
+                        _XRt0Z = self.last_values[1][_q1Efd]
+                        _C1S0l = self.last_degrees[1][_q1Efd][:, _k0Iyh]
+                        _wjHIF = _C1S0l + 1 > 0
+                        _2mgvY[:len(_C1S0l)][_wjHIF] -= (_XRt0Z[_wjHIF].T * _Dd2CK[_C1S0l[_wjHIF] + 1]).T
+                    _FkDqJ.append(_2mgvY)
+                    _XpVPX = self.last_degrees[0][_jHspk]
+                    _XpVPX[:, _k0Iyh] += 1
+                    _QogPv.append(_XpVPX)
+                    _jHspk &= self.last_degrees[0][:, _k0Iyh] == 0
+                    if self.L > 1:
+                        _q1Efd &= self.last_degrees[1][:, _k0Iyh] == 0
+                _FkDqJ = np.concatenate(_FkDqJ)
+                _QogPv = np.concatenate(_QogPv)
+            self.last_values[1] = self.last_values[0]
+            self.last_values[0] = _FkDqJ
+            self.last_degrees[1] = self.last_degrees[0]
+            self.last_degrees[0] = _QogPv
+            self.L += 1
+            return (_FkDqJ, _QogPv)
+
+    class _6nR5e(_fgMQu):
+
+        def __init__(self, *_7ttJy, **_eNL59):
+            super().__init__(*_7ttJy, **_eNL59)
+
+        def __next__(self):
+            _ZPy4k, _Y6dgm = super().__next__()
+            return _ZPy4k
+
+    class _8LoU9:
+
+        def __init__(self, rc, x, xi=None, symbolic=False):
+            self.rc = rc
+            self.k = 0
+            self.x = x
+            if xi is None:
+                _ZopMQ = np.vectorize(sympy.sqrt) if symbolic else np.sqrt
+                _qIBGR = _ZopMQ(1 - x ** 2)
+                self.xi = [_qIBGR, _qIBGR]
+            else:
+                self.xi = xi
+            self.last = [None, None]
+
+        def __iter__(self):
+            return self
+
+        def __next__(self):
+            if self.k == 0:
+                _8qF8C = np.array([_i2SY5(self.x, self.rc.p0)])
+            else:
+                _IQDJx, _7bQ19, _zU1y0, _g21mf = self.rc[self.k]
+                _8qF8C = np.concatenate([[self.last[0][0] * (self.xi[0] * _IQDJx)], self.last[0] * np.multiply.outer(_zU1y0, self.x), [self.last[0][-1] * (self.xi[1] * _7bQ19)]])
+                if self.k > 1:
+                    _8qF8C[2:-2] -= (self.last[1].T * _g21mf).T
+            self.last[1] = self.last[0]
+            self.last[0] = _8qF8C
+            self.k += 1
+            return _8qF8C
+
+    class _QZpvU:
+
+        def __init__(self, X, *_tFQSx, symbolic='auto', **_MGpEZ):
+            if symbolic == 'auto':
+                symbolic = np.asarray(X).dtype == sympy.Basic
+            _Z3ZdZ = _xRbsI(*_tFQSx, symbolic=symbolic, **_MGpEZ)
+            self.int_p0 = _Z3ZdZ.p0 * _Z3ZdZ.int_1
+            self._eval_1d = _sOTov(X, _Z3ZdZ)
+
+        def __iter__(self):
+            return self
+
+        def __next__(self):
+            return next(self._eval_1d)
+
+    class _xRbsI:
+
+        def __init__(self, standardization, scaling, symbolic):
+            self.rc = {'probabilists': {'monic': _DxASk, 'classical': _DxASk, 'normal': _BhAB5}, 'physicists': {'monic': _N6BVf, 'classical': _YPyoq, 'normal': _b04Ym}}[standardization][scaling](symbolic)
+            self.p0 = self.rc.p0
+            _RDDP5 = sympy.sqrt if symbolic else math.sqrt
+            _ulBxB = sympy.pi if symbolic else math.pi
+            self.int_1 = 1 if standardization == 'probabilists' else _RDDP5(_ulBxB)
+
+        def __getitem__(self, N):
+            return self.rc[N]
+
+    class _DxASk:
+
+        def __init__(self, symbolic):
+            self.nan = None if symbolic else math.nan
+            self.p0 = 1
+
+        def __getitem__(self, k):
+            _iE9rq = 1
+            _X830t = 0
+            _mtqCg = k if k > 0 else self.nan
+            return (_iE9rq, _X830t, _mtqCg)
+
+    class _BhAB5:
+
+        def __init__(self, symbolic):
+            self.frac = sympy.Rational if symbolic else lambda _YN9r3, _cOiJb: _YN9r3 / _cOiJb
+            self.nan = None if symbolic else math.nan
+            self.sqrt = sympy.sqrt if symbolic else math.sqrt
+            self.p0 = 1
+
+        def __getitem__(self, k):
+            _bNSiW = 1 / self.sqrt(k + 1)
+            _z2KMe = 0
+            _QcvGr = self.sqrt(self.frac(k, k + 1)) if k > 0 else self.nan
+            return (_bNSiW, _z2KMe, _QcvGr)
+
+    class _N6BVf:
+
+        def __init__(self, symbolic):
+            self.frac = sympy.Rational if symbolic else lambda _oQlXt, _Kh30g: _oQlXt / _Kh30g
+            self.nan = None if symbolic else math.nan
+            self.p0 = 1
+
+        def __getitem__(self, k):
+            _krBbm = 1
+            _kECSB = 0
+            _pbfe0 = self.frac(k, 2) if k > 0 else self.nan
+            return (_krBbm, _kECSB, _pbfe0)
+
+    class _YPyoq:
+
+        def __init__(self, symbolic):
+            self.nan = None if symbolic else math.nan
+            self.p0 = 1
+
+        def __getitem__(self, k):
+            _grovA = 2
+            _Pqgud = 0
+            _YktlX = 2 * k if k > 0 else self.nan
+            return (_grovA, _Pqgud, _YktlX)
+
+    class _b04Ym:
+
+        def __init__(self, symbolic):
+            self.frac = sympy.Rational if symbolic else lambda _IIgJO, _Nb844: _IIgJO / _Nb844
+            self.nan = None if symbolic else math.nan
+            self.sqrt = sympy.sqrt if symbolic else math.sqrt
+            _VyPz8 = sympy.pi if symbolic else math.pi
+            self.p0 = 1 / self.sqrt(self.sqrt(_VyPz8))
+
+        def __getitem__(self, k):
+            _hf1JP = self.sqrt(self.frac(2, k + 1))
+            _fuU9d = 0
+            _p4i8j = self.sqrt(self.frac(k, k + 1)) if k > 0 else self.nan
+            return (_hf1JP, _fuU9d, _p4i8j)
+
+    def _PVqO2(n, *_FccLQ, **_uHUpZ):
+        import matplotx
+        from matplotlib import pyplot as plt
+        plt.style.use(matplotx.styles.dufte)
+        _uqIGM = np.linspace(-2.2, 2.2, 100)
+        for _JJ9rJ, _BZxEb in enumerate(itertools.islice(_QZpvU(_uqIGM, *_FccLQ, **_uHUpZ), n + 1)):
+            plt.plot(_uqIGM, _BZxEb, label=f'n={_JJ9rJ}')
+        plt.grid(axis='x')
+        matplotx.line_labels()
+        _m4ame, _44Smj = _FccLQ
+        plt.title(f'Hermite polynomials ({_m4ame}, scaling={_44Smj})')
+
+    def _6mHaD(*_nMJi2, **_U6GHC):
+        from matplotlib import pyplot as plt
+        _PVqO2(*_nMJi2, **_U6GHC)
+        plt.show()
+
+    def _6FcL0(filename, *_Pt2B2, **_hdOgz):
+        from matplotlib import pyplot as plt
+        _PVqO2(*_Pt2B2, **_hdOgz)
+        plt.savefig(filename, transparent=True, bbox_inches='tight')
+
+    def _ORnFX(a, alpha, beta, t):
+        _ocm3R = len(alpha)
+        assert len(beta) == _ocm3R
+        assert len(a) == _ocm3R + 1
+        try:
+            _sGyHF = np.empty(_ocm3R + 1, *t.shape)
+        except AttributeError:
+            _sGyHF = np.empty(_ocm3R + 1)
+        _sGyHF[0] = 1.0
+        _sGyHF[_ocm3R] = a[_ocm3R]
+        _sGyHF[_ocm3R - 1] = a[_ocm3R - 1] + (t - alpha[_ocm3R - 1]) * _sGyHF[_ocm3R]
+        for _UukmL in range(_ocm3R - 2, 0, -1):
+            _sGyHF[_UukmL] = a[_UukmL] + (t - alpha[_UukmL]) * _sGyHF[_UukmL + 1] - beta[_UukmL + 1] * _sGyHF[_UukmL + 2]
+        _Jhl8r = 1.0
+        _AXJOS = t - alpha[0]
+        return _Jhl8r * a[0] + _AXJOS * _sGyHF[1] - beta[1] * _Jhl8r * _sGyHF[2]
+
+    def _ZuUQt(n, *_5ilV3, **_HUW0M):
+        import matplotx
+        from matplotlib import pyplot as plt
+        plt.style.use(matplotx.styles.dufte)
+        _CmnyE = np.linspace(-1.0, 1.0, 100)
+        _prDAB = _Bc8t2(_CmnyE, *_5ilV3, **_HUW0M)
+        for _rckz4 in range(n + 1):
+            plt.plot(_CmnyE, next(_prDAB), label=f'n={_rckz4}')
+        plt.grid(axis='x')
+        matplotx.line_labels()
+        _ISlO4 = plt.gca()
+        _eKahQ, _kcaQJ, _tLq2x = _5ilV3
+        if _eKahQ == _kcaQJ:
+            if _eKahQ == 0:
+                plt.title(f'Legendre polynomials (scaling={_tLq2x})')
+            elif _eKahQ == -0.5:
+                plt.title(f'Chebyshev 1 polynomials (scaling={_tLq2x})')
+            elif _eKahQ == +0.5:
+                plt.title(f'Chebyshev 2 polynomials (scaling={_tLq2x})')
+            else:
+                plt.title(f'Gegenbauer polynomials (λ={_eKahQ}, scaling={_tLq2x})')
+        else:
+            plt.title(f'Jacobi polynomials (a={_eKahQ}, β={_kcaQJ}, scaling={_tLq2x})')
+        _ISlO4.spines['right'].set_visible(True)
+        _ISlO4.spines['left'].set_visible(True)
+
+    def _1NLvJ(*_JzuEW, **_8yDs9):
+        from matplotlib import pyplot as plt
+        _ZuUQt(*_JzuEW, **_8yDs9)
+        plt.show()
+
+    def _vNN1n(filename, *_eiY9k, **_vguua):
+        from matplotlib import pyplot as plt
+        _ZuUQt(*_eiY9k, **_vguua)
+        plt.savefig(filename, transparent=True, bbox_inches='tight')
+
+    class _Bc8t2:
+
+        def __init__(self, X, *_4E2J5, symbolic='auto'):
+            if symbolic == 'auto':
+                symbolic = np.asarray(X).dtype == sympy.Basic
+            self._eval_1d = _sOTov(X, _AXG97(*_4E2J5, symbolic=symbolic))
+
+        def __iter__(self):
+            return self
+
+        def __next__(self):
+            return next(self._eval_1d)
+
+    class _AXG97:
+
+        def __init__(self, scaling, alpha, beta, symbolic):
+            _Zh2ad = {'monic': _lbxGv, 'classical': _h6114, 'normal': _Qz3SS}[scaling]
+            self.rc = _Zh2ad(alpha, beta, symbolic)
+            self.p0 = self.rc.p0
+            _z1BgF = sympy.gamma if symbolic else lambda _YP4In: math.gamma(float(_YP4In))
+            self.int_1 = 2 ** (alpha + beta + 1) * _z1BgF(alpha + 1) * _z1BgF(beta + 1) / _z1BgF(alpha + beta + 2)
+
+        def __getitem__(self, N):
+            return self.rc[N]
+
+    class _lbxGv:
+
+        def __init__(self, alpha, beta, symbolic):
+            self.alpha = alpha
+            self.beta = beta
+            self.gamma = sympy.gamma if symbolic else lambda _z4sH3: math.gamma(float(_z4sH3))
+            self.frac = sympy.Rational if symbolic else lambda _IK8D2, _mf2TN: _IK8D2 / _mf2TN
+            self.nan = None if symbolic else math.nan
+            self.one = 1 if symbolic else 1.0
+            self.p0 = self.one
+
+        def __getitem__(self, N):
+            _cnQlP = self.frac
+            _IUrxX = self.alpha
+            _qcaq7 = self.beta
+            _EGe0j = self.one
+            _xermF = _cnQlP(_qcaq7 - _IUrxX, _IUrxX + _qcaq7 + 2) if N == 0 else _cnQlP(_qcaq7 ** 2 - _IUrxX ** 2, (2 * N + _IUrxX + _qcaq7) * (2 * N + _IUrxX + _qcaq7 + 2))
+            if N == 0:
+                _NLNga = self.nan
+            elif N == 1:
+                _NLNga = _cnQlP(4 * (1 + _IUrxX) * (1 + _qcaq7), (2 + _IUrxX + _qcaq7) ** 2 * (3 + _IUrxX + _qcaq7))
+            else:
+                _NLNga = _cnQlP(4 * (N + _IUrxX) * (N + _qcaq7) * N * (N + _IUrxX + _qcaq7), (2 * N + _IUrxX + _qcaq7) ** 2 * (2 * N + _IUrxX + _qcaq7 + 1) * (2 * N + _IUrxX + _qcaq7 - 1))
+            return (_EGe0j, _xermF, _NLNga)
+
+    class _h6114:
+
+        def __init__(self, alpha, beta, symbolic):
+            self.frac = sympy.Rational if symbolic else lambda _zULlq, _5xk4z: _zULlq / _5xk4z
+            self.nan = None if symbolic else math.nan
+            self.alpha = alpha
+            self.beta = beta
+            self.p0 = 1 if symbolic else 1.0
+
+        def __getitem__(self, N):
+            _qPsHD = self.frac
+            _PqLCY = self.alpha
+            _tKeZD = self.beta
+            if N == 0:
+                _MOf1s = _qPsHD(_PqLCY + _tKeZD + 2, 2)
+                _sjLRo = _qPsHD(_tKeZD - _PqLCY, 2)
+                _8xyyu = self.nan
+            else:
+                _MOf1s = _qPsHD((2 * N + _PqLCY + _tKeZD + 1) * (2 * N + _PqLCY + _tKeZD + 2), 2 * (N + 1) * (N + _PqLCY + _tKeZD + 1))
+                _sjLRo = _qPsHD((_tKeZD ** 2 - _PqLCY ** 2) * (2 * N + _PqLCY + _tKeZD + 1), 2 * (N + 1) * (N + _PqLCY + _tKeZD + 1) * (2 * N + _PqLCY + _tKeZD))
+                _8xyyu = _qPsHD((N + _PqLCY) * (N + _tKeZD) * (2 * N + _PqLCY + _tKeZD + 2), (N + 1) * (N + _PqLCY + _tKeZD + 1) * (2 * N + _PqLCY + _tKeZD))
+            return (_MOf1s, _sjLRo, _8xyyu)
+
+    class _Qz3SS:
+
+        def __init__(self, alpha, beta, symbolic):
+            self.frac = sympy.Rational if symbolic else lambda _PZqmV, _kTioY: _PZqmV / _kTioY
+            self.sqrt = sympy.sqrt if symbolic else math.sqrt
+            self.nan = None if symbolic else math.nan
+            self.alpha = alpha
+            self.beta = beta
+            _nTJcx = sympy.gamma if symbolic else lambda _CtyN5: math.gamma(float(_CtyN5))
+            self.int_1 = 2 ** (alpha + beta + 1) * _nTJcx(alpha + 1) * _nTJcx(beta + 1) / _nTJcx(alpha + beta + 2)
+            self.p0 = self.sqrt(1 / self.int_1)
+
+        def __getitem__(self, N):
+            _gxD97 = self.frac
+            _rAFn4 = self.sqrt
+            _dtgWH = self.alpha
+            _dDRr8 = self.beta
+            if N == 0:
+                _xD6c7 = _rAFn4(_gxD97(_dtgWH + _dDRr8 + 3, (_dtgWH + 1) * (_dDRr8 + 1)))
+                _At0fq = _gxD97(_dtgWH + _dDRr8 + 2, 2) * _xD6c7
+                _jupbo = _gxD97(_dDRr8 - _dtgWH, 2) * _xD6c7
+            else:
+                _xD6c7 = _rAFn4(_gxD97((2 * N + _dtgWH + _dDRr8 + 1) * (2 * N + _dtgWH + _dDRr8 + 3), (N + 1) * (N + _dtgWH + 1) * (N + _dDRr8 + 1) * (N + _dtgWH + _dDRr8 + 1)))
+                _At0fq = _gxD97(2 * N + _dtgWH + _dDRr8 + 2, 2) * _xD6c7
+                _jupbo = _gxD97(_dDRr8 ** 2 - _dtgWH ** 2, 2 * (2 * N + _dtgWH + _dDRr8)) * _xD6c7
+            if N == 0:
+                _ex9PL = self.nan
+            elif N == 1:
+                _ex9PL = _gxD97(4 + _dtgWH + _dDRr8, 2 + _dtgWH + _dDRr8) * _rAFn4(_gxD97((1 + _dtgWH) * (1 + _dDRr8) * (5 + _dtgWH + _dDRr8), 2 * (2 + _dtgWH) * (2 + _dDRr8) * (2 + _dtgWH + _dDRr8)))
+            else:
+                _ex9PL = _gxD97(2 * N + _dtgWH + _dDRr8 + 2, 2 * N + _dtgWH + _dDRr8) * _rAFn4(_gxD97(N * (N + _dtgWH) * (N + _dDRr8) * (N + _dtgWH + _dDRr8) * (2 * N + _dtgWH + _dDRr8 + 3), (N + 1) * (N + _dtgWH + 1) * (N + _dDRr8 + 1) * (N + _dtgWH + _dDRr8 + 1) * (2 * N + _dtgWH + _dDRr8 - 1)))
+            return (_At0fq, _jupbo, _ex9PL)
+
+    class _ewAek:
+
+        def __init__(self, X, alpha=0, beta=0, symbolic='auto', return_degrees=False):
+            if symbolic == 'auto':
+                symbolic = np.asarray(X).dtype == sympy.Basic
+            _nCgvw = _AXG97('normal', alpha, beta, symbolic)
+            _tOROb = _fgMQu if return_degrees else _6nR5e
+            self._product_eval = _tOROb(_nCgvw, 1, X)
+            self.int_p0 = self._product_eval.int_p0
+
+        def __iter__(self):
+            return self
+
+        def __next__(self):
+            return next(self._product_eval)
+
+    def _m6GeY(*_bhn1A, **_vln5d):
+        import matplotlib.pyplot as plt
+        _May9l(*_bhn1A, **_vln5d)
+        plt.show()
+        plt.close()
+
+    def _9cXbw(filename, *_SJczz, **_glNN5):
+        import matplotlib.pyplot as plt
+        _May9l(*_SJczz, **_glNN5)
+        plt.savefig(filename, transparent=True, bbox_inches='tight')
+        plt.close()
+
+    def _May9l(n, *_sMpX1, **_hwe9Q):
+        _ZuUQt(n, *_sMpX1, **_hwe9Q)
+
+    def _VLa12(*_JVYx1, **_t7Lns):
+        import matplotlib.pyplot as plt
+        _6RWd5(*_JVYx1, **_t7Lns)
+        plt.show()
+        plt.close()
+
+    def _w72Ng(filename, *_qSR5P, **_qbG2z):
+        import matplotlib.pyplot as plt
+        _6RWd5(*_qSR5P, **_qbG2z)
+        plt.savefig(filename, transparent=True, bbox_inches='tight')
+        plt.close()
+
+    def _6RWd5(n, *_7rjOG, res=100, colorbar=True, cmap='RdBu_r', clim=None, **_K1EDt):
+        import matplotlib.pyplot as plt
+        import matplotx
+        import meshzoo
+        plt.style.use(matplotx.styles.dufte)
+        _t2Mke, _b8sQV = meshzoo.rectangle(-1.0, 1.0, -1.0, 1.0, res, res)
+        _pVpBI = _ewAek(_t2Mke.T, *_7rjOG, **_K1EDt)
+        plt.set_cmap(cmap)
+        plt.gca().set_aspect('equal')
+        plt.axis('off')
+        for _IWjLu, _JXj3G in enumerate(itertools.islice(_pVpBI, n + 1)):
+            for _BGXrT, _ZNCZ9 in enumerate(_JXj3G):
+                _pkvqm = [2.8 * (_BGXrT - _IWjLu / 2), -2.6 * _IWjLu]
+                _hxFDb = _t2Mke + _pkvqm
+                plt.tripcolor(_hxFDb[:, 0], _hxFDb[:, 1], _b8sQV, _ZNCZ9, shading='flat')
+                plt.clim(clim)
+                _uAGkG = np.array([[-1, 1, 1, -1, -1], [-1, -1, 1, 1, -1]])
+                _uAGkG = (_uAGkG.T + _pkvqm).T
+                plt.plot(_uAGkG[0], _uAGkG[1], '-k')
+        if colorbar:
+            plt.colorbar()
+
+    def _F3VKj(filename, n, *_q8HgV, res=20, **_M3W8C):
+        import meshio
+        import meshzoo
+        _ZtAFE, _1LdiP = meshzoo.cube(-1, 1, -1, 1, -1, 1, res, res, res)
+        _nzK4B = _ewAek(_ZtAFE.T, *_q8HgV, return_degrees=True, **_M3W8C)
+        _V0LxA = []
+        _AruzY = np.array([[np.cos(_0V8FT * 2 * np.pi / 3), np.sin(_0V8FT * 2 * np.pi / 3)] for _0V8FT in range(3)])
+        for _j2HQi, (_4hIgo, _MrmI6) in enumerate(itertools.islice(_nzK4B, n)):
+            for _qllfa, _gDVjZ in zip(_4hIgo, _MrmI6):
+                _QjNwR = sum([_DqYlq * _0ovUO for _DqYlq, _0ovUO in zip(_AruzY, _gDVjZ)])
+                _yWYK1 = _ZtAFE.copy()
+                _yWYK1[:, 0] += 2.0 * _QjNwR[0]
+                _yWYK1[:, 1] += 2.0 * _QjNwR[1]
+                _yWYK1[:, 2] -= 3.0 * _j2HQi
+                _V0LxA.append(meshio.Mesh(_yWYK1, {'tetra': _1LdiP}, point_data={'f': _qllfa}))
+        _ZtAFE = np.concatenate([_sY9D6.points for _sY9D6 in _V0LxA])
+        _4gnJ6 = np.concatenate([_VPNV3.point_data['f'] for _VPNV3 in _V0LxA])
+        _1LdiP = []
+        _0V8FT = 0
+        for _lw2x9 in _V0LxA:
+            _1LdiP.append(_lw2x9.cells[0].data + _0V8FT)
+            _0V8FT += _lw2x9.points.shape[0]
+        _1LdiP = np.concatenate(_1LdiP)
+        meshio.write_points_cells(filename, _ZtAFE, {'tetra': _1LdiP}, point_data={'f': _4gnJ6})
+
+    class _9GbNc:
+
+        def __init__(self, X, scaling, alpha=0, symbolic='auto'):
+            if symbolic == 'auto':
+                symbolic = np.asarray(X).dtype == sympy.Basic
+            assert isinstance(symbolic, bool)
+            _lfRHQ = _9DOQ0(scaling, alpha, symbolic)
+            self.int_p0 = _lfRHQ.p0
+            self._eval_1d = _sOTov(X, _lfRHQ)
+
+        def __iter__(self):
+            return self
+
+        def __next__(self):
+            return next(self._eval_1d)
+
+    class _9DOQ0:
+
+        def __init__(self, scaling, alpha=0, symbolic=False):
+            self.rc: RCMonic | RCClassical | RCNormal
+            if scaling == 'monic':
+                self.rc = _XM4R9(alpha, symbolic)
+            elif scaling == 'classical':
+                self.rc = _6KwOt(alpha, symbolic)
+            elif scaling == 'normal':
+                self.rc = _mL3QQ(alpha, symbolic)
+            else:
+                _hlu3S = f'Illegal scaling `{scaling}`'
+                raise ValueError(_hlu3S)
+            self.p0 = self.rc.p0
+            _0DVx1 = sympy.gamma if symbolic else lambda _CZR8j: math.gamma(float(_CZR8j))
+            self.int_1 = _0DVx1(alpha + 1)
+
+        def __getitem__(self, N):
+            return self.rc[N]
+
+    class _XM4R9:
+
+        def __init__(self, alpha, symbolic):
+            self.nan = None if symbolic else math.nan
+            self.alpha = alpha
+            self.p0: int = 1
+
+        def __getitem__(self, k):
+            _GgCR8 = 1
+            _sNKZH = 2 * k + 1 + self.alpha
+            _iQLmc = k * (k + self.alpha) if k > 0 else self.nan
+            return (_GgCR8, _sNKZH, _iQLmc)
+
+    class _6KwOt:
+
+        def __init__(self, alpha, symbolic):
+            self.nan = None if symbolic else math.nan
+            self.S = sympy.S if symbolic else lambda _n9CTl: _n9CTl
+            self.alpha = alpha
+            self.p0: int = 1
+
+        def __getitem__(self, k):
+            _oWtsB = self.alpha
+            _hbxh8 = self.S
+            _nrsQW = -_hbxh8(1) / (k + 1)
+            _Vt6oF = -_hbxh8(2 * k + 1 + _oWtsB) / (k + 1)
+            _2E4fv = _hbxh8(k + _oWtsB) / (k + 1) if k > 0 else self.nan
+            return (_nrsQW, _Vt6oF, _2E4fv)
+
+    class _mL3QQ:
+
+        def __init__(self, alpha, symbolic):
+            self.nan = None if symbolic else math.nan
+            self.sqrt = sympy.sqrt if symbolic else math.sqrt
+            self.S = sympy.S if symbolic else lambda _9Km10: _9Km10
+            self.alpha = alpha
+            _ireVA = sympy.gamma if symbolic else math.gamma
+            self.p0: float | sympy.Expr = 1 / self.sqrt(_ireVA(alpha + 1))
+
+        def __getitem__(self, k):
+            _J73wK = self.sqrt
+            _0y6bB = self.S
+            _kwrJv = self.alpha
+            _1CWCT = -1 / _J73wK((k + 1) * (k + 1 + _kwrJv))
+            _ekWFE = -(2 * k + 1 + _kwrJv) / _J73wK((k + 1) * (k + 1 + _kwrJv))
+            _ujJsn = _J73wK(k * _0y6bB(k + _kwrJv) / ((k + 1) * (k + 1 + _kwrJv))) if k > 0 else self.nan
+            return (_1CWCT, _ekWFE, _ujJsn)
+
+    class _zYEzs:
+
+        def __init__(self, X, standardization, symbolic='auto', return_degrees=False):
+            if symbolic == 'auto':
+                symbolic = np.asarray(X).dtype == sympy.Basic
+            _lwXRR = {'probabilists': _BhAB5, 'physicists': _b04Ym}[standardization](symbolic)
+            _JTSxD = sympy.sqrt if symbolic else np.sqrt
+            _L6FC3 = sympy.pi if symbolic else np.pi
+            _ylet6 = _JTSxD(_L6FC3) if standardization == 'physicists' else 1
+            _4SHZG = _fgMQu if return_degrees else _6nR5e
+            self._product_eval = _4SHZG(_lwXRR, _ylet6, X)
+            self.int_p0 = self._product_eval.int_p0
+
+        def __iter__(self):
+            return self
+
+        def __next__(self):
+            return next(self._product_eval)
+
+    def _8AQYO(*_XmtcW, **_W89Qp):
+        from matplotlib import pyplot as plt
+        _YlZKg(*_XmtcW, **_W89Qp)
+        plt.show()
+        plt.close()
+
+    def _YVI9N(filename, *_PjyrS, **_o8AJZ):
+        from matplotlib import pyplot as plt
+        _YlZKg(*_PjyrS, **_o8AJZ)
+        plt.savefig(filename, transparent=True, bbox_inches='tight')
+        plt.close()
+
+    def _YlZKg(n, *_608Jm, **_sbZE5):
+        _PVqO2(n, *_608Jm, **_sbZE5)
+
+    def _wjfP8(*_DngTr, **_JIgEa):
+        from matplotlib import pyplot as plt
+        _ZgpYS(*_DngTr, **_JIgEa)
+        plt.show()
+        plt.close()
+
+    def _C1VwY(filename, *_CrIyF, **_cWyRJ):
+        from matplotlib import pyplot as plt
+        _ZgpYS(*_CrIyF, **_cWyRJ)
+        plt.savefig(filename, transparent=True, bbox_inches='tight')
+        plt.close()
+
+    def _ZgpYS(n, *_lkl2G, res=100, alpha=2.0, colorbar=True, cmap='RdBu_r', clim=None, **_IHENI):
+        import matplotx
+        import meshzoo
+        from matplotlib import pyplot as plt
+        plt.style.use(matplotx.styles.dufte)
+        _3g118, _xRLef = meshzoo.rectangle(-alpha, alpha, -alpha, alpha, res, res)
+        _NQI8w = _zYEzs(_3g118.T, *_lkl2G, return_degrees=True, **_IHENI)
+        plt.set_cmap(cmap)
+        plt.gca().set_aspect('equal')
+        plt.axis('off')
+        for _tK9Yz, (_70cpr, _7aEcD) in enumerate(itertools.islice(_NQI8w, n + 1)):
+            for _Oxjjc, _0HZg8 in enumerate(_70cpr):
+                _0Tvef = [alpha * 2.8 * (_Oxjjc - _tK9Yz / 2), -alpha * 2.6 * _tK9Yz]
+                _bPfux = _3g118 + _0Tvef
+                plt.tripcolor(_bPfux[:, 0], _bPfux[:, 1], _xRLef, _0HZg8, shading='flat')
+                plt.clim(clim)
+                _ETPCe = np.array([[-alpha, alpha, alpha, -alpha, -alpha], [-alpha, -alpha, alpha, alpha, -alpha]])
+                _ETPCe = (_ETPCe.T + _0Tvef).T
+                plt.plot(_ETPCe[0], _ETPCe[1], '-k')
+        if colorbar:
+            plt.colorbar()
+
+    def _R3YP6(filename, n, *_gNjRP, res=20, alpha=2.0, **_JU5m0):
+        import meshio
+        import meshzoo
+        _5cUfD, _I5yhe = meshzoo.cube(-alpha, alpha, -alpha, alpha, -alpha, alpha, res, res, res)
+        _79b54 = _zYEzs(_5cUfD.T, *_gNjRP, return_degrees=True, **_JU5m0)
+        _HaeyJ = []
+        _GawoC = np.array([[np.cos(_1mswb * 2 * np.pi / 3), np.sin(_1mswb * 2 * np.pi / 3)] for _1mswb in range(3)])
+        for _fyQP7, (_s9CGx, _p2s6F) in enumerate(itertools.islice(_79b54, n)):
+            for _EVWIy, _SO1ia in zip(_s9CGx, _p2s6F):
+                _P2pXZ = sum([_Ha6vg * _LsqgT for _Ha6vg, _LsqgT in zip(_GawoC, _SO1ia)])
+                _UA4CM = _5cUfD.copy()
+                _UA4CM[:, 0] += alpha * 2.0 * _P2pXZ[0]
+                _UA4CM[:, 1] += alpha * 2.0 * _P2pXZ[1]
+                _UA4CM[:, 2] -= alpha * 3.0 * _fyQP7
+                _HaeyJ.append(meshio.Mesh(_UA4CM, {'tetra': _I5yhe}, point_data={'f': _EVWIy}))
+        _5cUfD = np.concatenate([_02hBB.points for _02hBB in _HaeyJ])
+        _sf4SQ = np.concatenate([_BVYmO.point_data['f'] for _BVYmO in _HaeyJ])
+        _I5yhe = []
+        _1mswb = 0
+        for _oSfLI in _HaeyJ:
+            _I5yhe.append(_oSfLI.cells[0].data + _1mswb)
+            _1mswb += _oSfLI.points.shape[0]
+        _I5yhe = np.concatenate(_I5yhe)
+        meshio.write_points_cells(filename, _5cUfD, {'tetra': _I5yhe}, point_data={'f': _sf4SQ})
+
+    class _67Bft:
+
+        def __init__(self, X, scaling, complex_valued=True, symbolic='auto'):
+            assert len(X) == 3
+            if symbolic == 'auto':
+                symbolic = np.asarray(X).dtype == sympy.Basic
+            assert isinstance(symbolic, bool)
+            _9Oqvg: RCSpherical | RCSchmidt
+            if scaling == 'acoustic':
+                _9Oqvg = _7G46i(False, symbolic, geodetic=False)
+            elif scaling == 'quantum mechanic':
+                _9Oqvg = _7G46i(True, symbolic, geodetic=False)
+            elif scaling == 'geodetic':
+                _9Oqvg = _7G46i(False, symbolic, geodetic=True)
+            elif scaling == 'schmidt':
+                _9Oqvg = _OPAEP(False, symbolic)
+            else:
+                _mqNLb = f'Illegal scaling `{scaling}`'
+                raise ValueError(_mqNLb)
+            if complex_valued:
+                _Tsb4O = sympy.I if symbolic else 1j
+                _XEo5X = [X[0] - _Tsb4O * X[1], X[0] + _Tsb4O * X[1]]
+            else:
+                _0vDrz = sympy.sqrt if symbolic else np.sqrt
+                _ah4Q7 = _0vDrz(X[0] ** 2 + X[1] ** 2)
+                _XEo5X = [_ah4Q7, _ah4Q7]
+            _7pgq8 = sympy.pi if symbolic else np.pi
+            self.int_p0 = _9Oqvg.p0 * 4 * _7pgq8
+            self._eval_135 = _8LoU9(_9Oqvg, X[2], _XEo5X, symbolic=symbolic)
+
+        def __iter__(self):
+            return self
+
+        def __next__(self):
+            return next(self._eval_135)
+
+    class _xdygO:
+
+        def __init__(self, theta_phi, scaling, complex_valued=True, symbolic='auto'):
+            assert len(theta_phi) == 2
+            if symbolic == 'auto':
+                symbolic = np.asarray(theta_phi).dtype == sympy.Basic
+            assert isinstance(symbolic, bool)
+            _2CGOJ = {'acoustic': _7G46i(False, symbolic, geodetic=False), 'quantum mechanic': _7G46i(True, symbolic, geodetic=False), 'geodetic': _7G46i(False, symbolic, geodetic=True), 'schmidt': _OPAEP(False, symbolic)}[scaling]
+            _O33iz = np.vectorize(sympy.sin) if symbolic else np.sin
+            _Zg6yr = np.vectorize(sympy.cos) if symbolic else np.cos
+            if complex_valued:
+                _gIoOe, _PwikD = _O33iz(theta_phi)
+                _St5v9, _XZQJ5 = _Zg6yr(theta_phi)
+                _BJepC = sympy.I if symbolic else 1j
+                _bsayv = _XZQJ5 + _BJepC * _PwikD
+                _4uV5p = [_gIoOe / _bsayv, _gIoOe * _bsayv]
+            else:
+                _PixaV = theta_phi[0]
+                _gIoOe = _O33iz(_PixaV)
+                _St5v9 = _Zg6yr(_PixaV)
+                _4uV5p = [_gIoOe, _gIoOe]
+            self._eval_135 = _8LoU9(_2CGOJ, _St5v9, _4uV5p, symbolic=symbolic)
+
+        def __iter__(self):
+            return self
+
+        def __next__(self):
+            return next(self._eval_135)
+
+    class _7G46i:
+
+        def __init__(self, with_cs_phase, symbolic, geodetic):
+            _DLgx6 = sympy.pi if symbolic else np.pi
+            self.sqrt = np.vectorize(sympy.sqrt) if symbolic else np.sqrt
+            self.S = sympy.S if symbolic else lambda _796dj: _796dj
+            self.p0 = 1 if geodetic else 1 / self.sqrt(4 * _DLgx6)
+            self.phase = -1 if with_cs_phase else 1
+
+        def __getitem__(self, L):
+            L = self.S(L)
+            _XXer1 = self.sqrt((2 * L + 1) / (2 * L))
+            _wReT3 = _XXer1 * self.phase
+            _AWKpy = np.arange(-L + 1, L)
+            _35wxu = self.sqrt((2 * L - 1) * (2 * L + 1) / ((L + _AWKpy) * (L - _AWKpy)))
+            if L == 1:
+                _In0Yz = None
+            else:
+                _AWKpy = np.arange(-L + 2, L - 1)
+                _In0Yz = self.sqrt((L + _AWKpy - 1) * (L - _AWKpy - 1) * (2 * L + 1) / ((2 * L - 3) * (L + _AWKpy) * (L - _AWKpy)))
+            return (_XXer1, _wReT3, _35wxu, _In0Yz)
+
+    class _OPAEP:
+
+        def __init__(self, with_cs_phase, symbolic):
+            self.sqrt = np.vectorize(sympy.sqrt) if symbolic else np.sqrt
+            self.S = sympy.S if symbolic else lambda _iaeUx: _iaeUx
+            self.phase = -1 if with_cs_phase else 1
+            self.p0 = 1
+
+        def __getitem__(self, L):
+            L = self.S(L)
+            _nSH5C = self.sqrt((2 * L - 1) / (2 * L))
+            _GycM6 = _nSH5C * self.phase
+            _SZUtu = np.arange(-L + 1, L)
+            _76XbA = (2 * L - 1) / self.sqrt((L + _SZUtu) * (L - _SZUtu))
+            if L == 1:
+                _pOtJW = None
+            else:
+                _SZUtu = np.arange(-L + 2, L - 1)
+                _pOtJW = self.sqrt((L + _SZUtu - 1) * (L - _SZUtu - 1) / ((L + _SZUtu) * (L - _SZUtu)))
+            return (_nSH5C, _GycM6, _76XbA, _pOtJW)
+
+    def _u4EFt(n, scaling, lmbda):
+        _ZuUQt(n, scaling, lmbda, lmbda)
+
+    def _c9QAN(*_694We, **_tRokk):
+        from matplotlib import pyplot as plt
+        _u4EFt(*_694We, **_tRokk)
+        plt.show()
+
+    def _EhMqk(filename, *_onSzJ, **_q3VW2):
+        from matplotlib import pyplot as plt
+        _u4EFt(*_onSzJ, **_q3VW2)
+        plt.savefig(filename, transparent=True, bbox_inches='tight')
+
+    class _Js8gI:
+
+        def __init__(self, X, scaling, lmbda, symbolic='auto'):
+            self._jacobi_eval = _Bc8t2(X, scaling, lmbda, lmbda, symbolic=symbolic)
+
+        def __iter__(self):
+            return self
+
+        def __next__(self):
+            return next(self._jacobi_eval)
+
+    class _K3Y4t:
+
+        def __init__(self, scaling, lmbda, symbolic='auto'):
+            self._jacobi_rc = _AXG97(scaling, lmbda, lmbda, symbolic=symbolic)
+            self.int_1 = self._jacobi_rc.int_1
+
+        def __getitem__(self, N):
+            return self._jacobi_rc[N]
+
+    def _XkmF8(n, scaling):
+        _u4EFt(n, scaling, -0.5)
+
+    def _YPJmX(*_GPkMh, **_UHYGj):
+        from matplotlib import pyplot as plt
+        _XkmF8(*_GPkMh, **_UHYGj)
+        plt.show()
+
+    def _1kmSo(filename, *_wkPAL, **_7fasl):
+        from matplotlib import pyplot as plt
+        _XkmF8(*_wkPAL, **_7fasl)
+        plt.savefig(filename, transparent=True, bbox_inches='tight')
+
+    class _kKHFd:
+
+        def __init__(self, X, scaling, symbolic='auto'):
+            if symbolic == 'auto':
+                symbolic = np.asarray(X).dtype == sympy.Basic
+            _VEaP6 = -sympy.S(1) / 2 if symbolic else -0.5
+            self._gegenbauer_eval = _Js8gI(X, scaling, _VEaP6, symbolic)
+
+        def __iter__(self):
+            return self
+
+        def __next__(self):
+            return next(self._gegenbauer_eval)
+
+    def _PxrSq(n, *_ZkNqb, **_RK6lA):
+        import matplotx
+        from matplotlib import pyplot as plt
+        plt.style.use(matplotx.styles.dufte)
+        _LmEhB = np.linspace(-1.0, 1.0, 200)
+        for _Enxv7, _9l54S in enumerate(itertools.islice(_rzVSZ(_LmEhB, *_ZkNqb, **_RK6lA), n + 1)):
+            _VPSPL = plt.rcParams['axes.prop_cycle'].by_key()['color'][_Enxv7]
+            _GJHX3 = np.array([int(_VPSPL[1:][_OW7GU:_OW7GU + 2], 16) / 255 for _OW7GU in (0, 2, 4)])
+            for _StOas, _0lL4M in enumerate(_9l54S):
+                _YMUxw = _GJHX3 * (1 + (_StOas - _Enxv7) / (2 * (_Enxv7 + 1)))
+                _YMUxw[_YMUxw < 0.0] = 0.0
+                _YMUxw[_YMUxw > 1.0] = 1.0
+                plt.plot(_LmEhB, _0lL4M, label=f'n={_Enxv7}, r={_StOas - _Enxv7}', color=_YMUxw)
+        plt.grid(axis='x')
+        matplotx.line_labels()
+        _VyJ6l = plt.gca()
+        _VyJ6l.spines['top'].set_visible(False)
+        _VyJ6l.spines['bottom'].set_visible(False)
+        _kdOQe, = _ZkNqb
+        plt.title(f'Associated Legendre "polynomials" (scaling={_kdOQe})')
+        _VyJ6l.spines['right'].set_visible(True)
+        _VyJ6l.spines['left'].set_visible(True)
+        plt.xlim(-1.0, 1.0)
+
+    def _MCVJV(*_hxdgn, **_ks9Hw):
+        from matplotlib import pyplot as plt
+        _PxrSq(*_hxdgn, **_ks9Hw)
+        plt.show()
+
+    def _63FNi(filename, *_Ig0vA, **_GFbQg):
+        from matplotlib import pyplot as plt
+        _PxrSq(*_Ig0vA, **_GFbQg)
+        plt.savefig(filename, transparent=True, bbox_inches='tight')
+
+    class _rzVSZ:
+
+        def __init__(self, X, scaling, symbolic='auto'):
+            _X9cMp = {'classical': _66lCS, 'normal': _x2PYt}[scaling]
+            if symbolic == 'auto':
+                symbolic = np.asarray(X).dtype == sympy.Basic
+            assert isinstance(symbolic, bool)
+            _LnpQ9 = _X9cMp(symbolic)
+            self._eval135 = _8LoU9(_LnpQ9, X, symbolic=symbolic)
+
+        def __iter__(self):
+            return self
+
+        def __next__(self):
+            return next(self._eval135)
+
+    class _66lCS:
+
+        def __init__(self, symbolic):
+            self.frac = sympy.Rational if symbolic else lambda _ey0iK, _P11Az: _ey0iK / _P11Az
+            self.p0 = 1
+
+        def __getitem__(self, L):
+            _85ksz = self.frac(1, 2 * L)
+            _eSi0x = -(2 * L - 1)
+            _SALhJ = [self.frac(2 * L - 1, L - _Mece5) for _Mece5 in range(-L + 1, L)]
+            _aBEl2 = None if L == 1 else [self.frac(L - 1 + _OTGKL, L - _OTGKL) for _OTGKL in range(-L + 2, L - 1)]
+            return (_85ksz, _eSi0x, _SALhJ, _aBEl2)
+
+    class _x2PYt:
+
+        def __init__(self, symbolic):
+            self.sqrt = np.vectorize(sympy.sqrt) if symbolic else np.sqrt
+            self.frac = np.vectorize(sympy.Rational) if symbolic else lambda _jxLFz, _xOpcy: _jxLFz / _xOpcy
+            self.p0 = 1 / self.sqrt(2)
+
+        def __getitem__(self, L):
+            _jw6ya = self.sqrt(self.frac(2 * L + 1, 2 * L))
+            _tgKTV = -self.sqrt(self.frac(2 * L + 1, 2 * L))
+            _gR5ym = np.arange(-L + 1, L)
+            _XpMAr = self.sqrt(self.frac((2 * L - 1) * (2 * L + 1), (L + _gR5ym) * (L - _gR5ym)))
+            if L == 1:
+                _qKajo = None
+            else:
+                _gR5ym = np.arange(-L + 2, L - 1)
+                _qKajo = self.sqrt(self.frac((L + _gR5ym - 1) * (L - _gR5ym - 1) * (2 * L + 1), (2 * L - 3) * (L + _gR5ym) * (L - _gR5ym)))
+            return (_jw6ya, _tgKTV, _XpMAr, _qKajo)
+
+    def _sVW4c(n, scaling):
+        _u4EFt(n, scaling, +0.5)
+
+    def _XXWps(*_SO9b0, **_k7F8S):
+        from matplotlib import pyplot as plt
+        _sVW4c(*_SO9b0, **_k7F8S)
+        plt.show()
+
+    def _u3Ebk(filename, *_xWzES, **_UHsNA):
+        from matplotlib import pyplot as plt
+        _sVW4c(*_xWzES, **_UHsNA)
+        plt.savefig(filename, transparent=True, bbox_inches='tight')
+
+    class _8y0O9:
+
+        def __init__(self, X, scaling, symbolic='auto'):
+            if symbolic == 'auto':
+                symbolic = np.asarray(X).dtype == sympy.Basic
+            _lPjjJ = sympy.S(1) / 2 if symbolic else 0.5
+            self._gegenbauer_eval = _Js8gI(X, scaling, _lPjjJ, symbolic)
+
+        def __iter__(self):
+            return self
+
+        def __next__(self):
+            return next(self._gegenbauer_eval)
+
+    def _dNM5p(n, scaling):
+        _u4EFt(n, scaling, 0)
+
+    def _DMd3d(*_7NxQx, **_gMWem):
+        from matplotlib import pyplot as plt
+        _dNM5p(*_7NxQx, **_gMWem)
+        plt.show()
+
+    def _Lw1WV(filename, *_vNg1x, **_5rBAp):
+        from matplotlib import pyplot as plt
+        _dNM5p(*_vNg1x, **_5rBAp)
+        plt.savefig(filename, transparent=True, bbox_inches='tight')
+
+    class _CSZMl:
+
+        def __init__(self, X, scaling, symbolic='auto'):
+            self._gegenbauer_eval = _Js8gI(X, scaling, 0, symbolic)
+
+        def __iter__(self):
+            return self
+
+        def __next__(self):
+            return next(self._gegenbauer_eval)
+
+    class _EbkxG(_K3Y4t):
+
+        def __init__(self, scaling, symbolic):
+            super().__init__(scaling, 0, symbolic)
+
+    def _v2G2N(n, *_UWhP4, **_w7lAR):
+        import matplotx
+        from matplotlib import pyplot as plt
+        plt.style.use(matplotx.styles.dufte)
+        _MAZiZ = np.linspace(0.0, 4.4, 100)
+        for _mMDUj, _iHO41 in enumerate(itertools.islice(_9GbNc(_MAZiZ, *_UWhP4, **_w7lAR), n + 1)):
+            plt.plot(_MAZiZ, _iHO41, label=f'n={_mMDUj}')
+        plt.grid(axis='x')
+        matplotx.line_labels()
+        _NUYM8 = plt.gca()
+        _fDXF0, = _UWhP4
+        _bE0NN = _w7lAR['alpha']
+        plt.title(f'(Generalized) Laguerre polynomials (a={_bE0NN}, scaling={_fDXF0})')
+        _NUYM8.spines['left'].set_visible(True)
+
+    def _9WD0Y(*_jE4DK, **_XS4ai):
+        from matplotlib import pyplot as plt
+        _v2G2N(*_jE4DK, **_XS4ai)
+        plt.show()
+
+    def _osoMF(filename, *_CnpcT, **_ZEpcX):
+        from matplotlib import pyplot as plt
+        _v2G2N(*_CnpcT, **_ZEpcX)
+        plt.savefig(filename, transparent=True, bbox_inches='tight')
+    if TYPE_CHECKING:
+        from numpy.typing import ArrayLike
+
+    def _CnoOw(filename, *_50NtU, **_AyvJ3):
+        from matplotlib import pyplot as plt
+        _70M7j(*_50NtU, **_AyvJ3)
+        plt.savefig(filename, transparent=True, bbox_inches='tight')
+
+    def _cAbkq(*_kQ3dY, **_i1vsk):
+        from matplotlib import pyplot as plt
+        _70M7j(*_kQ3dY, **_i1vsk)
+        plt.show()
+
+    def _70M7j(*_NH62b, **_JW22R):
+        _2XGkm('Zernike-2', _omeGj, *_NH62b, **_JW22R)
+
+    def _45KbV(filename, *_7i6Tj, **_tU4OZ):
+        from matplotlib import pyplot as plt
+        _GbEVX(*_7i6Tj, **_tU4OZ)
+        plt.savefig(filename, transparent=True, bbox_inches='tight')
+
+    def _IB6wU(*_BzS5G, **_L0IQP):
+        from matplotlib import pyplot as plt
+        _GbEVX(*_BzS5G, **_L0IQP)
+        plt.show()
+
+    def _GbEVX(*_ii5Zy, **_bCEah):
+        _8MIoZ('Zernike-2', _omeGj, *_ii5Zy, **_bCEah)
+
+    class _omeGj:
+
+        def __init__(self, X, scaling, symbolic='auto'):
+            if symbolic == 'auto':
+                symbolic = np.asarray(X).dtype == sympy.Basic
+            assert isinstance(symbolic, bool)
+            self.rc: RCMonic | RCClassical | RCNormal
+            if scaling == 'monic':
+                self.rc = _sZ9ZE(symbolic)
+            elif scaling == 'classical':
+                self.rc = _rBH8o(symbolic)
+            elif scaling == 'normal':
+                self.rc = _AVgme(symbolic)
+            else:
+                _uRJd4 = f'Illegal scaling `{scaling}`'
+                raise ValueError(_uRJd4)
+            self.X = X
+            self.L = 0
+            self.last = [None, None]
+            _DbaOf = sympy.pi if symbolic else np.pi
+            self.int_p0 = self.rc.p0 * _DbaOf
+
+        def __iter__(self):
+            return self
+
+        def __next__(self):
+            if self.L == 0:
+                _EjUL2 = np.array([0 * self.X[0] + self.rc.p0])
+            else:
+                _SMjcw, _mE5sf, _6zLvO = self.rc[self.L]
+                _jzFG0 = list(self.last[0].shape)
+                _jzFG0[0] += 1
+                _EjUL2 = np.zeros(_jzFG0, dtype=self.last[0].dtype)
+                _agZTU = self.last[0] * self.X[0]
+                _61zEC = self.last[0] * self.X[1]
+                _EjUL2[1:] += _SMjcw * (_agZTU + _61zEC[::-1])
+                _EjUL2[:-1] += _mE5sf * (_agZTU - _61zEC[::-1])
+                if self.L > 1:
+                    _EjUL2[1:-1] -= _6zLvO * self.last[1]
+            self.last[1] = self.last[0]
+            self.last[0] = _EjUL2
+            self.L += 1
+            return _EjUL2
+
+    class _rBH8o:
+
+        def __init__(self, _):
+            self.p0 = 1
+
+        def __getitem__(self, n):
+            assert n > 0
+            _T5ctL = 1
+            _OtvTY = 1
+            _sy5Mp = None if n == 1 else 1
+            return (_T5ctL, _OtvTY, _sy5Mp)
+
+    class _sZ9ZE:
+
+        def __init__(self, symbolic):
+            self.S = sympy.S if symbolic else lambda _L2HkB: _L2HkB
+            self.p0 = 1
+
+        def __getitem__(self, n):
+            assert n > 0
+            n = self.S(n)
+            _YefmV = np.array([_jrZQ5 / n for _jrZQ5 in range(1, n + 1)])
+            _3DzNt = np.array([(n - _9Gv0G) / n for _9Gv0G in range(n)])
+            _FxH4U = None if n == 1 else np.array([_Ijiu8 * (n - _Ijiu8) / (n * (n - 1)) for _Ijiu8 in range(1, n)])
+            return (_YefmV, _3DzNt, _FxH4U)
+
+    class _AVgme:
+
+        def __init__(self, symbolic):
+            self.S = sympy.S if symbolic else lambda _FskXj: _FskXj
+            self.sqrt = sympy.sqrt if symbolic else math.sqrt
+            _FVF9p = sympy.pi if symbolic else math.pi
+            self.p0 = 1 / self.sqrt(_FVF9p)
+
+        def __getitem__(self, n):
+            assert n > 0
+            n = self.S(n)
+            _D5xgC = self.sqrt
+            _BWNPw = _D5xgC((n + 1) / n)
+            _ARrYr = _D5xgC((n + 1) / n)
+            _NbIUC = None if n == 1 else _D5xgC((n + 1) / (n - 1))
+            return (_BWNPw, _ARrYr, _NbIUC)
+
+    def _bQYkr(filename, *_MbAPw, **_CfSyW):
+        from matplotlib import pyplot as plt
+        _Jix6m(*_MbAPw, **_CfSyW)
+        plt.savefig(filename, transparent=True, bbox_inches='tight')
+
+    def _FSQcA(*_o9ME6, **_VcEeV):
+        from matplotlib import pyplot as plt
+        _Jix6m(*_o9ME6, **_VcEeV)
+        plt.show()
+
+    def _Jix6m(degrees, res=100, scaling='normal', colorbar=True, cmap='RdBu_r', corners=None):
+        import meshzoo
+        from matplotlib import pyplot as plt
+        _pRZQH = sum(degrees)
+        _9pM35 = degrees[0]
+
+        def _qjieT(bary):
+            for _M74qj, _D1ZIK in enumerate(_LvgLQ(bary, scaling)):
+                if _M74qj == _pRZQH:
+                    return _D1ZIK[_9pM35]
+            _RIiKD = 'Level not found'
+            raise RuntimeError(_RIiKD)
+        if corners is None:
+            _HEGW0 = np.pi * np.array([7.0 / 6.0, 11.0 / 6.0, 3.0 / 6.0])
+            corners = np.array([np.cos(_HEGW0), np.sin(_HEGW0)])
+        _Vyn6D, _JmFua = meshzoo.triangle(res)
+        _YXUW9, _A9bAW = np.dot(corners, _Vyn6D)
+        _fcvQ8 = np.array(_qjieT(_Vyn6D), dtype=float)
+        plt.tripcolor(_YXUW9, _A9bAW, _JmFua, _fcvQ8, shading='flat')
+        if colorbar:
+            plt.colorbar()
+        plt.set_cmap(cmap)
+        _o4cs3 = plt.gci().get_clim()
+        _1m3jY = max(abs(_o4cs3[0]), abs(_o4cs3[1]))
+        plt.clim(-_1m3jY, _1m3jY)
+        _UdD0m = np.column_stack([corners, corners[:, 0]])
+        plt.plot(_UdD0m[0], _UdD0m[1], '-k')
+        plt.gca().set_aspect('equal')
+        plt.axis('off')
+        plt.title(f'Orthogonal polynomial on triangle ([{degrees[0]}, {degrees[1]}], {scaling})')
+
+    def _ts7bk(filename, *_3kkqC, **_0uaUc):
+        from matplotlib import pyplot as plt
+        _ugciT(*_3kkqC, **_0uaUc)
+        plt.savefig(filename, transparent=True, bbox_inches='tight')
+
+    def _9y3mU(*_HgLir, **_cCaiJ):
+        from matplotlib import pyplot as plt
+        _ugciT(*_HgLir, **_cCaiJ)
+        plt.show()
+
+    def _ugciT(n, res=100, scaling='normal', colorbar=False, cmap='RdBu_r', clim=None):
+        import matplotx
+        import meshzoo
+        from matplotlib import pyplot as plt
+        plt.style.use(matplotx.styles.dufte)
+        _aCtCV, _OkoRh = meshzoo.triangle(res)
+        _V6sS7 = _LvgLQ(_aCtCV, scaling)
+        plt.set_cmap(cmap)
+        plt.gca().set_aspect('equal')
+        plt.axis('off')
+        for _XyV36, _QOZgS in enumerate(itertools.islice(_V6sS7, n + 1)):
+            for _TjxPU, _5a8pL in enumerate(_QOZgS):
+                _8wBZB = np.pi * np.array([7.0 / 6.0, 11.0 / 6.0, 3.0 / 6.0])
+                _AJhUs = np.array([np.cos(_8wBZB), np.sin(_8wBZB)])
+                _AJhUs[0] += 2.1 * (_TjxPU - _XyV36 / 2)
+                _AJhUs[1] -= 1.9 * _XyV36
+                _cHinP, _VvHk4 = np.dot(_AJhUs, _aCtCV)
+                plt.tripcolor(_cHinP, _VvHk4, _OkoRh, _5a8pL, shading='flat')
+                plt.clim(clim)
+                _4G0Yj = np.column_stack([_AJhUs, _AJhUs[:, 0]])
+                plt.plot(_4G0Yj[0], _4G0Yj[1], '-k')
+        if colorbar:
+            plt.colorbar()
+
+    def _zPNa0():
+        try:
+            slim.keygen.find_license_and_validate(account_id='109c23d2-6cdd-4faf-bd8a-96c242733638', product_id='06b7db1d-5a40-4d2c-b89c-6b1887c377c1', variable_names=['SIGMA_LIC', 'SIGMA_LICENSE', 'SIGMA_LICENSE_KEY'])
+        except slim.LicenseError as e:
+            e.show()
+            sys.exit(1)
+    _zPNa0()
+_CwVNP()
+del _CwVNP
