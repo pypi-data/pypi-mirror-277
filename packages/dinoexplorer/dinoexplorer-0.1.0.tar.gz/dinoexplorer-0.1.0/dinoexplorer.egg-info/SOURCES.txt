@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+diex/__init__.py
+diex/diex.py
+dinoexplorer.egg-info/PKG-INFO
+dinoexplorer.egg-info/SOURCES.txt
+dinoexplorer.egg-info/dependency_links.txt
+dinoexplorer.egg-info/entry_points.txt
+dinoexplorer.egg-info/requires.txt
+dinoexplorer.egg-info/top_level.txt
