@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: bianbu-ai-toolkit-tf1
+Version: 1.0.6
+Summary: Bianbu AI Toolkit
+Home-page: https://gitlab.dc.com:8443/bianbu/ai/toolkit
+Author: bianbu-ai
+Author-email: bianbu-ai@spacemit.com
+License: Apache License v2.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: ~=3.7.0
+Description-Content-Type: text/markdown
+Requires-Dist: onnxruntime (~=1.14.1)
+Requires-Dist: tf2onnx (~=1.15.0)
+Requires-Dist: tensorflow (~=1.15.0)
+Requires-Dist: onnx (==1.14.1)
+Requires-Dist: h5py (==2.9.0)
+Requires-Dist: numpy
+
+### [converter](./converter/README.md)
+toolkit for quick converting models to jdsk models
+
+### [helper](./helper/README.md)
+expansion packages
+
+### [optimizer]
+scripts to optimize various models
+
+### [simulator]
