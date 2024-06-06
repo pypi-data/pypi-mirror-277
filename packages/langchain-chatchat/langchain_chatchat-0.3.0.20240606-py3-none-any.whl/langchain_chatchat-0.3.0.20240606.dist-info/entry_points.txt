@@ -1,0 +1,7 @@
+[console_scripts]
+chatchat=chatchat.startup:main
+
+[dotenv]
+ignore=false
+location=.env
+
