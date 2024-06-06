@@ -1,0 +1,9 @@
+async4jsonrpc/__init__.py,sha256=FNU5N2TxUblmjh0mXC8Z2ccTHGbxpIt-KZ34uXEYZ7U,322
+async4jsonrpc/client.py,sha256=O6agbyE6Z2e7U1jqPJNm5Rk9MVCY5Z8Cgt2_KvzF7Ds,4355
+async4jsonrpc/comm.py,sha256=th9hIhkNiqHdl3Be8oOUOiDN8flPqoeMPrT07QuR87E,5796
+async4jsonrpc/server.py,sha256=FAavlhMnTOfJesdtZnSX-CwB1ljRrvX6qCTaev5i5Js,4471
+async4jsonrpc-1.0.0.dist-info/LICENSE,sha256=vM9pbHf6TmBZiRVO_NaA_Yid14s7NrkLIsSJKgP1jys,11338
+async4jsonrpc-1.0.0.dist-info/METADATA,sha256=h-vos0_cvntHTpoAk8FKyCHnk7o4bk3PhVisGv4OuvE,2893
+async4jsonrpc-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+async4jsonrpc-1.0.0.dist-info/top_level.txt,sha256=aqG2oOVncYQrKwsX0Mq8RWE1R9vczaEMGz34_f92_hA,14
+async4jsonrpc-1.0.0.dist-info/RECORD,,
