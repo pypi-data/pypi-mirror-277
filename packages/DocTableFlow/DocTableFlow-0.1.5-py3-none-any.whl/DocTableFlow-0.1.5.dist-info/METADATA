@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: DocTableFlow
+Version: 0.1.5
+Summary: Fetch Tables from the documents
+Author: Rohit Sahoo
+Author-email: rohitsahoo741@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: cffi
+Requires-Dist: chardet
+Requires-Dist: charset-normalizer
+Requires-Dist: contourpy
+Requires-Dist: cryptography
+Requires-Dist: cycler
+Requires-Dist: Deprecated
+Requires-Dist: deprecation
+Requires-Dist: et-xmlfile
+Requires-Dist: fonttools
+Requires-Dist: img2pdf
+Requires-Dist: importlib-resources
+Requires-Dist: joblib
+Requires-Dist: kiwisolver
+Requires-Dist: lxml
+Requires-Dist: markdown-it-py
+Requires-Dist: mdurl
+Requires-Dist: numpy
+Requires-Dist: ocrmypdf
+Requires-Dist: packaging
+Requires-Dist: pandas
+Requires-Dist: pdfminer
+Requires-Dist: pdfminer.six
+Requires-Dist: pikepdf
+Requires-Dist: pillow
+Requires-Dist: pluggy
+Requires-Dist: pycparser
+Requires-Dist: pycryptodome
+Requires-Dist: Pygments
+Requires-Dist: pyparsing
+Requires-Dist: pypdf
+Requires-Dist: PyPDF2
+Requires-Dist: python-dateutil
+Requires-Dist: pytz
+Requires-Dist: reportlab
+Requires-Dist: rich
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: six
+Requires-Dist: threadpoolctl
+Requires-Dist: typing-extensions
+Requires-Dist: tzdata
+Requires-Dist: wrapt
+Requires-Dist: XlsxWriter
+Requires-Dist: zipp
+
