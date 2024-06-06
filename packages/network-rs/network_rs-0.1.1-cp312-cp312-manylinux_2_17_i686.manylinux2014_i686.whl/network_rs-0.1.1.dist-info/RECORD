@@ -1,0 +1,5 @@
+network_rs-0.1.1.dist-info/METADATA,sha256=lyzC2EjmwszrtvkD4yI8kWdnFQdfHkMkWaPypEJa-Sw,3367
+network_rs-0.1.1.dist-info/WHEEL,sha256=ENlSViwvA8hFKPZal3mu0m2HZAWXAdf48DBXUZSc9Xc,125
+network_rs/__init__.py,sha256=7gzSUE7jS3O5-zeNwbrpMMc8FbtfrjdlFRfG63s3soQ,26
+network_rs/network_rs.cpython-312-i386-linux-gnu.so,sha256=GzoZqqE1SSQ-UWGfPLl2eGO9w25vWMhZBOpn1AVyg9U,7837040
+network_rs-0.1.1.dist-info/RECORD,,
