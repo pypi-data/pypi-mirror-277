@@ -1,0 +1,7 @@
+problemdetails/__init__.py,sha256=3S9F5pTKu6ShSPl3yxfkIn1rhc7BjN2ivA15QBvN9Ec,354
+problemdetails/errors.py,sha256=NxNJvXFCDvvetySgd8ix8FWSWAKPzzfkDW9XbAdLITQ,1807
+problemdetails/handlers.py,sha256=gBVNteJjV9pEviEerDYRAiXGP50ZbyvLBta4B1Qkj3E,5747
+tornado_problem_details-1.1.0.dist-info/METADATA,sha256=KQbB1nERu_afnvaN86Lp9EkVLZDpkTLw2Esj_1HIp8A,3834
+tornado_problem_details-1.1.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+tornado_problem_details-1.1.0.dist-info/licenses/LICENSE.txt,sha256=tYG6XwbPMy2mC-dkPBtvF-fNlk7PqEOOmx1PZOcLN1k,1478
+tornado_problem_details-1.1.0.dist-info/RECORD,,
