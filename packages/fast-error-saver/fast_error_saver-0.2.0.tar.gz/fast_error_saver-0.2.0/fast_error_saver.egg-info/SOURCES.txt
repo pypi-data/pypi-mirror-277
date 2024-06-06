@@ -1,0 +1,12 @@
+README.md
+setup.py
+fast_error_saver/__init__.py
+fast_error_saver/error_saver.py
+fast_error_saver.egg-info/PKG-INFO
+fast_error_saver.egg-info/SOURCES.txt
+fast_error_saver.egg-info/dependency_links.txt
+fast_error_saver.egg-info/requires.txt
+fast_error_saver.egg-info/top_level.txt
+fast_error_saver/utils/__init__.py
+fast_error_saver/utils/type_saver.py
+tests/__init__.py
