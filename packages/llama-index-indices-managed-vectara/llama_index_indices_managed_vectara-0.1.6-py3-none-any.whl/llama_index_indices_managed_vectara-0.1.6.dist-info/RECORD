@@ -1,0 +1,8 @@
+llama_index/indices/managed/vectara/__init__.py,sha256=5k4gMmga9tffduQMhdeOscFSEoQ8iFmPMJdF-v_YK64,248
+llama_index/indices/managed/vectara/base.py,sha256=qj4RngBW_C75F2ICaDxybt5iyHKKLy_sUN5Mhg0B6ck,15341
+llama_index/indices/managed/vectara/prompts.py,sha256=mG5yns_WaCETkxM6WMmmuv8RPVA-eWIybTGBvVUdqMo,4034
+llama_index/indices/managed/vectara/query.py,sha256=GuaumtH4URmiVrtKYJmYGBJ_1n7gleHndsP8fvOe9VA,9067
+llama_index/indices/managed/vectara/retriever.py,sha256=j3SFaw9QpR9lYIh3lcVPGq0Si5eRjKBCSVyXkoplOH8,18391
+llama_index_indices_managed_vectara-0.1.6.dist-info/METADATA,sha256=64NgDOWwWp80DFSX2u-ieC21bBaplsgD6vlALrT8V8A,605
+llama_index_indices_managed_vectara-0.1.6.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+llama_index_indices_managed_vectara-0.1.6.dist-info/RECORD,,
