@@ -1,0 +1,5 @@
+bin
+doc
+etc
+examples
+include
