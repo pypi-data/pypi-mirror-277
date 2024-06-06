@@ -1,0 +1,12 @@
+# Include all files in the root directory
+include *
+
+# Recursively include all files in subdirectories
+recursive-include * *
+
+# Optionally, if you want to exclude certain patterns (e.g., temporary or build files)
+prune build
+prune *.egg-info
+prune __pycache__
+prune *.pyc
+prune *.pyo
