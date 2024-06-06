@@ -1,0 +1,10 @@
+compspec_modules/__init__.py,sha256=LZLSAQQsLSSPo3h6eqDNs0ZQLIbetDbW9muvlBX1h9A,60
+compspec_modules/defaults.py,sha256=xBtg2OxWY9JmNcAao6mpCzfXzjtp0IQ1XW5zLQTBnvs,109
+compspec_modules/plugin.py,sha256=wpukI4-IQTWzjbglq_9Mf7nl5vJcZUKoW2fJ-1_EMSk,6898
+compspec_modules/version.py,sha256=j6CHqZdP0g2ot0_Tx5wymLiWAhrvnRR9mf-U6iiGHwI,725
+compspec_modules-0.0.1.dist-info/LICENSE,sha256=c-Qv229c0h91p7gWC7TG2cjSnxzPKHxqkMTnZlcl6l8,1103
+compspec_modules-0.0.1.dist-info/METADATA,sha256=eqM14p2DpmYrBArWQi8mn0S8hVO4F8uKQJ89niuN10w,13368
+compspec_modules-0.0.1.dist-info/NOTICE,sha256=9CR93geVKl_4ZrJORbXN0fzkEM2y4DglWhY1hn9ZwQw,1167
+compspec_modules-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+compspec_modules-0.0.1.dist-info/top_level.txt,sha256=fJyc6O-NIyNvFwGKjnx0jqKy4vG-Ubt3nFIRPBPa8UQ,17
+compspec_modules-0.0.1.dist-info/RECORD,,
