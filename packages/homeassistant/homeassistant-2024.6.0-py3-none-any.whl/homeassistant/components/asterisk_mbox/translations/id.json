@@ -1,0 +1,7 @@
+{
+    "issues": {
+        "deprecated_integration": {
+            "title": "Integrasi {integration_title}  dalam proses penghapusan"
+        }
+    }
+}
