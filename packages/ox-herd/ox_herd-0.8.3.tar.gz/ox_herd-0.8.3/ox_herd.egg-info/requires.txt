@@ -1,0 +1,4 @@
+eyap
+pytest
+pytest-xdist
+xmltodict
