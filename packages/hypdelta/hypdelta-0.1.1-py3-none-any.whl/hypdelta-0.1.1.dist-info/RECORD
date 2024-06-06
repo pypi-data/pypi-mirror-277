@@ -1,0 +1,8 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_delta_methods.py,sha256=GBLtpco8xdLPZ9YE8baJH6llT7Bo_qPf3_8Jphmu7ek,709
+tests/utils.py,sha256=gHVULGl8ES7y22iZFQqx2zNG421E4mA6nr4NwSksnu4,2480
+hypdelta-0.1.1.dist-info/LICENSE,sha256=EhJ_F-iUStDc5GcJcJw6wn_Gmu8VllBx5ku85n8iHvw,1092
+hypdelta-0.1.1.dist-info/METADATA,sha256=sRN19viKZEqRQasTlFCUpbXFj0AoMcIenWJ90qdLKnc,4372
+hypdelta-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+hypdelta-0.1.1.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+hypdelta-0.1.1.dist-info/RECORD,,
