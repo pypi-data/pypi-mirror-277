@@ -1,0 +1,9 @@
+textannotate/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+textannotate/cli.py,sha256=65pCIm4vkYyK_Lyx2e56Uve-zokfhLuX-l40_Wnq8eo,1929
+textannotate/templates/index.html,sha256=UWCsBryPhulwe1fwhQMvD5Wp1AbX6EqXlwLdnJJaVCE,7495
+textannotate-0.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+textannotate-0.1.0.dist-info/METADATA,sha256=jr-iOkC5wtfpuV9x64q_el6xM3a0VyBdWBmcvmPJBXc,1575
+textannotate-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+textannotate-0.1.0.dist-info/entry_points.txt,sha256=S1Vs9iWf_Sn3-lSzGapNIyLM0EDfiGR76W8sJ48Hmoo,55
+textannotate-0.1.0.dist-info/top_level.txt,sha256=RpII-TE5KEYVqdvH34wlldMy3jen7nCb86XMYjHEW3s,13
+textannotate-0.1.0.dist-info/RECORD,,

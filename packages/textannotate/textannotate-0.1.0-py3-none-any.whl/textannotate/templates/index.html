@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Text Classification Review Tool</title>
+        <style>
+            * {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            /* // make main 80% width and aside 20% width */
+            body {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                max-width: 70em;
+                margin: auto;
+            }
+            main {
+                min-width: 80%;
+            }
+            aside {
+                min-width: 20%;
+            }
+                
+            #contentContainer {
+                background-color: #f0f0f0;
+                padding: 10px;
+                margin: 0;
+            }
+            #classification {
+                background-color: lightblue;
+                padding: 10px;
+                margin: 0;
+            }
+            #classes {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                gap: 10px;
+            }
+            /* // make buttons stretch */
+            #classes form {
+                flex-grow: 1;
+            }
+            /* // make buttons the same width */
+            #classes button {
+                width: 100%;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            button {
+                cursor: pointer;
+                border: 1px solid #000;
+                background-color: #f0f0f0;
+                padding: 10px;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <p><span id="idx">{{ idx }}</span> / <span id="total">{{ record_count }}</span></p>
+            {% if classification %}
+                <p id="classification">{{ classification }}</p>
+            {% endif %}
+            <div id="contentContainer">
+                <h1 id="title">{{ title }}</h1>
+                <p id="content">{{ content }}</p>
+            </div>
+        </main>
+        <aside>
+            <h2>Classes</h2>
+            <section id="classes">
+                {% for cls in classes %}
+                    <button type="submit" name="class" data-value="{{ cls['name'] }}">{{ cls['name'] }} ({{ cls['id'] + 1 }})</button>
+                {% endfor %}
+            </section>
+            <h3>Options</h3>
+            <label for="hideContent">Hide content?</label>
+            <input type="checkbox" id="hideContent">
+        </aside>
+    </body>
+    <script>
+        var doc_idx = {{ idx }};
+        console.log(doc_idx)
+        var valid_keys = Array.from({length: {{ classes|length }}})
+            .map((_, i) => (i + 1).toString());
+        
+        document.getElementById('hideContent').addEventListener('change', (event) => {
+            const content = document.getElementById('content');
+            if (event.target.checked) {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        });
+
+        document.addEventListener('keydown', (event) => {
+            const key = event.key;
+            // if 's', enable / disable ceckbox
+            if (key === 's') {
+                const checkbox = document.getElementById('hideContent');
+                checkbox.checked = !checkbox.checked;
+                const content = document.getElementById('content');
+                if (checkbox.checked) {
+                    content.style.display = 'none';
+                } else {
+                    content.style.display = 'block';
+                }
+            }
+            if (valid_keys.includes(key)) {
+                // get first button in #classes
+                const button = document.querySelectorAll('#classes button')[parseInt(key) - 1];
+                // get value of button
+                const value = button.getAttribute('data-value');
+            
+                // send POST request to /classify with class 1
+                fetch('/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ classification: value, idx: doc_idx }),
+                }).then((response) => {
+                    if (response.ok) {
+                        return response.json();
+                    }
+                    throw new Error('Request failed.');
+                }).then((data) => {
+                    // update classification
+                    document.getElementById('classification').textContent = data.classification;
+                    // mke corresponding button green
+                    button.style.backgroundColor = 'lightgreen';
+                }).catch((error) => {
+                    console.error(error);
+                });
+            }
+            // if left arrow, request next record as  GET to /?idx=doc_idx
+            if (key === 'ArrowLeft') {
+                fetch(`/?idx=${doc_idx - 1}`).then((response) => {
+                    if (response.ok) {
+                        return response.json();
+                    }
+                    throw new Error('Request failed.');
+                }).then((data) => {
+                    // reset button colors
+                    document.querySelectorAll('#classes button').forEach((button) => {
+                        button.style.backgroundColor = '#f0f0f0';
+                    });
+                    // update content
+                    document.getElementById('content').textContent = data.data.content;
+                    // update title
+                    document.getElementById('title').textContent = data.data.title;
+                    // update idx
+                    doc_idx = parseInt(data.data.idx);
+
+                    document.getElementById('classification').textContent = data.data.classification;
+                    document.getElementById('idx').textContent = doc_idx;
+
+                }).catch((error) => {
+                    console.error(error);
+                });
+            }
+            if (key === 'ArrowRight') {
+                fetch(`/?idx=${doc_idx + 1}`).then((response) => {
+                    if (response.ok) {
+                        return response.json();
+                    }
+                    throw new Error('Request failed.');
+                }).then((data) => {
+                    document.querySelectorAll('#classes button').forEach((button) => {
+                        button.style.backgroundColor = '#f0f0f0';
+                    });
+                    // update content
+                    document.getElementById('content').textContent = data.data.content;
+                    // update title
+                    document.getElementById('title').textContent = data.data.title;
+                    // update idx
+                    doc_idx = parseInt(data.data.idx);
+                    console.log('current idx', doc_idx)
+
+                    document.getElementById('classification').textContent = data.data.classification;
+                    document.getElementById('idx').textContent = doc_idx;
+                }).catch((error) => {
+                    console.error(error);
+                });
+            }
+        });
+    </script>
+</html>
