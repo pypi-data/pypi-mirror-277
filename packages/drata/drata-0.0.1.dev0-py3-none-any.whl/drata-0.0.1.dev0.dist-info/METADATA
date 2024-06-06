@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: drata
+Version: 0.0.1.dev0
+Summary: Drata Python SDK
+Home-page: https://drata.com/
+Author: Drata
+Author-email: packages+pypi@drata.com
+License: MIT
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.4
+Classifier: Programming Language :: Python :: 2.5
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+License-File: LICENSE
+
+drata
+======
+
+This is a placeholder for a future Drata python SDK library
+
+References:
+
+ * https://drata.com/
