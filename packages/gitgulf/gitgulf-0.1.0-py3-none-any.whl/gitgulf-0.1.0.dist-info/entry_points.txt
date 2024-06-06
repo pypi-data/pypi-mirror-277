@@ -1,0 +1,11 @@
+[console_scripts]
+ggb=gitgulf.main:main_b
+ggc=gitgulf.main:main_c
+ggd=gitgulf.main:main_d
+ggf=gitgulf.main:main_f
+ggm=gitgulf.main:main_m
+ggp=gitgulf.main:main_p
+ggpr=gitgulf.main:main_pr
+ggs=gitgulf.main:main_s
+gitgulf=gitgulf.main:main
+
