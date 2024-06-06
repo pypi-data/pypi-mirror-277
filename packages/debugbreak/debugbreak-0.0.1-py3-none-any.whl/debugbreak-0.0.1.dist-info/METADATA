@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: debugbreak
+Version: 0.0.1
+Summary: Trigger Visual Studio debugging mode from the current Python session.
+Author: Andrej730
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## debugbreak
+
+Package is used to trigger Visual Studio debugging mode from the current Python session.
+Then Visual Studio popup will show up and you'll be able to attach Visual Studio to the current Python session.
+
+```python
+from debugbreak import __debugbreak
+
+__debugbreak()
+```
