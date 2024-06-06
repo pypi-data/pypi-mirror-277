@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+MomSPS.egg-info/PKG-INFO
+MomSPS.egg-info/SOURCES.txt
+MomSPS.egg-info/dependency_links.txt
+MomSPS.egg-info/requires.txt
+MomSPS.egg-info/top_level.txt
+momsps/__init__.py
+momsps/momsps.py
+momsps/momsps_smooth.py
