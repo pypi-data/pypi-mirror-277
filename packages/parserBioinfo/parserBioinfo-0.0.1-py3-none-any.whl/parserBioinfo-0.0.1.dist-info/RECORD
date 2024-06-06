@@ -1,0 +1,8 @@
+parserBioinfo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parserBioinfo/blast2csv.py,sha256=pjNgmFZOflu4kHccGCtdV31kR2XCwyuWMQBBXoXulV8,1538
+parserBioinfo/sqlite2excel.py,sha256=S3gfukQgx5hcCU5YQtt5_M1iiuK7dVLtwViVirv9TNc,1682
+parserBioinfo-0.0.1.dist-info/LICENSE,sha256=BkgGIGgy9sv-OsI7mRi9dIQ3Su0m4IbjpZlfxv8oBbM,1073
+parserBioinfo-0.0.1.dist-info/METADATA,sha256=iO6VvOdzdTY5mKNAeAWCIePmgb8DWgkg0o9NoQ2A1oM,816
+parserBioinfo-0.0.1.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+parserBioinfo-0.0.1.dist-info/top_level.txt,sha256=jLB3J3qds_P7xs6si5MiBUtV3aMgpru5NSPyBwfyD48,14
+parserBioinfo-0.0.1.dist-info/RECORD,,

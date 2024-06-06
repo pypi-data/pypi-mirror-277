@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: parserBioinfo
+Version: 0.0.1
+Home-page: https://github.com/xianyu-123/sqllite2excel
+Author: Guijiang
+Author-email: guijiang_wang@163.com
+License: Apache
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas >=1.2.5
+Requires-Dist: openpyxl >=3.1.2
+Requires-Dist: numpy
+
+这是一个将sqllite文件转为excel文件的程序包，也可以将blast的xml结果解析为fasta和csv文件,对于所有人都方便使用。
