@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: hazetunnel
+Version: 1.1.0
+Summary: Mitm proxy that defends against TLS and JS worker fingerprinting.
+Home-page: https://github.com/daijro/hazetunnel
+License: MIT
+Keywords: tls,golang,networking,proxy,mitm,injector,playwright
+Author: daijro
+Author-email: daijro.dev@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet :: Proxy Servers
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: System :: Networking :: Monitoring
+Requires-Dist: click
+Requires-Dist: httpx
+Project-URL: Repository, https://github.com/daijro/hazetunnel
+Description-Content-Type: text/markdown
+
+# Python Usage
+
+## Usage
+
+Hazetunnel is designed to run globally:
+
+```py
+import hazetunnel
+hazetunnel.launch()
+...
+requests.get(
+    url='https://tls.peet.ws/api/clean',
+    headers={
+        **HeaderGenerator().generate(browser='chrome'),
+        'x-mitm-payload': 'alert("hi");'
+    },
+    proxies={'https': hazetunnel.url()},
+    verify=hazetunnel.cert()
+)
+...
+hazetunnel.kill()
+```
+
+Although, Hazetunnel may also run in a context manager:
+
+```py
+from hazetunnel import HazeTunnel
+...
+with HazeTunnel as proxy:
+    requests.get(
+        url='https://tls.peet.ws/api/clean',
+        headers={
+            **HeaderGenerator().generate(browser='chrome'),
+            'x-mitm-payload': 'alert("hi");'
+        },
+        proxies={'https': proxy.url},
+        verify=proxy.cert
+    )
+...
+```
+
+<hr width=70>
+
+## CLI
+
+Download the latest version of the API:
+
+```sh
+python -m hazetunnel fetch
+```
+
+Remove all files before uninstalling
+
+```sh
+python -m hazetunnel remove
+```
+
+Run the MITM proxy:
+
+```sh
+python -m hazetunnel run -p 8080 --verbose
+```
+
+### All commands
+
+```sh
+Usage: python -m hazetunnel [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  fetch    Fetch the latest version of hazetunnel-api
+  remove   Remove all library files
+  run      Run the MITM proxy
+  version  Display the current version
+```
+
+---
+
