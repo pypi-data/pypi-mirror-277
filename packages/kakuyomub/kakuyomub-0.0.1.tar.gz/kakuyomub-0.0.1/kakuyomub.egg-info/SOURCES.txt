@@ -1,0 +1,6 @@
+setup.py
+kakuyomub.egg-info/PKG-INFO
+kakuyomub.egg-info/SOURCES.txt
+kakuyomub.egg-info/dependency_links.txt
+kakuyomub.egg-info/requires.txt
+kakuyomub.egg-info/top_level.txt
