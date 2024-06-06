@@ -1,0 +1,9 @@
+README.md
+setup.py
+parameterizations/__init__.py
+parameterizations/shapes.py
+parameterizations/test_shapes.py
+ucar_parameterizations_assignment_ap.egg-info/PKG-INFO
+ucar_parameterizations_assignment_ap.egg-info/SOURCES.txt
+ucar_parameterizations_assignment_ap.egg-info/dependency_links.txt
+ucar_parameterizations_assignment_ap.egg-info/top_level.txt

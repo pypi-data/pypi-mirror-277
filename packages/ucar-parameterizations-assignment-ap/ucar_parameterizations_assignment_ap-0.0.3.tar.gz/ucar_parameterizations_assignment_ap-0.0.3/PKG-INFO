@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ucar-parameterizations-assignment-ap
+Version: 0.0.3
+Summary: Foo et al. parameterization
+Author: Austin Pliska
+Author-email: <ajpliska873t.i@email.com>
+Keywords: python,ucar,parameteriazation,foo,sphere
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+UCAR assignment Foo et al. parameterization designed with the task of making an easy to learn and modify shape parameterization package.
