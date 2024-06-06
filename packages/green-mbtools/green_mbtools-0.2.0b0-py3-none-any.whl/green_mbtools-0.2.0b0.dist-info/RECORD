@@ -1,0 +1,10 @@
+green_mbtools/__init__.py,sha256=Er762QT7oD3RV-Qkp7cDzqpAb3vXOaHYIJALh6It95M,102
+green_mbtools/common_utils.py,sha256=oXdw3PgNXOwUzfvV6VJfkNpwNAOAkX1LdDoZPJhHiHc,24657
+green_mbtools/gdf_s_metric.py,sha256=c3u8RATVfUd5vjt6GL0qx2rbug5KoL6d8-zVZKHi31o,18627
+green_mbtools/integral_utils.py,sha256=xEpxHQs3WHhoj9pMTmZ9H7yg5Z9PMExP9aPM7o6F7-c,17789
+green_mbtools/pyscf_init.py,sha256=VrV5t3EajuPMRpFLB1DbdOkXSP_XeNdhojEjE_eGqZs,8405
+green_mbtools-0.2.0b0.dist-info/LICENSE,sha256=Y743dvK_JwrkIdpZg9FZ3XbL273Igpyj3OKXbhviDkA,1067
+green_mbtools-0.2.0b0.dist-info/METADATA,sha256=0L_Y4BHoVe3YTAeaZ7MLUm9eUiKF-j3qLcKb_QGoYSc,2151
+green_mbtools-0.2.0b0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+green_mbtools-0.2.0b0.dist-info/top_level.txt,sha256=kUzz1jYmYiJ3Qor5BhRKAmoxpN5p5BpJhX4lJO5NAxY,14
+green_mbtools-0.2.0b0.dist-info/RECORD,,
