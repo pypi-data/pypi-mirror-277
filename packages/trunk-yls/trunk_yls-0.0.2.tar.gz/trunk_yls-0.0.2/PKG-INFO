@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: trunk-yls
+Version: 0.0.2
+Summary: Personal yaml-language-server check
+Author-email: Kilian Tyler <trunk-yls@ktyler.me>
+Project-URL: Homepage, https://github.com/kiliantyler/trunk-yls
+Project-URL: Issues, https://github.com/kiliantyler/trunk-yls/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ruamel.yaml
+
+# trunk-yls
