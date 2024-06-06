@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: flowbyte
+Version: 0.1.0
+Summary: ETL tool for data processing
+Author-email: Kevork Keheian <jamal@optiret.com>
+Project-URL: Homepage, https://github.com/optiret/flowbyte
+Project-URL: Issues, https://github.com/optiret/flowbyte/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# jamal
+ETL Tool
