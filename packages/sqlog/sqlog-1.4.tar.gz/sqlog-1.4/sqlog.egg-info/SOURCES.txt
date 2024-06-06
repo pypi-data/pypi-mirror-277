@@ -1,0 +1,7 @@
+setup.py
+sqlog.py
+sqlog.egg-info/PKG-INFO
+sqlog.egg-info/SOURCES.txt
+sqlog.egg-info/dependency_links.txt
+sqlog.egg-info/entry_points.txt
+sqlog.egg-info/top_level.txt
