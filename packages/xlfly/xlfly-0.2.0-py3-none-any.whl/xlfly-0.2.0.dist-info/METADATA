@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: xlfly
+Version: 0.2.0
+Summary: 
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pandas (>=1.5.2)
+Requires-Dist: pywin32 (>=306,<307)
+Requires-Dist: xlwings (>=0.28.0)
+Description-Content-Type: text/markdown
+
+xlfly - separate GUI based Excel tools
+
+I love xlwings! However, I have noticed it very difficult to handle heavy calculations if using user defined functions. Hence xlfly: making using UDF easier. I chose separate GUI so that I can run parallel threads easier. 
+
+This package only works on Windows
+
+Create Windows Start Menu Item:
+
+```bash
+>>> xly --init
+```
+
+Excel selection to "Run Python"
+1. Write python expressions in the cells
+2. Select the cell with python scripts
+3. Click "Run Python" button
+
+
+I used the icon from https://www.iconfinder.com/search?q=wings&price=free drawn by Monsieur Steven Ankri. Thanks!
+
+## path
+
+When run python, current workbook, and `script_path` setting from setting page will be added to pythonpath
+
+## Debug
+
+To debug the scripts in Excel, put the following header to your script:
+
+```python
+import xlwings as xw
+import pandas as pd
+import xlfly.copyover
+```
+
