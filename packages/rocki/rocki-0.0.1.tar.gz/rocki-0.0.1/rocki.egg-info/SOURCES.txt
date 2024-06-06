@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+rocki/__init__.py
+rocki/lala.py
+rocki/player.py
+rocki.egg-info/PKG-INFO
+rocki.egg-info/SOURCES.txt
+rocki.egg-info/dependency_links.txt
+rocki.egg-info/top_level.txt
