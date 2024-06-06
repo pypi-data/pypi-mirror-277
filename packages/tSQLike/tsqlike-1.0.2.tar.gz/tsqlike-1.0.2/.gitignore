@@ -1,0 +1,5 @@
+.idea
+.venv
+.save
+__pycache__
+dist
