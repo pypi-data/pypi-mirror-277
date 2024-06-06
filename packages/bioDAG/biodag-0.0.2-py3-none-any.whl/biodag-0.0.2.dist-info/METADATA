@@ -1,0 +1,35 @@
+Metadata-Version: 2.3
+Name: bioDAG
+Version: 0.0.2
+Summary: This is a package to preprocess DAG-structure biological data.
+Project-URL: Homepage, https://github.com/shi4712shi/bioDAG/
+Project-URL: Issues, https://github.com/shi4712shi/bioDAG/issues
+Author-email: shi4712 <shi4712@genetics.ac.cn>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: networkx>=2.6.3
+Requires-Dist: numpy>=1.20.3
+Requires-Dist: pandas>=1.3.2
+Description-Content-Type: text/markdown
+
+# bioDAG
+
+This is a package to preprocess DAG-structure biological data. Now, it supports
+* [MeSH](https://www.ncbi.nlm.nih.gov/mesh)
+
+## DESCRIPTION
+___
+### MeSH
+There are some contents to introduce workflow and functions for MeSH
+
+### Release Notes
+___
+#### version 0.0.2
+<ul>
+    <li>Optimize logic of __init__ file</li>
+    <li>Fix bugs of importing MeSHDAG and MeSHDAGTerm</li>
+</ul>
+
