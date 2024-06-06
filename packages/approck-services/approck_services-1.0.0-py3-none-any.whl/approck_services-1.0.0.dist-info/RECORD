@@ -1,0 +1,11 @@
+approck_services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+approck_services/base.py,sha256=U8VxBgkPO51I_tzJ4NadnDApKndjKY6ly6dg9Z3v0VI,28
+approck_services/fastapi.py,sha256=_lrk7BekrYPW0gpDXvuE5wSBnYazNzlRdqG11GROBDk,1853
+approck_services/integrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+approck_services/integrations/upload.py,sha256=K7Psmq2if8IOYdP5nqB9dTLnVO99SpFXALJ9KOpsvJs,1216
+approck_services/sqlalchemy/__init__.py,sha256=QgMSSXhQ7UeiK4UNQpoWnOeJDGBeppzWSdyCPDqDuu8,144
+approck_services/sqlalchemy/abstract.py,sha256=ZrXB7trGR6O7JGsAuq1MfBiY8tGsr9_XdGhcEFRYtj0,291
+approck_services/sqlalchemy/base.py,sha256=u45WWGjcaM1PIYvtUsC36k2z8H70j68_znQhHAUhBzE,7102
+approck_services-1.0.0.dist-info/METADATA,sha256=CTZH9cjH5oIbUvEvs0gkES4XsKEGNW8e9I4aG-S6esQ,706
+approck_services-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+approck_services-1.0.0.dist-info/RECORD,,
