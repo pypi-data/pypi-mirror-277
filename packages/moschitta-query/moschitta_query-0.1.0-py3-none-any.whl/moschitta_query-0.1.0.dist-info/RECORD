@@ -1,0 +1,8 @@
+moschitta_query/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+moschitta_query/expressions.py,sha256=SHweRJLlScHraZ0hRxJJvTA28CVxGm7oPeIlu_CMOFg,1351
+moschitta_query/helpers.py,sha256=KDRbMNFoOQ7MdQ15tDHy9uNffoR1dlddzuLHUcTzPFw,96
+moschitta_query/query.py,sha256=vj-QYfxVmWn2W3XvxRwWH0qjvpIAHcSQHCh9VB-2GmY,3813
+moschitta_query-0.1.0.dist-info/LICENSE,sha256=cXM67JOZ8Cqoz6P0PeKDsH8ZOFL7l8CpPeMmkw96poo,1096
+moschitta_query-0.1.0.dist-info/METADATA,sha256=bX4nqu-NdSjWUUHGJJ1-c6_THPfUcTqpnSyH3FnDBZI,3302
+moschitta_query-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+moschitta_query-0.1.0.dist-info/RECORD,,
