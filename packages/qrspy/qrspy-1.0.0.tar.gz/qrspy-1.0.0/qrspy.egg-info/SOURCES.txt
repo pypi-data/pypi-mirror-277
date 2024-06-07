@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+qrspy/__init__.py
+qrspy/qrspy.py
+qrspy.egg-info/PKG-INFO
+qrspy.egg-info/SOURCES.txt
+qrspy.egg-info/dependency_links.txt
+qrspy.egg-info/requires.txt
+qrspy.egg-info/top_level.txt
