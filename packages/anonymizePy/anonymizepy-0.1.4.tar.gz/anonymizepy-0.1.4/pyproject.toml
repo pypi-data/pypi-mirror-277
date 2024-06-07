@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anonymizePy"
+version = "0.1.4"
+authors = [
+  { name="Aussie D. Frost", email="ausdfrost@gmail.com" },
+]
+description = "A PII removal toolkit to help you anonymize your data."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "numpy>=1.9.3",
+    "pandas>=2.1.1",
+    "regex>=2.5.135",
+    "spacy>=3.4.4",
+    "scikit-learn>=0.24.0"
+]
+
+[tool.setuptools]
+packages = ["anonymizePy"]
+
+[project.urls]
+Homepage = "https://github.com/ausdfrost/anonymizePy"
+Issues = "https://github.com/ausdfrost/anonymizePy/issues"
