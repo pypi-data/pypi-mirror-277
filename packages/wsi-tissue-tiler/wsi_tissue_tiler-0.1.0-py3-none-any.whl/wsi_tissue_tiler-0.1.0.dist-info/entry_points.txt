@@ -1,0 +1,3 @@
+[console_scripts]
+wsi-tissue-tiler=wsi_tissue_tiler.main:main
+

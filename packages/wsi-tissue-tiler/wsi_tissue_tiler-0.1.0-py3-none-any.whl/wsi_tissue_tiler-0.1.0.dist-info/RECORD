@@ -1,0 +1,15 @@
+wsi_tissue_tiler/README.md,sha256=HUJf4RtEx1E_8qUHME6cPYDA2KeG2HrtTTC2HKgBTZc,44
+wsi_tissue_tiler/TissueIdentifier.py,sha256=IQ87paFe9sP7P7XwWh9QOmY67QURvu5kvK45aJdDVT4,1937
+wsi_tissue_tiler/TissueIdentifierModel.py,sha256=IFXvHPqTHUnhdg6zINmAiEjp8skcYJoW9DjLYnVMGzM,1009
+wsi_tissue_tiler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wsi_tissue_tiler/clip_img_processor/README.md,sha256=mLReqBFk0eGh3YIlUgcFOxXNbGnZIqHFzzOHzmBNS3Q,28
+wsi_tissue_tiler/clip_img_processor/config.json,sha256=LCVaHkoSPJjJiDaKp3zxwrXF6EOUou2xGzogZRPLwCo,559
+wsi_tissue_tiler/clip_img_processor/preprocessor_config.json,sha256=TbSVZE4-W9j8rFL3Dn_AtBPJEQhgIaz3OsMOWREWbpU,518
+wsi_tissue_tiler/main.py,sha256=u129G-Wx-4Tz_ilBX0q0sabmJcmOtfLcXMM7vUOtTzQ,2160
+wsi_tissue_tiler/requirements.txt,sha256=QQiB52rYfTF0ERFolbqz2M8XEKCqNTfTOo9N6wkl12A,191
+wsi_tissue_tiler/slide_processor.py,sha256=C2QOpp0IiDcX6fPZ8WzeTdDuDzeDm_jezoVpXJgWoUo,3170
+wsi_tissue_tiler/tissue_identifier.pth,sha256=VZrKGvLs1BHn_Q8K1FR1GDWpv0_wt4RHcd6R9Ilm74g,297679
+wsi_tissue_tiler-0.1.0.dist-info/METADATA,sha256=KOiphd5LyqBCge10B1FamyMQSCZBZUCtDUNXbcs9BK8,1786
+wsi_tissue_tiler-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+wsi_tissue_tiler-0.1.0.dist-info/entry_points.txt,sha256=5044afWA2ZD6330Ko87XPmNdhh1GjDeScQmYwsih298,63
+wsi_tissue_tiler-0.1.0.dist-info/RECORD,,
