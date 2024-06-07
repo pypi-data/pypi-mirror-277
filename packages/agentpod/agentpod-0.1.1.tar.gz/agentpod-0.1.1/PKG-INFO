@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: agentpod
+Version: 0.1.1
+Summary: A simple framework for agentic systems
+Home-page: https://agentpod.ai
+License: MIT
+Author: Boat Builder
+Author-email: hello@boatbuilder.dev
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Project-URL: Documentation, https://github.com/boat-builder/agentpod
+Project-URL: Repository, https://github.com/boat-builder/agentpod
+Description-Content-Type: text/markdown
+
+# AgentPod
+
+A simple framework for agentic systems
+
+
