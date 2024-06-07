@@ -1,0 +1,21 @@
+*.swp
+*.swo
+*.gemini
+*.index
+*.meta
+*.out
+*.ckpt
+*.tar.gz
+*.pbtxt
+*.png
+*.csv
+*~
+
+# Compiled Python files
+__pycache__/
+*.py[cod]
+
+ctlearn.egg-info/
+
+# Sphinx documentation
+docs/build/
