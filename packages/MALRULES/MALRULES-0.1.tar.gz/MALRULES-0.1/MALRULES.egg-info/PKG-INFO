@@ -1,0 +1,208 @@
+Metadata-Version: 2.1
+Name: MALRULES
+Version: 0.1
+Summary: MALRULES is a Python package for heuristic malware analysis and file hashing. It provides functionalities to analyze files for potential malware by checking for suspicious patterns, API calls, and strings. The package also includes utilities for generating SHA256 and SHA1 file hashes using the MALHasher library.
+Home-page: https://github.com/codewithjoymondal
+Author: Joy Mondal
+Author-email: Contact.Joymondal@gmail.com
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# MALRULES
+
+MALRULES is a Python package designed for heuristic malware analysis and file hashing. It provides functionalities to identify suspicious files based on predefined heuristic rules and to generate SHA256 and SHA1 hashes of files using the `MALHasher` package.
+
+## Features
+
+- Heuristic analysis for identifying suspicious files.
+- Classification of potential malware families based on heuristic rules.
+- Generation of SHA256 and SHA1 hashes for files.
+
+## Installation
+
+You can install the package from PyPI using pip:
+
+```bash
+pip install MALRULES
+```
+
+# Usage
+
+## Basic Usage
+
+```bash
+from MALRULES import is_file_suspicious, generate_file_hashes
+
+file_path = 'path/to/your/file'
+
+# Determine if the file is suspicious
+suspicion_level, suspicion_score, detected_families = is_file_suspicious(file_path)
+
+# Generate file hashes
+sha256_hash, sha1_hash = generate_file_hashes(file_path)
+
+print(f"File: {file_path}")
+print(f"SHA256: {sha256_hash}")
+print(f"SHA1: {sha1_hash}")
+print(f"Suspicion Level: {suspicion_level}")
+print(f"Suspicion Score: {suspicion_score}")
+print(f"Potential Malware Families: {', '.join(detected_families) if detected_families else 'None'}")
+
+```
+
+## Function to Check Multiple Files
+
+
+```bash
+from MALRULES import is_file_suspicious, generate_file_hashes
+
+def check_files(file_paths):
+    results = []
+    for file_path in file_paths:
+        suspicion_level, suspicion_score, detected_families = is_file_suspicious(file_path)
+        sha256_hash, sha1_hash = generate_file_hashes(file_path)
+        results.append({
+            'file': file_path,
+            'SHA256': sha256_hash,
+            'SHA1': sha1_hash,
+            'Suspicion Level': suspicion_level,
+            'Suspicion Score': suspicion_score,
+            'Potential Malware Families': ', '.join(detected_families) if detected_families else 'None'
+        })
+    return results
+
+# Example usage
+file_paths = ['path/to/your/file1', 'path/to/your/file2']
+results = check_files(file_paths)
+for result in results:
+    print(result)
+
+```
+
+## Integrating with a CLI
+
+
+```bash
+import argparse
+from MALRULES import is_file_suspicious, generate_file_hashes
+
+def main():
+    parser = argparse.ArgumentParser(description="Heuristic malware analysis and file hashing.")
+    parser.add_argument('file', help="The file to analyze.")
+    args = parser.parse_args()
+
+    file_path = args.file
+    suspicion_level, suspicion_score, detected_families = is_file_suspicious(file_path)
+    sha256_hash, sha1_hash = generate_file_hashes(file_path)
+
+    print(f"File: {file_path}")
+    print(f"SHA256: {sha256_hash}")
+    print(f"SHA1: {sha1_hash}")
+    print(f"Suspicion Level: {suspicion_level}")
+    print(f"Suspicion Score: {suspicion_score}")
+    print(f"Potential Malware Families: {', '.join(detected_families) if detected_families else 'None'}")
+
+if __name__ == '__main__':
+    main()
+
+```
+
+## Using in a Web Application
+
+
+```bash
+from flask import Flask, request, jsonify
+from MALRULES import is_file_suspicious, generate_file_hashes
+
+app = Flask(__name__)
+
+@app.route('/analyze', methods=['POST'])
+def analyze_file():
+    file = request.files['file']
+    file_path = f"/tmp/{file.filename}"
+    file.save(file_path)
+
+    suspicion_level, suspicion_score, detected_families = is_file_suspicious(file_path)
+    sha256_hash, sha1_hash = generate_file_hashes(file_path)
+
+    response = {
+        'File': file_path,
+        'SHA256': sha256_hash,
+        'SHA1': sha1_hash,
+        'Suspicion Level': suspicion_level,
+        'Suspicion Score': suspicion_score,
+        'Potential Malware Families': ', '.join(detected_families) if detected_families else 'None'
+    }
+
+    return jsonify(response)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+```
+## Logging Results to a File
+
+
+```bash
+import logging
+from MALRULES import is_file_suspicious, generate_file_hashes
+
+# Configure logging
+logging.basicConfig(filename='malware_analysis.log', level=logging.INFO, format='%(asctime)s %(message)s')
+
+file_path = 'path/to/your/file'
+
+# Analyze file
+suspicion_level, suspicion_score, detected_families = is_file_suspicious(file_path)
+sha256_hash, sha1_hash = generate_file_hashes(file_path)
+
+log_message = (
+    f"File: {file_path}\n"
+    f"SHA256: {sha256_hash}\n"
+    f"SHA1: {sha1_hash}\n"
+    f"Suspicion Level: {suspicion_level}\n"
+    f"Suspicion Score: {suspicion_score}\n"
+    f"Potential Malware Families: {', '.join(detected_families) if detected_families else 'None'}\n"
+)
+
+logging.info(log_message)
+
+```
+## Automated Analysis on Directory
+
+
+
+```bash
+import os
+from MALRULES import is_file_suspicious, generate_file_hashes
+
+def analyze_directory(directory_path):
+    results = []
+    for root, _, files in os.walk(directory_path):
+        for file in files:
+            file_path = os.path.join(root, file)
+            suspicion_level, suspicion_score, detected_families = is_file_suspicious(file_path)
+            sha256_hash, sha1_hash = generate_file_hashes(file_path)
+            results.append({
+                'file': file_path,
+                'SHA256': sha256_hash,
+                'SHA1': sha1_hash,
+                'Suspicion Level': suspicion_level,
+                'Suspicion Score': suspicion_score,
+                'Potential Malware Families': ', '.join(detected_families) if detected_families else 'None'
+            })
+    return results
+
+# Example usage
+directory_path = 'path/to/your/directory'
+results = analyze_directory(directory_path)
+for result in results:
+    print(result)
+
+```
+
+# Thanks For Use My Libarary

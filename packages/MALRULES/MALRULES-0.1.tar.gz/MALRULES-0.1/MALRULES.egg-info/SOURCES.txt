@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+MALRULES/MALRULES_analysis.py
+MALRULES/__init__.py
+MALRULES/hash_utils.py
+MALRULES.egg-info/PKG-INFO
+MALRULES.egg-info/SOURCES.txt
+MALRULES.egg-info/dependency_links.txt
+MALRULES.egg-info/requires.txt
+MALRULES.egg-info/top_level.txt
