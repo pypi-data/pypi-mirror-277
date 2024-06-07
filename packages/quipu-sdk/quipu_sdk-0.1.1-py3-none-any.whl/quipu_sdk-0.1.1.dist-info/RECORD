@@ -1,0 +1,9 @@
+quipu_sdk/__init__.py,sha256=-P9KE4GkPKTmrzyYUwTTDvmlVY7hhF_fDlYkDS70P88,171
+quipu_sdk/client.py,sha256=oeTKmBKl490KHhj0O54ZHLwiXug5zRSr-4ZBCfHDKqA,4048
+quipu_sdk/proxy.py,sha256=ggjxxWmaLYK65UIrzGpAD3Zl2C7ffqGCc6uRVr3ecns,2670
+quipu_sdk/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quipu_sdk/schemas.py,sha256=ugqGDYkz9IF-h3_rc9CH5HIWs9Rmja9lzBVvDwMM6TY,1512
+quipu_sdk/utils.py,sha256=nF-xks-kDz3C-mc-l0ANgHoz7bc9jsam7mixDXD7e3s,7633
+quipu_sdk-0.1.1.dist-info/METADATA,sha256=wdRhedDUKIEE871IhjcWLXM3yJRFZw9ZLXv3RzFo070,4104
+quipu_sdk-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+quipu_sdk-0.1.1.dist-info/RECORD,,
