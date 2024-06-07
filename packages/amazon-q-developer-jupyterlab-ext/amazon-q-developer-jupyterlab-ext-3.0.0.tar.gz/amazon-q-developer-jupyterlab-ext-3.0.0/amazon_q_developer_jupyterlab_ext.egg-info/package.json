@@ -1,0 +1,14 @@
+{
+  "name": "amazon_q_developer_jupyterlab_ext.egg-info",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git.amazon.com:2222/pkg/AWSVectorConsolasJupyterLab4Extension"
+  },
+  "private": true
+}
