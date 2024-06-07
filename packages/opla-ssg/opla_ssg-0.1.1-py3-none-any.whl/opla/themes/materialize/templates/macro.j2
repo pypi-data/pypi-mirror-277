@@ -1,0 +1,11 @@
+{%- macro link(dir) -%}
+    {% for file in dir.iterdir() -%}
+        <link rel="stylesheet" href="materialize/static/css/{{ file.name }}">
+    {% endfor -%}
+{%- endmacro -%}
+
+{%- macro script(dir) -%}
+    {% for file in dir.iterdir() -%}
+        <script src="materialize/static/js/{{ file.name }}"></script>
+    {% endfor -%}
+{%- endmacro -%}
