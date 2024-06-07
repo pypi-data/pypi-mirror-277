@@ -1,0 +1,12 @@
+README.md
+setup.py
+obsidian/__init__.py
+obsidian/encryption.py
+obsidian/generation.py
+obsidian/obsidian.py
+obsidian/utils.py
+obsn.egg-info/PKG-INFO
+obsn.egg-info/SOURCES.txt
+obsn.egg-info/dependency_links.txt
+obsn.egg-info/requires.txt
+obsn.egg-info/top_level.txt
