@@ -1,0 +1,12 @@
+libpypostal-0.0.5.dist-info/RECORD,,
+libpypostal-0.0.5.dist-info/LICENSE,sha256=t1FS5RVA61s6NsxM23_kEVPrxxnl5kp9zQIi8xkvPeg,1092
+libpypostal-0.0.5.dist-info/WHEEL,sha256=BdshgUbIzNnTlW6-sHqSseQG8WKe3MWTlHUibOauk9Y,116
+libpypostal-0.0.5.dist-info/top_level.txt,sha256=0Qw3ID4Y8ctJCNm30iRXcgQ83MBDOUezSJt6lWtMrL0,12
+libpypostal-0.0.5.dist-info/METADATA,sha256=QCtv0rK39EAw0Lb4oa1S7EB9VBPe15Zh6gP5RRHi5EU,2679
+libpypostal/version.py,sha256=pSykUC6g7FlI0nQ42euFI8ZBRbuehU0HFbk9l_jjf3I,50
+libpypostal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libpypostal/libpostal_download_data,sha256=6yzdOBnxZV7yjSNIAgjwLmLlyrVQu0wGhtRdhuixLmo,5457
+libpypostal/parser.py,sha256=xC0PXKXKLDAlN1fnygxbYSYkzAjzTstOaf3gsIdduTs,2562
+libpypostal/data_utils.py,sha256=5Wd9h4dr7IG01oE1Hr-XL3gySyFGtyaqJgVPZ5O7vxk,1750
+libpypostal/_parser.pypy38-pp73-darwin.so,sha256=E3UQpcsdPKY1CQ_K3x9xQi_X7IDwGpwL8_S_2qsicGg,54656
+libpypostal/.dylibs/libpostal.1.dylib,sha256=WllegG-AGS6DzEOxuGAaZtkHt4YJfOgnVPmqRmFi2L4,8920176
