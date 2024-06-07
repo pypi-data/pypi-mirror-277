@@ -1,0 +1,9 @@
+README.md
+setup.py
+hello_rupali/__init__.py
+hello_rupali/main.py
+hello_rupali.egg-info/PKG-INFO
+hello_rupali.egg-info/SOURCES.txt
+hello_rupali.egg-info/dependency_links.txt
+hello_rupali.egg-info/entry_points.txt
+hello_rupali.egg-info/top_level.txt

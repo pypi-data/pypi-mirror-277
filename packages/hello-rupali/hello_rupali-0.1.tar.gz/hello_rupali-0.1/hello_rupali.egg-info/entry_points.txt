@@ -1,0 +1,2 @@
+[console_scripts]
+hello_rupali = hello_rupali:rename_and_copy_with_incremental_index
