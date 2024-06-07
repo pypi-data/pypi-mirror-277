@@ -1,0 +1,16 @@
+parcllabs/__init__.py,sha256=VzTTb9Cd7Q4zztVavrRzBBaCvfAvdkaFLTC4DQyc22s,261
+parcllabs/__version__.py,sha256=Z4S0cUqfWFIxSvanoTDQh676x2hjV4pKRi-FEpPk-k4,18
+parcllabs/common.py,sha256=f0VN9GVUE5drWoP8Wk3K3QqRMngF3VLrbysx9bXX3zg,236
+parcllabs/parcllabs_client.py,sha256=ZufmVdAmzULobqRYOW6a6pKCZBvmopBjhhNvPZykb6s,7294
+parcllabs/search/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parcllabs/search/metros.py,sha256=ShJxSLh-5Up4szQKCqwjDKPgUa8zyvTqw4AINzgEGtE,6752
+parcllabs/search/top_markets.py,sha256=rEuf2xwM-N_87ivIblmWnYl1_ZQ1d9006bwcsDvhSxo,307
+parcllabs/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parcllabs/services/parcllabs_service.py,sha256=pDO35rDELSwoVUk_DB3PIlzQ359AMuy_cR_yctXaXQY,7726
+parcllabs/services/portfolio_size_service.py,sha256=6f151_iVOkVlhoZsmO61QHZPRxG45KftUq08v8U16Aw,1613
+parcllabs/services/property_type_service.py,sha256=bV7sC8pdDhnJpAWQAXZzoCMT3U3oS-7P1uxQuvs74GQ,1597
+parcllabs/services/search.py,sha256=RzK7i79foa_Mg6BOxlo4J2FFLW_tBomF9f8QoJAl_tY,6069
+parcllabs-0.4.1.dist-info/METADATA,sha256=NmGVctmNqLL5dhcX_-3piSlEBikRQMVka3CXSDK4B_4,17338
+parcllabs-0.4.1.dist-info/WHEEL,sha256=cDcbFFSNXOE-241I5PFuLkIYfR_FM7WTlPEi33njInY,105
+parcllabs-0.4.1.dist-info/licenses/LICENSE,sha256=4U3Ax293YqakQ0jz5cJEM2t1Qah8buEpJULzpiCmHTk,1070
+parcllabs-0.4.1.dist-info/RECORD,,
