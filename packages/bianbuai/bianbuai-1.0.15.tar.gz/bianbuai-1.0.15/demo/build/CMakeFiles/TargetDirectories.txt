@@ -1,0 +1,12 @@
+/home/qinhongjie/workspace/bianbu-ai-support/demo/build/CMakeFiles/classification_demo.dir
+/home/qinhongjie/workspace/bianbu-ai-support/demo/build/CMakeFiles/detection_demo.dir
+/home/qinhongjie/workspace/bianbu-ai-support/demo/build/CMakeFiles/detection_video_demo.dir
+/home/qinhongjie/workspace/bianbu-ai-support/demo/build/CMakeFiles/detection_stream_demo.dir
+/home/qinhongjie/workspace/bianbu-ai-support/demo/build/CMakeFiles/estimation_demo.dir
+/home/qinhongjie/workspace/bianbu-ai-support/demo/build/CMakeFiles/tracker_stream_demo.dir
+/home/qinhongjie/workspace/bianbu-ai-support/demo/build/CMakeFiles/edit_cache.dir
+/home/qinhongjie/workspace/bianbu-ai-support/demo/build/CMakeFiles/rebuild_cache.dir
+/home/qinhongjie/workspace/bianbu-ai-support/demo/build/CMakeFiles/list_install_components.dir
+/home/qinhongjie/workspace/bianbu-ai-support/demo/build/CMakeFiles/install.dir
+/home/qinhongjie/workspace/bianbu-ai-support/demo/build/CMakeFiles/install/local.dir
+/home/qinhongjie/workspace/bianbu-ai-support/demo/build/CMakeFiles/install/strip.dir
