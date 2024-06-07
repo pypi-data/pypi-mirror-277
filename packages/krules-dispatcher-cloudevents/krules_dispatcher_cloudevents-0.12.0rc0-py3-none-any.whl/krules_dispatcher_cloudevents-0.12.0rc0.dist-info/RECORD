@@ -1,0 +1,9 @@
+krules_cloudevents/.gitignore,sha256=2VgCX-OSjZ7ECizQtW6HPF861MpFvj0QRYOWTLz_Jss,18
+krules_cloudevents/__init__.py,sha256=M57jTeLj2sjqRUrfWd69sWo13Y3wa_CGNTzk3D4NwwU,576
+krules_cloudevents/route/__init__.py,sha256=M57jTeLj2sjqRUrfWd69sWo13Y3wa_CGNTzk3D4NwwU,576
+krules_cloudevents/route/dispatcher.py,sha256=u_4uieiG0sf8loHqx2a45ZGX1z5JqObOSZYpchqMjIk,3831
+krules_cloudevents/test_dispatcher.py,sha256=NWqe69N5WCcOsTPOUS0cxxCqScMrcAxsDoKDIhFNDPI,4282
+krules_dispatcher_cloudevents-0.12.0rc0.dist-info/AUTHORS,sha256=tzmeNS0lcixerrXOwKrXyoywLj3EvbMnmqlNBXDlGdo,225
+krules_dispatcher_cloudevents-0.12.0rc0.dist-info/METADATA,sha256=OMwQOoDcQTaZ5FcfxO-Gb1U-dQj4LkNk1yzFzYbbBcw,907
+krules_dispatcher_cloudevents-0.12.0rc0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+krules_dispatcher_cloudevents-0.12.0rc0.dist-info/RECORD,,
