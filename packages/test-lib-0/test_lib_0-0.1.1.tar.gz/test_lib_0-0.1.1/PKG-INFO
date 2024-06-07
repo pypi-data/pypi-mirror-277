@@ -1,0 +1,9 @@
+Metadata-Version: 2.3
+Name: test-lib-0
+Version: 0.1.1
+Summary: Add your description here.
+Author-email: ritual <hello@ritual.net>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# DUMMY
