@@ -1,0 +1,3 @@
+[console_scripts]
+configure-aws = chatbot.scripts.configure_aws:main
+manage.py = chatbot.manage:main
