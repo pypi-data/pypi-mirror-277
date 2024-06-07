@@ -1,0 +1,15 @@
+libdaw-0.13.0.dist-info/METADATA,sha256=eb78Akv-4QlJLeLyLzEtic2ARjuCBBoymAfNcem092U,554
+libdaw-0.13.0.dist-info/WHEEL,sha256=LHPtDn9GsU_zwAyiX9e_TBqkI_hl9cDVdeDzCCtycGk,95
+libdaw/metronome.pyi,sha256=Tx9BJ2j3n72QRDvyTC_hrPG62rPKHmQ9m6tWfykkU1M,1632
+libdaw/nodes/envelope.pyi,sha256=ptNVhjBCOKNzpf3RQFFv9Lrl34O76zV1eyIDcUO_IdA,183
+libdaw/nodes/instrument.pyi,sha256=pc_TVzMWGZB4O8FBb_GWp8Kgg3W80FG9gScbAU1j9Ug,318
+libdaw/nodes/__init__.pyi,sha256=G5HIbE5n-kjdBFaZjeNugtmIi5zkeJA8c9BLmedk0q8,3439
+libdaw/notation/duration.pyi,sha256=PaGRZcrUDMO-zDgi1aCC6Shxxf1DW9Js2adot0Rr3dg,516
+libdaw/notation/__init__.pyi,sha256=6s1u68lncrDPRRN057DqrPwIFqJVJXsvxwyrxcCxX7I,7933
+libdaw/pitch.pyi,sha256=GZUWbJWDkmJvXRz9-iCrfP8QpPmpJQU13mInc7NZSDA,1106
+libdaw/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libdaw/time.pyi,sha256=DWcAlUKdYpwZF8CUYCowFlke2OmnQd-w-nm7ZBpO794,1760
+libdaw/__init__.py,sha256=Slp7zzTSEY5SbbZm62hfL93aQkKeSoe1MOeQ6TgR0I4,174
+libdaw/__init__.pyi,sha256=W8fEyz0RuFDlJZLIx3ucpt_O3D0jF8yj-pjpxhdSH0k,762
+libdaw/libdaw.cp310-win_amd64.pyd,sha256=2TXby8YxWYPPJ8i0ff1EPPht8e5AAgcT1Qk0BBf9izc,1704448
+libdaw-0.13.0.dist-info/RECORD,,
