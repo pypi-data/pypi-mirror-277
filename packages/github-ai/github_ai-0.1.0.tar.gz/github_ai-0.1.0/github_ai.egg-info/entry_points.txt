@@ -1,0 +1,2 @@
+[console_scripts]
+github-ai = github_api.__main__:main

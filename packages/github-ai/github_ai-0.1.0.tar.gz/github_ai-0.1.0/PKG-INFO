@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: github-ai
+Version: 0.1.0
+Summary: A Python package to interact with GitHub API
+Home-page: https://mrfida.in
+Author: Fidal
+Author-email: mrfidal@proton.me
+Requires-Dist: requests
