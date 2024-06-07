@@ -1,0 +1,12 @@
+streamlit
+moosez
+falconz
+pumaz
+halo
+altair
+d3blocks
+SimpleITK
+psutil
+streamlit_lottie
+extra_streamlit_components
+streamlit_image_comparison
