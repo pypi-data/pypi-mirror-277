@@ -1,0 +1,13 @@
+ts_docs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ts_docs/build_docs.py,sha256=yjDy3z5nSg2DhS-sPB3IJzoX03XBIFJmJzqw9Bs6H_Q,4776
+ts_docs/conf_docs.py,sha256=hUSpijjyd4n9th7h9cvI1M1ERpFOHtWjfd5_IBZ00Yc,5559
+ts_docs/at_extensions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ts_docs/at_extensions/link_roles.py,sha256=zNGNMS6vHdPecDsfCMmgSrOs2G2ylgXmeCtLWFmfE0g,2065
+ts_docs/latex_templates/preamble.tex,sha256=2Znx66cqit5apeNRH0-FY2S9L8OTdcSJx9uZ7ZQgmdo,3157
+ts_docs/latex_templates/timesintelli.sty,sha256=QNDlJ77hjQlfM0kunl6oSApysi6Os20X2bV4c5VAD9E,135
+ts_docs/latex_templates/titlepage.tex,sha256=mhST4YIkPoSyRV9pyZixZ2sS1glnQQHQvDmcGv46hHY,1178
+ts_docs-0.6.2.dist-info/METADATA,sha256=faMrmjpYQmSakFBfgNfv929F-mykKBm8dKg6lznGjRA,806
+ts_docs-0.6.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ts_docs-0.6.2.dist-info/entry_points.txt,sha256=cWTxsWR4nQuoP6iw7cQDN6CNTGBjiD-oiltrlsDTQfg,94
+ts_docs-0.6.2.dist-info/top_level.txt,sha256=cAj1rDj5OTRwF4fIGl35nKI96fJ0F88fpWefv0dQ_co,8
+ts_docs-0.6.2.dist-info/RECORD,,
