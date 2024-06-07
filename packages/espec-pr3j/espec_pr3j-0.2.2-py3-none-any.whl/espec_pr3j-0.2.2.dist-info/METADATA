@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: espec-pr3j
+Version: 0.2.2
+Summary: Espec PR-3J environmental chamber remote controller
+Home-page: https://gitlab.desy.de/leandro.lanzieri/espec_pr3j
+Author: Leandro Lanzieri
+Author-email: leandro.lanzieri@desy.de
+License: MIT
+Project-URL: Source, https://gitlab.desy.de/leandro.lanzieri/espec_pr3j
+Project-URL: Documentation, https://climate-chamber-leandro-lanzieri-bcc388d1f7cfd484ca00bcced68d65.pages.desy.de
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+License-File: COPYING.LESSER
+Requires-Dist: pyvisa
+Requires-Dist: pyvisa-py
+Provides-Extra: all
+Requires-Dist: inquirer ; extra == 'all'
+Provides-Extra: testing
+Requires-Dist: setuptools ; extra == 'testing'
+Requires-Dist: pexpect ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+Requires-Dist: flaky ; extra == 'testing'
+Requires-Dist: pre-commit ; extra == 'testing'
+Requires-Dist: tox ; extra == 'testing'
+
+# espec_pr3j - Remote controller for the Espec PR-3J Environmental Chamber
+
+This allows to interact remotely with the environmental chamber PR-3J from Espec.
+
+## Installation
+
+```bash
+pip install espec-pr3j
+```
+
+## Simple usage
+```python
+from espec_pr3j import EspecPr3j
+
+CHAMBER_HOST = "mskclimate3"
+chamber = EspecPr3j(hostname=CHAMBER_HOST)
+
+# set limits
+chamber.set_temperature_limits(upper_limit=28.0, lower_limit=23.0)
+chamber.set_humidity_limits(upper_limit=40.0, lower_limit=60.0)
+
+# go to a constant condition and wait until it's stable
+chamber.set_constant_condition(
+    temperature=27.0,
+    humidity=50.0
+)
+```
+
+## Running tests on hardware
+
+During normal development and for the CI the unit test suite is executed on a mock
+device using pyvisa-mock. It is also possible to run tests on real hardware connected
+to your system. Just set the `hil` flag when running `tox`, and pass the hostname:
+
+```bash
+$ tox -- --hil --hil_hostname mskclimate3
+```
+
+## Documentation
+
+For more details of the module API, check the [online documentation].
+
+## Feel like contributing?
+
+Please check [our contribution guidelines](CONTRIBUTING.md), where you'll find how to set up your environment
+and share your changes.
+
+[online documentation]: https://climate-chamber-leandro-lanzieri-bcc388d1f7cfd484ca00bcced68d65.pages.desy.de/
