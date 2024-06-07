@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: dander
+Version: 0.0.2
+Summary: Data Analytics & Data Engineering Resources
+Project-URL: Documentation, https://github.com/Daniel Lawson/dander#readme
+Project-URL: Issues, https://github.com/Daniel Lawson/dander/issues
+Project-URL: Source, https://github.com/Daniel Lawson/dander
+Author-email: Daniel Lawson <daniel.lawson@rmit.edu.au>
+License-Expression: MIT
+License-File: LICENSE
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: typer
+Description-Content-Type: text/markdown
+
+# dander
+Data Analytics &amp; Data Engineering Resources for Python
