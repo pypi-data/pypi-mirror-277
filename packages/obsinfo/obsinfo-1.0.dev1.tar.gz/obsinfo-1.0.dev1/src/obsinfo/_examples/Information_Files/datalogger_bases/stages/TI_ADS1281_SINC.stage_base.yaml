@@ -1,0 +1,50 @@
+---
+format_version: "0.111"
+
+stage_base:
+    description : "ADS1281 delta-sigma converter + SINC filter"
+    input_units : { name : "V", description: "Volts"}
+    output_units : { name : "counts", description: "Digital Counts"}
+    gain : 
+        frequency: 0
+        value: 858993458.4 #  counts/V
+    decimation_factor: 128
+    input_sample_rate: 409600
+    filter:
+        type : "ADCONVERSION"
+        v_plus: 2.5
+        v_minus: -2.5
+        counts_dtype: 'int32'
+        counts_plus: "0x7FFFFFFE"
+        counts_minus: "0x80000001"
+    configurations:
+        "100sps":
+            configuration_description: "100sps (assumes f_clk = 1.6384 MHz)"
+            input_sample_rate: 409600
+            decimation_factor: 128
+        "200sps":
+            configuration_description: "200sps (assumes f_clk = 1.6384 MHz)"
+            input_sample_rate: 409600
+            decimation_factor: 64
+        "400sps":
+            configuration_description: "400sps (assumes f_clk = 1.6384 MHz)"
+            input_sample_rate: 409600
+            decimation_factor: 32
+        "800sps":
+            configuration_description: "800sps (assumes f_clk = 1.6384 MHz)"
+            input_sample_rate: 409600
+            decimation_factor: 16
+        "250sps":
+            input_sample_rate: 1024000
+            decimation_factor: 128
+        "500sps":
+            input_sample_rate: 1024000
+            decimation_factor: 64
+        "1000sps":
+            input_sample_rate: 1024000
+            decimation_factor: 32
+        "2000sps":
+            input_sample_rate: 1024000
+            decimation_factor: 16
+notes: 
+    - "Standard f_clk = 4.096 MHz, gives input_sample_rate = 1024000"

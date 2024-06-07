@@ -1,0 +1,10 @@
+---
+format_version: "0.111"
+revision: 
+    date: ""
+    authors: 
+        - # $ref to person file
+timing_base:
+    instrument: ""
+    reference: ""
+    start_sync_instrument: "" or 0  # 0 means "same as start_sync_reference"

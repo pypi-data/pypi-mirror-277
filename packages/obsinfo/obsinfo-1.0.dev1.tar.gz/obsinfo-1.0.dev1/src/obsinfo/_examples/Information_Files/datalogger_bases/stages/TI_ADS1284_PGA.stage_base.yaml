@@ -1,0 +1,34 @@
+---
+format_version: "0.111"
+
+stage_base:
+    description : "ADS1284 Programmable Gain Amplifier"
+    input_units : { name : "V", description: "Volts"}
+    output_units : { name : "V", description: "Volts"}
+    gain : 
+        frequency: 0
+        value: 1
+    filter:
+        type : "ANALOG"
+    configurations:
+        "1x":
+            configuration_description: "Gain = 1 (PGA[2:0]=000)"
+            gain: {value: 1}
+        "2x":
+            configuration_description: "Gain = 2 (PGA[2:0]=001)"
+            gain: {value: 2}
+        "4x":
+            configuration_description: "Gain = 4 (PGA[2:0]=010)"
+            gain: {value: 4}
+        "8x":
+            configuration_description: "Gain = 8 (PGA[2:0]=011)"
+            gain: {value: 8}
+        "16x":
+            configuration_description: "Gain = 16 (PGA[2:0]=100)"
+            gain: {value: 16}
+        "32x":
+            configuration_description: "Gain = 32 (PGA[2:0]=101)"
+            gain: {value: 32}
+        "64x":
+            configuration_description: "Gain = 64 (PGA[2:0]=110)"
+            gain: {value: 64}

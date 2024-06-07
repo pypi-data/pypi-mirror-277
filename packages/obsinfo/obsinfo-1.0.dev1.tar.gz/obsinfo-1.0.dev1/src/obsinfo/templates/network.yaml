@@ -1,0 +1,23 @@
+---
+format_version: "0.111"
+revision:
+   authors: 
+       - {$ref: ""} # Reference to file or fields of a person file
+   date: "" # yyyy/mm/dd
+
+yaml_anchors: # Used less and less...
+notes: 
+    - ""
+network:
+    code: ""
+    name: ""
+    start_date: ""  # yyyy-mm-dd
+    end_date: ""    # yyyy-mm-dd
+    description: ""
+    # OPTIONAL elements
+    comments: 
+     - ""
+    operators: [] # Defined as above, but for network level
+    restricted_status: "" # "open", "closed" or "partial"
+    source_id: ""
+    identifiers: []

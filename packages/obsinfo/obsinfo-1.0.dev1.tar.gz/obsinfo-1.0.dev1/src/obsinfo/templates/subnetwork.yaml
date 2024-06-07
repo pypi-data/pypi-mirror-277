@@ -1,0 +1,68 @@
+---
+format_version: "0.111"
+revision:
+   authors: 
+       - {$ref: ""} # Reference to file or fields of a person file
+   date: "" # yyyy/mm/dd
+
+yaml_anchors: # Used less and less...
+notes: 
+    - ""
+
+subnetwork:
+   operators: # Default station operators
+      - {}  # $ref to operator file
+   network: {}  # $ref to network file
+   stations:
+      "":
+          site: ""
+          start_date: ""#Specify date and time as yyyy-mm-22Thh:mm:ss
+          end_date: "" #Specify date and time as yyyy-mm-22Thh:mm:ss
+          locations:
+              "00":
+                  base: {} # $ref to location_base file
+                  position: {lon: , lat: , elev: }
+          location_code: ""
+          instrumentation: # or instrumentations (list)
+             base: {} # Reference to file in the form {$ref: '<PATHNAME>'}
+             # OPTIONAL elements
+             configuration:
+             modifications: {}
+             channel_modifications:
+                  #All possible attributes under channel, in hierarchical order, 
+                  # except selected response stages>
+                 "*-*": 
+                            stage_modifications:
+                                 "*": 
+          # OPTIONAL elements
+          processing:
+              - clock_correction_linear:
+                      base: {} # $ref to timing_base file
+                      start_sync_reference: "" #Specify date and time as yyyy-mm-22Thh:mm:ss.mmmm
+                      end_sync_reference: "" #Specify date and time as yyyy-mm-22Thh:mm:ss.mmmm
+                      end_sync_instrument: "" #Specify date and time as yyyy-mm-22Thh:mm:ss.mmmm
+              - clock_correction_leap_second:
+                      time: "" #Specify date and time as yyyy-mm-22Thh:mm:ss
+                      type : # "+" or "-"
+                      description: ""
+                      corrected_in_end_sync: 
+                      corrected_in_basic_miniseed:  
+          comments: 
+               - ""
+          extras:
+          operators: [] # overrides subnetwork operators
+          notes: []
+          source_id: ""
+          external_references: []
+          identifiers: []
+          water_level.m: # if water surface is not at sea level
+          description: ""
+          restricted_status:  # "open", "closed" or "partial"
+   # OPTIONAL elements
+   reference_names:
+      campaign: ""
+      operator: ""
+   comments: 
+       - ""
+   extras: 
+

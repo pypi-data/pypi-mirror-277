@@ -1,0 +1,36 @@
+---
+format_version: "0.111"
+revision: 
+    date: "2024-02-01"
+    authors: 
+        -   $ref: "persons/Wayne_Crawford.person.yaml#person"
+preamplifier_base:
+    equipment:
+        model: "GEOPHONE-GAIN"
+        type: "Analog (or is it digital?) input filter"
+        description: "ELOPS-A entry data filter"
+        manufacturer: "Sercel"
+        vendor: ""
+    stages:
+        - {base: {$ref: "preamplifier_bases/stages/ELOPS_HPFilter.stage_base.yaml#stage_base"}}
+    configuration_default: "DC"
+    configurations:
+        "DC":
+            stage_modifications:
+                '*': {configuration: "DC"}
+        "0p15625":
+            stage_modifications:
+                '*': {configuration: "0p15625"}
+        "0p3125":
+            stage_modifications:
+                '*': {configuration: "0p3125"}
+        "0p625":
+            stage_modifications:
+                '*': {configuration: "0p625"}
+        "1p25":
+            stage_modifications:
+                '*': {configuration: "1p25"}
+        "2p5":
+            stage_modifications:
+                '*': {configuration: "2p5"}
+           

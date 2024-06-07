@@ -1,0 +1,20 @@
+---
+format_version: "0.111"
+revision:
+   authors:
+        - {$ref: ""} # Reference to file or fields of an authors file
+   date: "" # yyyy/mm/dd
+notes: 
+   - ""
+filter:
+   type: "PolesZeros"
+   zeros :
+       - ""  # Complex number written as "r + ij" or "r - ij"
+   poles :
+       - ""  # Complex number written as "r + ij" or "r - ij"
+   # OPTIONAL elements
+   delay.seconds:  # used to calculate stage-level delay
+   transfer_function_type: # "LAPLACE (RADIANS/SECOND)" or "LAPLACE (HERTZ)" or "DIGITAL (Z-TRANSFORM)"
+   normalization_frequency: 
+   normalization_factor:
+   resource_id: ""

@@ -1,0 +1,36 @@
+---
+format_version: "0.111"
+revision:
+   authors: # Reference to file or fields of an authors file
+   date: # yyyy/mm/dd
+notes: 
+    - ""
+stage_base:
+   input_units :  { name: "", description: ""}
+   output_units : { name: "", description: ""}
+   gain :
+      value: 
+      frequency: 
+   filter:
+      # Reference to file in the form {$ref: '<PATHNAME>'} or atrributes from filter template
+
+   # OPTIONAL elements
+   name: ""
+   description:  ""
+   # if delay is specified, it will go directly into StationXML without modification
+   # if not specified and this is a digital stage, delay is calculated as filter offset / input_sample_rate
+   delay: 
+   # polarity is specified when the stage inverts polarity, usually in a sensor. 
+   # In a seismometer, upward movement usually means positive voltage by default. 
+   # In a hydrophone, positive pressure usually means positive voltage by default. 
+   # If it's the contrary, must invert polarity (put a minus). 
+   # Some dataloggers invert polarity too.
+   polarity: # "+" or "-"
+   input_sample_rate: 
+   decimation_factor:
+   calibration_dates: []
+   resource_id: ""
+   configuration_default: ""
+   configurations:
+      "":
+      "":

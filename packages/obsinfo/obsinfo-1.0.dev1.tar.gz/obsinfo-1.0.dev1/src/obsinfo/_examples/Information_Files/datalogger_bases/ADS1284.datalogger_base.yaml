@@ -1,0 +1,137 @@
+---
+format_version: "0.111"
+revision: 
+    date: "2022-06-15"
+    authors: 
+        - $ref: 'persons/Wayne_Crawford.person.yaml#person'
+
+datalogger_base:
+    equipment:
+        model: "ADS1281"
+        type: "delta-sigma A/D converter + digital filter"
+        description: "Single Chip High-Resolution Analog-to-Digital Converter"
+        manufacturer: "Texas Instruments"
+        vendor: "various"
+    sample_rate: 250
+    stages:
+        -  base: {$ref: "datalogger_bases/stages/TI_ADS1284_PGA.stage_base.yaml#stage_base"}
+           configuration: '1x'
+        -  base: {$ref: "datalogger_bases/stages/TI_ADS1284_SINC.stage_base.yaml#stage_base"}
+           configuration: '250sps'
+        - {base: {$ref: "datalogger_bases/stages/TI_ADS128x_FIR1.stage_base.yaml#stage_base"}}
+        - {base: {$ref: "datalogger_bases/stages/TI_ADS128x_FIR2.stage_base.yaml#stage_base"}}
+        -  base: {$ref: "datalogger_bases/stages/TI_ADS128x_FIR3.stage_base.yaml#stage_base"}
+           configuration: "LINEAR"
+        -  base: {$ref: "datalogger_bases/stages/TI_ADS128x_FIR4.stage_base.yaml#stage_base"}
+           configuration: "LINEAR"
+    configuration_default: "250sps_LINEAR_HighRes_Gain1"
+    configurations:
+        "100sps_LINEAR_HighRes_Gain1":
+            configuration_description: "100 sps, linear phase FIR"
+            sample_rate: 100
+            stage_modifications:
+                "2": {configuration: '100sps_HiRes'}
+        "200sps_LINEAR_HighRes_Gain1":
+            configuration_description: "200 sps, linear phase FIR"
+            sample_rate: 200
+            stage_modifications:
+                "2": {configuration: '200sps_HiRes'}
+        "400sps_LINEAR_HighRes_Gain1":
+            configuration_description: "400 sps, linear phase FIR"
+            sample_rate: 400
+            stage_modifications:
+                "2": {configuration: '400sps_HiRes'}
+        "800sps_LINEAR_HighRes_Gain1":
+            configuration_description: "800 sps, linear phase FIR"
+            sample_rate: 800
+            stage_modifications:
+                "2": {configuration: '800sps_HiRes'}
+        "250sps_LINEAR_HighRes_Gain1":
+            configuration_description: "100 sps, linear phase FIR"
+            sample_rate: 250
+            stage_modifications:
+                "2": {configuration: '250sps_HiRes'}
+        "250sps_LINEAR_HighRes_Gain64":
+            configuration_description: "100 sps, linear phase FIR"
+            sample_rate: 250
+            stage_modifications:
+                "1": {configuration: '64x'}
+                "2": {configuration: '250sps_HiRes'}
+        "500sps_LINEAR_HighRes_Gain1":
+            configuration_description: "500 sps, linear phase FIR"
+            sample_rate: 500
+            stage_modifications:
+                "2": {configuration: '500sps_HiRes'}
+        "1000sps_LINEAR_HighRes_Gain1":
+            configuration_description: "1000 sps, linear phase FIR"
+            sample_rate: 1000
+            stage_modifications:
+                "2": {configuration: '1000sps_HiRes'}
+        "2000sps_LINEAR_HighRes_Gain1":
+            configuration_description: "2000 sps, linear phase FIR"
+            sample_rate: 2000
+            stage_modifications:
+                "2": {configuration: '2000sps_HiRes'}
+        "100sps_MINPHASE_HighRes_Gain1":
+            configuration_description: "100 sps, minimum phase FIR"
+            sample_rate: 100
+            stage_modifications:
+                "2": {configuration: '100sps_HiRes'}
+                "5": {configuration: 'MINPHASE'}
+                "6": {configuration: 'MINPHASE'}
+        "200sps_MINPHASE_HighRes_Gain1":
+            configuration_description: "200 sps, minimum phase FIR"
+            sample_rate: 200
+            stage_modifications:
+                "2": {configuration: '200sps_HiRes'}
+                "5": {configuration: 'MINPHASE'}
+                "6": {configuration: 'MINPHASE'}
+        "250sps_MINPHASE_HighRes_Gain1":
+            configuration_description: "250 sps, minimum phase FIR"
+            sample_rate: 250
+            stage_modifications:
+                "2": {configuration: '250sps_HiRes'}
+                "5": {configuration: 'MINPHASE'}
+                "6": {configuration: 'MINPHASE'}
+        "250sps_MINPHASE_HighRes_Gain2":
+            sample_rate: 250
+            stage_modifications:
+                "1": {configuration: '2x'}
+                "2": {configuration: '250sps_HiRes'}
+                "5": {configuration: 'MINPHASE'}
+                "6": {configuration: 'MINPHASE'}
+        "250sps_MINPHASE_HighRes_Gain4":
+            sample_rate: 250
+            stage_modifications:
+                "1": {configuration: '4x'}
+                "2": {configuration: '250sps_HiRes'}
+                "5": {configuration: 'MINPHASE'}
+                "6": {configuration: 'MINPHASE'}
+        "250sps_MINPHASE_HighRes_Gain8":
+            sample_rate: 250
+            stage_modifications:
+                "1": {configuration: '8x'}
+                "2": {configuration: '250sps_HiRes'}
+                "5": {configuration: 'MINPHASE'}
+                "6": {configuration: 'MINPHASE'}
+        "250sps_MINPHASE_HighRes_Gain16":
+            sample_rate: 250
+            stage_modifications:
+                "1": {configuration: '16x'}
+                "2": {configuration: '250sps_HiRes'}
+                "5": {configuration: 'MINPHASE'}
+                "6": {configuration: 'MINPHASE'}
+        "250sps_MINPHASE_HighRes_Gain32":
+            sample_rate: 250
+            stage_modifications:
+                "1": {configuration: '32x'}
+                "2": {configuration: '250sps_HiRes'}
+                "5": {configuration: 'MINPHASE'}
+                "6": {configuration: 'MINPHASE'}
+        "250sps_MINPHASE_HighRes_Gain64":
+            sample_rate: 250
+            stage_modifications:
+                "1": {configuration: '64x'}
+                "2": {configuration: '250sps_HiRes'}
+                "5": {configuration: 'MINPHASE'}
+                "6": {configuration: 'MINPHASE'}

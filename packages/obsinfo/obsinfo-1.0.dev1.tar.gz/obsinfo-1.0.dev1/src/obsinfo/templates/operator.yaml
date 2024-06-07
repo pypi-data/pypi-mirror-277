@@ -1,0 +1,11 @@
+---
+format_version: "0.111"
+revision:
+    date: ""
+    authors:
+        - # $ref to person file
+operator:
+    agency: ""
+    contacts: 
+        - # $ref to person file
+    website: ""

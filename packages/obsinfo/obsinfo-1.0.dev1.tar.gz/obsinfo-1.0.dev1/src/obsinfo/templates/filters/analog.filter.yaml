@@ -1,0 +1,13 @@
+---
+format_version: "0.111"
+revision:
+   authors:
+        - {$ref: ""} # Reference to file or fields of an authors file
+   date: "" # yyyy/mm/dd
+notes: 
+   - ""
+filter:
+   type : "Analog"
+   # OPTIONAL elements
+   delay.seconds:  # used to calculate stage-level delay
+   resource_id: ""

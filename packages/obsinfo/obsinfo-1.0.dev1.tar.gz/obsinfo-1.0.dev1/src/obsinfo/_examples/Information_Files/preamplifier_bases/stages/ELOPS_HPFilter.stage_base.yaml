@@ -1,0 +1,56 @@
+---
+format_version: "0.111"
+revision: 
+    date: "2024-02-01"
+    authors: 
+        -   $ref: "persons/Wayne_Crawford.person.yaml#person"
+stage_base:
+    description: "ELOPS-A variable cutoff input filter (assuming 1 pole RC)"
+    input_units: {name: "V", description: "VOLTS"}
+    output_units: {name: "V", description: "VOLTS"}
+    gain:  {value : 1, frequency : 100.}
+    filter :
+        type: "PolesZeros"
+        transfer_function_type: "LAPLACE (RADIANS/SECOND)"
+        zeros: []
+        poles: []
+    configuration_default: "DC"
+    configurations:
+        "DC":
+            configuration_description: "No input HP filter"
+        "0p15625":
+            configuration_description: "0.15625 Hz input HP filter"
+            filter:
+                type: "PolesZeros"
+                transfer_function_type: "LAPLACE (RADIANS/SECOND)"
+                zeros: ['0 + 0j']
+                poles: ['-0.98175 + 0j']
+        "0p3125":
+            configuration_description: "0.3125 Hz input HP filter"
+            filter:
+                type: "PolesZeros"
+                transfer_function_type: "LAPLACE (RADIANS/SECOND)"
+                zeros: ['0 + 0j']
+                poles: ['-1.9635 + 0j']
+        "0p625":
+            configuration_description: "0.625 Hz input HP filter"
+            filter:
+                type: "PolesZeros"
+                transfer_function_type: "LAPLACE (RADIANS/SECOND)"
+                zeros: ['0 + 0j']
+                poles: ['-3.937 + 0j']
+        "1p25":
+            configuration_description: "1.25 Hz input HP filter"
+            filter:
+                type: "PolesZeros"
+                transfer_function_type: "LAPLACE (RADIANS/SECOND)"
+                zeros: ['0 + 0j']
+                poles: ['-7.854 + 0j']
+        "2p5":
+            configuration_description: "2.5 Hz input HP filter"
+            filter: {zeros : ['0 + 0j'], poles: ['-15.708 + 0j']}
+            filter:
+                type: "PolesZeros"
+                transfer_function_type: "LAPLACE (RADIANS/SECOND)"
+                zeros: ['0 + 0j']
+                poles: ['-0.98175 + 0j']

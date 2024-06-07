@@ -1,0 +1,49 @@
+---
+format_version: "0.111"
+revision: 
+    date: "2022-12-09"
+    authors: 
+        - $ref: 'persons/Romuald_Daniel.person.yaml#person'
+notes:
+    - "Page CD24: https://www.guralp.com/apps/ok?doc=CD24_Decimation_informal"
+    - "The CD24 Uses a TI ADS1256 AD converter"
+    - "OBS-specific taps only go up to 250 sps, whereas the BREVE goes up to 1000"
+    - "So we are guessing their FIR sequences are for normal CD24 taps, not OBS-style"
+    - "Total guesses about which taps were used!:"
+    - "    125sps: Tap 3 (4x4x2)"
+    - "    250sps: Tap ??? (4x4)"
+    - "    100sps: Tap ??? (4x2x5)"
+datalogger_base:
+    equipment:
+        model: "BREVE"
+        type: "CD24"
+        description: "The CD24 digitiser module in the Güralp Breve samples incoming analogue signals at an initial rate of 256 kHz, using a TI ADS1256 chip set"
+        manufacturer: "Guralp"
+        vendor: "Guralp"
+    sample_rate: 125
+    stages:
+        - {base: {$ref: "datalogger_bases/stages/TI_ADS1256_SINC.stage_base.yaml#stage_base"},}
+        - {base: {$ref: "datalogger_bases/stages/TI_ADS1256_FIR_div4.stage_base.yaml#stage_base"}}
+        - {base: {$ref: "datalogger_bases/stages/TI_ADS1256_FIR_div4.stage_base.yaml#stage_base"}}
+        - {base: {$ref: "datalogger_bases/stages/TI_ADS1256_FIR_div2.stage_base.yaml#stage_base"}}
+    correction: 0
+    configuration_default: "125sps"
+    configurations:
+        "125sps":
+            configuration_description: "125sps"
+        "250sps":
+            sample_rate: 250
+            stages:
+                - {base: {$ref: "datalogger_bases/stages/TI_ADS1256_SINC.stage_base.yaml#stage_base"},}
+                - {base: {$ref: "datalogger_bases/stages/TI_ADS1256_FIR_div4.stage_base.yaml#stage_base"}}
+                - {base: {$ref: "datalogger_bases/stages/TI_ADS1256_FIR_div4.stage_base.yaml#stage_base"}}
+        "100sps":
+            sample_rate: 100
+            stages:
+                - {base: {$ref: "datalogger_bases/stages/TI_ADS1256_SINC.stage_base.yaml#stage_base"},}
+                - {base: {$ref: "datalogger_bases/stages/TI_ADS1256_FIR_div4.stage_base.yaml#stage_base"}}
+                - {base: {$ref: "datalogger_bases/stages/TI_ADS1256_FIR_div2.stage_base.yaml#stage_base"}}
+                - {base: {$ref: "datalogger_bases/stages/TI_ADS1256_FIR_div5.stage_base.yaml#stage_base"}}
+                
+
+    

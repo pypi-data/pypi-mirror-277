@@ -1,0 +1,46 @@
+---
+format_version: "0.111"
+revision: 
+    date: "2018-06-01"
+    authors:
+        - {$ref: "persons/Wayne_Crawford.person.yaml#person"}
+        - {$ref: "persons/Romuald_Daniel.person.yaml#person"}
+instrumentation_base:
+    equipment:
+        model: "BBOBS1"
+        type: "Broadband Ocean Bottom Seismometer"
+        description: "LCHEAPO 2000 BBOBS pre-2012" 
+        manufacturer: "Scripps Inst. Oceanography - INSU"
+        vendor: "Scripps Inst. Oceanography - UNSU"
+    channels:
+        default:
+            datalogger: {base: {$ref: "datalogger_bases/LC2000.datalogger_base.yaml#datalogger_base"}}
+            preamplifier: {base: {$ref: "preamplifier_bases/LCHEAPO_BBOBS.preamplifier_base.yaml#preamplifier_base"},
+                           configuration: "0.225x gain"}
+            sensor: {base: {$ref: "sensor_bases/NANOMETRICS_T240__theoretical.sensor_base.yaml#sensor_base"},
+                     configuration: "SN1-399, single-sided"}
+        "1": {orientation: {code: "2", azimuth.deg: {value: 90, uncertainty: 180}, dip.deg: {value: 0}}}
+        "2": {orientation: {code: "1", azimuth.deg: {value: 0, uncertainty: 180},  dip.deg: {value: 0}}}
+        "3": {orientation: {code: "G", azimuth.deg: {value: 0}, dip.deg: {value: -90}}}
+        "4":
+            orientation: {code: "H", azimuth.deg: {value: 0}, dip.deg: {value: 90}}
+            replace_preamplifier:
+                base: {$ref: "preamplifier_bases/LCHEAPO_DPG.preamplifier_base.yaml#preamplifier_base"}
+                configuration: ~
+            replace_sensor: {base: {$ref: "sensor_bases/SIO_DPG.sensor_base.yaml#sensor_base"}}
+    configurations:
+        "SN01":
+            equipment: {serial_number: '01'}
+            channels:
+                default: {sensor: {configuration: "Sphere01"}}
+                "4": {sensor: {configuration: "generic"}}
+        "SN02":
+            equipment: {serial_number: '02'}
+            channels:
+                default: {sensor: {configuration: "Sphere02"}}
+                "4": {sensor: {configuration: "generic"}} 
+        "SN03":
+            equipment: {serial_number: '03'}
+            channels:
+                default: {sensor: {configuration: "Sphere03"}}
+                "4": {sensor: {configuration: "generic"}}

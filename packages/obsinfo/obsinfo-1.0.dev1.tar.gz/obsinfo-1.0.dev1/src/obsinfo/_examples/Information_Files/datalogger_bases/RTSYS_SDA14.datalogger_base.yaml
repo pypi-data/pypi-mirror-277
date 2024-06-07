@@ -1,0 +1,38 @@
+---
+format_version: "0.111"
+revision: 
+    date: "2022-12-09"
+    authors: 
+        - $ref: 'persons/Romuald_Daniel.person.yaml#person'
+
+datalogger_base:
+    equipment:
+        model: "SDA14"
+        type: "Data logger"
+        description: "4-channel acoustic data logger"
+        manufacturer: "RTSYS"
+        vendor: "RTSYS"
+    sample_rate: 100
+    stages:
+        - base:
+            description : "RTSYS SDA14 Digitizer"
+            input_units : { name: "V", description: "Volts"}
+            output_units : { name: "counts", description: "Digital Counts"}
+            input_sample_rate: 100 # mmake sure this is OK, I see no decimation factor
+            gain :
+                value: 1529000   # "15.3dB"
+                frequency: 0
+            filter:
+                type : "ANALOG" 
+    correction: 0
+    configuration_default: "default"
+    configurations:
+        "default":
+            configuration_description: "default (0.654 microVolts/count)"
+        "0.652_uV_Count":
+            configuration_description: "0.652 microVolts/count"
+            response_modifications:
+                "*": {gain: {value: 1534000}}
+                
+
+    

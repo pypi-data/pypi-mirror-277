@@ -1,0 +1,31 @@
+---
+format_version: "0.111"
+revision: 
+    date: "2022-12-09"
+    authors:
+        - {$ref: "persons/Wayne_Crawford.person.yaml#person"}
+        - {$ref: "persons/Romuald_Daniel.person.yaml#person"}
+instrumentation_base:
+    equipment:
+        model: "BREVE"
+        type: "Ocean Bottom accelerometer"
+        description: "Guralp 3-component accelerometer, with a flat frequency response between 0.1 Hz and 100 Hz. The hydrophone has a flat frequency response between 2Hz and 30 kHz, with a sensitivity of -165dB re: 1V uPa (562V/Bar). The digitiser can record four primary input channels at sample rates of up to 1000 sps."
+        manufacturer: "Guralp"
+        vendor: "Guralp"
+    channels:
+       default:
+           datalogger: {base: {$ref: "datalogger_bases/BREVE_CD24.datalogger_base.yaml#datalogger_base"}}
+           sensor: {base: {$ref: "sensor_bases/GURALP_6TH.sensor_base.yaml#sensor_base"}}
+       "1":
+            orientation: {code: "1": {azimuth.deg: {value: 0, uncertainty: 180}, dip.deg: {value: 0}}  # N-S channel
+            sensor: {configuration: "Horizontal"}
+       "2":
+            orientation: {code: "2": {azimuth.deg: {value: 90, uncertainty: 180}, dip.deg: {value: 0}} # E-W channel
+            sensor: {configuration: "Horizontal"}
+       "3":
+            orientation: {code: "Z": {azimuth.deg: {value: 0}, dip.deg: {value: -90}}
+            sensor: {configuration: "Vertical"}
+       "4":
+           orientation: {code: "H": {azimuth.deg: {value: 0}, dip.deg: {value: -90}}
+           replace_sensor: {base: {$ref: "sensor_bases/HITECH_HTI96-MIN.sensor_base.yaml#sensor_base"}}
+notes: ["Using the FORCE string ('replace_') for the H sensor avoids it inheriting information from the default sensor"]
