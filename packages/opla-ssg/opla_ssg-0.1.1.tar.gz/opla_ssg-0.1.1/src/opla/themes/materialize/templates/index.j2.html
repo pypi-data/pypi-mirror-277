@@ -1,0 +1,52 @@
+{% import "materialize/templates/macro.j2" as static %}
+{% extends "base/templates/base.j2.html" %}
+{% block style %}
+{{ static.link(output / "materialize" / "static" / "css") }}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock style %}
+{% block header %}
+<div class="navbar-fixed">
+  <nav class="{{ color }}">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo ml-3">{{ header.name }}</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        {% for li in menu -%}
+        <li><a href="{{ li.href }}">{{ li.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<ul class="sidenav {{ color }}" id="mobile-demo">
+  {% for li in menu -%}
+  <li><a href="{{ li.href }}" class="white-text">{{ li.text }}</a></li>
+  {% endfor %}
+</ul>
+
+{% endblock header %}
+{% block content %}
+{{ super() }}
+{{ static.script(output / "materialize" / "static" / "js") }}
+<script>
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+  });
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, {
+      duration: 100,
+    });
+  });
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems);
+  });
+</script>
+{% endblock content %}
+{% block footer %}
+{{ super() }}
+{% endblock footer %}

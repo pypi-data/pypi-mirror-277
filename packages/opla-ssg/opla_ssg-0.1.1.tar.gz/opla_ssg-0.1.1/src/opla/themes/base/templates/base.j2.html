@@ -1,0 +1,52 @@
+{% import "base/templates/macro.j2" as macro %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    {% block style %} 
+        {% if header.theme.name == "base" %}
+            {% if header.theme.custom is iterable %}
+                {% if "css" in header.theme.custom %}
+                    {{ macro.custom_dict_css(header.theme.custom.css) }}
+                {% else %}
+                    {{ macro.custom_multiple_files_css(header.theme.custom) }}
+                {% endif %}
+            {% else %}
+                {{ macro.custom_single_file_css(header.theme.custom) }}
+            {% endif %}
+        {% else %}
+            <link rel="stylesheet" href="water/static/css/style.css">
+        {% endif %}
+    {% endblock style %}
+    <title>{{ header.title }}</title>
+</head>
+{% block header %}
+    {% include 'base/templates/header.html' %}
+{% endblock header %}
+<body>
+    {% block content %}
+        <div class="container">
+            {% for section in sections %}
+            <section id="{{ section.id }}">
+                <a href="#{{ section.id }}"><h2 class="{{ color }}-text center">{{ section.title }}</h2></a>
+                {{ section.content }}
+            </section>
+            {% endfor %} 
+        </div>
+    {% endblock content %}
+    
+    {% if header.theme.custom is iterable %}
+        {% if "js" in header.theme.custom %}
+            {{ macro.custom_dict_js(header.theme.custom.js) }}
+        {% else %}
+            {{ macro.custom_multiple_files_js(header.theme.custom) }}
+        {% endif %}
+    {% else %}
+        {{ macro.custom_single_file_js(header.theme.custom) }}
+    {% endif %}
+</body>
+{% block footer %}
+    {% include 'base/templates/footer.html' %}
+{% endblock footer %}
+</html>

@@ -1,0 +1,27 @@
+
+h2 {
+  font-size: 2rem;
+  margin-top: 4rem;  /* Avoid the top menu to hide the title */
+  margin-bottom: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.container section {
+  max-width: 800px;
+  margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: justify;
+  background-color: white;
+}
+footer .copyright {
+  padding-top : 1rem;
+  padding-bottom : 1rem;
+}
+  
+.brand-logo{
+  margin-left: 1rem;
+}
