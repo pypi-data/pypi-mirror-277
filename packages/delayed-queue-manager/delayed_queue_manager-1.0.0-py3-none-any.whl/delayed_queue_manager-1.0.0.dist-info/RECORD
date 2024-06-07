@@ -1,0 +1,11 @@
+delayed_queue_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+delayed_queue_manager/configuration.py,sha256=7444_EQ6dzBJIYcTJBL0QoscSlSg887nHBHHQ0vvZZ0,8357
+delayed_queue_manager/main.py,sha256=8yUvLQCLo29LaPXdb1-SXXKLbsYZLc3pncsKWRzNdpM,3058
+delayed_queue_manager/data/config.ini,sha256=oQcALgok2yZMNbJyhsqNoIDFjBs7avMfgVeqGbpRj6c,153
+delayed_queue_manager/static/css/styles.css,sha256=sPqH1g-LhL7sYWG6rwzgcTue-mMijjX0K_bukUPRf5I,142
+delayed_queue_manager/static/js/scripts.js,sha256=pIl6HcQ3HNEkFF5v30KY713xB2_427_6WAKmR8sWPmA,1919
+delayed_queue_manager/templates/index.html,sha256=vYYqf2nk6L_fJBh4ItLzb6B38H3PsdjwGnFsYD0ErSU,1688
+delayed_queue_manager-1.0.0.dist-info/METADATA,sha256=vQOupDHIjV2Jx1hB05E6VFQe1LnvPhdEHMLQLYR2JvU,1452
+delayed_queue_manager-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+delayed_queue_manager-1.0.0.dist-info/top_level.txt,sha256=oeCglDdIdBNC8heKOVZjVu4RS8X2YyH_yDnKoXjwPE8,22
+delayed_queue_manager-1.0.0.dist-info/RECORD,,
