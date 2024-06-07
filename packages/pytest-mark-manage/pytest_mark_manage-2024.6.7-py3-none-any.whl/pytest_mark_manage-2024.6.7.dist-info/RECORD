@@ -1,0 +1,9 @@
+pytest_mark_manage/__init__.py,sha256=LGNjS4pnOJXyrcKPKX2x4IJVYCLcm4AGTycOgoKZgUE,9134
+pytest_mark_manage/__version__.py,sha256=m4sIPu8Kc9Y9oUG31F7BjjnFaBsiFbivG2llpqeT5Is,26
+pytest_mark_manage/conf.py,sha256=LDJNVlVYI_WkrqCtfCJdFtSffOByQd4sXutnOkoh8eY,1195
+pytest_mark_manage/skipif.py,sha256=Y3KXh901U_5CtqHy0dtd4f-b1e79nnw4un6yc_zS2dU,2932
+pytest_mark_manage-2024.6.7.dist-info/METADATA,sha256=lJ1SzxYahFtrLKil9gb1sUwHsKHzjaWUppfAtvpvdwQ,316
+pytest_mark_manage-2024.6.7.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+pytest_mark_manage-2024.6.7.dist-info/entry_points.txt,sha256=2TetVZzha9F-nv7bi4TFe9pKuz5iGvzjILVfwWJZkkg,63
+pytest_mark_manage-2024.6.7.dist-info/licenses/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+pytest_mark_manage-2024.6.7.dist-info/RECORD,,
