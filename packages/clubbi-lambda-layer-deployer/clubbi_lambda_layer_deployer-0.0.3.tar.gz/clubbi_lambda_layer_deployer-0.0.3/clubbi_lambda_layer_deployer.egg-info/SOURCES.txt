@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+clubbi_deploy/__init__.py
+clubbi_deploy/deploy_lambda_layer.py
+clubbi_deploy/utils.py
+clubbi_lambda_layer_deployer.egg-info/PKG-INFO
+clubbi_lambda_layer_deployer.egg-info/SOURCES.txt
+clubbi_lambda_layer_deployer.egg-info/dependency_links.txt
+clubbi_lambda_layer_deployer.egg-info/entry_points.txt
+clubbi_lambda_layer_deployer.egg-info/top_level.txt
