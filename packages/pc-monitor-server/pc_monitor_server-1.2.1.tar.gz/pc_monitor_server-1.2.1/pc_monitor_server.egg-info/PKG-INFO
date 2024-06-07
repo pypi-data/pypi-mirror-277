@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pc-monitor-server
+Version: 1.2.1
+Home-page: https://github.com/Neutree/pc-monitor
+Author: Neucrack
+License: MIT
+License-File: LICENSE
+Requires-Dist: Flask
+Requires-Dist: pynvml
+Requires-Dist: qrcode
+Requires-Dist: netifaces
+Requires-Dist: pillow
+Requires-Dist: psutil
+Requires-Dist: wmi; sys_platform == "win32"
+Requires-Dist: pythonnet; sys_platform == "win32"
+Requires-Dist: Flask; sys_platform == "linux"
+Requires-Dist: pynvml; sys_platform == "linux"
+Requires-Dist: qrcode; sys_platform == "linux"
+Requires-Dist: netifaces; sys_platform == "linux"
+Requires-Dist: pillow; sys_platform == "linux"
+Requires-Dist: psutil; sys_platform == "linux"
