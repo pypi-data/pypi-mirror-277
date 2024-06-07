@@ -1,0 +1,8 @@
+redis_subjects_storage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+redis_subjects_storage/storage_impl.py,sha256=rmYbjWaSnHmBdf28ZinJ8OGLKvjtTI_QgTjOuq15et4,4627
+redis_subjects_storage/test_storage.py,sha256=qqv2nVqZQ_aSwuujEYeCvGMUHm5stNu8C47lrR9qg7E,7127
+krules_subjects_storage_redis-0.12.0rc0.dist-info/AUTHORS,sha256=tzmeNS0lcixerrXOwKrXyoywLj3EvbMnmqlNBXDlGdo,225
+krules_subjects_storage_redis-0.12.0rc0.dist-info/LICENSE,sha256=Fdyrc0aekdLER0TCgi6oaHBhFYmvj-8UCefD_E21fn0,11341
+krules_subjects_storage_redis-0.12.0rc0.dist-info/METADATA,sha256=itmbbHEfT96RqacXt5RVka38n1_zFIYEpFXlcK-07xg,866
+krules_subjects_storage_redis-0.12.0rc0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+krules_subjects_storage_redis-0.12.0rc0.dist-info/RECORD,,

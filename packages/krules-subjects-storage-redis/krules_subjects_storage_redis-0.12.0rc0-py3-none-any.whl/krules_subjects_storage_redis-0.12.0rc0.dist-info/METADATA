@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: krules-subjects-storage-redis
+Version: 0.12.0rc0
+Summary: KRules redis subjects storage implementation
+Home-page: https://github.com/airspot-dev/krules
+License: Apache Licence 2.0
+Author: Alberto Degli Esposti
+Author-email: alberto@arispot.tech
+Requires-Python: >=3.11,<3.12
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: krules-core (>=0.12.0rc0,<0.13.0)
+Requires-Dist: redis (>=5.0.5,<6.0.0)
+Project-URL: Repository, https://github.com/airspot-dev/krules
+Description-Content-Type: text/markdown
+
+# krules-subjects-storage-redis
+
+This module implements the storage component of the subjects-store based on Redis.
+
