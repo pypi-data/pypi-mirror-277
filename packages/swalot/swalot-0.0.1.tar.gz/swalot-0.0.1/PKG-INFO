@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: swalot
+Version: 0.0.1
+Summary: No CUDA out of memory again; fully use of a GPU card per user.
+Home-page: https://github.com/cpfy/swalot
+Author: cpfy
+Author-email: 309301477@qq.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: GPUtil
+
+## Installation
+
+You can install the Memory Protector package using pip:
+
+```bash
+pip install swalot
+```
+
+
+## Usage
+
+Simply import and wrap training code:
+```python
+import swalot as sw
+
+with sw.protext():
+    """
+    use CUDA tensor calculation here as usual.
+    All RAM will be protected automatically!
+    e.g.
+    """
+    # a = torch.randn(1000, 1000, 600).cuda()
+```
