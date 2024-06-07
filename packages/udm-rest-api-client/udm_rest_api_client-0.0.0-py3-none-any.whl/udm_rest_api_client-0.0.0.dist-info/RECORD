@@ -1,0 +1,7 @@
+univention/admin/rest/async_client.py,sha256=LmuwC0_d9QSY0IYiS-aKVWfZQwiE_2fWHvu5pcA--Jc,28320
+univention/admin/rest/client/__init__.py,sha256=NwQXd5y1CLUuNQzrxZbb_jPcgbK-biy7J2dA8GmPaWU,31075
+univention/admin/rest/client/__main__.py,sha256=FmUGhLgDAymFlCgTGXGMZ9vtMa54qCLeadyVovCFIpE,29279
+udm_rest_api_client-0.0.0.dist-info/METADATA,sha256=47dgXCffKle64G8qNrL9OAwUQT2wN3Sq5tw9yjP-JE4,8973
+udm_rest_api_client-0.0.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+udm_rest_api_client-0.0.0.dist-info/entry_points.txt,sha256=tEIvBTlsdImAvC-fCBnAT3qgWF__ZlfUUkk3J06GiGQ,67
+udm_rest_api_client-0.0.0.dist-info/RECORD,,
