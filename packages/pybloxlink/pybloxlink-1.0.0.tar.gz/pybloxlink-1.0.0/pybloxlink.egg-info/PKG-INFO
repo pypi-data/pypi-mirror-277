@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: pybloxlink
+Version: 1.0.0
+Summary: An API wrapper for the Bloxlink API.
+Author: acatia
+License: The MIT License (MIT)
+        
+        Copyright (c) 2021 acatiadroid
+        
+        Permission is hereby granted, free of charge, to any person obtaining a
+        copy of this software and associated documentation files (the "Software"),
+        to deal in the Software without restriction, including without limitation
+        the rights to use, copy, modify, merge, publish, distribute, sublicense,
+        and/or sell copies of the Software, and to permit persons to whom the
+        Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in
+        all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+        OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+        FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+        DEALINGS IN THE SOFTWARE.
+Project-URL: Documentation, https://acatiadroid.github.io/pybloxlink
+Project-URL: GitHub, https://github.com/acatiadroid/pybloxlink
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+<div align="center">
+    <h1>PyBloxlink</h1>
+    <h3>An async API wrapper for the <a href="https://blox.link">blox.link</a> API.</h3>
+    <img src="https://img.shields.io/pypi/v/pybloxlink.svg">
+</div>
+
+## About
+PyBloxlink is an async API wrapper for the [Bloxlink](https://blox.link) API.
+
+Notable features:
+* Async ready.
+* Up to date.
+* Provides full API coverage.
+* User-friendly errors for handling status codes of failed HTTP requests.
+
+## Installation
+To install a full release of the library, run the command below:
+
+```
+pip install -U pybloxlink
+```
+
+## Examples
+Some examples can be found in [examples.md](https://github.com/acatiadroid/pybloxlink/blob/main/examples.md).
+
+## Help
+If you need help, you can either make an [issue](https://github.com/acatiadroid/pybloxlink/issues/new) or join the Bloxlink server: https://discord.gg/bloxlink
+
+## License
+This is licensed under MIT. Read the license [here](https://github.com/acatiadroid/pybloxlink/blob/main/LICENSE.txt).
+
+## Contributing
+Contributions are welcome! Check out the [contributing guidelines](https://github.com/acatiadroid/pybloxlink/blob/main/.github/CONTRIBUTING.md) beforehand.
