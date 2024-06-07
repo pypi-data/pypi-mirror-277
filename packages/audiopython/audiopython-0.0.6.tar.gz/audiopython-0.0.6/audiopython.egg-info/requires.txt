@@ -1,0 +1,11 @@
+librosa
+matplotlib
+numpy
+pedalboard
+regex
+scipy
+scikit-learn
+
+[dev]
+cython
+numpy
