@@ -1,0 +1,2 @@
+include multi_media_operations/media/ttf/*
+include multi_media_operations/media/ffmpeg/*
