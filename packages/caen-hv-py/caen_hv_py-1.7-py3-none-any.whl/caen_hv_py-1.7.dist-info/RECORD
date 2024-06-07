@@ -1,0 +1,10 @@
+caen_hv_py/CAENHVController.py,sha256=uxGyNT8N7YvylRqdJDuzIgHOXNecIG7OQn10z5JQH98,4892
+caen_hv_py/__init__.py,sha256=DaOj3OluQGVoGcs-lbj5zw0BbpRBWNXk1l5M8zqqJwo,186
+caen_hv_py/hv_c_lib/libhv_c.so,sha256=pmW565FGDrogNeOOQMd7HcMj6796GqTl9wsslo26CFQ,12696
+caen_hv_py/tests/__init__.py,sha256=vkldqYfefJb53LrDf_u9b4Hc0Pp74J4E_owYD27xJP8,184
+caen_hv_py/tests/power_test.py,sha256=6w-SCJT44FCMCRQZ185-uasvZZy5uM43_2GEg2hWuUY,522
+caen_hv_py/tests/voltage_power_test.py,sha256=UpdIk30dPh0ui9FysLQzu_wa52OKK3j7Gxmqg66nOFo,1804
+caen_hv_py-1.7.dist-info/METADATA,sha256=ILSvHXT5_j59H97l6yPUxpV786wK8QeYIc90qApAS8U,2527
+caen_hv_py-1.7.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+caen_hv_py-1.7.dist-info/top_level.txt,sha256=dJ4FI7BKZAOuVPdB8-1eYf74pt6uvyLztDqE1Pv3PAM,11
+caen_hv_py-1.7.dist-info/RECORD,,
