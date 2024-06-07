@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pytorch_parametrizations/__init__.py
+pytorch_parametrizations.egg-info/PKG-INFO
+pytorch_parametrizations.egg-info/SOURCES.txt
+pytorch_parametrizations.egg-info/dependency_links.txt
+pytorch_parametrizations.egg-info/requires.txt
+pytorch_parametrizations.egg-info/top_level.txt
+pytorch_parametrizations/spectral/__init__.py
+pytorch_parametrizations/spectral/spectral.py
+pytorch_parametrizations/spectral/utils.py
