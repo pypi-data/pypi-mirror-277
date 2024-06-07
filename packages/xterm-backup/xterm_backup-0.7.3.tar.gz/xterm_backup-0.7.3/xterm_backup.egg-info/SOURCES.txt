@@ -1,0 +1,16 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+xterm/__init__.py
+xterm/helpers.py
+xterm/main.py
+xterm/ext/__init__.py
+xterm/ext/async.py
+xterm/ext/games.py
+xterm/ext/image.py
+xterm_backup.egg-info/PKG-INFO
+xterm_backup.egg-info/SOURCES.txt
+xterm_backup.egg-info/dependency_links.txt
+xterm_backup.egg-info/requires.txt
+xterm_backup.egg-info/top_level.txt
