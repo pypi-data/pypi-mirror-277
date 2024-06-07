@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+best_python/__init__.py
+best_python/get_options.py
+best_python/matlab_wrapper.py
+best_python/solver.py
+bestpython.egg-info/PKG-INFO
+bestpython.egg-info/SOURCES.txt
+bestpython.egg-info/dependency_links.txt
+bestpython.egg-info/top_level.txt
