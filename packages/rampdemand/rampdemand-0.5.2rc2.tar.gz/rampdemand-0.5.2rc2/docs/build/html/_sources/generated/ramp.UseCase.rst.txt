@@ -1,0 +1,42 @@
+﻿ramp.UseCase
+============
+
+.. currentmodule:: ramp
+
+.. autoclass:: UseCase
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~UseCase.__init__
+      ~UseCase.add_user
+      ~UseCase.calc_peak_time_range
+      ~UseCase.collect_appliances_from_users
+      ~UseCase.export_to_dataframe
+      ~UseCase.generate_daily_load_profiles
+      ~UseCase.generate_daily_load_profiles_parallel
+      ~UseCase.initialize
+      ~UseCase.load
+      ~UseCase.save
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~UseCase.date_end
+      ~UseCase.date_start
+      ~UseCase.datetimeindex
+      ~UseCase.is_initialized
+      ~UseCase.num_days
+      ~UseCase.peak_enlarge
+   
+   

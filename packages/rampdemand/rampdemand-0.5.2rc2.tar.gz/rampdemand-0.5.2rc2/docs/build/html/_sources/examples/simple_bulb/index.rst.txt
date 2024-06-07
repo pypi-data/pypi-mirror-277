@@ -1,0 +1,9 @@
+*****************
+Just to test some
+*****************
+
+:download:`this example script <../../docs/notebooks/simple_bulb.ipynb>`.
+:download:`bof </../notebooks/simple_bulb.ipynb>`.
+
+
+.. include:: simple_bulb.rst
