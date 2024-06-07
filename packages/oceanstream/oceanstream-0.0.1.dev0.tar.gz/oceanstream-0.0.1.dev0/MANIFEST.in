@@ -1,0 +1,8 @@
+prune .github
+prune build
+prune docs
+exclude *.ini
+exclude *.yaml
+exclude *.yml
+include *.txt
+prune tests
