@@ -1,0 +1,8 @@
+setup.py
+flasdev/__init__.py
+flasdev/install.py
+flaskdev.egg-info/PKG-INFO
+flaskdev.egg-info/SOURCES.txt
+flaskdev.egg-info/dependency_links.txt
+flaskdev.egg-info/entry_points.txt
+flaskdev.egg-info/top_level.txt
