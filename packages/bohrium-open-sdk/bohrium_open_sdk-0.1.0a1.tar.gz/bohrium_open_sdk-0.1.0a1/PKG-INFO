@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bohrium-open-sdk
+Version: 0.1.0a1
+Summary: bohrium-open-sdk
+Home-page: https://bohrium.dp.tech/developer
+Author: Bohrium Team
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# OpenSDK
+## Beta Version for Internal Testing 
+```
+git clone  git@git.dp.tech:lebesgue/launching-sdk.git
+cd dp-open-sdk
+pip install .
+```
+
