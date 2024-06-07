@@ -1,0 +1,224 @@
+g foreignObject div span.edgeLabel:empty {
+    display: none;
+}
+
+.node rect, polygon, circle {
+    fill: rgba(var(--bs-body-color-rgb), 0.06) !important;
+    stroke: rgba(var(--bs-body-color-rgb), 0.15) !important;
+}
+
+.nodeLabel {
+    color: rgba(var(--bs-body-color-rgb), 1) !important;
+    font-variant: all-small-caps;
+}
+
+.flowchart-link, .relation, .divider {
+    stroke: rgba(var(--bs-body-color-rgb), 0.15) !important;
+}
+
+.marker {
+    fill: rgba(var(--bs-body-color-rgb), 0.15) !important;
+    stroke: rgba(var(--bs-body-color-rgb), 0.15) !important;
+}
+
+.edgeLabel {
+    display: block;
+    border-radius: var(--bs-border-radius-xl);
+    padding: 0.5rem 1rem !important;
+    color: rgba(var(--bs-body-color-rgb), 1) !important;
+    font-variant: all-small-caps;
+}
+
+[data-bs-theme="light"] .edgeLabel {
+    background-color: #dedfe0 !important;
+}
+
+[data-bs-theme="dark"] .edgeLabel {
+    background-color: #3a4045 !important;
+}
+
+svg.simple-diagram .line {
+    background-color: unset;
+    stroke: var(--bs-border-color-translucent);
+}
+
+svg.simple-diagram marker[id*='arrow'] {
+    fill: var(--bs-border-color-translucent) !important;
+    stroke: var(--bs-border-color-translucent);
+}
+
+svg.simple-diagram text {
+    border-color: unset;
+    color: rgb(var(--bs-body-color-rgb));
+    fill: rgb(var(--bs-body-color-rgb));
+    cursor: default;
+    font-size: 1rem;
+    font-weight: lighter;
+    background-color: var(--bs-body-color);
+}
+
+/* Diagram Wrapper */
+
+summary + #mermaid {
+    margin-top: 1rem;
+}
+
+#mermaid {
+    display: flex;
+}
+
+#mermaid:before {
+    background: rgba(var(--bs-body-color-rgb), 0.10);
+    border-bottom: var(--bs-border-width) solid var(--bs-border-color-translucent);
+    border-left: var(--bs-border-width) solid var(--bs-border-color-translucent);
+    border-top: var(--bs-border-width) solid var(--bs-border-color-translucent);
+
+    border-bottom-left-radius:  var(--bs-border-radius-xl);
+    border-top-left-radius:  var(--bs-border-radius-xl);
+    content: "\F2EC";
+    color: var(--bs-body-color);
+    display: inline-flex;
+    padding: 0.75rem;
+    align-items: start;
+    font-family: "bootstrap-icons";
+}
+
+div[class*=mermaid], div[id*=bst], div[id*=graph] {
+    background: rgba(var(--bs-body-color-rgb), 0.03);
+    border: var(--bs-border-width) solid var(--bs-border-color-translucent);
+    border-bottom-right-radius:  var(--bs-border-radius-xl);
+    border-top-right-radius:  var(--bs-border-radius-xl);
+    padding: 0.75rem;
+    display: inline-flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.diagram {
+    display: flex;
+}
+
+.diagram:before {
+    background: rgba(var(--bs-body-color-rgb), 0.08);
+    border-bottom: var(--bs-border-width) solid var(--bs-border-color-translucent);
+    border-left: var(--bs-border-width) solid var(--bs-border-color-translucent);
+    border-top: var(--bs-border-width) solid var(--bs-border-color-translucent);
+
+    border-bottom-left-radius:  var(--bs-border-radius-xl);
+    border-top-left-radius:  var(--bs-border-radius-xl);
+    content: "\F2EC";
+    color: var(--bs-body-color);
+    display: inline-flex;
+    padding: 0.75rem;
+    align-items: start;
+    font-family: "bootstrap-icons";
+}
+
+.current {
+    border-color: var(--bs-primary-border-subtle) !important;
+    background-color: var(--bs-primary-bg-subtle) !important;
+    stroke: var(--bs-primary-border-subtle) !important;
+    fill: var(--bs-primary-bg-subtle) !important;
+}
+
+.current-text {
+    fill: var(--bs-primary-text-emphasis) !important;
+
+}
+
+.target {
+    border-color: var(--bs-danger-border-subtle) !important;
+    background-color: var(--bs-danger-bg-subtle) !important;
+    stroke: var(--bs-danger-border-subtle) !important;
+    fill: var(--bs-danger-bg-subtle) !important;
+}
+
+.target-text {
+    color: var(--bs-danger-text-emphasis) !important;
+    fill: var(--bs-danger-text-emphasis) !important;
+}
+
+.previous {
+    border-color: var(--bs-warning-border-subtle) !important;
+    background-color: var(--bs-warning-bg-subtle) !important;
+    stroke: var(--bs-warning-border-subtle) !important;
+    fill: var(--bs-warning-bg-subtle) !important;
+}
+
+.previous-text {
+    fill: var(--bs-warning-text-emphasis) !important;
+}
+/* Mermaid */
+span.nodeLabel, .label text {
+    color: rgba(var(--bs-body-color-rgb), 0.77) !important;
+    fill: rgba(var(--bs-body-color-rgb), 0.77) !important;
+}
+
+.edgeLabel .label span {
+    background: rgba(var(--bs-body-color-rgb), 0.03) !important;
+    color: rgba(var(--bs-body-color-rgb), 0.77) !important;
+    font-variant: all-small-caps;
+}
+
+.node rect, polygon, circle {
+    fill: rgba(var(--bs-body-color-rgb), 0.03) !important;
+    stroke: var(--bs-border-color) !important;
+}
+
+.flowchart-link, .relation, .divider {
+    stroke: var(--bs-border-color) !important;
+}
+
+.marker {
+    fill: var(--bs-border-color) !important;
+    stroke: var(--bs-border-color) !important;
+}
+
+path {
+    fill: var(--bs-border-color);
+    stroke: var(--bs-border-color) !important;
+}
+
+path[marker-start] {
+    fill: none !important;
+}
+
+.classTitle {
+    text-transform: uppercase;
+}
+
+.clusters rect {
+    fill: rgba(var(--bs-body-color-rgb), 0.015) !important;
+    stroke: var(--bs-border-color) !important;
+}
+
+.label0, .commit0 {
+    border-color: rgba(var(--bs-primary-rgb), 0.25) !important;
+    background-color: rgba(var(--bs-primary-rgb), 0.25) !important;
+    stroke: rgba(var(--bs-primary-rgb), 0.25) !important;
+    fill: rgba(var(--bs-primary-rgb), 0.25) !important;
+}
+
+.label1, .commit1 {
+    border-color: rgba(var(--bs-warning-rgb), 0.25) !important;
+    background-color: rgba(var(--bs-warning-rgb), 0.25) !important;
+    stroke: rgba(var(--bs-warning-rgb), 0.25) !important;
+    fill: rgba(var(--bs-warning-rgb), 0.25) !important;
+}
+
+.commit-label-bkg {
+    fill: rgba(var(--bs-body-color-rgb), 0.03) !important;
+}
+
+.commit-label {
+    fill: rgba(var(--bs-body-color-rgb), 0.77) !important;
+}
+
+text tspan {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    /*font-size: larger;*/
+    font-size: 16px !important;
+    font-variant: all-small-caps;
+}
