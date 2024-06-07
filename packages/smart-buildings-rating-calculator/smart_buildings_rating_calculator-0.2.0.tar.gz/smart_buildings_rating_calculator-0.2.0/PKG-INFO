@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: smart-buildings-rating-calculator
+Version: 0.2.0
+Summary: The calculation to generate a smart building rating
+Home-page: https://github.com/centrefornetzero/smart-building-rating-calculator
+Author: CentreForNetZero
+Author-email: data@centrefornetzero.org
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Smart building rating calculator
+The calculation to generate a smart building rating
+
+## Setup
+- Run `make setup` which will run all the required commands
+- Run `pipenv run python smart-building-rating-calculator/main.py`
