@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pytestforge
+Version: 1.2.1
+Summary: TestForge pytest plugin
+Author: Monq Digital Lab
+Author-email: askformonq@monqlab.com
+License: MIT
+Keywords: monq,pytest
+Classifier: Framework :: Pytest
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: selenium==3.141.0
+Requires-Dist: pytest==6.1.0
+Requires-Dist: allure-pytest==2.12.0
+Requires-Dist: seleniumwrapper==0.5.4
+Requires-Dist: urllib3==1.26.12
