@@ -1,0 +1,47 @@
+[project]
+name = "AutoLMS"
+version = "0.4.3"
+description = "Automation of getting into LMS classes"
+authors = [
+    { name = "AmirMohammad Hosseini Nasab", email = "awmirhn@gmail.com" },
+]
+dependencies = [
+    "selenium>=4.21.0",
+    "fire>=0.6.0",
+    "pyyaml>=6.0.1",
+    "InquirerPy>=0.3.4",
+    "schedule>=1.2.2",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+autolms = "autolms.main:main"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=24.4.2",
+    "isort>=5.13.2",
+    "ruff>=0.4.8",
+]
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+line-length = 120
