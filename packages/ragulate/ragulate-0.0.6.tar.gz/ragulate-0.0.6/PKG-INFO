@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: ragulate
+Version: 0.0.6
+Summary: A tool for evaluating RAG pipelines
+License: Apache 2.0
+Author: Eric Pinzur
+Author-email: epinzur@gmail.com
+Requires-Python: >=3.10,<3.13
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: epinzur-trulens-eval (>=0.30.1b0)
+Requires-Dist: inflection (>=0.5.1,<0.6.0)
+Requires-Dist: kaleido (>=0.2.1,<0.3.0)
+Requires-Dist: llama-index-core (>=0.10.39.post1,<0.11.0)
+Requires-Dist: plotly (>=5.22.0,<6.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: tqdm (>=4.66.4,<5.0.0)
+Description-Content-Type: text/markdown
+
+# ragulate
+
+A tool for evaluating RAG pipelines
+
+![](images/logo_smaller.png)
+
+
+## Installation
+
+```sh
+pip install ragulate
+```
+
+## Usage
+
+```sh
+usage: ragulate [-h] {download-llamadataset,ingest,query} ...
+
+RAGu-late CLI tool.
+
+options:
+  -h, --help            show this help message and exit
+
+commands:
+  {download-llamadataset,ingest,query}
+    download-llamadataset
+                        Download a llama-dataset
+    ingest              Run an ingest pipeline
+    query               Run an query pipeline
+    compare             Compare results from 2 (or more) recipes
+```
+
+### Download Dataset Example
+
+```
+ragulate download-llamadataset BraintrustCodaHelpDesk
+```
+
+### Ingest Example
+
+These commands should work:
+```
+ragulate ingest -n chunk_size_500_k_2 -s experiment_chunk_size_and_k.py -m ingest \
+--var-name chunk_size --var-value 500 --var-name k --var-value 2 --dataset BraintrustCodaHelpDesk
+
+ragulate ingest -n chunk_size_1000_k_2 -s experiment_chunk_size_and_k.py -m ingest \
+--var-name chunk_size --var-value 1000 --var-name k --var-value 2 --dataset BraintrustCodaHelpDesk
+```
+
+### Query Exmaple
+
+These commands should work:
+```
+ragulate query -n chunk_size_500_k_2 -s experiment_chunk_size_and_k.py -m query_pipeline \
+--var-name chunk_size --var-value 500  --var-name k --var-value 2 --dataset BraintrustCodaHelpDesk
+
+ragulate query -n chunk_size_1000_k_2 -s experiment_chunk_size_and_k.py -m query_pipeline \
+--var-name chunk_size --var-value 1000  --var-name k --var-value 2 --dataset BraintrustCodaHelpDesk
+
+ragulate query -n chunk_size_500_k_5 -s experiment_chunk_size_and_k.py -m query_pipeline \
+--var-name chunk_size --var-value 500  --var-name k --var-value 5 --dataset BraintrustCodaHelpDesk
+
+ragulate query -n chunk_size_1000_k_5 -s experiment_chunk_size_and_k.py -m query_pipeline \
+--var-name chunk_size --var-value 1000 --var-name k --var-value 5 --dataset BraintrustCodaHelpDesk
+```
+
+### Compare Recipes Example
+
+This command should work:
+```
+ragulate compare -r chunk_size_500_k_2 -r chunk_size_1000_k_2 -r chunk_size_500_k_5 -r chunk_size_1000_k_5
+```
+
