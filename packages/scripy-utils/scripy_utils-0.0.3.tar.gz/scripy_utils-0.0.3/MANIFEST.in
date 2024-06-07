@@ -1,0 +1,4 @@
+include scripy_utils/REANME.md
+include scripy_utils/media/*
+include scripy_utils/media/stopwords-master/*
+include scripy_utils/media/wordcloud_imgs/*

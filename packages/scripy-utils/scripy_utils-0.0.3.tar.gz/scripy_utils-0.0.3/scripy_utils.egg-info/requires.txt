@@ -1,0 +1,10 @@
+chardet
+fontTools
+selenium==4.16.0
+requests==2.31.0
+chardet==3.0.4
+jieba==0.42.1
+matplotlib==3.7.0
+snownlp==0.12.3
+textblob==0.17.1
+wordcloud==1.9.3
