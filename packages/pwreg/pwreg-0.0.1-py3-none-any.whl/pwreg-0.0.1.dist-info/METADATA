@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pwreg
+Version: 0.0.1
+Summary: basic package
+Home-page: https://github.com/pwardion/pwareg
+Author: pwardion
+Author-email: ilikobaberkay@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+#This is a package for make your feature selection easy using sklearn (scikit-learn)
+
