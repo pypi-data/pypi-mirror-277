@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+anonymizePy/__init__.py
+anonymizePy/data_anonymization_toolkit.py
+anonymizePy.egg-info/PKG-INFO
+anonymizePy.egg-info/SOURCES.txt
+anonymizePy.egg-info/dependency_links.txt
+anonymizePy.egg-info/requires.txt
+anonymizePy.egg-info/top_level.txt
