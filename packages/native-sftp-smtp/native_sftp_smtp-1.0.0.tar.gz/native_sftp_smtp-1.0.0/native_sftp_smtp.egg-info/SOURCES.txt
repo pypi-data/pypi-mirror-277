@@ -1,0 +1,5 @@
+setup.py
+native_sftp_smtp.egg-info/PKG-INFO
+native_sftp_smtp.egg-info/SOURCES.txt
+native_sftp_smtp.egg-info/dependency_links.txt
+native_sftp_smtp.egg-info/top_level.txt
