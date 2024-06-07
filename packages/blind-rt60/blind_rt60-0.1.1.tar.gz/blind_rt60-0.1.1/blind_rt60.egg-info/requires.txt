@@ -1,0 +1,8 @@
+scipy
+numpy
+matplotlib
+
+[dev]
+pyroomacoustics
+parameterized
+pre-commit
