@@ -1,0 +1,12 @@
+photompy/__init__.py,sha256=x7o4GPQ9RMgWvknzX2uA9sB2SB-zkyJdjBWN-mNuX-I,630
+photompy/_calculate.py,sha256=3ADFekIj9FSsuUhy6CzKcmNvPa6PFkL228-F7SnUmzw,3485
+photompy/_interpolate.py,sha256=qkZdBrt0pn4207AW1cHru9xyEOhyqiRbGh2ox3G1pWw,5072
+photompy/_plot.py,sha256=tjPikrQTlm4v8i_RkerbIMfLPXlf_oeuPUG3yIVZQpg,9346
+photompy/_read.py,sha256=ysX8VOswLWSLBB-chlfOIQcYGs_hkI1Af8fqLMuqOkc,10737
+photompy/_write.py,sha256=l9EHb8aZvlUkQiaf66DN59K0g-j1-VOt3djGvubmSIE,4964
+photompy-0.0.3.dist-info/LICENSE.txt,sha256=o6zNaV_-0GhPYdmPY4emL9IbpqGRPrNbyVoYRXP7Vys,1072
+photompy-0.0.3.dist-info/METADATA,sha256=AF6Dh0LkJWtRIuhPXUDw43zvRbg_YWzyK556_zYpqH4,5092
+photompy-0.0.3.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+photompy-0.0.3.dist-info/top_level.txt,sha256=NCEA7LTb1KodVjwquRC9KcoT-NQk_jzytLqO0lTalV4,9
+photompy-0.0.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+photompy-0.0.3.dist-info/RECORD,,
