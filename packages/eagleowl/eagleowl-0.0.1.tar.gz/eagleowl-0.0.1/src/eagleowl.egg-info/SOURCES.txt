@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/eagleowl/__init__.py
+src/eagleowl/__main__.py
+src/eagleowl/client.py
+src/eagleowl/executor.py
+src/eagleowl/loggers.py
+src/eagleowl/manifest.py
+src/eagleowl.egg-info/PKG-INFO
+src/eagleowl.egg-info/SOURCES.txt
+src/eagleowl.egg-info/dependency_links.txt
+src/eagleowl.egg-info/entry_points.txt
+src/eagleowl.egg-info/requires.txt
+src/eagleowl.egg-info/top_level.txt
