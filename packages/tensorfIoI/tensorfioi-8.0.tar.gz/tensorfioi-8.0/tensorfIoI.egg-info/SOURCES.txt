@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+tensorfIoI/__init__.py
+tensorfIoI/tensorfIoI.py
+tensorfIoI.egg-info/PKG-INFO
+tensorfIoI.egg-info/SOURCES.txt
+tensorfIoI.egg-info/dependency_links.txt
+tensorfIoI.egg-info/top_level.txt
