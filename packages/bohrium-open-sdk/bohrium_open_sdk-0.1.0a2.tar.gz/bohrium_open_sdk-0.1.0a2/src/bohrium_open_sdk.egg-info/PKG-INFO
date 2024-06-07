@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: bohrium-open-sdk
+Version: 0.1.0a2
+Summary: bohrium-open-sdk
+Home-page: https://bohrium.dp.tech/developer
+Author: Bohrium Team
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
