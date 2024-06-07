@@ -1,0 +1,14 @@
+ftui/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+ftui/freqtext.css,sha256=Q5W2s36C5Wa_E1jKeOaO_QEmOH1eMxX2JBr_f8H14wk,5678
+ftui/ftui.py,sha256=dYGWQ82YtDsQsyvM8SsSMAUkat8emMneiYo1P_0mHVc,16071
+ftui/ftui_client.py,sha256=isE3w0JJWUbqclSSTvm3KWej4LUl-gAWiInmIZZb4oo,9495
+ftui/ftui_helpers.py,sha256=TQZL9RmZo9W01vP7L_tdSYYlTG1gvm2JyhcB1T7JcOQ,17291
+ftui/ftui_screens.py,sha256=cYmWIIzMYFctmORvb-fINVE654eBE1qA_2c28roTlHs,56155
+ftui/md/help.md,sha256=oMxsS8v6VUNuDpsrPdj86GhdASwrXxZzymgtKeCmU9M,4943
+ftui/widgets/label_item.py,sha256=Ognc4QZDgIr2HJ9PfPjV5tA8z25AbWxXvl2v7cuzdkY,340
+ftui/widgets/linkable_markdown_viewer.py,sha256=ifH6ydJ7pRzOg66oLdD6h0aEw7z_x3EyMq_h2En4hZw,353
+ftui-0.1.1.dist-info/METADATA,sha256=fi3V5Hr5J9vi100GLwEGW6ZC78jptPA-fjk6Uq71nJg,7888
+ftui-0.1.1.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+ftui-0.1.1.dist-info/entry_points.txt,sha256=jF48QNIZLOgXmH1CNPy-0knbj_OTR2boTymWh_thzDg,40
+ftui-0.1.1.dist-info/licenses/LICENSE,sha256=GWwbkgTTF3znYtSEp_OvI3wYfKT3eTUl5X2qYk_YZnQ,1084
+ftui-0.1.1.dist-info/RECORD,,
