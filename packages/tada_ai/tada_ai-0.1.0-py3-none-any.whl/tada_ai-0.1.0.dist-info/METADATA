@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: tada_ai
+Version: 0.1.0
+Summary: Tada AI API
+Home-page: https://github.com/Tada-AI/python-client
+License: MIT
+Keywords: OpenAPI,OpenAPI-Generator,Tada AI API
+Author: Tada AI
+Author-email: suport@tadatoday.ai
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=2)
+Requires-Dist: python-dateutil (>=2.8.2)
+Requires-Dist: typing-extensions (>=4.7.1)
+Requires-Dist: urllib3 (>=1.25.3)
+Project-URL: Repository, https://github.com/Tada-AI/python-client
+Description-Content-Type: text/markdown
+
+# Tada AI Python Client
+
+[Tada](https://www.tadatoday.ai/docs/what-we-do) makes doing RAG over documents easy. With a few API calls, you can
+
+1. Perform layout analysis on hundreds of pages of PDF, Word, and other documents
+1. Index the content alongside the layout metadata
+1. Search and generate markdown for queries
+1. Reindex results
+
+## Requirements
+
+Python 3.8+
+
+## Installation & Usage
+
+Install the package directly
+
+```sh
+# pip
+pip install git+https://github.com/Tada-AI/python-client.git
+```
+
+## Getting Started
+
+For complete instructions, please read our [quickstart](https://www.tadatoday.ai/docs/quickstart)
+
+You will need:
+
+1. An account
+2. An API Key
+3. To install this client
+
+(If you prefer, we have OpenAPI spec available too: https://api.tadatoday.ai/api)
+
