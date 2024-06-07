@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pykafka_util
+Version: 1.0.0
+Summary: kafka防撞
+Home-page: https://github.com/buyfakett
+Author: buyfakett
+Author-email: buyfakett@vip.qq.com
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: confluent-kafka
+
+<h1 align="center">pykafka_util</h1>
+
+- pykafka_util.py
