@@ -1,0 +1,10 @@
+pytest_mark_manage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_mark_manage/__version__.py,sha256=g7uAQJD17RoxnN5kFCNyGHcbsZggeRQsCYY5H1C_GfM,26
+pytest_mark_manage/conf.py,sha256=LDJNVlVYI_WkrqCtfCJdFtSffOByQd4sXutnOkoh8eY,1195
+pytest_mark_manage/plugin.py,sha256=LGNjS4pnOJXyrcKPKX2x4IJVYCLcm4AGTycOgoKZgUE,9134
+pytest_mark_manage/skipif.py,sha256=Y3KXh901U_5CtqHy0dtd4f-b1e79nnw4un6yc_zS2dU,2932
+pytest_mark_manage-2024.6.8.dist-info/METADATA,sha256=XZ3J7CLHuds77LlOZZ9RinbvkNZvBfPT_RYsPeBLXeg,316
+pytest_mark_manage-2024.6.8.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+pytest_mark_manage-2024.6.8.dist-info/entry_points.txt,sha256=bJBN-pikgOS4S6sOvy0bGI6LPoI9le6v6NQEYntZVPE,58
+pytest_mark_manage-2024.6.8.dist-info/licenses/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+pytest_mark_manage-2024.6.8.dist-info/RECORD,,
