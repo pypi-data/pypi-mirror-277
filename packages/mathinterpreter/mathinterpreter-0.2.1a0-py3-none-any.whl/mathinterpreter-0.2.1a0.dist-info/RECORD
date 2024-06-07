@@ -1,0 +1,15 @@
+mathinterpreter/__init__.py,sha256=OSbWRrXhakHvRhOX9t2mOxB1GfbmfTNDi-NNSXgC5tw,259
+mathinterpreter/__main__.py,sha256=t-9QgyEGkRZsw6r9Na1DoA0zR9YON4Cy76wfIGdscmg,1456
+mathinterpreter/calculate.py,sha256=4TCaQ9xfQ_1gFo3W7R6XJwjkqpKwjR2UmqWK1PZcoi8,727
+mathinterpreter/interpreter.py,sha256=2PPMnnjZiKRwezY5kPQE-2lRRguS7oqeMtlZ5gyvfTY,1666
+mathinterpreter/lexer.py,sha256=VzLRk5eyFw7tZA_9cgo7B016G8ZnHE0374r6KD4GhMc,2875
+mathinterpreter/nodes.py,sha256=HHVHoRTn9G-Ws_rfsJVyV6bAvp6xBcX_Cdhrpi_CJT0,2279
+mathinterpreter/parser.py,sha256=tzVIMRxPPA9HvAiNB8y51BUclvDS4K7e5eNGhOKr45I,3292
+mathinterpreter/tokens.py,sha256=NkONz-nNFHGzqw2pgtYK_nEe0mNonfcGdH1-5uZcdb4,390
+mathinterpreter/values.py,sha256=Bg-TXLAdT2hUUvkeKlJpslelIxGfeQc2sc0CtMGP0n0,132
+mathinterpreter-0.2.1a0.dist-info/LICENSE,sha256=8Ct6Bgu7hSk0hdLPcY9zHSAct4v4CbvfgIC8BQXWneg,1132
+mathinterpreter-0.2.1a0.dist-info/METADATA,sha256=O3GhV5VcuIcXi3Ba5DwXgWx2dkTaHWLnDuKr7QyAiGo,7043
+mathinterpreter-0.2.1a0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mathinterpreter-0.2.1a0.dist-info/entry_points.txt,sha256=fqPzldM_LtgEQrg2w_8SSbofkalRl3zQdmm6CKsABrw,66
+mathinterpreter-0.2.1a0.dist-info/top_level.txt,sha256=QbvpW-I7lITatfmlE_qz8mQz5oPgTqDdtFUu-16-JWE,16
+mathinterpreter-0.2.1a0.dist-info/RECORD,,
