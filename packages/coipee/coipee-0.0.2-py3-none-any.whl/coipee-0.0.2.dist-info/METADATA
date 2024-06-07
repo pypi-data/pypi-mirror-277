@@ -1,0 +1,95 @@
+Metadata-Version: 2.3
+Name: coipee
+Version: 0.0.2
+Summary: Demo of a Caipi-like system for explanatory interactive learning.
+Project-URL: Homepage, https://github.com/msetzu/coipee
+Project-URL: Bug Tracker, https://github.com/msetzu/coipee
+Author-email: Mattia Setzu <mattia.setzu@unipi.it>
+License-File: LICENSE
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: <=3.13,>3.10
+Requires-Dist: cloudpickle==3.0.0
+Requires-Dist: joblib==1.4.2
+Requires-Dist: llvmlite==0.42.0
+Requires-Dist: numba==0.59.1
+Requires-Dist: numpy==1.26.4
+Requires-Dist: packaging==24.0
+Requires-Dist: pandas==2.2.2
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: pytz==2024.1
+Requires-Dist: scikit-learn==1.5.0
+Requires-Dist: scipy==1.13.1
+Requires-Dist: shap==0.45.1
+Requires-Dist: six==1.16.0
+Requires-Dist: slicer==0.0.8
+Requires-Dist: threadpoolctl==3.5.0
+Requires-Dist: tqdm==4.66.4
+Requires-Dist: tzdata==2024.1
+Description-Content-Type: text/markdown
+
+# Coipee
+A demo implementation of the [Caipi](https://github.com/stefanoteso/caipi) explanatory interactive learning algorithm.
+Coipee implements a model which one can query to retrieve uncertain instances on which it lacks confidence, alongside
+an explanation of the model prediction.
+The user can then correct such explanation, then feed it back to Coipee to trigger an additional training guided by
+the explanation.
+
+This implementation leverages feature masks as explanation, i.e., masks which can enable or disable input features. 
+
+
+## Quickstart
+Install through `pip` and `venv`:
+```shell
+mkvirtualenv -p python3.12 coipee
+
+pip install coipee
+```
+
+## Usage
+Coipee revolves around a `Coipee object`:
+```python
+barman = Coipee(
+    model=base_model,  # the model to explain, e.g. a neural network
+    fit_model=fit_model,  # the function to train the model, invoked after a correction
+    pool=data_train,   # pool of data to measure the model's uncertainty, also used for query
+    pool_labels=labels_train  # labels of the pool
+)
+```
+A typical use involves querying the model for a number of uncertain instances
+```python
+number_of_instances = 10
+artifact = barman.query(10)
+print(artifact.explanation)
+```
+and retrieve a feature mask: features important to the model are marked as `True`, while others as `False`.
+We can also threshold importance at different levels: the higher the threshold, the higher the required importance
+to mark a feature as important:
+```python
+artifact = barman.query(10, threshold=0.01)
+print(artifact.explanation)
+```
+
+Once we have our explanation, we can correct it by marking some important features as not important, and vice versa:
+```python
+import copy
+
+corrected_artifact = copy.deepcopy(artifact)
+
+corrected_artifact.explanation[:] = False
+corrected_artifact.explanation[[0, 1, 2]] = True
+```
+Here, we have simply said to the model that actually, only the features `0, 1, 2` are actually important.
+We can also directly retrieve differences between artifacts through the `diff` method:
+```python
+print(f"Difference: {artifact.diff(corrected_artifact)}")
+```
+
+Now that we have corrected the explanation, we can feed it back to the model:
+```python
+barman.stack_correction(corrected_artifact)  # adds the correction to correction stack of the model
+barman.correct_model()  # triggers a training phase
+```
