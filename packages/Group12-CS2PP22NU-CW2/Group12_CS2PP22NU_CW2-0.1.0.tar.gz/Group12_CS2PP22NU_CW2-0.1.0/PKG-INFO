@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Group12_CS2PP22NU_CW2
+Version: 0.1.0
+Summary: A collection of modules for data science tasks
+Home-page: https://github.com/yourusername/myModule
+Author: Ji Yu'an, Li Zhelang, Lichenghua, Chen Runyi, Zhang Wenrui
+Author-email: 1057718319@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: ospandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn
+Requires-Dist: tqdm
+Requires-Dist: baostock
+Provides-Extra: mpl-toolkits-mplot3d
+
+# myModule
+
+This is a collection of modules for data science tasks.

@@ -1,0 +1,9 @@
+ospandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+tqdm
+baostock
+
+[mpl_toolkits.mplot3d]
