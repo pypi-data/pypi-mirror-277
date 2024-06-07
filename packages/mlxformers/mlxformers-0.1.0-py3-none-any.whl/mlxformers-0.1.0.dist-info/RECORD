@@ -1,0 +1,7 @@
+mlxformers-0.1.0.dist-info/METADATA,sha256=eqE1vPaRXs5hVuBEBBHFt5rCRPk5NgRCUQUAOtB3ch4,482
+mlxformers-0.1.0.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+mlxformers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlxformers/activations.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlxformers/models/sam/modeling_sam.py,sha256=jpAJK9V4B1V0GyfemMl3K4LN1Y5-Xmrbi5n2AknYdlw,65965
+mlxformers/preprocessing_utilities.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlxformers-0.1.0.dist-info/RECORD,,
