@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+platforms = ["any"]
+
+[tool.setuptools.packages.find]
+where = ["src"]  # list of folders that contain the packages (["."] by default)
+exclude = ["tests*"]  # exclude packages matching these glob patterns (empty by default)
+
+[tool.setuptools.dynamic]
+version = {attr = "arize_otel.__version__"}
+
+[project]
+name = "arize-otel"
+description = "Helper package for OTEL setup to send traces to Arize & Phoenix"
+readme = "README.md"
+requires-python = ">=3.8, <3.13"
+license = { file = "LICENSE" }
+keywords = [
+    "Observability",
+    "Monitoring",
+    "Explainability",
+    "Tracing"
+]
+authors = [
+  { name = "Arize AI", email = "support@arize.com" },
+]
+maintainers = [
+  { name = "Arize AI", email = "support@arize.com" },
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Logging",
+    "Topic :: System :: Monitoring",
+]
+dependencies = [
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://docs.arize.com/arize"
+Issues = "https://github.com/Arize-ai/arize-otel/issues"
+Source = "https://github.com/Arize-ai/arize-otel"
+Changelog = "https://github.com/Arize-ai/arize-otel/main/CHANGELOG.md"
+

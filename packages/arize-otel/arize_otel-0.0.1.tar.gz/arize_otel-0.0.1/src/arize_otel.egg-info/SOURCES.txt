@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/arize_otel/__init__.py
+src/arize_otel/version.py
+src/arize_otel.egg-info/PKG-INFO
+src/arize_otel.egg-info/SOURCES.txt
+src/arize_otel.egg-info/dependency_links.txt
+src/arize_otel.egg-info/top_level.txt
