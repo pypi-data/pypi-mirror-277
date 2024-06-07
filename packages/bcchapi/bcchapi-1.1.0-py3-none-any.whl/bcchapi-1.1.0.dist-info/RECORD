@@ -1,0 +1,11 @@
+bcchapi/__init__.py,sha256=mme16tTb1JHOGjP-sF5IST0joIzb5uTMqI1q6G2X6MA,255
+bcchapi/credentials.py,sha256=6w006di0KaDwh6YJQ4EAH_FuSP2zIi5brIGUpZlpxA4,853
+bcchapi/exception.py,sha256=oRr-0H_OUiXw4bZWuSSMDUs70RdIM6duF9E3pf78maE,476
+bcchapi/siete.py,sha256=CEQmmfaOpm-6uldwUb7QoGIbl6SxbLH5IUSedO6-v4Y,8860
+bcchapi/webservice.py,sha256=0SoLd34BplYaZkozEv6HngMCq-Rm1e9hUAnt960cRCc,5124
+bcchapi/wsresponse.py,sha256=euM7w-mfR0lWKCUE-hlNxIZ4p08luKH_HtXeLguYcx4,3882
+bcchapi-1.1.0.dist-info/LICENSE,sha256=RYiC--Nm543TW0UEsMlkEyGuEkkLxmaByDumQaMtlEg,1083
+bcchapi-1.1.0.dist-info/METADATA,sha256=hrbVSx0opsOGVRniISxFUUz18wIvUQr8CrHDydQRX3Q,4651
+bcchapi-1.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+bcchapi-1.1.0.dist-info/top_level.txt,sha256=xWKg2KUqBzcopUKhHoVpe-iRAbXMcDmtdGT0sEPkyc4,8
+bcchapi-1.1.0.dist-info/RECORD,,
