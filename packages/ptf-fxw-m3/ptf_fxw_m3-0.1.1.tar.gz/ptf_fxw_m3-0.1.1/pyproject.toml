@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "ptf-fxw-m3"
+version = "0.1.1"
+description = ""
+authors = ["Wang Group <Wang_Group_Cug@163.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.26.4"
+pandas = "^2.2.2"
+torch = "^2.3.1"
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
