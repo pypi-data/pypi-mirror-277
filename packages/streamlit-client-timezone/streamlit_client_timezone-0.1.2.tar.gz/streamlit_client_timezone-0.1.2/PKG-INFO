@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: streamlit-client-timezone
+Version: 0.1.2
+Summary: Streamlit component that gets the client's timezone.
+Home-page: 
+Author: Ethan Poorbaugh
+Author-email: jepoorbaugh@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit>=0.63
+Requires-Dist: tzdata>=2024.1
+Provides-Extra: devel
+Requires-Dist: wheel; extra == "devel"
+Requires-Dist: pytest==7.4.0; extra == "devel"
+Requires-Dist: playwright==1.39.0; extra == "devel"
+Requires-Dist: requests==2.31.0; extra == "devel"
+Requires-Dist: pytest-playwright-snapshot==1.0; extra == "devel"
+Requires-Dist: pytest-rerunfailures==12.0; extra == "devel"
+
+# Streamlit Client Timezone
+Streamlit custom component to get the client's timezone as a tzinfo object. 
+
+## Usage
+```python
+timezone = client_timezone(key="client-timezone")
+
+time_loaded = datetime.now(tz=timezone)
+```
