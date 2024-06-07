@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: calories
+Version: 0.1.0
+Summary: A simple package to calculate calories
+Home-page: https://github.com/ktakisawa/calories
+Author: takisawa kazuma
+Author-email: ktakisawa@sciencepark.co.jp
+Project-URL: Bug Tracker, https://github.com/ktakisawa/calories/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Calories
+
+A simple Python package to calculate the calories for given food and amount.
+
+## Installation
+
+```bash
+pip install calories
