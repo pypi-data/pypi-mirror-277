@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cross.pywebui
+Version: 0.0.0.1
+Summary: A package for creating cross-platform software using web technologies.
+Author: greenshe11 (Eugene Dave Tumagan)
+Author-email: eugenetumagan02@gmail.com
+Keywords: python,UI,kivy,android,web,ml
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: PyQt5 >=5.15.9
+Requires-Dist: kivy >=2.3.0
+
+Build cross-platform software with python, blending the versatility of HTML/CSS/JS for diverse offline-capable UI/UX.
