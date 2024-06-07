@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+datetime_nepali/__init__.py
+datetime_nepali/__init__.pyi
+datetime_nepali/_custom_strptime.py
+datetime_nepali/config.py
+datetime_nepali.egg-info/PKG-INFO
+datetime_nepali.egg-info/SOURCES.txt
+datetime_nepali.egg-info/dependency_links.txt
+datetime_nepali.egg-info/top_level.txt
+datetime_nepali/data/calendar_bs.csv
+tests/test_conversions.py
+tests/test_init.py
+tests/test_methods.py
+tests/test_strftime_strptime.py
