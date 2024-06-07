@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+datalineage/__init__.py
+datalineage/cli.py
+sql_datalineage.egg-info/PKG-INFO
+sql_datalineage.egg-info/SOURCES.txt
+sql_datalineage.egg-info/dependency_links.txt
+sql_datalineage.egg-info/entry_points.txt
+sql_datalineage.egg-info/requires.txt
+sql_datalineage.egg-info/top_level.txt
