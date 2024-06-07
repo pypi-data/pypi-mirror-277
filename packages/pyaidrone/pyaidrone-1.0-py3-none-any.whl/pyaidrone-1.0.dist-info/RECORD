@@ -1,0 +1,10 @@
+pyaidrone/AIDrone.py,sha256=p0-JQtpzmv_TCk1EY9lmkoa8JCJ43Q8ByBVwkgM0QOY,4562
+pyaidrone/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyaidrone/deflib.py,sha256=ZeA_qfnhuXEIhJHUMNSKkCkBEaWuoIS5X7ZqjTo9Sx4,735
+pyaidrone/ikeyevent.py,sha256=ZpRiFu71GhW2XQgyiXzCvb2FYoLU8bH4fVeaKoGEMqM,2866
+pyaidrone/packet.py,sha256=sA7v9MbptPVxCm1_Lah1vHnoeQdrWY87NH-C5CP4Gz8,810
+pyaidrone/parse.py,sha256=J8FOblxPhWw9VpovaBLgltkL7YVX0HXLZHTzH6519G8,1363
+pyaidrone-1.0.dist-info/METADATA,sha256=QBFVuZgu0Qa5Tc9UJadDQA31xLlaDI4jqmED0NE82KU,237
+pyaidrone-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyaidrone-1.0.dist-info/top_level.txt,sha256=YLnJwG3F2TdfFcg6r7jcx02fekcXHF_GC0nv12hJGT8,10
+pyaidrone-1.0.dist-info/RECORD,,
