@@ -1,0 +1,6 @@
+[console_scripts]
+obsinfo = obsinfo.console_scripts.argparser:main
+obsinfo-makescripts_LC2SDS = obsinfo.addons.LC2SDS:_console_script
+obsinfo-makescripts_LCHEAPO = obsinfo.addons.LCHEAPO:_console_script
+obsinfo-makescripts_SDPCHAIN = obsinfo.addons.SDPCHAIN:_console_script
+obsinfo-test = obsinfo.tests.run_test_script:run_suite_info_files

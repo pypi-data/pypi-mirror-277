@@ -1,0 +1,138 @@
+---
+format_version: "0.111"
+revision: 
+    date: "2022-06-15"
+    authors: 
+        - $ref: 'persons/Wayne_Crawford.person.yaml#person'
+datalogger_base:
+    equipment:
+        model: "ELOPS A"
+        type: "delta-sigma A/D converter + digital filter"
+        description: "Sercel's Analog datalogger"
+        manufacturer: "Sercel"
+        vendor: "Sercel"
+    notes: 
+        - "Until I know which chip the ELOPS uses, I am assuming the ADS1281 with the ELOPS-specified gain"
+        - "I haven't specified the 24 (4x sps, 3x gain, 2x DIGFILT) possible configurations, in case there is a more efficient system in v1.0"
+        - "The IFREMER/Strasbourg? calibrations state CS5321"
+        - "Configuration names are {SPS}sps_{Gain}dB_{DigFilt}"
+    configuration_default: "250sps_0dB_LINEAR"
+    sample_rate: 250
+    stages:
+        -
+          base: {$ref: "datalogger_bases/stages/TI_ADS1281_SINC.stage_base.yaml#stage_base"}
+          configuration: "250sps"
+          modifications: {gain: {value: 0.950214e+8}}
+        - base: {$ref: "datalogger_bases/stages/TI_ADS128x_FIR1.stage_base.yaml#stage_base"}
+        - base: {$ref: "datalogger_bases/stages/TI_ADS128x_FIR2.stage_base.yaml#stage_base"}
+        - base: {$ref: "datalogger_bases/stages/TI_ADS128x_FIR3.stage_base.yaml#stage_base"}
+          configuration: "LINEAR"
+        - base: {$ref: "datalogger_bases/stages/TI_ADS128x_FIR4.stage_base.yaml#stage_base"}
+          configuration: "LINEAR"
+    configurations:
+        "250sps_0dB_LINEAR":
+            configuration_description: "250 sps, no gain, linear FIR filter"
+        "250sps_0dB_MINPHASE":
+            configuration_description: "250 sps, no gain, minimum phase FIR filter"
+            stage_modifications:
+                "3-4": {configuration: "MINPHASE"}
+        "250sps_12dB_LINEAR":
+            configuration_description: "250 sps, 12dB gain, linear FIR filter"
+            stage_modifications:
+                "0": {gain: {value: 3.7829E+8}}
+        "250sps_12dB_MINPHASE":
+            configuration_description: "250 sps, 12dB gain, minimum phase FIR filter"
+            stage_modifications:
+                "0": {gain: {value: 3.7829E+8}}
+                "3-4": {configuration: "MINPHASE"}
+        "250sps_24dB_LINEAR":
+            configuration_description: "250 sps, 24dB gain, linear FIR filter"
+            stage_modifications:
+                "0": {gain: {value: 15.0599E+8}}
+        "250sps_24dB_MINPHASE":
+            configuration_description: "250 sps, 24dB gain, minimum phase FIR filter"
+            stage_modifications:
+                "0": {gain: {value: 15.0599E+8}}
+                "3-4": {configuration: "MINPHASE"}
+        "1000sps_0dB_LINEAR":
+            configuration_description: "1000 sps, no gain, linear FIR filter"
+            sample_rate: 1000
+            stage_modifications:
+                "0": {configuration: '1000sps'}
+        "1000sps_0dB_MINPHASE":
+            configuration_description: "1000 sps, no gain, minimum phase FIR filter"
+            sample_rate: 1000
+            stage_modifications:
+                "0": {configuration: '1000sps'}
+                "3-4": {configuration: "MINPHASE"}
+        "1000sps_12dB_LINEAR":
+            configuration_description: "1000 sps, 12dB gain, linear FIR filter"
+            sample_rate: 1000
+            stage_modifications:
+                "0":
+                    configuration: '1000sps'
+                    gain: {value: 3.7829E+8}
+        "1000sps_12dB_MINPHASE":
+            configuration_description: "1000 sps, 12dB gain, minimum phase FIR filter"
+            sample_rate: 1000
+            stage_modifications:
+                "0":
+                    configuration: '1000sps'
+                    gain: {value: 3.7829E+8}
+                "3-4": {configuration: "MINPHASE"}
+        "1000sps_24dB_LINEAR":
+            configuration_description: "1000 sps, 24dB gain, linear FIR filter"
+            sample_rate: 1000
+            stage_modifications:
+                "0":
+                    configuration: '1000sps'
+                    gain: {value: 15.0599E+8}
+        "1000sps_24dB_MINPHASE":
+            configuration_description: "1000 sps, 24dB gain, minimum phase FIR filter"
+            sample_rate: 1000
+            stage_modifications:
+                "0":
+                    configuration: '1000sps'
+                    gain: {value: 15.0599E+8}
+                "3-4": {configuration: "MINPHASE"}
+        "2000sps_0dB_LINEAR":
+            configuration_description: "2000 sps, no gain, linear FIR filter"
+            sample_rate: 2000
+            stage_modifications:
+                "0": {configuration: '2000sps'}
+        "2000sps_0dB_MINPHASE":
+            configuration_description: "2000 sps, no gain, minimum phase FIR filter"
+            sample_rate: 2000
+            stage_modifications:
+                "0": {configuration: '2000sps'}
+                "3-4": {configuration: "MINPHASE"}
+        "2000sps_12dB_LINEAR":
+            configuration_description: "2000 sps, 12dB gain, linear FIR filter"
+            sample_rate: 2000
+            stage_modifications:
+                "0":
+                    configuration: '2000sps'
+                    gain: {value: 3.7829E+8}
+        "2000sps_12dB_MINPHASE":
+            configuration_description: "2000 sps, 12dB gain, minimum phase FIR filter"
+            sample_rate: 2000
+            stage_modifications:
+                "0":
+                    configuration: '2000sps'
+                    gain: {value: 3.7829E+8}
+                "3-4": {configuration: "MINPHASE"}
+        "2000sps_24dB_LINEAR":
+            configuration_description: "2000 sps, 24dB gain, linear FIR filter"
+            sample_rate: 2000
+            stage_modifications:
+                "0":
+                    configuration: '2000sps'
+                    gain: {value: 15.0599E+8}
+        "2000sps_24dB_MINPHASE":
+            configuration_description: "2000 sps, 24dB gain, minimum phase FIR filter"
+            sample_rate: 2000
+            stage_modifications:
+                "0":
+                    configuration: '2000sps'
+                    gain: {value: 15.0599E+8}
+                "3-4": {configuration: "MINPHASE"}

@@ -1,0 +1,21 @@
+---
+format_version: "0.111"
+
+stage_base:
+    description : "ADS1281 delta-sigma converter + SINC filter"
+    input_units : { name : "V", description: "Volts"}
+    output_units : { name : "counts", description: "Digital Counts"}
+    gain : 
+        frequency: 0
+        value: 858993458.4 #  counts/V
+    decimation_factor: 128
+    input_sample_rate: 409600
+    filter:
+        type : "ADCONVERSION"
+        v_plus: 2.5
+        v_minus: -2.5
+        counts_dtype: 'int32'
+        counts_plus: "0x7FFFFFFE"
+        counts_minus: "0x80000001"
+notes: 
+    - "Assumes f_clk = 1.6384 MHz (standard = 4.096 MHz)"

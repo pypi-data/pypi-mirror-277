@@ -1,0 +1,49 @@
+---
+format_version: "0.111"
+revision:
+    authors:
+        - {$ref: "persons/Wayne_Crawford.person.yaml#person"}
+    date: "2019-12-19"
+notes: ["Example of one station with every field provided"]
+subnetwork:
+    operators:
+        -   {$ref: "operators/INSU-IPGP.operator.yaml#operator"}
+    network:
+        $ref: "networks/EMSO-AZORES.network.yaml#network"
+    stations:
+        "BB_1":
+            site:
+                name: "NW corner of Lucky Strike"
+                description: "Intersection of Lucky Street and Site Avenue"
+                town: "Lost Gulch"
+                county: "Alameda"
+                region: "California"
+                country: 'France'
+            start_date: "2023-04-23T10:00:00"
+            end_date: "2024-05-28T15:37:00"
+            comments:
+                - "A basic comment"
+                -
+                    value: "A full StationXML Comment"
+                    begin_effective_time: "2024-01-01T12:00:00"
+                    end_effective_time: "2024-01-10T14:00:00"
+                    id: 200
+                    subject: "example comments"
+                    authors:
+                        - {"$ref": "persons/Wayne_Crawford.person.yaml#person"}
+            location_code: "00"
+            locations:
+                "00":
+                    base: {$ref: 'location_bases/INSU-IPGP.location_base.yaml#location_base'}
+                    configuration: "BUC_DROP"
+                    position: {lon.deg: -32.234, lat.deg: 37.2806, elev.m: -1950}
+            instrumentation:
+                base: {$ref: "instrumentation_bases/BBOBS1_pre2012.instrumentation_base.yaml#instrumentation_base"}
+                configuration: "SN03"
+                datalogger_configuration: "250sps"
+            processing:
+                - clock_correction_linear:
+                        base: {$ref: "timing_bases/Seascan_GNSS.timing_base.yaml#timing_base"}
+                        start_sync_reference: "2015-04-23T11:20:00"
+                        end_sync_reference: "2016-05-27T14:00:00.2450"
+                        end_sync_instrument: "2016-05-27T14:00:00"       

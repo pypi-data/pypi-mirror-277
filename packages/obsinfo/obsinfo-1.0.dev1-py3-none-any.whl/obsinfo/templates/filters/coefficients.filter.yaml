@@ -1,0 +1,19 @@
+---
+format_version: "0.111"
+revision:
+   authors:
+        - {$ref: ""} # Reference to file or fields of an authors file
+   date: "" # yyyy/mm/dd
+notes: 
+   - ""
+filter:
+   type: "Coefficients"
+   # offset will be used to calculate delay for digital filters at stage level if delay is not specified.
+   numerator_coefficients:
+       - 
+   denominator_coefficients:
+       - 
+   # OPTIONAL elements
+   delay.samples:  # used to calculate stage-level delay
+   transfer_function_type: ""  # "ANALOG (RADIANS/SECOND)", "ANALOG (HERTZ)", "DIGITAL"
+   resource_id: ""

@@ -1,0 +1,15 @@
+---
+format_version: "0.111"
+revision:
+   authors:
+        - {$ref: ""} # Reference to file or fields of an authors file
+   date: "" # yyyy/mm/dd
+notes: 
+   - ""
+filter:
+   type : "ResponseList"
+   elements :  
+       - [ , , ]  # Frequency (Hz), amplitude, phase (deg)
+   # OPTIONAL elements
+   delay.samples:  # used to calculate stage-level delay
+   resource_id: ""

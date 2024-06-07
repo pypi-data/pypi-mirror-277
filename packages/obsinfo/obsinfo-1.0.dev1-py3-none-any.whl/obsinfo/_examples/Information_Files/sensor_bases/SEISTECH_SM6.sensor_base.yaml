@@ -1,0 +1,19 @@
+---
+format_version: "0.111"
+revision: 
+    date: "2023-09-12"
+    authors: 
+        - $ref: "persons/Wayne_Crawford.person.yaml#person"
+        - $ref: "persons/Romuald_Daniel.person.yaml#person"
+sensor_base:
+    equipment:
+        model: "SM-6"
+        type: "Geophone"
+        description: "SM-6 B Coil Equivalent 4.5 Hz Geophone"
+        manufacturer: "SeisTech"
+        vendor: "various"
+    seed_codes:
+        band: "shortperiod"
+        instrument: "H"
+    stages:
+        - base: {$ref: "sensor_bases/stages/SEISTECH_SM6_theoretical.stage_base.yaml#stage_base"}

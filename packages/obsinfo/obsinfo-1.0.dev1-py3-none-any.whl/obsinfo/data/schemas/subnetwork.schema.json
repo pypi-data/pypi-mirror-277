@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Subnetwork",
+    "description": "Subnetwork of stations deployed by an OBS operator within a FDSN network $comment: No $id (or id) yet: should be set to a URL at a domain we control (e.g. http://www.ipgp.fr/~crawford/json-schemas/network.schema.json",
+    "type": "object",
+    "required": ["format_version", "subnetwork"],
+    "properties": {
+        "format_version": {"$ref" : "definitions.schema.json#/format_version"},
+        "revision":       {"$ref": "definitions.schema.json#/revision"},
+        "yaml_anchors":   {"$ref": "definitions.schema.json#/yaml_anchors"},
+        "notes" :         {"$ref": "definitions.schema.json#/note_list"},
+        "subnetwork":     {"$ref": "#/definitions/subnetwork"}
+    },
+    "additionalProperties" : false,
+    "definitions" : {
+        "subnetwork": {
+            "type": "object",
+            "required": [
+                "operators",
+                "network",
+                "stations"
+            ],
+            "properties": {
+                "operators":         {"$ref": "operator.schema.json#/definitions/operators"},
+                "network":           {"$ref": "network.schema.json#/definitions/network"},
+                "stations":          {"$ref": "#/definitions/stations_map"},
+                "reference_names":   {"$ref": "#/definitions/reference_names"},
+                "comments":          {"$ref": "definitions.schema.json#/comments"},
+                "extras":            {"$ref": "definitions.schema.json#/extras" }
+            },
+            "additionalProperties" : false
+        },
+        "reference_names": {
+            "type": "object",
+            "properties": {
+                "campaign":  {"$ref": "definitions.schema.json#/reference_name"},
+                "operator":  {"$ref": "definitions.schema.json#/reference_name"}
+            },
+            "additionalProperties": false
+        },
+        "stations_map" : {
+            "type": "object",
+            "description": "Seafloor seismological stations, keys are station names",
+            "$comment": "If we use draft-06, 'patternProperties' should probably be replaced by 'propertyNames':{'pattern':}",
+            "patternProperties": {
+                "^[A-Za-z0-9_-]+$": {"$ref": "station.schema.json#/definitions/station"}
+            },
+            "additionalProperties": false
+        }
+    }
+}

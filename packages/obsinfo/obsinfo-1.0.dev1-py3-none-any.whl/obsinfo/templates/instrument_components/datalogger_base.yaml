@@ -1,0 +1,36 @@
+---
+format_version: "0.111"
+revision:
+   authors: {$ref: ""} # Reference to file or fields of a person file
+   date: "" # yyyy/mm/dd
+yaml_anchors: # Rarely used any more
+notes: 
+    - ""
+datalogger_base:
+   sample_rate:
+   equipment:
+      type: ""
+      description: ""
+      manufacturer: ""
+      model: ""
+      # OPTIONAL elements
+      vendor: ""
+      serial_number: ""
+      installation_date: ""
+      removal_date: ""
+      resource_id: "" # URI format
+      calibration_dates: 
+         - "" #Specify date and time as yyyy-mm-22Thh:mm:ss
+   stages:
+      -  base: {$ref: ""} # Reference to stage_base file
+
+   # OPTIONAL elements
+   stage_modifications: {}
+   notes: [""]
+   correction: # Used by obsinfo to calculate StationXML correction for each stage. 
+               # If None, correction = delay for each stage;
+               # if a number, last stage correction = number
+               #              and all other stage corrections = 0
+   configuration_default: ""
+   configurations:
+      "" : {} # any provide elements update base values

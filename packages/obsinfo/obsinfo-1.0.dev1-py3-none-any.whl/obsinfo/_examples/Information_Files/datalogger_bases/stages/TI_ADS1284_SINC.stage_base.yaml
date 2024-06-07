@@ -1,0 +1,72 @@
+---
+format_version: "0.111"
+
+stage_base:
+    description : "ADS1284 delta-sigma converter + SINC filter"
+    input_units : { name : "V", description: "Volts"}
+    output_units : { name : "counts", description: "Digital Counts"}
+    gain : 
+        frequency: 0
+        value: 858993458.4 #  counts/V
+    decimation_factor: 128
+    input_sample_rate: 409600
+    filter:
+        type : "ADCONVERSION"
+        v_plus: 2.5
+        v_minus: -2.5
+        counts_dtype: 'int32'
+        counts_plus: "0x7FFFFFFE"
+        counts_minus: "0x80000001"
+        # input_full_scale : 5 #  = VREFP - VREFN
+        # output_full_scale : 4294967292 #  7FFFFFFEh@Vref/2 and 80000001@-Vref/2
+    configurations:
+        "100sps_HiRes":
+            configuration_description: "100sps (assumes f_clk = 1.6384 MHz)"
+            input_sample_rate: 409600
+            decimation_factor: 128
+        "200sps_HiRes_Gain1":
+            configuration_description: "200sps (assumes f_clk = 1.6384 MHz)"
+            input_sample_rate: 409600
+            decimation_factor: 64
+        "400sps_HiRes":
+            configuration_description: "400sps (assumes f_clk = 1.6384 MHz)"
+            input_sample_rate: 409600
+            decimation_factor: 32
+        "800sps_HiRes":
+            configuration_description: "800sps (assumes f_clk = 1.6384 MHz)"
+            input_sample_rate: 409600
+            decimation_factor: 16
+        "250sps_HiRes":
+            input_sample_rate: 1024000
+            decimation_factor: 128
+        "250sps_LowPower":
+            input_sample_rate: 512000
+            decimation_factor: 64
+        "500sps_HiRes":
+            input_sample_rate: 1024000
+            decimation_factor: 64
+        "500sps_LowPower":
+            input_sample_rate: 512000
+            decimation_factor: 32
+        "1000sps_HiRes":
+            input_sample_rate: 1024000
+            decimation_factor: 32
+        "1000sps_LowPower":
+            input_sample_rate: 512000
+            decimation_factor: 16
+        "2000sps_HiRes":
+            input_sample_rate: 1024000
+            decimation_factor: 16
+        "2000sps_LowPower":
+            input_sample_rate: 512000
+            decimation_factor: 8
+        "4000sps_HiRes":
+            input_sample_rate: 1024000
+            decimation_factor: 8
+        "4000sps_LowPower":
+            input_sample_rate: 512000
+            decimation_factor: 4
+notes: 
+    - "Standard f_clk = 4.096 MHz, f_mod = CLK/4 in high resolution, CLK/8 in low power"
+    - "Anti-aliasing capacitor gives Fp = 1/(6.3*600*C) = 264,6 kHz"
+    - "Using a slower clock to obtain 100 sps would require a smaller anti-alias capacitor!"

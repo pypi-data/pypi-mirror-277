@@ -1,0 +1,16 @@
+---
+format_version: "0.111"
+notes:
+    - "From CD24 FIR filter page: https://www.guralp.com/apps/ok?doc=CD24_Decimation_informal"
+    - "Assuming standard CD24 config rather than OBS-specific, because samprate goes up to 1000"
+stage_base:
+    description : "ADS1256 delta-sigma converter + SINC filter"
+    input_units : { name : "V", description: "Volts"}
+    output_units : { name : "counts", description: "Digital Counts"}
+    gain : 
+        frequency: 0
+        value: 1529000  #  counts/V for specified 0.654 uV/count
+    decimation_factor: 64
+    input_sample_rate: 256000
+    filter:
+        type : "ANALOG"

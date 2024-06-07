@@ -1,0 +1,33 @@
+---
+format_version: "0.111"
+notes: ["open circuit gain is 28.8 V/m/s"]
+stage_base:
+    description : "SENSOR - SM-6 geophone, coil resistance 375 ohms" # optionel
+    input_units :  {name: "m/s", description: "VELOCITY"}
+    output_units : {name: "V", description: "VOLTS"}
+    gain : {value: 27.8, frequency: 10}
+    filter:
+        type: "PolesZeros"
+        transfer_function_type: "LAPLACE (RADIANS/SECOND)"
+        zeros:
+           - '0.0 + 0.0j'
+           - '0.0 + 0.0j'
+        poles:
+           - '-19.41+20.56j'
+           - '-19.41-20.56j'
+    configuration_default: "shunt_10k_ohms"
+    configurations:
+        "shunt_10k_ohms":
+            configuration_description: "10 kohm shunt"
+        "shunt_8900_ohms":
+            configuration_description: "10 kohm shunt"
+            gain: {value: 27.6}
+            filter:
+                type: "PolesZeros"
+                transfer_function_type: "LAPLACE (RADIANS/SECOND)"
+                zeros:
+                   - '0.0 + 0.0j'
+                   - '0.0 + 0.0j'
+                poles:
+                   - '-19.82+20.16j'
+                   - '-19.82-20.16j'

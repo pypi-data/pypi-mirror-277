@@ -1,0 +1,54 @@
+---
+format_version: "0.111"
+revision:
+   authors: {$ref: ""} # Reference to file or fields of an authors file
+   date: # yyyy/mm/dd
+notes: 
+   - "" 
+
+instrumentation:
+   equipment:
+      type: ""
+      description: ""
+      manufacturer: ""
+      model: ""
+      # The following are optional
+      vendor: ""
+      serial_number: ""
+      installation_date: ""
+      removal_date: ""
+      resource_id: "" # URI format
+      calibration_dates: 
+         - "" #Specify date and time as yyyy-mm-22Thh:mm:ss
+
+   channels:
+      default:
+           datalogger:
+              base: {$ref: ""}#  Reference to file in the form {$ref: '<PATHNAME>'}
+              configuration: ""
+           sensor:
+              base: {$ref: ""} # Reference to file in the form {$ref: '<PATHNAME>'}
+              configuration: ""
+           # The following are optional
+           preamplifier:
+              base: {$ref: ""} # Reference to file in the form {$ref: '<PATHNAME>'}
+              configuration: ""
+           location_code: "" # If not specified, use station's location code
+           restricted_status: ""
+           source_id: ""
+           identifiers: []
+           external_references: []
+           comments: []
+           extras: {}
+      "":   # One of these per real data collection channel
+           orientation: {} # FDSN code, dip and azimuth
+           # all of the "default" fields can be used below.  If they
+           # repeat  a value in the "default"  field, they update it
+           datalogger: # Fill in as above, will UPDATE default value
+           ^datalogger: # Fill in as above, will REPLACE default value
+           ...
+
+   configuration_default: ""
+   configurations:
+      "NAME1": {} # Modifications to the base instrumentation
+      "NAME2": {} # Modifications to the base instrumentation

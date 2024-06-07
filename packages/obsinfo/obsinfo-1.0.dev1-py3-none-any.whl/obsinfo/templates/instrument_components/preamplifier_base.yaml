@@ -1,0 +1,31 @@
+---
+format_version: "0.111"
+revision:
+   authors: {$ref: ""} # Reference to file or fields of a person file
+   date: "" # yyyy/mm/dd
+yaml_anchors: # Rarely used any more
+notes: 
+    - ""
+preamplifier_base:
+   equipment:
+      type: ""
+      description: ""
+      manufacturer: ""
+      model: ""
+      # OPTIONAL elements
+      vendor: ""
+      serial_number: ""
+      installation_date: ""
+      removal_date: ""
+      resource_id: "" # URI format
+      calibration_dates: 
+         - "" #Specify date and time as yyyy-mm-22Thh:mm:ss
+   stages:
+      -  base: {$ref: ""} # Reference to stage_base file
+
+   # OPTIONAL elements
+   stage_modifications: {}
+   notes: [""]
+   configuration_default: ""
+   configurations:
+      "" : {} # any provide elements update base values

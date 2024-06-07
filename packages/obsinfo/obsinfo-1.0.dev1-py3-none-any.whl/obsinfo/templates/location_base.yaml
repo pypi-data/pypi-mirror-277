@@ -1,0 +1,22 @@
+---
+format_version: "0.111"
+revision: 
+    date: ""
+    authors: 
+        - # $ref to person.yaml file
+location_base:
+    depth.m: 
+    geology: ""
+    vault: ""
+    uncertainties.m: {lon: , lat: , elev: } # uncertainties in meters
+    # OPTIONAL elements
+    measurement_method: "" # description of measurement method
+    water_level.m:
+    notes: []
+    configuration_default: ""
+    configurations:
+        "":
+            configuration_description: ""
+        "":
+            configuration_description: ""
+            uncertainties.m: {lon: , lat: , elev: }

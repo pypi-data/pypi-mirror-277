@@ -1,0 +1,27 @@
+---
+format_version: "0.111"
+revision: 
+    date: "2017-11-30"
+    authors: 
+        -   {$ref: "persons/Wayne_Crawford.person.yaml#person"}
+        -   {$ref: "persons/Romuald_Daniel.person.yaml#person"}
+preamplifier_base:
+    equipment:
+        model: "CUBI-RC-RC"
+        type: "Analog gain/filter card"
+        description: "CUBI gain/filter card, LP at ~100 MHz"
+        manufacturer: "IPGP"
+        vendor: ""
+    stages:
+        - base:
+            description : "PREAMPLIFIER: CUBI RC-RC"
+            input_units : {name: "V", description: "VOLTS"}
+            output_units : {name: "V", description: "VOLTS"}
+            gain: {value: 1, frequency: 10}
+            filter:
+                type: "PolesZeros"
+                transfer_function_type: "LAPLACE (RADIANS/SECOND)"
+                zeros: []
+                poles: []
+            delay: 0
+notes: ['two poles at 10^8 +- sqrt(3)*10^4, way above sample rates']

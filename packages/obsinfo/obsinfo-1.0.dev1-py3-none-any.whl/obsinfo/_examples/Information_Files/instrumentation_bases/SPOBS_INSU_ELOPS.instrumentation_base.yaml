@@ -1,0 +1,34 @@
+---
+format_version: "0.111"
+revision: 
+    date: "2023-09-13"
+    authors:
+        - {$ref: "persons/Wayne_Crawford.person.yaml#person"}
+        - {$ref: "persons/Romuald_Daniel.person.yaml#person"}
+instrumentation_base:
+    equipment:
+        model: "SPOBS INSU ELOPS"
+        type: "Short Period Ocean Bottom Seismometer"
+        description: "4-channel INSU SPOBS, using ELOBS-A datalogger, L-28 3C geophone"
+        manufacturer: "IPGP"
+        vendor: "None"   
+    channels:
+        default:
+            datalogger:
+                base: {$ref: "datalogger_bases/ELOBS_A.datalogger_base.yaml#datalogger_base"}
+            preamplifier:
+                base: {$ref: "preamplifier_bases/ELOPS_GEOPHONE.preamplifier_base.yaml#preamplifier_base"}
+                configuration: "DC"
+            sensor: 
+                base: {$ref: "sensor_bases/SERCEL_L28.sensor_base.yaml#sensor_base"}
+        "1":
+            orientation:  {code: "H", azimuth.deg: {value: 0}, dip.deg: {value: 90}}
+            replace_preamplifier: 
+                base: {$ref: "preamplifier_bases/ELOPS_HYDROPHONE.preamplifier_base.yaml#preamplifier_base"}
+                configuration: "DC"
+            replace_sensor: 
+                base: {$ref: "sensor_bases/HITECH_HTI90U.sensor_base.yaml#sensor_base"}
+            
+        "2": {orientation:  {code: "2": {azimuth.deg: {value: 90, uncertainty: 180}}}
+        "3": {orientation:  {code: "1": {azimuth.deg: {value: 0, uncertainty: 180}}}
+        "4": {orientation:  {code: "Z": {dip.deg: {value: -90}}}  # because ELOBS inverts everything(?)

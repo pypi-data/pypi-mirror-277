@@ -1,0 +1,20 @@
+---
+format_version: "0.111"
+revision:
+   authors:
+        - {$ref: ""} # Reference to file or fields of an authors file
+   date: "" # yyyy/mm/dd
+notes: 
+   - ""
+filter:
+   type: "Polynomial"
+   coefficients :
+       - ""  # Complex number written as "r + ij" or "r - ij"
+   frequency_lower_bound: 
+   frequency_upper_bound:
+   approximation_lower_bound:
+   approximation_upper_bound: 
+   maximum_error: 
+   # OPTIONAL elements
+   approximation_type: "MACLAURIN"
+   resource_id: ""

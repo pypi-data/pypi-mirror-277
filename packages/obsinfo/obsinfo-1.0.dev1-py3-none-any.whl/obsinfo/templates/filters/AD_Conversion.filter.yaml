@@ -1,0 +1,14 @@
+---
+format_version: "0.111"
+revision:
+   authors:
+        - {$ref: ""} # Reference to file or fields of an authors file
+   date: "" # yyyy/mm/dd
+notes: 
+   - ""
+filter:
+   type : "ADConversion"
+   # OPTIONAL elements
+   input_full_scale :  #  = VREFP - VREFN
+   output_full_scale : # number of counts
+   resource_id: ""
