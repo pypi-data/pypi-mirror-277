@@ -1,0 +1,10 @@
+# http://nedbatchelder.com/code/coverage/config.html#config
+
+[run]
+branch = True
+omit =
+    */tests/*
+    fluent/__about__.py
+
+[report]
+omit = */tests/*
