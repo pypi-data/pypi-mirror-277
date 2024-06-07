@@ -1,0 +1,22 @@
+[project]
+name = "pyspral"
+version = "0.0.1"
+dependencies = [
+ "scipy",
+ "numpy"
+]
+
+[options]
+package_dir = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools", "setuptools-scm", "cython", "oldest-supported-numpy"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
