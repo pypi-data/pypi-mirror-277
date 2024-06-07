@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: arcgitflow
+Version: 0.5.3
+Summary: A Python implementation of the GitFlow process
+Home-page: https://github.com/cardenb/gitflow
+Author: Carden Bagwell
+Author-email: cardenbag@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE.txt
+Requires-Dist: GitPython >=3.1.1
+Requires-Dist: termcolor >=1.1.0
+Requires-Dist: six >=1.14.0
+Requires-Dist: pytest >=6.2.2
+Requires-Dist: isort >=5.9.3
+Requires-Dist: black >=23.7.1
+
+Run `python3 gitflow.py` in the root of a git repo to see a branch dependency tree.
+
+Run `python3 gitflow.py --cascade` to cascade rebases down the full list of dependent branches.
+
+# Testing
+Test with `pytest`. Use `pytest -s` to show output.
