@@ -1,0 +1,17 @@
+{
+  "impulse": {
+    "enabled": false
+  },
+  "attenuation": {
+    "enabled": false
+  },
+  "transient": {
+    "enabled": false
+  },
+  "false_seabed": {
+    "enabled": true
+  },
+  "seabed": {
+    "enabled": true
+  }
+}
