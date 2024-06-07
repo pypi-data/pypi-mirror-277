@@ -1,0 +1,20 @@
+Metadata-Version: 2.3
+Name: dracon_types
+Version: 0.0.1
+Summary: Types for ocurity/dracon
+Project-URL: Homepage, https://github.com/ocurity/dracon_types
+Project-URL: Issues, https://github.com/ocurity/dracon_types/issues
+Author-email: Flo Ocurity <flo@ocurity.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# dracon_types
+
+```bash
+python3 -m pip install --upgrade build
+python3 -m build
+
+```
