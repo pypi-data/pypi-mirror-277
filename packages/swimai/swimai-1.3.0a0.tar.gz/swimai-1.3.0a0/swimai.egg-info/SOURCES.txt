@@ -1,0 +1,7 @@
+README.md
+setup.py
+swimai.egg-info/PKG-INFO
+swimai.egg-info/SOURCES.txt
+swimai.egg-info/dependency_links.txt
+swimai.egg-info/requires.txt
+swimai.egg-info/top_level.txt

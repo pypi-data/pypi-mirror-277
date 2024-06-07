@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: swimai
+Version: 1.3.0a0
+Summary: swimai is now swimos
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+Requires-Dist: swimos
+
+# swimai is now swimos
+
+This package has been renamed. Use `pip install swimos` instead.
+
+New package: https://pypi.org/project/swimos/
