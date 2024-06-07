@@ -1,0 +1,11 @@
+admmsolver/__init__.py,sha256=iQHCZfX6zWnXvE0owuQq7Qlh8hulS6hxdQJt0VpFQMc,123
+admmsolver/matrix.py,sha256=EPChIiBLOipOiaByXyvj8NZocAHBvhZTL9k33SPKHyg,16256
+admmsolver/objectivefunc.py,sha256=sPBFgp5s-MpSiokk9EfQGitNNYTApwqfCYnhpl_UzVE,11414
+admmsolver/optimizer.py,sha256=0o6MMkXSTg0yM0qrW2LeFZ23wWa8voryeB67DEcs9m4,11478
+admmsolver/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+admmsolver/util.py,sha256=yEBr0h2ixapKQpz2qyMejJ6uZx8_5lE13f_4mGDF6Js,1388
+admmsolver-0.7.7.dist-info/LICENSE.txt,sha256=V0bCiHKVTPVIjXWxXD1-hvlZTM-YR2XnOpRlMgoIvxs,1072
+admmsolver-0.7.7.dist-info/METADATA,sha256=OhdQ9wKk1ElBPgpJRgnV_sMx4_0qYTM3_Vs8TYpQCO4,2092
+admmsolver-0.7.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+admmsolver-0.7.7.dist-info/top_level.txt,sha256=kDUn-HD_SFhk7QCjFGY_9DqLPDrz3pF3k4-mypUJHy4,11
+admmsolver-0.7.7.dist-info/RECORD,,
