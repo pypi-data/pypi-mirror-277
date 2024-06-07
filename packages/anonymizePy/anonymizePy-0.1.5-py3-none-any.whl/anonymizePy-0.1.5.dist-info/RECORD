@@ -1,0 +1,11 @@
+anonymizePy/__init__.py,sha256=_Rday2Bh0GB30XjTTN9uxfsROiM81hdq2zEV5dyBXqo,151
+anonymizePy/data_anonymization_toolkit.py,sha256=1ovkHZj0J74h7PbCaldmrca59MgcwfpkPCUzR4x7ESs,31798
+anonymizePy/resources/ignore_list.txt,sha256=JEPN87ZJt4sKSgnc6DwRpVFZJFUBidvPLSlD5PGnpFw,63
+anonymizePy/resources/states_list.txt,sha256=8an736vXvropjZjZMrM7dmwYUyr-h3BW39IvL9zyu0k,806
+anonymizePy/resources/src/firstnames_list.txt,sha256=HjPYO2HEwRgQPTlQlQZMgV37khJC5WeXkl6jBjZX37c,88219
+anonymizePy/resources/src/lastnames_list.txt,sha256=wy3s_Xj7ZENitvW08pjbJDrfMJl07iQUtFyFTbxZHZM,7113
+anonymizePy-0.1.5.dist-info/LICENSE,sha256=h6yk54i9m8g8LVCcwUk_LqLucBFLHBt7-vj03vP-eS4,1071
+anonymizePy-0.1.5.dist-info/METADATA,sha256=7jWKKcYOyilY4g5rHqiHuypxE7uqbg4Qff0DrRLumAw,1776
+anonymizePy-0.1.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+anonymizePy-0.1.5.dist-info/top_level.txt,sha256=gQ8lEoNruRRmwFkiGOAmkeaGMnDgMEqp0Vr3ZpbBzsA,12
+anonymizePy-0.1.5.dist-info/RECORD,,
