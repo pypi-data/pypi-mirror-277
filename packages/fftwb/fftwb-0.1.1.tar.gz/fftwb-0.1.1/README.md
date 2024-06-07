@@ -1,0 +1,66 @@
+# Building the Bindings
+
+To build and make the bindings, ensure you have CMake installed. Then, follow the instructions below.
+
+_Python configuration:_
+
+```bash
+sudo apt-get update
+sudo apt-get install python3.11-dev
+python3.11 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+_Build commands:_
+
+```bash
+mkdir build
+cd build
+cmake -S .. -B .
+make -j
+```
+
+Then, run the tests: `./test/tw-test`.
+
+Finally, ensure that there exists a `twb.cpython-39-x86_64-linux-gnu.so` file in the build
+directory.
+
+# The FlatBuffer Compiler
+
+## Building
+
+1. Download CMake: https://cmake.org/download/
+2. Install CMake:
+
+```bash
+tar -zxvf cmake-<version>.tar.gz
+cd cmake-<version>
+./bootstrap
+make -j
+sudo make install
+cd ..
+sudo rm -r cmake-<version>
+```
+
+3. Test installation: `cmake --version`
+4. Install the FlatBuffers compiler (ensure the version matches the one in the CMakeLists.txt file):
+
+```bash
+git clone https://github.com/google/flatbuffers.git
+cd flatbuffers
+git checkout <version>
+cmake -G "Unix Makefiles"
+make -j
+sudo make install
+cd ..
+sudo rm -r flatbuffers
+```
+
+5. Test installation: `flatc --version`
+
+## Usage
+
+`flatc --language -o output-directory flatbuffer-file.fbs`
+
+_--language specifies the language to compile the schema for. E.g. --cpp, --js, --ts, --python, etc._
