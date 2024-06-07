@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "krules-dispatcher-cloudevents-pubsub"
+version = "0.12.0rc0"
+description = "KRules cloudevents PUBSUB dispatcher"
+authors = ["Alberto Degli Esposti <alberto@arispot.tech>", "Lorenzo Campo <lorenzo@airspot.tech>"]
+license = "Apache Licence 2.0"
+readme = "README.md"
+repository = "https://github.com/airspot-dev/krules"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: Apache Software License",
+]
+packages = [
+    { include = "krules_cloudevents_pubsub" }
+]
+
+
+[tool.poetry.dependencies]
+python = ">=3.11, <3.12"
+cloudevents = "^1.10.1"
+google-cloud-pubsub = "^2.21.2"
+krules-core = "==0.12.0rc0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.2.2"
+pytest-runner = "^6.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
