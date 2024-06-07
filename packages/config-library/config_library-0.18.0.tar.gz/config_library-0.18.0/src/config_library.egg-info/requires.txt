@@ -1,0 +1,26 @@
+
+[all]
+pydantic
+pyyaml
+json-five
+python-dotenv
+
+[all:python_version < "3.11"]
+toml
+
+[dotenv]
+python-dotenv
+
+[json5]
+json-five
+
+[toml]
+
+[toml:python_version < "3.11"]
+toml
+
+[validation]
+pydantic
+
+[yaml]
+pyyaml
