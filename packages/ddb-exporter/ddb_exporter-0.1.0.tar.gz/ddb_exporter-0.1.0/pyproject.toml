@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ddb_exporter"
+version = "0.1.0"
+description = ""
+authors = ["tokoi <tokoi@crandim.co.jp>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+boto3 = "^1.34.121"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+ddb_exporter = "ddb_exporter:ddb_exporter"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
