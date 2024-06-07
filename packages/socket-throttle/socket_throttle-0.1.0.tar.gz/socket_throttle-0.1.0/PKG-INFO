@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: socket-throttle
+Version: 0.1.0
+Summary: Wrapper for sockets letting you limit send/recv bandwidth
+Home-page: https://github.com/remram44/python-socket-throttle
+License: MIT
+Keywords: socket,throttle,bandwidth,limit
+Author: Remi Rampin
+Author-email: remi@rampin.org
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: System :: Networking
+Project-URL: Repository, https://github.com/remram44/python-socket-throttle
+Description-Content-Type: text/markdown
+
+# Socket throttling for Python
+
+This tiny library contains a wrapper for sockets that can be used to limit their send and/or receive rate to a specific value.
+
+It can be used to limit the bandwidth use of any Python code that uses sockets.
+
