@@ -1,0 +1,11 @@
+milesToMuppets/__init__.py,sha256=wSwoD9mOEi__Xi1SIzNFGgDiIylsZ8SqOIkU-89OW18,747
+milesToMuppets/data.py,sha256=wrZVE8ttNXfPbItwZlLZCkfwdjfNd6FGWzD6sqpxQlA,820
+milesToMuppets/functions.py,sha256=HXCgDOU5g8ZYg8RNLEMSrFVbgP9dN9AWuL5P1sNhQsc,2201
+milesToMuppets/helpers.py,sha256=lTbJdeZEYV2KRNeDiZvdSJGT-XsuupGlo8pJE77b9DQ,923
+milesToMuppets/muppet.py,sha256=UGScTVXOqYUbqhVl9KVfVl8c7feOd7KdyO3W1bMvca0,6196
+milesToMuppets/txt/links.txt,sha256=5VY77ZnNLiDEJ2xk-J8npmmWoae5l1CbvlS3rDUrHsU,411
+milesToMuppets/txt/notes.txt,sha256=V0DJOcjcMIaWMxHvvZJPCV4V4MEFreQh55FkBW-UEXY,150
+milestomuppets-0.0.18.dist-info/METADATA,sha256=G-pXjcCuAI_OdXljBbhNVHt_5vHQPQGmwgeupfoyhPU,2887
+milestomuppets-0.0.18.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+milestomuppets-0.0.18.dist-info/licenses/LICENSE,sha256=zJU2cSMkGKdliFK7r-060th6pW1k9-sz_8zq9wITdfA,11347
+milestomuppets-0.0.18.dist-info/RECORD,,
