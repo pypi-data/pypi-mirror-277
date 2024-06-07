@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>lucit_backtesting.lib API documentation</title>
+<meta name="description" content="Collection of common building blocks, helper auxiliary functions and
+composable strategy classes for reuse …" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<link rel="preconnect" href="https://www.google.com">
+<script async src="https://cse.google.com/cse.js?cx=017837193012385208679:pey8ky8gdqw"></script>
+<style>
+.gsc-control-cse {padding:0 !important;margin-top:1em}
+body.gsc-overflow-hidden #sidebar {overflow: visible;}
+</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+<style>.homelink{display:block;font-size:2em;font-weight:bold;color:#555;text-align:center;padding:.5em 0}.homelink:hover{color:inherit}.homelink img{display:block;max-width:40%;max-height:5em;margin:auto;margin-bottom:.3em}</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+<link rel="canonical" href="https://lucit-backtesting.docs.lucit.tech//lucit_backtesting/lib.html">
+<link rel="icon" href="https://raw.githubusercontent.com/LUCIT-Systems-and-Development/lucit-backtesting/master/images/logo/lucit-backtesting.png">
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>lucit_backtesting.lib</code></h1>
+</header>
+<section id="section-intro">
+<p>Collection of common building blocks, helper auxiliary functions and
+composable strategy classes for reuse.</p>
+<p>Intended for simple missing-link procedures, not reinventing
+of better-suited, state-of-the-art, fast libraries,
+such as TA-Lib, Tulipy, PyAlgoTrade, NumPy, SciPy &hellip;</p>
+<p>Please raise ideas for additions to this collection on the <a href="https://github.com/kernc/backtesting.py">issue tracker</a>.</p>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-variables">Global variables</h2>
+<dl>
+<dt id="lucit_backtesting.lib.OHLCV_AGG"><code class="name">var <span class="ident">OHLCV_AGG</span></code></dt>
+<dd>
+<div class="desc"><p>Dictionary of rules for aggregating resampled OHLCV data frames,
+e.g.</p>
+<pre><code>df.resample('4H', label='right').agg(OHLCV_AGG).dropna()
+</code></pre></div>
+</dd>
+<dt id="lucit_backtesting.lib.TRADES_AGG"><code class="name">var <span class="ident">TRADES_AGG</span></code></dt>
+<dd>
+<div class="desc"><p>Dictionary of rules for aggregating resampled trades data,
+e.g.</p>
+<pre><code>stats['_trades'].resample('1D', on='ExitTime',
+                          label='right').agg(TRADES_AGG)
+</code></pre></div>
+</dd>
+</dl>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="lucit_backtesting.lib.barssince"><code class="name flex">
+<span>def <span class="ident">barssince</span></span>(<span>condition, default=inf)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Return the number of bars since <code>condition</code> sequence was last <code>True</code>,
+or if never, return <code>default</code>.</p>
+<pre><code>&gt;&gt;&gt; barssince(self.data.Close &gt; self.data.Open)
+3
+</code></pre></div>
+</dd>
+<dt id="lucit_backtesting.lib.compute_stats"><code class="name flex">
+<span>def <span class="ident">compute_stats</span></span>(<span>*, stats, data, trades=None, risk_free_rate=0.0)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>(Re-)compute strategy performance metrics.</p>
+<p><code>stats</code> is the statistics series as returned by <code>lucit_backtesting.lucit_backtesting.Backtest.run()</code>.
+<code>data</code> is OHLC data as passed to the <code>lucit_backtesting.lucit_backtesting.Backtest</code>
+the <code>stats</code> were obtained in.
+<code>trades</code> can be a dataframe subset of <code>stats._trades</code> (e.g. only long trades).
+You can also tune <code>risk_free_rate</code>, used in calculation of Sharpe and Sortino ratios.</p>
+<pre><code>&gt;&gt;&gt; stats = Backtest(GOOG, MyStrategy).run()
+&gt;&gt;&gt; only_long_trades = stats._trades[stats._trades.Size &gt; 0]
+&gt;&gt;&gt; long_stats = compute_stats(stats=stats, trades=only_long_trades,
+...                            data=GOOG, risk_free_rate=.02)
+</code></pre></div>
+</dd>
+<dt id="lucit_backtesting.lib.cross"><code class="name flex">
+<span>def <span class="ident">cross</span></span>(<span>series1, series2)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Return <code>True</code> if <code>series1</code> and <code>series2</code> just crossed
+(above or below) each other.</p>
+<pre><code>&gt;&gt;&gt; cross(self.data.Close, self.sma)
+True
+</code></pre></div>
+</dd>
+<dt id="lucit_backtesting.lib.crossover"><code class="name flex">
+<span>def <span class="ident">crossover</span></span>(<span>series1, series2)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Return <code>True</code> if <code>series1</code> just crossed over (above)
+<code>series2</code>.</p>
+<pre><code>&gt;&gt;&gt; crossover(self.data.Close, self.sma)
+True
+</code></pre></div>
+</dd>
+<dt id="lucit_backtesting.lib.plot_heatmaps"><code class="name flex">
+<span>def <span class="ident">plot_heatmaps</span></span>(<span>heatmap, agg='max', *, ncols=3, plot_width=1200, filename='', open_browser=True)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Plots a grid of heatmaps, one for every pair of parameters in <code>heatmap</code>.</p>
+<p><code>heatmap</code> is a Series as returned by
+<code>lucit_backtesting.lucit_backtesting.Backtest.optimize</code> when its parameter
+<code>return_heatmap=True</code>.</p>
+<p>When projecting the n-dimensional heatmap onto 2D, the values are
+aggregated by 'max' function by default. This can be tweaked
+with <code>agg</code> parameter, which accepts any argument pandas knows
+how to aggregate by.</p>
+<div class="admonition todo">
+<p class="admonition-title">TODO</p>
+<p>Lay heatmaps out lower-triangular instead of in a simple grid.
+Like <a href="https://scikit-optimize.github.io/stable/modules/plots.html#plot-objective"><code>skopt.plots.plot_objective()</code></a> does.</p>
+</div></div>
+</dd>
+<dt id="lucit_backtesting.lib.quantile"><code class="name flex">
+<span>def <span class="ident">quantile</span></span>(<span>series, quantile=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>If <code><a title="lucit_backtesting.lib.quantile" href="#lucit_backtesting.lib.quantile">quantile()</a></code> is <code>None</code>, return the quantile <em>rank</em> of the last
+value of <code>series</code> wrt former series values.</p>
+<p>If <code><a title="lucit_backtesting.lib.quantile" href="#lucit_backtesting.lib.quantile">quantile()</a></code> is a value between 0 and 1, return the <em>value</em> of
+<code>series</code> at this quantile. If used to working with percentiles, just
+divide your percentile amount with 100 to obtain quantiles.</p>
+<pre><code>&gt;&gt;&gt; quantile(self.data.Close[-20:], .1)
+162.130
+&gt;&gt;&gt; quantile(self.data.Close)
+0.13
+</code></pre></div>
+</dd>
+<dt id="lucit_backtesting.lib.random_ohlc_data"><code class="name flex">
+<span>def <span class="ident">random_ohlc_data</span></span>(<span>example_data, *, frac=1.0, random_state=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>OHLC data generator. The generated OHLC data has basic
+<a href="https://en.wikipedia.org/wiki/Descriptive_statistics">descriptive statistics</a>
+similar to the provided <code>example_data</code>.</p>
+<p><code>frac</code> is a fraction of data to sample (with replacement). Values greater
+than 1 result in oversampling.</p>
+<p>Such random data can be effectively used for stress testing trading
+strategy robustness, Monte Carlo simulations, significance testing, etc.</p>
+<pre><code class="language-python-repl">&gt;&gt;&gt; from lucit_backtesting.test import EURUSD
+&gt;&gt;&gt; ohlc_generator = random_ohlc_data(EURUSD)
+&gt;&gt;&gt; next(ohlc_generator)  # returns new random data
+...
+&gt;&gt;&gt; next(ohlc_generator)  # returns new random data
+...
+</code></pre></div>
+</dd>
+<dt id="lucit_backtesting.lib.resample_apply"><code class="name flex">
+<span>def <span class="ident">resample_apply</span></span>(<span>rule, func, series, *args, agg=None, **kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Apply <code>func</code> (such as an indicator) to <code>series</code>, resampled to
+a time frame specified by <code>rule</code>. When called from inside
+<code>lucit_backtesting.lucit_backtesting.Strategy.init</code>,
+the result (returned) series will be automatically wrapped in
+<code>lucit_backtesting.lucit_backtesting.Strategy.I</code>
+wrapper method.</p>
+<p><code>rule</code> is a valid <a href="http://pandas.pydata.org/pandas-docs/stable/timeseries.html#offset-aliases">Pandas offset string</a> indicating
+a time frame to resample <code>series</code> to.</p>
+<p><code>func</code> is the indicator function to apply on the resampled series.</p>
+<p><code>series</code> is a data series (or array), such as any of the
+<code>lucit_backtesting.lucit_backtesting.Strategy.data</code> series. Due to pandas
+resampling limitations, this only works when input series
+has a datetime index.</p>
+<p><code>agg</code> is the aggregation function to use on resampled groups of data.
+Valid values are anything accepted by <code>pandas/resample/.agg()</code>.
+Default value for dataframe input is <code><a title="lucit_backtesting.lib.OHLCV_AGG" href="#lucit_backtesting.lib.OHLCV_AGG">OHLCV_AGG</a></code> dictionary.
+Default value for series input is the appropriate entry from <code><a title="lucit_backtesting.lib.OHLCV_AGG" href="#lucit_backtesting.lib.OHLCV_AGG">OHLCV_AGG</a></code>
+if series has a matching name, or otherwise the value <code>"last"</code>,
+which is suitable for closing prices,
+but you might prefer another (e.g. <code>"max"</code> for peaks, or similar).</p>
+<p>Finally, any <code>*args</code> and <code>**kwargs</code> that are not already eaten by
+implicit <code>lucit_backtesting.lucit_backtesting.Strategy.I</code> call
+are passed to <code>func</code>.</p>
+<p>For example, if we have a typical moving average function
+<code>SMA(values, lookback_period)</code>, <em>hourly</em> data source, and need to
+apply the moving average MA(10) on a <em>daily</em> time frame,
+but don't want to plot the resulting indicator, we can do:</p>
+<pre><code>class System(Strategy):
+    def init(self):
+        self.sma = resample_apply(
+            'D', SMA, self.data.Close, 10, plot=False)
+</code></pre>
+<p>The above short snippet is roughly equivalent to:</p>
+<pre><code>class System(Strategy):
+    def init(self):
+        # Strategy exposes &lt;code&gt;self.data&lt;/code&gt; as raw NumPy arrays.
+        # Let's convert closing prices back to pandas Series.
+        close = self.data.Close.s
+
+        # Resample to daily resolution. Aggregate groups
+        # using their last value (i.e. closing price at the end
+        # of the day). Notice `label='right'`. If it were set to
+        # 'left' (default), the strategy would exhibit
+        # look-ahead bias.
+        daily = close.resample('D', label='right').agg('last')
+
+        # We apply SMA(10) to daily close prices,
+        # then reindex it back to original hourly index,
+        # forward-filling the missing values in each day.
+        # We make a separate function that returns the final
+        # indicator array.
+        def SMA(series, n):
+            from lucit_backtesting.test import SMA
+            return SMA(series, n).reindex(close.index).ffill()
+
+        # The result equivalent to the short example above:
+        self.sma = self.I(SMA, daily, 10, plot=False)
+</code></pre></div>
+</dd>
+</dl>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="lucit_backtesting.lib.SignalStrategy"><code class="flex name class">
+<span>class <span class="ident">SignalStrategy</span></span>
+</code></dt>
+<dd>
+<div class="desc"><p>A simple helper strategy that operates on position entry/exit signals.
+This makes the backtest of the strategy simulate a <a href="https://www.google.com/search?q=vectorized+backtest">vectorized backtest</a>.
+See <a href="index.html#tutorials">tutorials</a> for usage examples.</p>
+<p>To use this helper strategy, subclass it, override its
+<code>lucit_backtesting.lucit_backtesting.Strategy.init</code> method,
+and set the signal vector by calling
+<code><a title="lucit_backtesting.lib.SignalStrategy.set_signal" href="#lucit_backtesting.lib.SignalStrategy.set_signal">SignalStrategy.set_signal()</a></code> method from within it.</p>
+<pre><code>class ExampleStrategy(SignalStrategy):
+    def init(self):
+        super().init()
+        self.set_signal(sma1 &gt; sma2, sma1 &lt; sma2)
+</code></pre>
+<p>Remember to call <code>super().init()</code> and <code>super().next()</code> in your
+overridden methods.</p></div>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="lucit_backtesting.backtesting.Strategy" href="backtesting.html#lucit_backtesting.backtesting.Strategy">Strategy</a></li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="lucit_backtesting.lib.SignalStrategy.set_signal"><code class="name flex">
+<span>def <span class="ident">set_signal</span></span>(<span>self, entry_size, exit_portion=None, *, plot=True)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Set entry/exit signal vectors (arrays).</p>
+<p>A long entry signal is considered present wherever <code>entry_size</code>
+is greater than zero, and a short signal wherever <code>entry_size</code>
+is less than zero, following <code>lucit_backtesting.lucit_backtesting.Order.size</code> semantics.</p>
+<p>If <code>exit_portion</code> is provided, a nonzero value closes portion the position
+(see <code>lucit_backtesting.lucit_backtesting.Trade.close()</code>) in the respective direction
+(positive values close long trades, negative short).</p>
+<p>If <code>plot</code> is <code>True</code>, the signal entry/exit indicators are plotted when
+<code>lucit_backtesting.lucit_backtesting.Backtest.plot</code> is called.</p></div>
+</dd>
+</dl>
+<h3>Inherited members</h3>
+<ul class="hlist">
+<li><code><b><a title="lucit_backtesting.backtesting.Strategy" href="backtesting.html#lucit_backtesting.backtesting.Strategy">Strategy</a></b></code>:
+<ul class="hlist">
+<li><code><a title="lucit_backtesting.backtesting.Strategy.I" href="backtesting.html#lucit_backtesting.backtesting.Strategy.I">I</a></code></li>
+<li><code><a title="lucit_backtesting.backtesting.Strategy.buy" href="backtesting.html#lucit_backtesting.backtesting.Strategy.buy">buy</a></code></li>
+<li><code><a title="lucit_backtesting.backtesting.Strategy.closed_trades" href="backtesting.html#lucit_backtesting.backtesting.Strategy.closed_trades">closed_trades</a></code></li>
+<li><code><a title="lucit_backtesting.backtesting.Strategy.data" href="backtesting.html#lucit_backtesting.backtesting.Strategy.data">data</a></code></li>
+<li><code><a title="lucit_backtesting.backtesting.Strategy.equity" href="backtesting.html#lucit_backtesting.backtesting.Strategy.equity">equity</a></code></li>
+<li><code><a title="lucit_backtesting.backtesting.Strategy.init" href="backtesting.html#lucit_backtesting.backtesting.Strategy.init">init</a></code></li>
+<li><code><a title="lucit_backtesting.backtesting.Strategy.next" href="backtesting.html#lucit_backtesting.backtesting.Strategy.next">next</a></code></li>
+<li><code><a title="lucit_backtesting.backtesting.Strategy.orders" href="backtesting.html#lucit_backtesting.backtesting.Strategy.orders">orders</a></code></li>
+<li><code><a title="lucit_backtesting.backtesting.Strategy.position" href="backtesting.html#lucit_backtesting.backtesting.Strategy.position">position</a></code></li>
+<li><code><a title="lucit_backtesting.backtesting.Strategy.sell" href="backtesting.html#lucit_backtesting.backtesting.Strategy.sell">sell</a></code></li>
+<li><code><a title="lucit_backtesting.backtesting.Strategy.trades" href="backtesting.html#lucit_backtesting.backtesting.Strategy.trades">trades</a></code></li>
+</ul>
+</li>
+</ul>
+</dd>
+<dt id="lucit_backtesting.lib.TrailingStrategy"><code class="flex name class">
+<span>class <span class="ident">TrailingStrategy</span></span>
+</code></dt>
+<dd>
+<div class="desc"><p>A strategy with automatic trailing stop-loss, trailing the current
+price at distance of some multiple of average true range (ATR). Call
+<code><a title="lucit_backtesting.lib.TrailingStrategy.set_trailing_sl" href="#lucit_backtesting.lib.TrailingStrategy.set_trailing_sl">TrailingStrategy.set_trailing_sl()</a></code> to set said multiple
+(<code>6</code> by default). See <a href="index.html#tutorials">tutorials</a> for usage examples.</p>
+<p>Remember to call <code>super().init()</code> and <code>super().next()</code> in your
+overridden methods.</p></div>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="lucit_backtesting.backtesting.Strategy" href="backtesting.html#lucit_backtesting.backtesting.Strategy">Strategy</a></li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="lucit_backtesting.lib.TrailingStrategy.set_atr_periods"><code class="name flex">
+<span>def <span class="ident">set_atr_periods</span></span>(<span>self, periods=100)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Set the lookback period for computing ATR. The default value
+of 100 ensures a <em>stable</em> ATR.</p></div>
+</dd>
+<dt id="lucit_backtesting.lib.TrailingStrategy.set_trailing_sl"><code class="name flex">
+<span>def <span class="ident">set_trailing_sl</span></span>(<span>self, n_atr=6)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Sets the future trailing stop-loss as some multiple (<code>n_atr</code>)
+average true bar ranges away from the current price.</p></div>
+</dd>
+</dl>
+<h3>Inherited members</h3>
+<ul class="hlist">
+<li><code><b><a title="lucit_backtesting.backtesting.Strategy" href="backtesting.html#lucit_backtesting.backtesting.Strategy">Strategy</a></b></code>:
+<ul class="hlist">
+<li><code><a title="lucit_backtesting.backtesting.Strategy.I" href="backtesting.html#lucit_backtesting.backtesting.Strategy.I">I</a></code></li>
+<li><code><a title="lucit_backtesting.backtesting.Strategy.buy" href="backtesting.html#lucit_backtesting.backtesting.Strategy.buy">buy</a></code></li>
+<li><code><a title="lucit_backtesting.backtesting.Strategy.closed_trades" href="backtesting.html#lucit_backtesting.backtesting.Strategy.closed_trades">closed_trades</a></code></li>
+<li><code><a title="lucit_backtesting.backtesting.Strategy.data" href="backtesting.html#lucit_backtesting.backtesting.Strategy.data">data</a></code></li>
+<li><code><a title="lucit_backtesting.backtesting.Strategy.equity" href="backtesting.html#lucit_backtesting.backtesting.Strategy.equity">equity</a></code></li>
+<li><code><a title="lucit_backtesting.backtesting.Strategy.init" href="backtesting.html#lucit_backtesting.backtesting.Strategy.init">init</a></code></li>
+<li><code><a title="lucit_backtesting.backtesting.Strategy.next" href="backtesting.html#lucit_backtesting.backtesting.Strategy.next">next</a></code></li>
+<li><code><a title="lucit_backtesting.backtesting.Strategy.orders" href="backtesting.html#lucit_backtesting.backtesting.Strategy.orders">orders</a></code></li>
+<li><code><a title="lucit_backtesting.backtesting.Strategy.position" href="backtesting.html#lucit_backtesting.backtesting.Strategy.position">position</a></code></li>
+<li><code><a title="lucit_backtesting.backtesting.Strategy.sell" href="backtesting.html#lucit_backtesting.backtesting.Strategy.sell">sell</a></code></li>
+<li><code><a title="lucit_backtesting.backtesting.Strategy.trades" href="backtesting.html#lucit_backtesting.backtesting.Strategy.trades">trades</a></code></li>
+</ul>
+</li>
+</ul>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<header>
+<a class="homelink" rel="home" title="lucit-backtesting Home" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting">
+<img src="https://raw.githubusercontent.com/LUCIT-Systems-and-Development/lucit-backtesting/master/images/logo/lucit-backtesting.png" alt=""> lucit-backtesting
+</a>
+</header>
+<div class="gcse-search" style="height: 70px"
+data-as_oq="inurl:lucit-backtesting.docs.lucit.tech inurl:github.com/LUCIT-Systems-and-Development/lucit-backtesting"
+data-gaCategoryParameter="lucit_backtesting.lib">
+</div>
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="lucit_backtesting" href="index.html">lucit_backtesting</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-variables">Global variables</a></h3>
+<ul class="">
+<li><code><a title="lucit_backtesting.lib.OHLCV_AGG" href="#lucit_backtesting.lib.OHLCV_AGG">OHLCV_AGG</a></code></li>
+<li><code><a title="lucit_backtesting.lib.TRADES_AGG" href="#lucit_backtesting.lib.TRADES_AGG">TRADES_AGG</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="two-column">
+<li><code><a title="lucit_backtesting.lib.barssince" href="#lucit_backtesting.lib.barssince">barssince</a></code></li>
+<li><code><a title="lucit_backtesting.lib.compute_stats" href="#lucit_backtesting.lib.compute_stats">compute_stats</a></code></li>
+<li><code><a title="lucit_backtesting.lib.cross" href="#lucit_backtesting.lib.cross">cross</a></code></li>
+<li><code><a title="lucit_backtesting.lib.crossover" href="#lucit_backtesting.lib.crossover">crossover</a></code></li>
+<li><code><a title="lucit_backtesting.lib.plot_heatmaps" href="#lucit_backtesting.lib.plot_heatmaps">plot_heatmaps</a></code></li>
+<li><code><a title="lucit_backtesting.lib.quantile" href="#lucit_backtesting.lib.quantile">quantile</a></code></li>
+<li><code><a title="lucit_backtesting.lib.random_ohlc_data" href="#lucit_backtesting.lib.random_ohlc_data">random_ohlc_data</a></code></li>
+<li><code><a title="lucit_backtesting.lib.resample_apply" href="#lucit_backtesting.lib.resample_apply">resample_apply</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="lucit_backtesting.lib.SignalStrategy" href="#lucit_backtesting.lib.SignalStrategy">SignalStrategy</a></code></h4>
+<ul class="">
+<li><code><a title="lucit_backtesting.lib.SignalStrategy.set_signal" href="#lucit_backtesting.lib.SignalStrategy.set_signal">set_signal</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="lucit_backtesting.lib.TrailingStrategy" href="#lucit_backtesting.lib.TrailingStrategy">TrailingStrategy</a></code></h4>
+<ul class="">
+<li><code><a title="lucit_backtesting.lib.TrailingStrategy.set_atr_periods" href="#lucit_backtesting.lib.TrailingStrategy.set_atr_periods">set_atr_periods</a></code></li>
+<li><code><a title="lucit_backtesting.lib.TrailingStrategy.set_trailing_sl" href="#lucit_backtesting.lib.TrailingStrategy.set_trailing_sl">set_trailing_sl</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>
+<a href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/"><cite>backtesting</cite> 0.3.4.dev46+gc59c825.d20240606</a>
+<span style="color:#ddd">&#21328;</span>
+</p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.configure({languages: ['python']}); hljs.initHighlightingOnLoad()</script>
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>
