@@ -1,0 +1,3 @@
+[console_scripts]
+pyxo=pyxo.__main__:main
+
