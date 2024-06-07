@@ -1,0 +1,11 @@
+email_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+email_utils/email_generator.py,sha256=tgEe-9WB87XBM3qaG9Tj6Ybn7WCQqMcHITRQZ4DOOPg,201
+email_utils/email_validator.py,sha256=W2jfxv2iAm2N6nU36A7AglEifBMFpsafcESkZsz9woE,271
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_email_generator.py,sha256=dpuupOlAJt-1maoL-B1kLi5sn696KAleLLjVHjDUWI0,546
+tests/test_email_validator.py,sha256=JKlsXFy_C6sEOhVVOfjj-FFalnjVGVRs2RA41a0NUEs,528
+email_utils_PyWendi-0.1.dist-info/LICENCE,sha256=UMdgtfTr3paAfEI3oaRxU7W9ZjzTQ6uX-RSPNcB0kNE,1111
+email_utils_PyWendi-0.1.dist-info/METADATA,sha256=GDQJEEi1Zz1i0LfAupaXaq0osAMoodZSsP_axMftJfc,638
+email_utils_PyWendi-0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+email_utils_PyWendi-0.1.dist-info/top_level.txt,sha256=xdoVf3MNNTDWPQdswCsq7jOUVVzskmOBltyTojI4PNk,18
+email_utils_PyWendi-0.1.dist-info/RECORD,,
