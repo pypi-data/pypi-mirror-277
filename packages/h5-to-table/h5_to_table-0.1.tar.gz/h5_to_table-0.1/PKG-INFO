@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: h5_to_table
+Version: 0.1
+Summary: Read in a .h5 file and convert it into a table
+Home-page: https://github.com/YingX97/H5_to_table
+Author: H5_To_TABLE Like a Boss-TEAM
+Author-email: ying.xu@unsw.edu.au
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+
+test
