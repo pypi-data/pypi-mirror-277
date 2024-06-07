@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+src/mex-ui/__init__.py
+src/mex_ui.egg-info/PKG-INFO
+src/mex_ui.egg-info/SOURCES.txt
+src/mex_ui.egg-info/dependency_links.txt
+src/mex_ui.egg-info/top_level.txt
