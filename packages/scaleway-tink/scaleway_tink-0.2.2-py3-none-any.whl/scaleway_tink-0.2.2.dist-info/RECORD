@@ -1,0 +1,9 @@
+scaleway_tink/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scaleway_tink/integration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scaleway_tink/integration/scwkms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scaleway_tink/integration/scwkms/client.py,sha256=archBUplucUpmlOzi5ZMP-VgXB_2AJMizBBeTtzT0Co,5186
+scaleway_tink/integration/scwkms/test_client.py,sha256=UL8phw0AB9eZk5ITPAIfuBpE8DcPdIHLzAxU_MtING8,724
+scaleway_tink-0.2.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+scaleway_tink-0.2.2.dist-info/METADATA,sha256=5Vf_lcpGpOx91YxxhLQO2PalyrQQfNIiVvuhMNhRJXM,2275
+scaleway_tink-0.2.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+scaleway_tink-0.2.2.dist-info/RECORD,,
