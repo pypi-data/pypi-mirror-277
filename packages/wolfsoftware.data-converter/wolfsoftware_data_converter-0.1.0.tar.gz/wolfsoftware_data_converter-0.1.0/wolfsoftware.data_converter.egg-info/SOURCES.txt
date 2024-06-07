@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+tests/test_data_converter.py
+wolfsoftware.data_converter.egg-info/PKG-INFO
+wolfsoftware.data_converter.egg-info/SOURCES.txt
+wolfsoftware.data_converter.egg-info/dependency_links.txt
+wolfsoftware.data_converter.egg-info/requires.txt
+wolfsoftware.data_converter.egg-info/top_level.txt
+wolfsoftware/data_converter/__init__.py
+wolfsoftware/data_converter/dataconverter.py
+wolfsoftware/data_converter/exceptions.py
