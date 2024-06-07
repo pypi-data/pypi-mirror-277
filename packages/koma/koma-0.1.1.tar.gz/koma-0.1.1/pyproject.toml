@@ -1,0 +1,24 @@
+[project]
+name = "koma"
+version = "0.1.1"
+description = "The knowledge of macOS for AI."
+authors = [
+    { name = "AFuture", email = "afuture.d@outlook.com" },
+]
+dependencies = [
+    "protobuf>=5.26.1",
+    "pydantic>=2.7.3",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
