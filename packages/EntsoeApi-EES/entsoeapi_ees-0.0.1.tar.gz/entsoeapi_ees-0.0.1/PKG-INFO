@@ -1,0 +1,23 @@
+Metadata-Version: 2.3
+Name: EntsoeApi_EES
+Version: 0.0.1
+Summary: A python package to interface with the Entsoe api
+Project-URL: Homepage, https://github.com/EES-TUe/entsoe-data-collection
+Project-URL: Issues, https://github.com/EES-TUe/entsoe-data-collection/issues
+Author-email: Leo van Schooten <l.g.t.v.schooten@tue.nl>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: pandas==2.2.1
+Requires-Dist: requests==2.31.0
+Description-Content-Type: text/markdown
+
+# entsoe-data-collection
+A library to request data from entsoe, for now you can only request the day-ahead prices for a specific time period see main.py for an example.
+To get an api key for the Entsoe api:
+
+1. Create an account on the entsoe transparency platform [website](https://keycloak.tp.entsoe.eu/realms/tp/protocol/openid-connect/auth?response_type=code&client_id=tp-web&redirect_uri=https%3A%2F%2Ftransparency.entsoe.eu%2Fsso%2Flogin&state=d2ec9a89-c34d-4a5f-8232-146d8dddaac0&login=true&scope=openid).
+2. Send an email to [transparency@entsoe.eu](transparency@entsoe.eu) with in the subject line "Restful API access" and in the email body the email address that you used to register yourself.
+3. After their response you can generate a api key in your account settings.

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "EntsoeApi_EES"
+version = "0.0.1"
+authors = [
+  { name="Leo van Schooten", email="l.g.t.v.schooten@tue.nl" },
+]
+dependencies = [
+    'pandas==2.2.1',
+    'requests==2.31.0'
+]
+description = "A python package to interface with the Entsoe api"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/EES-TUe/entsoe-data-collection"
+Issues = "https://github.com/EES-TUe/entsoe-data-collection/issues"
