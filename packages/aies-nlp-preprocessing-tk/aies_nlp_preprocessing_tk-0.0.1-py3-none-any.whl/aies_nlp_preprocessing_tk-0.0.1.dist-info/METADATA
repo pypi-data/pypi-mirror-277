@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: aies_nlp_preprocessing_tk
+Version: 0.0.1
+Summary: Set of NLP preprocessing techniques with the aim of abstracting data preparation processes, in addition to performing validations and cleaning the masses.
+Home-page: https://github.com/JoaoGodoi/aies-nlp-preprocessing-tk
+Author: João Victor Godoi Bernardino
+Author-email: joaogodoi1010@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# aies-nlp-preprocessing-tk
+Teste
