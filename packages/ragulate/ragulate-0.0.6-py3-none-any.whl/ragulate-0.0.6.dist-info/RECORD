@@ -1,0 +1,15 @@
+ragulate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ragulate/analysis_engine.py,sha256=4Rb_1-R36rCD33ZJMbqyfpGePfQzPXg9BNjkZwthWmE,3088
+ragulate/cli.py,sha256=8EGMTBkqVKilNXXa6Ow7Yir5oWYAP3vEncJJWhPYvl0,5868
+ragulate/datasets.py,sha256=-bLbjd_EkMgsW5rYp0LvBcD5was_r6n1I6ZdqiKe514,2317
+ragulate/framework.py,sha256=gFbffBFwkUMJJnWKTx1w6kkpvTKhUgMPWw3xSffhBI8,107
+ragulate/ingest.py,sha256=SC0Mh9CTINLTqyZLIAg01HgcSSouDy_tNgw9Zct_5vA,905
+ragulate/logging_config.py,sha256=dzm1wGDsnVUBXzhivx8PpcYtz__yDre3YlPdvCB3_mc,447
+ragulate/metrics.py,sha256=l4ce2wXK52RQNwVtBrbAW5CxojhN5k6E71fKJtSFvhY,1741
+ragulate/query_pipeline.py,sha256=ut55PVlIQ-IhZVkMLsf3uKnr3gkkhfVyaAUJrMFuCRs,4963
+ragulate/utils.py,sha256=slBWpVc2iwWqPhhHCPw-XmUvYVopm7ZYVpZyqdJZmtE,617
+ragulate-0.0.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ragulate-0.0.6.dist-info/METADATA,sha256=71MHtFWIWcRbB_H2OlxsuYi7XTdPKZOAsCUtuu7ryok,2896
+ragulate-0.0.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+ragulate-0.0.6.dist-info/entry_points.txt,sha256=ChBf5wSTbsJzFznci8weB3LTlcLkm_fTCXTxlpHVh3U,46
+ragulate-0.0.6.dist-info/RECORD,,
