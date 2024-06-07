@@ -1,0 +1,10 @@
+cchardet-2.2.0a2.dist-info/RECORD,,
+cchardet-2.2.0a2.dist-info/WHEEL,sha256=wEvD9HODgqXG21zAA07x3Gh0qpNEHOQ7qzjMqXvopac,109
+cchardet-2.2.0a2.dist-info/COPYING,sha256=EHopzN0td4qi31Ri-F3d-gmQWavSLgZOB-wsybr8N80,70517
+cchardet-2.2.0a2.dist-info/top_level.txt,sha256=Khgls4j_ipUgHqU5JjsYDtlYEsM7uP3jV8o1ZlZPSfA,9
+cchardet-2.2.0a2.dist-info/METADATA,sha256=1lOPbiVIf1s9KluQ1e4DQEM9lHJQSNP16WogR5gSj5Q,939
+cchardet-2.2.0a2.data/scripts/cchardetect,sha256=ZQNvs4FsZh88VbRkDHnNIjtgZNsCQLIn_NKHGfGUweU,1281
+cchardet/_cchardet.cpython-39-darwin.so,sha256=ERUde5JqLrZb-t-O3P0opG0YAi3hsFFIsUXLLhKAd8M,295224
+cchardet/__init__.py,sha256=W-rd1y3WZGbggjlVbC6EtPN2qaJDX-aHoSBRxdzUrjY,1178
+cchardet/_cchardet.cpp,sha256=lJZyNmq4dkykA386jj9Af6QwArpo6brJxu1ghnikwV0,354270
+cchardet/_cchardet.pyx,sha256=mZl-_SFKFq8ezcvXIZkv-0vAxCZ5fhSWQ8QBGSKC1pU,2872
