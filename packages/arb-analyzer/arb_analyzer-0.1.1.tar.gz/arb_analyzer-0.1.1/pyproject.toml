@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "arb-analyzer"
+version = "0.1.1"
+description = ""
+authors = ["Bancor Network <services@bancor.network>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.7.0"
+click = "^8.1.7"
+carb-optimizer = "^0.0.53"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.1"
+
+[tool.poetry.group.docs.dependencies]
+fastapi = "^0.110.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
