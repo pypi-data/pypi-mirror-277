@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ptcpy"
+version = "2.2.2"
+description = "PTC Python"
+authors = ["Erlend Leiknes"]
+license = "N/A"
+readme = "README.md"
+packages = [{include = "ptcpy"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
