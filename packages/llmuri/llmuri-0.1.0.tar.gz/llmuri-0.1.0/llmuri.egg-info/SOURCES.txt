@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+llmuri/__init__.py
+llmuri/llmuri.py
+llmuri.egg-info/PKG-INFO
+llmuri.egg-info/SOURCES.txt
+llmuri.egg-info/dependency_links.txt
+llmuri.egg-info/top_level.txt
+tests/test_llmuri.py
