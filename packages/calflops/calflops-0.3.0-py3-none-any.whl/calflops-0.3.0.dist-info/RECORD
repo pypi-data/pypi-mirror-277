@@ -1,0 +1,11 @@
+calflops/__init__.py,sha256=Bci0QFnugvgne4N8tiHohq4l_iKm6I1HRD5O1dsviks,665
+calflops/calculate_pipline.py,sha256=BZ083yzcEOYOU9AtSzbPtas3EGjU6CYQx5OBKpnQssU,18140
+calflops/estimate.py,sha256=4y9YzV4nhUm05fgQfOq3w_LTMc95-Nun_EHZFVHbLSs,10585
+calflops/flops_counter.py,sha256=R47HQeBsQxtjAaE05bxBZgn8bmXXjGm1OjITBsz15EM,9500
+calflops/flops_counter_hf.py,sha256=qFJM72aiu72Jgffvj8xWiL7XnvDBR4TlmSx7Fu82Ccc,7431
+calflops/pytorch_ops.py,sha256=IQLQcGuGUYfUL9VE3Nm68NMW--l2CSVDM-OXzQrYP74,22734
+calflops/utils.py,sha256=8ae0rHbaCkxgAsC0h4-gDoLrC8OkooPLYg59ryKNkHU,12095
+calflops-0.3.0.dist-info/METADATA,sha256=m-3VFL9rIs3vwhaLLeSKz93iFGhkGwyB05iGtvCD-vE,28926
+calflops-0.3.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+calflops-0.3.0.dist-info/licenses/LICENSE,sha256=BthwU49w2jhBKZ05VqcPun46N6lBd-YwzZqCNzoxThA,1066
+calflops-0.3.0.dist-info/RECORD,,
