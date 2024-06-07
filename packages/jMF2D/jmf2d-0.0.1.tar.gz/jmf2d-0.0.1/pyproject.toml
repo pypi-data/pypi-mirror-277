@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jMF2D"
+version = "0.0.1"
+dependencies=[
+    "pandas==2.0.3",
+    "numpy==1.24.4",
+    "scanpy==1.9.8",
+    "scipy==1.10.1",
+    "scikit-learn==1.0.2",
+    "scikit-misc==0.2.0",
+    "matplotlib==3.7.5",
+    "seaborn==0.13.2",
+    "anndata==0.9.2",
+    "opencv-python==4.10.0.82",
+    "leidenalg==0.10.2",
+    "POT==0.9.3",
+]
+authors = [
+  { name="Yuhong Zha", email="18583330027@163.com" },
+]
+description = "The initial package of jMF2D"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/xkmaxidian/jMF2D"
+Issues = "https://github.com/xkmaxidian/jMF2D/issues"

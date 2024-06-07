@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+jMF2D.egg-info/PKG-INFO
+jMF2D.egg-info/SOURCES.txt
+jMF2D.egg-info/dependency_links.txt
+jMF2D.egg-info/not-zip-safe
+jMF2D.egg-info/requires.txt
+jMF2D.egg-info/top_level.txt
+jMF2Dpy/__init__.py
+jMF2Dpy/jMF2D.py
+jMF2Dpy/utils.py
