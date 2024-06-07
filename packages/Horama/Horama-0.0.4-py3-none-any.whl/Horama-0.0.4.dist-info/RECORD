@@ -1,0 +1,17 @@
+horama/__init__.py,sha256=X1W27yQLU_Ya6KimNuDDP7xMkC6GAqgl8y5hwXSGOzo,458
+horama/common.py,sha256=D5laWBL1ji38Ss9MLbocGO-t2JzsJncEXsyiDh50u60,2505
+horama/fourier_fv.py,sha256=-durtsbKvVbF2tgMAgamAbVT-OB-6wzVQ2kE2HFa3oA,3078
+horama/losses.py,sha256=3hrRBRf2R90IaI2FQzuJQvaJS0u3vEgxWwQK_Bicl-s,585
+horama/maco_fv.py,sha256=OBN3Ht4AZMqUBrwl3W76eRXebgJfoH3TYdrJfe5Fivo,3419
+horama/plots.py,sha256=1Mw7FiLwAGvbTLdz1OPUHSV0-_kVBuQxXHJRzOrKc8I,1646
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/common.py,sha256=9e-6mD5lznKlBOFKxgURpUR3bWWOFmm1jWC2KXs0pnw,252
+tests/test_fourier.py,sha256=VoG1Fbr6NWUKVgYDAbdSxPAomYTA_g3t1gmnwbfusY0,452
+tests/test_maco.py,sha256=c_o7zspK89nC1UPe0Pfl9hGnHQQm1AjOruCEpMoVCk0,440
+tests/test_plots.py,sha256=JWCdRvogiygcOxJGdY5n-kXDXc3QJbDTutN7Ss9h9EE,1021
+tests/test_timm.py,sha256=MGA274cnxT_8Yj1xI3B4yg5HsGv0R9QZO0yaexLFHYg,1384
+Horama-0.0.4.dist-info/LICENSE,sha256=8JCWvAI-Rwu558hQQHZz_Rd0Czi6rzsxgOr8QQYj4XA,1065
+Horama-0.0.4.dist-info/METADATA,sha256=GRs9fIzRCSQOR3sGEcF-7S0vP11nYRGvQEZp-7dvbnQ,5011
+Horama-0.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+Horama-0.0.4.dist-info/top_level.txt,sha256=dC29rF5J1xZyJsuwM9nUjdyNi72xjn_eEkzS9avCy6o,13
+Horama-0.0.4.dist-info/RECORD,,
