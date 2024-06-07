@@ -1,0 +1,15 @@
+pdf_tools_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdf_tools_sdk/pdf-tools-license.md,sha256=WtmB2WD_H7-onj3PoG9W4f6GRqR2pNQlX3UW5PJ4Dh8,19534
+pdf_tools_sdk/py_ctypes.py,sha256=x5h4dr9ENwNYlvLWNMBbKGPDeZ-o7BuQ01d51VvNX9w,202183
+pdf_tools_sdk/streams.py,sha256=SYh8KEJDuuCqdzVqXV8yNWAVqQlfWGAMjFzW5BeJOEw,3339
+pdf_tools_sdk/utils.py,sha256=Z3uyXep8aPUPxk3SjkpVU-cwSiUBnFe88CD_Vo-yjiE,1491
+pdf_tools_sdk/lib/linux-x64/libPdfToolsSdk.so,sha256=VYxMeg3xvvLXGXkwAwJoVxXSaT1eup63H2HZJQn9QQg,31852056
+pdf_tools_sdk/lib/osx-arm64/libPdfToolsSdk.dylib,sha256=UPhPaqlzBW13snq6duTUjkArRa0846v3mNfwxWoJuZk,22480048
+pdf_tools_sdk/lib/osx-x64/libPdfToolsSdk.dylib,sha256=uwQrazfW35KLU8KpNKkD-dYuhpy-fbmxBo3W_KDFjLI,23492912
+pdf_tools_sdk/lib/win-x64/PdfToolsSdk.dll,sha256=sLXx4epRsElcPZw0U7n1OQFbbqtNO6EAbfit6OobeH0,25427168
+pdf_tools_sdk/lib/win-x86/PdfToolsSdk.dll,sha256=ub9o-eZgGumyGt12wj6pHeOI2QVO1U95F8pJOeMum1I,22473440
+pdf_tools_sdk-1.5.0.dev5.dist-info/METADATA,sha256=Tb4yCPz5MX-1qVwRTFA1I4u_w4ovcdBlXZ1zbAdjb8E,1515
+pdf_tools_sdk-1.5.0.dev5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pdf_tools_sdk-1.5.0.dev5.dist-info/pdf-tools-license.md,sha256=WtmB2WD_H7-onj3PoG9W4f6GRqR2pNQlX3UW5PJ4Dh8,19534
+pdf_tools_sdk-1.5.0.dev5.dist-info/top_level.txt,sha256=q85OedsTSXzbvnPy-o9f0b1CwVsZDr-dSGch_pDqaT4,14
+pdf_tools_sdk-1.5.0.dev5.dist-info/RECORD,,
