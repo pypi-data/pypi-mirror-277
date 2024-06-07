@@ -1,0 +1,2 @@
+[console_scripts]
+eeganotate = eegAudioAnotator.main:main
