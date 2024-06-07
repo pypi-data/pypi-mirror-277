@@ -1,0 +1,148 @@
+
+#===========================================================
+#            Copyright (C) 2023-present AyiinXd
+#===========================================================
+#||                                                       ||
+#||              _         _ _      __  __   _            ||
+#||             /   _   _(_|_)_ __  / /__| |           ||
+#||            / _ | | | | | | '_     _  | |           ||
+#||           / ___  |_| | | | | | |/   (_| |           ||
+#||          /_/   ___, |_|_|_| |_/_/___,_|           ||
+#||                  |___/                                ||
+#||                                                       ||
+#===========================================================
+# Appreciating the work of others is not detrimental to you
+#===========================================================
+#
+
+from io import BytesIO
+from typing import Any, Union, List, Optional
+
+from typegram.api import ayiin, functions
+from typegram.api.object import Object
+from typegram.api.utils import Int, Long, Int128, Int256, Bool, Bytes, String, Double, Vector
+
+
+
+class NotificationSoundLocal(Object):  # type: ignore
+    """Telegram API type.
+
+    Constructor of :obj:`~typegram.api.ayiin.NotificationSound`.
+
+    Details:
+        - Layer: ``181``
+        - ID: ``830B9AE4``
+
+title (``str``):
+                    N/A
+                
+        data (``str``):
+                    N/A
+                
+    Functions:
+        This object can be returned by 18 functions.
+
+        .. currentmodule:: typegram.api.functions
+
+        .. autosummary::
+            :nosignatures:
+
+            .X
+            .RpcDropAnswer
+            .Bool
+            .Authorization
+            .PeerNotifySettings
+            .User
+            .Vector<SecureValue>
+            .SecureValue
+            .Updates
+            .WallPaper
+            .Document
+            .Theme
+            .Vector<WallPaper>
+            .GlobalPrivacySettings
+            .EmojiList
+            .BusinessChatLink
+            .ReactionsNotifySettings
+            .Vector<User>
+            .Vector<Bool>
+            .Vector<int>
+            .Vector<ReceivedNotifyMessage>
+            .EncryptedChat
+            .Vector<long>
+            .MessageMedia
+            .ExportedChatInvite
+            .ChatInvite
+            .Vector<StickerSetCovered>
+            .EncryptedFile
+            .ChatOnlines
+            .EmojiKeywordsDifference
+            .Vector<EmojiLanguage>
+            .EmojiURL
+            .UrlAuthResult
+            .Vector<ReadParticipantDate>
+            .AttachMenuBots
+            .AttachMenuBotsBot
+            .WebViewResult
+            .SimpleWebViewResult
+            .WebViewMessageSent
+            .Vector<Document>
+            .AppWebViewResult
+            .OutboxReadDate
+            .Vector<FactCheck>
+            .Vector<FileHash>
+            .ExportedMessageLink
+            .DataJSON
+            .Vector<BotCommand>
+            .BotMenuButton
+            .Vector<PremiumGiftCodeOption>
+            .LangPackDifference
+            .Vector<LangPackString>
+            .Vector<LangPackLanguage>
+            .LangPackLanguage
+            .StatsGraph
+            .ExportedChatlistInvite
+            .Vector<Peer>
+            .ExportedStoryLink
+            .SmsJob
+            .ResPQ
+            .P_Q_inner_data
+            .BindAuthKeyInner
+            .Server_DH_Params
+            .Server_DH_inner_data
+            .Client_DH_Inner_Data
+            .Set_client_DH_params_answer
+    """
+
+    __slots__: List[str] = ["title", "data"]
+
+    ID = 0x830b9ae4
+    QUALNAME = "functions.types.NotificationSound"
+
+    def __init__(self, *, title: str, data: str) -> None:
+        
+                self.title = title  # string
+        
+                self.data = data  # string
+
+    @staticmethod
+    def read(b: BytesIO, *args: Any) -> "NotificationSoundLocal":
+        # No flags
+        
+        title = String.read(b)
+        
+        data = String.read(b)
+        
+        return NotificationSoundLocal(title=title, data=data)
+
+    def write(self, *args) -> bytes:
+        b = BytesIO()
+        b.write(Int(self.ID, False))
+
+        # No flags
+        
+        b.write(String(self.title))
+        
+        b.write(String(self.data))
+        
+        return b.getvalue()

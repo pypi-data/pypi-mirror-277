@@ -1,0 +1,129 @@
+
+#===========================================================
+#            Copyright (C) 2023-present AyiinXd
+#===========================================================
+#||                                                       ||
+#||              _         _ _      __  __   _            ||
+#||             /   _   _(_|_)_ __  / /__| |           ||
+#||            / _ | | | | | | '_     _  | |           ||
+#||           / ___  |_| | | | | | |/   (_| |           ||
+#||          /_/   ___, |_|_|_| |_/_/___,_|           ||
+#||                  |___/                                ||
+#||                                                       ||
+#===========================================================
+# Appreciating the work of others is not detrimental to you
+#===========================================================
+#
+
+from io import BytesIO
+from typing import Any, Union, List, Optional
+
+from typegram.api import ayiin, functions
+from typegram.api.object import Object
+from typegram.api.utils import Int, Long, Int128, Int256, Bool, Bytes, String, Double, Vector
+
+
+
+class GetHistory(Object):  # type: ignore
+    """Telegram API function.
+
+    Details:
+        - Layer: ``181``
+        - ID: ``4423E6C5``
+
+peer (:obj:`InputPeer<typegram.api.ayiin.InputPeer>`):
+                    N/A
+                
+        offset_id (``int`` ``32-bit``):
+                    N/A
+                
+        offset_date (``int`` ``32-bit``):
+                    N/A
+                
+        add_offset (``int`` ``32-bit``):
+                    N/A
+                
+        limit (``int`` ``32-bit``):
+                    N/A
+                
+        max_id (``int`` ``32-bit``):
+                    N/A
+                
+        min_id (``int`` ``32-bit``):
+                    N/A
+                
+        hash (``int`` ``64-bit``):
+                    N/A
+                
+    Returns:
+        :obj:`messages.Messages<typegram.api.ayiin.messages.Messages>`
+    """
+
+    __slots__: List[str] = ["peer", "offset_id", "offset_date", "add_offset", "limit", "max_id", "min_id", "hash"]
+
+    ID = 0x4423e6c5
+    QUALNAME = "functions.functionsmessages.Messages"
+
+    def __init__(self, *, peer: "ayiin.InputPeer", offset_id: int, offset_date: int, add_offset: int, limit: int, max_id: int, min_id: int, hash: int) -> None:
+        
+                self.peer = peer  # InputPeer
+        
+                self.offset_id = offset_id  # int
+        
+                self.offset_date = offset_date  # int
+        
+                self.add_offset = add_offset  # int
+        
+                self.limit = limit  # int
+        
+                self.max_id = max_id  # int
+        
+                self.min_id = min_id  # int
+        
+                self.hash = hash  # long
+
+    @staticmethod
+    def read(b: BytesIO, *args: Any) -> "GetHistory":
+        # No flags
+        
+        peer = Object.read(b)
+        
+        offset_id = Int.read(b)
+        
+        offset_date = Int.read(b)
+        
+        add_offset = Int.read(b)
+        
+        limit = Int.read(b)
+        
+        max_id = Int.read(b)
+        
+        min_id = Int.read(b)
+        
+        hash = Long.read(b)
+        
+        return GetHistory(peer=peer, offset_id=offset_id, offset_date=offset_date, add_offset=add_offset, limit=limit, max_id=max_id, min_id=min_id, hash=hash)
+
+    def write(self, *args) -> bytes:
+        b = BytesIO()
+        b.write(Int(self.ID, False))
+
+        # No flags
+        
+        b.write(self.peer.write())
+        
+        b.write(Int(self.offset_id))
+        
+        b.write(Int(self.offset_date))
+        
+        b.write(Int(self.add_offset))
+        
+        b.write(Int(self.limit))
+        
+        b.write(Int(self.max_id))
+        
+        b.write(Int(self.min_id))
+        
+        b.write(Long(self.hash))
+        
+        return b.getvalue()

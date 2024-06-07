@@ -1,0 +1,154 @@
+
+#===========================================================
+#            Copyright (C) 2023-present AyiinXd
+#===========================================================
+#||                                                       ||
+#||              _         _ _      __  __   _            ||
+#||             /   _   _(_|_)_ __  / /__| |           ||
+#||            / _ | | | | | | '_     _  | |           ||
+#||           / ___  |_| | | | | | |/   (_| |           ||
+#||          /_/   ___, |_|_|_| |_/_/___,_|           ||
+#||                  |___/                                ||
+#||                                                       ||
+#===========================================================
+# Appreciating the work of others is not detrimental to you
+#===========================================================
+#
+
+from io import BytesIO
+from typing import Any, Union, List, Optional
+
+from typegram.api import ayiin, functions
+from typegram.api.object import Object
+from typegram.api.utils import Int, Long, Int128, Int256, Bool, Bytes, String, Double, Vector
+
+
+
+class Username(Object):  # type: ignore
+    """Telegram API type.
+
+    Constructor of :obj:`~typegram.api.ayiin.Username`.
+
+    Details:
+        - Layer: ``181``
+        - ID: ``B4073647``
+
+username (``str``):
+                    N/A
+                
+        editable (``bool``, *optional*):
+                    N/A
+                
+        active (``bool``, *optional*):
+                    N/A
+                
+    Functions:
+        This object can be returned by 9 functions.
+
+        .. currentmodule:: typegram.api.functions
+
+        .. autosummary::
+            :nosignatures:
+
+            .X
+            .RpcDropAnswer
+            .Bool
+            .Authorization
+            .PeerNotifySettings
+            .User
+            .Vector<SecureValue>
+            .SecureValue
+            .Updates
+            .WallPaper
+            .Document
+            .Theme
+            .Vector<WallPaper>
+            .GlobalPrivacySettings
+            .EmojiList
+            .BusinessChatLink
+            .ReactionsNotifySettings
+            .Vector<User>
+            .Vector<Bool>
+            .Vector<int>
+            .Vector<ReceivedNotifyMessage>
+            .EncryptedChat
+            .Vector<long>
+            .MessageMedia
+            .ExportedChatInvite
+            .ChatInvite
+            .Vector<StickerSetCovered>
+            .EncryptedFile
+            .ChatOnlines
+            .EmojiKeywordsDifference
+            .Vector<EmojiLanguage>
+            .EmojiURL
+            .UrlAuthResult
+            .Vector<ReadParticipantDate>
+            .AttachMenuBots
+            .AttachMenuBotsBot
+            .WebViewResult
+            .SimpleWebViewResult
+            .WebViewMessageSent
+            .Vector<Document>
+            .AppWebViewResult
+            .OutboxReadDate
+            .Vector<FactCheck>
+            .Vector<FileHash>
+            .ExportedMessageLink
+            .DataJSON
+            .Vector<BotCommand>
+            .BotMenuButton
+            .Vector<PremiumGiftCodeOption>
+            .LangPackDifference
+            .Vector<LangPackString>
+            .Vector<LangPackLanguage>
+            .LangPackLanguage
+            .StatsGraph
+            .ExportedChatlistInvite
+            .Vector<Peer>
+            .ExportedStoryLink
+            .SmsJob
+            .ResPQ
+            .P_Q_inner_data
+            .BindAuthKeyInner
+            .Server_DH_Params
+            .Server_DH_inner_data
+            .Client_DH_Inner_Data
+            .Set_client_DH_params_answer
+    """
+
+    __slots__: List[str] = ["username", "editable", "active"]
+
+    ID = 0xb4073647
+    QUALNAME = "functions.types.Username"
+
+    def __init__(self, *, username: str, editable: Optional[bool] = None, active: Optional[bool] = None) -> None:
+        
+                self.username = username  # string
+        
+                self.editable = editable  # true
+        
+                self.active = active  # true
+
+    @staticmethod
+    def read(b: BytesIO, *args: Any) -> "Username":
+        
+        flags = Int.read(b)
+        
+        editable = True if flags & (1 << 0) else False
+        active = True if flags & (1 << 1) else False
+        username = String.read(b)
+        
+        return Username(username=username, editable=editable, active=active)
+
+    def write(self, *args) -> bytes:
+        b = BytesIO()
+        b.write(Int(self.ID, False))
+
+        flags = 0
+        
+        b.write(Int(flags))
+        
+        b.write(String(self.username))
+        
+        return b.getvalue()
