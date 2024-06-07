@@ -1,0 +1,9 @@
+README.md
+setup.py
+locaspy/__init__.py
+locaspy/locaspy.py
+locaspy.egg-info/PKG-INFO
+locaspy.egg-info/SOURCES.txt
+locaspy.egg-info/dependency_links.txt
+locaspy.egg-info/requires.txt
+locaspy.egg-info/top_level.txt

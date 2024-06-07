@@ -1,0 +1,16 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='locaspy',
+    version='0.1',
+    packages=find_packages(),
+    author='Fidal',
+    author_email='mrfidal@proton.me',
+    url='https://mrfidal.in/basic-pip-package/locaspy',
+    description='A tool for fetching location, weather, and map link based on IP address.',
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
+    install_requires=[
+        'requests',
+    ],
+)
