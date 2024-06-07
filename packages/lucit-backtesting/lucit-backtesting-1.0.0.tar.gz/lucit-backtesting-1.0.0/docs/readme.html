@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>lucit-backtesting - ‘backtesting.py’ maintained by LUCIT &#8212; lucit-backtesting 1.0.0 documentation</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=92fd9be5" />
+    <link rel="stylesheet" type="text/css" href="_static/pydoctheme.css?v=fdf8e9ae" />
+    
+    <script src="_static/documentation_options.js?v=6efca38a"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="lucit_backtesting package" href="lucit_backtesting.html" />
+    <link rel="prev" title="Welcome to lucit-backtesting’s documentation!" href="index.html" /><link rel="shortcut icon" type="image/png" href="_static/lucit.png" />
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    
+    <script
+        src='//eu.fw-cdn.com/10659511/361973.js'
+        chat='true'>
+    </script>
+    
+            <script type="text/javascript" src="_static/copybutton.js"></script>
+            <script type="text/javascript" src="_static/menu.js"></script> 
+  </head>
+<body>
+<div class="mobile-nav">
+    <input type="checkbox" id="menuToggler" class="toggler__input" aria-controls="navigation"
+           aria-pressed="false" aria-expanded="false" role="button" aria-label="Menu" />
+    <label for="menuToggler" class="toggler__label">
+        <span></span>
+    </label>
+    <nav class="nav-content" role="navigation">
+        <form role="search" class="search" action="search.html" method="get">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="search-icon">
+                <path fill-rule="nonzero"
+                        d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 001.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 00-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 005.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#444"></path>
+            </svg>
+            <input type="text" name="q" aria-label="Quick search"/>
+            <input type="submit" value="Go"/>
+        </form>
+    </nav>
+    <div class="menu-wrapper">
+        <nav class="menu" role="navigation" aria-label="main navigation">
+            <p class="logo">
+                <div style="text-align: center;">
+                    <a href="https://www.lucit.tech"><img src="https://www.lucit.tech/files/images/logos/LUCIT-LOGO.png"></a><br>
+                    <a href="https://shop.lucit.services/software/unicorn-binance-suite" style="font-size: 0.85em;font-weight: 900">Get a UNICORN Binance Suite License!</a><br>
+                    <br>
+                    <a href="https://github.com/LUCIT-Systems-and-Development" target="_blank" style="text-decoration:none;"><img src="_static/icons8-github-20.png"></a>
+                    <a href="https://fb.me/lucit.systems.and.development" target="_blank" style="text-decoration:none;"><img src="_static/icons8-facebook-20.png"></a>
+                    <a href="https://twitter.com/LUCIT_SysDev" target="_blank" style="text-decoration:none;"><img src="_static/icons8-twitter-20.png"></a>
+                    <a href="https://www.linkedin.com/company/lucit-systems-and-development" target="_blank" style="text-decoration:none;"><img src="_static/icons8-linkedin-20.png"></a>
+                    <a href="https://www.xing.com/pages/lucit-systems-and-development" target="_blank" style="text-decoration:none;"><img src="_static/icons8-xing-20.png"></a>
+                    <a href="https://medium.lucit.tech" target="_blank" style="text-decoration:none;"><img src="_static/icons8-medium-monogram-20.png"></a>
+                    <a href="https://www.youtube.com/channel/UCp57u8vaPqEWQTlfpYn-KnQ" target="_blank" style="text-decoration:none;"><img src="_static/icons8-youtube-20.png"></a>
+                </div>
+            </p>
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">lucit-backtesting - ‘backtesting.py’ maintained by LUCIT</a><ul>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#features">Features</a></li>
+<li><a class="reference internal" href="#bugs">Bugs</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="index.html"
+                          title="previous chapter">Welcome to lucit-backtesting’s documentation!</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="lucit_backtesting.html"
+                          title="next chapter">lucit_backtesting package</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/readme.md.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: block" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+<div role="note" aria-label="source code">
+    <h3>GitHub</h3>
+    <ul class="this-page-menu">
+      <li><a href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting">Show Source</a></li>
+      
+<li>
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting"
+   data-icon="octicon-star" data-show-count="true"
+   aria-label="Star LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Star</a>
+<br />
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/subscription"
+   data-icon="octicon-eye" data-show-count="true"
+   aria-label="Watch LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Watch</a>
+<br />
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/fork"
+   data-icon="octicon-repo-forked" data-show-count="true"
+   aria-label="Fork LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Fork</a>
+<br />
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/issues"
+   data-icon="octicon-issue-opened"
+   data-show-count="true" aria-label="Issue LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Issue</a>
+    
+</li>
+
+    </ul>
+</div>
+        </nav>
+    </div>
+</div>
+  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="lucit_backtesting.html" title="lucit_backtesting package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to lucit-backtesting’s documentation!"
+             accesskey="P">previous</a> |</li>
+              
+                  
+                  
+              <li><img src="_static/lucit.png" alt="LUCIT Logo"
+                       style="vertical-align: middle; margin-top: -1px"/></li>
+              <li><a href="https://docs.lucit.tech">Docs Index</a> | </li>
+              <li><a href="https://www.lucit.tech/lucit-backtesting.html">lucit-backtesting</a> &#187;</li>
+                  
+              
+              
+              <a href="index.html">Docs</a> &#187;
+              
+        <li class="nav-item nav-item-this"><a href="">lucit-backtesting - ‘backtesting.py’ maintained by LUCIT</a></li>
+                <li class="right">
+                    
+
+    <div class="inline-search" role="search">
+        <form class="inline-search" action="search.html" method="get">
+          <input placeholder="Quick search" aria-label="Quick search" type="text" name="q" />
+          <input type="submit" value="Go" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+                     |
+                </li>
+            
+      </ul>
+    </div>    
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <p><a class="reference external" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/"><img alt="" src="https://raw.githubusercontent.com/LUCIT-Systems-and-Development/lucit-backtesting/master/images/logo/lucit-backtesting.png" /></a></p>
+<section id="lucit-backtesting-backtesting-py-maintained-by-lucit">
+<h1>lucit-backtesting - ‘backtesting.py’ maintained by LUCIT<a class="headerlink" href="#lucit-backtesting-backtesting-py-maintained-by-lucit" title="Link to this heading">¶</a></h1>
+<p><a class="reference external" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/releases"><img alt="GitHub Release" src="https://img.shields.io/github/release/LUCIT-Systems-and-Development/lucit-backtesting.svg?label=github" /></a>
+<a class="reference external" href="https://pypi.org/project/lucit-backtesting/"><img alt="PyPi Release" src="https://img.shields.io/pypi/v/lucit-backtesting?color=blue" /></a>
+<a class="reference external" href="https://www.python.org/downloads/"><img alt="Supported Python Version" src="https://img.shields.io/pypi/pyversions/lucit_backtesting.svg" /></a>
+<a class="reference external" href="https://lucit-backtesting.docs.lucit.tech/license.html"><img alt="License" src="https://img.shields.io/badge/license-LSOSL-blue" /></a>
+<a class="reference external" href="https://pepy.tech/project/lucit-backtesting"><img alt="PyPi Downloads" src="https://pepy.tech/badge/lucit-backtesting" /></a>
+<a class="reference external" href="https://pepy.tech/project/lucit-backtesting"><img alt="PyPi Downloads" src="https://pepy.tech/badge/lucit-backtesting/month" /></a>
+<a class="reference external" href="https://pepy.tech/project/lucit-backtesting"><img alt="PyPi Downloads" src="https://pepy.tech/badge/lucit-backtesting/week" /></a>
+<a class="reference external" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/issues"><img alt="PyPI - Status" src="https://img.shields.io/pypi/status/unicorn_binance_local_depth_cache.svg" /></a>
+<a class="reference external" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/actions/workflows/codeql-analysis.yml"><img alt="CodeQL" src="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/actions/workflows/codeql-analysis.yml/badge.svg" /></a>
+<a class="reference external" href="https://lucit-backtesting.docs.lucit.tech/"><img alt="Read the Docs" src="https://img.shields.io/badge/read-%20docs-yellow" /></a>
+<a class="reference external" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting"><img alt="Github" src="https://img.shields.io/badge/source-github-cbc2c8" /></a>
+<a class="reference external" href="https://t.me/unicorndevs"><img alt="Telegram" src="https://img.shields.io/badge/community-telegram-41ab8c" /></a>
+<a class="reference external" href="https://www.lucit.tech/get-support.html"><img alt="Get Free Professional Support" src="https://img.shields.io/badge/chat-lucit%20support-004166" /></a>
+<a class="reference external" href="https://github.com/sponsors/kernc"><img alt="GitHub Sponsors" src="https://img.shields.io/github/sponsors/kernc?color=pink" /></a></p>
+<p>Backtest trading strategies with Python.</p>
+<p>Kudos to <em><strong>Zach Lûster</strong></em> for the original project <a class="reference external" href="https://github.com/kernc/backtesting.py"><code class="docutils literal notranslate"><span class="pre">kernc/backtesting.py</span></code></a>
+which he built and maintained for 5 years.</p>
+<p>We at <a class="reference external" href="https://www.lucit.tech">LUCIT</a> like to use <code class="docutils literal notranslate"><span class="pre">backtesting.py</span></code> with our customers in smaller projects.
+Unfortunately the project is missing important updates, and therefore we decided to fork the project and release new
+stable versions.</p>
+<p>We are happy to maintain <a class="reference external" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting">our forked repository</a>
+and take care of code reviews, pull requests and releases and hope for good support from the community!</p>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h2>
+<p>You can have either <code class="docutils literal notranslate"><span class="pre">backtesting.py</span></code> or <code class="docutils literal notranslate"><span class="pre">lucit-backtesting</span></code> installed, but not both!</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ pip uninstall backtesting
+$ pip install lucit-backtesting
+</pre></div>
+</div>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">backtesting</span> <span class="kn">import</span> <span class="n">Backtest</span><span class="p">,</span> <span class="n">Strategy</span>
+<span class="kn">from</span> <span class="nn">backtesting.lib</span> <span class="kn">import</span> <span class="n">crossover</span>
+
+<span class="kn">from</span> <span class="nn">backtesting.test</span> <span class="kn">import</span> <span class="n">SMA</span><span class="p">,</span> <span class="n">GOOG</span>
+
+
+<span class="k">class</span> <span class="nc">SmaCross</span><span class="p">(</span><span class="n">Strategy</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">init</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">price</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Close</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ma1</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="n">SMA</span><span class="p">,</span> <span class="n">price</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ma2</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="n">SMA</span><span class="p">,</span> <span class="n">price</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">next</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">crossover</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ma1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ma2</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">buy</span><span class="p">()</span>
+        <span class="k">elif</span> <span class="n">crossover</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ma2</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ma1</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sell</span><span class="p">()</span>
+
+
+<span class="n">bt</span> <span class="o">=</span> <span class="n">Backtest</span><span class="p">(</span><span class="n">GOOG</span><span class="p">,</span> <span class="n">SmaCross</span><span class="p">,</span> <span class="n">commission</span><span class="o">=</span><span class="mf">.002</span><span class="p">,</span>
+              <span class="n">exclusive_orders</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">stats</span> <span class="o">=</span> <span class="n">bt</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+<span class="n">bt</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Results in:</p>
+<p><a class="reference external" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting"><img alt="Backtesting HTML result" src="https://raw.githubusercontent.com/LUCIT-Systems-and-Development/lucit-backtesting/master/images/screenshot_html_result.png" /></a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Start                     2004-08-19 00:00:00
+End                       2013-03-01 00:00:00
+Duration                   3116 days 00:00:00
+Exposure Time [%]                       94.27
+Equity Final [$]                     68935.12
+Equity Peak [$]                      68991.22
+Return [%]                             589.35
+Buy &amp; Hold Return [%]                  703.46
+Return (Ann.) [%]                       25.42
+Volatility (Ann.) [%]                   38.43
+Sharpe Ratio                             0.66
+Sortino Ratio                            1.30
+Calmar Ratio                             0.77
+Max. Drawdown [%]                      -33.08
+Avg. Drawdown [%]                       -5.58
+Max. Drawdown Duration      688 days 00:00:00
+Avg. Drawdown Duration       41 days 00:00:00
+# Trades                                   93
+Win Rate [%]                            53.76
+Best Trade [%]                          57.12
+Worst Trade [%]                        -16.63
+Avg. Trade [%]                           1.96
+Max. Trade Duration         121 days 00:00:00
+Avg. Trade Duration          32 days 00:00:00
+Profit Factor                            2.13
+Expectancy [%]                           6.91
+SQN                                      1.78
+Kelly Criterion                        0.6134
+_strategy              SmaCross(n1=10, n2=20)
+_equity_curve                          Equ...
+_trades                       Size  EntryB...
+dtype: object
+</pre></div>
+</div>
+</section>
+<section id="features">
+<h2>Features<a class="headerlink" href="#features" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Simple, well-documented API</p></li>
+<li><p>Blazing fast execution</p></li>
+<li><p>Built-in optimizer</p></li>
+<li><p>Library of composable base strategies and utilities</p></li>
+<li><p>Indicator-library-agnostic</p></li>
+<li><p>Supports <em>any</em> financial instrument with candlestick data</p></li>
+<li><p>Detailed results</p></li>
+<li><p>Interactive visualizations</p></li>
+</ul>
+<p><img alt="xkcd.com/1570" src="https://imgs.xkcd.com/comics/engineer_syllogism.png" /></p>
+</section>
+<section id="bugs">
+<h2>Bugs<a class="headerlink" href="#bugs" title="Link to this heading">¶</a></h2>
+<p>Before <a class="reference external" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/issues">reporting bugs</a> or posting to the
+<a class="reference external" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/discussions">discussion board</a>,
+please read <a class="reference external" href="https://lucit-backtesting.docs.lucit.tech/contributing.html">contributing guidelines</a>,
+particularly the section about crafting useful bug reports and <code class="docutils literal notranslate"><span class="pre">```</span></code>-fencing your code. We thank you!</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo">
+                <div style="text-align: center;">
+                    <a href="https://www.lucit.tech"><img src="https://www.lucit.tech/files/images/logos/LUCIT-LOGO.png"></a><br>
+                    <a href="https://shop.lucit.services/software/unicorn-binance-suite" style="font-size: 0.85em;font-weight: 900">Get a UNICORN Binance Suite License!</a><br>
+                    <br>
+                    <a href="https://github.com/LUCIT-Systems-and-Development" target="_blank" style="text-decoration:none;"><img src="_static/icons8-github-20.png"></a>
+                    <a href="https://fb.me/lucit.systems.and.development" target="_blank" style="text-decoration:none;"><img src="_static/icons8-facebook-20.png"></a>
+                    <a href="https://twitter.com/LUCIT_SysDev" target="_blank" style="text-decoration:none;"><img src="_static/icons8-twitter-20.png"></a>
+                    <a href="https://www.linkedin.com/company/lucit-systems-and-development" target="_blank" style="text-decoration:none;"><img src="_static/icons8-linkedin-20.png"></a>
+                    <a href="https://www.xing.com/pages/lucit-systems-and-development" target="_blank" style="text-decoration:none;"><img src="_static/icons8-xing-20.png"></a>
+                    <a href="https://medium.lucit.tech" target="_blank" style="text-decoration:none;"><img src="_static/icons8-medium-monogram-20.png"></a>
+                    <a href="https://www.youtube.com/channel/UCp57u8vaPqEWQTlfpYn-KnQ" target="_blank" style="text-decoration:none;"><img src="_static/icons8-youtube-20.png"></a>
+                </div>
+            </p>
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">lucit-backtesting - ‘backtesting.py’ maintained by LUCIT</a><ul>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#features">Features</a></li>
+<li><a class="reference internal" href="#bugs">Bugs</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="index.html"
+                          title="previous chapter">Welcome to lucit-backtesting’s documentation!</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="lucit_backtesting.html"
+                          title="next chapter">lucit_backtesting package</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/readme.md.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: block" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+<div role="note" aria-label="source code">
+    <h3>GitHub</h3>
+    <ul class="this-page-menu">
+      <li><a href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting">Show Source</a></li>
+      
+<li>
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting"
+   data-icon="octicon-star" data-show-count="true"
+   aria-label="Star LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Star</a>
+<br />
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/subscription"
+   data-icon="octicon-eye" data-show-count="true"
+   aria-label="Watch LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Watch</a>
+<br />
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/fork"
+   data-icon="octicon-repo-forked" data-show-count="true"
+   aria-label="Fork LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Fork</a>
+<br />
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/issues"
+   data-icon="octicon-issue-opened"
+   data-show-count="true" aria-label="Issue LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Issue</a>
+    
+</li>
+
+    </ul>
+</div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="lucit_backtesting.html" title="lucit_backtesting package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to lucit-backtesting’s documentation!"
+             >previous</a> |</li>
+              
+                  
+                  
+              <li><img src="_static/lucit.png" alt="LUCIT Logo"
+                       style="vertical-align: middle; margin-top: -1px"/></li>
+              <li><a href="https://docs.lucit.tech">Docs Index</a> | </li>
+              <li><a href="https://www.lucit.tech/lucit-backtesting.html">lucit-backtesting</a> &#187;</li>
+                  
+              
+              
+              <a href="index.html">Docs</a> &#187;
+              
+        <li class="nav-item nav-item-this"><a href="">lucit-backtesting - ‘backtesting.py’ maintained by LUCIT</a></li>
+                <li class="right">
+                    
+
+    <div class="inline-search" role="search">
+        <form class="inline-search" action="search.html" method="get">
+          <input placeholder="Quick search" aria-label="Quick search" type="text" name="q" />
+          <input type="submit" value="Go" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+                     |
+                </li>
+            
+      </ul>
+    </div>  
+    <div class="footer">
+    <a href="https://docs.lucit.tech">Index of all LUCIT Software Documentation</a><br />
+    &copy; <a href="/license.html">Copyright</a> 2024-2024, LUCIT Systems and Development. All Rights Reserved..
+    See <a href="/license.html">License</a> for more information.<br />
+    Last updated on Jun 06 2024 at 23:27 (CET).
+    <a href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/issues/new/choose">Found a bug</a>?
+    <br />
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+        with <a href="https://github.com/LUCIT-Systems-and-Development/python-docs-theme-lucit">python-docs-theme-lucit</a>
+        by <a href="https://www.lucit.tech">LUCIT Systems and Development</a>.
+    </div>
+    
+    <img referrerpolicy="no-referrer-when-downgrade" src="https://webmon.lucit.services/matomo.php?idsite=11&amp;rec=1" style="border:0" alt="" />
+    
+
+  </body>
+</html>

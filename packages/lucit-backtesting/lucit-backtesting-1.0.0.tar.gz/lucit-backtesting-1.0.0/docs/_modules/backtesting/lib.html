@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>backtesting.lib &#8212; lucit-backtesting 0.4.4 documentation</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=92fd9be5" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pydoctheme.css?v=fdf8e9ae" />
+    
+    <script src="../../_static/documentation_options.js?v=6efca38a"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /><link rel="shortcut icon" type="image/png" href="../../_static/lucit.png" />
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    
+    <script
+        src='//eu.fw-cdn.com/10659511/361973.js'
+        chat='true'>
+    </script>
+    
+            <script type="text/javascript" src="../../_static/copybutton.js"></script>
+            <script type="text/javascript" src="../../_static/menu.js"></script> 
+  </head>
+<body>
+<div class="mobile-nav">
+    <input type="checkbox" id="menuToggler" class="toggler__input" aria-controls="navigation"
+           aria-pressed="false" aria-expanded="false" role="button" aria-label="Menu" />
+    <label for="menuToggler" class="toggler__label">
+        <span></span>
+    </label>
+    <nav class="nav-content" role="navigation">
+        <form role="search" class="search" action="../../search.html" method="get">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="search-icon">
+                <path fill-rule="nonzero"
+                        d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 001.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 00-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 005.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#444"></path>
+            </svg>
+            <input type="text" name="q" aria-label="Quick search"/>
+            <input type="submit" value="Go"/>
+        </form>
+    </nav>
+    <div class="menu-wrapper">
+        <nav class="menu" role="navigation" aria-label="main navigation">
+            <p class="logo">
+                <div style="text-align: center;">
+                    <a href="https://www.lucit.tech"><img src="https://www.lucit.tech/files/images/logos/LUCIT-LOGO.png"></a><br>
+                    <a href="https://shop.lucit.services/software/unicorn-binance-suite" style="font-size: 0.85em;font-weight: 900">Get a UNICORN Binance Suite License!</a><br>
+                    <br>
+                    <a href="https://github.com/LUCIT-Systems-and-Development" target="_blank" style="text-decoration:none;"><img src="../../_static/icons8-github-20.png"></a>
+                    <a href="https://fb.me/lucit.systems.and.development" target="_blank" style="text-decoration:none;"><img src="../../_static/icons8-facebook-20.png"></a>
+                    <a href="https://twitter.com/LUCIT_SysDev" target="_blank" style="text-decoration:none;"><img src="../../_static/icons8-twitter-20.png"></a>
+                    <a href="https://www.linkedin.com/company/lucit-systems-and-development" target="_blank" style="text-decoration:none;"><img src="../../_static/icons8-linkedin-20.png"></a>
+                    <a href="https://www.xing.com/pages/lucit-systems-and-development" target="_blank" style="text-decoration:none;"><img src="../../_static/icons8-xing-20.png"></a>
+                    <a href="https://medium.lucit.tech" target="_blank" style="text-decoration:none;"><img src="../../_static/icons8-medium-monogram-20.png"></a>
+                    <a href="https://www.youtube.com/channel/UCp57u8vaPqEWQTlfpYn-KnQ" target="_blank" style="text-decoration:none;"><img src="../../_static/icons8-youtube-20.png"></a>
+                </div>
+            </p>
+<div id="searchbox" style="display: block" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+<div role="note" aria-label="source code">
+    <h3>GitHub</h3>
+    <ul class="this-page-menu">
+      <li><a href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting">Show Source</a></li>
+      
+<li>
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting"
+   data-icon="octicon-star" data-show-count="true"
+   aria-label="Star LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Star</a>
+<br />
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/subscription"
+   data-icon="octicon-eye" data-show-count="true"
+   aria-label="Watch LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Watch</a>
+<br />
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/fork"
+   data-icon="octicon-repo-forked" data-show-count="true"
+   aria-label="Fork LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Fork</a>
+<br />
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/issues"
+   data-icon="octicon-issue-opened"
+   data-show-count="true" aria-label="Issue LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Issue</a>
+    
+</li>
+
+    </ul>
+</div>
+        </nav>
+    </div>
+</div>
+  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+              
+                  
+                  
+              <li><img src="../../_static/lucit.png" alt="LUCIT Logo"
+                       style="vertical-align: middle; margin-top: -1px"/></li>
+              <li><a href="https://docs.lucit.tech">Docs Index</a> | </li>
+              <li><a href="https://www.lucit.tech/lucit-backtesting.html">lucit-backtesting</a> &#187;</li>
+                  
+              
+              
+              <a href="../../index.html">Docs</a> &#187;
+              
+          <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">backtesting.lib</a></li>
+                <li class="right">
+                    
+
+    <div class="inline-search" role="search">
+        <form class="inline-search" action="../../search.html" method="get">
+          <input placeholder="Quick search" aria-label="Quick search" type="text" name="q" />
+          <input type="submit" value="Go" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+                     |
+                </li>
+            
+      </ul>
+    </div>    
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for backtesting.lib</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Collection of common building blocks, helper auxiliary functions and</span>
+<span class="sd">composable strategy classes for reuse.</span>
+
+<span class="sd">Intended for simple missing-link procedures, not reinventing</span>
+<span class="sd">of better-suited, state-of-the-art, fast libraries,</span>
+<span class="sd">such as TA-Lib, Tulipy, PyAlgoTrade, NumPy, SciPy ...</span>
+
+<span class="sd">Please raise ideas for additions to this collection on the [issue tracker].</span>
+
+<span class="sd">[issue tracker]: https://github.com/kernc/backtesting.py</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
+<span class="kn">from</span> <span class="nn">inspect</span> <span class="kn">import</span> <span class="n">currentframe</span>
+<span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">compress</span>
+<span class="kn">from</span> <span class="nn">numbers</span> <span class="kn">import</span> <span class="n">Number</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Callable</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Sequence</span><span class="p">,</span> <span class="n">Union</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="kn">from</span> <span class="nn">._plotting</span> <span class="kn">import</span> <span class="n">plot_heatmaps</span> <span class="k">as</span> <span class="n">_plot_heatmaps</span>
+<span class="kn">from</span> <span class="nn">._stats</span> <span class="kn">import</span> <span class="n">compute_stats</span> <span class="k">as</span> <span class="n">_compute_stats</span>
+<span class="kn">from</span> <span class="nn">._util</span> <span class="kn">import</span> <span class="n">_Array</span><span class="p">,</span> <span class="n">_as_str</span>
+<span class="kn">from</span> <span class="nn">.backtesting</span> <span class="kn">import</span> <span class="n">Strategy</span>
+
+<span class="n">__pdoc__</span> <span class="o">=</span> <span class="p">{}</span>
+
+
+<span class="n">OHLCV_AGG</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">((</span>
+    <span class="p">(</span><span class="s1">&#39;Open&#39;</span><span class="p">,</span> <span class="s1">&#39;first&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;High&#39;</span><span class="p">,</span> <span class="s1">&#39;max&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;Low&#39;</span><span class="p">,</span> <span class="s1">&#39;min&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;Close&#39;</span><span class="p">,</span> <span class="s1">&#39;last&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;Volume&#39;</span><span class="p">,</span> <span class="s1">&#39;sum&#39;</span><span class="p">),</span>
+<span class="p">))</span>
+<span class="sd">&quot;&quot;&quot;Dictionary of rules for aggregating resampled OHLCV data frames,</span>
+<span class="sd">e.g.</span>
+
+<span class="sd">    df.resample(&#39;4H&#39;, label=&#39;right&#39;).agg(OHLCV_AGG).dropna()</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="n">TRADES_AGG</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">((</span>
+    <span class="p">(</span><span class="s1">&#39;Size&#39;</span><span class="p">,</span> <span class="s1">&#39;sum&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;EntryBar&#39;</span><span class="p">,</span> <span class="s1">&#39;first&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;ExitBar&#39;</span><span class="p">,</span> <span class="s1">&#39;last&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;EntryPrice&#39;</span><span class="p">,</span> <span class="s1">&#39;mean&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;ExitPrice&#39;</span><span class="p">,</span> <span class="s1">&#39;mean&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;PnL&#39;</span><span class="p">,</span> <span class="s1">&#39;sum&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;ReturnPct&#39;</span><span class="p">,</span> <span class="s1">&#39;mean&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;EntryTime&#39;</span><span class="p">,</span> <span class="s1">&#39;first&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;ExitTime&#39;</span><span class="p">,</span> <span class="s1">&#39;last&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;Duration&#39;</span><span class="p">,</span> <span class="s1">&#39;sum&#39;</span><span class="p">),</span>
+<span class="p">))</span>
+<span class="sd">&quot;&quot;&quot;Dictionary of rules for aggregating resampled trades data,</span>
+<span class="sd">e.g.</span>
+
+<span class="sd">    stats[&#39;_trades&#39;].resample(&#39;1D&#39;, on=&#39;ExitTime&#39;,</span>
+<span class="sd">                              label=&#39;right&#39;).agg(TRADES_AGG)</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="n">_EQUITY_AGG</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Equity&#39;</span><span class="p">:</span> <span class="s1">&#39;last&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;DrawdownPct&#39;</span><span class="p">:</span> <span class="s1">&#39;max&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;DrawdownDuration&#39;</span><span class="p">:</span> <span class="s1">&#39;max&#39;</span><span class="p">,</span>
+<span class="p">}</span>
+
+
+<div class="viewcode-block" id="barssince">
+<a class="viewcode-back" href="../../lucit_backtesting.html#backtesting.lib.barssince">[docs]</a>
+<span class="k">def</span> <span class="nf">barssince</span><span class="p">(</span><span class="n">condition</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span> <span class="n">default</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Return the number of bars since `condition` sequence was last `True`,</span>
+<span class="sd">    or if never, return `default`.</span>
+
+<span class="sd">        &gt;&gt;&gt; barssince(self.data.Close &gt; self.data.Open)</span>
+<span class="sd">        3</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="nb">next</span><span class="p">(</span><span class="n">compress</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">condition</span><span class="p">)),</span> <span class="nb">reversed</span><span class="p">(</span><span class="n">condition</span><span class="p">)),</span> <span class="n">default</span><span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="cross">
+<a class="viewcode-back" href="../../lucit_backtesting.html#backtesting.lib.cross">[docs]</a>
+<span class="k">def</span> <span class="nf">cross</span><span class="p">(</span><span class="n">series1</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">,</span> <span class="n">series2</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Return `True` if `series1` and `series2` just crossed</span>
+<span class="sd">    (above or below) each other.</span>
+
+<span class="sd">        &gt;&gt;&gt; cross(self.data.Close, self.sma)</span>
+<span class="sd">        True</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">crossover</span><span class="p">(</span><span class="n">series1</span><span class="p">,</span> <span class="n">series2</span><span class="p">)</span> <span class="ow">or</span> <span class="n">crossover</span><span class="p">(</span><span class="n">series2</span><span class="p">,</span> <span class="n">series1</span><span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="crossover">
+<a class="viewcode-back" href="../../lucit_backtesting.html#backtesting.lib.crossover">[docs]</a>
+<span class="k">def</span> <span class="nf">crossover</span><span class="p">(</span><span class="n">series1</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">,</span> <span class="n">series2</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Return `True` if `series1` just crossed over (above)</span>
+<span class="sd">    `series2`.</span>
+
+<span class="sd">        &gt;&gt;&gt; crossover(self.data.Close, self.sma)</span>
+<span class="sd">        True</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">series1</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">series1</span><span class="o">.</span><span class="n">values</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">series1</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">)</span> <span class="k">else</span>
+        <span class="p">(</span><span class="n">series1</span><span class="p">,</span> <span class="n">series1</span><span class="p">)</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">series1</span><span class="p">,</span> <span class="n">Number</span><span class="p">)</span> <span class="k">else</span>
+        <span class="n">series1</span><span class="p">)</span>
+    <span class="n">series2</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">series2</span><span class="o">.</span><span class="n">values</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">series2</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">)</span> <span class="k">else</span>
+        <span class="p">(</span><span class="n">series2</span><span class="p">,</span> <span class="n">series2</span><span class="p">)</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">series2</span><span class="p">,</span> <span class="n">Number</span><span class="p">)</span> <span class="k">else</span>
+        <span class="n">series2</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">series1</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">series2</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="ow">and</span> <span class="n">series1</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">series2</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span></div>
+
+
+
+<div class="viewcode-block" id="plot_heatmaps">
+<a class="viewcode-back" href="../../lucit_backtesting.html#backtesting.lib.plot_heatmaps">[docs]</a>
+<span class="k">def</span> <span class="nf">plot_heatmaps</span><span class="p">(</span><span class="n">heatmap</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">,</span>
+                  <span class="n">agg</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Callable</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;max&#39;</span><span class="p">,</span>
+                  <span class="o">*</span><span class="p">,</span>
+                  <span class="n">ncols</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+                  <span class="n">plot_width</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1200</span><span class="p">,</span>
+                  <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+                  <span class="n">open_browser</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Plots a grid of heatmaps, one for every pair of parameters in `heatmap`.</span>
+
+<span class="sd">    `heatmap` is a Series as returned by</span>
+<span class="sd">    `backtesting.backtesting.Backtest.optimize` when its parameter</span>
+<span class="sd">    `return_heatmap=True`.</span>
+
+<span class="sd">    When projecting the n-dimensional heatmap onto 2D, the values are</span>
+<span class="sd">    aggregated by &#39;max&#39; function by default. This can be tweaked</span>
+<span class="sd">    with `agg` parameter, which accepts any argument pandas knows</span>
+<span class="sd">    how to aggregate by.</span>
+
+<span class="sd">    [plot_objective]: \</span>
+<span class="sd">        https://scikit-optimize.github.io/stable/modules/plots.html#plot-objective</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># todo:</span>
+    <span class="c1">#         Lay heatmaps out lower-triangular instead of in a simple grid.</span>
+    <span class="c1">#         Like [`skopt.plots.plot_objective()`][plot_objective] does.</span>
+    <span class="k">return</span> <span class="n">_plot_heatmaps</span><span class="p">(</span><span class="n">heatmap</span><span class="p">,</span> <span class="n">agg</span><span class="p">,</span> <span class="n">ncols</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">plot_width</span><span class="p">,</span> <span class="n">open_browser</span><span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="quantile">
+<a class="viewcode-back" href="../../lucit_backtesting.html#backtesting.lib.quantile">[docs]</a>
+<span class="k">def</span> <span class="nf">quantile</span><span class="p">(</span><span class="n">series</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">,</span> <span class="n">quantile</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    If `quantile` is `None`, return the quantile _rank_ of the last</span>
+<span class="sd">    value of `series` wrt former series values.</span>
+
+<span class="sd">    If `quantile` is a value between 0 and 1, return the _value_ of</span>
+<span class="sd">    `series` at this quantile. If used to working with percentiles, just</span>
+<span class="sd">    divide your percentile amount with 100 to obtain quantiles.</span>
+
+<span class="sd">        &gt;&gt;&gt; quantile(self.data.Close[-20:], .1)</span>
+<span class="sd">        162.130</span>
+<span class="sd">        &gt;&gt;&gt; quantile(self.data.Close)</span>
+<span class="sd">        0.13</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">quantile</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">last</span><span class="p">,</span> <span class="n">series</span> <span class="o">=</span> <span class="n">series</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">series</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">series</span> <span class="o">&lt;</span> <span class="n">last</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+    <span class="k">assert</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">quantile</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;quantile must be within [0, 1]&quot;</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">nanpercentile</span><span class="p">(</span><span class="n">series</span><span class="p">,</span> <span class="n">quantile</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="compute_stats">
+<a class="viewcode-back" href="../../lucit_backtesting.html#backtesting.lib.compute_stats">[docs]</a>
+<span class="k">def</span> <span class="nf">compute_stats</span><span class="p">(</span>
+        <span class="o">*</span><span class="p">,</span>
+        <span class="n">stats</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">,</span>
+        <span class="n">data</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span>
+        <span class="n">trades</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">risk_free_rate</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    (Re-)compute strategy performance metrics.</span>
+
+<span class="sd">    `stats` is the statistics series as returned by `backtesting.backtesting.Backtest.run()`.</span>
+<span class="sd">    `data` is OHLC data as passed to the `backtesting.backtesting.Backtest`</span>
+<span class="sd">    the `stats` were obtained in.</span>
+<span class="sd">    `trades` can be a dataframe subset of `stats._trades` (e.g. only long trades).</span>
+<span class="sd">    You can also tune `risk_free_rate`, used in calculation of Sharpe and Sortino ratios.</span>
+
+<span class="sd">        &gt;&gt;&gt; stats = Backtest(GOOG, MyStrategy).run()</span>
+<span class="sd">        &gt;&gt;&gt; only_long_trades = stats._trades[stats._trades.Size &gt; 0]</span>
+<span class="sd">        &gt;&gt;&gt; long_stats = compute_stats(stats=stats, trades=only_long_trades,</span>
+<span class="sd">        ...                            data=GOOG, risk_free_rate=.02)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">equity</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">_equity_curve</span><span class="o">.</span><span class="n">Equity</span>
+    <span class="k">if</span> <span class="n">trades</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">trades</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">_trades</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># XXX: Is this buggy?</span>
+        <span class="n">equity</span> <span class="o">=</span> <span class="n">equity</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="n">equity</span><span class="p">[:]</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">_equity_curve</span><span class="o">.</span><span class="n">Equity</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">trades</span><span class="o">.</span><span class="n">itertuples</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+            <span class="n">equity</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">t</span><span class="o">.</span><span class="n">EntryBar</span><span class="p">:]</span> <span class="o">+=</span> <span class="n">t</span><span class="o">.</span><span class="n">PnL</span>
+    <span class="k">return</span> <span class="n">_compute_stats</span><span class="p">(</span><span class="n">trades</span><span class="o">=</span><span class="n">trades</span><span class="p">,</span> <span class="n">equity</span><span class="o">=</span><span class="n">equity</span><span class="p">,</span> <span class="n">ohlc_data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
+                          <span class="n">risk_free_rate</span><span class="o">=</span><span class="n">risk_free_rate</span><span class="p">,</span> <span class="n">strategy_instance</span><span class="o">=</span><span class="n">stats</span><span class="o">.</span><span class="n">_strategy</span><span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="resample_apply">
+<a class="viewcode-back" href="../../lucit_backtesting.html#backtesting.lib.resample_apply">[docs]</a>
+<span class="k">def</span> <span class="nf">resample_apply</span><span class="p">(</span><span class="n">rule</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+                   <span class="n">func</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">Sequence</span><span class="p">]],</span>
+                   <span class="n">series</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> <span class="n">_Array</span><span class="p">],</span>
+                   <span class="o">*</span><span class="n">args</span><span class="p">,</span>
+                   <span class="n">agg</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">dict</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                   <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Apply `func` (such as an indicator) to `series`, resampled to</span>
+<span class="sd">    a time frame specified by `rule`. When called from inside</span>
+<span class="sd">    `backtesting.backtesting.Strategy.init`,</span>
+<span class="sd">    the result (returned) series will be automatically wrapped in</span>
+<span class="sd">    `backtesting.backtesting.Strategy.I`</span>
+<span class="sd">    wrapper method.</span>
+
+<span class="sd">    `rule` is a valid [Pandas offset string] indicating</span>
+<span class="sd">    a time frame to resample `series` to.</span>
+
+<span class="sd">    [Pandas offset string]: http://pandas.pydata.org/pandas-docs/stable/timeseries.html#offset-aliases</span>
+
+<span class="sd">    `func` is the indicator function to apply on the resampled series.</span>
+
+<span class="sd">    `series` is a data series (or array), such as any of the</span>
+<span class="sd">    `backtesting.backtesting.Strategy.data` series. Due to pandas</span>
+<span class="sd">    resampling limitations, this only works when input series</span>
+<span class="sd">    has a datetime index.</span>
+
+<span class="sd">    `agg` is the aggregation function to use on resampled groups of data.</span>
+<span class="sd">    Valid values are anything accepted by `pandas/resample/.agg()`.</span>
+<span class="sd">    Default value for dataframe input is `OHLCV_AGG` dictionary.</span>
+<span class="sd">    Default value for series input is the appropriate entry from `OHLCV_AGG`</span>
+<span class="sd">    if series has a matching name, or otherwise the value `&quot;last&quot;`,</span>
+<span class="sd">    which is suitable for closing prices,</span>
+<span class="sd">    but you might prefer another (e.g. `&quot;max&quot;` for peaks, or similar).</span>
+
+<span class="sd">    Finally, any `*args` and `**kwargs` that are not already eaten by</span>
+<span class="sd">    implicit `backtesting.backtesting.Strategy.I` call</span>
+<span class="sd">    are passed to `func`.</span>
+
+<span class="sd">    For example, if we have a typical moving average function</span>
+<span class="sd">    `SMA(values, lookback_period)`, _hourly_ data source, and need to</span>
+<span class="sd">    apply the moving average MA(10) on a _daily_ time frame,</span>
+<span class="sd">    but don&#39;t want to plot the resulting indicator, we can do:</span>
+
+<span class="sd">    .. code-block:: python</span>
+
+<span class="sd">        class System(Strategy):</span>
+<span class="sd">            def init(self):</span>
+<span class="sd">                self.sma = resample_apply(</span>
+<span class="sd">                    &#39;D&#39;, SMA, self.data.Close, 10, plot=False)</span>
+
+<span class="sd">    The above short snippet is roughly equivalent to:</span>
+
+<span class="sd">    .. code-block:: python</span>
+
+<span class="sd">        class System(Strategy):</span>
+<span class="sd">            def init(self):</span>
+<span class="sd">                # Strategy exposes `self.data` as raw NumPy arrays.</span>
+<span class="sd">                # Let&#39;s convert closing prices back to pandas Series.</span>
+<span class="sd">                close = self.data.Close.s</span>
+
+<span class="sd">                # Resample to daily resolution. Aggregate groups</span>
+<span class="sd">                # using their last value (i.e. closing price at the end</span>
+<span class="sd">                # of the day). Notice `label=&#39;right&#39;`. If it were set to</span>
+<span class="sd">                # &#39;left&#39; (default), the strategy would exhibit</span>
+<span class="sd">                # look-ahead bias.</span>
+<span class="sd">                daily = close.resample(&#39;D&#39;, label=&#39;right&#39;).agg(&#39;last&#39;)</span>
+
+<span class="sd">                # We apply SMA(10) to daily close prices,</span>
+<span class="sd">                # then reindex it back to original hourly index,</span>
+<span class="sd">                # forward-filling the missing values in each day.</span>
+<span class="sd">                # We make a separate function that returns the final</span>
+<span class="sd">                # indicator array.</span>
+<span class="sd">                def SMA(series, n):</span>
+<span class="sd">                    from backtesting.test import SMA</span>
+<span class="sd">                    return SMA(series, n).reindex(close.index).ffill()</span>
+
+<span class="sd">                # The result equivalent to the short example above:</span>
+<span class="sd">                self.sma = self.I(SMA, daily, 10, plot=False)</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">func</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">*</span><span class="n">_</span><span class="p">,</span> <span class="o">**</span><span class="n">__</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">x</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">series</span><span class="p">,</span> <span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">)):</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">series</span><span class="p">,</span> <span class="n">_Array</span><span class="p">),</span> \
+            <span class="s1">&#39;resample_apply() takes either a `pd.Series`, `pd.DataFrame`, &#39;</span> \
+            <span class="s1">&#39;or a `Strategy.data.*` array&#39;</span>
+        <span class="n">series</span> <span class="o">=</span> <span class="n">series</span><span class="o">.</span><span class="n">s</span>
+
+    <span class="k">if</span> <span class="n">agg</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">agg</span> <span class="o">=</span> <span class="n">OHLCV_AGG</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">series</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">),</span> <span class="s1">&#39;last&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">series</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">):</span>
+            <span class="n">agg</span> <span class="o">=</span> <span class="p">{</span><span class="n">column</span><span class="p">:</span> <span class="n">OHLCV_AGG</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">column</span><span class="p">,</span> <span class="s1">&#39;last&#39;</span><span class="p">)</span>
+                   <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">series</span><span class="o">.</span><span class="n">columns</span><span class="p">}</span>
+
+    <span class="n">resampled</span> <span class="o">=</span> <span class="n">series</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">rule</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="n">agg</span><span class="p">)</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+    <span class="n">resampled</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">_as_str</span><span class="p">(</span><span class="n">series</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;[&#39;</span> <span class="o">+</span> <span class="n">rule</span> <span class="o">+</span> <span class="s1">&#39;]&#39;</span>
+
+    <span class="c1"># Check first few stack frames if we are being called from</span>
+    <span class="c1"># inside Strategy.init, and if so, extract Strategy.I wrapper.</span>
+    <span class="n">frame</span><span class="p">,</span> <span class="n">level</span> <span class="o">=</span> <span class="n">currentframe</span><span class="p">(),</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">frame</span> <span class="ow">and</span> <span class="n">level</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="n">frame</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">f_back</span>
+        <span class="n">level</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">frame</span><span class="o">.</span><span class="n">f_locals</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;self&#39;</span><span class="p">),</span> <span class="n">Strategy</span><span class="p">):</span>  <span class="c1"># type: ignore</span>
+            <span class="n">strategy_I</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">f_locals</span><span class="p">[</span><span class="s1">&#39;self&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">I</span>             <span class="c1"># type: ignore</span>
+            <span class="k">break</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">def</span> <span class="nf">strategy_I</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">wrap_func</span><span class="p">(</span><span class="n">resampled</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="n">resampled</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">):</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">ndim</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">result</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">resampled</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">result</span><span class="o">.</span><span class="n">ndim</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="n">result</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+        <span class="c1"># Resample back to data index</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">DatetimeIndex</span><span class="p">):</span>
+            <span class="n">result</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">resampled</span><span class="o">.</span><span class="n">index</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">reindex</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">series</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">resampled</span><span class="o">.</span><span class="n">index</span><span class="p">),</span>
+                                <span class="n">method</span><span class="o">=</span><span class="s1">&#39;ffill&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">reindex</span><span class="p">(</span><span class="n">series</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span>
+
+    <span class="n">wrap_func</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">=</span> <span class="n">func</span><span class="o">.</span><span class="vm">__name__</span>
+
+    <span class="n">array</span> <span class="o">=</span> <span class="n">strategy_I</span><span class="p">(</span><span class="n">wrap_func</span><span class="p">,</span> <span class="n">resampled</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">array</span></div>
+
+
+
+<div class="viewcode-block" id="random_ohlc_data">
+<a class="viewcode-back" href="../../lucit_backtesting.html#backtesting.lib.random_ohlc_data">[docs]</a>
+<span class="k">def</span> <span class="nf">random_ohlc_data</span><span class="p">(</span><span class="n">example_data</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span>
+                     <span class="n">frac</span><span class="o">=</span><span class="mf">1.</span><span class="p">,</span> <span class="n">random_state</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    OHLC data generator. The generated OHLC data has basic</span>
+<span class="sd">    [descriptive statistics](https://en.wikipedia.org/wiki/Descriptive_statistics)</span>
+<span class="sd">    similar to the provided `example_data`.</span>
+
+<span class="sd">    `frac` is a fraction of data to sample (with replacement). Values greater</span>
+<span class="sd">    than 1 result in oversampling.</span>
+
+<span class="sd">    Such random data can be effectively used for stress testing trading</span>
+<span class="sd">    strategy robustness, Monte Carlo simulations, significance testing, etc.</span>
+
+<span class="sd">    &gt;&gt;&gt; from backtesting.test import EURUSD</span>
+<span class="sd">    &gt;&gt;&gt; ohlc_generator = random_ohlc_data(EURUSD)</span>
+<span class="sd">    &gt;&gt;&gt; next(ohlc_generator)  # returns new random data</span>
+<span class="sd">    ...</span>
+<span class="sd">    &gt;&gt;&gt; next(ohlc_generator)  # returns new random data</span>
+<span class="sd">    ...</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">shuffle</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">x</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">frac</span><span class="o">=</span><span class="n">frac</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="n">frac</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="n">random_state</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">example_data</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">intersection</span><span class="p">({</span><span class="s1">&#39;Open&#39;</span><span class="p">,</span> <span class="s1">&#39;High&#39;</span><span class="p">,</span> <span class="s1">&#39;Low&#39;</span><span class="p">,</span> <span class="s1">&#39;Close&#39;</span><span class="p">}))</span> <span class="o">!=</span> <span class="mi">4</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;`data` must be a pandas.DataFrame with columns &quot;</span>
+                         <span class="s2">&quot;&#39;Open&#39;, &#39;High&#39;, &#39;Low&#39;, &#39;Close&#39;&quot;</span><span class="p">)</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">shuffle</span><span class="p">(</span><span class="n">example_data</span><span class="p">)</span>
+        <span class="n">df</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">example_data</span><span class="o">.</span><span class="n">index</span>
+        <span class="n">padding</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">Close</span> <span class="o">-</span> <span class="n">df</span><span class="o">.</span><span class="n">Open</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">gaps</span> <span class="o">=</span> <span class="n">shuffle</span><span class="p">(</span><span class="n">example_data</span><span class="o">.</span><span class="n">Open</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">example_data</span><span class="o">.</span><span class="n">Close</span><span class="p">)</span>
+        <span class="n">deltas</span> <span class="o">=</span> <span class="p">(</span><span class="n">padding</span> <span class="o">+</span> <span class="n">gaps</span><span class="p">)</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;Open&#39;</span><span class="p">,</span> <span class="s1">&#39;High&#39;</span><span class="p">,</span> <span class="s1">&#39;Low&#39;</span><span class="p">,</span> <span class="s1">&#39;Close&#39;</span><span class="p">):</span>
+            <span class="n">df</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">+=</span> <span class="n">deltas</span>
+        <span class="k">yield</span> <span class="n">df</span></div>
+
+
+
+<div class="viewcode-block" id="SignalStrategy">
+<a class="viewcode-back" href="../../lucit_backtesting.html#backtesting.lib.SignalStrategy">[docs]</a>
+<span class="k">class</span> <span class="nc">SignalStrategy</span><span class="p">(</span><span class="n">Strategy</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A simple helper strategy that operates on position entry/exit signals.</span>
+<span class="sd">    This makes the backtest of the strategy simulate a [vectorized backtest].</span>
+<span class="sd">    See [tutorials] for usage examples.</span>
+
+<span class="sd">    [vectorized backtest]: https://www.google.com/search?q=vectorized+backtest</span>
+<span class="sd">    [tutorials]: index.html#tutorials</span>
+
+<span class="sd">    To use this helper strategy, subclass it, override its</span>
+<span class="sd">    `backtesting.backtesting.Strategy.init` method,</span>
+<span class="sd">    and set the signal vector by calling</span>
+<span class="sd">    `backtesting.lib.SignalStrategy.set_signal` method from within it.</span>
+
+<span class="sd">        class ExampleStrategy(SignalStrategy):</span>
+<span class="sd">            def init(self):</span>
+<span class="sd">                super().init()</span>
+<span class="sd">                self.set_signal(sma1 &gt; sma2, sma1 &lt; sma2)</span>
+
+<span class="sd">    Remember to call `super().init()` and `super().next()` in your</span>
+<span class="sd">    overridden methods.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">__entry_signal</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,)</span>
+    <span class="n">__exit_signal</span> <span class="o">=</span> <span class="p">(</span><span class="kc">False</span><span class="p">,)</span>
+
+<div class="viewcode-block" id="SignalStrategy.set_signal">
+<a class="viewcode-back" href="../../lucit_backtesting.html#backtesting.lib.SignalStrategy.set_signal">[docs]</a>
+    <span class="k">def</span> <span class="nf">set_signal</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">entry_size</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">float</span><span class="p">],</span>
+                   <span class="n">exit_portion</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">float</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                   <span class="o">*</span><span class="p">,</span>
+                   <span class="n">plot</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Set entry/exit signal vectors (arrays).</span>
+
+<span class="sd">        A long entry signal is considered present wherever `entry_size`</span>
+<span class="sd">        is greater than zero, and a short signal wherever `entry_size`</span>
+<span class="sd">        is less than zero, following `backtesting.backtesting.Order.size` semantics.</span>
+
+<span class="sd">        If `exit_portion` is provided, a nonzero value closes portion the position</span>
+<span class="sd">        (see `backtesting.backtesting.Trade.close()`) in the respective direction</span>
+<span class="sd">        (positive values close long trades, negative short).</span>
+
+<span class="sd">        If `plot` is `True`, the signal entry/exit indicators are plotted when</span>
+<span class="sd">        `backtesting.backtesting.Backtest.plot` is called.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__entry_signal</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">I</span><span class="p">(</span>  <span class="c1"># type: ignore</span>
+            <span class="k">lambda</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">entry_size</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">),</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;entry size&#39;</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="n">plot</span><span class="p">,</span> <span class="n">overlay</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">scatter</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">exit_portion</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__exit_signal</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">I</span><span class="p">(</span>  <span class="c1"># type: ignore</span>
+                <span class="k">lambda</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">exit_portion</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">),</span>
+                <span class="n">name</span><span class="o">=</span><span class="s1">&#39;exit portion&#39;</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="n">plot</span><span class="p">,</span> <span class="n">overlay</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">scatter</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="SignalStrategy.next">
+<a class="viewcode-back" href="../../lucit_backtesting.html#backtesting.lib.SignalStrategy.next">[docs]</a>
+    <span class="k">def</span> <span class="nf">next</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+
+        <span class="n">exit_portion</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__exit_signal</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">exit_portion</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">trade</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">trades</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">trade</span><span class="o">.</span><span class="n">is_long</span><span class="p">:</span>
+                    <span class="n">trade</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="n">exit_portion</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">exit_portion</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">trade</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">trades</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">trade</span><span class="o">.</span><span class="n">is_short</span><span class="p">:</span>
+                    <span class="n">trade</span><span class="o">.</span><span class="n">close</span><span class="p">(</span><span class="o">-</span><span class="n">exit_portion</span><span class="p">)</span>
+
+        <span class="n">entry_size</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__entry_signal</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">entry_size</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">buy</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="n">entry_size</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">entry_size</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sell</span><span class="p">(</span><span class="n">size</span><span class="o">=-</span><span class="n">entry_size</span><span class="p">)</span></div>
+</div>
+
+
+
+<div class="viewcode-block" id="TrailingStrategy">
+<a class="viewcode-back" href="../../lucit_backtesting.html#backtesting.lib.TrailingStrategy">[docs]</a>
+<span class="k">class</span> <span class="nc">TrailingStrategy</span><span class="p">(</span><span class="n">Strategy</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A strategy with automatic trailing stop-loss, trailing the current</span>
+<span class="sd">    price at distance of some multiple of average true range (ATR). Call</span>
+<span class="sd">    `TrailingStrategy.set_trailing_sl()` to set said multiple</span>
+<span class="sd">    (`6` by default). See [tutorials] for usage examples.</span>
+
+<span class="sd">    [tutorials]: index.html#tutorials</span>
+
+<span class="sd">    Remember to call `super().init()` and `super().next()` in your</span>
+<span class="sd">    overridden methods.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">__n_atr</span> <span class="o">=</span> <span class="mf">6.</span>
+    <span class="n">__atr</span> <span class="o">=</span> <span class="kc">None</span>
+
+<div class="viewcode-block" id="TrailingStrategy.init">
+<a class="viewcode-back" href="../../lucit_backtesting.html#backtesting.lib.TrailingStrategy.init">[docs]</a>
+    <span class="k">def</span> <span class="nf">init</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">set_atr_periods</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="TrailingStrategy.set_atr_periods">
+<a class="viewcode-back" href="../../lucit_backtesting.html#backtesting.lib.TrailingStrategy.set_atr_periods">[docs]</a>
+    <span class="k">def</span> <span class="nf">set_atr_periods</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">periods</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">100</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Set the lookback period for computing ATR. The default value</span>
+<span class="sd">        of 100 ensures a _stable_ ATR.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">hi</span><span class="p">,</span> <span class="n">lo</span><span class="p">,</span> <span class="n">c_prev</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">High</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Low</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Close</span><span class="p">)</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">tr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">([</span><span class="n">hi</span> <span class="o">-</span> <span class="n">lo</span><span class="p">,</span> <span class="p">(</span><span class="n">c_prev</span> <span class="o">-</span> <span class="n">hi</span><span class="p">)</span><span class="o">.</span><span class="n">abs</span><span class="p">(),</span> <span class="p">(</span><span class="n">c_prev</span> <span class="o">-</span> <span class="n">lo</span><span class="p">)</span><span class="o">.</span><span class="n">abs</span><span class="p">()],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">atr</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">tr</span><span class="p">)</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">periods</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">bfill</span><span class="p">()</span><span class="o">.</span><span class="n">values</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__atr</span> <span class="o">=</span> <span class="n">atr</span></div>
+
+
+<div class="viewcode-block" id="TrailingStrategy.set_trailing_sl">
+<a class="viewcode-back" href="../../lucit_backtesting.html#backtesting.lib.TrailingStrategy.set_trailing_sl">[docs]</a>
+    <span class="k">def</span> <span class="nf">set_trailing_sl</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_atr</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mi">6</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Sets the future trailing stop-loss as some multiple (`n_atr`)</span>
+<span class="sd">        average true bar ranges away from the current price.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__n_atr</span> <span class="o">=</span> <span class="n">n_atr</span></div>
+
+
+<div class="viewcode-block" id="TrailingStrategy.next">
+<a class="viewcode-back" href="../../lucit_backtesting.html#backtesting.lib.TrailingStrategy.next">[docs]</a>
+    <span class="k">def</span> <span class="nf">next</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+        <span class="c1"># Can&#39;t use index=-1 because self.__atr is not an Indicator type</span>
+        <span class="n">index</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span>
+        <span class="k">for</span> <span class="n">trade</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">trades</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">trade</span><span class="o">.</span><span class="n">is_long</span><span class="p">:</span>
+                <span class="n">trade</span><span class="o">.</span><span class="n">sl</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">trade</span><span class="o">.</span><span class="n">sl</span> <span class="ow">or</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">,</span>
+                               <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Close</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">__atr</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">__n_atr</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">trade</span><span class="o">.</span><span class="n">sl</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">trade</span><span class="o">.</span><span class="n">sl</span> <span class="ow">or</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">,</span>
+                               <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Close</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">__atr</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">__n_atr</span><span class="p">)</span></div>
+</div>
+
+
+
+<span class="c1"># Prevent pdoc3 documenting __init__ signature of Strategy subclasses</span>
+<span class="k">for</span> <span class="bp">cls</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="nb">globals</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="p">()):</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="nb">type</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">issubclass</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">Strategy</span><span class="p">):</span>
+        <span class="n">__pdoc__</span><span class="p">[</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">cls</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s1">.__init__&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
+
+
+<span class="c1"># NOTE: Don&#39;t put anything below this __all__ list</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="nb">getattr</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="s1">&#39;__name__&#39;</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
+           <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">globals</span><span class="p">()</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>                        <span class="c1"># export</span>
+           <span class="k">if</span> <span class="p">((</span><span class="n">callable</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="ow">and</span> <span class="n">v</span><span class="o">.</span><span class="vm">__module__</span> <span class="o">==</span> <span class="vm">__name__</span> <span class="ow">or</span>     <span class="c1"># callables from this module</span>
+                <span class="n">k</span><span class="o">.</span><span class="n">isupper</span><span class="p">())</span> <span class="ow">and</span>                                <span class="c1"># or CONSTANTS</span>
+               <span class="ow">not</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="s1">&#39;__name__&#39;</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">))]</span>  <span class="c1"># neither marked internal</span>
+
+<span class="c1"># NOTE: Don&#39;t put anything below here. See above.</span>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo">
+                <div style="text-align: center;">
+                    <a href="https://www.lucit.tech"><img src="https://www.lucit.tech/files/images/logos/LUCIT-LOGO.png"></a><br>
+                    <a href="https://shop.lucit.services/software/unicorn-binance-suite" style="font-size: 0.85em;font-weight: 900">Get a UNICORN Binance Suite License!</a><br>
+                    <br>
+                    <a href="https://github.com/LUCIT-Systems-and-Development" target="_blank" style="text-decoration:none;"><img src="../../_static/icons8-github-20.png"></a>
+                    <a href="https://fb.me/lucit.systems.and.development" target="_blank" style="text-decoration:none;"><img src="../../_static/icons8-facebook-20.png"></a>
+                    <a href="https://twitter.com/LUCIT_SysDev" target="_blank" style="text-decoration:none;"><img src="../../_static/icons8-twitter-20.png"></a>
+                    <a href="https://www.linkedin.com/company/lucit-systems-and-development" target="_blank" style="text-decoration:none;"><img src="../../_static/icons8-linkedin-20.png"></a>
+                    <a href="https://www.xing.com/pages/lucit-systems-and-development" target="_blank" style="text-decoration:none;"><img src="../../_static/icons8-xing-20.png"></a>
+                    <a href="https://medium.lucit.tech" target="_blank" style="text-decoration:none;"><img src="../../_static/icons8-medium-monogram-20.png"></a>
+                    <a href="https://www.youtube.com/channel/UCp57u8vaPqEWQTlfpYn-KnQ" target="_blank" style="text-decoration:none;"><img src="../../_static/icons8-youtube-20.png"></a>
+                </div>
+            </p>
+<div id="searchbox" style="display: block" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+<div role="note" aria-label="source code">
+    <h3>GitHub</h3>
+    <ul class="this-page-menu">
+      <li><a href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting">Show Source</a></li>
+      
+<li>
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting"
+   data-icon="octicon-star" data-show-count="true"
+   aria-label="Star LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Star</a>
+<br />
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/subscription"
+   data-icon="octicon-eye" data-show-count="true"
+   aria-label="Watch LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Watch</a>
+<br />
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/fork"
+   data-icon="octicon-repo-forked" data-show-count="true"
+   aria-label="Fork LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Fork</a>
+<br />
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/issues"
+   data-icon="octicon-issue-opened"
+   data-show-count="true" aria-label="Issue LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Issue</a>
+    
+</li>
+
+    </ul>
+</div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+              
+                  
+                  
+              <li><img src="../../_static/lucit.png" alt="LUCIT Logo"
+                       style="vertical-align: middle; margin-top: -1px"/></li>
+              <li><a href="https://docs.lucit.tech">Docs Index</a> | </li>
+              <li><a href="https://www.lucit.tech/lucit-backtesting.html">lucit-backtesting</a> &#187;</li>
+                  
+              
+              
+              <a href="../../index.html">Docs</a> &#187;
+              
+          <li class="nav-item nav-item-1"><a href="../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">backtesting.lib</a></li>
+                <li class="right">
+                    
+
+    <div class="inline-search" role="search">
+        <form class="inline-search" action="../../search.html" method="get">
+          <input placeholder="Quick search" aria-label="Quick search" type="text" name="q" />
+          <input type="submit" value="Go" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+                     |
+                </li>
+            
+      </ul>
+    </div>  
+    <div class="footer">
+    <a href="https://docs.lucit.tech">Index of all LUCIT Software Documentation</a><br />
+    &copy; <a href="/license.html">Copyright</a> 2024-2024, LUCIT Systems and Development. All Rights Reserved..
+    See <a href="/license.html">License</a> for more information.<br />
+    Last updated on Jun 06 2024 at 21:29 (CET).
+    <a href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/issues/new/choose">Found a bug</a>?
+    <br />
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+        with <a href="https://github.com/LUCIT-Systems-and-Development/python-docs-theme-lucit">python-docs-theme-lucit</a>
+        by <a href="https://www.lucit.tech">LUCIT Systems and Development</a>.
+    </div>
+    
+    <img referrerpolicy="no-referrer-when-downgrade" src="https://webmon.lucit.services/matomo.php?idsite=11&amp;rec=1" style="border:0" alt="" />
+    
+
+  </body>
+</html>

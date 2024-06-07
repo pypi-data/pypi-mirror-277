@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>lucit_backtesting package &#8212; lucit-backtesting 1.0.0 documentation</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=92fd9be5" />
+    <link rel="stylesheet" type="text/css" href="_static/pydoctheme.css?v=fdf8e9ae" />
+    
+    <script src="_static/documentation_options.js?v=6efca38a"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="What’s New" href="changelog.html" />
+    <link rel="prev" title="lucit-backtesting - ‘backtesting.py’ maintained by LUCIT" href="readme.html" /><link rel="shortcut icon" type="image/png" href="_static/lucit.png" />
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    
+    <script
+        src='//eu.fw-cdn.com/10659511/361973.js'
+        chat='true'>
+    </script>
+    
+            <script type="text/javascript" src="_static/copybutton.js"></script>
+            <script type="text/javascript" src="_static/menu.js"></script> 
+  </head>
+<body>
+<div class="mobile-nav">
+    <input type="checkbox" id="menuToggler" class="toggler__input" aria-controls="navigation"
+           aria-pressed="false" aria-expanded="false" role="button" aria-label="Menu" />
+    <label for="menuToggler" class="toggler__label">
+        <span></span>
+    </label>
+    <nav class="nav-content" role="navigation">
+        <form role="search" class="search" action="search.html" method="get">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="search-icon">
+                <path fill-rule="nonzero"
+                        d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 001.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 00-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 005.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#444"></path>
+            </svg>
+            <input type="text" name="q" aria-label="Quick search"/>
+            <input type="submit" value="Go"/>
+        </form>
+    </nav>
+    <div class="menu-wrapper">
+        <nav class="menu" role="navigation" aria-label="main navigation">
+            <p class="logo">
+                <div style="text-align: center;">
+                    <a href="https://www.lucit.tech"><img src="https://www.lucit.tech/files/images/logos/LUCIT-LOGO.png"></a><br>
+                    <a href="https://shop.lucit.services/software/unicorn-binance-suite" style="font-size: 0.85em;font-weight: 900">Get a UNICORN Binance Suite License!</a><br>
+                    <br>
+                    <a href="https://github.com/LUCIT-Systems-and-Development" target="_blank" style="text-decoration:none;"><img src="_static/icons8-github-20.png"></a>
+                    <a href="https://fb.me/lucit.systems.and.development" target="_blank" style="text-decoration:none;"><img src="_static/icons8-facebook-20.png"></a>
+                    <a href="https://twitter.com/LUCIT_SysDev" target="_blank" style="text-decoration:none;"><img src="_static/icons8-twitter-20.png"></a>
+                    <a href="https://www.linkedin.com/company/lucit-systems-and-development" target="_blank" style="text-decoration:none;"><img src="_static/icons8-linkedin-20.png"></a>
+                    <a href="https://www.xing.com/pages/lucit-systems-and-development" target="_blank" style="text-decoration:none;"><img src="_static/icons8-xing-20.png"></a>
+                    <a href="https://medium.lucit.tech" target="_blank" style="text-decoration:none;"><img src="_static/icons8-medium-monogram-20.png"></a>
+                    <a href="https://www.youtube.com/channel/UCp57u8vaPqEWQTlfpYn-KnQ" target="_blank" style="text-decoration:none;"><img src="_static/icons8-youtube-20.png"></a>
+                </div>
+            </p>
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">lucit_backtesting package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-backtesting.backtesting">backtesting.backtesting module</a><ul>
+<li><a class="reference internal" href="#backtesting.backtesting.Backtest"><code class="docutils literal notranslate"><span class="pre">Backtest</span></code></a><ul>
+<li><a class="reference internal" href="#backtesting.backtesting.Backtest.optimize"><code class="docutils literal notranslate"><span class="pre">Backtest.optimize()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Backtest.plot"><code class="docutils literal notranslate"><span class="pre">Backtest.plot()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Backtest.run"><code class="docutils literal notranslate"><span class="pre">Backtest.run()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#backtesting.backtesting.Order"><code class="docutils literal notranslate"><span class="pre">Order</span></code></a><ul>
+<li><a class="reference internal" href="#backtesting.backtesting.Order.cancel"><code class="docutils literal notranslate"><span class="pre">Order.cancel()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Order.is_contingent"><code class="docutils literal notranslate"><span class="pre">Order.is_contingent</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Order.is_long"><code class="docutils literal notranslate"><span class="pre">Order.is_long</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Order.is_short"><code class="docutils literal notranslate"><span class="pre">Order.is_short</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Order.limit"><code class="docutils literal notranslate"><span class="pre">Order.limit</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Order.parent_trade"><code class="docutils literal notranslate"><span class="pre">Order.parent_trade</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Order.size"><code class="docutils literal notranslate"><span class="pre">Order.size</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Order.sl"><code class="docutils literal notranslate"><span class="pre">Order.sl</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Order.stop"><code class="docutils literal notranslate"><span class="pre">Order.stop</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Order.tag"><code class="docutils literal notranslate"><span class="pre">Order.tag</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Order.tp"><code class="docutils literal notranslate"><span class="pre">Order.tp</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#backtesting.backtesting.Position"><code class="docutils literal notranslate"><span class="pre">Position</span></code></a><ul>
+<li><a class="reference internal" href="#backtesting.backtesting.Position.close"><code class="docutils literal notranslate"><span class="pre">Position.close()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Position.is_long"><code class="docutils literal notranslate"><span class="pre">Position.is_long</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Position.is_short"><code class="docutils literal notranslate"><span class="pre">Position.is_short</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Position.pl"><code class="docutils literal notranslate"><span class="pre">Position.pl</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Position.pl_pct"><code class="docutils literal notranslate"><span class="pre">Position.pl_pct</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Position.size"><code class="docutils literal notranslate"><span class="pre">Position.size</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy"><code class="docutils literal notranslate"><span class="pre">Strategy</span></code></a><ul>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy.I"><code class="docutils literal notranslate"><span class="pre">Strategy.I()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy.buy"><code class="docutils literal notranslate"><span class="pre">Strategy.buy()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy.closed_trades"><code class="docutils literal notranslate"><span class="pre">Strategy.closed_trades</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy.data"><code class="docutils literal notranslate"><span class="pre">Strategy.data</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy.equity"><code class="docutils literal notranslate"><span class="pre">Strategy.equity</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy.init"><code class="docutils literal notranslate"><span class="pre">Strategy.init()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy.next"><code class="docutils literal notranslate"><span class="pre">Strategy.next()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy.orders"><code class="docutils literal notranslate"><span class="pre">Strategy.orders</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy.position"><code class="docutils literal notranslate"><span class="pre">Strategy.position</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy.sell"><code class="docutils literal notranslate"><span class="pre">Strategy.sell()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy.trades"><code class="docutils literal notranslate"><span class="pre">Strategy.trades</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade"><code class="docutils literal notranslate"><span class="pre">Trade</span></code></a><ul>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.close"><code class="docutils literal notranslate"><span class="pre">Trade.close()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.entry_bar"><code class="docutils literal notranslate"><span class="pre">Trade.entry_bar</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.entry_price"><code class="docutils literal notranslate"><span class="pre">Trade.entry_price</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.entry_time"><code class="docutils literal notranslate"><span class="pre">Trade.entry_time</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.exit_bar"><code class="docutils literal notranslate"><span class="pre">Trade.exit_bar</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.exit_price"><code class="docutils literal notranslate"><span class="pre">Trade.exit_price</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.exit_time"><code class="docutils literal notranslate"><span class="pre">Trade.exit_time</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.is_long"><code class="docutils literal notranslate"><span class="pre">Trade.is_long</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.is_short"><code class="docutils literal notranslate"><span class="pre">Trade.is_short</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.pl"><code class="docutils literal notranslate"><span class="pre">Trade.pl</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.pl_pct"><code class="docutils literal notranslate"><span class="pre">Trade.pl_pct</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.size"><code class="docutils literal notranslate"><span class="pre">Trade.size</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.sl"><code class="docutils literal notranslate"><span class="pre">Trade.sl</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.tag"><code class="docutils literal notranslate"><span class="pre">Trade.tag</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.tp"><code class="docutils literal notranslate"><span class="pre">Trade.tp</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.value"><code class="docutils literal notranslate"><span class="pre">Trade.value</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-backtesting.lib">backtesting.lib module</a><ul>
+<li><a class="reference internal" href="#backtesting.lib.OHLCV_AGG"><code class="docutils literal notranslate"><span class="pre">OHLCV_AGG</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.SignalStrategy"><code class="docutils literal notranslate"><span class="pre">SignalStrategy</span></code></a><ul>
+<li><a class="reference internal" href="#backtesting.lib.SignalStrategy.next"><code class="docutils literal notranslate"><span class="pre">SignalStrategy.next()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.SignalStrategy.set_signal"><code class="docutils literal notranslate"><span class="pre">SignalStrategy.set_signal()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#backtesting.lib.TRADES_AGG"><code class="docutils literal notranslate"><span class="pre">TRADES_AGG</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.TrailingStrategy"><code class="docutils literal notranslate"><span class="pre">TrailingStrategy</span></code></a><ul>
+<li><a class="reference internal" href="#backtesting.lib.TrailingStrategy.init"><code class="docutils literal notranslate"><span class="pre">TrailingStrategy.init()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.TrailingStrategy.next"><code class="docutils literal notranslate"><span class="pre">TrailingStrategy.next()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.TrailingStrategy.set_atr_periods"><code class="docutils literal notranslate"><span class="pre">TrailingStrategy.set_atr_periods()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.TrailingStrategy.set_trailing_sl"><code class="docutils literal notranslate"><span class="pre">TrailingStrategy.set_trailing_sl()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#backtesting.lib.barssince"><code class="docutils literal notranslate"><span class="pre">barssince()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.compute_stats"><code class="docutils literal notranslate"><span class="pre">compute_stats()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.cross"><code class="docutils literal notranslate"><span class="pre">cross()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.crossover"><code class="docutils literal notranslate"><span class="pre">crossover()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.plot_heatmaps"><code class="docutils literal notranslate"><span class="pre">plot_heatmaps()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.quantile"><code class="docutils literal notranslate"><span class="pre">quantile()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.random_ohlc_data"><code class="docutils literal notranslate"><span class="pre">random_ohlc_data()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.resample_apply"><code class="docutils literal notranslate"><span class="pre">resample_apply()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-backtesting">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="readme.html"
+                          title="previous chapter">lucit-backtesting - ‘backtesting.py’ maintained by LUCIT</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="changelog.html"
+                          title="next chapter">What’s New</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/lucit_backtesting.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: block" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+<div role="note" aria-label="source code">
+    <h3>GitHub</h3>
+    <ul class="this-page-menu">
+      <li><a href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting">Show Source</a></li>
+      
+<li>
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting"
+   data-icon="octicon-star" data-show-count="true"
+   aria-label="Star LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Star</a>
+<br />
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/subscription"
+   data-icon="octicon-eye" data-show-count="true"
+   aria-label="Watch LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Watch</a>
+<br />
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/fork"
+   data-icon="octicon-repo-forked" data-show-count="true"
+   aria-label="Fork LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Fork</a>
+<br />
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/issues"
+   data-icon="octicon-issue-opened"
+   data-show-count="true" aria-label="Issue LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Issue</a>
+    
+</li>
+
+    </ul>
+</div>
+        </nav>
+    </div>
+</div>
+  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="changelog.html" title="What’s New"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="readme.html" title="lucit-backtesting - ‘backtesting.py’ maintained by LUCIT"
+             accesskey="P">previous</a> |</li>
+              
+                  
+                  
+              <li><img src="_static/lucit.png" alt="LUCIT Logo"
+                       style="vertical-align: middle; margin-top: -1px"/></li>
+              <li><a href="https://docs.lucit.tech">Docs Index</a> | </li>
+              <li><a href="https://www.lucit.tech/lucit-backtesting.html">lucit-backtesting</a> &#187;</li>
+                  
+              
+              
+              <a href="index.html">Docs</a> &#187;
+              
+        <li class="nav-item nav-item-this"><a href="">lucit_backtesting package</a></li>
+                <li class="right">
+                    
+
+    <div class="inline-search" role="search">
+        <form class="inline-search" action="search.html" method="get">
+          <input placeholder="Quick search" aria-label="Quick search" type="text" name="q" />
+          <input type="submit" value="Go" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+                     |
+                </li>
+            
+      </ul>
+    </div>    
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="lucit-backtesting-package">
+<h1>lucit_backtesting package<a class="headerlink" href="#lucit-backtesting-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-backtesting.backtesting">
+<span id="backtesting-backtesting-module"></span><h2>backtesting.backtesting module<a class="headerlink" href="#module-backtesting.backtesting" title="Link to this heading">¶</a></h2>
+<p>Core framework data structures.
+Objects from this module can also be imported from the top-level
+module directly, e.g.</p>
+<blockquote>
+<div><p>from backtesting import Backtest, Strategy</p>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="backtesting.backtesting.Backtest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">backtesting.backtesting.</span></span><span class="sig-name descname"><span class="pre">Backtest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strategy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#backtesting.backtesting.Strategy" title="backtesting.backtesting.Strategy"><span class="pre">Strategy</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cash</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">10000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">commission</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">margin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trade_on_close</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hedging</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclusive_orders</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/backtesting.html#Backtest"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.backtesting.Backtest" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Backtest a particular (parameterized) strategy
+on particular data.</p>
+<p>Upon initialization, call method
+<cite>backtesting.backtesting.Backtest.run</cite> to run a backtest
+instance, or <cite>backtesting.backtesting.Backtest.optimize</cite> to
+optimize it.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="backtesting.backtesting.Backtest.optimize">
+<span class="sig-name descname"><span class="pre">optimize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximize</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">Series</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'SQN'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'grid'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_tries</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_heatmap</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_optimization</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Series</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Series</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Series</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Series</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Series</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/backtesting/backtesting.html#Backtest.optimize"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.backtesting.Backtest.optimize" title="Link to this definition">¶</a></dt>
+<dd><p>Optimize strategy parameters to an optimal combination.
+Returns result <cite>pd.Series</cite> of the best run.</p>
+<p><cite>maximize</cite> is a string key from the
+<cite>backtesting.backtesting.Backtest.run</cite>-returned results series,
+or a function that accepts this series object and returns a number;
+the higher the better. By default, the method maximizes
+Van Tharp’s [System Quality Number](<a class="reference external" href="https://google.com/search?q=System+Quality+Number">https://google.com/search?q=System+Quality+Number</a>).</p>
+<p><cite>method</cite> is the optimization method. Currently two methods are supported:</p>
+<ul class="simple">
+<li><p><cite>“grid”</cite> which does an exhaustive (or randomized) search over the
+cartesian product of parameter combinations, and</p></li>
+<li><p><cite>“skopt”</cite> which finds close-to-optimal strategy parameters using
+[model-based optimization], making at most <cite>max_tries</cite> evaluations.</p></li>
+</ul>
+<p>[model-based optimization]:             <a class="reference external" href="https://scikit-optimize.github.io/stable/auto_examples/bayesian-optimization.html">https://scikit-optimize.github.io/stable/auto_examples/bayesian-optimization.html</a></p>
+<p><cite>max_tries</cite> is the maximal number of strategy runs to perform.
+If <cite>method=”grid”</cite>, this results in randomized grid search.
+If <cite>max_tries</cite> is a floating value between (0, 1], this sets the
+number of runs to approximately that fraction of full grid space.
+Alternatively, if integer, it denotes the absolute maximum number
+of evaluations. If unspecified (default), grid search is exhaustive,
+whereas for <cite>method=”skopt”</cite>, <cite>max_tries</cite> is set to 200.</p>
+<p><cite>constraint</cite> is a function that accepts a dict-like object of
+parameters (with values) and returns <cite>True</cite> when the combination
+is admissible to test with. By default, any parameters combination
+is considered admissible.</p>
+<p>If <cite>return_heatmap</cite> is <cite>True</cite>, besides returning the result
+series, an additional <cite>pd.Series</cite> is returned with a multiindex
+of all admissible parameter combinations, which can be further
+inspected or projected onto 2D to plot a heatmap
+(see <cite>backtesting.lib.plot_heatmaps()</cite>).</p>
+<p>If <cite>return_optimization</cite> is True and <cite>method = ‘skopt’</cite>,
+in addition to result series (and maybe heatmap), return raw
+[<cite>scipy.optimize.OptimizeResult</cite>][OptimizeResult] for further
+inspection, e.g. with [scikit-optimize]        [plotting tools].</p>
+<p>[OptimizeResult]:             <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.OptimizeResult.html">https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.OptimizeResult.html</a>
+[scikit-optimize]: <a class="reference external" href="https://scikit-optimize.github.io">https://scikit-optimize.github.io</a>
+[plotting tools]: <a class="reference external" href="https://scikit-optimize.github.io/stable/modules/plots.html">https://scikit-optimize.github.io/stable/modules/plots.html</a></p>
+<p>If you want reproducible optimization results, set <cite>random_state</cite>
+to a fixed integer random seed.</p>
+<p>Additional keyword arguments represent strategy arguments with
+list-like collections of possible values. For example, the following
+code finds and returns the “best” of the 7 admissible (of the
+9 possible) parameter combinations:</p>
+<blockquote>
+<div><dl class="simple">
+<dt>backtest.optimize(sma1=[5, 10, 15], sma2=[10, 20, 40],</dt><dd><p>constraint=lambda p: p.sma1 &lt; p.sma2)</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backtesting.backtesting.Backtest.plot">
+<span class="sig-name descname"><span class="pre">plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">results</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Series</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_equity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_return</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_pl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_volume</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_drawdown</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_trades</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smooth_equity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">relative_equity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">superimpose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resample</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reverse_indicators</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_legend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">open_browser</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/backtesting.html#Backtest.plot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.backtesting.Backtest.plot" title="Link to this definition">¶</a></dt>
+<dd><p>Plot the progression of the last backtest run.</p>
+<p>If <cite>results</cite> is provided, it should be a particular result
+<cite>pd.Series</cite> such as returned by
+<cite>backtesting.backtesting.Backtest.run</cite> or
+<cite>backtesting.backtesting.Backtest.optimize</cite>, otherwise the last
+run’s results are used.</p>
+<p><cite>filename</cite> is the path to save the interactive HTML plot to.
+By default, a strategy/parameter-dependent file is created in the
+current working directory.</p>
+<p><cite>plot_width</cite> is the width of the plot in pixels. If None (default),
+the plot is made to span 100% of browser width. The height is
+currently non-adjustable.</p>
+<p>If <cite>plot_equity</cite> is <cite>True</cite>, the resulting plot will contain
+an equity (initial cash plus assets) graph section. This is the same
+as <cite>plot_return</cite> plus initial 100%.</p>
+<p>If <cite>plot_return</cite> is <cite>True</cite>, the resulting plot will contain
+a cumulative return graph section. This is the same
+as <cite>plot_equity</cite> minus initial 100%.</p>
+<p>If <cite>plot_pl</cite> is <cite>True</cite>, the resulting plot will contain
+a profit/loss (P/L) indicator section.</p>
+<p>If <cite>plot_volume</cite> is <cite>True</cite>, the resulting plot will contain
+a trade volume section.</p>
+<p>If <cite>plot_drawdown</cite> is <cite>True</cite>, the resulting plot will contain
+a separate drawdown graph section.</p>
+<p>If <cite>plot_trades</cite> is <cite>True</cite>, the stretches between trade entries
+and trade exits are marked by hash-marked tractor beams.</p>
+<p>If <cite>smooth_equity</cite> is <cite>True</cite>, the equity graph will be
+interpolated between fixed points at trade closing times,
+unaffected by any interim asset volatility.</p>
+<p>If <cite>relative_equity</cite> is <cite>True</cite>, scale and label equity graph axis
+with return percent, not absolute cash-equivalent values.</p>
+<p>If <cite>superimpose</cite> is <cite>True</cite>, superimpose larger-timeframe candlesticks
+over the original candlestick chart. Default downsampling rule is:
+monthly for daily data, daily for hourly data, hourly for minute data,
+and minute for (sub-)second data.
+<cite>superimpose</cite> can also be a valid [Pandas offset string],
+such as <cite>‘5T’</cite> or <cite>‘5min’</cite>, in which case this frequency will be
+used to superimpose.
+Note, this only works for data with a datetime index.</p>
+<p>If <cite>resample</cite> is <cite>True</cite>, the OHLC data is resampled in a way that
+makes the upper number of candles for Bokeh to plot limited to 10_000.
+This may, in situations of overabundant data,
+improve plot’s interactive performance and avoid browser’s
+<cite>Javascript Error: Maximum call stack size exceeded</cite> or similar.
+Equity &amp; dropdown curves and individual trades data is,
+likewise, [reasonably _aggregated_][TRADES_AGG].
+<cite>resample</cite> can also be a [Pandas offset string],
+such as <cite>‘5T’</cite> or <cite>‘5min’</cite>, in which case this frequency will be
+used to resample, overriding above numeric limitation.
+Note, all this only works for data with a datetime index.</p>
+<p>If <cite>reverse_indicators</cite> is <cite>True</cite>, the indicators below the OHLC chart
+are plotted in reverse order of declaration.</p>
+<p>[Pandas offset string]:             <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#dateoffset-objects">https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#dateoffset-objects</a></p>
+<p>[TRADES_AGG]: lib.html#backtesting.lib.TRADES_AGG</p>
+<p>If <cite>show_legend</cite> is <cite>True</cite>, the resulting plot graphs will contain
+labeled legends.</p>
+<p>If <cite>open_browser</cite> is <cite>True</cite>, the resulting <cite>filename</cite> will be
+opened in the default web browser.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backtesting.backtesting.Backtest.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Series</span></span></span><a class="reference internal" href="_modules/backtesting/backtesting.html#Backtest.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.backtesting.Backtest.run" title="Link to this definition">¶</a></dt>
+<dd><p>Run the backtest. Returns <cite>pd.Series</cite> with results and statistics.</p>
+<p>Keyword arguments are interpreted as strategy parameters.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Backtest</span><span class="p">(</span><span class="n">GOOG</span><span class="p">,</span> <span class="n">SmaCross</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+<span class="go">Start                     2004-08-19 00:00:00</span>
+<span class="go">End                       2013-03-01 00:00:00</span>
+<span class="go">Duration                   3116 days 00:00:00</span>
+<span class="go">Exposure Time [%]                     93.9944</span>
+<span class="go">Equity Final [$]                      51959.9</span>
+<span class="go">Equity Peak [$]                       75787.4</span>
+<span class="go">Return [%]                            419.599</span>
+<span class="go">Buy &amp; Hold Return [%]                 703.458</span>
+<span class="go">Return (Ann.) [%]                      21.328</span>
+<span class="go">Volatility (Ann.) [%]                 36.5383</span>
+<span class="go">Sharpe Ratio                         0.583718</span>
+<span class="go">Sortino Ratio                         1.09239</span>
+<span class="go">Calmar Ratio                         0.444518</span>
+<span class="go">Max. Drawdown [%]                    -47.9801</span>
+<span class="go">Avg. Drawdown [%]                    -5.92585</span>
+<span class="go">Max. Drawdown Duration      584 days 00:00:00</span>
+<span class="go">Avg. Drawdown Duration       41 days 00:00:00</span>
+<span class="go"># Trades                                   65</span>
+<span class="go">Win Rate [%]                          46.1538</span>
+<span class="go">Best Trade [%]                         53.596</span>
+<span class="go">Worst Trade [%]                      -18.3989</span>
+<span class="go">Avg. Trade [%]                        2.35371</span>
+<span class="go">Max. Trade Duration         183 days 00:00:00</span>
+<span class="go">Avg. Trade Duration          46 days 00:00:00</span>
+<span class="go">Profit Factor                         2.08802</span>
+<span class="go">Expectancy [%]                        8.79171</span>
+<span class="go">SQN                                  0.916893</span>
+<span class="go">Kelly Criterion                        0.6134</span>
+<span class="go">_strategy                            SmaCross</span>
+<span class="go">_equity_curve                           Eq...</span>
+<span class="go">_trades                       Size  EntryB...</span>
+<span class="go">dtype: object</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>You may obtain different results for different strategy parameters.
+E.g. if you use 50- and 200-bar SMA, the trading simulation will
+begin on bar 201. The actual length of delay is equal to the lookback
+period of the <cite>Strategy.I</cite> indicator which lags the most.
+Obviously, this can affect results.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="backtesting.backtesting.Order">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">backtesting.backtesting.</span></span><span class="sig-name descname"><span class="pre">Order</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">broker</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">_Broker</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit_price</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop_price</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sl_price</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tp_price</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent_trade</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#backtesting.backtesting.Trade" title="backtesting.backtesting.Trade"><span class="pre">Trade</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/backtesting.html#Order"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.backtesting.Order" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Place new orders through <cite>Strategy.buy()</cite> and <cite>Strategy.sell()</cite>.
+Query existing orders through <cite>Strategy.orders</cite>.</p>
+<p>When an order is executed or [filled], it results in a <cite>Trade</cite>.</p>
+<p>If you wish to modify aspects of a placed but not yet filled order,
+cancel it and place a new one instead.</p>
+<p>All placed orders are [Good ‘Til Canceled].</p>
+<p>[filled]: <a class="reference external" href="https://www.investopedia.com/terms/f/fill.asp">https://www.investopedia.com/terms/f/fill.asp</a>
+[Good ‘Til Canceled]: <a class="reference external" href="https://www.investopedia.com/terms/g/gtc.asp">https://www.investopedia.com/terms/g/gtc.asp</a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="backtesting.backtesting.Order.cancel">
+<span class="sig-name descname"><span class="pre">cancel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/backtesting.html#Order.cancel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.backtesting.Order.cancel" title="Link to this definition">¶</a></dt>
+<dd><p>Cancel the order.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Order.is_contingent">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_contingent</span></span><a class="headerlink" href="#backtesting.backtesting.Order.is_contingent" title="Link to this definition">¶</a></dt>
+<dd><p>True for [contingent] orders, i.e. [OCO] stop-loss and take-profit bracket orders
+placed upon an active trade. Remaining contingent orders are canceled when
+their parent <cite>Trade</cite> is closed.</p>
+<p>You can modify contingent orders through <cite>Trade.sl</cite> and <cite>Trade.tp</cite>.</p>
+<p>[contingent]: <a class="reference external" href="https://www.investopedia.com/terms/c/contingentorder.asp">https://www.investopedia.com/terms/c/contingentorder.asp</a>
+[OCO]: <a class="reference external" href="https://www.investopedia.com/terms/o/oco.asp">https://www.investopedia.com/terms/o/oco.asp</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Order.is_long">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_long</span></span><a class="headerlink" href="#backtesting.backtesting.Order.is_long" title="Link to this definition">¶</a></dt>
+<dd><p>True if the order is long (order size is positive).</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Order.is_short">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_short</span></span><a class="headerlink" href="#backtesting.backtesting.Order.is_short" title="Link to this definition">¶</a></dt>
+<dd><p>True if the order is short (order size is negative).</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Order.limit">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">limit</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#backtesting.backtesting.Order.limit" title="Link to this definition">¶</a></dt>
+<dd><p>Order limit price for [limit orders], or None for [market orders],
+which are filled at next available price.</p>
+<p>[limit orders]: <a class="reference external" href="https://www.investopedia.com/terms/l/limitorder.asp">https://www.investopedia.com/terms/l/limitorder.asp</a>
+[market orders]: <a class="reference external" href="https://www.investopedia.com/terms/m/marketorder.asp">https://www.investopedia.com/terms/m/marketorder.asp</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Order.parent_trade">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parent_trade</span></span><a class="headerlink" href="#backtesting.backtesting.Order.parent_trade" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Order.size">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">size</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#backtesting.backtesting.Order.size" title="Link to this definition">¶</a></dt>
+<dd><p>Order size (negative for short orders).</p>
+<p>If size is a value between 0 and 1, it is interpreted as a fraction of current
+available liquidity (cash plus <cite>Position.pl</cite> minus used margin).
+A value greater than or equal to 1 indicates an absolute number of units.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Order.sl">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sl</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#backtesting.backtesting.Order.sl" title="Link to this definition">¶</a></dt>
+<dd><p>A stop-loss price at which, if set, a new contingent stop-market order
+will be placed upon the <cite>Trade</cite> following this order’s execution.
+See also <cite>Trade.sl</cite>.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Order.stop">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">stop</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#backtesting.backtesting.Order.stop" title="Link to this definition">¶</a></dt>
+<dd><p>Order stop price for [stop-limit/stop-market][_] order,
+otherwise None if no stop was set, or the stop price has already been hit.</p>
+<p>[_]: <a class="reference external" href="https://www.investopedia.com/terms/s/stoporder.asp">https://www.investopedia.com/terms/s/stoporder.asp</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Order.tag">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tag</span></span><a class="headerlink" href="#backtesting.backtesting.Order.tag" title="Link to this definition">¶</a></dt>
+<dd><p>Arbitrary value (such as a string) which, if set, enables tracking
+of this order and the associated <cite>Trade</cite> (see <cite>Trade.tag</cite>).</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Order.tp">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tp</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#backtesting.backtesting.Order.tp" title="Link to this definition">¶</a></dt>
+<dd><p>A take-profit price at which, if set, a new contingent limit order
+will be placed upon the <cite>Trade</cite> following this order’s execution.
+See also <cite>Trade.tp</cite>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="backtesting.backtesting.Position">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">backtesting.backtesting.</span></span><span class="sig-name descname"><span class="pre">Position</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">broker</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">_Broker</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/backtesting.html#Position"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.backtesting.Position" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Currently held asset position, available as
+<cite>backtesting.backtesting.Strategy.position</cite> within
+<cite>backtesting.backtesting.Strategy.next</cite>.
+Can be used in boolean contexts, e.g.</p>
+<blockquote>
+<div><dl class="simple">
+<dt>if self.position:</dt><dd><p>…  # we have a position, either long or short</p>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="py method">
+<dt class="sig sig-object py" id="backtesting.backtesting.Position.close">
+<span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">portion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/backtesting.html#Position.close"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.backtesting.Position.close" title="Link to this definition">¶</a></dt>
+<dd><p>Close portion of position by closing <cite>portion</cite> of each active trade. See <cite>Trade.close</cite>.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Position.is_long">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_long</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#backtesting.backtesting.Position.is_long" title="Link to this definition">¶</a></dt>
+<dd><p>True if the position is long (position size is positive).</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Position.is_short">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_short</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#backtesting.backtesting.Position.is_short" title="Link to this definition">¶</a></dt>
+<dd><p>True if the position is short (position size is negative).</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Position.pl">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pl</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#backtesting.backtesting.Position.pl" title="Link to this definition">¶</a></dt>
+<dd><p>Profit (positive) or loss (negative) of the current position in cash units.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Position.pl_pct">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pl_pct</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#backtesting.backtesting.Position.pl_pct" title="Link to this definition">¶</a></dt>
+<dd><p>Profit (positive) or loss (negative) of the current position in percent.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Position.size">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">size</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#backtesting.backtesting.Position.size" title="Link to this definition">¶</a></dt>
+<dd><p>Position size in units of asset. Negative if position is short.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="backtesting.backtesting.Strategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">backtesting.backtesting.</span></span><span class="sig-name descname"><span class="pre">Strategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">broker</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/backtesting.html#Strategy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.backtesting.Strategy" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A trading strategy base class. Extend this class and
+override methods
+<cite>backtesting.backtesting.Strategy.init</cite> and
+<cite>backtesting.backtesting.Strategy.next</cite> to define
+your own strategy.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="backtesting.backtesting.Strategy.I">
+<span class="sig-name descname"><span class="pre">I</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overlay</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scatter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ndarray</span></span></span><a class="reference internal" href="_modules/backtesting/backtesting.html#Strategy.I"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.backtesting.Strategy.I" title="Link to this definition">¶</a></dt>
+<dd><p>Declare an indicator. An indicator is just an array of values,
+but one that is revealed gradually in
+<cite>backtesting.backtesting.Strategy.next</cite> much like
+<cite>backtesting.backtesting.Strategy.data</cite> is.
+Returns <cite>np.ndarray</cite> of indicator values.</p>
+<p><cite>func</cite> is a function that returns the indicator array(s) of
+same length as <cite>backtesting.backtesting.Strategy.data</cite>.</p>
+<p>In the plot legend, the indicator is labeled with
+function name, unless <cite>name</cite> overrides it.</p>
+<p>If <cite>plot</cite> is <cite>True</cite>, the indicator is plotted on the resulting
+<cite>backtesting.backtesting.Backtest.plot</cite>.</p>
+<p>If <cite>overlay</cite> is <cite>True</cite>, the indicator is plotted overlaying the
+price candlestick chart (suitable e.g. for moving averages).
+If <cite>False</cite>, the indicator is plotted standalone below the
+candlestick chart. By default, a heuristic is used which decides
+correctly most of the time.</p>
+<p><cite>color</cite> can be string hex RGB triplet or X11 color name.
+By default, the next available color is assigned.</p>
+<p>If <cite>scatter</cite> is <cite>True</cite>, the plotted indicator marker will be a
+circle instead of a connected line segment (default).</p>
+<p>Additional <cite>*args</cite> and <cite>**kwargs</cite> are passed to <cite>func</cite> and can
+be used for parameters.</p>
+<p>For example, using simple moving average function from TA-Lib:</p>
+<blockquote>
+<div><dl class="simple">
+<dt>def init():</dt><dd><p>self.sma = self.I(ta.SMA, self.data.Close, self.n_sma)</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backtesting.backtesting.Strategy.buy">
+<span class="sig-name descname"><span class="pre">buy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">.9999</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sl</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/backtesting.html#Strategy.buy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.backtesting.Strategy.buy" title="Link to this definition">¶</a></dt>
+<dd><p>Place a new long order. For explanation of parameters, see <cite>Order</cite> and its properties.</p>
+<p>See <cite>Position.close()</cite> and <cite>Trade.close()</cite> for closing existing positions.</p>
+<p>See also <cite>Strategy.sell()</cite>.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Strategy.closed_trades">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">closed_trades</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#backtesting.backtesting.Trade" title="backtesting.backtesting.Trade"><span class="pre">Trade</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#backtesting.backtesting.Strategy.closed_trades" title="Link to this definition">¶</a></dt>
+<dd><p>List of settled trades (see <cite>Trade</cite>).</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Strategy.data">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">_Data</span></em><a class="headerlink" href="#backtesting.backtesting.Strategy.data" title="Link to this definition">¶</a></dt>
+<dd><p>Price data, roughly as passed into
+<cite>backtesting.backtesting.Backtest.__init__</cite>,
+but with two significant exceptions:</p>
+<ul class="simple">
+<li><p><cite>data</cite> is _not_ a DataFrame, but a custom structure
+that serves customized numpy arrays for reasons of performance
+and convenience. Besides OHLCV columns, <cite>.index</cite> and length,
+it offers <cite>.pip</cite> property, the smallest price unit of change.</p></li>
+<li><p>Within <cite>backtesting.backtesting.Strategy.init</cite>, <cite>data</cite> arrays
+are available in full length, as passed into
+<cite>backtesting.backtesting.Backtest.__init__</cite>
+(for precomputing indicators and such). However, within
+<cite>backtesting.backtesting.Strategy.next</cite>, <cite>data</cite> arrays are
+only as long as the current iteration, simulating gradual
+price point revelation. In each call of
+<cite>backtesting.backtesting.Strategy.next</cite> (iteratively called by
+<cite>backtesting.backtesting.Backtest</cite> internally),
+the last array value (e.g. <cite>data.Close[-1]</cite>)
+is always the most recent value.</p></li>
+<li><p>If you need data arrays (e.g. <cite>data.Close</cite>) to be indexed
+<strong>Pandas series</strong>, you can call their <cite>.s</cite> accessor
+(e.g. <cite>data.Close.s</cite>). If you need the whole of data
+as a <strong>DataFrame</strong>, use <cite>.df</cite> accessor (i.e. <cite>data.df</cite>).</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Strategy.equity">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">equity</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#backtesting.backtesting.Strategy.equity" title="Link to this definition">¶</a></dt>
+<dd><p>Current account equity (cash plus assets).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backtesting.backtesting.Strategy.init">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">init</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/backtesting.html#Strategy.init"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.backtesting.Strategy.init" title="Link to this definition">¶</a></dt>
+<dd><p>Initialize the strategy.
+Override this method.
+Declare indicators (with <cite>backtesting.backtesting.Strategy.I</cite>).
+Precompute what needs to be precomputed or can be precomputed
+in a vectorized fashion before the strategy starts.</p>
+<p>If you extend composable strategies from <cite>backtesting.lib</cite>,
+make sure to call:</p>
+<blockquote>
+<div><p>super().init()</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backtesting.backtesting.Strategy.next">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">next</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/backtesting.html#Strategy.next"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.backtesting.Strategy.next" title="Link to this definition">¶</a></dt>
+<dd><p>Main strategy runtime method, called as each new
+<cite>backtesting.backtesting.Strategy.data</cite>
+instance (row; full candlestick bar) becomes available.
+This is the main method where strategy decisions
+upon data precomputed in <cite>backtesting.backtesting.Strategy.init</cite>
+take place.</p>
+<p>If you extend composable strategies from <cite>backtesting.lib</cite>,
+make sure to call:</p>
+<blockquote>
+<div><p>super().next()</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Strategy.orders">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">orders</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#backtesting.backtesting.Order" title="backtesting.backtesting.Order"><span class="pre">Order</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#backtesting.backtesting.Strategy.orders" title="Link to this definition">¶</a></dt>
+<dd><p>List of orders (see <cite>Order</cite>) waiting for execution.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Strategy.position">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">position</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#backtesting.backtesting.Position" title="backtesting.backtesting.Position"><span class="pre">Position</span></a></em><a class="headerlink" href="#backtesting.backtesting.Strategy.position" title="Link to this definition">¶</a></dt>
+<dd><p>Instance of <cite>backtesting.backtesting.Position</cite>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backtesting.backtesting.Strategy.sell">
+<span class="sig-name descname"><span class="pre">sell</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">.9999</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sl</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">object</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/backtesting.html#Strategy.sell"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.backtesting.Strategy.sell" title="Link to this definition">¶</a></dt>
+<dd><p>Place a new short order. For explanation of parameters, see <cite>Order</cite> and its properties.</p>
+<p>See also <cite>Strategy.buy()</cite>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you merely want to close an existing long position,
+use <cite>Position.close()</cite> or <cite>Trade.close()</cite>.</p>
+</div>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Strategy.trades">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trades</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#backtesting.backtesting.Trade" title="backtesting.backtesting.Trade"><span class="pre">Trade</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#backtesting.backtesting.Strategy.trades" title="Link to this definition">¶</a></dt>
+<dd><p>List of active trades (see <cite>Trade</cite>).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="backtesting.backtesting.Trade">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">backtesting.backtesting.</span></span><span class="sig-name descname"><span class="pre">Trade</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">broker</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">_Broker</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entry_price</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entry_bar</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/backtesting.html#Trade"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.backtesting.Trade" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>When an <cite>Order</cite> is filled, it results in an active <cite>Trade</cite>.
+Find active trades in <cite>Strategy.trades</cite> and closed, settled trades in <cite>Strategy.closed_trades</cite>.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="backtesting.backtesting.Trade.close">
+<span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">portion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/backtesting.html#Trade.close"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.backtesting.Trade.close" title="Link to this definition">¶</a></dt>
+<dd><p>Place new <cite>Order</cite> to close <cite>portion</cite> of the trade at next market price.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Trade.entry_bar">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">entry_bar</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#backtesting.backtesting.Trade.entry_bar" title="Link to this definition">¶</a></dt>
+<dd><p>Candlestick bar index of when the trade was entered.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Trade.entry_price">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">entry_price</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#backtesting.backtesting.Trade.entry_price" title="Link to this definition">¶</a></dt>
+<dd><p>Trade entry price.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Trade.entry_time">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">entry_time</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Timestamp</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#backtesting.backtesting.Trade.entry_time" title="Link to this definition">¶</a></dt>
+<dd><p>Datetime of when the trade was entered.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Trade.exit_bar">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">exit_bar</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#backtesting.backtesting.Trade.exit_bar" title="Link to this definition">¶</a></dt>
+<dd><p>Candlestick bar index of when the trade was exited
+(or None if the trade is still active).</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Trade.exit_price">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">exit_price</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#backtesting.backtesting.Trade.exit_price" title="Link to this definition">¶</a></dt>
+<dd><p>Trade exit price (or None if the trade is still active).</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Trade.exit_time">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">exit_time</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Timestamp</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#backtesting.backtesting.Trade.exit_time" title="Link to this definition">¶</a></dt>
+<dd><p>Datetime of when the trade was exited.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Trade.is_long">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_long</span></span><a class="headerlink" href="#backtesting.backtesting.Trade.is_long" title="Link to this definition">¶</a></dt>
+<dd><p>True if the trade is long (trade size is positive).</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Trade.is_short">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_short</span></span><a class="headerlink" href="#backtesting.backtesting.Trade.is_short" title="Link to this definition">¶</a></dt>
+<dd><p>True if the trade is short (trade size is negative).</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Trade.pl">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pl</span></span><a class="headerlink" href="#backtesting.backtesting.Trade.pl" title="Link to this definition">¶</a></dt>
+<dd><p>Trade profit (positive) or loss (negative) in cash units.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Trade.pl_pct">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pl_pct</span></span><a class="headerlink" href="#backtesting.backtesting.Trade.pl_pct" title="Link to this definition">¶</a></dt>
+<dd><p>Trade profit (positive) or loss (negative) in percent.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Trade.size">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">size</span></span><a class="headerlink" href="#backtesting.backtesting.Trade.size" title="Link to this definition">¶</a></dt>
+<dd><p>Trade size (volume; negative for short trades).</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Trade.sl">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sl</span></span><a class="headerlink" href="#backtesting.backtesting.Trade.sl" title="Link to this definition">¶</a></dt>
+<dd><p>Stop-loss price at which to close the trade.</p>
+<p>This variable is writable. By assigning it a new price value,
+you create or modify the existing SL order.
+By assigning it <cite>None</cite>, you cancel it.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Trade.tag">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tag</span></span><a class="headerlink" href="#backtesting.backtesting.Trade.tag" title="Link to this definition">¶</a></dt>
+<dd><p>A tag value inherited from the <cite>Order</cite> that opened
+this trade.</p>
+<p>This can be used to track trades and apply conditional
+logic / subgroup analysis.</p>
+<p>See also <cite>Order.tag</cite>.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Trade.tp">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tp</span></span><a class="headerlink" href="#backtesting.backtesting.Trade.tp" title="Link to this definition">¶</a></dt>
+<dd><p>Take-profit price at which to close the trade.</p>
+<p>This property is writable. By assigning it a new price value,
+you create or modify the existing TP order.
+By assigning it <cite>None</cite>, you cancel it.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="backtesting.backtesting.Trade.value">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">value</span></span><a class="headerlink" href="#backtesting.backtesting.Trade.value" title="Link to this definition">¶</a></dt>
+<dd><p>Trade total value in cash (volume × price).</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-backtesting.lib">
+<span id="backtesting-lib-module"></span><h2>backtesting.lib module<a class="headerlink" href="#module-backtesting.lib" title="Link to this heading">¶</a></h2>
+<p>Collection of common building blocks, helper auxiliary functions and
+composable strategy classes for reuse.</p>
+<p>Intended for simple missing-link procedures, not reinventing
+of better-suited, state-of-the-art, fast libraries,
+such as TA-Lib, Tulipy, PyAlgoTrade, NumPy, SciPy …</p>
+<p>Please raise ideas for additions to this collection on the [issue tracker].</p>
+<p>[issue tracker]: <a class="reference external" href="https://github.com/kernc/backtesting.py">https://github.com/kernc/backtesting.py</a></p>
+<dl class="py data">
+<dt class="sig sig-object py" id="backtesting.lib.OHLCV_AGG">
+<span class="sig-prename descclassname"><span class="pre">backtesting.lib.</span></span><span class="sig-name descname"><span class="pre">OHLCV_AGG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'Close':</span> <span class="pre">'last',</span> <span class="pre">'High':</span> <span class="pre">'max',</span> <span class="pre">'Low':</span> <span class="pre">'min',</span> <span class="pre">'Open':</span> <span class="pre">'first',</span> <span class="pre">'Volume':</span> <span class="pre">'sum'}</span></em><a class="headerlink" href="#backtesting.lib.OHLCV_AGG" title="Link to this definition">¶</a></dt>
+<dd><p>Dictionary of rules for aggregating resampled OHLCV data frames,
+e.g.</p>
+<blockquote>
+<div><p>df.resample(‘4H’, label=’right’).agg(OHLCV_AGG).dropna()</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="backtesting.lib.SignalStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">backtesting.lib.</span></span><span class="sig-name descname"><span class="pre">SignalStrategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">broker</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/lib.html#SignalStrategy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.lib.SignalStrategy" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#backtesting.backtesting.Strategy" title="backtesting.backtesting.Strategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">Strategy</span></code></a></p>
+<p>A simple helper strategy that operates on position entry/exit signals.
+This makes the backtest of the strategy simulate a [vectorized backtest].
+See [tutorials] for usage examples.</p>
+<p>[vectorized backtest]: <a class="reference external" href="https://www.google.com/search?q=vectorized+backtest">https://www.google.com/search?q=vectorized+backtest</a>
+[tutorials]: index.html#tutorials</p>
+<p>To use this helper strategy, subclass it, override its
+<cite>backtesting.backtesting.Strategy.init</cite> method,
+and set the signal vector by calling
+<cite>backtesting.lib.SignalStrategy.set_signal</cite> method from within it.</p>
+<blockquote>
+<div><dl class="simple">
+<dt>class ExampleStrategy(SignalStrategy):</dt><dd><dl class="simple">
+<dt>def init(self):</dt><dd><p>super().init()
+self.set_signal(sma1 &gt; sma2, sma1 &lt; sma2)</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+<p>Remember to call <cite>super().init()</cite> and <cite>super().next()</cite> in your
+overridden methods.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="backtesting.lib.SignalStrategy.next">
+<span class="sig-name descname"><span class="pre">next</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/lib.html#SignalStrategy.next"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.lib.SignalStrategy.next" title="Link to this definition">¶</a></dt>
+<dd><p>Main strategy runtime method, called as each new
+<cite>backtesting.backtesting.Strategy.data</cite>
+instance (row; full candlestick bar) becomes available.
+This is the main method where strategy decisions
+upon data precomputed in <cite>backtesting.backtesting.Strategy.init</cite>
+take place.</p>
+<p>If you extend composable strategies from <cite>backtesting.lib</cite>,
+make sure to call:</p>
+<blockquote>
+<div><p>super().next()</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backtesting.lib.SignalStrategy.set_signal">
+<span class="sig-name descname"><span class="pre">set_signal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entry_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exit_portion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/lib.html#SignalStrategy.set_signal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.lib.SignalStrategy.set_signal" title="Link to this definition">¶</a></dt>
+<dd><p>Set entry/exit signal vectors (arrays).</p>
+<p>A long entry signal is considered present wherever <cite>entry_size</cite>
+is greater than zero, and a short signal wherever <cite>entry_size</cite>
+is less than zero, following <cite>backtesting.backtesting.Order.size</cite> semantics.</p>
+<p>If <cite>exit_portion</cite> is provided, a nonzero value closes portion the position
+(see <cite>backtesting.backtesting.Trade.close()</cite>) in the respective direction
+(positive values close long trades, negative short).</p>
+<p>If <cite>plot</cite> is <cite>True</cite>, the signal entry/exit indicators are plotted when
+<cite>backtesting.backtesting.Backtest.plot</cite> is called.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="backtesting.lib.TRADES_AGG">
+<span class="sig-prename descclassname"><span class="pre">backtesting.lib.</span></span><span class="sig-name descname"><span class="pre">TRADES_AGG</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'Duration':</span> <span class="pre">'sum',</span> <span class="pre">'EntryBar':</span> <span class="pre">'first',</span> <span class="pre">'EntryPrice':</span> <span class="pre">'mean',</span> <span class="pre">'EntryTime':</span> <span class="pre">'first',</span> <span class="pre">'ExitBar':</span> <span class="pre">'last',</span> <span class="pre">'ExitPrice':</span> <span class="pre">'mean',</span> <span class="pre">'ExitTime':</span> <span class="pre">'last',</span> <span class="pre">'PnL':</span> <span class="pre">'sum',</span> <span class="pre">'ReturnPct':</span> <span class="pre">'mean',</span> <span class="pre">'Size':</span> <span class="pre">'sum'}</span></em><a class="headerlink" href="#backtesting.lib.TRADES_AGG" title="Link to this definition">¶</a></dt>
+<dd><p>Dictionary of rules for aggregating resampled trades data,
+e.g.</p>
+<blockquote>
+<div><dl class="simple">
+<dt>stats[‘_trades’].resample(‘1D’, on=’ExitTime’,</dt><dd><p>label=’right’).agg(TRADES_AGG)</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="backtesting.lib.TrailingStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">backtesting.lib.</span></span><span class="sig-name descname"><span class="pre">TrailingStrategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">broker</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/lib.html#TrailingStrategy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.lib.TrailingStrategy" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#backtesting.backtesting.Strategy" title="backtesting.backtesting.Strategy"><code class="xref py py-class docutils literal notranslate"><span class="pre">Strategy</span></code></a></p>
+<p>A strategy with automatic trailing stop-loss, trailing the current
+price at distance of some multiple of average true range (ATR). Call
+<cite>TrailingStrategy.set_trailing_sl()</cite> to set said multiple
+(<cite>6</cite> by default). See [tutorials] for usage examples.</p>
+<p>[tutorials]: index.html#tutorials</p>
+<p>Remember to call <cite>super().init()</cite> and <cite>super().next()</cite> in your
+overridden methods.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="backtesting.lib.TrailingStrategy.init">
+<span class="sig-name descname"><span class="pre">init</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/lib.html#TrailingStrategy.init"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.lib.TrailingStrategy.init" title="Link to this definition">¶</a></dt>
+<dd><p>Initialize the strategy.
+Override this method.
+Declare indicators (with <cite>backtesting.backtesting.Strategy.I</cite>).
+Precompute what needs to be precomputed or can be precomputed
+in a vectorized fashion before the strategy starts.</p>
+<p>If you extend composable strategies from <cite>backtesting.lib</cite>,
+make sure to call:</p>
+<blockquote>
+<div><p>super().init()</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backtesting.lib.TrailingStrategy.next">
+<span class="sig-name descname"><span class="pre">next</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/lib.html#TrailingStrategy.next"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.lib.TrailingStrategy.next" title="Link to this definition">¶</a></dt>
+<dd><p>Main strategy runtime method, called as each new
+<cite>backtesting.backtesting.Strategy.data</cite>
+instance (row; full candlestick bar) becomes available.
+This is the main method where strategy decisions
+upon data precomputed in <cite>backtesting.backtesting.Strategy.init</cite>
+take place.</p>
+<p>If you extend composable strategies from <cite>backtesting.lib</cite>,
+make sure to call:</p>
+<blockquote>
+<div><p>super().next()</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backtesting.lib.TrailingStrategy.set_atr_periods">
+<span class="sig-name descname"><span class="pre">set_atr_periods</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">periods</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">100</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/lib.html#TrailingStrategy.set_atr_periods"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.lib.TrailingStrategy.set_atr_periods" title="Link to this definition">¶</a></dt>
+<dd><p>Set the lookback period for computing ATR. The default value
+of 100 ensures a _stable_ ATR.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="backtesting.lib.TrailingStrategy.set_trailing_sl">
+<span class="sig-name descname"><span class="pre">set_trailing_sl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_atr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">6</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/lib.html#TrailingStrategy.set_trailing_sl"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.lib.TrailingStrategy.set_trailing_sl" title="Link to this definition">¶</a></dt>
+<dd><p>Sets the future trailing stop-loss as some multiple (<cite>n_atr</cite>)
+average true bar ranges away from the current price.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="backtesting.lib.barssince">
+<span class="sig-prename descclassname"><span class="pre">backtesting.lib.</span></span><span class="sig-name descname"><span class="pre">barssince</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">condition</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">inf</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="reference internal" href="_modules/backtesting/lib.html#barssince"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.lib.barssince" title="Link to this definition">¶</a></dt>
+<dd><p>Return the number of bars since <cite>condition</cite> sequence was last <cite>True</cite>,
+or if never, return <cite>default</cite>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">barssince</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Close</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Open</span><span class="p">)</span>
+<span class="go">3</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="backtesting.lib.compute_stats">
+<span class="sig-prename descclassname"><span class="pre">backtesting.lib.</span></span><span class="sig-name descname"><span class="pre">compute_stats</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stats</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Series</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trades</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">risk_free_rate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Series</span></span></span><a class="reference internal" href="_modules/backtesting/lib.html#compute_stats"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.lib.compute_stats" title="Link to this definition">¶</a></dt>
+<dd><p>(Re-)compute strategy performance metrics.</p>
+<p><cite>stats</cite> is the statistics series as returned by <cite>backtesting.backtesting.Backtest.run()</cite>.
+<cite>data</cite> is OHLC data as passed to the <cite>backtesting.backtesting.Backtest</cite>
+the <cite>stats</cite> were obtained in.
+<cite>trades</cite> can be a dataframe subset of <cite>stats._trades</cite> (e.g. only long trades).
+You can also tune <cite>risk_free_rate</cite>, used in calculation of Sharpe and Sortino ratios.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">stats</span> <span class="o">=</span> <span class="n">Backtest</span><span class="p">(</span><span class="n">GOOG</span><span class="p">,</span> <span class="n">MyStrategy</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">only_long_trades</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">_trades</span><span class="p">[</span><span class="n">stats</span><span class="o">.</span><span class="n">_trades</span><span class="o">.</span><span class="n">Size</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">long_stats</span> <span class="o">=</span> <span class="n">compute_stats</span><span class="p">(</span><span class="n">stats</span><span class="o">=</span><span class="n">stats</span><span class="p">,</span> <span class="n">trades</span><span class="o">=</span><span class="n">only_long_trades</span><span class="p">,</span>
+<span class="gp">... </span>                           <span class="n">data</span><span class="o">=</span><span class="n">GOOG</span><span class="p">,</span> <span class="n">risk_free_rate</span><span class="o">=</span><span class="mf">.02</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="backtesting.lib.cross">
+<span class="sig-prename descclassname"><span class="pre">backtesting.lib.</span></span><span class="sig-name descname"><span class="pre">cross</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">series1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">series2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/backtesting/lib.html#cross"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.lib.cross" title="Link to this definition">¶</a></dt>
+<dd><p>Return <cite>True</cite> if <cite>series1</cite> and <cite>series2</cite> just crossed
+(above or below) each other.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cross</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Close</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">sma</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="backtesting.lib.crossover">
+<span class="sig-prename descclassname"><span class="pre">backtesting.lib.</span></span><span class="sig-name descname"><span class="pre">crossover</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">series1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">series2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/backtesting/lib.html#crossover"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.lib.crossover" title="Link to this definition">¶</a></dt>
+<dd><p>Return <cite>True</cite> if <cite>series1</cite> just crossed over (above)
+<cite>series2</cite>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">crossover</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Close</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">sma</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="backtesting.lib.plot_heatmaps">
+<span class="sig-prename descclassname"><span class="pre">backtesting.lib.</span></span><span class="sig-name descname"><span class="pre">plot_heatmaps</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">heatmap</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Series</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">agg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Callable</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'max'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ncols</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot_width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1200</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">open_browser</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/lib.html#plot_heatmaps"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.lib.plot_heatmaps" title="Link to this definition">¶</a></dt>
+<dd><p>Plots a grid of heatmaps, one for every pair of parameters in <cite>heatmap</cite>.</p>
+<p><cite>heatmap</cite> is a Series as returned by
+<cite>backtesting.backtesting.Backtest.optimize</cite> when its parameter
+<cite>return_heatmap=True</cite>.</p>
+<p>When projecting the n-dimensional heatmap onto 2D, the values are
+aggregated by ‘max’ function by default. This can be tweaked
+with <cite>agg</cite> parameter, which accepts any argument pandas knows
+how to aggregate by.</p>
+<p>[plot_objective]:         <a class="reference external" href="https://scikit-optimize.github.io/stable/modules/plots.html#plot-objective">https://scikit-optimize.github.io/stable/modules/plots.html#plot-objective</a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="backtesting.lib.quantile">
+<span class="sig-prename descclassname"><span class="pre">backtesting.lib.</span></span><span class="sig-name descname"><span class="pre">quantile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">series</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantile</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/lib.html#quantile"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.lib.quantile" title="Link to this definition">¶</a></dt>
+<dd><p>If <cite>quantile</cite> is <cite>None</cite>, return the quantile _rank_ of the last
+value of <cite>series</cite> wrt former series values.</p>
+<p>If <cite>quantile</cite> is a value between 0 and 1, return the _value_ of
+<cite>series</cite> at this quantile. If used to working with percentiles, just
+divide your percentile amount with 100 to obtain quantiles.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">quantile</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Close</span><span class="p">[</span><span class="o">-</span><span class="mi">20</span><span class="p">:],</span> <span class="mf">.1</span><span class="p">)</span>
+<span class="go">162.130</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">quantile</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Close</span><span class="p">)</span>
+<span class="go">0.13</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="backtesting.lib.random_ohlc_data">
+<span class="sig-prename descclassname"><span class="pre">backtesting.lib.</span></span><span class="sig-name descname"><span class="pre">random_ohlc_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frac</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="reference internal" href="_modules/backtesting/lib.html#random_ohlc_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.lib.random_ohlc_data" title="Link to this definition">¶</a></dt>
+<dd><p>OHLC data generator. The generated OHLC data has basic
+[descriptive statistics](<a class="reference external" href="https://en.wikipedia.org/wiki/Descriptive_statistics">https://en.wikipedia.org/wiki/Descriptive_statistics</a>)
+similar to the provided <cite>example_data</cite>.</p>
+<p><cite>frac</cite> is a fraction of data to sample (with replacement). Values greater
+than 1 result in oversampling.</p>
+<p>Such random data can be effectively used for stress testing trading
+strategy robustness, Monte Carlo simulations, significance testing, etc.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">backtesting.test</span> <span class="kn">import</span> <span class="n">EURUSD</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ohlc_generator</span> <span class="o">=</span> <span class="n">random_ohlc_data</span><span class="p">(</span><span class="n">EURUSD</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">next</span><span class="p">(</span><span class="n">ohlc_generator</span><span class="p">)</span>  <span class="c1"># returns new random data</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">next</span><span class="p">(</span><span class="n">ohlc_generator</span><span class="p">)</span>  <span class="c1"># returns new random data</span>
+<span class="gp">...</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="backtesting.lib.resample_apply">
+<span class="sig-prename descclassname"><span class="pre">backtesting.lib.</span></span><span class="sig-name descname"><span class="pre">resample_apply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rule</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">func</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Sequence</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">series</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Series</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">DataFrame</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">_Array</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">agg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">dict</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/backtesting/lib.html#resample_apply"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#backtesting.lib.resample_apply" title="Link to this definition">¶</a></dt>
+<dd><p>Apply <cite>func</cite> (such as an indicator) to <cite>series</cite>, resampled to
+a time frame specified by <cite>rule</cite>. When called from inside
+<cite>backtesting.backtesting.Strategy.init</cite>,
+the result (returned) series will be automatically wrapped in
+<cite>backtesting.backtesting.Strategy.I</cite>
+wrapper method.</p>
+<p><cite>rule</cite> is a valid [Pandas offset string] indicating
+a time frame to resample <cite>series</cite> to.</p>
+<p>[Pandas offset string]: <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/timeseries.html#offset-aliases">http://pandas.pydata.org/pandas-docs/stable/timeseries.html#offset-aliases</a></p>
+<p><cite>func</cite> is the indicator function to apply on the resampled series.</p>
+<p><cite>series</cite> is a data series (or array), such as any of the
+<cite>backtesting.backtesting.Strategy.data</cite> series. Due to pandas
+resampling limitations, this only works when input series
+has a datetime index.</p>
+<p><cite>agg</cite> is the aggregation function to use on resampled groups of data.
+Valid values are anything accepted by <cite>pandas/resample/.agg()</cite>.
+Default value for dataframe input is <cite>OHLCV_AGG</cite> dictionary.
+Default value for series input is the appropriate entry from <cite>OHLCV_AGG</cite>
+if series has a matching name, or otherwise the value <cite>“last”</cite>,
+which is suitable for closing prices,
+but you might prefer another (e.g. <cite>“max”</cite> for peaks, or similar).</p>
+<p>Finally, any <cite>*args</cite> and <cite>**kwargs</cite> that are not already eaten by
+implicit <cite>backtesting.backtesting.Strategy.I</cite> call
+are passed to <cite>func</cite>.</p>
+<p>For example, if we have a typical moving average function
+<cite>SMA(values, lookback_period)</cite>, _hourly_ data source, and need to
+apply the moving average MA(10) on a _daily_ time frame,
+but don’t want to plot the resulting indicator, we can do:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">System</span><span class="p">(</span><span class="n">Strategy</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">init</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sma</span> <span class="o">=</span> <span class="n">resample_apply</span><span class="p">(</span>
+            <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="n">SMA</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Close</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The above short snippet is roughly equivalent to:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">System</span><span class="p">(</span><span class="n">Strategy</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">init</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># Strategy exposes `self.data` as raw NumPy arrays.</span>
+        <span class="c1"># Let&#39;s convert closing prices back to pandas Series.</span>
+        <span class="n">close</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Close</span><span class="o">.</span><span class="n">s</span>
+
+        <span class="c1"># Resample to daily resolution. Aggregate groups</span>
+        <span class="c1"># using their last value (i.e. closing price at the end</span>
+        <span class="c1"># of the day). Notice `label=&#39;right&#39;`. If it were set to</span>
+        <span class="c1"># &#39;left&#39; (default), the strategy would exhibit</span>
+        <span class="c1"># look-ahead bias.</span>
+        <span class="n">daily</span> <span class="o">=</span> <span class="n">close</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="s1">&#39;last&#39;</span><span class="p">)</span>
+
+        <span class="c1"># We apply SMA(10) to daily close prices,</span>
+        <span class="c1"># then reindex it back to original hourly index,</span>
+        <span class="c1"># forward-filling the missing values in each day.</span>
+        <span class="c1"># We make a separate function that returns the final</span>
+        <span class="c1"># indicator array.</span>
+        <span class="k">def</span> <span class="nf">SMA</span><span class="p">(</span><span class="n">series</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+            <span class="kn">from</span> <span class="nn">backtesting.test</span> <span class="kn">import</span> <span class="n">SMA</span>
+            <span class="k">return</span> <span class="n">SMA</span><span class="p">(</span><span class="n">series</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span><span class="o">.</span><span class="n">reindex</span><span class="p">(</span><span class="n">close</span><span class="o">.</span><span class="n">index</span><span class="p">)</span><span class="o">.</span><span class="n">ffill</span><span class="p">()</span>
+
+        <span class="c1"># The result equivalent to the short example above:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sma</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">I</span><span class="p">(</span><span class="n">SMA</span><span class="p">,</span> <span class="n">daily</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="module-backtesting">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-backtesting" title="Link to this heading">¶</a></h2>
+<p>![xkcd.com/1570](<a class="reference external" href="https://imgs.xkcd.com/comics/engineer_syllogism.png">https://imgs.xkcd.com/comics/engineer_syllogism.png</a>)</p>
+<p>## Manuals</p>
+<ul class="simple">
+<li><p>[<strong>Quick Start User Guide</strong>](../examples/Quick Start User Guide.html)</p></li>
+</ul>
+<p>## Tutorials</p>
+<ul class="simple">
+<li><p>[Library of Utilities and Composable Base Strategies](../examples/Strategies Library.html)</p></li>
+<li><p>[Multiple Time Frames](../examples/Multiple Time Frames.html)</p></li>
+<li><p>[<strong>Parameter Heatmap &amp; Optimization</strong>](../examples/Parameter Heatmap &amp;amp; Optimization.html)</p></li>
+<li><p>[Trading with Machine Learning](../examples/Trading with Machine Learning.html)</p></li>
+</ul>
+<p>These tutorials are also available as live Jupyter notebooks:
+[![Binder](<a class="reference external" href="https://mybinder.org/badge_logo.svg)][binder">https://mybinder.org/badge_logo.svg)][binder</a>]
+[![Google Colab](<a class="reference external" href="https://colab.research.google.com/assets/colab-badge.png)][colab">https://colab.research.google.com/assets/colab-badge.png)][colab</a>]
+&lt;br&gt;In Colab, you might have to <cite>!pip install backtesting</cite>.</p>
+<p>[binder]:     <a class="reference external" href="https://mybinder.org/v2/gh/kernc/backtesting.py/master?urlpath=lab%2Ftree%2Fdoc%2Fexamples%2FQuick%20Start%20User%20Guide.ipynb">https://mybinder.org/v2/gh/kernc/backtesting.py/master?urlpath=lab%2Ftree%2Fdoc%2Fexamples%2FQuick%20Start%20User%20Guide.ipynb</a>
+[colab]: <a class="reference external" href="https://colab.research.google.com/github/kernc/backtesting.py/">https://colab.research.google.com/github/kernc/backtesting.py/</a></p>
+<p>## Example Strategies</p>
+<ul class="simple">
+<li><p>(contributions welcome)</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>For an overview of recent changes, see
+[What’s New](<a class="reference external" href="https://github.com/kernc/backtesting.py/blob/master/CHANGELOG.md">https://github.com/kernc/backtesting.py/blob/master/CHANGELOG.md</a>).</p>
+</div>
+<p>## FAQ</p>
+<p>Some answers to frequent and popular questions can be found on the
+[issue tracker](<a class="reference external" href="https://github.com/kernc/backtesting.py/issues?q=label%3Aquestion+-label%3Ainvalid">https://github.com/kernc/backtesting.py/issues?q=label%3Aquestion+-label%3Ainvalid</a>)
+or on the [discussion forum](<a class="reference external" href="https://github.com/kernc/backtesting.py/discussions">https://github.com/kernc/backtesting.py/discussions</a>) on GitHub.
+Please use the search!</p>
+<p>## License</p>
+<p>This software is licensed under the terms of [AGPL 3.0]{: rel=license},
+meaning you can use it for any reasonable purpose and remain in
+complete ownership of all the excellent trading strategies you produce,
+but you are also encouraged to make sure any upgrades to _Backtesting.py_
+itself find their way back to the community.</p>
+<p>[AGPL 3.0]: <a class="reference external" href="https://www.gnu.org/licenses/agpl-3.0.html">https://www.gnu.org/licenses/agpl-3.0.html</a></p>
+<p># API Reference Documentation</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo">
+                <div style="text-align: center;">
+                    <a href="https://www.lucit.tech"><img src="https://www.lucit.tech/files/images/logos/LUCIT-LOGO.png"></a><br>
+                    <a href="https://shop.lucit.services/software/unicorn-binance-suite" style="font-size: 0.85em;font-weight: 900">Get a UNICORN Binance Suite License!</a><br>
+                    <br>
+                    <a href="https://github.com/LUCIT-Systems-and-Development" target="_blank" style="text-decoration:none;"><img src="_static/icons8-github-20.png"></a>
+                    <a href="https://fb.me/lucit.systems.and.development" target="_blank" style="text-decoration:none;"><img src="_static/icons8-facebook-20.png"></a>
+                    <a href="https://twitter.com/LUCIT_SysDev" target="_blank" style="text-decoration:none;"><img src="_static/icons8-twitter-20.png"></a>
+                    <a href="https://www.linkedin.com/company/lucit-systems-and-development" target="_blank" style="text-decoration:none;"><img src="_static/icons8-linkedin-20.png"></a>
+                    <a href="https://www.xing.com/pages/lucit-systems-and-development" target="_blank" style="text-decoration:none;"><img src="_static/icons8-xing-20.png"></a>
+                    <a href="https://medium.lucit.tech" target="_blank" style="text-decoration:none;"><img src="_static/icons8-medium-monogram-20.png"></a>
+                    <a href="https://www.youtube.com/channel/UCp57u8vaPqEWQTlfpYn-KnQ" target="_blank" style="text-decoration:none;"><img src="_static/icons8-youtube-20.png"></a>
+                </div>
+            </p>
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">lucit_backtesting package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-backtesting.backtesting">backtesting.backtesting module</a><ul>
+<li><a class="reference internal" href="#backtesting.backtesting.Backtest"><code class="docutils literal notranslate"><span class="pre">Backtest</span></code></a><ul>
+<li><a class="reference internal" href="#backtesting.backtesting.Backtest.optimize"><code class="docutils literal notranslate"><span class="pre">Backtest.optimize()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Backtest.plot"><code class="docutils literal notranslate"><span class="pre">Backtest.plot()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Backtest.run"><code class="docutils literal notranslate"><span class="pre">Backtest.run()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#backtesting.backtesting.Order"><code class="docutils literal notranslate"><span class="pre">Order</span></code></a><ul>
+<li><a class="reference internal" href="#backtesting.backtesting.Order.cancel"><code class="docutils literal notranslate"><span class="pre">Order.cancel()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Order.is_contingent"><code class="docutils literal notranslate"><span class="pre">Order.is_contingent</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Order.is_long"><code class="docutils literal notranslate"><span class="pre">Order.is_long</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Order.is_short"><code class="docutils literal notranslate"><span class="pre">Order.is_short</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Order.limit"><code class="docutils literal notranslate"><span class="pre">Order.limit</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Order.parent_trade"><code class="docutils literal notranslate"><span class="pre">Order.parent_trade</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Order.size"><code class="docutils literal notranslate"><span class="pre">Order.size</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Order.sl"><code class="docutils literal notranslate"><span class="pre">Order.sl</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Order.stop"><code class="docutils literal notranslate"><span class="pre">Order.stop</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Order.tag"><code class="docutils literal notranslate"><span class="pre">Order.tag</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Order.tp"><code class="docutils literal notranslate"><span class="pre">Order.tp</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#backtesting.backtesting.Position"><code class="docutils literal notranslate"><span class="pre">Position</span></code></a><ul>
+<li><a class="reference internal" href="#backtesting.backtesting.Position.close"><code class="docutils literal notranslate"><span class="pre">Position.close()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Position.is_long"><code class="docutils literal notranslate"><span class="pre">Position.is_long</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Position.is_short"><code class="docutils literal notranslate"><span class="pre">Position.is_short</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Position.pl"><code class="docutils literal notranslate"><span class="pre">Position.pl</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Position.pl_pct"><code class="docutils literal notranslate"><span class="pre">Position.pl_pct</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Position.size"><code class="docutils literal notranslate"><span class="pre">Position.size</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy"><code class="docutils literal notranslate"><span class="pre">Strategy</span></code></a><ul>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy.I"><code class="docutils literal notranslate"><span class="pre">Strategy.I()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy.buy"><code class="docutils literal notranslate"><span class="pre">Strategy.buy()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy.closed_trades"><code class="docutils literal notranslate"><span class="pre">Strategy.closed_trades</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy.data"><code class="docutils literal notranslate"><span class="pre">Strategy.data</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy.equity"><code class="docutils literal notranslate"><span class="pre">Strategy.equity</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy.init"><code class="docutils literal notranslate"><span class="pre">Strategy.init()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy.next"><code class="docutils literal notranslate"><span class="pre">Strategy.next()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy.orders"><code class="docutils literal notranslate"><span class="pre">Strategy.orders</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy.position"><code class="docutils literal notranslate"><span class="pre">Strategy.position</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy.sell"><code class="docutils literal notranslate"><span class="pre">Strategy.sell()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Strategy.trades"><code class="docutils literal notranslate"><span class="pre">Strategy.trades</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade"><code class="docutils literal notranslate"><span class="pre">Trade</span></code></a><ul>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.close"><code class="docutils literal notranslate"><span class="pre">Trade.close()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.entry_bar"><code class="docutils literal notranslate"><span class="pre">Trade.entry_bar</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.entry_price"><code class="docutils literal notranslate"><span class="pre">Trade.entry_price</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.entry_time"><code class="docutils literal notranslate"><span class="pre">Trade.entry_time</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.exit_bar"><code class="docutils literal notranslate"><span class="pre">Trade.exit_bar</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.exit_price"><code class="docutils literal notranslate"><span class="pre">Trade.exit_price</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.exit_time"><code class="docutils literal notranslate"><span class="pre">Trade.exit_time</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.is_long"><code class="docutils literal notranslate"><span class="pre">Trade.is_long</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.is_short"><code class="docutils literal notranslate"><span class="pre">Trade.is_short</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.pl"><code class="docutils literal notranslate"><span class="pre">Trade.pl</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.pl_pct"><code class="docutils literal notranslate"><span class="pre">Trade.pl_pct</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.size"><code class="docutils literal notranslate"><span class="pre">Trade.size</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.sl"><code class="docutils literal notranslate"><span class="pre">Trade.sl</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.tag"><code class="docutils literal notranslate"><span class="pre">Trade.tag</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.tp"><code class="docutils literal notranslate"><span class="pre">Trade.tp</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.backtesting.Trade.value"><code class="docutils literal notranslate"><span class="pre">Trade.value</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-backtesting.lib">backtesting.lib module</a><ul>
+<li><a class="reference internal" href="#backtesting.lib.OHLCV_AGG"><code class="docutils literal notranslate"><span class="pre">OHLCV_AGG</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.SignalStrategy"><code class="docutils literal notranslate"><span class="pre">SignalStrategy</span></code></a><ul>
+<li><a class="reference internal" href="#backtesting.lib.SignalStrategy.next"><code class="docutils literal notranslate"><span class="pre">SignalStrategy.next()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.SignalStrategy.set_signal"><code class="docutils literal notranslate"><span class="pre">SignalStrategy.set_signal()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#backtesting.lib.TRADES_AGG"><code class="docutils literal notranslate"><span class="pre">TRADES_AGG</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.TrailingStrategy"><code class="docutils literal notranslate"><span class="pre">TrailingStrategy</span></code></a><ul>
+<li><a class="reference internal" href="#backtesting.lib.TrailingStrategy.init"><code class="docutils literal notranslate"><span class="pre">TrailingStrategy.init()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.TrailingStrategy.next"><code class="docutils literal notranslate"><span class="pre">TrailingStrategy.next()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.TrailingStrategy.set_atr_periods"><code class="docutils literal notranslate"><span class="pre">TrailingStrategy.set_atr_periods()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.TrailingStrategy.set_trailing_sl"><code class="docutils literal notranslate"><span class="pre">TrailingStrategy.set_trailing_sl()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#backtesting.lib.barssince"><code class="docutils literal notranslate"><span class="pre">barssince()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.compute_stats"><code class="docutils literal notranslate"><span class="pre">compute_stats()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.cross"><code class="docutils literal notranslate"><span class="pre">cross()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.crossover"><code class="docutils literal notranslate"><span class="pre">crossover()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.plot_heatmaps"><code class="docutils literal notranslate"><span class="pre">plot_heatmaps()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.quantile"><code class="docutils literal notranslate"><span class="pre">quantile()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.random_ohlc_data"><code class="docutils literal notranslate"><span class="pre">random_ohlc_data()</span></code></a></li>
+<li><a class="reference internal" href="#backtesting.lib.resample_apply"><code class="docutils literal notranslate"><span class="pre">resample_apply()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-backtesting">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="readme.html"
+                          title="previous chapter">lucit-backtesting - ‘backtesting.py’ maintained by LUCIT</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="changelog.html"
+                          title="next chapter">What’s New</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/lucit_backtesting.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: block" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+<div role="note" aria-label="source code">
+    <h3>GitHub</h3>
+    <ul class="this-page-menu">
+      <li><a href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting">Show Source</a></li>
+      
+<li>
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting"
+   data-icon="octicon-star" data-show-count="true"
+   aria-label="Star LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Star</a>
+<br />
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/subscription"
+   data-icon="octicon-eye" data-show-count="true"
+   aria-label="Watch LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Watch</a>
+<br />
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/fork"
+   data-icon="octicon-repo-forked" data-show-count="true"
+   aria-label="Fork LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Fork</a>
+<br />
+<a class="github-button" href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/issues"
+   data-icon="octicon-issue-opened"
+   data-show-count="true" aria-label="Issue LUCIT-Systems-and-Development/lucit-backtesting on GitHub">Issue</a>
+    
+</li>
+
+    </ul>
+</div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="changelog.html" title="What’s New"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="readme.html" title="lucit-backtesting - ‘backtesting.py’ maintained by LUCIT"
+             >previous</a> |</li>
+              
+                  
+                  
+              <li><img src="_static/lucit.png" alt="LUCIT Logo"
+                       style="vertical-align: middle; margin-top: -1px"/></li>
+              <li><a href="https://docs.lucit.tech">Docs Index</a> | </li>
+              <li><a href="https://www.lucit.tech/lucit-backtesting.html">lucit-backtesting</a> &#187;</li>
+                  
+              
+              
+              <a href="index.html">Docs</a> &#187;
+              
+        <li class="nav-item nav-item-this"><a href="">lucit_backtesting package</a></li>
+                <li class="right">
+                    
+
+    <div class="inline-search" role="search">
+        <form class="inline-search" action="search.html" method="get">
+          <input placeholder="Quick search" aria-label="Quick search" type="text" name="q" />
+          <input type="submit" value="Go" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
+                     |
+                </li>
+            
+      </ul>
+    </div>  
+    <div class="footer">
+    <a href="https://docs.lucit.tech">Index of all LUCIT Software Documentation</a><br />
+    &copy; <a href="/license.html">Copyright</a> 2024-2024, LUCIT Systems and Development. All Rights Reserved..
+    See <a href="/license.html">License</a> for more information.<br />
+    Last updated on Jun 06 2024 at 23:18 (CET).
+    <a href="https://github.com/LUCIT-Systems-and-Development/lucit-backtesting/issues/new/choose">Found a bug</a>?
+    <br />
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+        with <a href="https://github.com/LUCIT-Systems-and-Development/python-docs-theme-lucit">python-docs-theme-lucit</a>
+        by <a href="https://www.lucit.tech">LUCIT Systems and Development</a>.
+    </div>
+    
+    <img referrerpolicy="no-referrer-when-downgrade" src="https://webmon.lucit.services/matomo.php?idsite=11&amp;rec=1" style="border:0" alt="" />
+    
+
+  </body>
+</html>
