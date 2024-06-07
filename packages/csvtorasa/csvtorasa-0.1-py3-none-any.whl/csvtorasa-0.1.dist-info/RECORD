@@ -1,0 +1,8 @@
+csvtorasa/__init__.py,sha256=u43h7VeFEUrEaET7MM265pdAmMQbeGyOFR6SyDRIpOg,50
+csvtorasa/main.py,sha256=4i3uatBDpYgXsbJRnb4HrFobdNvp6CAjEm6A8udbtfM,2804
+csvtorasa/data/nlu_sample_format_for_conversion.csv,sha256=VtI3qidQrhfn7dB_SJ6QsDgb5JvNw7_lphLaDP3clpg,976
+csvtorasa-0.1.dist-info/LICENSE,sha256=1hh0bE5Fm2bR0zMdlCuN7nrS1Woa0sf3ODsF6Tm84z4,1066
+csvtorasa-0.1.dist-info/METADATA,sha256=C-SvJpJevfM0nAL47gCvMmCJfxMzSElDZMdFvWNkK5g,244
+csvtorasa-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+csvtorasa-0.1.dist-info/top_level.txt,sha256=e_opHEtpYs8bcbAyAHctVXyrDQEh8flmikFFvdveaS8,10
+csvtorasa-0.1.dist-info/RECORD,,

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: csvtorasa
+Version: 0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Lohith Arcot
+Author-email: lohith.arcot@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: pandas (>=2.2.2)
+
+UNKNOWN
+
