@@ -1,0 +1,5 @@
+DICT_ITEM_REMOVED = "Элемент словаря убран"
+DICT_ITEM_ADDED = "Элемент словаря добавлен"
+ITERABLE_ITEM_REMOVED = "Элемент списка убран"
+ITERABLE_ITEM_ADDED = "Элемент списка добавлен"
+VALUES_OR_TYPE = "Значение или тип элемента изменены"
