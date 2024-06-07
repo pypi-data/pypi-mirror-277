@@ -1,0 +1,39 @@
+from _typeshed import Incomplete
+from edgeiq.bounding_box import BoundingBox as BoundingBox
+from edgeiq.object_detection import ObjectDetectionPrediction as ObjectDetectionPrediction
+from typing import Callable, List, Optional, TypeVar
+
+PredictionT = ObjectDetectionPrediction
+
+class TrackablePrediction(PredictionT):
+    tracker_init_id: int
+    tracker_id: int
+    prediction: Incomplete
+    deregister_frames: Incomplete
+    min_inertia: Incomplete
+    tid: Incomplete
+    inertia: int
+    hits: int
+    age: int
+    disappeared_frames: int
+    def __init__(self, prediction: PredictionT, deregister_frames: int, min_inertia: int, history_length: int, enter_cb: Optional['TrackerCbT'] = ..., exit_cb: Optional['TrackerCbT'] = ...) -> None: ...
+    def step(self, **kwargs) -> None: ...
+    def handle_found(self, prediction: PredictionT): ...
+    def handle_disappeared(self) -> None: ...
+    def handle_removed(self) -> None: ...
+    @property
+    def is_initialized(self) -> bool: ...
+    @property
+    def is_lost(self) -> bool: ...
+    @property
+    def history(self) -> List[PredictionT]: ...
+    @property
+    def label(self) -> str: ...
+    @property
+    def index(self) -> int: ...
+    @property
+    def box(self) -> BoundingBox: ...
+    @property
+    def confidence(self) -> float: ...
+TrackablePredictionT = TypeVar('TrackablePredictionT', bound=TrackablePrediction)
+TrackerCbT = Callable[[int, TrackablePredictionT], None]
