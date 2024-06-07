@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/calories.py
+src/calories.egg-info/PKG-INFO
+src/calories.egg-info/SOURCES.txt
+src/calories.egg-info/dependency_links.txt
+src/calories.egg-info/entry_points.txt
+src/calories.egg-info/top_level.txt
