@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pdfmarker"
+version = "0.2.0"
+description = "Simple tool to mark/add highlights to pdf documents."
+authors = ["Tom Uijtdehaag <tjl.udh@gmail.com>"]
+readme = "README.md"
+license = "GNU General Public License v3.0"
+homepage = "https://github.com/TomUijtdehaag/pdfmarker"
+
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+PyMuPDF = "^1.24.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+bandit = "^1.7.8"
+safety = "^3.1.0"
+pytest-cov = "^5.0.0"
+ruff = "^0.3.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
