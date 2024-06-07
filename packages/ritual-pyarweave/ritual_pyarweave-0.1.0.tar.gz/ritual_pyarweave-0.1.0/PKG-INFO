@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: ritual-pyarweave
+Version: 0.1.0
+Summary: Add your description here
+Author-email: ritual <hello@ritual.net>
+Requires-Python: >=3.9
+Requires-Dist: arrow<2.0.0,>=1.3.0
+Requires-Dist: erlang-py<3.0.0,>=2.0.7
+Requires-Dist: pycryptodome<4.0.0,>=3.19.1
+Requires-Dist: python-jose<4.0.0,>=3.3.0
+Requires-Dist: requests<3.0.0,>=2.31.0
+Description-Content-Type: text/markdown
+
+# Ritual PyArweave
+
+This directory wraps the [pyarweave](https://github.com/ritual-net/pyarweave)
+repository, which is a fork of the `pyarweave` project with some additional
+features and bug fixes. The library is packaged as `ritual-pyarweave` and
+is used as a dependency for the `ritual-arweave` library & CLI tool.
