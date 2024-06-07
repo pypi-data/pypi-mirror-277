@@ -1,0 +1,17 @@
+[project]
+name = "movel"
+description = "calculating the moment of velocity"
+readme = "README.rst"
+authors = [
+    { name = "Kaitlyn Chen", email = "kaichen@g.hmc.edu" }
+]
+license = { text = "BSD 3-Clause License" }
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+]
+dynamic = ["version"]
+
+[project.urls]
+homepage = "https://github.com/kaitlynchen1/moment-of-velocity/tree/main"

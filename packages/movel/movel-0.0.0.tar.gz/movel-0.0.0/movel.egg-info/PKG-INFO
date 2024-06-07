@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: movel
+Version: 0.0.0
+Summary: calculating the moment of velocity
+Author-email: Kaitlyn Chen <kaichen@g.hmc.edu>
+License: BSD 3-Clause License
+Project-URL: homepage, https://github.com/kaitlynchen1/moment-of-velocity/tree/main
+Description-Content-Type: text/x-rst
+License-File: LICENSE.rst
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
