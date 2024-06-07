@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "visionir_io_observer"
+version = "2024.06.06"
+description = "Observer class for logging and pyroscope-app"
+authors = ["Nir Abutbul <nir@visionir.io>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/visionir-io/visionir/tree/master/apps/observer"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.observers.dependencies]
+pyroscope-io = "^0.8.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
