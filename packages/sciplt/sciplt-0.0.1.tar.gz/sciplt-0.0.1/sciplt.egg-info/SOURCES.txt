@@ -1,0 +1,8 @@
+README.md
+setup.py
+sciplt/__init__.py
+sciplt/starter.py
+sciplt.egg-info/PKG-INFO
+sciplt.egg-info/SOURCES.txt
+sciplt.egg-info/dependency_links.txt
+sciplt.egg-info/top_level.txt
