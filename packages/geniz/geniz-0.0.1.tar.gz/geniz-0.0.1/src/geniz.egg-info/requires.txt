@@ -1,0 +1,12 @@
+docker
+gradio
+isort
+litellm
+pydantic
+ray[default]
+
+[dev]
+check-manifest
+
+[test]
+coverage
