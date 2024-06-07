@@ -1,0 +1,10 @@
+numpy
+h5py
+scipy
+astropy
+pyyaml
+matplotlib
+scikit-learn
+pandas
+pytest>=7.0.0
+importlib_resources
