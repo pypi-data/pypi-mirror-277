@@ -1,0 +1,11 @@
+README.md
+setup.py
+./doom_chan/libmpv-2.dll
+doom_chan/__init__.py
+doom_chan/doom_chan.py
+doom_chan.egg-info/PKG-INFO
+doom_chan.egg-info/SOURCES.txt
+doom_chan.egg-info/dependency_links.txt
+doom_chan.egg-info/entry_points.txt
+doom_chan.egg-info/requires.txt
+doom_chan.egg-info/top_level.txt
