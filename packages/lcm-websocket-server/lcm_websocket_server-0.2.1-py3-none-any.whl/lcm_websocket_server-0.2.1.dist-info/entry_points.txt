@@ -1,0 +1,6 @@
+[console_scripts]
+lcm-websocket-dial-proxy=lcm_websocket_server.apps.dial_proxy:main
+lcm-websocket-jpeg-proxy=lcm_websocket_server.apps.jpeg_proxy:main
+lcm-websocket-json-proxy=lcm_websocket_server.apps.json_proxy:main
+lcm-websocket-server=lcm_websocket_server.apps.json_proxy:main
+
