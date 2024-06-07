@@ -1,0 +1,1 @@
+/usr/bin/cc  -msse2 -mfpmath=sse  -rdynamic CMakeFiles/uchardet-tests.dir/uchardet-tests.c.o  -o uchardet-tests  -Wl,-rpath,/home/yossy/src/cChardet/src/ext/uchardet/build/src ../src/libuchardet.so.0.0.6 

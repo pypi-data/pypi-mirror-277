@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yossy/src/cChardet/src/ext/uchardet/src/uchardet.h
+stddef.h
+-
+
+/home/yossy/src/cChardet/src/ext/uchardet/test/uchardet-tests.c
+ctype.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+../src/uchardet.h
+/home/yossy/src/cChardet/src/ext/uchardet/src/uchardet.h
+

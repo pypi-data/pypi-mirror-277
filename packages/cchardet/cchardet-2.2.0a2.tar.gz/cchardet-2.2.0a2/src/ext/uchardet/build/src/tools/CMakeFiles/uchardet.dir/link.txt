@@ -1,0 +1,1 @@
+/usr/bin/clang++-10   -msse2 -mfpmath=sse  -rdynamic CMakeFiles/uchardet.dir/uchardet.cpp.o  -o uchardet  -Wl,-rpath,/home/yossy/src/cChardet/src/ext/uchardet/build/src: ../libuchardet.so.0.0.6 
