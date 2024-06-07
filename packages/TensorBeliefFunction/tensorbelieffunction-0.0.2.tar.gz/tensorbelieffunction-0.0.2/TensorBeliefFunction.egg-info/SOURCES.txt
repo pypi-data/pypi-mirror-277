@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+TensorBeliefFunction/__init__.py
+TensorBeliefFunction.egg-info/PKG-INFO
+TensorBeliefFunction.egg-info/SOURCES.txt
+TensorBeliefFunction.egg-info/dependency_links.txt
+TensorBeliefFunction.egg-info/top_level.txt
