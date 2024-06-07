@@ -1,0 +1,2 @@
+[console_scripts]
+simple-integer-hello = simple_integer:post_install_message
