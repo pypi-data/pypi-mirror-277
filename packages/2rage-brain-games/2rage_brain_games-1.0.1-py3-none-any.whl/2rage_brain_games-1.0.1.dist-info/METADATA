@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: 2rage-brain-games
+Version: 1.0.1
+Summary: 2rage-brain-games is a set of console-based brain games built in Python. Each game provides a different mental challenge, ranging from calculations and number theory to recognition of even numbers. The project includes games like 'brain-even', 'brain-calc', 'brain-gcd', 'brain-progression', and 'brain-prime'. Test your mental agility and have fun with this collection of games!
+Author: 2rage
+Author-email: the2rage@icloud.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: colorama (>=0.4.6,<0.5.0)
+Requires-Dist: prompt (>=0.4.1,<0.5.0)
+Description-Content-Type: text/markdown
+
+### Hexlet tests and linter status:
+[![Actions Status](https://github.com/2rage/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/2rage/python-project-49/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/3c56e6a4dd58dc81c322/maintainability)](https://codeclimate.com/github/2rage/python-project-49/maintainability)
+
+
+## Prerequisites
+
+### For general use
+- pipx
+- 
+
+### For build app
+
+- poetry 
+-
+
+[![asciicast](https://asciinema.org/a/IfJHE2lYhNLnDvfwTb7gxc0iL.svg)](https://asciinema.org/a/IfJHE2lYhNLnDvfwTb7gxc0iL)
+
+
+Mind games

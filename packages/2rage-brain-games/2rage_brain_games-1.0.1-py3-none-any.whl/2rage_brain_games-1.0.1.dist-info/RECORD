@@ -1,0 +1,15 @@
+brain_games/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+brain_games/cli.py,sha256=UQYuqEGwh27YfuFOfz53ATu-gHxwOzo_WlTF9b7fzNc,474
+brain_games/constants.py,sha256=u0infeua5Hl7ljOjDJBHeyv7Y3BjjGdvCarUdNwyuww,37
+brain_games/game_logic.py,sha256=wKQoQUTkdbupCWmuAsgLa2j8VYHijiiiiGquNkb-yLA,1259
+brain_games/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+brain_games/scripts/brain_calc.py,sha256=sRykw3QOL8XPEwDQ8fG85G0yqbmUEmVdiVyPlBL-xTs,2008
+brain_games/scripts/brain_even.py,sha256=gy6cVeiTQvMa15Y5DcnwswOH5QsS2ta_rDpy7Pf1T8c,1416
+brain_games/scripts/brain_games.py,sha256=HemlAv8PyOHSEh8_1m_jcYiUZh8B_WkjA4ZOwXbHEXk,182
+brain_games/scripts/brain_gcd.py,sha256=O-vr6A2CDRIICe8toAHuAZGLmwoHXqA3w0I58ADaYiU,1446
+brain_games/scripts/brain_prime.py,sha256=XUTlpxow7yYm99iGaheuLwDBcTDuIWwdWTBWLdSmBu0,1431
+brain_games/scripts/brain_progression.py,sha256=EPxu5eYsrsN71kIS7NKfavAvlRXqFlhEal3ujVbhLxw,2030
+2rage_brain_games-1.0.1.dist-info/METADATA,sha256=kULSkx4l6Zt6Iq8KA2n8V4cKu8BPYlGcU4CzJIbvILU,1330
+2rage_brain_games-1.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+2rage_brain_games-1.0.1.dist-info/entry_points.txt,sha256=z5zIt82mYj6ZS7-DF0UDBlvRWKktTKL19ZIUZJ2jMn8,317
+2rage_brain_games-1.0.1.dist-info/RECORD,,
