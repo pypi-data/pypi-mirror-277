@@ -1,0 +1,11 @@
+z3c.ptcompat-4.0-py3.11-nspkg.pth,sha256=Ou9y0X2aSJC-56yWL7VjITZxnfX6slYJCSxhMSKad6I,524
+z3c/ptcompat/__init__.py,sha256=BqHkoHs_ZtZNB8fhxTREDS8uKl5R31lV7XCiGqQalhg,672
+z3c/ptcompat/configure.zcml,sha256=gatOGDhgudgW7xveeUaPZQsSLVFXG_O8itz-RFO6F7M,179
+z3c/ptcompat/engine.py,sha256=woKq_R_4aNqNA8I5TXJoj6dG0Djja4aw0fy7yFkBsyc,2005
+z3c/ptcompat/tests.py,sha256=wc-dPZtzuVV5SVtXuFkFEsWCXrTHWr7Ww9O4MbjQ9ro,813
+z3c.ptcompat-4.0.dist-info/LICENSE.txt,sha256=PmcdsR32h1FswdtbPWXkqjg-rKPCDOo_r1Og9zNdCjw,2070
+z3c.ptcompat-4.0.dist-info/METADATA,sha256=GxcHpLIHSZRFteg60kK2bLZGOWril5d6OXaZzH81HRs,6954
+z3c.ptcompat-4.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+z3c.ptcompat-4.0.dist-info/namespace_packages.txt,sha256=4IdyINjld7m2QfMrXUzjX5iV4pLTBx0DBASmKaA1wJc,4
+z3c.ptcompat-4.0.dist-info/top_level.txt,sha256=4IdyINjld7m2QfMrXUzjX5iV4pLTBx0DBASmKaA1wJc,4
+z3c.ptcompat-4.0.dist-info/RECORD,,
