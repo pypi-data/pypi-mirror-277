@@ -1,0 +1,12 @@
+torch
+transformers
+numpy
+pandas
+uvicorn
+bitsandbytes
+accelerate
+sentence-transformers
+nltk
+PyPDF2
+pydantic
+requests
