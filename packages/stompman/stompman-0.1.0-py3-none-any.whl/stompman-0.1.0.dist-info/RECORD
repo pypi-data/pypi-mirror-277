@@ -1,0 +1,11 @@
+stompman/__init__.py,sha256=X709ecz28-K__toytEBH4y49JnJ3_tx88tFvtqKEac0,1616
+stompman/client.py,sha256=CAOFDk8XudommiyuymNvhgfJsoroXqiyp3a3OjrL6U8,8153
+stompman/connection.py,sha256=k60EyPE0yGmYCT8OiYk_ePo1hfa-BMxfptMqvvC_teU,2956
+stompman/errors.py,sha256=SQLLhz4gbuvcVc1UkDfvlUI4R7UmH32C-psQ1rEYrqI,744
+stompman/frames.py,sha256=Yd3Xm7OOTba5y10tIIzdui9PExZDt1vqPj4AHnf744Y,4928
+stompman/listen_events.py,sha256=5VNWfmqW2---tp1i7KIW8QwW4E3_y5_GOQMdIMeOSbU,1710
+stompman/protocol.py,sha256=0xhHp-qt8BJyYeyBOBvFPCc0gD2rgByGN9gJvgsVsVE,3864
+stompman/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stompman-0.1.0.dist-info/METADATA,sha256=PYkVYBZJmr1syl8XJFXcqVjHDkSmgizEQxt61nBU9XU,7166
+stompman-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+stompman-0.1.0.dist-info/RECORD,,
