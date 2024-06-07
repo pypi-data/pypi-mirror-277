@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cchardet
+Version: 2.2.0a2
+Summary: cChardet is high speed universal character encoding detector.
+Author-email: PyYoshi <myoshi321go@gmail.com>
+License: Mozilla Public License
+Project-URL: Homepage, https://github.com/PyYoshi/cChardet
+Classifier: License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+License-File: COPYING
+
