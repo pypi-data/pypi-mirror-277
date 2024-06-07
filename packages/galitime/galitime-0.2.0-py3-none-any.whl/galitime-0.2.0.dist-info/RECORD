@@ -1,0 +1,10 @@
+galitime/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+galitime/galitime.py,sha256=_x3Zf-E816sq4WmChW_FBoHQDx4m9X8-PzEfAmW7xHg,11197
+galitime/increment_version.py,sha256=D5sIvP5jyP5KJD9Blk9HtnBh4AUIbZ7zkgXvRE3Glz8,435
+galitime/version.py,sha256=JN8iI0FPwNtmXvILgXBO-KHB1pZ3rvbddqyT521EFJc,79
+galitime-0.2.0.dist-info/LICENSE.txt,sha256=gpcJuEQQXjLbR9a0hUOJ07rTSoC5p0Bckqpqly5EUcU,1070
+galitime-0.2.0.dist-info/METADATA,sha256=uZdjs-vuu9-ymP0s33Zk2MJM-F5XM60cKJOCu98Z_c4,4406
+galitime-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+galitime-0.2.0.dist-info/entry_points.txt,sha256=_yy-IUL5HSHzcPWSp3kXvWM4do2T5BkQIEn7P9R4TfQ,52
+galitime-0.2.0.dist-info/top_level.txt,sha256=QcYI1wWtAnZIzGvu7h8p45K4SFtCEmAmj6N0SISXKNg,9
+galitime-0.2.0.dist-info/RECORD,,
