@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+licenses/APL.txt
+licenses/BSL.txt
+unionmeta_byoc/__init__.py
+unionmeta_byoc.egg-info/PKG-INFO
+unionmeta_byoc.egg-info/SOURCES.txt
+unionmeta_byoc.egg-info/dependency_links.txt
+unionmeta_byoc.egg-info/top_level.txt
