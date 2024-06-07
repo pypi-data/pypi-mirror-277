@@ -1,0 +1,13 @@
+numpy
+scipy
+
+[dev]
+matplotlib
+multiprocess
+pandas
+pickleshare
+pre-commit
+pytest
+scikit-learn
+seaborn
+tqdm
