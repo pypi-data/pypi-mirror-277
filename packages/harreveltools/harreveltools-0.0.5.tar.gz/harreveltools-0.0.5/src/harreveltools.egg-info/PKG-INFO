@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: harreveltools
+Version: 0.0.5
+Summary: This package is the result of sweat and tears
+Author-email: S Harrevelt <author@example.com>
+Project-URL: Homepage, https://github.com/zwep
+Project-URL: Bug Tracker, https://github.com/zwep
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Hello future me,
+
+in order to update your package, check out this tutorial
+
+https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+
+Or in short, run the following commands
+
+'''python3 -m pip install --upgrade build
+python3 -m pip install --upgrade twine
+
+python3 -m build
+python3 -m twine upload --skip-existing dist/*'''
