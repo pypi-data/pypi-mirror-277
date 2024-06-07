@@ -1,0 +1,9 @@
+README.md
+setup.py
+adapter/__init__.py
+adapter/dbadapter.py
+adapter_normalizer.egg-info/PKG-INFO
+adapter_normalizer.egg-info/SOURCES.txt
+adapter_normalizer.egg-info/dependency_links.txt
+adapter_normalizer.egg-info/requires.txt
+adapter_normalizer.egg-info/top_level.txt
