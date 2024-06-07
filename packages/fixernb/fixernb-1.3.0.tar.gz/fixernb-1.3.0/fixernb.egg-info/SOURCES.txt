@@ -1,0 +1,8 @@
+README.md
+setup.py
+fixernb.egg-info/PKG-INFO
+fixernb.egg-info/SOURCES.txt
+fixernb.egg-info/dependency_links.txt
+fixernb.egg-info/entry_points.txt
+fixernb.egg-info/requires.txt
+fixernb.egg-info/top_level.txt

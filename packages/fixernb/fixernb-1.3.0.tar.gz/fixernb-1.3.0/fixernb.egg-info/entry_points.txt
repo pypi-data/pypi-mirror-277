@@ -1,0 +1,2 @@
+[console_scripts]
+run-updater = fixernb.fixer:fixer
