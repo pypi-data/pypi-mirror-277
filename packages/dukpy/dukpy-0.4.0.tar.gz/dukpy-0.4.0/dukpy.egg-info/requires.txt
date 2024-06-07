@@ -1,0 +1,9 @@
+mutf8
+
+[testing]
+mock
+pytest
+pytest-cov
+
+[webassets]
+webassets
