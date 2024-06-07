@@ -1,0 +1,13 @@
+openai>=1.25.0
+
+[dev]
+build
+
+[lint]
+black>=23.10.0
+isort
+
+[test]
+coverage
+pytest
+pytest-cov
