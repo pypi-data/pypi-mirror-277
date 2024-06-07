@@ -1,0 +1,27 @@
+name: mathinterpreter
+summary: An interpreter for evaluating simple math calculations.
+description: |
+  An interpreter, written from scratch in Python, that can evaluate simple math calculations, 
+  with a simple Read-Eval-Print-Loop (REPL) command line interface. 
+  This project is based on py-simple-math-interpreter, by David Callanan and illustrates 
+  the use of software engineering techniques to evolve a prototype code 
+  into a professional software.
+
+version: 0.1
+base: core22
+grade: stable # must be 'stable' to release into candidate/stable channels
+confinement: strict # use 'strict' once you have the right plugs and slots
+
+adopt-info: mathinterpreter
+parts:
+  mathinterpreter:
+    plugin: python
+    source-type: git
+    source: https://github.com/ScientificThought/py-math-interpreter
+    override-pull: |
+      craftctl default
+      craftctl set version=$(git describe --tags --abbrev=10)
+
+apps:
+  mathinterpreter:
+    command: bin/mathinterpreter

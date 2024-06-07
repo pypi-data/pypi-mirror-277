@@ -1,0 +1,2 @@
+[console_scripts]
+mathinterpreter = mathinterpreter.__main__:main
