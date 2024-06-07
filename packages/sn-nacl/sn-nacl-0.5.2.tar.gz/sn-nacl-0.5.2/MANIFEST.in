@@ -1,0 +1,8 @@
+prune attic
+prune data
+prune sandbox
+recursive-exclude pipelines *
+recursive-exclude nacl/data *
+recursive-exclude nacl/simulations *
+recursive-exclude nacl/attic *
+recursive-exclude nacl/models/attic *

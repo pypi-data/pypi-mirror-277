@@ -1,0 +1,15 @@
+numpy
+pandas
+pyarrow
+scipy
+tables
+keyring
+saltworks
+bbf
+lemaitre-bandpasses
+astropy
+sncosmo
+extinction
+
+[:python_version < "3.9"]
+importlib_resources
