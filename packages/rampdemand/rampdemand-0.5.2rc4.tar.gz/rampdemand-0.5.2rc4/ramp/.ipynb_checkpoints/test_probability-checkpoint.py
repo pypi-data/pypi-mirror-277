@@ -1,0 +1,1 @@
+# create a dummy appliance, then test coincidence = min(self.number, max(1, math.ceil(random.gauss(mu=(self.number * mu_peak + 0.5), sigma=(s_peak * self.number * mu_peak))))) within self.calc_coincident_switch_on(), related to https://github.com/RAMP-project/RAMP/issues/11
