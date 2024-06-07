@@ -1,0 +1,11 @@
+imagetk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imagetk/assess.cp312-win_amd64.pyd,sha256=lkjb7MZp_ZOf6P2BP8BNFIrZfo34wkz5oXT6ZfNZH5Q,89600
+imagetk/edge.cp312-win_amd64.pyd,sha256=pN9wNOS86yvDxzp2hQ7yRRjsecJt7m0sxcH0_lnNVM8,183296
+imagetk/feature.cp312-win_amd64.pyd,sha256=iacXwOkTGgJdTXyBnuNWsdbkQkzj_6qzwKvuMnHohhc,206336
+imagetk/kernel.cp312-win_amd64.pyd,sha256=pKm4f4NWRHlAXJsTydXzVQXd2wCsDF1GreLQtjlRpMQ,67584
+imagetk/process.cp312-win_amd64.pyd,sha256=yGO_IYNgY-m6AYwMjGGerfgpuFDVM_6S4Qw2d3wfjtE,169984
+imagetk/threshold.cp312-win_amd64.pyd,sha256=djipaFP9LbN4Ru_SNoIyPV-32omnWsRCmsdP0SQG5OA,60416
+imagetk-0.1.0.dist-info/METADATA,sha256=JN6UnO3nKECEhOApb5-IIy7K8goAG_k4yVvRsOzuswA,220
+imagetk-0.1.0.dist-info/WHEEL,sha256=aDrgWfEd5Ac7WJzHsr90rcMGiH4MHbAXoCWpyP5CEBc,102
+imagetk-0.1.0.dist-info/top_level.txt,sha256=dQuUBX1EDAbBwlvHSaspdgPVGxswjgiOXy6oroW07Tg,25
+imagetk-0.1.0.dist-info/RECORD,,
