@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "charted"
+version = "0.1.1"
+description = "Charted: A Python library for crafting SVG graphs with simplicity in mind. Charted aims to provide an easy-to-use solution for generating visually appealing graphs directly in Python, without the need for external dependencies. Still a work in progress, Charted is designed to simplify graph creation for Python developers, offering a humble yet effective tool for data visualization."
+authors = ["Andryo Marzuki <andryo@mrzk.io>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.1"
+ipython = "^8.24.0"
+flake8 = "^7.0.0"
+black = "^24.4.2"
+tox = "^4.15.1"
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^7.3.7"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
