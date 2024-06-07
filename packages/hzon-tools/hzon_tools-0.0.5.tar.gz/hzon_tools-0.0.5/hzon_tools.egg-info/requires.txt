@@ -1,0 +1,15 @@
+DBUtils
+feapder
+loguru
+lxml
+openpyxl
+pandas
+prettytable
+pymongo
+PyMySQL
+pywin32
+redis
+Requests
+six
+tqdm
+w3lib
