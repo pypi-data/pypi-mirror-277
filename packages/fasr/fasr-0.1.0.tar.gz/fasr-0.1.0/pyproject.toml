@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "fasr"
+version = "0.1.0"
+description = "基于funasr的语音识别服务"
+authors = ["wangmengdi06 <wangmengdi06@58.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jsonargparse = "^4.29.0"
+funasr = ">=1.0.27"
+modelscope = ">=1.14.0"
+loguru = ">=0.7.2"
+librosa = ">=0.10.2"
+lightning_utilities = ">=0.11.2"
+funasr-onnx = ">=0.3.1"
+onnxruntime = ">=0.18.0"
+
+[tool.poetry.extras]
+onnx = ["onnxruntime", "funasr-onnx"]
+
+
+[tool.poetry.scripts]
+fasr = "fast_asr.__main__:run"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
