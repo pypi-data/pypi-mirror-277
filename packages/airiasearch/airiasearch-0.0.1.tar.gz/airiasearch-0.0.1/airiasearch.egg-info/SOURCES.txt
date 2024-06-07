@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+airiasearch/__init__.py
+airiasearch/airiasearch.py
+airiasearch.egg-info/PKG-INFO
+airiasearch.egg-info/SOURCES.txt
+airiasearch.egg-info/dependency_links.txt
+airiasearch.egg-info/entry_points.txt
+airiasearch.egg-info/requires.txt
+airiasearch.egg-info/top_level.txt
+tests/test_airiasearch.py
