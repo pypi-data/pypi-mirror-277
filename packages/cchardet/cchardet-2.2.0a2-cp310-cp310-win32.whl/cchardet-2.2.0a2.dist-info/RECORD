@@ -1,0 +1,10 @@
+cchardet/__init__.py,sha256=fwiIZJvJYGiymiot5JgelWbBGFHXAQ4NzERxPOhkWqY,1230
+cchardet/_cchardet.cp310-win32.pyd,sha256=1r4HBSyzji1CSafmal4TKJ8WvE8sFDV6SCHWSfKQUCQ,200704
+cchardet/_cchardet.cpp,sha256=EXDV6AvqdMsXDF78OmP1dkJpxGkUcZ2km46y_ofWT_0,354278
+cchardet/_cchardet.pyx,sha256=DriWSH6a3LfV9eLLzGc6KLDBzdx5Ik_5tjsAVHLeXgs,2971
+cchardet-2.2.0a2.data/scripts/cchardetect,sha256=obZTPeY83MmBMx3gcMR1sl8BKgJE5PpDg8Ta_viShMw,1325
+cchardet-2.2.0a2.dist-info/COPYING,sha256=t7QemtYEfl_6crBIXpyMn2q3yW2QfN7Z3eJtvqFVcVo,71833
+cchardet-2.2.0a2.dist-info/METADATA,sha256=9IyBcjgXWEbOnc6qkqwriYPBL9STLfGS-dWcaMne2Yw,960
+cchardet-2.2.0a2.dist-info/WHEEL,sha256=RyLtD17TRXemRgS90DEnpEXWZB9e6GGH4dvD03N_Jp0,98
+cchardet-2.2.0a2.dist-info/top_level.txt,sha256=Khgls4j_ipUgHqU5JjsYDtlYEsM7uP3jV8o1ZlZPSfA,9
+cchardet-2.2.0a2.dist-info/RECORD,,
