@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: inflo
+Version: 0.0.1
+Summary: Package to monitor your AI stack
+Author: Jerric Lyns John
+Author-email: jerric@inflo.dev
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
