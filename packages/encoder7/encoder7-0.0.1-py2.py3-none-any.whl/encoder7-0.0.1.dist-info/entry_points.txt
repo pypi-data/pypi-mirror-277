@@ -1,0 +1,2 @@
+[console_scripts]
+encoder7 = encoder7.cli:main
