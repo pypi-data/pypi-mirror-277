@@ -1,0 +1,14 @@
+unolet/__init__.py,sha256=zmn3xNfrRugEdlSctSFe1Z35Uvd7Og6VIpEFp8fJjI4,206
+unolet/api.py,sha256=NCtyxfWhfGstP3cMECRC2RwU8qPAuJ1qo3SrZtXA114,2578
+unolet/config.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unolet/exceptions.py,sha256=mbRLPdvesdP-xOROKS5o-Hb989srqCkPRZFwagFa2iE,1340
+unolet/fields.py,sha256=7pW_5ycQhLTTGZBPnyGc2VORiB9zQmFAQTnjxpVjz88,5667
+unolet/models.py,sha256=EfF8nTHBovdAsLdzuUft9aL0l05cE--Hmk4REL1oWGM,11329
+unolet/utils.py,sha256=920YU5i3fYRPuZQkhf402SvljycGMVmiVGreevQJU74,362
+unolet/erp/__init__.py,sha256=iuH7RDtWbYQjb20mHpz83R_VcFsVpTRNagVS_uCdKj0,767
+unolet/services/__init__.py,sha256=TrSRkF8nvMZzZsoIv1ezU6lpXXf00481g6Zl8rFICng,202
+unolet-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+unolet-0.0.1.dist-info/METADATA,sha256=cVbjqjXS8csydlz8yvZQ_O30I7qHC3CbEYjVFiRS5Qw,43305
+unolet-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+unolet-0.0.1.dist-info/top_level.txt,sha256=1Pv6L_lGwlR935G2pOOLGa5nqyDClQb0FxzjbS-w2uo,7
+unolet-0.0.1.dist-info/RECORD,,
