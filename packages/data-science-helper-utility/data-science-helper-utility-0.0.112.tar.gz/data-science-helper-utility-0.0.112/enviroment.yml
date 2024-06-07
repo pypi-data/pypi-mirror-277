@@ -1,0 +1,30 @@
+name: venvOseeHelper
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.7.9
+  - pip
+  - pip:
+    - pip-tools
+    - ipynb==0.5.1
+    - requests==2.27.1
+    - pyodbc==4.0.30
+    - plotly==5.11.0
+    - seaborn==0.9.0
+    - shap==0.38.1
+    - twine==3.3.0
+    - pandas==1.2.2
+    - optuna==2.4.0 
+    - numpy==1.19.2
+    - matplotlib==3.5.0 
+    - wordcloud==1.6.0
+    - xgboost==1.6.2
+    - imbalanced-learn==0.7.0
+    - scikit-learn==0.23.2    
+    - missingno==0.4.2
+    - openpyxl==3.0.6
+    - scikit-plot==0.3.7
+    - lightgbm==3.3.2
+  - ipykernel
+
