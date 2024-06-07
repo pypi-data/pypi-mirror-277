@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+league_client/__init__.py
+league_client/constants.py
+league_client/exceptions.py
+league_client/py.typed
+league_client.egg-info/PKG-INFO
+league_client.egg-info/SOURCES.txt
+league_client.egg-info/dependency_links.txt
+league_client.egg-info/requires.txt
+league_client.egg-info/top_level.txt
+league_client/rso/__init__.py
+league_client/rso/auth.py
+league_client/rso/chat.py
+league_client/rso/userinfo.py
