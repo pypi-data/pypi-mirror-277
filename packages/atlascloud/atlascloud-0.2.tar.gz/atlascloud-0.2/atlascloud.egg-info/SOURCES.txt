@@ -1,0 +1,8 @@
+setup.py
+atlascloud/__init__.py
+atlascloud/sdk.py
+atlascloud.egg-info/PKG-INFO
+atlascloud.egg-info/SOURCES.txt
+atlascloud.egg-info/dependency_links.txt
+atlascloud.egg-info/requires.txt
+atlascloud.egg-info/top_level.txt
