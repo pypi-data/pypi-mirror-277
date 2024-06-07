@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: grawsp
+Version: 1.0.0
+Summary: Grawsp is a command line application to manage credentials in AWS STS/SSO enabled landing zone.
+Author: Egon Braun
+Author-email: ebraun@schubergphilis.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: SQLAlchemy (>=2.0.30,<3.0.0)
+Requires-Dist: boto3 (>=1.34.119,<2.0.0)
+Requires-Dist: cement[alarm,colorlog,jinja2,tabulate,yaml] (>=3.0.10,<4.0.0)
+Requires-Dist: humanize (>=4.9.0,<5.0.0)
+Requires-Dist: inflection (>=0.5.1,<0.6.0)
+Requires-Dist: prompt-toolkit (>=3.0.46,<4.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: yaspin (>=3.0.2,<4.0.0)
