@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+logsnap/__init__.py
+logsnap/analyzer.py
+logsnap.egg-info/PKG-INFO
+logsnap.egg-info/SOURCES.txt
+logsnap.egg-info/dependency_links.txt
+logsnap.egg-info/entry_points.txt
+logsnap.egg-info/requires.txt
+logsnap.egg-info/top_level.txt
