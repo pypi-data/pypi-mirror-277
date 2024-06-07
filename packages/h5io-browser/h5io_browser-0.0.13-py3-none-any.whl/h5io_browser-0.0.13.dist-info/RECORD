@@ -1,0 +1,9 @@
+h5io_browser/__init__.py,sha256=h5D5lq2Ok4sttoaVHPxPAiPT-Ww5ma6c28tmqzaHObs,365
+h5io_browser/_version.py,sha256=iQXkQ4k9evMP35e4VTdJq6bLXt0mlJzUsUdkcPwdjp8,24627
+h5io_browser/base.py,sha256=ME_rzhZ6b0k_Nat49qZthdMA0vtpXbiA84JZcJSl7s0,19011
+h5io_browser/pointer.py,sha256=uBa-PurlXSxKndH0wjq-YdgwidLOSMtRlzQZZuRN6Hg,15551
+h5io_browser-0.0.13.dist-info/LICENSE,sha256=bCZ_i3Dk-ATR_uquWAxi4kMzyhgUnVO4iNIftuGO3T4,1511
+h5io_browser-0.0.13.dist-info/METADATA,sha256=oiEaggjb54RrnTMHz1rGkWBfYU4G7BGWwaoMVS6_m0o,14043
+h5io_browser-0.0.13.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+h5io_browser-0.0.13.dist-info/top_level.txt,sha256=atq7A0exbry3DJTVVmnHeNeDTX5RjqttRzidnBkTquE,13
+h5io_browser-0.0.13.dist-info/RECORD,,
