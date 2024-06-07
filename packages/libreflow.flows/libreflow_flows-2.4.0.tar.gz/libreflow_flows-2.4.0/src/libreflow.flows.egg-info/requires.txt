@@ -1,0 +1,2 @@
+libreflow>=2.5.0
+kabaret.flow_extensions>=1.0.0
