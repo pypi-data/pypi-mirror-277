@@ -1,0 +1,9 @@
+awslambdaric
+boto3
+osml-imagery-toolkit
+
+[gdal]
+gdal>=3.8.3
+
+[test]
+tox
