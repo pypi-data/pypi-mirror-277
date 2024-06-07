@@ -1,0 +1,44 @@
+Metadata-Version: 2.3
+Name: pysimultanui
+Version: 1.0.0
+Project-URL: Documentation, https://github.com/BÃ¼hler Maximilian/pysimultanui#readme
+Project-URL: Issues, https://github.com/BÃ¼hler Maximilian/pysimultanui/issues
+Project-URL: Source, https://github.com/BÃ¼hler Maximilian/pysimultanui
+Author-email: BÃ¼hler Maximilian <maximilian.buehler@a1.digital>
+Maintainer-email: TU Wien <maximilian.buehler@tuwien.ac.at>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: colorlog
+Requires-Dist: fastapi[all]
+Requires-Dist: gmsh
+Requires-Dist: jinja2
+Requires-Dist: meshio
+Requires-Dist: nicegui>=1.4.22
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: paramiko
+Requires-Dist: plotly
+Requires-Dist: pyarrow
+Requires-Dist: pydantic
+Requires-Dist: pysimultan
+Requires-Dist: ruamel-yaml
+Requires-Dist: tqdm
+Requires-Dist: trimesh
+Requires-Dist: uvicorn[standard]
+Description-Content-Type: text/markdown
+
+===================================================
+py_simultan_ui
+===================================================
+
+Python library for creating simple user interfaces for PySimultan
