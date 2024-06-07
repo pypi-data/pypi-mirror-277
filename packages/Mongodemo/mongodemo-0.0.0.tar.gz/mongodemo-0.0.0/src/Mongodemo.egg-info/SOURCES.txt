@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/Mongodemo.egg-info/PKG-INFO
+src/Mongodemo.egg-info/SOURCES.txt
+src/Mongodemo.egg-info/dependency_links.txt
+src/Mongodemo.egg-info/requires.txt
+src/Mongodemo.egg-info/top_level.txt
+src/database_automation/__init__.py
+src/database_automation/mongo_crud.py
