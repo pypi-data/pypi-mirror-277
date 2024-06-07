@@ -1,0 +1,12 @@
+fasr/.DS_Store,sha256=JGvG-iiX5_fvNH4J77ECyLbHtxjRRwGNbA2dMOol3H8,6148
+fasr/__init__.py,sha256=QFNBs_wP4_D7guKHq3l1W0ZncvVgpK53t0mXsmJ3T8s,53
+fasr/__main__.py,sha256=sjKF5lmCSWobXzIb2JaF-DyBBejs_VU9BFrF0LOa1gc,2606
+fasr/inference/__init__.py,sha256=6bQYhCbuuCQnsgB0fYcOXtUerUJTSDjhXgCqN9viQBI,63
+fasr/inference/base.py,sha256=CffpaLXXgW3M1RrsU-qlJFKeLsf2E74MJXZOpZTyuhY,4342
+fasr/inference/ort.py,sha256=jhW-YmL1385budlqbtMXDziQ8NxpD1qA3EItvItHiBU,4144
+fasr/inference/pth.py,sha256=YzzP4QDxZgDEo2OsyG9FuMcdih_YXnb_QQZMJn3xYG4,1458
+fasr/utils.py,sha256=BgZKsM-9M5kZV0IFkUvNOK9z-0l88HMAPB2-gLkGcDA,412
+fasr-0.1.0.dist-info/METADATA,sha256=v43ll1TLwLL5GzkEIIL4qhnjRLVvWmCZphVXyuorM_Q,778
+fasr-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fasr-0.1.0.dist-info/entry_points.txt,sha256=HkUnwifwUMI6iYw2fb1rREMGvmlH8nmG2a3CU12JaK4,46
+fasr-0.1.0.dist-info/RECORD,,
