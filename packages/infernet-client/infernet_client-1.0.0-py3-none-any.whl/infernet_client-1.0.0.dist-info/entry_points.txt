@@ -1,0 +1,2 @@
+[console_scripts]
+infernet-client = infernet_client:main
