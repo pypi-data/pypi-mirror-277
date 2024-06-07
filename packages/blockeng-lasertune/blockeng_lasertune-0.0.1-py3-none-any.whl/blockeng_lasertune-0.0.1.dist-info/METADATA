@@ -1,0 +1,34 @@
+Metadata-Version: 2.3
+Name: blockeng-lasertune
+Version: 0.0.1
+Summary: A Python API for the Block Engineering LaserTune Widely Table QCL software development kit (SDK).
+Project-URL: Homepage, https://github.com/houlihaj/blockeng-lasertune
+Project-URL: Issues, https://github.com/houlihaj/blockeng-lasertune/issues
+Author-email: John Houlihan <houlihaj@uci.edu>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# blockeng-lasertune
+A Python API for the Block Engineering LaserTune Widely Table QCL software development kit (SDK).
+
+## Overview
+The source code and example scripts have been tested using Python 3 running in Windows 10.
+
+1. Project Homepage: https://github.com/houlihaj/blockeng-lasertune
+1. Download Page:
+
+## Requirements
+
+## Installation
+1. `pip install blockeng-lasertune`
+
+## Usage
+There are a number of examples in the `examples` directory that can help you get up and running.
+
