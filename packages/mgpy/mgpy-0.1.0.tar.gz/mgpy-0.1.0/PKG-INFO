@@ -1,0 +1,34 @@
+Metadata-Version: 2.3
+Name: mgpy
+Version: 0.1.0
+Summary: A small package containing simple, useful methods I regularly use and don't want to manually copy into several projects.
+Project-URL: Homepage, https://github.com/phistoh/mgpy
+Author-email: Moritz <phis@mogobb.de>
+License-File: LICENSE
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# mgpy ("Magpie") | `mg_python`
+[![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/pylint-dev/pylint) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) ![Tests](docs/badges/tests.svg) ![Coverage](docs/badges/coverage.svg)
+
+
+A small package containing simple, useful methods I regularly use and don't want to manually copy into several projects.
+
+Contains the following modules:
+
+## mgstr ("Magister") | `mg_string`
+
+## mgcl ("Magical") | `mg_colors`
+
+## mgnet ("Magnet") | `mg_network`
+
+## mgnum ("Magnum") | `mg_numbers`
+
+## mgte ("Mogote") | `mg_time`
+
+## mgmin ("Megumin") | `mg_miscellaneous`
