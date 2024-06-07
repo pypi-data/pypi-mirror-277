@@ -1,0 +1,12 @@
+tensor_regression/__init__.py,sha256=LrKQsUz_91asOn0igDvru-7h5Y-odfiXiPZRoJIBYiE,331
+tensor_regression/fixture.py,sha256=DgVEcn0xQFFAGtsuLJlhST_aRM8XqDVugunXk0ujNZQ,15292
+tensor_regression/flatten.py,sha256=IKif-OT-ZSXjFoPFF_HbEI4LWsx_gsoqkzUAdg_JK1w,1385
+tensor_regression/pytest_plugin.py,sha256=kaHbzCtF0suOywtIIrLePVlBI--Lnp7sa8ezJZx4k8w,2098
+tensor_regression/stats.py,sha256=eVzykGa_0hleA3cPMV3Uf7eDP_wVhPlOTTYY5FSRs_g,3484
+tensor_regression/tests/test_check.py,sha256=obk8pH3e9McSE1byQLbf2ypUEjkBK5W0fERM3_JDcyQ,3043
+tensor_regression/to_array.py,sha256=lEBazuk0jHrHWHlA2YuTRzQOA3nDx8yaoRtl3JhbzJA,1029
+tensor_regression-0.0.2.dist-info/LICENSE,sha256=m7ZWWZEG_YW8CIHfkv-EbU3XTYv-yVKkYKzGlNum_F8,1074
+tensor_regression-0.0.2.dist-info/METADATA,sha256=jZDtxeXFD9jbQrc7bA7FJjr2g7Qy0NbrBWBhkKIi8Wg,1475
+tensor_regression-0.0.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+tensor_regression-0.0.2.dist-info/entry_points.txt,sha256=i93OUgI26wqLfOJTORfcbwAC9mQ7NOs3icYIvXpglVU,48
+tensor_regression-0.0.2.dist-info/RECORD,,
