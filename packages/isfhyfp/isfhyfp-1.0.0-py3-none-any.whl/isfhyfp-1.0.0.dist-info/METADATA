@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: isfhyfp
+Version: 1.0.0
+Summary: 个人常用函数及自定义日志类等
+Author: isfhy
+Author-email: fhy.sdwh@gmail.com
+License: GNU GPLv3
+Requires-Dist: requests
+
