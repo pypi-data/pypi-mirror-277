@@ -1,0 +1,6 @@
+udm-rest-api-client (0.0.0) unstable; urgency=medium
+
+  * Initial release. (Bug #57204)
+  * Split from univention-directory-manager-rest (10.0.8-5 / 12.0.7)
+
+ -- Daniel Troeder <troeder@univention.de>  Tue, 04 Jun 2024 10:28:31 +0200
