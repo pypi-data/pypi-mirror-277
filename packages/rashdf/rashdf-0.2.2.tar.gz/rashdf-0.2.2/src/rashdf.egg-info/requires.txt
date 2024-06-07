@@ -1,0 +1,14 @@
+h5py
+geopandas
+pyarrow
+
+[dev]
+pre-commit
+ruff
+pytest
+pytest-cov
+
+[docs]
+sphinx
+numpydoc
+sphinx_rtd_theme
