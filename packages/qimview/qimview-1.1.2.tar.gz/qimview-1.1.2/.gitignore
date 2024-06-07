@@ -1,0 +1,18 @@
+*.pyc
+# _*
+_build
+*.orig
+.idea
+*.pyd
+*.bak
+.vscode
+*\ -\ Copy.*
+*.egg-info
+# Build folders
+build/
+# Dynamic libraries
+*.so
+# VsCode workspaces
+*.code-workspace
+# Package builds
+dist/
