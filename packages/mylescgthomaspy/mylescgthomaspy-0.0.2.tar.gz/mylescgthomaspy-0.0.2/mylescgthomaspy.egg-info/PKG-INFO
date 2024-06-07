@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mylescgthomaspy
+Version: 0.0.2
+Summary: A package to assist with machine learning and data science tasks
+Author: Myles Thomas
+Author-email: mylescgthomas@gmail.com
+License: MIT
+Keywords: data science machine learning
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+A package that makes it easy to get a data science/machine learning project from end-to-end with good software engineering hygiene

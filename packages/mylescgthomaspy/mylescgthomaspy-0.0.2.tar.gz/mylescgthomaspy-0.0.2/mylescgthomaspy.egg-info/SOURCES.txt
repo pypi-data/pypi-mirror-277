@@ -1,0 +1,11 @@
+README.md
+setup.py
+mylescgthomaspy/__init__.py
+mylescgthomaspy/data.py
+mylescgthomaspy/eda.py
+mylescgthomaspy/etl.py
+mylescgthomaspy.egg-info/PKG-INFO
+mylescgthomaspy.egg-info/SOURCES.txt
+mylescgthomaspy.egg-info/dependency_links.txt
+mylescgthomaspy.egg-info/requires.txt
+mylescgthomaspy.egg-info/top_level.txt
