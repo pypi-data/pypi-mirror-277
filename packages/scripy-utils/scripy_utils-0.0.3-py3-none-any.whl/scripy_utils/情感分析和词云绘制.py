@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+"""
+@Time : 2024/6/7 13:43 
+@项目：爬虫使用
+@File : 情感分析和词云绘制.by
+@PRODUCT_NAME :PyCharm
+"""
+from scripy_utils.word_ans_util import WordCloudUtil
+
+characters = """对素食者和肠胃疾病患者来说，藜麦的发现是一个奇迹。藜麦不含麸质，富含镁和铁，比其他种子含有更多的蛋白质，包括人体无法独自生成的必需的氨基酸。美国宇航局宣布，藜麦是地球上营养最均衡的食物之一，是宇航员的理想之选。产于安第斯山的藜麦有一个令西方消费者神往的传说：印加人非常重视藜麦，认为它是神圣的，并且称之为“万谷之母”。不过，藜麦的爱好者却通过媒体发现了一个令人不安的事实。从2006年到2013年，玻利维亚和秘鲁的藜麦价格上涨了两倍。2011年，《独立报》称，玻利维亚的藜麦消费量“5年间下降了34％，当地家庭已经吃不起这种主食了，它已经变成了奢侈品”。《纽约时报》援引研究报告称，藜麦种植区的儿童营养不良率正在上升。2013年，《卫报》用煽动性标题提升了人们对这个问题的关注度：“素食者的肚子能装下藜麦令人反胃的事实吗？”该报称，贫穷的玻利维亚人和秘鲁人正在食用更加便宜的“进口垃圾食品”。《独立报》2013年一篇报道的标题是“藜麦：对你有利--对玻利维亚人有害”。这些消息传遍了全球，在健康饮食者之中引发了一场良心危机。在社交媒体、素食博客和健康饮食论坛上，人们开始询问食用藜麦是否合适。"""
+font_path = fr"G:\ContentPro\PythonPro\PiPyPro\static\ttf\simhei.ttf"
+mask_img_path = fr"G:\ContentPro\PythonPro\PiPyPro\爬虫使用\scripy_utils\media\wordcloud_imgs\2.jpg"
+cloud_output_path = "img.jpg"
+word_cloud = WordCloudUtil(characters, font_path=font_path, cloud_output_path=cloud_output_path,
+                           mask_img_path=mask_img_path)
+word_cloud.create_wordcloud()
