@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+ModuleManager/ModuleManager.py
+ModuleManager/__init__.py
+ModuleManager.egg-info/PKG-INFO
+ModuleManager.egg-info/SOURCES.txt
+ModuleManager.egg-info/dependency_links.txt
+ModuleManager.egg-info/top_level.txt
