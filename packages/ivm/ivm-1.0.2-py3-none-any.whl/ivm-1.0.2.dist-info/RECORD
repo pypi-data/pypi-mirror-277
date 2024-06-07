@@ -1,0 +1,12 @@
+ivm/README.md,sha256=Y23I0Y_g-ZYODOe5RwLD644TAcSwkUnwxkhNbNeol5w,2070
+ivm/__init__.py,sha256=rRnQMOTW7-03SPwHcEiBePq5F_qOOc9jPqDHljMthcU,19
+ivm/ivm.py,sha256=Ffud7wPS5fhdrEqerCWpqBkxOEgw0wohosbMqzAXAR4,33730
+ivm/ivm-darwin/libivm.dylib,sha256=NW451ZwGgU1V6U-Cy6UDLWY_1kRaocNEztNUWwNkgVc,3203512
+ivm/ivm-debian/libivm.so,sha256=OfQ3_kNAkbutV4R49xkHBlz0-V2UzpMLangHuCAWrt0,3173408
+ivm/ivm-win32/ivm.dll,sha256=gcjp3_g8xBYWoVzmDOE0rEeKPnClUmPo2-WauTurIkQ,865792
+ivm/ivm-win64/ivm.dll,sha256=_P_DRvaghNO9OlZ8fA_34whIPiEcFZWWejynqNfEpQw,1108480
+ivm-1.0.2.dist-info/METADATA,sha256=Qtmk0yZ2t4tWLHWtKtABYhxR7uHaaU5JZKO6rPTGRms,3578
+ivm-1.0.2.dist-info/WHEEL,sha256=sb4ZHsmozXdkdXRvpMHZmhxsxQvL8DERDUEGA9tAfc8,83
+ivm-1.0.2.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ivm-1.0.2.dist-info/license_files/LICENSE,sha256=sQPXCVaDHYG2rS_-q0ojKTP9V4dkCXqDdSI3uUaUNq8,1052
+ivm-1.0.2.dist-info/RECORD,,
