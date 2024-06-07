@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: fixernb
+Version: 2.0.0
+Summary: A tool to update Jupyter notebooks to version 4
+Home-page: https://github.com/netblag/jupyter-notebook-fixer
+Author: Ashkan Ahmadi
+Author-email: netblag.dev@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: nbformat
