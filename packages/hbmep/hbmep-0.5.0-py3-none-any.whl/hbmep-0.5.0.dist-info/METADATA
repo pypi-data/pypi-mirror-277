@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: hbmep
+Version: 0.5.0
+Summary: Hierarchical Bayesian estimation of motor-evoked potential (MEP) size recruitment curves
+Author-email: "Vishweshwar Tyagi, James R. McIntosh" <vt2353@columbia.edu>
+Project-URL: Homepage, https://github.com/hbmep/hbmep
+Project-URL: Bug Tracker, https://github.com/hbmep/hbmep/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: numpy >=1.24.2
+Requires-Dist: pandas >=2.0.2
+Requires-Dist: scikit-learn >=1.2.1
+Requires-Dist: jax[cpu] >=0.4.24
+Requires-Dist: numpyro[cpu] >=0.13.2
+Requires-Dist: arviz >=0.18.0
+Requires-Dist: matplotlib >=3.7.0
+Requires-Dist: seaborn >=0.12.2
+Provides-Extra: dev
+Requires-Dist: jupyter ==1.0.0 ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: jupyter ==1.0.0 ; extra == 'docs'
+Requires-Dist: Sphinx <=7.0.1 ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ==1.2.2 ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest >=7.4.0 ; extra == 'test'
+Requires-Dist: pytest-pycodestyle >=2.3.1 ; extra == 'test'
+Requires-Dist: pytest-cov >=4.1.0 ; extra == 'test'
+
+# hbmep
+
+## Setup Instructions
+
+Requires Python >=3.11
+
+### Create environment
+```
+python3 -m venv .venv
+
+```
+
+### Activate environment
+```
+source .venv/bin/activate
+
+```
+
+### Install hbmep
+```
+pip install hbmep
+
+```
+
+## To do
+
+- Add About section
+- Create tutorial docs
+- Add tests
