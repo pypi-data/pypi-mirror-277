@@ -1,0 +1,10 @@
+__init__.py
+pyproject.toml
+setup.py
+./__init__.py
+./setup.py
+bd_android_tools.egg-info/PKG-INFO
+bd_android_tools.egg-info/SOURCES.txt
+bd_android_tools.egg-info/dependency_links.txt
+bd_android_tools.egg-info/requires.txt
+bd_android_tools.egg-info/top_level.txt
