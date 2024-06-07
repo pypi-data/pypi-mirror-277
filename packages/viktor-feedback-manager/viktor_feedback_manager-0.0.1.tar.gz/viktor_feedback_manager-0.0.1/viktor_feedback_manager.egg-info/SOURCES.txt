@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+viktor_feedback_manager/__init__.py
+viktor_feedback_manager/feedback_entity_controller.py
+viktor_feedback_manager/feedback_manager_entity_controller.py
+viktor_feedback_manager.egg-info/PKG-INFO
+viktor_feedback_manager.egg-info/SOURCES.txt
+viktor_feedback_manager.egg-info/dependency_links.txt
+viktor_feedback_manager.egg-info/requires.txt
+viktor_feedback_manager.egg-info/top_level.txt

@@ -1,0 +1,9 @@
+viktor
+pandas<2.0.0
+requests
+beautifulsoup4
+
+[dev]
+black
+isort
+pylint

@@ -1,0 +1,55 @@
+[project]
+name = "viktor_feedback_manager"
+version = "0.0.1"
+description = "Feedback manager for VIKTOR applications"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+authors = [
+    {name = "S.J. van der Meer", email = "svandermeer@viktor.ai" }
+]
+maintainers = [
+    {name = "S.J. van der Meer", email = "svandermeer@viktor.ai" }
+]
+dependencies = [
+    "viktor",
+    "pandas < 2.0.0",
+    "requests",
+    "beautifulsoup4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "isort",
+    "pylint",
+]
+[project.urls]
+"Homepage" = "https://github.com/viktor-platform/viktor_feedback_manager"
+"Bug Reports" = "https://github.com/viktor-platform/viktor_feedback_manager/issues"
+
+[tool.setuptools]
+packages = ["viktor_feedback_manager"]
+
+[build-system]
+requires = ["setuptools>=70.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = 'black'
+line_length = 120
+force_single_line = true
+skip_glob = [".env"]
+
+[tool.pylint.'MASTER']
+max-line-length=120
+
+[tool.pylint.'MESSAGES CONTROL']
+disable=[
+    'no-name-in-module',  # Suppresses E0611: No name 'XXX' in module 'viktor.YYY'
+    'too-few-public-methods',  # Suppresses R0903 for viktor classes with no public methods (parametrization)
+    'unused-argument',  # Suppresses unused argument of e.g. **kwargs for viktor syntax
+]
