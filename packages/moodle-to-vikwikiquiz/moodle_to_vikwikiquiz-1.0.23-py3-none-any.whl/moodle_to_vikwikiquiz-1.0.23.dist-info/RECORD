@@ -1,0 +1,11 @@
+moodle_to_vikwikiquiz/grading_types.py,sha256=7UHCEGIW1MckjN4qeP2iuJ5gpEDKppTrLtrs7T_wPfo,81
+moodle_to_vikwikiquiz/main.py,sha256=N30Yltja0HVC7wE7DItQ7XQyJjGmlPnSKvRlRqfPIqI,2146
+moodle_to_vikwikiquiz/question.py,sha256=ixQHQxT3iaWj31XGwSbDnmRWWOu8HqgfcERIOQFENjo,1322
+moodle_to_vikwikiquiz/question_types.py,sha256=eEJScivcrbZ2CqAxl3la3jUQmiQWcPVDz79vddFCwV8,104
+moodle_to_vikwikiquiz/quiz.py,sha256=By3n88oQcudEEXCGtIRcwJusibApM0s6jBbVhdMa-vc,2884
+moodle_to_vikwikiquiz/quiz_helpers.py,sha256=7jdBIMa-l0oUOkk8NWAQ0jK1TCLm_dlejtDt3Qhbgi4,3238
+moodle_to_vikwikiquiz-1.0.23.dist-info/METADATA,sha256=5s6Zn49LJz_EvXG0LQSy5OT-xDnORaiBsBRWkHdWwJE,3644
+moodle_to_vikwikiquiz-1.0.23.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+moodle_to_vikwikiquiz-1.0.23.dist-info/entry_points.txt,sha256=P09Evdn2toejxKldx2Y3tiZfNikpps4aVtXjDE3GHyU,74
+moodle_to_vikwikiquiz-1.0.23.dist-info/top_level.txt,sha256=EO-v78R3YB7728cJdT3dUKy0pzCs5t1TwGso1HNtEPU,22
+moodle_to_vikwikiquiz-1.0.23.dist-info/RECORD,,
