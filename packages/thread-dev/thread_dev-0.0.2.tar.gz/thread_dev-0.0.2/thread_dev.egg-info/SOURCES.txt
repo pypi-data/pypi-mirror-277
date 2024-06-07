@@ -1,0 +1,17 @@
+MANIFEST.in
+setup.py
+thread/__init__.py
+thread/threadapp.py
+thread/static/404.html
+thread/static/favicon.ico
+thread/static/favicon.png
+thread/static/index.html
+thread/static/jupyter-vega.js
+thread/static/plotly.js
+thread/static/require.2.3.4.min.js
+thread_dev.egg-info/PKG-INFO
+thread_dev.egg-info/SOURCES.txt
+thread_dev.egg-info/dependency_links.txt
+thread_dev.egg-info/entry_points.txt
+thread_dev.egg-info/requires.txt
+thread_dev.egg-info/top_level.txt
