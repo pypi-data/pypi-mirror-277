@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ModuleManager
+Version: 0.0.1
+Summary: Package for developing a convenient project structure
+Author: Ivashka (Ivan Rakov)
+Author-email: <ivashka.2.r@gmail.com>
+Keywords: python,modules,queues,objects,classes,mm
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ModuleManager
+python module for developing a convenient project structure
