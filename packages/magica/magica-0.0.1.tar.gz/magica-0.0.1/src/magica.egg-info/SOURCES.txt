@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+src/magica/__init__.py
+src/magica/example.py
+src/magica.egg-info/PKG-INFO
+src/magica.egg-info/SOURCES.txt
+src/magica.egg-info/dependency_links.txt
+src/magica.egg-info/top_level.txt
