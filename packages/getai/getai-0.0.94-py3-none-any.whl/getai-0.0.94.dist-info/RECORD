@@ -1,0 +1,17 @@
+getai/0,sha256=hOdSgCvR94Q2HFkyRj0k_MOXhjy3DRqzwq4WU81I1s0,5
+getai/__init__.py,sha256=liaD6Zw8yn65snAIRBVjHBOmqsFmdCLXHmutm1UY_8s,510
+getai/__main__.py,sha256=jipsDgXNM_Tvn_lAFof5yv3B-liyzU617yKkHCQ8DjU,133
+getai/api.py,sha256=kL-VS0ZQTSGg_Shc-8UhQGCPqQMOIMewjNNc-9AD6BM,4090
+getai/dataset_downloader.py,sha256=7LokUbnKSTnTo0zPR8LowJD6evKUm0S-gAQCxr9fMvQ,20938
+getai/dataset_search.py,sha256=mpsFjBGpu_AwUjjJGAteP5m1puf3m-0l-V8iiyKAD4Q,11833
+getai/getai_config.yaml,sha256=I6jXh3Fzh5qK03OAojQWt-oJa4HfysQacnupvRrY4EQ,37
+getai/main.py,sha256=BaLB_UlA9CchNFW95RCoWZHnuyG4OCfN_Gap828Mg0s,6758
+getai/model_downloader.py,sha256=7Vp8RGhUhAyG9U6GUcAh9puUbnAPq9IxeI1cBNPP43E,13120
+getai/model_search.py,sha256=ffiZiWX7aZVG1EtGEtY96fPfMfWQ3Y6WpEZ3vpW2RzE,19792
+getai/session_manager.py,sha256=GwvQG5ZjgMAWnqZOF7zZnu9E0oKAXm1zRvNXYutSsiE,1386
+getai/utils.py,sha256=qTHqtLNumBL6tH2b3Y3Y7-_6mqQDreADJ_1NwkkmO5E,3175
+getai-0.0.94.dist-info/LICENSE,sha256=oPUVR0tPhVgOjI2tk5FTawFOFQMz4CmpSz24dJolISI,1247
+getai-0.0.94.dist-info/METADATA,sha256=4yqbkWIF-UqYIphWTVUoZccdysWfJFLaK_rV5tOrMUM,16656
+getai-0.0.94.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+getai-0.0.94.dist-info/entry_points.txt,sha256=ePg5qvTD5WPrrCozhfgjfGepYZ_4O5xy1sJ7RYzL_K8,44
+getai-0.0.94.dist-info/RECORD,,
