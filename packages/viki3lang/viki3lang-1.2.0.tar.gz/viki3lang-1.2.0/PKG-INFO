@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: viki3lang
+Version: 1.2.0
+Requires-Dist: requests
+Requires-Dist: win10toast
+Requires-Dist: googletrans==3.1.0a0
+Requires-Dist: pypiwin32
+Requires-Dist: setuptools

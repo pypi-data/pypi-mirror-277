@@ -1,0 +1,2 @@
+[console_scripts]
+viki3lang = translator:main

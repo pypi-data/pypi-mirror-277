@@ -1,0 +1,8 @@
+setup.py
+translator.py
+viki3lang.egg-info/PKG-INFO
+viki3lang.egg-info/SOURCES.txt
+viki3lang.egg-info/dependency_links.txt
+viki3lang.egg-info/entry_points.txt
+viki3lang.egg-info/requires.txt
+viki3lang.egg-info/top_level.txt

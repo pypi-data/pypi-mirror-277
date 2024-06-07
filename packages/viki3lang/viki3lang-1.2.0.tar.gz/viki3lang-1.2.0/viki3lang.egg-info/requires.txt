@@ -1,0 +1,5 @@
+requests
+win10toast
+googletrans==3.1.0a0
+pypiwin32
+setuptools
