@@ -1,0 +1,14 @@
+pyvisa
+pyvisa-py
+
+[all]
+inquirer
+
+[testing]
+setuptools
+pexpect
+pytest
+pytest-cov
+flaky
+pre-commit
+tox

@@ -1,0 +1,8 @@
+*venv/
+*__pycache__/
+*.egg-info
+.tox
+.mypy_cache
+*_build
+docs/api
+dist/
