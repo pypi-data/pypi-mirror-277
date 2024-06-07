@@ -1,0 +1,5 @@
+pandas
+msal
+pydantic
+pyodbc
+sqlalchemy
