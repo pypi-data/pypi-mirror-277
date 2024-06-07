@@ -1,0 +1,17 @@
+PQAnalysis>=1.0
+beartype
+customtkinter
+matplotlib
+argcomplete
+numpy
+tk
+Pillow
+scipy
+plotext
+InquirerPy
+
+[test]
+pytest
+coverage
+pytest-cov
+pytest-benchmark

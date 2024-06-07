@@ -1,0 +1,2 @@
+[console_scripts]
+pqenalyzer = PQEnalyzer.__main__:main

@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=42", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PQEnalyzer"
+dynamic = ["version"]
+authors = [
+    {name="Josef M. Gallmetzer", email="gallmetzer.josef@gmail.com"},
+    {name="Leo Christanell", email="leochristanell@gmail.com"},
+    {name="Jakob Gamper", email="97gamjak@gmail.com"}
+]
+description = "A package that help analyze PQ energy and parameter output."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "PQAnalysis>=1.0",
+    "beartype",
+    "customtkinter",
+    "matplotlib",
+    "argcomplete",
+    "numpy",
+    "tk",
+    "Pillow",
+    "scipy",
+    "plotext",
+    "InquirerPy",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "coverage",
+    "pytest-cov",
+    "pytest-benchmark",
+]
+
+[tool.setuptools_scm]
+version_file = "PQEnalyzer/__version__.py"
+
+[project.scripts]
+pqenalyzer = "PQEnalyzer.__main__:main"
