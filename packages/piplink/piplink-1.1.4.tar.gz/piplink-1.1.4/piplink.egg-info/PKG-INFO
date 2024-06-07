@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: piplink
+Version: 1.1.4
+Summary: A simple package for uploading packages to PyPI
+Home-page: https://mrfidal.in/basic-pip-package/piplink
+Author: Fidal
+Author-email: mrfidal@proton.me
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: requests-toolbelt
+
+Check out the README for more information.
