@@ -1,0 +1,5 @@
+llama_index/retrievers/duckdb_retriever/__init__.py,sha256=Ph6PUaPwCOzDryEUx5-QhrvbMUeZguFU2ZHP4OwVBQQ,113
+llama_index/retrievers/duckdb_retriever/base.py,sha256=oF2r_WVz7rB-69qwYrHi0T90_f5VZXSeCIfZx0m9hRc,4678
+llama_index_retrievers_duckdb_retriever-0.1.4.dist-info/METADATA,sha256=e54zoqVTTB-R1CAW3i13zp14AXeIx5QFKNg0Ha1nW1Q,1354
+llama_index_retrievers_duckdb_retriever-0.1.4.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+llama_index_retrievers_duckdb_retriever-0.1.4.dist-info/RECORD,,
