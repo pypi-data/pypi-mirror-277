@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pykafka_util/__init__.py
+pykafka_util/pykafka_util.py
+pykafka_util.egg-info/PKG-INFO
+pykafka_util.egg-info/SOURCES.txt
+pykafka_util.egg-info/dependency_links.txt
+pykafka_util.egg-info/requires.txt
+pykafka_util.egg-info/top_level.txt
+pykafka_util.egg-info/zip-safe
