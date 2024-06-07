@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: email-utils-PyWendi
+Version: 0.1
+Summary: A python module for validation and generation of email address
+Home-page: https://github.com/PyWendi/email_utils_module
+Author: RAKOTONDRANAIVO GILBERT Joyaux Wendi Anderson
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# email_utils
+
+`email_utils_PyWendi` est un module Python pour la validation et la génération d'adresses email.
+
+## Installation
+
+```sh
+pip install email_utils

@@ -1,0 +1,13 @@
+LICENCE
+README.md
+setup.py
+email_utils/__init__.py
+email_utils/email_generator.py
+email_utils/email_validator.py
+email_utils_PyWendi.egg-info/PKG-INFO
+email_utils_PyWendi.egg-info/SOURCES.txt
+email_utils_PyWendi.egg-info/dependency_links.txt
+email_utils_PyWendi.egg-info/top_level.txt
+tests/__init__.py
+tests/test_email_generator.py
+tests/test_email_validator.py
