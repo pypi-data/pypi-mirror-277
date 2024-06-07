@@ -1,0 +1,14 @@
+scrape_and_ntfy-0.1.1.dist-info/METADATA,sha256=9pmYOul8pVvjTcnahJu335paKSk7iMhoAPq0Iv-wpEc,3569
+scrape_and_ntfy-0.1.1.dist-info/WHEEL,sha256=vnE8JVcI2Wz7GRKorsPArnBdnW2SWKWGow5gu5tHlRU,90
+scrape_and_ntfy-0.1.1.dist-info/entry_points.txt,sha256=aMgTASH6tHiFivha5zbNmnEAzz9dEN-MSJvK5RcR84Y,67
+scrape_and_ntfy-0.1.1.dist-info/licenses/LICENSE,sha256=wTriW45047yt6UVMaJjmwLaHUG628HXmdTn1jhKraeU,1079
+scrape_and_ntfy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrape_and_ntfy/__main__.py,sha256=707klrDQoinHs8XMRFHg_HzDFTQ0thbjwKI0_nAV7R8,3556
+scrape_and_ntfy/scraping/__init__.py,sha256=hlBAB1ftpibFjOPBceTPxwVMNh0H5GQ-zbybGQt25Kk,175
+scrape_and_ntfy/scraping/notifier.py,sha256=QW-68vY8R1sGx5oMhOYkh7rsm6uHapNv5ys8XM7iwzU,2248
+scrape_and_ntfy/scraping/scraper.py,sha256=-VBgdVqoMgyig8c9zeeMByBJsUXXp7ssqSddP5qYO2U,7406
+scrape_and_ntfy/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrape_and_ntfy/utils/cli_args.py,sha256=a4-G05LdXQN9mqk8VP9DEI10O2to0Yk98FXuwZFxzbM,2828
+scrape_and_ntfy/utils/db.py,sha256=sInbEDlFL2m9QYSqqPRcqjmX_ZUjT-OJADtKIah7r3U,328
+scrape_and_ntfy/utils/logging.py,sha256=ZTTeCXOdP4gmS3UkceRQmPR0Y0fv1X2Fd_HTnb2ZPoU,634
+scrape_and_ntfy-0.1.1.dist-info/RECORD,,
