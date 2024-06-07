@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+pyproject.toml
+setup.py
+xy_work/ModuleData.py
+xy_work/Work.py
+xy_work/__init__.py
+xy_work.egg-info/PKG-INFO
+xy_work.egg-info/SOURCES.txt
+xy_work.egg-info/dependency_links.txt
+xy_work.egg-info/entry_points.txt
+xy_work.egg-info/requires.txt
+xy_work.egg-info/top_level.txt
