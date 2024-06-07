@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+cookiebot/__init__.py
+cookiebot/api.py
+cookiebot/errors.py
+cookiebot/models.py
+cookiebot.egg-info/PKG-INFO
+cookiebot.egg-info/SOURCES.txt
+cookiebot.egg-info/dependency_links.txt
+cookiebot.egg-info/requires.txt
+cookiebot.egg-info/top_level.txt
+tests/test.py

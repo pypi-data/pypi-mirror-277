@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: cookiebot
+Version: 0.1.0
+Summary: An API wrapper for the CookieBot API
+Author: tibue99, tobfd
+License: MIT
+Project-URL: GitHub, https://github.com/tibue99/cookie-api
+Project-URL: CookieBot, https://cookie-bot.xyz
+Project-URL: Documentation, https://cookiebot.readthedocs.io
+Keywords: cookie-bot,cookie,api
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: python-dotenv
+
+# CookieBot API
+Official wrapper for the [CookieBot](https://cookie-bot.xyz) API.
+
+## Installation
+Python 3.9 or higher is required
+```
+pip install cookiebot
+```
+
+## Example Usage
+```python
+import asyncio
+from cookiebot import CookieAPI
+
+api = CookieAPI(api_key="[YOUR_API_KEY]")
+
+async def main():
+    user_stats = await api.get_user_stats(123456789)  # Replace with user ID
+    await api.close()
+
+asyncio.run(main())
+```
+You can also use an asynchronous context manager (recommended)
+```python
+async def main():
+    async with api as con:
+        user_stats = await con.get_user_stats(123456789)  # Replace with user ID
+```
