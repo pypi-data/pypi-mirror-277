@@ -1,0 +1,11 @@
+polars>=0.20.13
+pyarrow
+pycutils
+requests
+tqdm
+
+[:platform_system == "Darwin"]
+onnxruntime
+
+[:platform_system == "Windows" or platform_system == "Linux"]
+onnxruntime-gpu
