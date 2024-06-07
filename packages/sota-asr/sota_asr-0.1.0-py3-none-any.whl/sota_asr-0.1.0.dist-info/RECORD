@@ -1,0 +1,11 @@
+sota_asr/__init__.py,sha256=QFNBs_wP4_D7guKHq3l1W0ZncvVgpK53t0mXsmJ3T8s,53
+sota_asr/__main__.py,sha256=sjKF5lmCSWobXzIb2JaF-DyBBejs_VU9BFrF0LOa1gc,2606
+sota_asr/inference/__init__.py,sha256=6bQYhCbuuCQnsgB0fYcOXtUerUJTSDjhXgCqN9viQBI,63
+sota_asr/inference/base.py,sha256=9RkeUwWZMtiZ6It78PoPY-KgYvsGQOCbRJ2oFcuNK5c,4405
+sota_asr/inference/ort.py,sha256=t90bx-4UIkyucIovLEW9gu3OZP0tEDb-WqU4EyCigiU,4060
+sota_asr/inference/pth.py,sha256=YzzP4QDxZgDEo2OsyG9FuMcdih_YXnb_QQZMJn3xYG4,1458
+sota_asr/utils.py,sha256=4oT0HdtVimX6mNgJH7eDvoBxo2eb3Brg-0LtCyVU7VQ,451
+sota_asr-0.1.0.dist-info/METADATA,sha256=4C8ETu68MKIlNBWULKZg5o_6vz-DkzLaxjOOHpJejiU,1525
+sota_asr-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+sota_asr-0.1.0.dist-info/entry_points.txt,sha256=FyNOaL_Me4FMhKpSMVwwq_ojwKpShfmjQ1yOPDEVXkY,48
+sota_asr-0.1.0.dist-info/RECORD,,

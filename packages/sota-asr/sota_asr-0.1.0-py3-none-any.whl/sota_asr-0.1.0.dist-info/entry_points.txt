@@ -1,0 +1,3 @@
+[console_scripts]
+sotasr=sota_asr.__main__:run
+
