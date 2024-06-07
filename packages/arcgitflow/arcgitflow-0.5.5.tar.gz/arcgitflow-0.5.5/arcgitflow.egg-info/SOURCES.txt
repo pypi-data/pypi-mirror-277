@@ -1,0 +1,11 @@
+LICENSE
+LICENSE.txt
+README.md
+setup.py
+arcgitflow/gitflow.py
+arcgitflow.egg-info/PKG-INFO
+arcgitflow.egg-info/SOURCES.txt
+arcgitflow.egg-info/dependency_links.txt
+arcgitflow.egg-info/entry_points.txt
+arcgitflow.egg-info/requires.txt
+arcgitflow.egg-info/top_level.txt
