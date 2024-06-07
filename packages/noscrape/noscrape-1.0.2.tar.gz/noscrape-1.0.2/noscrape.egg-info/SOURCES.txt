@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+noscrape.egg-info/PKG-INFO
+noscrape.egg-info/SOURCES.txt
+noscrape.egg-info/dependency_links.txt
+noscrape.egg-info/top_level.txt
