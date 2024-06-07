@@ -1,0 +1,13 @@
+setup.py
+brynq_sdk/factorial/__init__.py
+brynq_sdk/factorial/ats.py
+brynq_sdk/factorial/core.py
+brynq_sdk/factorial/finance.py
+brynq_sdk/factorial/payroll.py
+brynq_sdk/factorial/time.py
+brynq_sdk_factorial.egg-info/PKG-INFO
+brynq_sdk_factorial.egg-info/SOURCES.txt
+brynq_sdk_factorial.egg-info/dependency_links.txt
+brynq_sdk_factorial.egg-info/not-zip-safe
+brynq_sdk_factorial.egg-info/requires.txt
+brynq_sdk_factorial.egg-info/top_level.txt
