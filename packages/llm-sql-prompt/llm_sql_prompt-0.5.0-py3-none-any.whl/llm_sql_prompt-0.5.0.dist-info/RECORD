@@ -1,0 +1,9 @@
+llm_sql_prompt/__init__.py,sha256=pWvAAnUGmCk6q5ll5d8NDlX4zSco9P96UTSNxpTQXMM,863
+llm_sql_prompt/postgres.py,sha256=KPBLHxJ3JPUd6i2ohX1PSyg3m4tZwA4JvZGCnqwvIXw,2711
+llm_sql_prompt/sqlite.py,sha256=qlgQgNcrNk86Vf3u6j0KUM-13UU1K5GJCpBsyb6KxD0,2324
+llm_sql_prompt/util.py,sha256=L4NaXirUAPrZ7TKCbvK2nwqQQfHXWmeTHmFCadCPkRI,269
+llm_sql_prompt-0.5.0.dist-info/LICENSE,sha256=WWZNHixxPddquMsspBv0rb40QLGibVrHlt1AbwG76YI,1071
+llm_sql_prompt-0.5.0.dist-info/METADATA,sha256=LDrcWj_b1n63kDRFuAUfm53wKq-ojJHD0oG4AMjCXRw,2972
+llm_sql_prompt-0.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llm_sql_prompt-0.5.0.dist-info/entry_points.txt,sha256=pCLZ0lcmOWOVqYFWX6y1snmKeeYfPM0kg8szg4gEZ3s,54
+llm_sql_prompt-0.5.0.dist-info/RECORD,,
