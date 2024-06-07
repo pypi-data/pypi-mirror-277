@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eagleowl"
+dynamic = ["version"]
+authors = [
+  { name="Rui Xiao", email="rui.xiao@hcl-software.com" },
+]
+description = "A tool for installing sophisticated Kubernetes application consisting of numerous components and intricate configurations."
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+    "PyYAML",
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "eagleowl.__version__"}
+
+[project.scripts]
+eagleowl = "eagleowl.__main__:main"
+
+[project.urls]
+Homepage = "https://www.actian.com/databases/vector/"
