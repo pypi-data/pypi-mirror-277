@@ -1,0 +1,10 @@
+rokas_data_manipulation/__init__.py,sha256=CslcDcALdGyonUA9F6giI8mfiJFcNyCP3WuB8fOJcmg,162
+rokas_data_manipulation/convolution.py,sha256=TDZ9FCM-XpSvR_uvLxsE5FaFHFBCty0sAsuAg5SLslo,1996
+rokas_data_manipulation/transpose.py,sha256=9vlBiNiq5-Dcur_ARzUB-loyUNt7naHhYrmVH18gwXM,835
+rokas_data_manipulation/window.py,sha256=DEimHlL5hzYbdR8Fie5YhZAxrsInTjyk5hwTJ3S3UHY,1575
+tests/test_convolution.py,sha256=XFP6HHjFqhlVB79tvjl2C6MtgN-i2aUYuEaZO8mf4ME,960
+tests/test_transpose.py,sha256=JaLc3Xy_fvO0b9atFyAJsErSPyeUpaUOwAtOZS3PtMQ,482
+tests/test_window.py,sha256=6A83LqtuDUQ9HjlvVrMS8azp2LIRhr0YMSxwZKYbhS4,844
+rokas_data_manipulation-0.1.4.dist-info/METADATA,sha256=-XJCvFxaYELZK1rVDjLsmJU0jgCUwT_oTpN-SzyopRk,1821
+rokas_data_manipulation-0.1.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+rokas_data_manipulation-0.1.4.dist-info/RECORD,,
