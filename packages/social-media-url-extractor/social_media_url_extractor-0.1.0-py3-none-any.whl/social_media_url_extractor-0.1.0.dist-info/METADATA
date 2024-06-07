@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: social-media-url-extractor
+Version: 0.1.0
+Summary: A module to extract social media URLs from HTML
+Home-page: https://github.com/coopr-ai/social-media-url-extractor/
+Author: Coopr-AI
+Author-email: coopr-ai@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: hrequests
+Requires-Dist: beautifulsoup4
+Requires-Dist: pyyaml
+Requires-Dist: click
+
+UNKNOWN
+
