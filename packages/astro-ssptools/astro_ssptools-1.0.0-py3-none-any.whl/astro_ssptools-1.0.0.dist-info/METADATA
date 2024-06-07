@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: astro-ssptools
+Version: 1.0.0
+Summary: Simple Stellar Population Tools
+Author-email: Eduardo Balbinot <eduardo.balbinot@gmail.com>, Nolan Dickson <nolan.dickson@smu.ca>, Peter Smith <smith.peter.902@gmail.com>, Mark Gieles <m.gieles@surrey.ac.uk>, Miklos Peuten <m.peuten@surrey.ac.uk>
+License: MIT License
+        
+        Copyright (c) 2018, Eduardo Balbinot
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+        
+Project-URL: repository, https://github.com/SMU-clusters/ssptools.git
+Keywords: ssptools
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+# SSPTools
+
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/pjs902/ssptools/blob/master/LICENSE)
+[![Tests](https://github.com/SMU-clusters/ssptools/actions/workflows/tests.yml/badge.svg)](https://github.com/SMU-clusters/ssptools/actions/workflows/tests.yml)
+### Simple Stellar Population Tools
+
+Provides access to the `EvolvedMF` class, which evolves an arbitrary 3-component
+power law initial mass function (IMF) to a binned present-day mass function
+(PDMF) at any given set of ages, and computes the numbers and masses of stars
+and remnants in each mass bin.
+
+To be used for populating mass models and other such simulations based on
+an IMF and various other initial population parameters.
+
+Can optionally account for all of the evolution of stars off the main-sequence,
+the loss of low-mass stars to a host tidal field, the ejection of
+black holes due to both dynamical ejections and natal kicks.
+
+
+### Note
+This is a fork of [SSPTools](https://github.com/balbinot/ssptools) which has been updated to use a 3-component
+mass function, updated remnant initial-final mass relations and implements
+further black hole retention calculations, among other changes.
+
