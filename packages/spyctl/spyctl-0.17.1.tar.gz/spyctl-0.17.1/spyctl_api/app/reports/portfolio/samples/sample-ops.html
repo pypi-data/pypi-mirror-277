@@ -1,0 +1,128 @@
+<h1>Operational report</h1>
+
+<ul>
+<li>Cluster <strong>productiondemo</strong> (clus:PMx9HGEG_ZE)</li>
+<li>Reporting period:
+<ul>
+<li>Start: 2024-05-06 13:40:01</li>
+<li>End: 2024-05-06 14:06:41</li>
+</ul></li>
+</ul>
+
+<h2>1. Cluster summary metrics</h2>
+
+<table>
+<thead>
+<tr>
+  <th style="text-align:left;">Metric</th>
+  <th style="text-align:left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left;">Number of nodes</td>
+  <td style="text-align:left;">3</td>
+</tr>
+<tr>
+  <td style="text-align:left;">Number of namespaces</td>
+  <td style="text-align:left;">8</td>
+</tr>
+<tr>
+  <td style="text-align:left;">Number of pods</td>
+  <td style="text-align:left;">39</td>
+</tr>
+<tr>
+  <td style="text-align:left;">Number of deployments</td>
+  <td style="text-align:left;">9</td>
+</tr>
+<tr>
+  <td style="text-align:left;">Number of daemonsets</td>
+  <td style="text-align:left;">4</td>
+</tr>
+<tr>
+  <td style="text-align:left;">Number of services</td>
+  <td style="text-align:left;">55</td>
+</tr>
+</tbody>
+</table>
+
+<h2>2. Node information</h2>
+
+<table>
+<thead>
+<tr>
+  <th style="text-align:left;">Node property</th>
+  <th style="text-align:left;">Value</th>
+  <th style="text-align:left;">Node count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left;">Instance Type</td>
+  <td style="text-align:left;">m5.large</td>
+  <td style="text-align:left;">(3/3) nodes</td>
+</tr>
+<tr>
+  <td style="text-align:left;">Nr of cores</td>
+  <td style="text-align:left;">2</td>
+  <td style="text-align:left;">(3/3) nodes</td>
+</tr>
+<tr>
+  <td style="text-align:left;">Hardware Arch</td>
+  <td style="text-align:left;">amd64</td>
+  <td style="text-align:left;">(3/3) nodes</td>
+</tr>
+<tr>
+  <td style="text-align:left;">OS</td>
+  <td style="text-align:left;">Amazon Linux 2</td>
+  <td style="text-align:left;">(3/3) nodes</td>
+</tr>
+<tr>
+  <td style="text-align:left;">Container Runtime</td>
+  <td style="text-align:left;">containerd://1.7.11</td>
+  <td style="text-align:left;">(3/3) nodes</td>
+</tr>
+</tbody>
+</table>
+
+<h2>3. Node capacity and headroom</h2>
+
+<h3>Pods headroom</h3>
+
+<p>No nodes found with headroom capacity issues for number of pods</p>
+
+<h3>CPU headroom</h3>
+
+<p>No nodes found with cpu headroom capacity issues</p>
+
+<h3>Memory headroom</h3>
+
+<p>No nodes found with memory headroom capacity issues</p>
+
+<hr />
+
+<h2>4. Spyderbat agent health</h2>
+
+<h3>Spyderbat Nano-agent</h3>
+
+<blockquote>
+  <p>The spyderbat nano-agent runs as a daemonset on all nodes and monitor for system level telemetry on the host,
+  using EBPF technology. It provides information on processes, networking and container runtime behavior.</p>
+</blockquote>
+
+<p>✅ nano agent is running on all nodes</p>
+
+<h3>Spyderbat Cluster Monitor</h3>
+
+<blockquote>
+  <p>The spyderbat cluster monitor runs as a deployment on the cluster, and monitors the kubernetes cluster
+  lifecycle by talking to the kubernetes api. It provides information on current state of the cluster.</p>
+</blockquote>
+
+<p>✅ cluster monitor is running</p>
+
+<hr />
+
+<h2>6. Cluster operational issues</h2>
+
+<p>No operational issues found</p>
