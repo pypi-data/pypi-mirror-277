@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+arsonist/Color.py
+arsonist/__init__.py
+arsonist/rip.py
+arsonist/terminal.py
+arsonist.egg-info/PKG-INFO
+arsonist.egg-info/SOURCES.txt
+arsonist.egg-info/dependency_links.txt
+arsonist.egg-info/requires.txt
+arsonist.egg-info/top_level.txt
