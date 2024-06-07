@@ -1,0 +1,179 @@
+Metadata-Version: 2.1
+Name: cblearn
+Version: 0.3.0
+Summary: Comparison-based Machine Learning in Python.
+Home-page: https://github.com/dekuenstle/cblearn
+Author: David-Elias Künstle
+Author-email: david-elias.kuenstle@uni-tuebingen.de
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy ~=1.26
+Requires-Dist: scipy ~=1.13
+Requires-Dist: scikit-learn ~=1.5
+Requires-Dist: sparse ~=0.15
+Requires-Dist: numba >=0.59
+Provides-Extra: docs
+Requires-Dist: sphinx ~=7.3 ; extra == 'docs'
+Requires-Dist: pydata-sphinx-theme ~=0.15 ; extra == 'docs'
+Requires-Dist: sphinx-gallery ~=0.16 ; extra == 'docs'
+Requires-Dist: matplotlib ~=3.8 ; extra == 'docs'
+Provides-Extra: octave_wrapper
+Requires-Dist: oct2py ~=5.6 ; extra == 'octave_wrapper'
+Provides-Extra: r_wrapper
+Requires-Dist: rpy2 ~=3.5 ; extra == 'r_wrapper'
+Provides-Extra: tests
+Requires-Dist: pytest ~=7.4 ; extra == 'tests'
+Requires-Dist: pytest-cov ~=4.1 ; extra == 'tests'
+Requires-Dist: pytest-doctestplus ~=1.1 ; extra == 'tests'
+Requires-Dist: pytest-remotedata ~=0.4 ; extra == 'tests'
+Requires-Dist: flake8 ~=7.0 ; extra == 'tests'
+Requires-Dist: mypy ~=1.8 ; extra == 'tests'
+Requires-Dist: pandas ~=2.1 ; extra == 'tests'
+Requires-Dist: matplotlib ~=3.8 ; extra == 'tests'
+Provides-Extra: torch
+Requires-Dist: torch ~=2.1 ; extra == 'torch'
+
+<h1 align="center">
+<img src="https://raw.githubusercontent.com/cblearn/cblearn/main/docs/logo-light.png" width="300">
+</h1><br>
+
+## Comparison-based Machine Learning in Python
+[![PyPI version](https://img.shields.io/pypi/v/cblearn.svg)](https://pypi.python.org/pypi/cblearn)
+[![Documentation](https://readthedocs.org/projects/cblearn/badge/?version=stable)](https://cblearn.readthedocs.io/en/stable/?badge=stable)
+[![Test status](https://github.com/cblearn/cblearn/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/cblearn/cblearn/actions/workflows/test.yml)
+[![Test Coverage](https://codecov.io/gh/cblearn/cblearn/branch/master/graph/badge.svg?token=P9JRT6OK6O)](https://codecov.io/gh/cblearn/cblearn)
+
+Comparison-based learning methods are machine learning algorithms using similarity comparisons ("A and B are more similar than C and D") instead of featurized data. 
+
+
+```python
+from sklearn.datasets import load_iris
+from sklearn.model_selection import cross_val_score
+
+from cblearn.datasets import make_random_triplets
+from cblearn.embedding import SOE
+from cblearn.metrics import QueryScorer
+
+X = load_iris().data
+triplets = make_random_triplets(X, result_format="list-order", size=1000)
+
+estimator = SOE(n_components=2)
+# Measure the fit with scikit-learn's cross-validation
+scores = cross_val_score(estimator, triplets, cv=5)
+print(f"The 5-fold CV triplet error is {sum(scores) / len(scores)}.")
+
+# Estimate the scale on all triplets
+embedding = estimator.fit_transform(triplets)
+print(f"The embedding has shape {embedding.shape}.")
+```
+
+## Getting Started
+
+* [Installation & Quickstart](https://cblearn.readthedocs.io/en/stable/getting_started/index.html)
+* [Examples](https://cblearn.readthedocs.io/en/stable/generated_examples/index.html).
+* [User Guide](https://cblearn.readthedocs.io/en/stable/user_guide/index.html).
+
+
+## Contribute
+
+We are happy about your bug reports, questions or suggestions as Github Issues and code or documentation contributions as Github Pull Requests. 
+Please see our [Contributor Guide](https://cblearn.readthedocs.io/en/stable/contributor_guide/index.html). 
+
+## Related packages
+
+There are more Python packages for comparison-based learning:
+
+- [metric-learn](http://contrib.scikit-learn.org/metric-learn) is a collection of algorithms for metric learning. The *weakly supervised* algorithms learn from triplets and quadruplets.
+- [salmon](https://docs.stsievert.com/salmon/) is a package for efficiently collecting triplets in crowd-sourced experiments. The package implements ordinal embedding algorithms and sampling strategies to query the most informative comparisons actively.
+
+## Authors and Acknowledgement
+*cblearn* was initiated by current and former members of the [Theory of Machine Learning group](http://www.tml.cs.uni-tuebingen.de/index.php) of Prof. Dr. Ulrike von Luxburg at the University of Tübingen.
+The leading developer is [David-Elias Künstle](http://www.tml.cs.uni-tuebingen.de/team/kuenstle/index.php).
+
+We want to thank all the contributors here on GitHub.
+This work has been supported by the Machine Learning Cluster of Excellence, funded by EXC number 2064/1 – Project number 390727645. The authors would like to thank the International Max Planck Research School for Intelligent Systems (IMPRS-IS) for supporting David-Elias Künstle. 
+
+## License
+
+This library is free to use, share, and adapt under the [MIT License](https://github.com/cblearn/cblearn/blob/master/LICENSE) conditions.
+
+If you publish work that uses this library, please cite our JOSS paper.
+
+# Changelog
+
+## Upcoming
+
+## 0.3
+
+- Feature: JOSS paper
+- Feature: Quickstart guide in documentation
+- Feature: Data point sampling from manifolds.
+- Improvement: Extended documentation
+- Improvement: cblearn logo and new style in documentation
+- Improvement: Filter invalid responses in datasets
+- Improvement: Full compatibility to sklearn estimator tests
+  
+## 0.2
+
+- Improvement: Extended documentation
+- Feature: `embedding.estimate_dimensionality_cv` function (Künstle et al., 2022)
+- Fix: Avoid numpy deprecation warning for scalar variables in `fetch_similarity_matrix`
+- Fix: Various errors in the examples
+- Fix: Minor errors in the unit tests
+- Others: Updated dependencies
+
+## 0.1
+### 0.1.2
+
+- support python 3.11
+- update core dependencies
+  
+### 0.1.1
+
+- Minor fixes in the documentation.
+- Adapt loading of food and imagenet dataset to solve problems caused by changes in externally hosted files
+  
+### 0.1.0
+
+- Support python 3.9 and 3.10.
+- Introduce semantic versioning
+- Publish to PyPI
+
+MIT License
+
+Copyright (c) 2020-2021 The cblearn developers.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
