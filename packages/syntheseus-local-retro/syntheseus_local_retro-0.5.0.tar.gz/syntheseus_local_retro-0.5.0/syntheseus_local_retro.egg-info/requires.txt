@@ -1,0 +1,3 @@
+dgllife
+chardet
+pandas<2.2
