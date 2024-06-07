@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: enhancez
+Version: 0.2
+Home-page: 
+Author: Lalith Kumar Shiyam Sundar 
+Author-email: lalith.shiyamsundar@meduniwien.ac.at
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: streamlit
+Requires-Dist: moosez
+Requires-Dist: falconz
+Requires-Dist: pumaz
+Requires-Dist: halo
+Requires-Dist: altair
+Requires-Dist: d3blocks
+Requires-Dist: SimpleITK
+Requires-Dist: psutil
+Requires-Dist: streamlit-lottie
+Requires-Dist: extra-streamlit-components
+Requires-Dist: streamlit-image-comparison
+
