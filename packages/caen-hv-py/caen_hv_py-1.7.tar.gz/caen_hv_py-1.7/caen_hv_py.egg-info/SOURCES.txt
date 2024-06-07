@@ -1,0 +1,12 @@
+README.md
+setup.py
+caen_hv_py/CAENHVController.py
+caen_hv_py/__init__.py
+caen_hv_py.egg-info/PKG-INFO
+caen_hv_py.egg-info/SOURCES.txt
+caen_hv_py.egg-info/dependency_links.txt
+caen_hv_py.egg-info/top_level.txt
+caen_hv_py/hv_c_lib/libhv_c.so
+caen_hv_py/tests/__init__.py
+caen_hv_py/tests/power_test.py
+caen_hv_py/tests/voltage_power_test.py
