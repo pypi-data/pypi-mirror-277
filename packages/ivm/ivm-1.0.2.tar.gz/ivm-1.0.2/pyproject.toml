@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ivm"
+version = "1.0.2"
+authors = [
+  { name="EPC MSU", email="info@physlab.ru" },
+]
+description = "IVM cross-platform library for EyePoint Signature Analyzer"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
