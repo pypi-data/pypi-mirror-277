@@ -1,0 +1,7 @@
+p + ul, p + ol {
+    margin-top: 0.5rem;
+}
+
+p:last-of-type + ul, p:last-of-type + ol {
+    margin-bottom: 0;
+}
