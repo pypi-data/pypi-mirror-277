@@ -1,0 +1,11 @@
+noscrape/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+noscrape/load_noscrape_lib.py,sha256=6vfyEUHIF1dl4pOn75WW3mESebb2Q2Ce8XOH8LT3vKg,1269
+noscrape/noscrape.py,sha256=_u6fc_edQajPpvr6KfzvgzCYBVnV7FGuBdGii1gwBFA,3399
+noscrape/bin/noscrape_darwin_arm64,sha256=XE4-u8tkQCmmn1IKk92bVCveEEMUzxyoR5L6-gNuqMg,4899970
+noscrape/bin/noscrape_darwin_x86_64,sha256=c5JVhTKqPO93W9fmRmXNeJSiLAUs4p2z41hEED6bc2M,5062640
+noscrape/bin/noscrape_linux_x86_64,sha256=a7fGblqeGdC-chPsfTL0E_3_4gE6KzQV3INrCdFrb8M,4742552
+noscrape/bin/noscrape_windows_x86_64.exe,sha256=fhJggJcFGtpwEYLj_hkEEMa-qws74rpsJSR9rrO3f34,8523979
+noscrape-1.0.1.dist-info/METADATA,sha256=doPTQVxlY5SnFUFlkP652TvlxtlaB2Z-vHI1a1uK-cQ,2041
+noscrape-1.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+noscrape-1.0.1.dist-info/top_level.txt,sha256=3VO7Wr9wR-Fzhr3hSVxqxZ7o5clYGk6m_THCetRQTbQ,9
+noscrape-1.0.1.dist-info/RECORD,,
