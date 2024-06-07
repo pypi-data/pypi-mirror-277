@@ -1,0 +1,13 @@
+nada_ai/__init__.py,sha256=RB3klJ1XSoH6oWTg2GgGVLG8R5vzYVSl3JZbv2hbq44,39
+nada_ai/client.py,sha256=9lWn8fAXVMZqHFKD7lAzcWwDuVQMdbXmDD1nOKPXfA8,4159
+nada_ai/exceptions.py,sha256=_I_SPiJSkE-XDgduSaJy50zzF0cswf_6O7gPN5JaoK8,135
+nada_ai/nn/__init__.py,sha256=d7o7p4JUP6rH39NSjmy8p_upQjWHDq-oK70mu_6vKAI,131
+nada_ai/nn/activations.py,sha256=N2oaREo6ssxFJgp415l4wk5nbcZ-vCRoLzCfHA0cbew,1649
+nada_ai/nn/layers.py,sha256=LKb3qB3DltioVefqJUY0LYsYStRHwVsVhR51rh4job8,8473
+nada_ai/nn/models.py,sha256=DoQl2O3T06gYuajU7-X9MGfkV_OcDAodDqr4wlGQS6w,965
+nada_ai/nn/module.py,sha256=Fyiggqy_60JV9qaRu8r-Y87k2TWWH8U6zWME-RtgrTs,3656
+nada_ai/nn/parameter.py,sha256=Vv7PlKHF5onAEDtNDtuUyH--TDbSHnnWiK-OYdN9KmA,1264
+nada_ai-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nada_ai-0.1.0.dist-info/METADATA,sha256=4sxDtExvyN2okOW0qRG_STgE0UV0Grp_2hfBykwy-bU,1989
+nada_ai-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+nada_ai-0.1.0.dist-info/RECORD,,
