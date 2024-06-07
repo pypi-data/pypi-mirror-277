@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "metabatch"
+version = "0.9.1"
+authors = [
+  { name="Théo Morales", email="moralest@tcd.ie" },
+]
+description = "MetaBatch: A micro-framework for efficient batching of tasks in PyTorch."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+keywords = [
+    "meta-learning",
+    "meta",
+    "pytorch",
+    "MAML",
+    "deep",
+    "learning",
+    "task",
+    "taskset",
+    "dataset",
+    "few-shot"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/DubiousCactus/metabatch"
+"Bug Tracker" = "https://github.com/DubiousCactus/metabatch/issues"
