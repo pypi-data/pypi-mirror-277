@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "2rage-brain-games"
+version = "1.0.1"
+description = "2rage-brain-games is a set of console-based brain games built in Python. Each game provides a different mental challenge, ranging from calculations and number theory to recognition of even numbers. The project includes games like 'brain-even', 'brain-calc', 'brain-gcd', 'brain-progression', and 'brain-prime'. Test your mental agility and have fun with this collection of games!"
+authors = ["2rage <the2rage@icloud.com>"]
+readme = "README.md"
+packages = [
+    { include = "brain_games" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+prompt = "^0.4.1"
+colorama = "^0.4.6"
+
+[tool.poetry.scripts]
+brain-games = "brain_games.scripts.brain_games:main"
+brain-even = "brain_games.scripts.brain_even:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
+brain-gcd = "brain_games.scripts.brain_gcd:main"
+brain-progression = "brain_games.scripts.brain_progression:main"
+brain-prime = "brain_games.scripts.brain_prime:main"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.0.0"
+ipython = "^8.25.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
