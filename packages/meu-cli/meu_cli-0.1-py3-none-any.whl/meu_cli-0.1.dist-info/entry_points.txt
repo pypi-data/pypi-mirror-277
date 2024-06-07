@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        meu-cli=meu_cli:cli
+    
