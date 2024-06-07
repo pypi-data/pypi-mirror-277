@@ -1,0 +1,10 @@
+eqdsk/__init__.py,sha256=DuYvNNxLqpWB3fDKCvb3JXVjDORKrrSIaPiPArzrJ4M,448
+eqdsk/_version.py,sha256=IMl2Pr_Sy4LVRKy_Sm4CdwUl1Gryous6ncL96EMYsnM,411
+eqdsk/cocos.py,sha256=vz5ZWCk8lh4KxUueFgh_czuoc8T_HBDJ6XTR64YqzHs,12795
+eqdsk/file.py,sha256=X64c-T_mwuEOQAU6AlhLSFrNn3NzjJjsolIwCJybGMo,21589
+eqdsk/log.py,sha256=-kdV7sPsccLjBrUEJbI0aGjzbbqacEZZTp7JHJliZUs,529
+eqdsk/tools.py,sha256=dLHDZJ0cwnHVWAr8DiCCU2Rk49IoZgY71Pz3jhLTRJM,2574
+eqdsk-0.1.0.dist-info/METADATA,sha256=yqeZ0vnjxVKumJaYEhGts5OII9I2Ajh2o3vEvMfSs_Y,2523
+eqdsk-0.1.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+eqdsk-0.1.0.dist-info/licenses/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+eqdsk-0.1.0.dist-info/RECORD,,
