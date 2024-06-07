@@ -1,0 +1,2 @@
+gardener-cicd-libs==1.2414.0
+gardener-cicd-dso==1.2414.0
