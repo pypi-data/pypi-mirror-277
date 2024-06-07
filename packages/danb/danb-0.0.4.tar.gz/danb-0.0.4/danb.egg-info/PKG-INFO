@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: danb
+Version: 0.0.4
+Summary: danb package
+Author: Daniel QBertuzzi
+Author-email: <dqbertuzzi@gmail.com>
+Keywords: python,utils
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+danb package
