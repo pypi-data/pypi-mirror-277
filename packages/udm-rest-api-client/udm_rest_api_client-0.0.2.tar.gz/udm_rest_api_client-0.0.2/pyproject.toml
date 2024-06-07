@@ -1,0 +1,343 @@
+[build-system]
+requires = ["hatchling", "hatch-fancy-pypi-readme"]
+build-backend = "hatchling.build"
+
+[project]
+name = "udm-rest-api-client"
+description = "Client library to interact with the Univention Directory Manager (UDM) REST API."
+requires-python = ">=3.7"
+license = "AGPL-3.0-only"
+authors = [
+    { name = "Univention Maintainers", email = "packages@univention.de" },
+]
+classifiers = [
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python",
+    "Topic :: Internet",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development",
+    "Typing :: Typed",
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Framework :: AsyncIO",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP",
+]
+dynamic = ["readme", "version"]
+dependencies = [
+    "typing_extensions>=4.0.0",
+    "uritemplate>=4.1.1",
+    "CacheControl>=0.14.0",
+]
+
+[project.optional-dependencies]
+async = [
+    "aiohttp>=3.0.0",
+]
+dev = [
+    "mypy>=1.9.0",
+    "mypy-extensions>=1.0.0",
+    "types-requests>=2.0.0",
+]
+cli = [
+    "python-ldap>=3.0.0",
+    "requests>=2.0.0",
+]
+sync = [
+    "requests>=2.0.0",
+]
+
+[project.urls]
+Homepage = "https://www.univention.com"
+Documentation = "https://docs.software-univention.de/developer-reference/latest/en/udm/rest-api.html"
+Repository = "https://github.com/univention/univention-corporate-server"
+Source = "https://github.com/univention/univention-corporate-server/tree/5.2-0/management/univention-directory-manager-rest/src/univention/admin/rest"
+
+[project.scripts]
+udm = "univention.admin.rest.client.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "src/univention",
+]
+#only-include = [
+#    "src/univention/admin/rest/client",
+#    "src/univention/admin/rest/async_client.py",
+#]
+
+[tool.hatch.metadata.hooks.fancy-pypi-readme]
+content-type = 'text/markdown'
+# construct the PyPI readme from README.md and Debian changelog
+fragments = [
+    {path = "README.md"},
+    {text = "\n## Changelog\n\n"},
+    {path = "debian/changelog", pattern = "(.+?) -- "},
+    {text = "\n... see [here](https://github.com/univention/univention-corporate-server/blob/8f9ad22f119c1564ea9ffad4885a3bf7610e026d/management/univention-directory-manager-rest/debian/changelog) for earlier changes.\n"},
+]
+
+[tool.hatch.version]
+path = "debian/changelog"
+pattern = "^udm-rest-api-client \\((?P<version>[0-9a-z+.-]+)\\)"
+validate-bump = false
+
+### linters ###
+
+[tool.isort]
+py_version = "37"
+combine_as_imports = true
+filter_files = true
+force_grid_wrap = false
+known_first_party = "univention"
+line_length = 120
+multi_line_output = 5
+include_trailing_comma = true
+lines_after_imports = 2
+skip = "doc/doc-common/,base/univention-system-setup/tests,services/univention-ldb-modules,packaging/ucslint/testframework"
+skip_glob = ".venv/*"
+
+[tool.mypy]
+strict = true
+
+[tool.ruff]
+# ruff 0.2.2
+target-version = "py37"
+
+line-length = 180
+extend-exclude = [
+    "services/univention-ldb-modules/buildtools/",
+    "services/univention-ldb-modules/third_party/",
+    "doc/developer-reference/",
+    "oidc/python-keycloak",
+    "packaging/ucslint/testframework/",
+]
+
+[tool.ruff.lint]
+preview = true
+external = ["W601", "F812", "E403", "E704"]
+
+select = ["ALL"]
+ignore = [
+ "E501",  # ignore line length
+ "T20",  # allow use of print()
+ "I",  # isort, the original isort is still more acurate
+ "N",  # ignore non PEP-8 conform names
+ "ANN",  # missing type annotation
+ "ERA",  # don't remove commented out code
+ "ARG",  # ignore unused arguments
+ "EM",  # ignore strings instead of variable preference in exception raising
+ "FBT",  # ignore boolean trap in function arguments
+ "DTZ",  # ignore use of datetime without explicit timezone given
+ "PTH",  # don't use pathlib for everything
+ "RSE102",  # we want parentheses when raising exceptions
+ "D100", "D101", "D102", "D103", "D104", "D105", "D106", "D107", # ignore missing docstring
+ "D203",  # ignore 1 blank line required before class docstring, conflicts with D211
+ "D212",  # multiline docstring should not start at first line!
+ "D214", "D215", "D405", "D406", "D407", "D408", "D409", "D410", "D411", "D412", "D413", "D414", "D416", # we don't have sections
+ "D400",  # first line should end with period
+ "D415",  # first line should end with period, question, exclamation: maybe somewhen?!
+ "UP031",  # allow %-interpolation
+ "PD011",  # we don't use pandas
+ "INP001",  # implicit namespace package
+ "EXE001",  # Shebang is present but file is not executable
+ "S101",  # allow to use assert (must be used in pytest)
+ "S105", "S106", "S107",  # allow hardcoded password
+ "SLF001",  # allow private member access
+ "Q000",  # allow single quotes
+ "Q001",  # allow single quote multiline strings
+ "Q003",  # <https://docs.astral.sh/ruff/rules/avoidable-escaped-quote/>
+ "RET502",  # allow implicit return None
+ "RET503",  # allow missing explicit return None
+ "B905",  # allow zip() without an explicit strict= parameter
+ "RUF001",  # allow ambiguous-unicode-character-string
+ "PLR2004",  # allow magic-value-comparison
+ "A001", "A002", "A003",  # allow builtin-variable-shadowing
+ "B006",  # allow mutable-argument-default
+ "B008",  # allow function-call-argument-default
+ "B020",  # allow loop-variable-overrides-iterator
+ "BLE001",  # allow catching Exception (blind-except)
+ "PLR0913",  # too-many-args
+ "PLR0915",  # too-many-statements
+ "PLR0911",  # too-many-return-statements
+ "PLR0912",  # too-many-branches
+ "PLR0904",  # too-many-public-methods
+ "PLR0917",  # too-many-positional
+ "PLR1702",  # too-many-nested-blocks
+ "PLR0914",  # too-many-locals
+ "PLR6301",  # no-self-use
+ "PLR6201",  # literal-membership
+ "PLR1704",  # redefined-argument-from-local
+ "PLC2801",  # unnecessary-dunder-call
+ "PLC2701",  # import-private-name
+ "PLW2901",  # redefined-loop-name
+ "PLW1514",  # unspecified-encoding
+ "PYI014",  # argument-simple-defaults
+ "PYI034",  # non-self-return-type
+ "PYI052",  # unannotated-assignment-in-stub
+ "FIX001",  #
+ "FIX002",  #
+ "TD001",
+ "TD002",
+ "TD003",
+ "S311",  # suspicious-non-cryptographic-random-usage
+ "S602",  # subprocess-popen-with-shell-equals-true
+ "S603",  # subprocess-without-shell-equals-true
+ "S604",  # call-with-shell-equals-true
+ "S607",  # start-process-with-partial-path
+ "FURB101",  # read-whole-file
+ "FURB105",  # print-empty-string
+ "FURB129",  # readlines-in-for
+ "FURB131",  # delete-full-slice
+ "FURB132",  # check-and-remove-from-set
+ "FURB136",  # if-expr-min-max
+ "FURB140",  # reimplemented-starmap
+ "FURB145",  # slice-copy
+ "FURB148",  # unnecessary-enumerate
+ "FURB152",  # math-constant
+ "FURB161",  # bit-count
+ "FURB163",  # redundant-log-base
+ "FURB167",  # regex-flag-alias
+ "FURB168",  # isinstance-type-none
+ "FURB169",  # type-none-comparison
+ "FURB171",  # single-item-membership-test
+ "FURB177",  # implicit-cwd
+ "FURB180",  # meta-class-abc-meta
+ "FURB181",  # hashlib-digest-hex
+ "S404", # suspicious-subprocess-import
+ "RUF021",  # parenthesize-chained-operators
+ "PLC0415",  # import-outside-top-level
+
+ # not py2 compatible
+ "COM812",  # missing-trailing-comma
+ "RUF012",  # mutable-class-default
+ "FLY002",  #
+ "UP004", "UP008", "UP009", "UP010", "UP025", "UP029",  # be Python 2 compatible
+ "YTT202",  # six-py3-referenced
+ "RUF005",  # unpack-instead-of-concatenating-to-collection-literal
+ "TCH",  # type checking
+ "S324",  # hashlib-insecure-hash-function
+ "S113",  # request-without-timeout
+ "S108",  # hardcoded-temp-file
+ "S103",  # bad-file-permissions
+ "S110",  # try-except-pass
+ "UP006",  # use-pep585-annotation
+ "UP003",  # type-of-primitive
+ "UP012",  # unnecessary-encode-utf8
+ #"UP016",  # remove-six-compat
+ "UP018",  # native-literals
+ "UP019",  # typing-text-str-alias
+ "UP020",  # open-alias
+ "UP023",  # rewrite-c-element-tree
+ "UP024",  # os-error-alias
+ "UP026",  # rewrite-mock-import
+ "UP028",  # rewrite-yield-from
+ "UP032",  # f-string
+ "UP035",  # import-replacements
+ "UP036",  # outdated-version-block
+ "PIE810",  # single-starts-ends-with
+# F401: not py2 compat because of "typing" type hint comments: https://github.com/astral-sh/ruff/issues/1619
+
+ # would be nice but no autofix available
+ "B007",  # unused-loop-control-variable
+ "TID252",  # relative-imports
+ "B904",  # allow raise-without-from-inside-except → too many violations
+ "C417",  # unnecessary-map
+ "RET505",  # superfluous-else-return
+ "RET506",  # superfluous-else-raise
+ "RET507",  # superfluous-else-continue
+ "RET508",  # superfluous-else-break
+ "SIM115",  # open-file-with-context-handler
+ "SIM102",  # nested-if-statements
+ "SIM105",  # use-contextlib-suppress
+ "TRY",  # tryceratops
+ "PT004", "PT007", "PT011", "PT012", "PT017", "PT018",  # pytest
+ "PGH003",  # blanket-type-ignore
+ "UP014",  # convert-named-tuple-functional-to-class
+ "RET504",  # unnecessary-assign, https://github.com/astral-sh/ruff/issues/2263
+ "SIM117",  # multiple-with-statements
+ "SIM108",  # use-ternary-operator: hm, sometimes great, sometimes not
+ "D205",  # 1 blank line required between summary line and description
+ "D300",  # Use """triple double quotes"""
+ "D301",  # Use r""" if any backslashes in a docstring
+ "D401",  # First line of docstring should be in imperative mood
+ "D402",  # First line should not be the function's signature
+ "D403",  # First word of the first line should be properly capitalized
+ "D404",  # First word of the docstring should not be "This"
+ "PLW0603", # global-statement to update identifiers
+ "PLR5501",  # collapsible-else-if
+ "PYI033", # type-comment-in-stub
+ "PYI024",  #
+ "PYI048",  #
+ "TD004",  #
+ "TD005",  #
+ "FA100",  #
+ "PLC1901",  #
+ "FIX004",
+ "SIM112",  #
+ "PERF203",  # try-except-in-loop
+ "PERF401",  # manual-list-comprehension
+ "FURB113",  # repeated-append
+
+ "PT027",  # pytest-unittest-raises-assertion  # some still use unittest
+
+ "SIM118",  # unsure if everything is a dict, let's select each individually somewhen
+ "SIM300",  # do it somewhen
+
+ # issues in ruff:
+ "RUF027",  # missing-f-string-syntax, https://github.com/astral-sh/ruff/issues/10023
+ "CPY001",  # missing-copyright-notice, https://github.com/astral-sh/ruff/issues/10021
+ "SIM114",  # https://github.com/astral-sh/ruff/issues/2848
+ #"PIE804",  # no-unnecessary-dict-kwargs https://github.com/astral-sh/ruff/issues/2387
+ "RUF100",  # https://github.com/astral-sh/ruff/issues/2406, https://github.com/astral-sh/ruff/issues/2407
+
+ "UP007",  # for Python < 3.10 (PEP 604 - Allow writing union types as X | Y)
+]
+
+unfixable = ["RUF100", "T20"]
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+allowed-confusables = ["’", "`", "´"]
+
+task-tags = ["TODO", "FIXME"]
+
+[tool.ruff.lint.flake8-builtins]
+builtins-ignorelist = ["copyright", "license", "object", "exit", "quit", "credits"]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 134
+
+[tool.ruff.format]
+quote-style = "single"  # https://github.com/astral-sh/ruff/issues/7525
+
+[tool.ruff.lint.flake8-quotes]
+docstring-quotes = "double"
+multiline-quotes = "double"
+inline-quotes = "single"
+
+[tool.ruff.lint.flake8-unused-arguments]
+ignore-variadic-names = true
+
+[tool.ruff.lint.flake8-pytest-style]
+parametrize-names-type = "csv"
+
+[tool.ruff.lint.flake8-annotations]
+ignore-fully-untyped = true
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+#filter-files = true
+#force-grid-wrap = false
+known-first-party = ["univention"]

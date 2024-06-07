@@ -1,0 +1,88 @@
+include:
+  - project: univention/dist/docker-services
+    file:
+      - pre-commit.yml
+
+stages:
+  - lint
+  - build
+  - publish
+
+run_pre_commit:
+  stage: lint
+  extends: .pre-commit
+
+build_package:
+# Will build from all branches.
+# Will always build the version from the changelog.
+# If in a non-'main' branch will additionally build a version with '.dev0+user.commit'.
+  stage: build
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 week
+  image: docker-registry.knut.univention.de/python:3.11-slim
+  script:
+    - pip install hatch
+#    build both versions: unchanged from changelog and with '.dev0+user.commit'
+    - hatch build
+    - hatch config set version.validate-bump false
+    - ORI_VERSION="$(hatch version)"
+    - |-
+      if [ "$CI_COMMIT_BRANCH" != "$CI_DEFAULT_BRANCH" ]; then
+        hatch config set version.validate-bump false
+        ORI_VERSION="$(hatch version)"
+        hatch version "${ORI_VERSION}.dev0+${CI_COMMIT_REF_SLUG//-/.}.$CI_COMMIT_SHORT_SHA"
+        hatch build
+      else
+        true
+      fi
+    - find dist/ -type f | sort
+
+publish_gitlab:
+# Allows uploading from all branches.
+# Will upload the version from the changelog when in 'main', otherwise the version with '.dev0+user.commit'.
+  stage: publish
+  dependencies:
+    - build_package
+  image: docker-registry.knut.univention.de/python:3.11-slim
+  script:
+    - pip install hatch
+    - ORI_VERSION="$(hatch version)"
+    - |-
+      if [ "$CI_COMMIT_BRANCH" != "$CI_DEFAULT_BRANCH" ]; then
+        hatch config set version.validate-bump false
+        hatch version "${ORI_VERSION}.dev0+${CI_COMMIT_REF_SLUG//-/.}.$CI_COMMIT_SHORT_SHA"
+        hatch publish --repo ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi --user gitlab-ci-token --auth ${CI_JOB_TOKEN} dist/*-${ORI_VERSION}.dev0+*
+      else
+        hatch publish --repo ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi --user gitlab-ci-token --auth ${CI_JOB_TOKEN} dist/*-${ORI_VERSION}-py3-*.whl  dist/*-${ORI_VERSION}.tar.gz
+      fi
+
+publish_test_pypi:
+# Allows uploading from all branches.
+# But will only upload the version from the changelog.
+# PyPI does not allow local versions (<main>+<local>).
+  stage: publish
+  when: manual
+  dependencies:
+    - build_package
+  image: docker-registry.knut.univention.de/python:3.11-slim
+  script:
+    - pip install hatch
+    - ORI_VERSION="$(hatch version)"
+    - hatch publish -r test --user __token__ --auth ${TEST_PYPI_TOKEN} dist/*-${ORI_VERSION}-py3-*.whl  dist/*-${ORI_VERSION}.tar.gz
+
+publish_prod_pypi:
+# Allows uploading only from 'main' branch.
+# Will only upload the version from the changelog.
+  stage: publish
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+      when: manual
+  dependencies:
+    - build_package
+  image: docker-registry.knut.univention.de/python:3.11-slim
+  script:
+    - pip install hatch
+    - ORI_VERSION="$(hatch version)"
+    - hatch publish --user __token__ --auth ${PROD_PYPI_TOKEN} dist/*-${ORI_VERSION}-py3-*.whl  dist/*-${ORI_VERSION}.tar.gz
