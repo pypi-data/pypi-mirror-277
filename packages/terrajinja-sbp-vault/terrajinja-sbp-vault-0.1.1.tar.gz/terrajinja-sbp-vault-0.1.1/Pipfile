@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pyyaml = "*"
+jinja2 = "*"
+deepmerge = "*"
+cdktf = "*"
+terrajinja-cli = "*"
+terrajinja-sbp-generic = "*"
+cdktf-cdktf-provider-vault = "*"
+random-password-generator = "*"
+
+[dev-packages]
+coverage = "*"
+pytest = "*"
+pytest-cov = "*"
+flake8 = "*"
+mypy = "*"
+lxml = "*"
+
+[requires]
+python_version = "3.11"

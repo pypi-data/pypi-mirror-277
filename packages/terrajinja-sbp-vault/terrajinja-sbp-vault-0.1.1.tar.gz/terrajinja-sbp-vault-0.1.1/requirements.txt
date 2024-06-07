@@ -1,0 +1,3 @@
+# this is only usable for terrajinja
+cdktf-cdktf-provider-vault>=12.1.0
+random-password-generator>=2.2.0

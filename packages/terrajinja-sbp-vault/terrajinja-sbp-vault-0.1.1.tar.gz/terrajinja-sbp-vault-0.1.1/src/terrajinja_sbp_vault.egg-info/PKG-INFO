@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: terrajinja-sbp-vault
+Version: 0.1.1
+Summary: Terrajinja extension for automation using cdktf
+Home-page: https://gitlab/terrajinja
+Author: Terrajinja Team
+Author-email: int-terrajinja@schubergphilis.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cdktf-cdktf-provider-vault>=12.1.0
+Requires-Dist: random-password-generator>=2.2.0
+
+# terrajinja-sbp-vault
+
+This is an extension to the vault provider for the following modules.
+The original documentation can be found [here](https://registry.terraform.io/providers/hashicorp/vault/latest/docs)
+
+# SBP Specific implementations
+Here is a list of supported resources and their modifications
+
+## sbp.vault.kv_secret_v2
+Original provider: [vault.kv_secret_v2](https://registry.terraform.io/providers/hashicorp/vault/latest/docs/resources/kv_secret_v2)
+
+This custom provider adds the following:
+- automaticly convert data to json as input for the resource
+- automaticly create random passwords if requested
+
+| old parameter | new parameter | description |
+| ------ | ------ | ------ |
+| data_json | data | the data field is automaticly converted to json |
+| lifecycle | - | default is set to ignore all changes |
+
+additional to the above the data structure expected is in the format:
+```
+{ 
+    "key": "value",
+    "key2": "value2",
+}
+```
+if any of the values contains the word "random" then a rendomly generated password is created of 30 characters
+
+example:
+```
+{
+    "my_secret": "random"
+}
+```
+will result in a random string being created as password for my_secret
+
+### terrajinja-cli example
+the following is a code snipet you can used in a terrajinja-cli template file.
+This created both the hashicorp vault with the name `generic`, and adds a secret in it in the path `application` with key `admin` that contains a random password
+```
+terraform:
+  resources:
+    - task: vault-mount-generic
+      module: vault.mount
+      parameters:
+        path: "generic"
+        type: "kv"
+        options:
+            version: "2"
+
+    - task: vault-application-password
+      module: sbp.vault.kv_secret_v2
+      parameters:
+        mount: $vault-mount-generic.path
+        name: "application"
+        data:
+          admin: "random"
+```
+
+
+
+History
+-------
+
+0.0.1 (14-03-2024)
+---------------------
+
+* First code creation
