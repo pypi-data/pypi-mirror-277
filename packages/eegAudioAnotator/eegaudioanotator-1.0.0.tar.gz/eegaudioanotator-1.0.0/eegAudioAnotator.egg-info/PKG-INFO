@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: eegAudioAnotator
+Version: 1.0.0
+Home-page: https://github.com/owaismujtaba/EEGAnotator
+Author: Owais Mujtaba Khanday
+Author-email: owais.mujtaba123@gmail.com
+License: GPL-3.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10.14
+License-File: LICENSE.lic
+Requires-Dist: astroid==3.2.2
+Requires-Dist: certifi==2024.2.2
+Requires-Dist: cffi==1.16.0
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: click==8.1.7
+Requires-Dist: contourpy==1.2.1
+Requires-Dist: cycler==0.12.1
+Requires-Dist: dill==0.3.8
+Requires-Dist: fonttools==4.52.1
+Requires-Dist: idna==3.7
+Requires-Dist: isort==5.13.2
+Requires-Dist: Jinja2==3.1.4
+Requires-Dist: kiwisolver==1.4.5
+Requires-Dist: lazy_loader==0.4
+Requires-Dist: MarkupSafe==2.1.5
+Requires-Dist: matplotlib==3.9.0
+Requires-Dist: mccabe==0.7.0
+Requires-Dist: mne==1.7.0
+Requires-Dist: numpy==1.26.4
+Requires-Dist: pandas==2.2.2
+Requires-Dist: pillow==10.3.0
+Requires-Dist: pooch==1.8.1
+Requires-Dist: PyAudio==0.2.14
+Requires-Dist: pycparser==2.22
+Requires-Dist: pylint==3.2.2
+Requires-Dist: pyparsing==3.1.2
+Requires-Dist: PyQt5==5.15.9
+Requires-Dist: pyqt5-plugins==5.15.9.2.3
+Requires-Dist: PyQt5-Qt5==5.15.2
+Requires-Dist: PyQt5-sip==12.13.0
+Requires-Dist: pyqt5-tools==5.15.9.3.3
+Requires-Dist: pyqtgraph==0.13.7
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: pytz==2024.1
+Requires-Dist: pyxdf==1.16.6
+Requires-Dist: qt5-applications==5.15.2.2.3
+Requires-Dist: qt5-tools==5.15.2.1.3
+Requires-Dist: requests==2.32.2
+Requires-Dist: scipy==1.13.1
+Requires-Dist: soundfile==0.12.1
+Requires-Dist: tomli==2.0.1
+Requires-Dist: tomlkit==0.12.5
+Requires-Dist: tqdm==4.66.4
+Requires-Dist: tzdata==2024.1
+Requires-Dist: urllib3==2.2.1
