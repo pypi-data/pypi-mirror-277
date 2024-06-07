@@ -1,0 +1,7 @@
+echoss_s3handler/__init__.py,sha256=YzLrbXoVG_slkFNQOljq6O8c0bZtZEGpWSkN8MCrgCc,30
+echoss_s3handler/echoss_logger.py,sha256=WcHSNLuLuZGrhnMXS3snNAJ6GIrI4OtEr-ZJJ6pQY0c,3285
+echoss_s3handler/s3_handler.py,sha256=qDtvN44-1weoJjqQc47gl8Agbmo0uRRLF5oYg5biIms,19947
+echoss_s3handler-0.1.1.dist-info/METADATA,sha256=-wHDl7slINmY_ZEgGx1_NNEcN3mgE6ruLETXyp9qI64,3785
+echoss_s3handler-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+echoss_s3handler-0.1.1.dist-info/top_level.txt,sha256=zi4ImB6MQVUn580PhhVDAqj1YqjrzHmNwR06zzQIcKs,17
+echoss_s3handler-0.1.1.dist-info/RECORD,,
