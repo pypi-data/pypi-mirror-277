@@ -1,0 +1,2 @@
+[console_scripts]
+solc-json-parser = solc_json_parser.cli:main
