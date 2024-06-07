@@ -1,0 +1,3 @@
+[console_scripts]
+logsnap = logsnap.analyzer:main
+
