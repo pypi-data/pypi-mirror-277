@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+htr/__init__.py
+htr/__main__.py
+htr/core.py
+htr.egg-info/PKG-INFO
+htr.egg-info/SOURCES.txt
+htr.egg-info/dependency_links.txt
+htr.egg-info/entry_points.txt
+htr.egg-info/not-zip-safe
+htr.egg-info/requires.txt
+htr.egg-info/top_level.txt

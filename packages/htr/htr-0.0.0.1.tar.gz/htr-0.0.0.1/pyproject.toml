@@ -1,0 +1,78 @@
+#
+# HTR
+#
+# (C)opyright 2024 cKnowledge
+#
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "htr"
+
+authors = [
+    {name = "Grigori Fursin", email = "gfursin@cknowledge.org"}
+]
+
+description = "HTR"
+
+requires-python = ">=3.8"
+
+dependencies = [
+    "pyyaml",
+    "requests",
+    "setuptools"
+]
+
+keywords = [
+    "htr"
+]
+
+license = {text = "Apache Software License (Apache 2.0)"}
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Information Technology",
+    "Topic :: Software Development",
+    "Topic :: System",
+    "Topic :: Scientific/Engineering",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dynamic = ["readme", "version"]
+
+[project.urls]
+Homepage = "https://howtorun.io"
+Source = "https://github.com/how-to-run/htr"
+
+[project.scripts]
+htr = "htr.core:cli"
+
+[tool.setuptools]
+zip-safe = false
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["htr", "htr.*"]
+exclude = ["docs", "docs.*", "tests", "tests.*"]
+
+[tool.setuptools.package-data]
+htr = [
+  "internal/**/*"
+]
+
+#[tool.setuptools.package-data]
+#"htr.internal" = ["*.yaml", "*.json", "*.md"]
+
+[tool.setuptools.dynamic]
+readme = {file = "README.md", content-type = "text/markdown"}
+version = {attr = "htr.__version__"}
