@@ -1,0 +1,12 @@
+stldim/__init__.py,sha256=FmKAXtJWUXgB4NH67YrVxwjdnTXfVISz0DshJTvZGVA,5694
+stldim/__main__.py,sha256=xOFcI0fQi_ccc36Pso88cm0usEDzhgvMqTfgLzrrLQ0,813
+stldim/version.py,sha256=fP6azXhYEZ6UUTXZphkvCskugtv_EuPlEmrX6j7vH5s,300
+stldim/templates/openscad_lib.jinja2,sha256=bkkPvL6s-rOzzlMKcViur_hrHHUpqjNjXHju2pySBes,1212
+stldim/templates/openscad_lib_basename.jinja2,sha256=hSJkLfgqG3Y1hREzmUlaPQbMUC3ui1jd2QuUWK8wMG0,1230
+stldim/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stldim/tests/test_mesh_with_bounds.py,sha256=C96FqRnIOWe9oY-ZAkfwW387veAHZBFzlJEBnSomElU,5245
+stldim-0.4.2.dist-info/METADATA,sha256=E7XYYKYjlkY5y6p2Z2Dbox6_s03sU2_Ho-qdIYk8pUM,3930
+stldim-0.4.2.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+stldim-0.4.2.dist-info/entry_points.txt,sha256=OwB7BCcBlCh1wOY4bcoipyXJEcYrivDUGlNh8jn3BQw,48
+stldim-0.4.2.dist-info/licenses/LICENSE.md,sha256=x3m-o5QzE7RUEbpQqk2pAPdJTTiJAnFyM621rMWFWJU,1072
+stldim-0.4.2.dist-info/RECORD,,
