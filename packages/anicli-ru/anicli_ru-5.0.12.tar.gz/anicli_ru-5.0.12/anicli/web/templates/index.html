@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anicli-ru WEB</title>
+    <script src="assets/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<form action="/search" method="post" id="search">
+    <input type="text" placeholder="Поиск аниме">
+    <input type="submit" value="Искать">
+</form>
+<div id="ongoings">
+
+</div>
+<script>
+    $.ajax({
+        type: 'GET',
+        url: '/ongoings',
+        success: function (response) {
+            let ongoings = response
+        }
+    })
+    $('#ongogings').append(ongoings)
+
+</script>
+</body>
+</html>
