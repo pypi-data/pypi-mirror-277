@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: netvulnscan
+Version: 0.1.1
+Summary: A package to discover network devices, scan ports and services, and find vulnerabilities.
+Home-page: https://github.com/Hr12aNe/NetVulnScan
+Author: Hrishikesh Rane
+Author-email: rishirane1204@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# NetVulnScan
+
+NetVulnScan is a Python package designed to discover network devices, scan their ports and services, and identify vulnerabilities.
+
+## Features
+
+- **Network Discovery**: Identify devices on your network using ARP requests.
+- **Port Scanning**: Scan a range of ports on discovered devices.
+- **Service Detection**: Detect services running on the scanned ports.
+- **Vulnerability Scanning**: Check for known vulnerabilities in the detected services.
+
+## Installation
+
+To install the package, use pip:
+
+```bash
+pip install netvulnscan
+
+## Usage
+
+Use the netdev_discovery function to find devices on network.
+
+from netvulnscan import netdev_discovery                            # Import the network discovery function from the netvulnscan package
+
+network = '192.168.1.0/24' # Replace with your network              # Specify the network to scan (e.g., the 192.168.1.0/24 network)
+devices = discover_devices(network)                         # Discover devices on the specified network
+for device in devices:                                              # Loop through the discovered devices and print their IP and MAC addresses
+    print(f"IP: {device['ip']}, MAC: {device['mac']}") 
+
+Use the netdev_scan funtion to scan ports on discovered devices.
+
+from netvulnscan import netdev_scan                                 # Import the port scanning function from the netvulnscan package
+
+# Specify the target IP address to scan for open ports
+ip = '192.168.1.1'  # Replace with the target IP            
+ports = scan_ports(ip)                                  # Scan the ports on the specified IP address
+for port in ports:                                                      # Loop through the scanned ports and print their port number and state (open/closed)
+    print(f"Port: {port['port']}, State: {port['state']}")
+
+from netvulnscan import netdev_detect_services                  # Import the service detection function from the netvulnscan package
+
+services = detect_services(ip)                      # Detect services running on the specified IP address
+for service in services:                                                        # Loop through the detected services and print their port number, name, and version
+    print(f"Port: {service['port']}, Service: {service['name']}, Version: {service['version']}")
+
+from netvulnscan import netdev_vuln             # Import the vulnerability scanning function from the netvulnscan package
+
+vulnerabilities = scan_vulnerabilities(ip)          # Scan the specified IP address for known vulnerabilities
+for port, vulns in vulnerabilities.items():                 # Loop through the scanned vulnerabilities and print their port number and associated vulnerabilities
+    print(f"Port: {port}, Vulnerabilities: {vulns}")
+
+
+
