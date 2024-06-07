@@ -1,0 +1,2 @@
+include notebook-to-url-lib/index.js
+include package.json
