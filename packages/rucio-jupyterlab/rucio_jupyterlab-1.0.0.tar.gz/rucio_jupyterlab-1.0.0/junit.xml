@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="1" failures="0" errors="0" time="2.917">
+  <testsuite name="rucio-jupyterlab" errors="0" failures="0" skipped="0" timestamp="2024-06-07T09:29:54" time="2.554" tests="1">
+    <testcase classname="rucio-jupyterlab should be tested" name="rucio-jupyterlab should be tested" time="0.003">
+    </testcase>
+  </testsuite>
+</testsuites>
