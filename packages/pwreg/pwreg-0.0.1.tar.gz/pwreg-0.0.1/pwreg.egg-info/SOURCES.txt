@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+pwreg/__init__.py
+pwreg.egg-info/PKG-INFO
+pwreg.egg-info/SOURCES.txt
+pwreg.egg-info/dependency_links.txt
+pwreg.egg-info/top_level.txt
