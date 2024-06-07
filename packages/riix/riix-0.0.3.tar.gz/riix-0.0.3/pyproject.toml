@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "riix"
+version = "0.0.3"
+description = "vectorized implementations of online rating systems"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+    {name="Clayton Thorrez", email="claytonthorrez@gmail.com"},
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+]
+keywords = ["rating system", "paired comparison"]
+
+[project.urls]
+Docs = "https://cthorrez.github.io/riix/"
+Repository = "https://github.com/cthorrez/riix"
+Issues = "https://github.com/cthorrez/riix/issues"
+
+
+[tool.ruff]
+line-length = 120
+ignore-init-module-imports = true
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401"]
