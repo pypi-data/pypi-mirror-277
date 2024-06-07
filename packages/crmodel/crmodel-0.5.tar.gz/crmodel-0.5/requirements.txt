@@ -1,0 +1,8 @@
+crossroads_segmentation
+networkx
+osmnx
+pandas
+scipy
+setuptools
+geojson
+matplotlib
