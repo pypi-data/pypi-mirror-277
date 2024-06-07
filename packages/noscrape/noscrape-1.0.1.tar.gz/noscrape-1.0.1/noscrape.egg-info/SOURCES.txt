@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+noscrape/__init__.py
+noscrape/load_noscrape_lib.py
+noscrape/noscrape.py
+noscrape.egg-info/PKG-INFO
+noscrape.egg-info/SOURCES.txt
+noscrape.egg-info/dependency_links.txt
+noscrape.egg-info/top_level.txt
+noscrape/bin/noscrape_darwin_arm64
+noscrape/bin/noscrape_darwin_x86_64
+noscrape/bin/noscrape_linux_x86_64
+noscrape/bin/noscrape_windows_x86_64.exe
