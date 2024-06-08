@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+libpypostal/__init__.py
+libpypostal/data_utils.py
+libpypostal/libpostal_download_data
+libpypostal/parser.py
+libpypostal/version.py
+libpypostal.egg-info/PKG-INFO
+libpypostal.egg-info/SOURCES.txt
+libpypostal.egg-info/dependency_links.txt
+libpypostal.egg-info/top_level.txt
+src/pyparser.c
+src/pyutils.c
+tests/test_parser.py
