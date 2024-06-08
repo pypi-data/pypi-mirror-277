@@ -1,0 +1,17 @@
+matricula_online_scraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matricula_online_scraper/__main__.py,sha256=S9d5yS14WZ9uc2ozuowgJF0NDUP2zb1CuM_tIehVKzo,65
+matricula_online_scraper/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matricula_online_scraper/cli/common.py,sha256=yUVgUE6_J6P_tS5WeBscdvGKh-BO0WkbxmLbsLTxX-c,2065
+matricula_online_scraper/cli/fetch.py,sha256=VTHlHUU71-10IVDPosE3yXCylWKEDldfrxo3yso1qkM,8265
+matricula_online_scraper/cli/utils.py,sha256=jdEQ3F4jUXIwYC_o2jDQ7l0h8RT1WyRthaqLAOmMsnQ,707
+matricula_online_scraper/main.py,sha256=drc_BX48mUzCR6tjCUuLaqcJfvWjhAe7LMKfYre9zxk,1123
+matricula_online_scraper/spiders/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matricula_online_scraper/spiders/locations_spider.py,sha256=mgPyONe0pCIt6phHtFANUN1NLIWD9wenMaOo1af4qUc,4422
+matricula_online_scraper/spiders/newsfeed_spider.py,sha256=hFUljB4I6c-ADYEkaPc4QTSd5fpZ9_ntBmyJPGzsUtw,3788
+matricula_online_scraper/spiders/parish_registers_spider.py,sha256=vHrU1Jw9Y9fVDRolDWYr8_Z3CaEWyQXzH5FBmdAi11Q,4000
+matricula_online_scraper/spiders/utils.py,sha256=S5E4PjxPjHBm77QP9XjGhAoJLYUHHVgLSpINOlM5gBE,746
+matricula_online_scraper-0.5.0.dist-info/LICENSE,sha256=x5jESRaMrE_U_COoazmspYnMTjXgu84M6GlJn-cR6ro,1069
+matricula_online_scraper-0.5.0.dist-info/METADATA,sha256=zpM_MQ6jujCTjwaPcp4y9G16iSYYlPQp3_WzQtwZbmA,4425
+matricula_online_scraper-0.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+matricula_online_scraper-0.5.0.dist-info/entry_points.txt,sha256=6MXilKbTNnipyU8rnpABgPY0l61_E8nqS8DATqp_BTQ,78
+matricula_online_scraper-0.5.0.dist-info/RECORD,,
