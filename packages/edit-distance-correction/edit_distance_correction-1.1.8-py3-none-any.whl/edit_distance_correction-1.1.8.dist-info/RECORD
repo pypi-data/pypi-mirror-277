@@ -1,0 +1,14 @@
+edit_distance_correction/__init__.py,sha256=iEwR-MyXazzbaotC3qWLZykxG-cA4hyVlazXyWsxR2c,139
+edit_distance_correction/correction.csv,sha256=Z15Pkoxu0BqTse-b0Vx6p8VhDVRi_2ct3NjCB84OuTA,1256
+edit_distance_correction/correction.py,sha256=tvJE8iUylttv-r8Tw9Ryfe1ws5woJzgmyiT4TXXqetw,14098
+edit_distance_correction/heteronym.txt,sha256=-cGHvlDxqZm9QuTUEClUx7kLDETYZaNGc8QhJqV1kyI,1089
+edit_distance_correction/same_stroke.txt,sha256=62B02Q62AJywUlQKmWwilF6j3BdCLBGd3uQXn3ChNXI,6801
+edit_distance_correction/target_words,sha256=_0stRwUiMqck-ByqC7-j-r-vaK03IzAk8gO1ur7N5QY,1784
+edit_distance_correction/test.py,sha256=oG_UfMwTOEBAFlLD_N7CJzmDwvNibktFNaDR1dcR0m0,391
+edit_distance_correction/test_file,sha256=r-XKhky8rP4fqpvc2-45yP3srB7joFea5pHg_oWuiDc,2732
+edit_distance_correction/utils.py,sha256=P8siFJWHH40Z3Te4tiYvrMK5EMAWSxDd-dd3gwAfpz8,9905
+edit_distance_correction/valid_pinyin,sha256=6EqB5E8P3jAIukFOBvQtagZ4DCqQCjemjwo2bykSpJc,1676
+edit_distance_correction-1.1.8.dist-info/METADATA,sha256=_1eJRQf_T11t7IgDT6dV9U1uj-aUd6Jdb2RJy3gGTHk,291
+edit_distance_correction-1.1.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+edit_distance_correction-1.1.8.dist-info/top_level.txt,sha256=GzUwTYJvGTyxnBCc_IqRXlNzEQr5gg0oQ96jXfgwu2s,25
+edit_distance_correction-1.1.8.dist-info/RECORD,,
