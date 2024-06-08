@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: fairness-checker
+Version: 0.0.4
+Summary: Fairnes checker
+Home-page: https://github.com/RexYuan/Shu
+Author: RexYuan
+Author-email: hello@rexyuan.com
+License: Unlicense
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Fairness Checker
+
+This Python module fairness_checker provides a set of methods to evaluate the fairness of a predictive model's outcomes across different demographic groups represented in a CSV file or given a model.
+
+## Dependencies
+
+* Python >= 3.6
+
+## Installation
+
+```bash
+pip3 install fairness-checker
+```
+
+## Usage
+
+For example:
+
+```python3
+from fairness_checker import fairness_csv_checker
+c = fairness_csv_checker("compas-scores-two-years.csv")
+c.demographic_parity(0.2, lambda row: row['sex'] == 'Male', lambda row: row['score_text'] in {'Medium', 'High'})
+```
+
+Output:
+
+```txt
+demographic parity
+fair: 0.04 < 0.2
+```
+
+
