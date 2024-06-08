@@ -1,0 +1,9 @@
+README.md
+setup.py
+testdrkv10/__init__.py
+testdrkv10/ec2_utils.py
+testdrkv10.egg-info/PKG-INFO
+testdrkv10.egg-info/SOURCES.txt
+testdrkv10.egg-info/dependency_links.txt
+testdrkv10.egg-info/requires.txt
+testdrkv10.egg-info/top_level.txt
