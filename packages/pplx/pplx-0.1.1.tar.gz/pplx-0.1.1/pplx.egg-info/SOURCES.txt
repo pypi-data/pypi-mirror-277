@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pplx/__init__.py
+pplx/api.py
+pplx.egg-info/PKG-INFO
+pplx.egg-info/SOURCES.txt
+pplx.egg-info/dependency_links.txt
+pplx.egg-info/entry_points.txt
+pplx.egg-info/requires.txt
+pplx.egg-info/top_level.txt
