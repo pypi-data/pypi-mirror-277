@@ -1,0 +1,2 @@
+[console_scripts]
+skidy = skidy.__main__:main
