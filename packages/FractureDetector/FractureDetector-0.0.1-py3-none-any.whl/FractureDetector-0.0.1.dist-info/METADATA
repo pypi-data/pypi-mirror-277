@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: FractureDetector
+Version: 0.0.1
+Summary: FractureDetector Package is a CNN model that checks if a X-Ray image shows a fracture.
+Author: Harjas Rohra
+Author-email: <hrohra2004@gmaill.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+Requires-Dist: pillow
+Requires-Dist: joblib
+Requires-Dist: numpy
+
+## Image Classification With Python
