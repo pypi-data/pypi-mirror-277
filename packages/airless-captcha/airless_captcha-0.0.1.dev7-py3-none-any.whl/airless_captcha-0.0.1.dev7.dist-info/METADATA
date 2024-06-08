@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: airless-captcha
+Version: 0.0.1.dev7
+Summary: Airless Captcha is a package that resolve captcha challenge and based on airless framework
+Project-URL: Homepage, https://github.com/astercapital/airless-captcha
+Project-URL: Bug Tracker, https://github.com/astercapital/airless-captcha/issues
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: airless >=0.0.69.dev1
+
