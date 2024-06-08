@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+aci2apstra.egg-info/PKG-INFO
+aci2apstra.egg-info/SOURCES.txt
+aci2apstra.egg-info/dependency_links.txt
+aci2apstra.egg-info/entry_points.txt
+aci2apstra.egg-info/requires.txt
+aci2apstra.egg-info/top_level.txt
