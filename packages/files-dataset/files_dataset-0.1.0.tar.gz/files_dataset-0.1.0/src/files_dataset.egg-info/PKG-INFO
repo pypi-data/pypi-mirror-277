@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: files-dataset
+Version: 0.1.0
+Summary: Simple, composable standard for storing datasets as one sample per file
+Author-email: Marcel Claramunt <marcel@moveread.com>
+Project-URL: repo, https://github.com/marciclabas/mltools.git
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic
+Requires-Dist: haskellian
+
+# Files Dataset
+
+> Simple, composable standard for storing datasets as one sample per file
