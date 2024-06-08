@@ -1,0 +1,84 @@
+
+#===========================================================
+#            Copyright (C) 2023-present AyiinXd
+#===========================================================
+#||                                                       ||
+#||              _         _ _      __  __   _            ||
+#||             /   _   _(_|_)_ __  / /__| |           ||
+#||            / _ | | | | | | '_     _  | |           ||
+#||           / ___  |_| | | | | | |/   (_| |           ||
+#||          /_/   ___, |_|_|_| |_/_/___,_|           ||
+#||                  |___/                                ||
+#||                                                       ||
+#===========================================================
+# Appreciating the work of others is not detrimental to you
+#===========================================================
+#
+
+from io import BytesIO
+from typing import Any, Union, List, Optional
+
+from typegram import api
+from typegram.api.object import Object
+from typegram.api.utils import Int, Long, Int128, Int256, Bool, Bytes, String, Double, Vector
+
+
+
+class MessageStats(Object):  # type: ignore
+    """Telegram API type.
+
+    Constructor of :obj:`~typegram.api.ayiin.stats.MessageStats`.
+
+    Details:
+        - Layer: ``181``
+        - ID: ``7FE91C14``
+
+views_graph (:obj:`StatsGraph<typegram.api.ayiin.StatsGraph>`):
+                    N/A
+                
+        reactions_by_emotion_graph (:obj:`StatsGraph<typegram.api.ayiin.StatsGraph>`):
+                    N/A
+                
+    Functions:
+        This object can be returned by 18 functions.
+
+        .. currentmodule:: typegram.api.functions
+
+        .. autosummary::
+            :nosignatures:
+
+            stats.getMessageStats
+    """
+
+    __slots__: List[str] = ["views_graph", "reactions_by_emotion_graph"]
+
+    ID = 0x7fe91c14
+    QUALNAME = "types.stats.messageStats"
+
+    def __init__(self, *, views_graph: "api.ayiin.StatsGraph", reactions_by_emotion_graph: "api.ayiin.StatsGraph") -> None:
+        
+                self.views_graph = views_graph  # StatsGraph
+        
+                self.reactions_by_emotion_graph = reactions_by_emotion_graph  # StatsGraph
+
+    @staticmethod
+    def read(b: BytesIO, *args: Any) -> "MessageStats":
+        # No flags
+        
+        views_graph = Object.read(b)
+        
+        reactions_by_emotion_graph = Object.read(b)
+        
+        return MessageStats(views_graph=views_graph, reactions_by_emotion_graph=reactions_by_emotion_graph)
+
+    def write(self, *args) -> bytes:
+        b = BytesIO()
+        b.write(Int(self.ID, False))
+
+        # No flags
+        
+        b.write(self.views_graph.write())
+        
+        b.write(self.reactions_by_emotion_graph.write())
+        
+        return b.getvalue()
