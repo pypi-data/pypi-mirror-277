@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: BarteSDK
+Version: 1.0.11
+Summary: SDK para interação com a API da Barte.
+Author: Engenharia de Plataforma da Barte
+Author-email: devops@barte.com
+License: MIT
+Keywords: barte pay sdk
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+.
