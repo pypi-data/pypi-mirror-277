@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools", "wheel", "cibuildwheel", "numpy"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eighta_lib"
+version = "0.3"
+dependencies = [
+    "h5py",
+    "numpy",
+    "pandas",
+    "scipy",
+    "psutil",
+    "anndata"
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-cov"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-ra -q"
+testpaths = ["./tests"]
+
+[tool.cibuildwheel]
+build = ["cp312-*"]
+
+[tool.cibuildwheel.linux]
+archs = ["x86_64", "i686", "aarch64", "ppc64le", "s390x"]
+environment = "HDF5_INCLUDE_DIR=/usr/include/hdf5 HDF5_LIB_DIR=/usr/lib64"
+
+[tool.cibuildwheel.macos]
+archs = ["x86_64", "arm64"]
+environment = "HDF5_INCLUDE_DIR=/opt/homebrew/opt/hdf5/include HDF5_LIB_DIR=/opt/homebrew/opt/hdf5/lib MACOSX_DEPLOYMENT_TARGET=14.0"
+
+[tool.cibuildwheel.windows]
+archs = ["x86", "AMD64"]

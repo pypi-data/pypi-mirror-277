@@ -1,0 +1,10 @@
+h5py
+numpy
+pandas
+scipy
+psutil
+anndata
+
+[test]
+pytest
+pytest-cov
