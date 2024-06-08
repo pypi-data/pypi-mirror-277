@@ -1,0 +1,7 @@
+six
+flask
+lesscpy
+htmlminf
+jsmin
+xxhash
+rcssmin
