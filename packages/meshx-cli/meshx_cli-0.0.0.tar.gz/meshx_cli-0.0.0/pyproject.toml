@@ -1,0 +1,5 @@
+[tool.poetry]
+name = "meshx-cli"
+version = "0.0.0"
+description = "placeholder"
+authors = []
