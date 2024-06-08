@@ -1,0 +1,8 @@
+stringutils_happy/__init__.py,sha256=BpjnkPG7VLfXyNjtM-cpviFoEiUOm2SXn9vyLm9JbDc,123
+stringutils_happy/core.py,sha256=3JQk8-y8A3JDH-pKDglUEqlHyB0q0M-nDcX1IknyCas,413
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_core.py,sha256=vC99CIQ5v87KlqIJfeOrUDPcCpMLL7N20aFUItD6YGE,717
+stringutils_happy-0.1.1.dist-info/METADATA,sha256=vOdtB-fPYeqTTfJDeboktuP-C3ENLhYNQFwEqOHkeic,1568
+stringutils_happy-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+stringutils_happy-0.1.1.dist-info/top_level.txt,sha256=fkHz7MYFUgunnGq0-bWuXhUYTh8XoXa2IzoZmyneVck,24
+stringutils_happy-0.1.1.dist-info/RECORD,,
