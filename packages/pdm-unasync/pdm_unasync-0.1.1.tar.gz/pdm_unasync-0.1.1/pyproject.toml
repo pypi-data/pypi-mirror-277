@@ -1,0 +1,35 @@
+[project]
+name = "pdm-unasync"
+version = "0.1.1"
+description = "Default template for PDM package"
+authors = [
+    { name = "Kalle M. Aagaard", email = "git@k-moeller.dk" },
+]
+dependencies = [
+    "pdm>=2.15.4",
+    "unasync>=0.6.0",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.entry-points.pdm]
+unasync = "pdm_unasync:unasync_plugin"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.pdm]
+distribution = true
+plugins = [
+    "-e file:///${PROJECT_ROOT}",
+]
