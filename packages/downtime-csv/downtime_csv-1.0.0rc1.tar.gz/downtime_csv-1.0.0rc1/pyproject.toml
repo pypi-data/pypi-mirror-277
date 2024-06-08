@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "downtime-csv"
+version = "1.0.0rc1"
+description = ""
+authors = ["Mitsuru Nakakawaji <mitsuru@procube.jp>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiohttp = "^3.9.5"
+asyncio = "^3.4.3"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+style = "pep440"
+
+[tool.poetry-version-plugin]
+source = "git-tag"
+
+[tool.poetry.scripts]
+downtime-csv = 'downtime_csv.__main__:main'
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
