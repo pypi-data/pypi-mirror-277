@@ -1,0 +1,5 @@
+setup.py
+lootbox.egg-info/PKG-INFO
+lootbox.egg-info/SOURCES.txt
+lootbox.egg-info/dependency_links.txt
+lootbox.egg-info/top_level.txt
