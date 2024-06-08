@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "bluedac"
+version = "0.4.0"
+description = ""
+authors = ["ChristianP01 <christianpreti01@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+PyYAML = "^6.0.1"
+aws-cdk-lib = "^2.144.0"
+
+[tool.poetry.group.dev.dependencies]
+moto = "^5.0.9"
+pytest = "^8.2.2"
+pytest-cov = "^5.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
