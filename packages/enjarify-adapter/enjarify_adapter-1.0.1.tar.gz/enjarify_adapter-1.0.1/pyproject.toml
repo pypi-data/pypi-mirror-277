@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm>=8", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+authors = [
+    {name = "Lucas Faudman", email = "lucasfaudman@gmail.com"},
+    {name = "Google Inc. 2015", email = "google@gmail.com"},
+    {name = "Robert Grosse", email = "Storyyeller@github.com"},
+]
+dynamic = ["classifiers"]
+name = "enjarify-adapter"
+version = "1.0.1"
+requires-python = ">=3.7"
+readme = "README.md"
+license = { file = "LICENSE.txt" }
+description = "Enjarify is a tool for translating Dalvik bytecode to equivalent Java bytecode. This enjarify-adapter fork exports the `enjarify` method for use in external scripts and is type optimized for building with mypyc."
+keywords = ["enjarify", "Dalvik", "Java", "Bytecode", "Android", "APK", "Decompiler", "Disassembler", "Reverse Engineering"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/LucasFaudman/enjarify-adapter.git"
+Repository = "https://github.com/LucasFaudman/enjarify-adapter.git"
+
+[project.scripts]
+enjarify = "enjarify.main:main"
+
+[tool.setuptools]
+
+[tool.setuptools_scm]
+version_file = "src/enjarify/_version.py"
+
+[tool.black]
+line-length = 120
