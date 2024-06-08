@@ -1,0 +1,28 @@
+{
+  "_lib-5e4529d0.js": {
+    "file": "lib-5e4529d0.js"
+  },
+  "_lib-dd2277cf.cjs": {
+    "file": "lib-dd2277cf.cjs"
+  },
+  "src/lib.ts": {
+    "file": "lib.cjs",
+    "imports": [
+      "_lib-dd2277cf.cjs"
+    ],
+    "isEntry": true,
+    "src": "src/lib.ts"
+  },
+  "src/main.tsx": {
+    "file": "main.cjs",
+    "imports": [
+      "_lib-dd2277cf.cjs"
+    ],
+    "isEntry": true,
+    "src": "src/main.tsx"
+  },
+  "style.css": {
+    "file": "style.css",
+    "src": "style.css"
+  }
+}
