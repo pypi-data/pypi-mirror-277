@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+csvtorasa/__init__.py
+csvtorasa/main.py
+csvtorasa.egg-info/PKG-INFO
+csvtorasa.egg-info/SOURCES.txt
+csvtorasa.egg-info/dependency_links.txt
+csvtorasa.egg-info/requires.txt
+csvtorasa.egg-info/top_level.txt
+csvtorasa/data/nlu_sample_format_for_conversion.csv
