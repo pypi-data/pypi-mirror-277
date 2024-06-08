@@ -1,0 +1,3 @@
+[console_scripts]
+extract-social-media-urls = social_media_url_extractor.cli:extract
+
