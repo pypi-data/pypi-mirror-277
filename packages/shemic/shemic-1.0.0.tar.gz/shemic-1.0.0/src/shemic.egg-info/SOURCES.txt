@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/shemic/__init__.py
+src/shemic.egg-info/PKG-INFO
+src/shemic.egg-info/SOURCES.txt
+src/shemic.egg-info/dependency_links.txt
+src/shemic.egg-info/top_level.txt
