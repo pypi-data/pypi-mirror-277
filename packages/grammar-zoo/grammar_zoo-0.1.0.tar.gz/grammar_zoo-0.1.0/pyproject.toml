@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "grammar-zoo"
+version = "0.1.0"
+description = ""
+authors = ["Ian Fisher <ian@iafisher.com>"]
+readme = "README.md"
+license = "LICENSE"
+packages = [{include = "grammar_zoo"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.3"
+
+[tool.poetry.scripts]
+grammar-zoo = "grammar_zoo.main:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
