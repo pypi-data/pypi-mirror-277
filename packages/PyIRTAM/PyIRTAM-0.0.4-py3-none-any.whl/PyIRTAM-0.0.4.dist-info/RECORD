@@ -1,0 +1,10 @@
+PyIRTAM/__init__.py,sha256=6y_D5bLkE6Pv6jRBmKIeTUoVTxznReIE81A-zuxpX-s,579
+PyIRTAM/coeff.py,sha256=yqVaRhvyH_A5_OxjHx-VPi3e77QOZcPAFNKrUM3S7bk,5240
+PyIRTAM/lib.py,sha256=K7DDkmYBXYjDRKWUWuVr9u63HJHSeh1LIwKGlojU2Yk,39460
+PyIRTAM/tests/__init__.py,sha256=qYOe8SxyFsY4aepbIavkrGNF9swVJmBRyoZ23uOhcbg,57
+PyIRTAM/tests/test_lib.py,sha256=rc89s2vUWOzC6K7FhLCVGcjnbxCJEna2HfcpICxlINM,1176
+PyIRTAM-0.0.4.dist-info/LICENSE,sha256=kL6CwYy5TCpWbclKnBvVSnql3ZZnqwOyFWEgxR8OZVE,1078
+PyIRTAM-0.0.4.dist-info/METADATA,sha256=ViFni4Y503JVR8KpAk2jIy9eIq6jA9EZjDotyu8Zdks,4122
+PyIRTAM-0.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+PyIRTAM-0.0.4.dist-info/top_level.txt,sha256=u83qywElBr6I4vLpMU4KLN30twy7dmaSx6MzoEEIhaM,8
+PyIRTAM-0.0.4.dist-info/RECORD,,
