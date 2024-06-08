@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: loop-controller
+Version: 0.1.2.dev0
+Summary: Loop controllers for managing execution intervals
+Home-page: https://github.com/topermaper/loop-controller.git
+Author: Marcos Edo Atienza
+Author-email: topermaper@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Pid Loop Controller
+
+A PID loop controller for managing execution intervals.
+
+## Installation
+
+You can install the package via pip:
+
+```bash
+pip install loop-controller
+```
+
+## Usage
+```
+from pid_loop_controller import PidLoopController
+
+# Your function to be called in the loop
+def my_function():
+    print("Function called")
+
+controller = PidLoopController(my_function, [], 1.0)
+controller.set_controller_parameters(1.0, 0.1, 0.01)
+controller.start()
+```
+
