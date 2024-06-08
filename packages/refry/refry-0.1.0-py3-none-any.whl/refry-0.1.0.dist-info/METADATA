@@ -1,0 +1,51 @@
+Metadata-Version: 2.3
+Name: refry
+Version: 0.1.0
+Summary: Refry is a modern, maintained, typed easy-to-use retry decorator.
+Project-URL: homepage, https://github.com/pydanny/refry
+Project-URL: bugs, https://github.com/pydanny/refry/issues
+Author-email: Daniel Roy Greenfeld <daniel@feldroy.com>
+License-File: LICENSE
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# refry
+
+> You know what's better than fries? Fries cooked twice.
+> And what's even better than twice cooked fries is triple cooked fries!
+
+Refry is a modern, maintained, typed easy-to-use retry decorator.
+
+## Installation
+
+```
+pip install refry
+```
+
+## Usage
+
+Basic usage
+
+```python
+import refry
+
+@refry.retry
+def function_with_problem():
+    raise Exception('Something bad happens here')
+
+
+# This will be attempted 5 times, each time with a delay increasing
+# by 5 seconds.
+function_with_problem()
+```
+
+With custom exception:
+
+```python
+@refry.retry(ZeroDivisionError)
+def function_with_bad_division():
+    1 / 0
+
+
+function_with_bad_division()
+```
