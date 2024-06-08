@@ -1,0 +1,4 @@
+paramiko>=2.12
+
+[paho-mqtt]
+paho-mqtt>=2.0
