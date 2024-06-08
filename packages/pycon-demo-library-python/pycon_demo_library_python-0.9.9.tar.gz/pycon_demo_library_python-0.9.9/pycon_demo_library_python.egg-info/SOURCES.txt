@@ -1,0 +1,9 @@
+setup.py
+pycon_demo_library_python/__init__.py
+pycon_demo_library_python/util.py
+pycon_demo_library_python.egg-info/PKG-INFO
+pycon_demo_library_python.egg-info/SOURCES.txt
+pycon_demo_library_python.egg-info/dependency_links.txt
+pycon_demo_library_python.egg-info/not-zip-safe
+pycon_demo_library_python.egg-info/requires.txt
+pycon_demo_library_python.egg-info/top_level.txt
