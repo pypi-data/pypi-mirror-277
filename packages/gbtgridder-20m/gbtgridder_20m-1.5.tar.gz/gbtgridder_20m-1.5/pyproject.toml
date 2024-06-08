@@ -1,0 +1,58 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gbtgridder-20m"
+dynamic = ["version"]
+description = "A stand-alone spectral gridder and imager for the Green Bank Telescope"
+readme = "README.md"
+license = ""
+requires-python = ">=3.6"
+authors = [
+    { name = "Green Bank Observatory" },
+]
+keywords = [
+    "gridder",
+    "gridding",
+    "singledish",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+]
+
+dependencies = [
+    "astropy",
+    "numpy",
+    "scipy",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+]
+
+[project.scripts]
+gbtgridder = "gbtgridder:main"
+
+[project.urls]
+"Bug Reports" = "https://github.com/GreenBankObservatory/gbtgridder/issues"
+Homepage = "https://github.com/GreenBankObservatory/gbtgridder"
+Source = "https://github.com/GreenBankObservatory/gbtgridder/"
+
+[tool.hatch.version]
+path = "src/gbtgridder/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gbtgridder"]
