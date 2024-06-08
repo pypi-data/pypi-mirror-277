@@ -1,0 +1,3 @@
+[console_scripts]
+namaste = hey_shbh:namaste
+print_kardo = hey_shbh:print_kardo
