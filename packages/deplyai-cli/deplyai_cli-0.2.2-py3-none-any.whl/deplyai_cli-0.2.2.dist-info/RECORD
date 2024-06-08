@@ -1,0 +1,11 @@
+deplyai_cli-0.2.2.data/scripts/deply,sha256=RJXeQCxP6uao3HStQfajC_mCXlQ3I4_HuwWzUt6_fOw,185
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/auth.py,sha256=AwUTDIiwgb86JGjNXH4XzdleZnqQqhDfUZQtUCjtEkQ,5244
+src/cmd.py,sha256=ECFhjR9DHXcfflExSoIong8v1GV03Px_xf0hume4jI0,1311
+src/pipelines.py,sha256=6XufiunUAnSr-CbUo3thLP5NyIqu1JT0_20RqOcgeRA,3660
+src/util.py,sha256=mi6pff7rbmd9eFxHfVYZYwOgkmxEmsXS9k1x1YdgW5Y,3127
+deplyai_cli-0.2.2.dist-info/LICENSE,sha256=I_EXtS7ZtXdiaCuWQxlMOqaEL1mbVpi96SAitwW0TyE,1511
+deplyai_cli-0.2.2.dist-info/METADATA,sha256=EudNP5re715PlS27qBxA1UkIgV7YQfb0_fTLgfolaBM,1555
+deplyai_cli-0.2.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+deplyai_cli-0.2.2.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+deplyai_cli-0.2.2.dist-info/RECORD,,
