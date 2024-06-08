@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: JaysAppManager
+Version: 0.0.39
+Summary: A helpful appmanager
+Author: Jay Fesco
+Author-email: jayfesco1@gmail.com
+License: MIT
+Requires-Dist: appwrite
+Requires-Dist: python-dotenv
+Requires-Dist: redis
+Requires-Dist: b2sdk
+Requires-Dist: requests
+Requires-Dist: openai
+Requires-Dist: cryptography
+Requires-Dist: langchain
+Requires-Dist: langchain-community
+Requires-Dist: langchain-core
+Requires-Dist: mysql-connector-python
+
+A helpful appmanager
