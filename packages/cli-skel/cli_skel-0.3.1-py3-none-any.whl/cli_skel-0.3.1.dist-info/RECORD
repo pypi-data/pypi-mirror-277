@@ -1,0 +1,12 @@
+cli_skel/__init__.py,sha256=FEDXsrZwe6Eq4bVovkm8FQ_jkasVXCz23-A4SosSfSM,598
+cli_skel/argparse_skel.py,sha256=EOQ5H-JqjW5B3uzSc5Tl7jIsovprQp-tS8hXbOgITv4,9136
+cli_skel/cmd_skel.py,sha256=PTH4br6p0szD6i-21cFeuAaObVIrlBYFUCT8RMkMAvc,14437
+cli_skel/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli_skel/utils/context_utils.py,sha256=WHS0hkd1Ixtk6-eeq3ClJags3lCa4pnNvUJ7RZsMRFY,5457
+cli_skel/utils/result.py,sha256=oEA_1lPoIGBXJmSWymsq7_jOKRQK9SkGAxjwsS7IdL0,5419
+cli_skel/utils/sentinels.py,sha256=yv0SLDzforhKI5Ox0zOsJCm-pFM0kENi1kB2oPGD-4w,913
+cli_skel-0.3.1.dist-info/LICENSE,sha256=nxkGMA9bEbVku-8XuvkeIUCtDKQDIyX9P2MC6lmNBUs,1072
+cli_skel-0.3.1.dist-info/METADATA,sha256=54GkKxSY5A4Veg0q6RsANFSDdIpdwv4Z44uMeymx1wQ,8363
+cli_skel-0.3.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+cli_skel-0.3.1.dist-info/top_level.txt,sha256=tN_qYamxsF2jfa_1x-egMU7akenEvM-A8NdDyumsbXo,9
+cli_skel-0.3.1.dist-info/RECORD,,
