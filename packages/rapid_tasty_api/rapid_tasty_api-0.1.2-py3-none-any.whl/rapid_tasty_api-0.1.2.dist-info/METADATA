@@ -1,0 +1,77 @@
+Metadata-Version: 2.3
+Name: rapid_tasty_api
+Version: 0.1.2
+Summary: Typed Python wrapper for the Tasty API on RapidAPI.
+Project-URL: Repository, https://github.com/KianKhadempour/TastyAPI.git
+Project-URL: Issues, https://github.com/KianKhadempour/TastyAPI/issues
+Author: Kian Khadempour
+License: MIT License
+        
+        Copyright (c) 2024 Kian Khadempour
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Typing :: Typed
+Requires-Python: >=3.11
+Requires-Dist: pycountry>=23.12.11
+Requires-Dist: python-iso639>=2024.4.27
+Requires-Dist: requests>=2.32.2
+Description-Content-Type: text/markdown
+
+# TastyAPI
+
+TastyAPI is a typed Python wrapper for the [Tasty API](https://rapidapi.com/apidojo/api/tasty).
+
+## Example
+
+```py
+from rapid_tasty_api import Client
+
+client = Client("(api_key)")
+
+recipe_list = client.get_recipes_list(0, 20, query="chicken soup")
+
+print(recipe_list)
+```
+
+## Installation (not yet available)
+
+Install with pip:
+```
+$ pip install rapid_tasty_api
+```
+
+## Dependencies
+
+TastyAPI has three dependencies:
+- [requests](https://pypi.org/project/requests/)
+- [python-iso639](https://pypi.org/project/python-iso639/)
+- [pycountry](https://pypi.org/project/pycountry/)
+
+
+## License
+
+MIT License
