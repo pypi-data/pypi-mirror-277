@@ -1,0 +1,15 @@
+numpy
+torch
+matplotlib
+tqdm
+pandas
+aif360
+scikit-learn
+scipy
+xgboost
+ucimlrepo
+fairlearn
+folktables
+requests
+tab_transformer_pytorch
+tabulate
