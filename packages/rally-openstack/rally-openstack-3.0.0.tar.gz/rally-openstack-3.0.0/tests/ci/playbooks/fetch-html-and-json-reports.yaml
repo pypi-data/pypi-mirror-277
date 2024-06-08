@@ -1,0 +1,41 @@
+- hosts: all
+  vars:
+    html_report: "{% if non_default_html_report is defined %}{{ non_default_html_report }}{% else %}{{ tox_env | default('self') }}_report.html{% endif %}"
+    json_report: "{{ tox_env | default('self') }}_report.json"
+  tasks:
+    - shell: "ls {{ rally_results_dir }}"
+      register: results_dir_stat
+      ignore_errors: True
+
+    - name: Save results
+      become: yes
+      when: results_dir_stat.rc == 0
+      synchronize:
+        src: "{{ rally_results_dir }}{% if not rally_results_dir.endswith('/')%}/{% endif %}"
+        dest: '{{ zuul.executor.log_root }}/'
+        mode: pull
+        copy_links: true
+        verify_host: true
+        rsync_opts:
+        - --include=/**
+        - --include=*/
+        - --exclude=*
+        - --prune-empty-dirs
+
+    - name: "Return artifact to Zuul - {{ html_report }}"
+      zuul_return:
+        data:
+          zuul:
+            artifacts:
+              - name: "HTML report"
+                url: "{{ html_report }}"
+      when: html_report in results_dir_stat.stdout
+
+    - name: "Return artifact to Zuul - {{ json_report}}"
+      zuul_return:
+        data:
+          zuul:
+            artifacts:
+              - name: "JSON report"
+                url: "{{ json_report }}"
+      when: json_report in results_dir_stat.stdout
