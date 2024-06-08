@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+ligand_processor/__init__.py
+ligand_processor/generate_top.py
+ligand_processor/preprocess_mol2.py
+ligand_processor.egg-info/PKG-INFO
+ligand_processor.egg-info/SOURCES.txt
+ligand_processor.egg-info/dependency_links.txt
+ligand_processor.egg-info/entry_points.txt
+ligand_processor.egg-info/requires.txt
+ligand_processor.egg-info/top_level.txt
