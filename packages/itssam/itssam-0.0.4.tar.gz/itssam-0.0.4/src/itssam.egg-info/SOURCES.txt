@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/itssam/__init__.py
+src/itssam/mongo_crud.py
+src/itssam.egg-info/PKG-INFO
+src/itssam.egg-info/SOURCES.txt
+src/itssam.egg-info/dependency_links.txt
+src/itssam.egg-info/requires.txt
+src/itssam.egg-info/top_level.txt
