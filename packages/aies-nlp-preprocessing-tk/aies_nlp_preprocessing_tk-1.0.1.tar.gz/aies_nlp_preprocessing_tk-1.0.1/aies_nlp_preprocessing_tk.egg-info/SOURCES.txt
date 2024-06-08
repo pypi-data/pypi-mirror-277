@@ -1,0 +1,10 @@
+README.md
+setup.py
+aies_nlp_preprocessing_tk/__init__.py
+aies_nlp_preprocessing_tk/dataprocessing.py
+aies_nlp_preprocessing_tk/preprocessing.py
+aies_nlp_preprocessing_tk.egg-info/PKG-INFO
+aies_nlp_preprocessing_tk.egg-info/SOURCES.txt
+aies_nlp_preprocessing_tk.egg-info/dependency_links.txt
+aies_nlp_preprocessing_tk.egg-info/top_level.txt
+tests/test_module1.py

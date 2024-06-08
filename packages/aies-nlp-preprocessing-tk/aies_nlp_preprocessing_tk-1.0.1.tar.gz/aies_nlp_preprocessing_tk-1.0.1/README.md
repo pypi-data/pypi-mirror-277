@@ -1,0 +1,89 @@
+# aies-nlp-preprocessing-tk
+
+
+### CSV Format Documentation
+#### Single Label Format
+The single label format is designed for datasets where each document is associated with a single class. The CSV file must adhere to the following structure:
+|tag  |text              |
+|-----|------------------|
+|CLASS|Text of document 1|
+|CLASS|Text of document 2|
+|CLASS|Text of document 3|
+
+-   **CLASS**: Represents the label or category of the document.
+-   **Text of document**: The actual text content of the document.
+- 
+Each row in the CSV file corresponds to a single document and its associated class. The CSV must contain exactly two columns: the first column for the class and the second column for the text of the document.
+
+#### Multi Label Format
+
+The multi label format is intended for datasets where each document can be associated with multiple classes. The CSV file must follow this structure:
+
+|tag  |text              |
+|-----|------------------|
+|CLASS|Text of document 1|
+|CLASS&#124;CLASS&#124;CLASS|Text of document 2|
+|CLASS&#124;CLASS|Text of document 3|
+
+-   **CLASS**: Represents a single label or category of the document.
+-   **CLASS|CLASS|CLASS**: Represents multiple labels or categories separated by the `|` character.
+-   **Text of document**: The actual text content of the document.
+
+Each row in the CSV file corresponds to a single document and its associated classes. The CSV must contain exactly two columns: the first column for the classes and the second column for the text of the document. For multi-label documents, multiple classes must be separated by the `|` character with no leading or trailing `|` characters.
+
+### Example CSV Files
+#### Single Label Example
+```csv
+greeting,"Hello!" 
+greeting,"Good morning!" 
+question,"How are you?"
+```
+
+#### Multi Label Example
+```csv
+greeting,"Hello!" 
+greeting|question,"Hi, how are you?" 
+question|feedback,"What do you think of this service?"
+```
+### Validation Rules
+
+-   **Single Label**: The `tag` column must contain only one class per row. No `|` character should be present.
+-   **Multi Label**: The `tag` column can contain multiple classes separated by `|`. Ensure there are no empty classes and no leading or trailing `|` characters.
+
+
+## raw_tokenization
+Tokenizes text data and prepares it for training a neural network model.
+##### Text Tokenization: 
+The input textual data is tokenized, i.e., split into individual words or tokens. This is done using the spaCy library, which provides robust linguistic annotations.
+
+##### Text Cleaning:
+-  <ins>Removing Punctuation:</ins> If specified, punctuation marks are removed from the text. This helps in simplifying the text and reducing noise in the data.
+-   <ins>Removing Stop Words:</ins> Optionally, common stop words (e.g., 'and', 'the', 'is') can be removed from the text. Stop words often carry little semantic meaning and can be safely excluded from the analysis.
+##### Padding Sequences: 
+Text sequences are padded to ensure uniform length. This is necessary for feeding the data into a neural network, as they typically require fixed-size inputs. Padding is done using the Keras `pad_sequences` function.
+    
+##### Label Encoding: 
+If the labels are categorical, they are encoded using either `LabelEncoder` or `MultiLabelBinarizer` from the scikit-learn library. This step converts textual labels into numerical representations, which are easier for the neural network to process.
+    
+##### Data Splitting: 
+Optionally, the preprocessed data can be split into training and testing sets using `train_test_split` from scikit-learn. This facilitates model evaluation by providing a separate dataset for testing.
+    
+### Parameters
+
+-   `data_frame (pandas.DataFrame)`: The input DataFrame containing 'text' and 'tag' columns.
+-   `max_length (int)`: Maximum length of sequences after padding. (Important! Critical variable, depending on the value entered, can cause erroneous operation, disrupting tokenization, occurs mainly when using low values, to avoid using values ​​above 100)
+-   `split_test_size (float, optional)`: Size of the test dataset if splitting is needed. Defaults to None.
+-   `remove_stop_words (bool, optional)`: Whether to remove stop words. Defaults to False.
+-   `remove_punctuation (bool, optional)`: Whether to remove punctuation. Defaults to False.
+-   `language (str, optional)`: Language to be used for tokenization. Defaults to "portuguese".
+
+#### Returns
+
+-   `tuple`: If the split_test_size parameter is passed, the separation into training and test masses will be done and it will return the following results:
+	``` 
+	X_train, X_test, y_train, y_test, word_index
+	```
+	If split_test_size=False, it would return the datasets only from the tokenization of the texts, the labels will be hidden and the word index will be returned:
+	``` 
+	X, y, word_index
+	```
