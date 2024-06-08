@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: mtllm-python
+Version: 0.1.0
+Summary: Python implementation of the MTLLM to be used in Python Projects
+License: MIT
+Keywords: MTLLM,Python,NLP,Language Model
+Author: chandralegend
+Author-email: irugalbandarachandra@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: mtllm (>=0.1.7,<0.2.0)
+Description-Content-Type: text/markdown
+
+# MTLLM Python library
+
+[![PyPI version](https://img.shields.io/pypi/v/mtllm-python.svg)](https://pypi.org/project/mtllm-python/)
+
+The MTLLM Python provides easy to use interfaces that understand your python code and does what you need to do with the help of Language Model Libraries (LLMs) and Tools.
+
+## Documentation
+
+The documentation on how to use this library with Python can be found [here](docs/api.md).
+
+## Installation
+
+```sh
+# install from PyPI
+pip install mtllm-python
+```
+
+## Contributing
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
