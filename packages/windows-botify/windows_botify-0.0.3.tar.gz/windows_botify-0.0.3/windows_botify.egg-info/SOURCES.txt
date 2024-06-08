@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+windows_botify/__init__.py
+windows_botify/inputs.py
+windows_botify/rectangle.py
+windows_botify/setup.py
+windows_botify/window.py
+windows_botify.egg-info/PKG-INFO
+windows_botify.egg-info/SOURCES.txt
+windows_botify.egg-info/dependency_links.txt
+windows_botify.egg-info/top_level.txt
