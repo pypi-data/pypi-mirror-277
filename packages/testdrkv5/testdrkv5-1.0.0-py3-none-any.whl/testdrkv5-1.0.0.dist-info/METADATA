@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: testdrkv5
+Version: 1.0.0
+Requires-Dist: boto3 >=1.28.10
+Requires-Dist: pycryptodome >=3.20.0
+
