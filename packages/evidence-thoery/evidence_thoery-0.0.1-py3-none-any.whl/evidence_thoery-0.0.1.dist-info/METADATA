@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: evidence_thoery
+Version: 0.0.1
+Summary: A python package of evidence theory
+Home-page: https://github.com/ztxtech/evidence_theory
+Author: Tianxiang Zhan
+Author-email: Tianxiang Zhan <zhantianxianguestc@hotmail.com>
+Project-URL: homepage, https://github.com/ztxtech/evidence_theory
+Project-URL: repository, https://github.com/ztxtech/evidence_theory.git
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
