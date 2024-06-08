@@ -1,0 +1,10 @@
+{
+    "python.testing.pytestArgs": [
+        "--cov=mgpy",
+        "--cov-report=html",
+        "--local-badge-output-dir=./docs/badges/",
+        "tests",
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+}
