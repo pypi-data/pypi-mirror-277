@@ -1,0 +1,16 @@
+isagog_userauth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+isagog_userauth/base.py,sha256=SIB0LbyJmNSR5p-6c8KLK3Bv3f8xe5PrDScjPZCoKbk,401
+isagog_userauth/config.py,sha256=dagvTJrdUE_Lw_eJagNNLskPFbd4TEav9BfExOSMgTk,365
+isagog_userauth/custom_exceptions.py,sha256=wSQcl_zOxPp0PC9dOYCBlJKqSDDAnvCm9kyyRtb6Vas,2072
+isagog_userauth/database.py,sha256=Lyrg9kXJ5aJ-WQTuzbBM0MOJSCFPqdY_7hj5Ki9nvNU,1947
+isagog_userauth/db_session.py,sha256=WBWKHieC8OSzTWRqB0o68_wuS00KRIuYb7bFM2n_CXI,1228
+isagog_userauth/main.py,sha256=X9gLud3WbbccuNKAEn8eKj0ADklvxpceO2XYghGLaLg,1526
+isagog_userauth/models.py,sha256=zB90920QUQ0p9mjt9wM87M4AfECzYhltQXK6dVOQI1k,2255
+isagog_userauth/routers/user.py,sha256=FfzJYupT02wnBX0nf0nnPKvmjXRv_Dm-s4oNpqEtdvY,5410
+isagog_userauth/schemas.py,sha256=iMcNz6N0qDMhJJ9_5ys9OEHfS6m8I1u4hhee5uDoc_M,2011
+isagog_userauth/utils/gencrypt.py,sha256=DVa_5fAVwIg4VtLNosF3IVG5VnDWtQji4zshq2oxkPI,1027
+isagog_userauth/utils.py,sha256=v6O1_OknyvVrdqfhu-LIRtZUQJwnvIUBODDWVltbmLo,5615
+isagog_userauth-0.1.0.dist-info/LICENSE.md,sha256=1R59BC1P7lnIG_5nLe_Mmu0TIzc-4BxWl4IG4ejYwhU,1084
+isagog_userauth-0.1.0.dist-info/METADATA,sha256=5wMRbZFTpRZv-MuEDANJzN4cpYkoGOrholZrbBqUT_o,4371
+isagog_userauth-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+isagog_userauth-0.1.0.dist-info/RECORD,,
