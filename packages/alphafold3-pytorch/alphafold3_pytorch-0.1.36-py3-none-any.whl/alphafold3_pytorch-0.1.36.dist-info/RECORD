@@ -1,0 +1,12 @@
+alphafold3_pytorch/__init__.py,sha256=Jj76g_yMMOXjzV9k1Fddutnn8vaTUuqX2jR2Ps1wrSw,1846
+alphafold3_pytorch/alphafold3.py,sha256=Ax9EUGRg5VzENuWHNX0JUwY4mHuw9esMj_kMUNhBFSA,109589
+alphafold3_pytorch/attention.py,sha256=gKM0AX9lQ_ixe9BtJcAsarCuLPB0bjKUxoyHRnBNIko,13248
+alphafold3_pytorch/configs.py,sha256=hKxd_f2CNlqLQb9RmYKgBIBC-gwOBBtLhIc2v6I0Aug,7766
+alphafold3_pytorch/life.py,sha256=psdKCCIQSRyTKCSmipkFkPMsRDTHjKSD2Gc0Y7x6jPg,1918
+alphafold3_pytorch/pdb_dataset_curation.py,sha256=SFogodXI3ZyV5iTZWcVZ82uX7hQcdG05ca4xAC9Rmpo,37282
+alphafold3_pytorch/trainer.py,sha256=kg7xtN3oTXG-OsdR89_xEbrdTNzeUZw7XpKb3K9x9aY,15668
+alphafold3_pytorch/typing.py,sha256=YTmh0Qn5O_ZCPvAwq0qdlq1HvPzGmPmM2HV8FUM7PCM,1079
+alphafold3_pytorch-0.1.36.dist-info/METADATA,sha256=tMcNqwLmTHEziE_3Bv-3SG-WjUsypmCFrjRtDpXNagg,12618
+alphafold3_pytorch-0.1.36.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+alphafold3_pytorch-0.1.36.dist-info/licenses/LICENSE,sha256=E7RGS7kpJIStk5za_-4DVhWEAamf65EU0CNML25mq4c,1066
+alphafold3_pytorch-0.1.36.dist-info/RECORD,,
