@@ -1,0 +1,25 @@
+Metadata-Version: 2.3
+Name: gbtgridder-20m
+Version: 1.5
+Summary: A stand-alone spectral gridder and imager for the Green Bank Telescope
+Project-URL: Bug Reports, https://github.com/GreenBankObservatory/gbtgridder/issues
+Project-URL: Homepage, https://github.com/GreenBankObservatory/gbtgridder
+Project-URL: Source, https://github.com/GreenBankObservatory/gbtgridder/
+Author: Green Bank Observatory
+Keywords: gridder,gridding,singledish
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Requires-Dist: astropy
+Requires-Dist: numpy
+Requires-Dist: scipy
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# gbtgridder
