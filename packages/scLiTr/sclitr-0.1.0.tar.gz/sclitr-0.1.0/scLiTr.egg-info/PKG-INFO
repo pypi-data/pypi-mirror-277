@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: scLiTr
+Version: 0.1.0
+Summary: Package for an analysis of lineage-tracing scRNA-Seq data
+Home-page: https://github.com/kharchenkolab/scLiTr
+Author: Sergey Isaev
+Author-email: sergey.isaev@meduniwien.ac.at
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pynndescent
+Requires-Dist: scanpy
+Requires-Dist: scikit-learn
+Requires-Dist: torch
+Requires-Dist: mpltern
