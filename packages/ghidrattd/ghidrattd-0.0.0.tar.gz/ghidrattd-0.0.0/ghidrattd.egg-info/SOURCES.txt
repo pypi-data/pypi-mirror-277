@@ -1,0 +1,6 @@
+pyproject.toml
+ghidrattd/__init__.py
+ghidrattd.egg-info/PKG-INFO
+ghidrattd.egg-info/SOURCES.txt
+ghidrattd.egg-info/dependency_links.txt
+ghidrattd.egg-info/top_level.txt
