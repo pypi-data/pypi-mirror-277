@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: jisuanqi
+Version: 6.0.0
+Summary: 简单计算器(Calculator)(喜欢关注:python学霸微信公众号)
+Home-page: UNKNOWN
+Author: Python学霸
+Author-email: python@xueba.com
+License: UNKNOWN
+Description: ## 介绍
+        简单易用计算器，提供方便基础算法。
+        ## 安装
+        
+        ```
+        pip install jisuanqi
+        ```
+        
+        ## 示例
+        ```python
+        import jisuanqi
+        result1=jia(1,2,3)#输出：6
+        result2=jian(1,2,3)#输出：-4
+        result3=cheng(1,2,3)#输出：6
+        result4=chu(1,2,3)#输出：0.16666666666666666
+        result5=cifang(2,2)#输出：4
+        result5=zuidazhi(2,8,888)#输出：888
+        result6=zuixiaozhi(2,8,888)#输出：2
+        result7=pingjunzhi(5,5,20)#输出：10
+        print(result7)
+        ```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
