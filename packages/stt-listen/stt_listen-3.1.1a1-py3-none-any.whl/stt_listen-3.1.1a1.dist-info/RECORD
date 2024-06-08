@@ -1,0 +1,17 @@
+listen/__init__.py,sha256=GIvVcaTwLKzUjhgOfSQUDtv9qyC_48hP-jgmUTVizPg,424
+listen/__main__.py,sha256=v0ABH6dojr50OLbaz2ocUv1RGukWePK93BoLwvCPCuM,98
+listen/exception.py,sha256=4DWSNm7PayQmtLq9HExZQELKLriHb0ldsZMm4-0hizs,303
+listen/main.py,sha256=gw9-lV1GZXp--VG5TusGrzgvN36YPdBU8_ZNBZz9IG0,4858
+listen/mic.py,sha256=Dacp9Iv5W7fuvPNUy4j5_PrMl1N40YIXlDNGPdhPFgc,11210
+listen/Wav2Vec/__init__.py,sha256=AA_jKs99CHa0HKxo6N565oI67m1vgmVP-7fKNCx_d_A,698
+listen/Wav2Vec/as_client.py,sha256=jJ1Q5eTpJ_DQOc0KMTKCw8UHVcTEt4KJcIhReXV4c8o,856
+listen/Wav2Vec/as_service.py,sha256=uzxem4xA0oZU3dKQoiSEKsSbJr9DAjOqHlxpbdQGv94,2868
+listen/Wav2Vec/audio.py,sha256=gBUWiIlrSlTAPvDRSRqgQqqJXv_Bo7sfAnhtWMY8k54,6934
+listen/Wav2Vec/engine.py,sha256=L3St-nL2Jz_dLmiGycqTZzYoRjgGxhRXrut8j3dKjfs,4449
+listen/Wav2Vec/utils.py,sha256=JvRzQ2dUJZTLVxDUvnT_xcg96ZXJ-EuyK-O8OtLDBF0,8665
+stt_listen-3.1.1a1.dist-info/LICENSE,sha256=LgfS0dbG46Mo9qHH35RSbsJ3NGDpE2r2C7deAe1B1FA,35118
+stt_listen-3.1.1a1.dist-info/METADATA,sha256=AcEwIl2b-Ge_EzoDl0XhmGVAxCJkuwaqQ8hahqu2JT0,5283
+stt_listen-3.1.1a1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+stt_listen-3.1.1a1.dist-info/entry_points.txt,sha256=i0GopMOGAVAzSk8e1uWwIcyhnx3ZgCcHQHsgMn3Oz1A,44
+stt_listen-3.1.1a1.dist-info/top_level.txt,sha256=N_XBpky3w_jWswhT-TUkCLwRQTXWTM_zRigDC6pCI2Q,7
+stt_listen-3.1.1a1.dist-info/RECORD,,
