@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: grammar-zoo
+Version: 0.1.0
+Summary: 
+License: LICENSE
+Author: Ian Fisher
+Author-email: ian@iafisher.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+`grammar-zoo` is a wrapper around different *automated grammar-checking* programs.
+
+It lets you conveniently compare their accuracy on grammatical/ungrammatical sentences.
+

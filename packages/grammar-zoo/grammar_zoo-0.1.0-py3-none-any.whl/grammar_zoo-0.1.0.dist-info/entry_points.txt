@@ -1,0 +1,3 @@
+[console_scripts]
+grammar-zoo=grammar_zoo.main:main
+
