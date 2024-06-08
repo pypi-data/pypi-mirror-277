@@ -1,0 +1,6 @@
+pyproject.toml
+ghidrafrida/__init__.py
+ghidrafrida.egg-info/PKG-INFO
+ghidrafrida.egg-info/SOURCES.txt
+ghidrafrida.egg-info/dependency_links.txt
+ghidrafrida.egg-info/top_level.txt
