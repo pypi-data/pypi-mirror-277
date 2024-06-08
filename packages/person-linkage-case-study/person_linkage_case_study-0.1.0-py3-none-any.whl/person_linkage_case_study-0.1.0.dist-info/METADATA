@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: person_linkage_case_study
+Version: 0.1.0
+Summary: Person linkage case study for PyPI.
+Home-page: https://github.com/ihmeuw/person_linkage_case_study
+Author: IHME Simulation Science Team
+Author-email: zmbc@uw.edu
+License: BSD-3-Clause
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pseudopeople
+Requires-Dist: splink
+Requires-Dist: jellyfish
+Requires-Dist: snakemake
+Requires-Dist: papermill
+Requires-Dist: ipython
+Requires-Dist: ipykernel
+Requires-Dist: pulp <2.8
+Provides-Extra: dask
+Requires-Dist: pseudopeople[dask] ; extra == 'dask'
+Requires-Dist: dask-jobqueue ; extra == 'dask'
+Requires-Dist: bokeh !=3.0.*,>=2.4.2 ; extra == 'dask'
+Provides-Extra: dev
+Requires-Dist: jupyterlab ; extra == 'dev'
+Requires-Dist: nbdime ; extra == 'dev'
+Requires-Dist: black[jupyter] ; extra == 'dev'
+Requires-Dist: pseudopeople[dask] ; extra == 'dev'
+Requires-Dist: dask-jobqueue ; extra == 'dev'
+Requires-Dist: bokeh !=3.0.*,>=2.4.2 ; extra == 'dev'
+Requires-Dist: pyspark ==3.4.1 ; extra == 'dev'
+Provides-Extra: spark
+Requires-Dist: pyspark ==3.4.1 ; extra == 'spark'
+
+# Person linkage case study (for PyPI)
+
+**If you have access to GitHub, we recommend installing from https://github.com/ihmeuw/person_linkage_case_study.**
+**This package is provided only for the convenience of users who cannot access GitHub.**
+
+## Getting started
+
+Before you start, you'll need to have Python installed.
+If you intend to use Spark, you'll also need Spark **3.4** to be installed
+on your system.
+
+First, make a directory to use for development.
+Inside this directory, create and enter a virtual environment for this project:
+
+```console
+$ python -m venv .venv
+$ source .venv/bin/activate
+```
+
+and install this package:
+
+```console
+$ pip install person_linkage_case_study
+```
+
+Your new working directory for interacting with the case study will
+be *inside this venv*. Specifically:
+
+```console
+$ cd .venv/lib/python3.*/site-packages/person_linkage_case_study
+```
+
+To test that things are set up correctly, try running:
+
+```console
+$ snakemake --forceall
+```
+
+## Installing extras
+
+You can install dependencies for using Spark and Dask by installing with those extras:
+
+```console
+$ pip install person_linkage_case_study[spark,dask]
+```
+
+## Spark without Singularity
+
+The case study typically runs Spark in a Singularity container. If you cannot use Singularity,
+edit the file at `person_linkage_case_study/profiles/default/config.yaml` to say
+`use-singularity: false` instead of `use-singularity: true`.
+As mentioned above, this will rely on Spark **3.4** being installed on your system.
+Specifically, it must be installed at `/opt/spark`.
+
+## What's next?
+
+For further instructions, see the README.md bundled within the package (at the top level
+of your working directory as described previously).
+Aside from how to use Spark, and installing with `pip install person_linkage_case_study`
+instead of `pip install -e .`, all the instructions in that README apply to a PyPI installation.
