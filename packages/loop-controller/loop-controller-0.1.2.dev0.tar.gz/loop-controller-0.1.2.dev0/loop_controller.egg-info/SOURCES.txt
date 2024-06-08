@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+loop_controller/__init__.py
+loop_controller/mean_controller.py
+loop_controller/pid_controller.py
+loop_controller.egg-info/PKG-INFO
+loop_controller.egg-info/SOURCES.txt
+loop_controller.egg-info/dependency_links.txt
+loop_controller.egg-info/top_level.txt
