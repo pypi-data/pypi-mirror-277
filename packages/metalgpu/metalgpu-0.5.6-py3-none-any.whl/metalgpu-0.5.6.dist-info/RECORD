@@ -1,0 +1,9 @@
+metalgpu/__init__.py,sha256=inxEMJMPpTct_PnvjDPI42vxfCexR6v8CVi98Qz20ys,82
+metalgpu/interface_class.py,sha256=RZR_W_94GreBpZ9z79goGFMI4Opd1DNr6RF0x7XhI_g,10368
+metalgpu/operators.py,sha256=jWw7yRU_Vtx56riCt2M0oQA89ykmc0iP8ZFxud38Ir0,3699
+metalgpu/test.py,sha256=KCKMal2MaOF2YOAbhRlG3JeqK6QUDh9C7Hxr6siT0Fs,241
+metalgpu/binaries/lib.so,sha256=fbHX885ccRO05v8nzLEuE0bBP2YVQNWXrQP-yviIowE,403784
+metalgpu-0.5.6.dist-info/METADATA,sha256=vtl0XUJRX81dIoavrpCvcSQTh_DVLJ_3ZMIeTLJk9n8,4340
+metalgpu-0.5.6.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+metalgpu-0.5.6.dist-info/licenses/LICENSE,sha256=UFUfPFJfHydiNw9ilLjxl9t9mmp2lW3vFEq1LRmae7o,1072
+metalgpu-0.5.6.dist-info/RECORD,,
