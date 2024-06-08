@@ -1,0 +1,11 @@
+FlowMetricsCSV/CsvService.py,sha256=T2Y9KV9mmsIR_jr-sh-dySKRRnhlzBj0MDbgEQkPkMU,1839
+FlowMetricsCSV/FlowMetricsService.py,sha256=8m-Y5pB6_5UIdXevoZEWC4L9ivqhJubvIMXMh1sjQq8,25835
+FlowMetricsCSV/WorkItem.py,sha256=jGdPC_pKLG8j9oK1ijW1QUSNj0D6fYCFdOW9vqTUKws,1028
+FlowMetricsCSV/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FlowMetricsCSV/main.py,sha256=6GcxiH6jMKX-Y8XgUNbnTkLvMPNTGW0lS2dtz3AbH1c,7398
+flowmetricscsv-0.1.0.dist-info/LICENSE,sha256=HnpRUHT_SYbLNUBotVK6SWOYS4Z2ZvtNfjz700hhGjg,1088
+flowmetricscsv-0.1.0.dist-info/METADATA,sha256=4htkvv0BYvJxGZPU1XL_kRksbOXtA7eNWdDRf__WB68,15957
+flowmetricscsv-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+flowmetricscsv-0.1.0.dist-info/entry_points.txt,sha256=WzUg5cdj9cYtaaFAAaJbumWs7lXzQQsgRmEzp0CyS0c,60
+flowmetricscsv-0.1.0.dist-info/top_level.txt,sha256=OQBgCfExiXo58Z0isZpW0QQE2DzOvZLFGEPUpeqE1yM,15
+flowmetricscsv-0.1.0.dist-info/RECORD,,
