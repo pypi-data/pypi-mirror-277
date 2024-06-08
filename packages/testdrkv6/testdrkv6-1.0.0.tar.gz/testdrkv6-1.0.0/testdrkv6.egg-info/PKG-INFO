@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: testdrkv6
+Version: 1.0.0
+Summary: Python module to onboard the EC2 Utills Library
+Author: drkv - Duesseldorf - Germany
+Author-email: m.kirchhof@drkv.com
+Requires-Dist: boto3>=1.28.10
+Requires-Dist: pycryptodome>=3.20.0
