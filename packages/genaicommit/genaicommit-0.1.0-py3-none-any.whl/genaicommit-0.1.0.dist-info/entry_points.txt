@@ -1,0 +1,2 @@
+[console_scripts]
+genaicommit = genaicommit.main:main
