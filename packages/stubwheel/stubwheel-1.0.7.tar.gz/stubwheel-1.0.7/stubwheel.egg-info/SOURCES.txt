@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+stubwheel/__main__.py
+stubwheel.egg-info/PKG-INFO
+stubwheel.egg-info/SOURCES.txt
+stubwheel.egg-info/dependency_links.txt
+stubwheel.egg-info/entry_points.txt
+stubwheel.egg-info/requires.txt
+stubwheel.egg-info/top_level.txt
