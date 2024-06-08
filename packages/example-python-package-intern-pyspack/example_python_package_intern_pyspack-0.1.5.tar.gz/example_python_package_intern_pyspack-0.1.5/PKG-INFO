@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: example_python_package_intern_pyspack
+Version: 0.1.5
+Summary: An example pure-python package
+Author-email: David Hofer <davhofer@ethz.ch>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+# Example Python Package
+For testing purposes.
+
+
+### Usage
+```python
+"""
+Example contents of requirements.txt:
+-------------------------------------
+
+package1==1.0.0
+package2==1.2.3
+bad_package_dependency0.0.1
+"""
+
+from example_python_package_intern_pyspack.utils import parse_requirements, display_packages
+# or
+from example_python_package_intern_pyspack import *
+
+path = "path/to/requirements.txt"
+
+packages = parse_requirements(path)
+display_packages(packages)
+
+
+"""
+Example Output:
+---------------
+
+package1 : 1.0.0
+package2 : 1.2.3
+
+Parse Errors:
+bad_package_dependency0.0.1
+"""
+```
