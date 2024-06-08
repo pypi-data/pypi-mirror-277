@@ -1,0 +1,10 @@
+src/metalgpu/__init__.py,sha256=sjice38byM1PnB2dP_h5Ot7fQTIQVOXzv_KcWSa9OAI,100
+src/metalgpu/buffer.py,sha256=_GhkY2pw2YK67wBmCkBd6SsuST9ztNBtNlDxAnCsb64,7215
+src/metalgpu/interface.py,sha256=955SA1Ot-i9A5AXQfmJsvjDqq4pz7mbRZa1bIwzO9D8,5706
+src/metalgpu/operators.py,sha256=jWw7yRU_Vtx56riCt2M0oQA89ykmc0iP8ZFxud38Ir0,3699
+src/metalgpu/test.py,sha256=NJKZa-OY6cSFGVA5dQWdqyHeNtVcG7RcZIMR3WAGnTY,1014
+src/metalgpu/binaries/libmetalgpucpp.dylib,sha256=SXKDfEHrg1hc90tDWt3xmBQNzg4L64FnJJQGL1T6VCU,399704
+metalgpu-0.5.19.dist-info/METADATA,sha256=HfxQxmRSHGftVqbvwR3xKTzQmukpnsCYZwoW0Cqv2zk,3154
+metalgpu-0.5.19.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+metalgpu-0.5.19.dist-info/licenses/LICENSE,sha256=UFUfPFJfHydiNw9ilLjxl9t9mmp2lW3vFEq1LRmae7o,1072
+metalgpu-0.5.19.dist-info/RECORD,,
