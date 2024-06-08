@@ -1,0 +1,11 @@
+appwrite
+python-dotenv
+redis
+b2sdk
+requests
+openai
+cryptography
+langchain
+langchain-community
+langchain-core
+mysql-connector-python
