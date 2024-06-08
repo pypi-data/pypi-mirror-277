@@ -1,0 +1,10 @@
+dissect/ole/__init__.py,sha256=th03DTxrqXLhj59grEJcA5QG8IjuNYS8HxCPrc51pjo,190
+dissect/ole/c_ole.py,sha256=EGMhmLbL9iA5Lzi7DzWlsUl9pb6rbJiWcgZ-HNpSDKs,5167
+dissect/ole/exceptions.py,sha256=hAZGFqDTwDSxbHPF7oBvJRMzluCMkYsRTlfejWrIzuo,114
+dissect/ole/ole.py,sha256=NQongC2i4MEG1oAb9uD7SrBLeDXnlhlJvkImVO_c-ZM,9732
+dissect.ole-3.9.dev2.dist-info/COPYRIGHT,sha256=Z3suq8kkgFoyivoGRSlqyYVhdfwkfeRyM9GEDDpPsmk,298
+dissect.ole-3.9.dev2.dist-info/LICENSE,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+dissect.ole-3.9.dev2.dist-info/METADATA,sha256=LrZH0n-2KJJae0LDRugtBU12DGM7mDNAn6JIADnxXJA,3323
+dissect.ole-3.9.dev2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+dissect.ole-3.9.dev2.dist-info/top_level.txt,sha256=Mn-CQzEYsAbkxrUI0TnplHuXnGVKzxpDw_po_sXpvv4,8
+dissect.ole-3.9.dev2.dist-info/RECORD,,
