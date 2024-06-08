@@ -1,0 +1,2 @@
+[console_scripts]
+vi3Translate = translator:main

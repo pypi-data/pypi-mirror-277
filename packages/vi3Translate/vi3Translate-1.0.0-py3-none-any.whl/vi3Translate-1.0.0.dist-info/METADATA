@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: vi3Translate
+Version: 1.0.0
+Summary: A language translation utility using googletrans
+Home-page: https://github.com/111722203119
+Author: Vigneshwaran
+Author-email: Vign22112.it@rmkec.ac.in
+Description-Content-Type: text/markdown
+
+# vi3Translate
+
+vi3Translate is a simple command-line utility for translating text, detecting its language, and displaying the translated text along with its meaning via a Windows toast notification.
+
+## Features
+
+- Translate text using Google Translate API.
+- Detect the language of the input text.
+- Fetch the definition of the translated text using the Dictionary API.
+- Display a Windows toast notification with the original text, its detected language, the translation, and its meaning.
+
+## Installation
+
+bash
+
+pip install vi3Translate
+vi3Translate "Hello, how are you?"
