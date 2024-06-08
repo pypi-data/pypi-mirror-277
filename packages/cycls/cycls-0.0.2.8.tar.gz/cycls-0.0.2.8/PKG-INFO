@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: cycls
+Version: 0.0.2.8
+Summary: Cycls SDK
+Author: Mohammed Jamal
+Author-email: mj@cycls.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fastapi (>=0.111.0,<0.112.0)
+Requires-Dist: httpx (>=0.27.0,<0.28.0)
+Description-Content-Type: text/markdown
+
+# cycls-py
+
+**sync**
+```py
+from cycls import Cycls, Text, Message
+
+push = Cycls()
+
+@push("hello")
+def app(m: Message):
+    return Text(m.content)
+```
+
+**async**
+```py
+from cycls import Cycls, Text, Message
+
+push = Cycls()
+
+@push("hello")
+async def app(m: Message):
+    return Text(m.content)
+```
+
+**debug**
+```py
+push = Cycls(debug=True)
+```
