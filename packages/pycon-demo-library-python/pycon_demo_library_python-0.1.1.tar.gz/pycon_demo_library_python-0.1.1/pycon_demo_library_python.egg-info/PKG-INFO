@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pycon-demo-library-python
+Version: 0.1.1
+Summary: Util functions for PyCon demo library
+Home-page: https://andresrestrepo.github.io/portfolio_team/
+Author: AFC
+Author-email: andresfelipe25@gmail.com
+Requires-Dist: json-logging>=1.3.0
