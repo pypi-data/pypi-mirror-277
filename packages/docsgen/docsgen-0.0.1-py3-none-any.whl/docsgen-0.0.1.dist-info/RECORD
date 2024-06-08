@@ -1,0 +1,8 @@
+docsgen/__init__.py,sha256=eX9hMxA4fq4n2ftFaXpz6PpRBC1E8k0KRyZVVmyfjIw,36
+docsgen/cli.py,sha256=zRncypbmHqBVb96rteBy474mbnx0dUlR2XPot5LenTU,384
+docsgen/docsgen.py,sha256=NKUfO2Kr4LxUb2C_IHwTiMaKFWhupJxReaPQUpcVD1Y,7583
+docsgen-0.0.1.dist-info/METADATA,sha256=8G9dKBayh3V2objoQYp8np1FrGMA0DHwfhSuKxxeBC8,1992
+docsgen-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+docsgen-0.0.1.dist-info/entry_points.txt,sha256=vRUAqwvKvZ0gmNgunODN-6Lo4SWtyJySrfNeMJmnq3I,45
+docsgen-0.0.1.dist-info/top_level.txt,sha256=SifG5q1DcM1UHUKtEQRftNj4PM9bQ22rilrbEIXVx8s,8
+docsgen-0.0.1.dist-info/RECORD,,
