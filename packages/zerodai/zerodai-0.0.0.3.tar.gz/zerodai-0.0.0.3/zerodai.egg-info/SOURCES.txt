@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+Zerodai.py
+__init__.py
+ctx.py
+funcs.py
+setup.py
+zerodai.egg-info/PKG-INFO
+zerodai.egg-info/SOURCES.txt
+zerodai.egg-info/dependency_links.txt
+zerodai.egg-info/requires.txt
+zerodai.egg-info/top_level.txt
