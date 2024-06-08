@@ -1,0 +1,2 @@
+source /home/sandboxes/psalas/grid20m/grid20m_venv/bin/activate
+grid20m "$@"
