@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: lingjing
+Version: 1.0.0
+Summary: Lingjing AI
+Author-email: rabin <2934170@qq.com>
+Project-URL: Homepage, https://github.com/shemic/lingjing
+Project-URL: Bug Tracker, https://github.com/shemic/lingjing/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 灵镜AI工具包
