@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: maxim-py
+Version: 0.0.3
+Summary: Maxim Python Library
+Author: Maxim
+Author-email: <aniruddha@getmaxim.ai>
+Keywords: python,prompts,logs,workflow,testing
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+# maxim-py
+
+Python library for the MAXIM.
+1. Run ```python setup.py sdist bdist_wheel``` to build the package.
+2. Create account on pypi and test pypi.
+3. Create API tokens
+4. pip install twine
+5. twine upload to upload to pypi
+6. to upload to test pypi : twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+7. https://test.pypi.org/project/maxim-py/0.0.1/
+
