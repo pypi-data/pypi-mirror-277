@@ -1,0 +1,17 @@
+website_diff-0.0.1.dist-info/METADATA,sha256=sRbPlKO0OWYxpKyy19pu9NhvAYq1D8Ye8Dw3HT5LFNM,3938
+website_diff-0.0.1.dist-info/WHEEL,sha256=ciiZ_Ssmz6Fnx70OROjHSgBj9WKyM5werARIIAjSBfM,104
+website_diff-0.0.1.dist-info/entry_points.txt,sha256=DmjxTHpZZygJIU2Rg4GAdYpizaXYJe2keRmwyl45dOo,53
+website_diff-0.0.1.dist-info/license_files/LICENSE,sha256=SeHVjlVlu3BgFjQIuOPJuaak_UEaQG_aQW-1vKJiebo,1072
+website_diff/target/__init__.py,sha256=JzxcpkjRlY3rZ7kgOcKKDB_GpPtqCryo7Jp47qH6CQo,31
+website_diff/target/image.py,sha256=hGeliJf8Qyng3bVTgrnpuDu43sGKuZIQsCfx-N15Iz0,1897
+website_diff/render/altair.py,sha256=ZxQlBgWtkL0m8R1TpmL7ONnMaQx1Me8PCBa5eeJnku8,3870
+website_diff/render/__init__.py,sha256=z8_g7TNuqRLXdftg_RzCfluJMrKjZLsAiHoomxbH6O8,101
+website_diff/render/prerender.py,sha256=rlUEA_tYCK34COE86NC9VU9Oh6SDCFGHu9oAO8CiPTs,1328
+website_diff/__init__.py,sha256=BenTfdjz7EFK88Uym6Uf-hCg-osZ42X_eIo17z3UDHY,102
+website_diff/page.py,sha256=hy3K8iUbtR7kwBoa4682ptazU1yUxD6TdLwhCvvDtRE,4967
+website_diff/cli.py,sha256=JobDkrViH1Wci8jxfb5nVOBaGYslDKUiohIhmMViW0c,6116
+website_diff/static/website_diff.js,sha256=yfXve_amFdbcYSflCWKe5eKW1wycOpU5YQ57Hdd2oY4,2356
+website_diff/static/website_diff.css,sha256=KdR1XzYnPYYP7xS4-ZD99wYuhMvWcxj-FboldHCcrvs,793
+website_diff/crawler.py,sha256=RnDZtyb8GuHPDYVZ6HC8kuigyNyqZkp2WqM-z2lS2WQ,2853
+website_diff/htmldiff.cpython-311-darwin.so,sha256=8dC5oodmWCLGd61sMiado_3qtgiwdlj8LvqRuIsSdeA,472728
+website_diff-0.0.1.dist-info/RECORD,,
