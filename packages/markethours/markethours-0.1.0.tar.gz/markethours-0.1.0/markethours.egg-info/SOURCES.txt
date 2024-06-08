@@ -1,0 +1,8 @@
+LICENSE
+README.rst
+setup.py
+markethours.egg-info/PKG-INFO
+markethours.egg-info/SOURCES.txt
+markethours.egg-info/dependency_links.txt
+markethours.egg-info/requires.txt
+markethours.egg-info/top_level.txt
