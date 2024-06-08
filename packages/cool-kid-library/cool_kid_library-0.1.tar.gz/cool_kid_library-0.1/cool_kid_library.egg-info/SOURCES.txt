@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+cool_kid_library/__init__.py
+cool_kid_library/earth.py
+cool_kid_library/mars.py
+cool_kid_library.egg-info/PKG-INFO
+cool_kid_library.egg-info/SOURCES.txt
+cool_kid_library.egg-info/dependency_links.txt
+cool_kid_library.egg-info/top_level.txt

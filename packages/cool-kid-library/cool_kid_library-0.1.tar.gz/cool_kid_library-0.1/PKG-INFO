@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cool_kid_library
+Version: 0.1
+Summary: You download, and then it downloads to your coputer
+Home-page: https://github.com/Jedikoops/camp
+Download-URL: https://github.com/Jedikoops/camp/archive/refs/tags/v_01.tar.gz
+Author: justin koops
+Author-email: jedikoops@gmail.com
+License: MIT
+Keywords: SOME,MEANINGFULL,KEYWORDS
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE.txt
