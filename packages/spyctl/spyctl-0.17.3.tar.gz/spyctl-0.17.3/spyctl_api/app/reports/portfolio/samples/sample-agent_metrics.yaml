@@ -1,0 +1,89 @@
+agent_metrics:
+  agent:Df8ng9dnqe7CYq7N8vg3:
+    bps:
+      max: 16759
+      mean: 5303.75652173913
+      p90: 12923
+      p99: 16164
+    cpu:
+      max: 0.3186
+      mean: 0.021368695652173923
+      p90: 0.0443
+      p99: 0.2374
+    mem:
+      max: 631930400
+      mean: 448649411.18840563
+      p90: 475371200
+      p99: 628863000
+    name: ip-192-168-58-214.us-west-2.compute.internal
+  agent:KBMDGgehYOfYGekxMHRg:
+    bps:
+      max: 17648
+      mean: 5909.510822510822
+      p90: 13886
+      p99: 16954
+    cpu:
+      max: 0.3244
+      mean: 0.022272727272727267
+      p90: 0.0443
+      p99: 0.2363
+    mem:
+      max: 634250000
+      mean: 451311450.672439
+      p90: 477785600
+      p99: 627579200
+    name: ip-192-168-67-169.us-west-2.compute.internal
+  agent:M8IL0iFldbTNjLm0J1UJ:
+    bps:
+      max: 15818
+      mean: 5623.860869565217
+      p90: 12782
+      p99: 15081
+    cpu:
+      max: 0.351
+      mean: 0.02220173913043477
+      p90: 0.0428
+      p99: 0.282
+    mem:
+      max: 625087000
+      mean: 443937865.6347826
+      p90: 472366000
+      p99: 624004800
+    name: ip-192-168-22-213.us-west-2.compute.internal
+  agent:lc5BpYe5AzezMIn3rhkI:
+    bps:
+      max: 3672
+      mean: 381.60593220338984
+      p90: 910
+      p99: 3610
+    cpu:
+      max: 0.0103
+      mean: 0.0015521186440677975
+      p90: 0.0024
+      p99: 0.0063
+    mem:
+      max: 224475000
+      mean: 188911373.66101694
+      p90: 215914000
+      p99: 223232000
+    name: clustermonitor-deployment-5666788f8f-4wrqv
+cluster:
+  name: productiondemo
+et: '2024-06-05 15:53:13'
+metrics_summary:
+  bps:
+    max: 17648
+    mean: 4281.022653721683
+    p90: 12405
+    p99: 15453
+  cpu:
+    max: 0.351
+    mean: 0.01675566343042071
+    p90: 0.0413
+    p99: 0.118
+  mem:
+    max: 634250000
+    mean: 382018449.7935994
+    p90: 471945000
+    p99: 601441333.3334
+st: '2024-06-05 14:53:29'

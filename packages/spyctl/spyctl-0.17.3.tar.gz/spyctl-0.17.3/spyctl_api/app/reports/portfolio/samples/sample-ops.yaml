@@ -1,0 +1,37 @@
+cluster:
+  cluid: clus:PMx9HGEG_ZE
+  name: productiondemo
+  node_count: 3
+cluster_metrics:
+  nr_daemonsets: 4
+  nr_deployments: 9
+  nr_namespaces: 8
+  nr_nodes: 3
+  nr_pods: 39
+  nr_services: 55
+cluster_monitor:
+  healthy: true
+  missing_tolerations: []
+et: 1715004401
+nano_agent:
+  healthy: true
+  missing_tolerations: []
+  nodes_not_running: []
+  unhealthy_agents: []
+node_headroom:
+  cpu: []
+  memory: []
+  pods: []
+node_summary:
+  arch:
+    amd64: 3
+  containerRuntime:
+    containerd://1.7.11: 3
+  cores:
+    2: 3
+  instance_type:
+    m5.large: 3
+  osImage:
+    Amazon Linux 2: 3
+opsflags: []
+st: 1715002801
