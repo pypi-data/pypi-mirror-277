@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: sigen
+Version: 0.0.2
+Summary: A package to reading and writing data to and from Sigenergy inverters
+Project-URL: Homepage, https://github.com/fbradyirl/sigen
+Project-URL: Issues, https://github.com/fbradyirl/sigen/issues
+Author-email: Example Author <author@example.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+## Sigen
+_A package to reading and writing data to and from Sigenergy inverters._
