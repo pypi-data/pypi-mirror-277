@@ -1,0 +1,14 @@
+[project]
+name = "fileimport_util"
+version = "1.0"
+authors = [
+  { name="Devin Akerley", email="devin.akerley@health.ny.gov" },
+]
+description = "A package that assist with imports via drag and dropping of files so end users can run scripts with ease"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]

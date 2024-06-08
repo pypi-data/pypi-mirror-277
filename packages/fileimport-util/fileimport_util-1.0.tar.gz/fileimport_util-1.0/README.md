@@ -1,0 +1,61 @@
+Script that contains utility definitions common to most import scripts
+
+Author: Alok M
+Date:   11/2015
+Packaged by: Devin Akerley
+Date:   06/2024
+
+This script contains some common function definitions that are needed
+by most python file import scripts.  The goal of this script is to
+reduce the amount of coding required to generate a new file import
+script.
+
+The anticipated usage is as follows:
+
+1) include a line at the top of a specific script as follows:
+
+    from fileimport_util import *
+
+2) Define specific functions to read an instrument file
+and write a corresponding clims file.
+
+    def read_file(filename):
+        ...
+
+    def write_file(filename):
+        ...
+
+In both function definitions, the "filename" corresponds to the
+fully specified filename that the user has selected.  If the user
+selects multiple files, these functions will be called once for
+each file.  In these, if something goes wrong, the function should
+raise an exception; any data that needs to be communicated between
+these should be managed through global variables.  Some commonly used
+filename parsing functions are imported:
+
+3) Call the main function to kick off the processing
+
+    transform(read_file, write_file)
+
+----
+
+What you get from this file:
+    - pre-imports of commonly used python modules
+    - pre-imports of specific useful components of modules:
+      - pprint()
+      - OrderedDict()
+      - dirname()
+        Example: dirname("a/b/c/a.csv") => "a/b/c"
+      - basename()
+        Example: basename("a/b/c/a.csv") => "a.csv"
+      - splitext()
+        Example: file_part, extension = splitext("a/b/c/a.csv")
+        => ("a/b/c/a", ".csv")
+    - get_input_filenames: provides support to prompt user for filenames;
+    - main(): supports drag/drop of files onto script; if none
+      are provided, then prompts user; then alternates between
+      calling read_file and write_file to process each.
+    - Logger (LOG), useful for logging errors and warnings.
+
+Change Log:
+AKM 11/2015:    Created.

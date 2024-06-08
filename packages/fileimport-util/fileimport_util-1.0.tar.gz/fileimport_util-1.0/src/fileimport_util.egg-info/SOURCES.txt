@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/fileimport_package/__init__.py
+src/fileimport_package/fileimport_util.py
+src/fileimport_util.egg-info/PKG-INFO
+src/fileimport_util.egg-info/SOURCES.txt
+src/fileimport_util.egg-info/dependency_links.txt
+src/fileimport_util.egg-info/top_level.txt
