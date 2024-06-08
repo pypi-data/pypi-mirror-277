@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: keyapistr
+Version: 1.1
+Summary: NULLF
+Home-page: https://github.com/Herels2
+Author: Sterrist
+Author-email: griodred@gmail.com
+Project-URL: GitHub, https://github.com/Herels2
+Keywords: nones
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+nillich
