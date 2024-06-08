@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: torch_radon24
+Version: 0.1
+Summary: Radon Transformation for Pytorch 2.0 package
+Author: Minh Nhat Trinh
+License: GNU GENERAL PUBLIC LICENSE
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: torch >=2.0.0
+Requires-Dist: numpy >=1.21.0
+
