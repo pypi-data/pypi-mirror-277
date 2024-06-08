@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: grammar-zoo
+Version: 0.1.1
+Summary: 
+License: LICENSE
+Author: Ian Fisher
+Author-email: ian@iafisher.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+GrammarZoo is a wrapper around different *automated grammar-checking* programs.
+
+It lets you conveniently compare their accuracy on grammatical/ungrammatical sentences.
+
+Install it with pip or [pipx](https://pipx.pypa.io/stable/):
+
+```shell
+$ pip install grammar-zoo
+```
+
+Usage:
+
+```shell
+# list available tools
+$ grammar-zoo -l
+
+# check a sentence
+$ grammar-zoo -t languagetool 'This sentence ungrammatical.'
+```
+
+## Tools
+GrammarZoo currently supports the following tools:
+
+- [LanguageTool](https://github.com/languagetool-org/languagetool): an open-source grammar-checker
+  also offered as a commercial product.
+- [Vale](https://vale.sh/): "a syntax-aware linter for prose"
+
+## Further reading
+- The [Corpus of Linguistic Acceptability](https://nyu-mll.github.io/CoLA/) (CoLA) is a corpus of
+  sentences marked as grammatical or ungrammatical, drawn from published linguistics papers. It is
+  used to pick random sentences for the `--random` flag.
+
