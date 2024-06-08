@@ -1,0 +1,3 @@
+include README.md
+include LICENSE
+recursive-include gnomes_at_night_gym/envs/maze_layouts *.json
