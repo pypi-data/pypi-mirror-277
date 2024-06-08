@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: find-remove-blank-pdf
+Version: 0.0.1
+Summary: A Python package for PDF processing tasks like OCR, page manipulation, and PDF creation.
+Home-page: https://github.com/pradeeptomer4u/find-remove-blank-pdf
+Author: Pradeep
+Author-email: pradeeptomer4u@gmail.com
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: Pillow
+Requires-Dist: pytesseract
+Requires-Dist: pdf2image
+Requires-Dist: reportlab
+Requires-Dist: PyPDF2
+
+A Python SDK simplifies PDF processing in Python, offering functionalities such as Optical Character Recognition (OCR), page manipulation, and PDF creation.

@@ -1,0 +1,5 @@
+Pillow
+pytesseract
+pdf2image
+reportlab
+PyPDF2
