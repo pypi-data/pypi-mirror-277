@@ -1,0 +1,10 @@
+droppii/__init__.py,sha256=z-zyAcVlPugik5JwOq-2vV-gdzt7vuF8iBCj_GLByU0,284
+droppii/_replace_bytes_values.py,sha256=VZ8BaOwLhaSia6_KH_2lMy5CBg-gVNW2OMXcT2ZhfBw,1364
+droppii/censor.py,sha256=uf0wh3x59yyrU6mEVVczDGYRXYSIR0kK0GUVdQjEkPs,1027
+droppii/replace_df_fields.py,sha256=zQ8OVXCQzcA4c5jOJYvrecNS-CH_CawRqd2MI_IbpNc,413
+droppii/s3_get.py,sha256=jP3OzgpwauTFRRLOzEr5YfjBWFVmWCad926nE-U1EPI,413
+droppii-0.1.0.dist-info/LICENSE.md,sha256=nB_jDmjU-q-ClUfhvFbF08K6kn7R312o2TPjUV_RQGc,11342
+droppii-0.1.0.dist-info/METADATA,sha256=5Q7k_lXfJJnVtT-Q7hOWhwj8K69Kv0a6SV6XThFAfbg,1805
+droppii-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+droppii-0.1.0.dist-info/top_level.txt,sha256=mA5S__lFuLh2wO-esWAs17diX7A1ldAMSuhYo-0oEfY,8
+droppii-0.1.0.dist-info/RECORD,,
