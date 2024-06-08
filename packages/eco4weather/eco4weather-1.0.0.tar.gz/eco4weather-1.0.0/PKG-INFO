@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: eco4weather
+Version: 1.0.0
+Summary: Econometrics for Weather and Climate Applications & Education
+Home-page: https://github.com/opannekoucke/eco4weather
+Author: Olivier Pannekoucke 
+Author-email: olivier.pannekoucke@meteo.fr
+Project-URL: Bug Tracker, https://github.com/opannekoucke/eco4weather/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: CeCILL-B Free Software License Agreement (CECILL-B) 
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+[Econometrics for Weather and Climate Applications & Education](https://github.com/opannekoucke/eco4weather) <!-- omit in toc -->
+======================
+
+This repository provides tools for exploration of economical application as social planner applied in mitigation to facilitate the academic use and the dissemination. The models are in Python and illustrated in Jupyter notebooks.
+
+Codes are available under [CeCILL-B](./LICENCE.txt)
+
+Installation
+---
+
+```
+pip install eco4weather
+```
+
+or from github
+
+```
+git clone https://github.com/opannekoucke/eco4weather.git
+```
+
+Example
+---
+
+The package can be used to illustrate numerical solution of social planner problem. For instance:
+
+### Ramsey model
+
+![Illustration of optimal path in finite time window Ramsey model](./img/ramsey.png)
+
+### Hoel-Kwerdokk simplified model for tax setting
+
+![Illustration of Hoel-Kverdokk simplified model output](./img/hoel-kverdokk.png)
+
+How to cite
+---
+
+..
