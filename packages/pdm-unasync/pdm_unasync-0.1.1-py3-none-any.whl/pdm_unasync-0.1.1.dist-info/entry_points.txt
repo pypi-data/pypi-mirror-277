@@ -1,0 +1,3 @@
+[pdm]
+unasync = pdm_unasync:unasync_plugin
+
