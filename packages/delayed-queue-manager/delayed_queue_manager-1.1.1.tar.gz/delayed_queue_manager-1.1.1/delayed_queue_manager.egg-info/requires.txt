@@ -1,0 +1,4 @@
+Flask>=3.0.3
+flask-socketio>=5.3.6
+configparser>=7.0.0
+loguru>=0.7.2
