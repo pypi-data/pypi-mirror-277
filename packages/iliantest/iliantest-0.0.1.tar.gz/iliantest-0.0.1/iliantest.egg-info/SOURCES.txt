@@ -1,0 +1,8 @@
+README.md
+setup.py
+iliantest/__init__.py
+iliantest.egg-info/PKG-INFO
+iliantest.egg-info/SOURCES.txt
+iliantest.egg-info/dependency_links.txt
+iliantest.egg-info/requires.txt
+iliantest.egg-info/top_level.txt
