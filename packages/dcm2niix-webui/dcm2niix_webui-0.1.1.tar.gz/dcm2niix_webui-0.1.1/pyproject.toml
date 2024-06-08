@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dcm2niix-webui"
+version = "0.1.1"
+description = "The web UI for dcm2niix (DICOM to NIfTI converter)"
+authors = [
+  { name = "Lion A", email = "alionsss@foxmail.com" }
+]
+license = { text = "License :: OSI Approved :: Apache Software License" }
+# PyPI 上搜索时的关键词
+keywords = ["dcm2niix", "ui", "webui", "medicine", "dicom", "dcm", "nii", "research"]
+# 程序分类信息，详见 https://pypi.org/classifiers/
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Education",
+    "Intended Audience :: Healthcare Industry",
+    "Intended Audience :: Science/Research",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+requires-python = ">=3.6"
+dependencies = ["gradio==4.29", "dcm2niix"]
+readme = "README.md"
+
+# 项目相关连接，例如主页、文档、Git仓库等
+[project.urls]
+Homepage = "https://github.com/AlionSSS/dcm2niix-webui"
+Repository = "https://github.com/AlionSSS/dcm2niix-webui.git"
+
+[project.scripts]
+dcm2niix-gui = "dcm2niix_webui.main:start_service"
+
+[tool.setuptools.package-data]
+dcm2niix_webui = ["resources/*"]

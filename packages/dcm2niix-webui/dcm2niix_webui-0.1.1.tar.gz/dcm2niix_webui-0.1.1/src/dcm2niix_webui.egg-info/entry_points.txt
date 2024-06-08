@@ -1,0 +1,2 @@
+[console_scripts]
+dcm2niix-gui = dcm2niix_webui.main:start_service
