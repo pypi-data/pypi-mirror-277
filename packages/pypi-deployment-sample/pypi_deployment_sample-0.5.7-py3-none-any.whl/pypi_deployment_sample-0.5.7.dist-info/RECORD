@@ -1,0 +1,5 @@
+pypi_deployment_sample/__init__.py,sha256=dVzMaaSpffG7-U6k2Wn6CDuIAmfNuyRcdeoZ_ZOjidQ,6
+pypi_deployment_sample/utils.py,sha256=u9T-Se2vFMf2TvWcfkSFgwCMn2UKs-HAQbG9_KGPDcc,70
+pypi_deployment_sample-0.5.7.dist-info/METADATA,sha256=223T4QoPC2UTUoGXT2oMmV5pWF-98p7NVfnYvVCkfB4,691
+pypi_deployment_sample-0.5.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pypi_deployment_sample-0.5.7.dist-info/RECORD,,
