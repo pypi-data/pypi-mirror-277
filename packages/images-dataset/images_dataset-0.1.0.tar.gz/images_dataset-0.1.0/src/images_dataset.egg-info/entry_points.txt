@@ -1,0 +1,2 @@
+[console_scripts]
+images-dataset = images_dataset.cli:main

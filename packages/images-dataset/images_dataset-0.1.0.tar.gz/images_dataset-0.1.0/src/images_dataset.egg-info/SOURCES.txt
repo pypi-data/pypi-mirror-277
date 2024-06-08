@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/images_dataset/__init__.py
+src/images_dataset/__init__.pyi
+src/images_dataset/cli.py
+src/images_dataset/compression.py
+src/images_dataset/dataset.py
+src/images_dataset/meta.py
+src/images_dataset.egg-info/PKG-INFO
+src/images_dataset.egg-info/SOURCES.txt
+src/images_dataset.egg-info/dependency_links.txt
+src/images_dataset.egg-info/entry_points.txt
+src/images_dataset.egg-info/requires.txt
+src/images_dataset.egg-info/top_level.txt
