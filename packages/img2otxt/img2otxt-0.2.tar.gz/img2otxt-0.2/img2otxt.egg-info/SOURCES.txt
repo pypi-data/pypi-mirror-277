@@ -1,0 +1,8 @@
+README.md
+setup.py
+img2otxt.egg-info/PKG-INFO
+img2otxt.egg-info/SOURCES.txt
+img2otxt.egg-info/dependency_links.txt
+img2otxt.egg-info/entry_points.txt
+img2otxt.egg-info/requires.txt
+img2otxt.egg-info/top_level.txt
