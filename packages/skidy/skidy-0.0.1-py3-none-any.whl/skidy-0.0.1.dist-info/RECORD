@@ -1,0 +1,12 @@
+skidy/__init__.py,sha256=LqNSgVxAuY7pdlswhleQRAepzMrOuxx5HX6qNiDNFGE,630
+skidy/__main__.py,sha256=dj4fnBbbzDyeVu_5qMEdA-n8H32KZI7-wOsnJSbaTDE,9503
+skidy/kinematics_generator.py,sha256=_5J_6GhP17hJdsK2YNCkD133Vco_CXnokofujXiQKqA,189771
+skidy/matrices.py,sha256=kU7Xy7TRvoedHr6Bq1-nGnG91FzDlisf3BIO4Vk0jg4,18084
+skidy/parser.py,sha256=vD-nNgaq37r27i3Ux_3mhWhVnwZ5ws0Ce3x1qzTQDAI,38420
+skidy/symbols.py,sha256=LF5TeoCneCnbAPCm7Ef6ON0DM-m_q0CoG8Nh6488Yxg,17215
+skidy-0.0.1.dist-info/LICENSE,sha256=GMVPelpjOzGUsvUfVU8eU6-arP5ChpEf4LZcjI6Znnw,1542
+skidy-0.0.1.dist-info/METADATA,sha256=9KxlvQ1dAcwbaQQvr5GyXysTSuxqTMYsqUdNyZvgHMg,42344
+skidy-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+skidy-0.0.1.dist-info/entry_points.txt,sha256=2c3xjlVj8zQOD6FyQc_WvyH8q3NdSiQ0Z_iUeDhKvjU,46
+skidy-0.0.1.dist-info/top_level.txt,sha256=0tsacCwBQS-S3ivWscm8k9YxhKXC_cNvtbUKazxIdaM,6
+skidy-0.0.1.dist-info/RECORD,,
