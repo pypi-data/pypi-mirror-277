@@ -1,0 +1,15 @@
+anne/__init__.py,sha256=e3fEkpGF9_vhG_byu-9Os6SaRRPWXBuBTeCpG_LxiTA,126
+anne/browser/AnneBrowser.py,sha256=sXdNh37_kt1DwAvZsyU4np8knWbSDwRW70epawmKt-M,18883
+anne/browser/__init__.py,sha256=NKDo3o6xez9cr3ZyBpzZYzUc7n-h5vXnbymQwZxfVSU,38
+anne/captcha/AnneCaptcha.py,sha256=B8P041ExE5oAxdmOfaPqbg1EO5qAHNjhORo5xOYJRWk,4523
+anne/captcha/__init__.py,sha256=qjIQkYoX2sJIdb9F2osgdpj3Zoeya4N_ss7WYEuspBw,38
+anne/info/AnneInfo.py,sha256=yK7mKkRwSKB4kOKIxaMqlQrDgV9T004oKxvhrbZsrHA,7969
+anne/info/__init__.py,sha256=a4iXWO07cKcipy3cN4GTUaqMDrSzYeoafe_6bYIOsj4,32
+anne/info/data.py,sha256=x1djynivkRhtqqvjrW6v4XX1Y4hcXoixXq6NhIoXwpQ,92030
+anne/proxy/AnneProxy.py,sha256=529MiMSYWRqxZbxSRAQcdxE6-DMDwre33FhuT1E7v08,5665
+anne/proxy/__init__.py,sha256=9TWTtRcXCQ8wJU6XrfTn98DsPt5g71dEfJdQ-VjGZPU,32
+anne-1.2.4.dist-info/LICENSE,sha256=3Um27ThQ_5sjfIkmvXPKtZp6xm6Ruow8w9IXo_XSm_A,1090
+anne-1.2.4.dist-info/METADATA,sha256=OFpVtxAYMc1WxSQ3RyWytUqwZa34tIHrPKebLFO0kPM,1968
+anne-1.2.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+anne-1.2.4.dist-info/top_level.txt,sha256=icvSYSl7cikKk5zAC0XRwEtg3R8CkoDYv2LXrEfL9Yo,5
+anne-1.2.4.dist-info/RECORD,,
