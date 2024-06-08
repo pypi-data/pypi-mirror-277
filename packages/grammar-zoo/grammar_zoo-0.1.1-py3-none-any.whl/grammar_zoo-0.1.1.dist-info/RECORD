@@ -1,0 +1,9 @@
+grammar_zoo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grammar_zoo/main.py,sha256=I6UzCEO8QVpBS8rwi43i7Nrxi5uXLktiPoSdMv2jgGk,5717
+grammar_zoo/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grammar_zoo/resources/cola_in_domain_dev.tsv,sha256=dxdvagP6paHE8jxplx_Bv_VlkxES-2WvR7LW4kt_Qvc,25957
+grammar_zoo-0.1.1.dist-info/LICENSE,sha256=AhS4hPeBzqL3dJdXobZgzX_ALMr2kVaOtQToFXYLgbY,1058
+grammar_zoo-0.1.1.dist-info/METADATA,sha256=lpg7pR6ikw91ILyedQO3TRt3OegO6F2GqD4h7SuSO5U,1395
+grammar_zoo-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+grammar_zoo-0.1.1.dist-info/entry_points.txt,sha256=WFRq0Ky8gi-p7bvycM9zJp60Xat-TWEblq1lHAT6z44,53
+grammar_zoo-0.1.1.dist-info/RECORD,,
