@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: libtimer
+Version: 1.0
+Summary: Simple timer with time.time()
+Home-page: https://flerken.zapto.org:1115/kuba/libtimer
+Author: kuba201
+Project-URL: Source, https://flerken.zapto.org:1115/kuba/libtimer
+Classifier: Development Status :: 5 - Production/Stable
+Description-Content-Type: text/markdown
+
+# libtimer
+LibTimer is a simple timer library
