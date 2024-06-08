@@ -1,0 +1,6 @@
+pyproject.toml
+ghidravol/__init__.py
+ghidravol.egg-info/PKG-INFO
+ghidravol.egg-info/SOURCES.txt
+ghidravol.egg-info/dependency_links.txt
+ghidravol.egg-info/top_level.txt
