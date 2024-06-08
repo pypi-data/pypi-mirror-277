@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pokegym
+Version: 0.1.8
+Summary: Pokemon Red Gymnasium environment for reinforcement learning
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+License-File: LICENSE
+Requires-Dist: einops
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: pyboy <2.0.0
+Requires-Dist: torch >=2.1
+Requires-Dist: torchvision
+Requires-Dist: wandb
+Requires-Dist: pettingzoo
+Requires-Dist: gym ==0.23
+Requires-Dist: matplotlib
+Requires-Dist: mediapy
+Requires-Dist: websockets
+Provides-Extra: dev
+Requires-Dist: ruff ; extra == 'dev'
+Provides-Extra: monitoring
+Requires-Dist: nvitop ; extra == 'monitoring'
+
