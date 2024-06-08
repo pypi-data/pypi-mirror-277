@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+pyproject.toml
+setup.cfg
+setup.py
+asyncpal/__init__.py
+asyncpal/__main__.py
+asyncpal.egg-info/PKG-INFO
+asyncpal.egg-info/SOURCES.txt
+asyncpal.egg-info/dependency_links.txt
+asyncpal.egg-info/entry_points.txt
+asyncpal.egg-info/not-zip-safe
+asyncpal.egg-info/top_level.txt
+tests/__init__.py
