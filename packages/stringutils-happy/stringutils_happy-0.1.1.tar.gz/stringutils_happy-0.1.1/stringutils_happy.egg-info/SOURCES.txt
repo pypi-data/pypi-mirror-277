@@ -1,0 +1,10 @@
+README.md
+setup.py
+stringutils_happy/__init__.py
+stringutils_happy/core.py
+stringutils_happy.egg-info/PKG-INFO
+stringutils_happy.egg-info/SOURCES.txt
+stringutils_happy.egg-info/dependency_links.txt
+stringutils_happy.egg-info/top_level.txt
+tests/__init__.py
+tests/test_core.py
