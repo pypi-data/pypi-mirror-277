@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+src/symfy/__init__.py
+src/symfy/example.py
+src/symfy.egg-info/PKG-INFO
+src/symfy.egg-info/SOURCES.txt
+src/symfy.egg-info/dependency_links.txt
+src/symfy.egg-info/top_level.txt
