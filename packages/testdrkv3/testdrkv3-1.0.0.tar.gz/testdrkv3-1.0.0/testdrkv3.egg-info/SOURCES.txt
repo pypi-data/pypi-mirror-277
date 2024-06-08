@@ -1,0 +1,8 @@
+README.md
+setup.py
+testdrkv3/__init__.py
+testdrkv3/hello.py
+testdrkv3.egg-info/PKG-INFO
+testdrkv3.egg-info/SOURCES.txt
+testdrkv3.egg-info/dependency_links.txt
+testdrkv3.egg-info/top_level.txt
