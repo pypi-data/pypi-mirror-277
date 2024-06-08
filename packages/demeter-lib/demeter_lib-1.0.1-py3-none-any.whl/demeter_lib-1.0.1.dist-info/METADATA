@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: demeter-lib
+Version: 1.0.1
+Summary: A Python Library
+Author-email: rabin <2934170@qq.com>
+Project-URL: Homepage, https://github.com/shemic/demeter
+Project-URL: Bug Tracker, https://github.com/shemic/demeter/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# demeter类库
+
+开发语言：python
+
+安装：
+pip install demeter-lib
+
+这是一个方便你使用的类库，可以参考
+https://github.com/shemic/demeter/tree/master/demos/helloworld
