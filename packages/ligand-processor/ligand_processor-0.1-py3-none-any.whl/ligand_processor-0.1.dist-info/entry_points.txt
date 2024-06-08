@@ -1,0 +1,3 @@
+[console_scripts]
+generate_topology = ligand_processor.generate_top:generate_topology
+preprocess_ligand = ligand_processor.preprocess_mol2:preprocess_ligand
