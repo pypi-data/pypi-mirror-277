@@ -1,0 +1,15 @@
+redis_canal/__init__.py,sha256=yd5H25NZY05LtMcraLOhULbzhKQNcg9Yc_UcxbzlGTE,128
+redis_canal/connector.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+redis_canal/exceptions.py,sha256=_3UrAv8gudw0hXVmJq0hLXvaFh5cCoiNlsrnUUk9VKo,155
+redis_canal/log.py,sha256=CIeNlAI1N-Q2j61-4tUwCAVD_qgJq2v5UD932k4z_AM,159
+redis_canal/tools.py,sha256=Y79Gu9YuSh90XcDuwLYTqrs6io9rYNOIICDVUXUY9s4,545
+redis_canal/utils.py,sha256=bYvu79v6RVXpZKN3_ia5cWgZFhYZbhnkANEV6IfgvYU,428
+redis_canal/adapter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+redis_canal/adapter/manager.py,sha256=-19rj57A7sYs9y24iwtXrC5tYDh_6Ciuo4hEJ4qUnlQ,3400
+redis_canal/adapter/plugin.py,sha256=tzFqe6F9VSNfUwYuqeXA7JFpuK9iF2aMo2fXhTj4E0o,1501
+redis_canal/adapter/impl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+redis_canal/adapter/impl/sqs.py,sha256=WrSENQKd82CnP--yiUQqPOOEPfvfuFMf5ze9WmngcLs,634
+redis_canal-0.0.2.dist-info/METADATA,sha256=F8fy-uzsVtSRJGjOdM8qo9L2FkOul-4RwJjz_nulHcQ,2099
+redis_canal-0.0.2.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+redis_canal-0.0.2.dist-info/licenses/LICENSE,sha256=z9AmuqN0XT0GExGyNOeufIfBKAlEGOZG9bTSSaUywgI,1497
+redis_canal-0.0.2.dist-info/RECORD,,
