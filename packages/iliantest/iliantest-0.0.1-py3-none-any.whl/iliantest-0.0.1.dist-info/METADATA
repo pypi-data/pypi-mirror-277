@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: iliantest
+Version: 0.0.1
+Summary: azdadz
+Home-page: https://github.com/ilianAZZ/best-python
+Author: ILian
+Author-email: ilian@iazz.fr
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy >=1.26.4
+Requires-Dist: mne >=1.6.1
+Provides-Extra: matlab
+
+# test workflow
