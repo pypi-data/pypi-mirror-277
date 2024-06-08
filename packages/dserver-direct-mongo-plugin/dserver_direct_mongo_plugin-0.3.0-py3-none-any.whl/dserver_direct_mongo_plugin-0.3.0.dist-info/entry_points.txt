@@ -1,0 +1,2 @@
+[dtool_lookup_server.extension]
+DirectMongoExtension = dserver_direct_mongo_plugin:DirectMongoExtension
