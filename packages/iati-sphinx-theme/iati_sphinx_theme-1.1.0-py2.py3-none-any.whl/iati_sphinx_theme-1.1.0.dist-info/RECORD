@@ -1,0 +1,12 @@
+iati_sphinx_theme/__init__.py,sha256=uG7B-TDe1kApFhdvVzddjCr7BRFXSfs6fgofFoGvQLA,279
+iati_sphinx_theme/globaltoc.html,sha256=uwtOdRNDKI6PTjQ0YxUTuFuRKDyg4nmL6pPvzYIS26Y,162
+iati_sphinx_theme/layout.html,sha256=d2KN6SDwwASZjE7DVaE8rIjeV5iBjWFXnPyNQq-73uM,2467
+iati_sphinx_theme/relations.html,sha256=11Cnsq_8-NSTNu87fV773kD9LdN3b5rIPnixXCmjCbs,383
+iati_sphinx_theme/search.html,sha256=A8FWU58aczgB5b_PnBf9oMeNW4wzzq99hPMNxpkI4CU,412
+iati_sphinx_theme/theme.conf,sha256=C5FIUSS0y8J4r65uFmKgHxiD2FsHInmo0i1iOiv-icc,128
+iati_sphinx_theme/static/.gitignore,sha256=UsQh-VmeJrwdLBj60TSSRa_ZnGPTXXF4LkwnhmG3LM4,29
+iati_sphinx_theme/static/iati.css,sha256=W84Q904Z8pNrUzX3LACudNbpSaz-wsKbydqoeFsL-q4,19586
+iati_sphinx_theme-1.1.0.dist-info/entry_points.txt,sha256=BPYwM6n5ClJhcI7yvxLEQfzpaDj3e3hkei-YmzdbaYI,58
+iati_sphinx_theme-1.1.0.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+iati_sphinx_theme-1.1.0.dist-info/METADATA,sha256=jJC_xDqLimyeCZ7d8bcbp-apYGMdgs-gK3m1hS3dm3Y,2105
+iati_sphinx_theme-1.1.0.dist-info/RECORD,,
