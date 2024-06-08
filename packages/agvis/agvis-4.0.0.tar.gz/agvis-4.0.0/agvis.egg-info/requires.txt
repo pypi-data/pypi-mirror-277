@@ -1,0 +1,67 @@
+numpy
+andes
+dime-client
+flask
+gunicorn
+requests
+pytest
+pytest-flask
+lxml[html_clean]
+
+[all]
+pydata-sphinx-theme
+sphinx-copybutton
+ipython
+myst-nb==0.13.2
+flake8
+myst-parser==0.15.2
+sphinx
+numpydoc
+sphinx-panels
+
+[dev]
+sphinx-panels
+pydata-sphinx-theme
+sphinx-copybutton
+ipython
+myst-nb==0.13.2
+flake8
+myst-parser==0.15.2
+numpydoc
+sphinx
+
+[doc]
+pydata-sphinx-theme
+sphinx-copybutton
+myst-nb==0.13.2
+myst-parser==0.15.2
+sphinx
+numpydoc
+sphinx-panels
+
+[flake8 ]
+flake8
+
+[ipython ]
+ipython
+
+[myst-nb]
+myst-nb==0.13.2
+
+[myst-parser]
+myst-parser==0.15.2
+
+[numpydoc ]
+numpydoc
+
+[pydata-sphinx-theme ]
+pydata-sphinx-theme
+
+[sphinx ]
+sphinx
+
+[sphinx-copybutton ]
+sphinx-copybutton
+
+[sphinx-panels ]
+sphinx-panels

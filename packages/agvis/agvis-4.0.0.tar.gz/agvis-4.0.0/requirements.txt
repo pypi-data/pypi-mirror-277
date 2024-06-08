@@ -1,0 +1,9 @@
+numpy
+andes
+dime-client
+flask
+gunicorn
+requests
+pytest
+pytest-flask
+lxml[html_clean]
