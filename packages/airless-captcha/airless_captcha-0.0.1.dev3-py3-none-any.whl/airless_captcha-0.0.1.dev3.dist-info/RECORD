@@ -1,0 +1,9 @@
+providers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+providers/two_captcha.py,sha256=Xba0N5L6NV0UsNfJobWUUXdsEsrDM3cCgMuJf5UMqV8,3517
+providers/utils.py,sha256=uFJ3EMxUPOwQXaSpD2bmmW8F9raqc6d83Uc4-mOcLnY,331
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airless_captcha-0.0.1.dev3.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+airless_captcha-0.0.1.dev3.dist-info/METADATA,sha256=TiAcf_cAQPW1Td12XXevmIFIfBC_CApFFdV2SUuQNlI,416
+airless_captcha-0.0.1.dev3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+airless_captcha-0.0.1.dev3.dist-info/top_level.txt,sha256=-1c8oBiKr9jIAM7GzSi5nxp_6pbZ78ZW7_boJUxazHE,16
+airless_captcha-0.0.1.dev3.dist-info/RECORD,,
