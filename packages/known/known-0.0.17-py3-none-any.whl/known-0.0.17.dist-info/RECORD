@@ -1,0 +1,13 @@
+known/__init__.py,sha256=SCjC8DmOx7AArBG9jwuRav8502XZr_Ucfg0qLhfQxmA,476
+known/basic.py,sha256=Nnt5Pa5GcZzoi12_Ssw8_gCCPAgi7v3qIfQqgYk2gCA,29049
+known/pix.py,sha256=qoHjxtmGOFbumLpc0pq4MiB1cHodemR3f8c2EB41krc,11573
+known/api/__init__.py,sha256=S9qTNMFwQFdEz2K925DP0-q5rGSIrQ7QeYrlj24OlwE,223
+known/api/__main__.py,sha256=G0bPWTYgWuSsu5Dd-RztB_5dKQIj6jfAnqNfEd1lCi8,9802
+known/api/client.py,sha256=2qVGb4ylNwAYsU2w_k3YDNnPSpD_Qmk8U-59tVRAKlk,8378
+known/topics/__init__.py,sha256=7R7EebgbM_0SCo1r0z6IoOlaNQRt8d_Q2EPRrBPzHCQ,1459
+known/topics/__main__.py,sha256=ikBdP9VCx7XfC0t2c4aM8V4G7NjSGbr1tDGciW-LTLk,62287
+known-0.0.17.dist-info/LICENSE,sha256=29lyQZi4Ep2uj6FnE1vO0tbevKqF5_IKP4EfmosUH4I,1102
+known-0.0.17.dist-info/METADATA,sha256=QMFUMqv3NmyIiOLE964AjabkHryvibcLqOe1xLNPl60,277
+known-0.0.17.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+known-0.0.17.dist-info/top_level.txt,sha256=fNiiekLUsAhLtsamxH7noD56oi1k6VDWdvmnx6aPBNk,6
+known-0.0.17.dist-info/RECORD,,
