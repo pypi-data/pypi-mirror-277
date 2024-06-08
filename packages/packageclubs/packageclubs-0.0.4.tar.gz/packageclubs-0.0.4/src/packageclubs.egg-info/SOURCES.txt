@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/packageclubs/__init__.py
+src/packageclubs/mongo_crud.py
+src/packageclubs.egg-info/PKG-INFO
+src/packageclubs.egg-info/SOURCES.txt
+src/packageclubs.egg-info/dependency_links.txt
+src/packageclubs.egg-info/requires.txt
+src/packageclubs.egg-info/top_level.txt
