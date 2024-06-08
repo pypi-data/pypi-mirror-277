@@ -1,0 +1,20 @@
+Metadata-Version: 2.3
+Name: linflex
+Version: 0.1.1
+Summary: A linear algebra package written in Python
+Author-email: Havsalt <knutolaihelgesen@gmail.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Linflex
+
+A linear algebra package written in Python
+
+Includes:
+
+- lerp
+- sign
+- clamp
+- Vec2
+- Vec2i
+- Vec3
