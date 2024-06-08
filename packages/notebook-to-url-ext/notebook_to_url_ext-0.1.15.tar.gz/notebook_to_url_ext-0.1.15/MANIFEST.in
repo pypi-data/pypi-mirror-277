@@ -1,0 +1,4 @@
+include notebook-to-url-lib/index.js
+include package.json
+include install.json
+include notebook-to-url-lib/remoteEntry.js
