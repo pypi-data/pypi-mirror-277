@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+airless_captcha.egg-info/PKG-INFO
+airless_captcha.egg-info/SOURCES.txt
+airless_captcha.egg-info/dependency_links.txt
+airless_captcha.egg-info/requires.txt
+airless_captcha.egg-info/top_level.txt
+providers/__init__.py
+providers/two_captcha.py
+providers/utils.py
+tests/__init__.py
