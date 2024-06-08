@@ -1,0 +1,12 @@
+pip_manage/__init__.py,sha256=UgWkp8uOzPpaG4vQUqfGhyAQlN6e0YO6pMZTUHLHoog,201
+pip_manage/_logging.py,sha256=ZjzQCGyZpcF9R6UbF4oEMfOqAGBcP5KutP2kdzP4C5U,1348
+pip_manage/_pip_interface.py,sha256=JrsS3O8EAAaf8u2s8g4KuenURSjRVtXkYg6qkk7VKvU,6200
+pip_manage/pip_purge.py,sha256=NCWUVZXNY_5hs4LHA4irw20kfzi8ao_fFg_qQL1LteU,10583
+pip_manage/pip_review.py,sha256=hH8nydIjUXtGJCtgZ3cx7rCb-gLrB0Vz4Hw1bO5FYOk,10760
+pip_manage/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pip_manage-1.0.3.dist-info/LICENSE,sha256=3tS2COlaZGtJ7j3EUYEfJ2eonOhbP50y71vlVcMzoR0,1537
+pip_manage-1.0.3.dist-info/METADATA,sha256=HCDGxdgNLFZM96L36_jmE6tSRbiS2EhP_-IY7sD812U,9362
+pip_manage-1.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pip_manage-1.0.3.dist-info/entry_points.txt,sha256=23tU50qxBCYygXqIKw9zwtOaXXB5NenW8jczHAaT7IE,96
+pip_manage-1.0.3.dist-info/top_level.txt,sha256=zw5WKMTXZoZxWH8Rx0d6Y_YAWtkzheDoYJbrkddxvms,11
+pip_manage-1.0.3.dist-info/RECORD,,
