@@ -1,0 +1,10 @@
+grid20m/__init__.py,sha256=jhdu-r6i-FVbvVqo3p5DjxB2domyfrhqpWgVBTQuX8Y,255
+grid20m/cli_args.py,sha256=cslEnvpAzTW5sVCh8wraspTUu9LlQC8YrWBPmfAXbzo,2180
+grid20m/grid.py,sha256=spLtudE9VShBSoVxUNxPuxcef0lOcJqnsUVYfHZe8gs,1592
+grid20m/main.py,sha256=OexMaxkr86u3x-qdQS71R15dxQY12SNwVoAfObwHNQA,672
+grid20m/split.py,sha256=-SkcdohhjAMn5Qx8ZQiUyzA3KZkifdgQQ6o9BmQ4xcU,2971
+grid20m-0.1.0.dist-info/METADATA,sha256=US6otZcu4W_8AtNljLnsszLOSXWe_GMcg52juiW6WKI,232
+grid20m-0.1.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+grid20m-0.1.0.dist-info/entry_points.txt,sha256=gT1A5gibLSCcEBzzKqcqZqtNhiXyZ-c8gLXPQrPAODk,50
+grid20m-0.1.0.dist-info/licenses/LICENSE,sha256=QDXhBJblJVw_YNJzTCbgQ9gC7cUh35QDujUhODIAhMo,1068
+grid20m-0.1.0.dist-info/RECORD,,
