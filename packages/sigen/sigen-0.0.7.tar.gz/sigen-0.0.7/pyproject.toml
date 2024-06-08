@@ -1,0 +1,43 @@
+[project]
+name = "sigen"
+version = "0.0.7"
+authors = [
+  { name="Example Author", email="author@example.com" },
+]
+description = "A package to reading and writing data to and from Sigenergy inverters"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/fbradyirl/sigen"
+Issues = "https://github.com/fbradyirl/sigen/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.envs.default]
+dependencies = [
+    "pytest",
+    "requests_mock",
+    "pycryptodome",
+    "requests",
+    "coloredlogs",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/*"]
+
+[tool.hatch.envs.default.scripts]
+test = "pytest"
+
+[tool.hatch.envs.default.env-vars]
+PYTHONPATH = ".:./src"
