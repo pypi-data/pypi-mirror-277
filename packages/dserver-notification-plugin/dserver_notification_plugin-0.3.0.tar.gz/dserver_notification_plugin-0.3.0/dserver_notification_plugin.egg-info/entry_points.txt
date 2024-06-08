@@ -1,0 +1,2 @@
+[dtool_lookup_server.extension]
+NotficationExtension = dserver_notification_plugin:NotificationExtension
