@@ -1,0 +1,79 @@
+Metadata-Version: 2.3
+Name: redis_canal
+Version: 0.0.2
+Summary: redis_canal
+Project-URL: Source, https://github.com/wh1isper/redis_canal
+Author-email: wh1isper <jizhongsheng957@gmail.com>
+License: BSD 3-Clause License
+License-File: LICENSE
+Keywords: redis_canal
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Requires-Dist: anyio
+Requires-Dist: loguru
+Requires-Dist: pluggy
+Requires-Dist: pydantic>=2
+Requires-Dist: redis>=4.2.0rc1
+Provides-Extra: all
+Requires-Dist: boto3; extra == 'all'
+Provides-Extra: docs
+Requires-Dist: autodoc-pydantic; extra == 'docs'
+Requires-Dist: pydata-sphinx-theme; extra == 'docs'
+Requires-Dist: sphinx; extra == 'docs'
+Requires-Dist: sphinx-click; extra == 'docs'
+Provides-Extra: sqs
+Requires-Dist: boto3; extra == 'sqs'
+Provides-Extra: test
+Requires-Dist: boto3; extra == 'test'
+Requires-Dist: boto3-stubs[sqs]; extra == 'test'
+Requires-Dist: docker; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-asyncio; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Description-Content-Type: text/markdown
+
+![](https://img.shields.io/github/license/wh1isper/redis_canal)
+![](https://img.shields.io/github/v/release/wh1isper/redis_canal)
+![](https://img.shields.io/docker/image-size/wh1isper/redis-canal)
+![](https://img.shields.io/pypi/dm/redis_canal)
+![](https://img.shields.io/github/last-commit/wh1isper/redis_canal)
+![](https://img.shields.io/pypi/pyversions/redis_canal)
+[![codecov](https://codecov.io/gh/Wh1isper/redis-canal/graph/badge.svg?token=DI8L42sAMw)](https://codecov.io/gh/Wh1isper/redis-canal)
+
+# redis_canal
+
+## Install
+
+`pip install redis_canal[all]` for all components.
+
+Or use docker image
+
+`docker pull wh1isper/redis-canal`
+
+## Usage
+
+TBD
+
+## Develop
+
+Install pre-commit before commit
+
+```
+pip install pre-commit
+pre-commit install
+```
+
+Install package locally
+
+```
+pip install -e .[test]
+```
+
+Run unit-test before PR
+
+```
+pytest -v
+```
