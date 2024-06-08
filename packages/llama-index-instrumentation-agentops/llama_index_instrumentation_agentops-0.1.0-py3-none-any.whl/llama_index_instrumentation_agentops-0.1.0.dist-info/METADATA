@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: llama-index-instrumentation-agentops
+Version: 0.1.0
+Summary: llama-index instrumentation agentops integration
+License: MIT
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.8.1,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: agentops (>=0.2.2,<0.3.0)
+Requires-Dist: llama-index-core (>=0.10.0,<0.11.0)
+Description-Content-Type: text/markdown
+
+# LlamaIndex Instrumentation Integration: Agentops
+
+To integrate AgentOps into your agent workflow,
+simply import and initialize an `AgentOpsHandler`,
+as demonstrated below. Note that all keyword arguments
+anticipated by AgentOps' `AOClient` can be provided
+to this client using the same keyword arguments in
+`init()`.
+
+```
+from llama_index.instrumentation.agentops import AgentOpsHandler
+
+AgentOpsHandler.init()
+```
+
