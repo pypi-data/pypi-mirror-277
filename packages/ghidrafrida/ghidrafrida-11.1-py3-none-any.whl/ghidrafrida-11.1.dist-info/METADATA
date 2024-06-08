@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: ghidrafrida
+Version: 11.1
+Summary: Ghidra's Plugin for Frida
+Project-URL: Homepage, https://github.com/NationalSecurityAgency/ghidra
+Project-URL: Bug Tracker, https://github.com/NationalSecurityAgency/ghidra/issues
+Author: Ghidra Development Team
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Ghidra Trace RMI (Frida)
+
+Package for connecting Frida targets to Ghidra via Trace RMI.
