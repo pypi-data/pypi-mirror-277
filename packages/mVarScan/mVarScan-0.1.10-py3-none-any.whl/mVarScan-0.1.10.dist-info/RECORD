@@ -1,0 +1,11 @@
+mVarScan/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mVarScan/__main__.py,sha256=XBxwPO1abJA6WwNvhMjKVvxkxqDN1GOarH5nRIPNLXs,58
+mVarScan/cli.py,sha256=G3O644wjXFCyWCPzcX9JaGA4VMSaHVpoQ-M4AEGawQg,1999
+mVarScan/main.py,sha256=EqfP1zCaIHUjOz3Eb5U8oa-suPrNrLsdyf4llHH4_Cs,1278
+mVarScan/mpileup_parser.py,sha256=B-fdaxhEe-x623ssUtvwJUvy-AoOmxQr87YPGDDgATs,2265
+mVarScan/variant_caller.py,sha256=6VhfBu26rVQhSZurD9g4dFZgK0JnnLQJQIZSXoeBoeA,16778
+mVarScan-0.1.10.dist-info/METADATA,sha256=6Eb7ViuzF4Mq-lRUCgvnO4pRQVqGdNx-odP2LIr7Bg4,868
+mVarScan-0.1.10.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mVarScan-0.1.10.dist-info/entry_points.txt,sha256=Wbu-AVcja9qv_CHlO6XtpqNVcVxrZ8mawHwd6BN36_Q,47
+mVarScan-0.1.10.dist-info/top_level.txt,sha256=uCMQx0CZ7mg9MXwYL8D29SqV1CU-NgtDwnUe-WcSS_A,9
+mVarScan-0.1.10.dist-info/RECORD,,
