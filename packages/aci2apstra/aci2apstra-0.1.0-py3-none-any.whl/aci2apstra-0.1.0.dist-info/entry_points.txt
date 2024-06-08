@@ -1,0 +1,2 @@
+[console_scripts]
+aci_to_apstra = src.main:main
