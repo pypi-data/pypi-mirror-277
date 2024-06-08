@@ -1,0 +1,5 @@
+[tool.poetry]
+name = "meshxctl"
+version = "0.0.0"
+description = "placeholder"
+authors = []
