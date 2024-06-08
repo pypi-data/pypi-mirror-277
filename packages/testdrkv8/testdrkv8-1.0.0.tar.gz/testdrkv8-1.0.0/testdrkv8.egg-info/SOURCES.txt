@@ -1,0 +1,9 @@
+README.md
+setup.py
+testdrkv8/__init__.py
+testdrkv8/ec2_utils.py
+testdrkv8.egg-info/PKG-INFO
+testdrkv8.egg-info/SOURCES.txt
+testdrkv8.egg-info/dependency_links.txt
+testdrkv8.egg-info/requires.txt
+testdrkv8.egg-info/top_level.txt
