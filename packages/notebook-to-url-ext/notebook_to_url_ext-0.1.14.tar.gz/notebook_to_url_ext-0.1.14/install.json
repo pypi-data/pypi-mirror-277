@@ -1,0 +1,6 @@
+{
+    "packageManager": "python",
+    "packageName": "notebook-to-url-ext",
+    "uninstallInstructions": "Use your Python package manager (pip, conda, etc.) to uninstall the package notebook-to-url-ext"
+  }
+  
