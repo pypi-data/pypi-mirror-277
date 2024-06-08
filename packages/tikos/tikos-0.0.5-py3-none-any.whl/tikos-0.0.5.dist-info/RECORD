@@ -1,0 +1,9 @@
+tikos/__init__.py,sha256=D3T_xtW--8bnzE_oxlCumZ_XMHnmxyBOEuY50eaP9hY,431
+tikos/config.py,sha256=e2RfN4_9rdTAzEqWf2bxiJbZi9lHrltGkem1QEf_8mY,50
+tikos/tikos.py,sha256=iMrD2O4hwQcPe4St972UneVpIG3ChDU0b7on58hm9d0,4039
+tikos-0.0.5.dist-info/LICENSE,sha256=Qx9Ixdy_cZW3FBzss5C-eBZFaaz0nUVp26ziWltwowg,57
+tikos-0.0.5.dist-info/METADATA,sha256=tPlsWyUfzawGWktZCGDtbyeVFYZpMHHRaDmpjhWsW60,830
+tikos-0.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+tikos-0.0.5.dist-info/entry_points.txt,sha256=T8XfUmIihkYohhly4_3Fi4so6jGPONCaKiLcOC6qMLg,44
+tikos-0.0.5.dist-info/top_level.txt,sha256=_un-LL9ZVxddfRgMnFtvAVdQgUVY4HaVvI6wS0h1_Es,6
+tikos-0.0.5.dist-info/RECORD,,
