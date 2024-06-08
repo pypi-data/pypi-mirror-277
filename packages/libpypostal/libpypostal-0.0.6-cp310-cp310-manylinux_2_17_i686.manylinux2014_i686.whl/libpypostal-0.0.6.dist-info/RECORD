@@ -1,0 +1,12 @@
+libpypostal/data_utils.py,sha256=5Wd9h4dr7IG01oE1Hr-XL3gySyFGtyaqJgVPZ5O7vxk,1750
+libpypostal/libpostal_download_data,sha256=6yzdOBnxZV7yjSNIAgjwLmLlyrVQu0wGhtRdhuixLmo,5457
+libpypostal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libpypostal/_parser.cpython-310-i386-linux-gnu.so,sha256=NYBmxCN-XphmZgSQTk_KdwOr-S9JHfQJWA1_LFW5XOM,50317
+libpypostal/parser.py,sha256=tq4PR0o3Bs5JmwzkP-XETgeclEv6cNOzwr24KzSvB54,3338
+libpypostal/version.py,sha256=pSykUC6g7FlI0nQ42euFI8ZBRbuehU0HFbk9l_jjf3I,50
+libpypostal-0.0.6.dist-info/WHEEL,sha256=Najllegno_X9ydJN1lMHSfpc0Fl1ugiTRKHrIt3U_Ik,148
+libpypostal-0.0.6.dist-info/LICENSE,sha256=t1FS5RVA61s6NsxM23_kEVPrxxnl5kp9zQIi8xkvPeg,1092
+libpypostal-0.0.6.dist-info/top_level.txt,sha256=0Qw3ID4Y8ctJCNm30iRXcgQ83MBDOUezSJt6lWtMrL0,12
+libpypostal-0.0.6.dist-info/RECORD,,
+libpypostal-0.0.6.dist-info/METADATA,sha256=Mwogm6d4-oefKGNqq9zZfDTfdF-7bC5pK01GmOqjcn0,2708
+libpypostal.libs/libpostal-3e15d225.so.1.0.1,sha256=GRlE33JqVCAgHhciOCEiJijIxiIKEEKi6kVvA_EAC70,11714973
