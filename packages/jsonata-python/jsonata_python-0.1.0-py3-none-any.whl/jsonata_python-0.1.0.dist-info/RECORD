@@ -1,0 +1,17 @@
+jsonata/__init__.py,sha256=4r8USHj4SoBy_TD8dLxt9HJIgpLfXApFrZBipi4rgr0,388
+jsonata/constants.py,sha256=gLQQOzEKJeHL4FclVQhBWsAOdtRL0LDQajsJAt0PuOM,3085
+jsonata/datetimeutils.py,sha256=JzOKsub1jPCteMrBfexV2UI6N20MNquUyhrvWDRgRng,50073
+jsonata/functions.py,sha256=zcpmNPvqFmDh1nH_-xLowKOvp4mDEcwO41HepCVXmUQ,74972
+jsonata/jexception.py,sha256=EUXESzwOUcZOIABu3dIf5nsHhbiFXDVAXhB9nCnBOrQ,13117
+jsonata/jsonata.py,sha256=U4ofGjdtp10ScBnAS8jqtf8ZNegIuLg6R_tW-Ewe0ss,87628
+jsonata/parser.py,sha256=v7TW-WdyCAe7xLrliMs3a2cnn3EHh12wcOY4t8_Wq6o,55410
+jsonata/signature.py,sha256=Pa_vM6B6o60m-SvMOL5wxOlNmlBCgFkei9R68eKwhqY,20794
+jsonata/timebox.py,sha256=hv12HMVu2VXtlDvyN_xSCucuzWYU6jYE_B2B9Xmlpz0,2959
+jsonata/tokenizer.py,sha256=Q670OEoKutm1fUzCyIm3xXlup9kU7FcMUAb6nV8OpPo,12174
+jsonata/utils.py,sha256=SvGUBDJB_tbFJe65GO9-dwKK4PzEOp4KRcVl17sbg6c,4611
+jsonata/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jsonata/cli/__main__.py,sha256=mL6HlLd2auwBHgilpzEB15G0EMouD-dO-pFi_e5cDAg,7213
+jsonata_python-0.1.0.dist-info/METADATA,sha256=Xj83LiY51VxvT0L7bONF4VqOtMlbWhL9kR0KcecUfpI,17303
+jsonata_python-0.1.0.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+jsonata_python-0.1.0.dist-info/licenses/LICENSE,sha256=y16Ofl9KOYjhBjwULGDcLfdWBfTEZRXnduOspt-XbhQ,11325
+jsonata_python-0.1.0.dist-info/RECORD,,
