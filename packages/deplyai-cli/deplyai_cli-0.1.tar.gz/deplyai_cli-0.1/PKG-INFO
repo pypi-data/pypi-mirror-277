@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: deplyai-cli
+Version: 0.1
+Summary: DeplyAI CLI
+Maintainer: DeplyAI
+Maintainer-email: support@deplyai.com
+License: BSD-3-Clause
+Project-URL: Bug Tracker, https://github.com/deply-ai/cli/issues
+Project-URL: Documentation, https://github.com/deply-ai/cli
+Project-URL: Source Code, https://github.com/deply-ai/cli
+Keywords: deplyai
+Platform: Linux
+Platform: Windows
+Platform: MacOS
+License-File: LICENSE
