@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+freeGPT/__init__.py
+freeGPT.egg-info/PKG-INFO
+freeGPT.egg-info/SOURCES.txt
+freeGPT.egg-info/dependency_links.txt
+freeGPT.egg-info/requires.txt
+freeGPT.egg-info/top_level.txt
+freeGPT/Client/__init__.py
+freeGPT/Client/gpt3.py
+freeGPT/Client/gpt3_5.py
+freeGPT/Client/gpt4.py
+freeGPT/Client/pollinations.py
+freeGPT/Client/prodia.py
