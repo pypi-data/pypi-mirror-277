@@ -1,0 +1,8 @@
+rustfs-0.1.0.dist-info/METADATA,sha256=sa8EGmbBrOdDYMdkTsEp5WMj8FAEtwlUPbjsIUlCG3g,2059
+rustfs-0.1.0.dist-info/WHEEL,sha256=f19mKQM7gePxhRSmnhDJCncxUbJS8IrlDfIxXKE45Qs,95
+rustfs-0.1.0.dist-info/entry_points.txt,sha256=WWNAe1C_NmXGOCD1dF413Nj9MtIuNZMluRvVSn8nkX8,33
+rustfs-0.1.0.dist-info/license_files/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+rustfs/core.py,sha256=sgHQVvYqEIW3a032n_knb-p_JEZY0Vxdhs5_IN6jJ34,1000
+rustfs/__init__.py,sha256=_EGgArIfnV230hBBoZObMrc4eXtgOh-xlsDXCA5evvk,152
+rustfs/rustfs.cp312-win_amd64.pyd,sha256=AALdu64YZQg3V00y2UH7D9ZG8EEmXmdojs_QuqSAj2c,5905920
+rustfs-0.1.0.dist-info/RECORD,,
