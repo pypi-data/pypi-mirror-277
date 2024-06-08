@@ -1,0 +1,7 @@
+numpy
+
+[all]
+encoder7[extra]
+
+[extra]
+pandas
