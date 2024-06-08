@@ -1,0 +1,11 @@
+LICENCE.txt
+README.md
+setup.cfg
+setup.py
+anutoolbox/__init__.py
+anutoolbox/function.py
+anutoolbox.egg-info/PKG-INFO
+anutoolbox.egg-info/SOURCES.txt
+anutoolbox.egg-info/dependency_links.txt
+anutoolbox.egg-info/requires.txt
+anutoolbox.egg-info/top_level.txt
