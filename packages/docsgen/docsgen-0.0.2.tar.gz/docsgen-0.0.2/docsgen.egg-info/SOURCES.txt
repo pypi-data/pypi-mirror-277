@@ -1,0 +1,11 @@
+README.md
+setup.py
+docsgen/__init__.py
+docsgen/cli.py
+docsgen/docsgen.py
+docsgen.egg-info/PKG-INFO
+docsgen.egg-info/SOURCES.txt
+docsgen.egg-info/dependency_links.txt
+docsgen.egg-info/entry_points.txt
+docsgen.egg-info/requires.txt
+docsgen.egg-info/top_level.txt
