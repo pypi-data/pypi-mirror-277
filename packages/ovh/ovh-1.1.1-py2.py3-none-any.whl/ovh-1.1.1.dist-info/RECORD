@@ -1,0 +1,10 @@
+ovh/__init__.py,sha256=j0BsKZwv-Gvf5OxmItAErg2CEh5pI-Zr2apYMnWg38c,1952
+ovh/client.py,sha256=PzZ2JZd-qMvbYDBoGWwc9a7hK-KCJ-IjIAltYsKHKGg,21778
+ovh/config.py,sha256=8X47GLOq6MzmwlZxpc7F0YEwOc7ws3mxXHCDPzpUbZo,4399
+ovh/consumer_key.py,sha256=BmkLQzrebGO8lOU4pnAaDK7xUJ6bA2zl_cOUqdISEbE,4765
+ovh/exceptions.py,sha256=HtlJkmtyLtCQ9oUKm11CzZDCKdjwQDW44GhPyCOV8cs,3561
+ovh-1.1.1.dist-info/LICENSE,sha256=a9MM59L_oy47hR9VUZqnb5Q26JFBqL1tFssJQkysh0U,1468
+ovh-1.1.1.dist-info/METADATA,sha256=jxl61AoR9RFJDIulnj782AtCo6nKOLmK6uwsTIawTBI,21395
+ovh-1.1.1.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+ovh-1.1.1.dist-info/top_level.txt,sha256=5g055HyiJp5qs7BUVRhkbWkZnzlPmWDZAwbbmaYSIwI,4
+ovh-1.1.1.dist-info/RECORD,,
