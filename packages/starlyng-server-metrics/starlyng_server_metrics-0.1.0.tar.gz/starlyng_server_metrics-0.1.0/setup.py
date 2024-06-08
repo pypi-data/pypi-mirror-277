@@ -1,0 +1,44 @@
+"""
+setup.py
+"""
+from setuptools import setup, find_packages
+
+setup(
+    name='starlyng_server_metrics',
+    version='0.1.0',
+    packages=find_packages(where='server_metrics'),
+    install_requires=[],
+    extras_require={
+        'dev': [
+            'pytest',
+            'pytest-mock==3.14.0',
+            'pylint==3.2.2',
+            'twine',
+            'wheel',
+        ],
+    },
+    entry_points={
+        'console_scripts': [
+            'server_metrics=main:main',  # Points to main_function in main.py
+        ],
+    },
+    author='Justin Sherwood',
+    author_email='justin@sherwood.fm',
+    description='This project gathers metrics for local or hosted servers that can be run on a server used to post data to Grafana and Prometheus.',
+    url='https://github.com/starlyngapp/server-metrics',
+    package_dir={'': 'server_metrics'},
+    classifiers=[
+        # Trove classifiers
+        # Full list: https://pypi.org/classifiers/
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: Developers',
+        'Topic :: Software Development :: Build Tools',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Operating System :: OS Independent',
+    ],
+    python_requires='>=3.7',
+)

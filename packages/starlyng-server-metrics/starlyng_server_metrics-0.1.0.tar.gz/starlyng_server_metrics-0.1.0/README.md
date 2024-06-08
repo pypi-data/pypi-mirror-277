@@ -1,0 +1,114 @@
+# Starlyng Server Metrics
+
+This project gathers metrics for local or hosted servers that can be run on a server used to post data to Grafana and Prometheus.
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+* You have installed Python 3.x.
+* You have a basic understanding of Python and virtual environments.
+
+## Setting Up Your Development Environment
+
+To set up your development environment and run the project, follow these steps:
+
+### Clone the Repository
+
+First, clone the repository to your local machine:
+
+```bash
+git https://github.com/starlyngapp/server-metrics.git
+cd server-metrics
+```
+
+## Create and Activate Virtual Environment
+
+For macOS and Linux:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+For Windows:
+
+```bash
+python3 -m venv venv
+venv\Scripts\activate
+```
+
+## Install Required Packages
+
+Install all dependencies listed in the dev-requirements.txt file:
+
+```bash
+pip install -r dev-requirements.txt
+```
+
+## Installation
+
+To install only the package (without dev dependencies):
+
+```bash
+pip install starlyng_server_metrics
+```
+
+To install development dependencies (useful for contributing to the project):
+
+```bash
+pip install starlyng_server_metrics[dev]
+```
+
+Alternatively, you can install the development dependencies using:
+
+```bash
+pip install -r dev-requirements.txt
+```
+
+## Usage
+
+To run the main function:
+
+```bash
+starlyng_metrics
+```
+
+### Building and Uploading Your Package
+
+1. **Build the package**:
+
+```bash
+python3 setup.py sdist bdist_wheel
+```
+
+2. **Upload to PyPI**:
+
+```bash
+twine upload dist/*
+```
+
+## Running Tests
+
+To run tests, execute the following command in your terminal:
+
+```bash
+pytest
+```
+
+This command will run all tests and report the results. You can also run specific tests by providing the path and filename of the test file.
+
+## Contributing to the Project
+
+Contributions to this project are welcome. Here's how you can contribute:
+
+1. Fork the project.
+2. Create your feature branch (git checkout -b feature/YourFeature).
+3. Commit your changes (git commit -am 'Add some YourFeature').
+4. Push to the branch (git push origin feature/YourFeature).
+5. Open a pull request.
+
+## Contact
+
+If you have any questions, please contact us at:
+
+- GitHub: [@justinsherwood](https://github.com/justinsherwood)
