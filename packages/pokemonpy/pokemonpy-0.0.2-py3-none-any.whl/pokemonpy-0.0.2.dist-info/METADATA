@@ -1,0 +1,43 @@
+Metadata-Version: 2.3
+Name: pokemonpy
+Version: 0.0.2
+Summary: A package that contains a Pokémon simulation game.
+Project-URL: Homepage, https://github.com/4ntoined/pokemonpy-package
+Project-URL: Issues, https://github.com/4ntoined/pokemonpy-package/issues
+Author: Antoine
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: numpy~=1.26.4
+Description-Content-Type: text/markdown
+
+# Anybody here play Pokémon?
+Just me? That's fine.
+
+## The game:
+
+[github.com/4ntoined/pokemonpy](https://github.com/4ntoined/pokemonpy)
+
+## To play the game:
+
+```
+myterminal$ python3
+python$ import pokemonpy.pokemon as pk
+python$ game1 = pk.game()
+python$ game1.startgame()
+```
+
+## To play with a particular config file:
+
+```
+myterminal$ python3
+python$ import pokemonpy.pokemon as pk
+python$ cpath = '/configurations/config.txt'
+python$ game2 = pk.game()
+python$ game2.startgame(cpath)
+```
+
+
+
