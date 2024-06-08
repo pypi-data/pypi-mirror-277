@@ -1,0 +1,14 @@
+polimer_solibity_calculator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polimer_solibity_calculator/__main__.py,sha256=vy6UB9BHkLalyQxuemKpThpnVUuCLuWtoctxn-ysbwM,199
+polimer_solibity_calculator/cli_parser.py,sha256=LGHUSFJs7QElTWcaysAf8d2BVTu-yO14DmMwEMMyxao,728
+polimer_solibity_calculator/data.json,sha256=AleYwQsfOH6JuLCBUbM37IfogVfN-EXRLb1nmikW8Ow,998
+polimer_solibity_calculator/entry.py,sha256=YbypwSp22D5NKKSZ4q6nhYQkXSfup8_SrsTVTwCC0r0,7622
+polimer_solibity_calculator/main.py,sha256=a8T2H-2V6yFGtXecI0O3vtlonVTuWWKYSp6ze2KqBJw,2235
+polimer_solibity_calculator/scripts/entry.bat,sha256=2uDY6lEnOawBMpwfm1_oKbdXD9WM7E8vVFRLuoV2jmo,38
+polimer_solibity_calculator/scripts/instalation.bat,sha256=X4OlHqSC5VFKNSOanrKSTpjtXDdXa8UXNQ0XUb9uGIg,44
+polimer_solibity_calculator/scripts/main.bat,sha256=gw16dZxrYKN0ZIhcjMYIUKagrPyBsUROatTkr-Xalbs,37
+3D_polymer_solubility_calculator-1.0.0.dist-info/LICENSE,sha256=kn8mIigk-0mBHKejhFEIhzVK0XKXsCyiiLvOHvNAN9U,1056
+3D_polymer_solubility_calculator-1.0.0.dist-info/METADATA,sha256=uG-oHt9M0T6EjR4EHZlTBoMqz7WDYZcR0uN9EA9MCwg,195
+3D_polymer_solubility_calculator-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+3D_polymer_solubility_calculator-1.0.0.dist-info/top_level.txt,sha256=6lQEBK2Sj4pwq232EoSGQAc5yvfOk0w0nv-xrZaqkr8,28
+3D_polymer_solubility_calculator-1.0.0.dist-info/RECORD,,
