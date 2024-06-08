@@ -1,0 +1,14 @@
+templated_email/__init__.py,sha256=fxnu0Kn5bSq0nvsqLUHJZIwY4QtlGNjzf5A_soE-BOw,3707
+templated_email/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+templated_email/tests.py,sha256=ZnJ5o1DlYOP4YNwg4QlMwCdtkr1Ea7RJACea-_N0fCs,1173
+templated_email/utils.py,sha256=dipqgFe6uVF3qqTW3P7RI46F3xTlAep73RAU65dEeAg,1438
+templated_email/backends/__init__.py,sha256=-lYAqUailPgPSVV7d1tyJTRVoTjVtEsyi9HPPEW47q8,55
+templated_email/backends/mailchimp_sts.py,sha256=IkmtNI7AlPYOKjeGk7TBAwkaeEZgRhqeZkRycbbjC4M,1748
+templated_email/backends/postageapp_backend.py,sha256=ucCfTCX342FCQHRE_CdA3YrCoAfUdwO8OUk2RbH-CbY,1744
+templated_email/backends/vanilla_django.py,sha256=RpRexMgHE4gLsh0BDW68EGgFuIbVfkmMYvuJJeIuVCg,7009
+django_templated_email_pebble-2.1.0.dist-info/AUTHORS,sha256=otKEOn0f-6FqHsLj9fUhqr-zVch-dQLNj-WikoTI6Xg,177
+django_templated_email_pebble-2.1.0.dist-info/LICENSE,sha256=dRprjyBzeSI2nmRYhuXb8VXP7UMEcU_PVLg5TVUKcSw,1067
+django_templated_email_pebble-2.1.0.dist-info/METADATA,sha256=gvSQsDWFaGPx5Jv76OiB11VaSgpXR949DstHVqKMepY,11035
+django_templated_email_pebble-2.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+django_templated_email_pebble-2.1.0.dist-info/top_level.txt,sha256=5NkBC6luzySs3tsC81o2Kd8dC8iydNoaZxQbgXe0XBI,16
+django_templated_email_pebble-2.1.0.dist-info/RECORD,,
