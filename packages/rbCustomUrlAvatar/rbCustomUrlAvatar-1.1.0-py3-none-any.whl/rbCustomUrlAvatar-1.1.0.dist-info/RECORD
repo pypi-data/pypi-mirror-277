@@ -1,0 +1,10 @@
+custom_url_avatar/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+custom_url_avatar/admin_urls.py,sha256=K3wpudMli-n4FI97-pcCu45CojSjEJBw8Z1CzXrknwk,469
+custom_url_avatar/extension.py,sha256=HaEL_mtskZ7LECPMDfMqlLoriQMXJHpJLUV72vladVA,1981
+custom_url_avatar/forms.py,sha256=fhtXBLGlPoAWzHppg9oKQ6oGb36GpHOND82vPgwQfCk,471
+rbCustomUrlAvatar-1.1.0.dist-info/LICENSE,sha256=nvLvpP34o4F2EONEGXpYKPiEmqcwW3MRoMDFSsH-oHc,1072
+rbCustomUrlAvatar-1.1.0.dist-info/METADATA,sha256=uvFBmBkM8eTo_vVThq36qwNn4jsuK6v6WK8Tj5o-faM,595
+rbCustomUrlAvatar-1.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+rbCustomUrlAvatar-1.1.0.dist-info/entry_points.txt,sha256=5Rnx-Z4qdDHj4PK8jNZPUpGq5eZVCNStdZTfr7re84U,89
+rbCustomUrlAvatar-1.1.0.dist-info/top_level.txt,sha256=eu1sib8DcRYXEwvJ8CABRAHz8b88gJpzeD4z4G982b0,18
+rbCustomUrlAvatar-1.1.0.dist-info/RECORD,,
